@@ -1,0 +1,10 @@
+node_modules
+dist
+coverage
+.browserslistrc
+.env
+.gitignore
+.prettierrc
+*.md
+cypress.json
+jest.config.js

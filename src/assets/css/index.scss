@@ -1,0 +1,37 @@
+// :root {
+//   --el-color-primary: red;
+// }
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: var(--el-color-primary);
+}
+
+code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  background-color: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
+}
+.el-button--primary {
+  background-color: #3369e8 !important;
+}
+.el-button--danger {
+  background-color: #f56c6c !important;
+}
+.el-pager {
+  li {
+    font-weight: 300;
+  }
+}
+.el-input__prefix-inner {
+  justify-content: center;
+  align-items: center;
+}
+.toast-top-center {
+  top: 2rem !important;
+}

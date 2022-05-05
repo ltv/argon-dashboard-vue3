@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "node"],
+    "typeRoots": ["../../../node_modules/@types", "node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "core/*": ["src/core/*"],
+      "components": ["src/components/index.ts"],
+      "components/*": ["src/components/*"],
+      "layouts/*": ["src/layouts/*"],
+      "store/*": ["src/store/*"],
+      "store": ["src/store/index"],
+      "modules/*": ["src/modules/*"],
+      "router/*": ["src/router/*"],
+      "router": ["src/router/index"],
+      "utils/*": ["src/utils/*"],
+      "mixins": ["src/mixins/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "node_modules/**"]
+}
