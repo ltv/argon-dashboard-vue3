@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.el-table__header thead {
+  @apply font-bold text-base font-sans decoration-stone-400 !important;
+}
+
+.el-table {
+  @apply border-collapse mt-4 !important;
+}
+
+.el-table__body {
+  @apply font-bold text-base text-sky-900 font-sans;
+  border-spacing: 0 0.5rem;
+}
+
+.el-table td:first-child {
+  @apply rounded-l-lg;
+}
+
+.el-table td:last-child {
+  @apply rounded-r-lg;
+} 
+
+.el-table th.is-leaf .el-checkbox__inner {
+  @apply bg-slate-300 border-transparent !important;
+}
+
+.el-table td {
+  @apply py-3 !important;
+}
+
+.el-table__row,
+.el-table__row.hover-row {
+  @apply hover:bg-slate-300 !important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  @apply bg-slate-300 hover:bg-slate-300 text-neutral-500 !important;
+}

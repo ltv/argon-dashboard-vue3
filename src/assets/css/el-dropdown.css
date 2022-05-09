@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .el-dropdown {
+  border-radius: 9999px !important;
+  box-shadow: var(--el-box-shadow-dark);
+} */
+
+.el-dropdown {
+  @apply rounded-full shadow-teal-400 !important;
+}
+
+.el-dropdown .el-button--primary:first-child {
+  @apply rounded-l-full border-solid border-slate-300 border-r-0 text-black !important;
+}
+
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  @apply rounded-r-full border-solid border-slate-300 border-l-0 text-black !important;
+}
+
+.el-dropdown .el-button--primary:first-child, 
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  @apply bg-white font-sans hover:bg-slate-100 !important;
+}
+
+/* .el-dropdown .el-button--primary:first-child:hover,
+.el-dropdown .el-button-group .el-dropdown__caret-button:hover {
+  background-color: rgba(134, 143, 155, 0.1) !important;
+} */
+
+
+/*
+
+.el-dropdown .el-button--primary:first-child:hover,
+.el-dropdown .el-button-group .el-dropdown__caret-button:hover {
+  background-color: rgba(134, 143, 155, 0.1) !important;
+}
+
+
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  border-top-right-radius: 9999px !important;
+  border-bottom-right-radius: 9999px !important;
+  color: rgba(59, 130, 246, var(--tw-bg-opacity)) !important;
+  border: 1px solid rgb(200, 200, 200);
+  border-left: 0;
+} */

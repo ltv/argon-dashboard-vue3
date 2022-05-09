@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .el-table__header {
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity)) !important;
+}
+
+.el-table__header thead {
+  font-weight: bold;
+  font-size: 1rem;
+} */
+
+/* .el-table__header {
+  @apply bg-blue text-gray-200 !important;
+} */
