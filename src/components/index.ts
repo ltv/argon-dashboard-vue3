@@ -1,4 +1,3 @@
-// import 'element-plus/packages/theme-chalk/src/message.scss'
 import 'assets/css/index.scss'
 import { App } from 'vue'
 import { useElementPlus } from './element-plus'

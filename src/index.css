@@ -11,9 +11,6 @@
   --font-family: 'Roboto', 'Noto Color Emoji', 'Apple Color Emoji',
     'Segoe UI Emoji', Times, Symbola, Aegyptus, Code2000, Code2001, Code2002,
     Musica, serif, LastResort;
-}
-
-* {
   font-family: var(--font-family);
 }
 

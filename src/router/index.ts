@@ -12,7 +12,9 @@ const router: Router = createRouter({
 })
 
 //@ts-ignore
-const beforeEnter = (to: RouteLocationNormalized) => {}
+const beforeEnter = (_to: RouteLocationNormalized) => {
+  // This is intentional
+}
 
 router.getRoutes().forEach((route) => (route.beforeEnter = beforeEnter))
 

@@ -13,5 +13,3 @@ export default defineComponent({
   name: 'Main',
 })
 </script>
-
-<style></style>
