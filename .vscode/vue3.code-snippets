@@ -1,0 +1,22 @@
+{
+  "vue3": {
+    "scope": "vue",
+    "prefix": "vue3",
+    "body": [
+      "<template>",
+      "  <div>$2</div>",
+      "</template>",
+      "",
+      "<script lang=\"ts\">",
+      "import { defineComponent } from 'vue'",
+      "",
+      "export default defineComponent({",
+      "  name: '$1',",
+      "  setup() {},",
+      "})",
+      "</script>",
+      ""
+    ],
+    "description": "New Vue3 Single file"
+  }
+}

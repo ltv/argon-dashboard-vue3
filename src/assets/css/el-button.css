@@ -1,0 +1,11 @@
+.el-button {
+  @apply p-2 rounded-lg;
+}
+
+.el-button--small {
+  @apply p-1 rounded-lg text-sm;
+}
+
+.el-button--primary {
+  @apply bg-blue text-gray-200 hover:bg-blue-600 hover:text-gray-100;
+}

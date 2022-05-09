@@ -1,0 +1,75 @@
+#!/usr/bin/env node
+const path = require('path')
+const fs = require('fs')
+const yargs = require('yargs')
+const { hideBin } = require('yargs/helpers')
+
+const projectDir = path.resolve(__dirname, '..', '..')
+const srcDir = path.resolve(projectDir, 'src')
+const templateDir = path.resolve(__dirname, 'templates')
+
+const log = {
+  debug: console.log,
+  info: console.log,
+  warn: console.log,
+  error: console.error,
+}
+
+const readTplFile = (filename) => {
+  return fs.readFileSync(path.resolve(templateDir, `${filename}.ts.tpl`), {
+    encoding: 'utf-8',
+  })
+}
+
+const writeFile = (filename, data) => {
+  return fs.writeFileSync(filename, data, { encoding: 'utf-8' })
+}
+
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
+const parseTemplate = (template = '', data = {}) => {
+  const keys = Object.keys(data)
+  return keys.reduce(
+    (parsed, key) => parsed.replace(new RegExp(`{{${key}}}`, 'g'), data[key]),
+    template,
+  )
+}
+
+const create = {
+  command: 'create <module-name>',
+  describe: 'Create module store',
+  // builder(yargs) {
+  //   // yargs.options('')
+  // },
+  handler(opts) {
+    const moduleName = opts.moduleName.toLowerCase()
+    const moduleDir = path.resolve(srcDir, 'modules', moduleName)
+    const isExisted = fs.existsSync(moduleDir)
+    if (!isExisted) {
+      log.error(`The module '${moduleName}' does not exist at ${moduleDir}`)
+      return
+    }
+    const tplNames = [
+      'index',
+      'types',
+      'state',
+      'actions',
+      'getters',
+      'mutations',
+    ]
+    tplNames.forEach((name) => {
+      const tpl = readTplFile(name)
+      const data = { moduleName, typeName: capitalize(moduleName) }
+      const parsed = parseTemplate(tpl, data)
+      writeFile(path.resolve(moduleDir, 'store', `${name}.ts`), parsed)
+    })
+  },
+}
+
+yargs(hideBin(process.argv))
+  .usage('Usage: $0 <command> [options]')
+  .version()
+  .command(create)
+  .help().argv
