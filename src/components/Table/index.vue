@@ -1,8 +1,6 @@
 <template>
   <div class="p-6 h-full">
-    <div class="block rounded h-full w-full">
-      <!-- <slot>This is Table page</slot> -->
-      
+    <div class="block rounded h-full w-full">      
       <div class="pl-12 mt-4">
         <el-dropdown size="small" split-button type="primary" @command="handleCommand">
           <span> Show: <span :style="'color: rgb(0, 100, 255);'"> {{ choosedItem }}</span></span>
@@ -174,20 +172,22 @@ export default defineComponent({
       tasks.value.forEach((task) => {
         if (task.status != "Pending") {
           if (multipleSelection.value.includes(task)) {
-            task.isDone = true, task.status = 'Done'
+            task.isDone = true;
+            task.status = 'Done';
           }
           else {
-            task.isDone = false, task.status = 'Urgent'
+            task.isDone = false;
+            task.status = 'Urgent';
           }
         }
       })
     }
 
     const tableRowClassName = ({
-      row,
+      _row,
       rowIndex,
     }: {
-      row: Task
+      _row: Task
       rowIndex: number
     }) => {
       if (rowIndex % 2 == 0) {
