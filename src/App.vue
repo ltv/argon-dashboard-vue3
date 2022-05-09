@@ -1,6 +1,5 @@
 <template>
   <el-config-provider :zIndex="9999">
-    <!-- <AuthLayout /> -->
     <DefaultLayout />
   </el-config-provider>
 </template>
@@ -25,13 +24,11 @@ export default defineComponent({
       return Promise.resolve()
     }
 
-    initialize()
-      .then(() => {})
-      .catch((error: Error) => {
-        $message?.error(
-          `Couldn't initialize the system with error: ${error.message}`,
-        )
-      })
+    initialize().catch((error: Error) => {
+      $message?.error(
+        `Couldn't initialize the system with error: ${error.message}`,
+      )
+    })
 
     return { zIndex: 3000, size: 'small' }
   },

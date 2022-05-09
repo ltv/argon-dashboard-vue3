@@ -11,9 +11,4 @@ const router: Router = createRouter({
   routes,
 })
 
-//@ts-ignore
-const beforeEnter = (to: RouteLocationNormalized) => {}
-
-router.getRoutes().forEach((route) => (route.beforeEnter = beforeEnter))
-
 export default router
