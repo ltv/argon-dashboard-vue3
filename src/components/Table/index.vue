@@ -27,7 +27,6 @@
         :row-class-name="tableRowClassName"
         style="width: 100%"
         @selection-change="handleSelectionChange"
-        :table-layout="fixed"
       >
         <el-table-column type="selection" width="55" />
         <el-table-column property="content" label="Request" width="280">
@@ -68,10 +67,10 @@
             <el-button  
               size="small"
               type="plain"
-              @click="removeTask(scope.$index)"
+              @click="console.log(scope.$index)"
               round
             >
-            Remove
+            View
             </el-button>
           </template>
         </el-table-column>
@@ -200,9 +199,6 @@ export default defineComponent({
       task.isDone = !task.isDone;
     };
 
-    const removeTask = (index: number) => {
-      tasks.value.splice(index, 1);
-    };
 
     return {
       tasks,
@@ -214,7 +210,6 @@ export default defineComponent({
       dialogVisible,
       handleCommand,
       toggleDone,
-      removeTask,
       handleSelectionChange,
       tableRowClassName,
     };
@@ -235,13 +230,6 @@ export default defineComponent({
   --el-table-tr-bg-color: var(--el-color-primary-light-8);
 }
 
-.el-button--small.el-button--plain {
-  border-color: rgb(0, 100, 255, var(--tw-bg-opacity)) !important;
-  background-color: transparent !important;
-  color: rgb(0, 100, 255, var(--tw-bg-opacity)) !important;
-  font-weight: lighter !important;
-  width: 80px;
-}
 
 </style>
 

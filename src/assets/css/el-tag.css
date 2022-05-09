@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.el-tag {
+  @apply w-20 rounded-full font-light !important;
+}

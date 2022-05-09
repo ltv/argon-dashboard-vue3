@@ -11,12 +11,12 @@ const routes = [
   {
     path: '/buttons',
     component: Button,
-    name: 'Halana messenger',
+    name: 'Halana button',
   },
   {
-    path: '/table',
+    path: '/tables',
     component: Table,
-    name: 'App Table',
+    name: 'Table',
   },
   {
     path: '/:pathMatch(.*)*',
