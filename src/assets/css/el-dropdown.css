@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.el-dropdown {
+  @apply rounded-full shadow-teal-400 !important;
+}
+
+.el-dropdown .el-button--primary:first-child {
+  @apply rounded-l-full border-solid border-slate-300 border-r-0 text-black !important;
+}
+
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  @apply rounded-r-full border-solid border-slate-300 border-l-0 text-black !important;
+}
+
+.el-dropdown .el-button--primary:first-child, 
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  @apply bg-white font-sans hover:bg-slate-100 !important;
+}
