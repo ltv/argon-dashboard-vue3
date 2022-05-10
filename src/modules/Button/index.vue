@@ -119,6 +119,7 @@
             </el-container>
         </e-row>
         
+        
     </div>
 
     <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
@@ -130,9 +131,43 @@
             <el-divider />
         <e-row class="mb-5">
             <el-container class="px-5 flex flex-wrap">
-                <el-button type="primary" round>Facebook</el-button>
-                <el-button type="primary" :icon="Box" round>With icon</el-button>
-                <el-button type="primary" :icon="Setting" round />                                    
+                <el-button type="primary" :icon="Box" round>Facebook</el-button>
+                <el-button type="primary" :icon="Box" round>Twitter</el-button>
+                <el-button type="primary" :icon="Box" round>Google +</el-button>
+                <el-button type="primary" :icon="Box" round>Instagram</el-button>
+                <el-button type="primary" :icon="Box" round>Pinterest</el-button>
+                <el-button type="primary" :icon="Box" round>Youtube</el-button>
+                <el-button type="primary" :icon="Box" round>Vimeo</el-button>
+                <el-button type="primary" :icon="Box" round>Slack</el-button>
+                <el-button type="primary" :icon="Box" round>Dribble</el-button>                              
+            </el-container>
+        </e-row>
+         <el-divider />
+        <e-row class="mb-5">
+            <el-container class="px-5 flex flex-wrap">
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />
+                <el-button type="primary" :icon="Box" />                            
+            </el-container>
+        </e-row>
+         <el-divider />
+         <e-row class="mb-5">
+            <el-container class="px-5 flex flex-wrap">
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>
+                <el-button type="primary" :icon="Box" round/>                            
             </el-container>
         </e-row>
     </div>
