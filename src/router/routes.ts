@@ -1,7 +1,8 @@
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
 const Button = () => import('modules/dashboard/views/index.vue')
-const Table = () => import('components/Table/index.vue')
+const Table = () => import('modules/Table/views/index.vue')
+const Grid = () => import('modules/Grid/views/index.vue')
 const routes = [
   {
     path: '/',
@@ -17,6 +18,11 @@ const routes = [
     path: '/tables',
     component: Table,
     name: 'Table',
+  },
+  {
+    path: '/grid',
+    component: Grid,
+    name: 'Grid',
   },
   {
     path: '/:pathMatch(.*)*',
