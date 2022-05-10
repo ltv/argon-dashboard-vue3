@@ -1,6 +1,6 @@
 <template>
-  <div class="p-6 h-full">
-    <div class="block rounded h-full w-full">      
+  <div class="flex p-6 h-full">
+    <div class="block rounded h-full w-full">    
       <div class="pl-12 mt-4">
         <el-dropdown size="small" split-button type="primary" @command="handleCommand">
           <span> Show: <span :style="'color: rgb(0, 100, 255);'"> {{ choosedItem }}</span></span>
@@ -18,62 +18,61 @@
           </template>
         </el-dropdown>
       </div>
-
-      <el-table
-        ref="multipleTableRef"
-        :data="tasks"
-        :row-class-name="tableRowClassName"
-        style="width: 100%"
-        @selection-change="handleSelectionChange"
-      >
-        <el-table-column type="selection" width="55" />
-        <el-table-column property="content" label="Request" width="280">
-          <template #default="scope">
-            <div :class='{ done: scope.row.isDone }'>
-              {{ scope.row.content }}
-            </div>
-          </template>
-        </el-table-column>
-        <el-table-column label="Status" width="200">
-          <template #default="scope">
-            <div class="flex flex-wrap gap-2 my-2">
+      <div class="flex">
+        <el-table
+          ref="multipleTableRef"
+          :data="tasks"
+          :row-class-name="tableRowClassName"
+          style="width: 100%"
+          @selection-change="handleSelectionChange"
+          class="h-full w-full"
+        >
+          <el-table-column type="selection" class="flex-none" width="55"/>
+          <el-table-column property="content" label="Request" class="flex-1">
+            <template #default="scope">
+              <div :class='{ done: scope.row.isDone }'>
+                {{ scope.row.content }}
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column label="Status" align="center" header-align="center">
+            <template #default="scope">
               <el-tag
                 :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Done' ? 'primary' : 'success'"
-                class="mx-1"
                 effect="dark"
                 round
               >
                 {{ scope.row.status }}
               </el-tag>
-            </div>
-          </template>
-        </el-table-column>
-        <el-table-column label="Date Create" width="240">
-          <template #default="scope">
-            <div style="color: #8a8a8a">
-              {{ scope.row.creDate }}
-            </div>
-          </template>
-        </el-table-column>
-        <el-table-column label-class-name="deadline" label="Deadline" width="200">
-          <template #default="scope">
-            {{ scope.row.deadLine }}
-          </template>
-        </el-table-column>
-        <el-table-column label="Action" align="center">
-          <template #default="scope">
-            <el-button  
-              size="small"
-              type="plain"
-              @click="console.log(scope.$index)"
-              round
-            >
-            View
-            </el-button>
-          </template>
-        </el-table-column>
-      </el-table>
+            </template>
+          </el-table-column>
+          <el-table-column label="Date Create">
+            <template #default="scope">
+              <div style="color: #8a8a8a">
+                {{ scope.row.creDate }}
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column label-class-name="deadline" label="Deadline">
+            <template #default="scope">
+              {{ scope.row.deadLine }}
+            </template>
+          </el-table-column>
+          <el-table-column label="Action" align="center">
+            <template #default="scope">
+              <el-button  
+                size="small"
+                type="plain"
+                @click="console.log(scope.$index)"
+                round
+              >
+              View
+              </el-button>
+            </template>
+          </el-table-column>
+        </el-table>
 
+      </div>
     </div>
   </div>
 </template>
@@ -221,15 +220,6 @@ export default defineComponent({
 .deadline {
   color: rgb(0, 180, 0);
 }
-
-.el-table .success-row {
-  --el-table-tr-bg-color: var(--el-color-success-light);
-}
-
-.el-table .primary-row {
-  --el-table-tr-bg-color: var(--el-color-primary-light-8);
-}
-
 
 </style>
 

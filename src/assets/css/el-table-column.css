@@ -1,4 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.el-table .success-row {
+  --el-table-tr-bg-color: var(--el-color-success-light);
+}
 
+.el-table .primary-row {
+  --el-table-tr-bg-color: var(--el-color-primary-light-8);
+}
