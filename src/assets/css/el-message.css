@@ -1,0 +1,27 @@
+.el-message.el-message--info {
+  @apply bg-slate-700 border-slate-700 py-8 !important;
+}
+
+.el-message.el-message--info.infoNotifClass {
+  @apply bg-cyan-400 border-cyan-400 py-8 !important;
+}
+
+.el-message.el-message--warning {
+  @apply bg-orange-500 border-orange-400 py-8 !important;
+}
+
+.el-message.el-message--error {
+  @apply bg-rose-500 border-rose-500 py-8 !important;
+}
+
+.el-message.el-message--success {
+  @apply bg-emerald-400 border-emerald-400 py-8 !important;
+}
+
+.el-message .el-icon.el-message__closeBtn {
+  @apply text-slate-200 pb-12 hover:text-slate-50;
+}
+
+.el-message .el-icon.el-message__icon {
+  @apply text-slate-100 pb-6;
+}
