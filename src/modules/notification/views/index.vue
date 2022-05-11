@@ -2,7 +2,7 @@
   <div class="p-6 h-full bg-slate-50">
     <div class="block rounded w-full">
       <div class="flex">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-2xl">
+        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
           <div class="font-bold pb-4">Alerts</div>
           <div>
             <div class="relative flex flex-grow pt-1">
@@ -121,7 +121,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-2xl">
+        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
           <div class="font-bold pb-4">Notifications</div>
           <el-button
             @click="openNotifDefault"
@@ -152,7 +152,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-2xl">
+        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
           <div class="font-bold pb-4">Sweet alerts</div>
           <el-button
             @click="openAlertDefault"
