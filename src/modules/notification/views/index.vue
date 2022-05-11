@@ -5,7 +5,7 @@
         <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">Alerts</div>
           <div>
-            <div class="relative flex flex-grow">
+            <div class="relative flex flex-grow pt-1 ">
               <el-alert class="bg-slate-700">
                 <span style="color: white;"><span style="font-weight: bold;">Default!</span> This is a default alert—check it out!</span>
                 <div class="
@@ -21,7 +21,7 @@
               </el-alert>
             </div>
 
-            <div class="relative flex flex-grow">
+            <div class="relative flex flex-grow pt-1">
               <el-alert class="bg-indigo-500">
                 <span style="color: white;"><span style="font-weight: bold;">Primary!</span> This is a primary alert—check it out!</span>
                 <div class="
@@ -37,7 +37,7 @@
               </el-alert>
             </div>
 
-            <div class="relative flex flex-grow">
+            <div class="relative flex flex-grow pt-1">
               <el-alert type="primary">
                 <span><span style="font-weight: bold;">Secondary!</span> This is a secondary alert—check it out!</span>
                 <div class="
@@ -53,7 +53,23 @@
               </el-alert>
             </div>
 
-            <div class="relative flex flex-grow">
+            <div class="relative flex flex-grow pt-1">
+              <el-alert type="info" class="bg-cyan-400">
+                <span style="color: white;"><span style="font-weight: bold;">Info!</span> This is a info alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
+                  <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
+                </div>
+              </el-alert>
+            </div>
+
+            <div class="relative flex flex-grow pt-1">
               <el-alert type="success" class="bg-emerald-400">
                 <span style="color: white;"><span style="font-weight: bold;">Success!</span> This is a success alert—check it out!</span>
                 <div class="
@@ -69,8 +85,8 @@
               </el-alert>
             </div>
             
-            <div class="relative flex flex-grow">
-              <el-alert type="warning" class="bg-rose-400">
+            <div class="relative flex flex-grow pt-1">
+              <el-alert type="warning" class="bg-rose-500">
                 <span style="color: white;"><span style="font-weight: bold;">Warning!</span> This is a warning alert—check it out!</span>
                 <div class="
                   absolute
@@ -85,8 +101,8 @@
               </el-alert>
             </div>
             
-            <div class="relative flex flex-grow">
-              <el-alert type="error" class="bg-orange-400">
+            <div class="relative flex flex-grow pt-1">
+              <el-alert type="error" class="bg-orange-500">
                 <span style="color: white;"><span style="font-weight: bold;">Error!</span> This is a error alert—check it out!</span>
                 <div class="
                   absolute
@@ -108,62 +124,29 @@
 
       <div class="flex pt-4">
         <div class="container mx-auto p-4 border-4 rounded-lg">
-          <div class="font-bold pb-4">Modals</div>
-          <el-button @click="openDefaultPopup" class="bg-indigo-500 text-white font-bold">Default</el-button>
-          <el-button @click="openNotif" class="bg-orange-400 text-white font-bold">Notification</el-button>
-          <el-button class="bg-slate-700 text-white font-bold">Form</el-button>
+          <div class="font-bold pb-4">Notifications</div>
+          <el-button @click="openNotifDefault" class="bg-slate-700 text-white font-bold">Default</el-button>
+          <el-button @click="openNotifInfo" class="bg-cyan-400 text-white font-bold">Info</el-button>
+          <el-button @click="openNotifSuccess" class="bg-emerald-400 text-white font-bold">Success</el-button>
+          <el-button @click="openNotifWarning" class="bg-orange-500 text-white font-bold">Warning</el-button>
+          <el-button @click="openNotifDanger" class="bg-rose-500 text-white font-bold">Danger</el-button>
+        </div>
+      </div>
+
+      <div class="flex pt-4">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
+          <div class="font-bold pb-4">Sweet alerts</div>
+          <el-button @click="openAlertDefault" class="bg-slate-700 text-white font-bold">Default</el-button>
+          <el-button @click="openAlertInfo" class="bg-cyan-400 text-white font-bold">Info</el-button>
+          <el-button @click="openAlertSuccess" class="bg-emerald-400 text-white font-bold">Success</el-button>
+          <el-button @click="openAlertWarning" class="bg-orange-500 text-white font-bold">Warning</el-button>
+          <el-button @click="openAlertDanger" class="bg-rose-500 text-white font-bold">Question</el-button>
         </div>
       </div>
 
     </div>
 
-    <el-dialog
-      title="Type your modal title"
-      v-model="dialogVisible"
-      width="45%"
-    >
-      <div class="flex flex-col">
-        <span class="text-base break-normal">Far far away, behind the word mountains, 
-          far from the countries Vokalia and Consonantia, there live the blind texts. 
-          Separated they live in Bookmarksgrove right at the coast of the Semantics, 
-          a large language ocean.</span>
-        <span class="text-base mt-2 break-normal">A small river named Duden flows by their place and supplies it with the necessary regelialia. 
-          It is a paradisematic country, 
-          in which roasted parts of sentences fly into your mouth.</span>
-        <span class="dialog-footer pt-4 ">
-          <el-button class="bg-indigo-500 text-white font-bold" @click="confirm">
-            Save changes
-          </el-button>
-          <el-button class="font-bold border-0 absolute right-4" @click="dialogVisible = false">
-            Close 
-          </el-button>
-        </span>
-      </div>
-    </el-dialog>
 
-    <el-dialog
-      title="Your attention is required"
-      v-model="dialogVisibleNotif"
-      width="45%"
-      custom-class="notificationClass"
-    >
-      <div class="flex flex-col">
-        <div class="flex flex-col place-items-center">
-          <BellIcon class="h-12 w-12 text-slate-200" aria-hidden="true" />
-          <span class="text-slate-200 text-lg font-bold">YOU SHOULD READ THIS!</span>
-          <span class="text-slate-200 text-base mt-2 break-normal">A small river named Duden flows by their place and supplies it</span>
-          <span class="text-slate-200 text-base mt-2 break-normal">with the necessary regelialia.</span>
-        </div>
-        <span class="dialog-footer pt-4 ">
-          <el-button class="bg-white text-neutral-500 font-bold" @click="confirm">
-            Save changes
-          </el-button>
-          <el-button class="font-bold text-white border-0 absolute right-4 bg-transparent" @click="dialogVisibleNotif = false">
-            Close 
-          </el-button>
-        </span>
-      </div>
-    </el-dialog>
   </div>
 </template>
 
@@ -171,12 +154,14 @@
 import { defineComponent, h , ref} from 'vue'
 import { ElNotification, ElMessage, ElMessageBox } from 'element-plus'
 import type { Action } from 'element-plus'
+import swal from 'vue-sweetalert2';
 
 // Icon
 import {
   ThumbUpIcon,
   BellIcon,
 } from '@heroicons/vue/outline'
+import { TypeComponents } from 'element-plus/lib/utils';
 
 export default defineComponent({
   name: 'Notification',
@@ -193,8 +178,106 @@ export default defineComponent({
       dialogVisibleNotif.value = false
     }
 
-    const openNotif = () => {
-      dialogVisibleNotif.value = true
+    const openNotifDefault = () => {
+      ElMessage({
+        showClose: true,
+        message: h('p', null, [
+          h('span', { style: 'color: white; font-weight: bold' }, 'Bootstrap Notify'),
+          h('br', null),
+          h('span', { style: 'color: white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
+        ]),
+        type: 'info',
+      })
+    }
+
+    const openNotifSuccess = () => {
+      ElMessage({
+        showClose: true,
+        message: h('p', null, [
+          h('span', { style: 'color: white; font-weight: bold' }, 'Bootstrap Notify'),
+          h('br', null),
+          h('span', { style: 'color: white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
+        ]),
+        type: 'success',
+      })
+    }
+
+    const openNotifInfo= () => {
+      ElMessage({
+        showClose: true,
+        message: h('p', null, [
+          h('span', { style: 'color: white; font-weight: bold' }, 'Bootstrap Notify'),
+          h('br', null),
+          h('span', { style: 'color: white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
+        ]),
+        customClass: 'infoNotifClass',
+      })
+    }
+
+    const openNotifWarning = () => {
+      ElMessage({
+        showClose: true,
+        message: h('p', null, [
+          h('span', { style: 'color: white; font-weight: bold' }, 'Bootstrap Notify'),
+          h('br', null),
+          h('span', { style: 'color: white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
+        ]),
+        type: 'warning',
+      })
+    }
+
+    const openNotifDanger = () => {
+      ElMessage({
+        showClose: true,
+        message: h('p', null, [
+          h('span', { style: 'color: white; font-weight: bold' }, 'Bootstrap Notify'),
+          h('br', null),
+          h('span', { style: 'color: white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
+        ]),
+        type: 'error',
+      })
+    }
+
+    const openAlertDefault = () => {
+      swal('Hello Vue world!!!');
+      // swal.fire({
+      //   title: 'Error!',
+      //   text: 'Do you want to continue',
+      //   icon: 'error',
+      //   confirmButtonText: 'Cool'
+      // })
+      // swal.fire(
+      //   'The Internet?',
+      //   'That thing is still around?',
+      //   'question'
+      // )
+      // swal.fire({
+      //   title: 'Đã Xóa!',
+      //   text: "success",
+      //   icon: 'success',
+      //   customClass: {
+      //     confirmButton: 'btn btn-success btn-fill',
+      //   },
+      //   buttonsStyling: false,
+      // });
+      // swal
+      // .fire({
+      //   title: 'Bạn có chắc chắn?',
+      //   text: `Bạn sẽ không thể hoàn tác!`,
+      //   icon: 'warning',
+      //   showCancelButton: true,
+      //   customClass: {
+      //     confirmButton: 'btn btn-success btn-fill',
+      //     cancelButton: 'btn btn-danger btn-fill',
+      //   },
+      //   confirmButtonText: 'Xóa',
+      //   buttonsStyling: false,
+      // })
+      // .then((result) => {
+      //   if (result.value) {
+          
+      //   }
+      // });
     }
 
     const confirm = (event: any) => {
@@ -203,13 +286,33 @@ export default defineComponent({
 
     const openDefaultPopup = () => {
       dialogVisible.value = true
-
     }
+
+    // swal.fire({
+    //           title: 'Đã Xóa!',
+    //           text: (this.$t as any)('message.success', {
+    //             module: 'Xóa ',
+    //           }),
+    //           icon: 'success',
+    //           customClass: {
+    //             confirmButton: 'btn btn-success btn-fill',
+    //           },
+    //           buttonsStyling: false,
+    //         });
     return {
       // popup window
       dialogVisible,
       dialogVisibleNotif,
-      openNotif,
+      openNotifDefault,
+      openNotifWarning,
+      openNotifSuccess,
+      openNotifInfo,
+      openNotifDanger,
+      openAlertDefault,
+      // openAlertWarning,
+      // openAlertSuccess,
+      // openAlertInfo,
+      // openAlertDanger,
       confirmNotif,
       openDefaultPopup,
       confirm,
@@ -221,18 +324,33 @@ export default defineComponent({
 
 <style>
 
-.el-dialog.notificationClass .el-dialog__header {
-  @apply bg-gradient-to-r from-red-500 to-orange-500;
-}
-.el-dialog.notificationClass .el-dialog__title {
-  @apply text-slate-200;
+
+.el-message.el-message--info {
+  @apply bg-slate-700 border-slate-700 py-8 !important;
 }
 
-.el-dialog.notificationClass .el-dialog__body {
-  @apply bg-gradient-to-r from-red-500 to-orange-500;
+.el-message.el-message--info.infoNotifClass {
+  @apply bg-cyan-400 border-cyan-400 py-8 !important;
 }
 
-.el-dialog.notificationClass .el-dialog__body svg {
- @apply fill-slate-200 pb-4;
+.el-message.el-message--warning {
+  @apply bg-orange-500 border-orange-400 py-8 !important;
 }
+
+.el-message.el-message--error {
+  @apply bg-rose-500 border-rose-500 py-8 !important;
+}
+
+.el-message.el-message--success {
+  @apply bg-emerald-400 border-emerald-400 py-8 !important;
+}
+
+.el-icon.el-message__closeBtn {
+  @apply text-slate-200 pb-12 hover:text-slate-50;
+}
+
+.el-icon.el-message__icon {
+  @apply text-slate-100 pb-6;
+}
+
 </style>
