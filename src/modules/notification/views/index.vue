@@ -2,7 +2,7 @@
   <div class="p-6 h-full bg-slate-50">
     <div class="block rounded w-full">
       <div class="flex">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border rounded-lg shadow-md">
           <div class="font-bold pb-4">Alerts</div>
           <div>
             <div class="relative flex flex-grow pt-1">
@@ -121,7 +121,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border rounded-lg shadow-md">
           <div class="font-bold pb-4">Notifications</div>
           <el-button
             @click="openNotifDefault"
@@ -152,37 +152,37 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border rounded-lg shadow-md">
           <div class="font-bold pb-4">Sweet alerts</div>
           <el-button
             @click="openAlertDefault"
             class="bg-indigo-600 text-white font-bold"
-            >Default</el-button
+            >Default Alert</el-button
           >
           <el-button
             @click="openAlertInfo"
             class="bg-cyan-400 text-white font-bold"
-            >Info</el-button
+            >Info Alert</el-button
           >
           <el-button
             @click="openAlertSuccess"
             class="bg-emerald-400 text-white font-bold"
-            >Success</el-button
+            >Success Alert</el-button
           >
           <el-button
             @click="openAlertWarning"
             class="bg-orange-500 text-white font-bold"
-            >Warning</el-button
+            >Warning Alert</el-button
           >
           <el-button
             @click="openAlertDanger"
             class="bg-rose-500 text-white font-bold"
-            >Danger</el-button
+            >Danger Alert</el-button
           >
           <el-button
             @click="openAlertQuestion"
             class="bg-slate-800 text-white font-bold"
-            >Question</el-button
+            >Question Alert</el-button
           >
         </div>
       </div>
