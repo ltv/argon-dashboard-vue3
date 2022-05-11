@@ -1,8 +1,8 @@
 <template>
-  <div class="p-6 bg-slate-100">
+  <div class="p-6 bg-zinc-50">
     <div class="block rounded w-full">
       <div class="flex">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">
             Grid system
             <hr>
@@ -18,7 +18,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">
             Equal-width
             <hr>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">
             Setting one column width
             <hr>
@@ -61,7 +61,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">
             Variable width content
             <hr>
@@ -84,7 +84,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">
             Equal-width multi-row
             <hr>
@@ -107,7 +107,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-sm">
+        <div class="container mx-auto p-4 border-4 rounded-lg">
           <div class="font-bold pb-4">
             Mix and match
             <hr>
@@ -147,10 +147,10 @@ export default defineComponent({
 </script>
 <style scoped>
 .border {
-  @apply border-slate-300 rounded;
+  @apply border-slate-300 rounded break-normal;
 }
 .container {
-  @apply border-zinc-300;
+  @apply border-zinc-300 drop-shadow-xl;
 }
 hr {
   @apply border-stone-300;
