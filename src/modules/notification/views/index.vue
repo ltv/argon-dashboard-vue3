@@ -1,17 +1,21 @@
 <template>
-  <div class="p-6 h-full">
+  <div class="p-6 h-full bg-slate-50">
     <div class="block rounded w-full">
       <div class="flex">
-        <div class="container mx-auto p-4 border-4 rounded-lg">
+        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-2xl">
           <div class="font-bold pb-4">Alerts</div>
           <div>
             <div class="relative flex flex-grow pt-1">
               <el-alert class="bg-slate-700">
-                <span style="color: white"
-                  ><span style="font-weight: bold">Default!</span> This is a
-                  default alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
+                <span class="text-white"><span class="font-semibold">Default!</span> This is a default alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
                 </div>
               </el-alert>
@@ -19,11 +23,15 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert class="bg-indigo-500">
-                <span style="color: white"
-                  ><span style="font-weight: bold">Primary!</span> This is a
-                  primary alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
+                <span class="text-white"><span class="font-semibold">Primary!</span> This is a primary alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
                 </div>
               </el-alert>
@@ -31,26 +39,31 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="primary">
-                <span
-                  ><span style="font-weight: bold">Secondary!</span> This is a
-                  secondary alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
-                  <ThumbUpIcon
-                    class="h-5 w-5 text-black-400"
-                    aria-hidden="true"
-                  />
+                <span><span class="font-semibold">Secondary!</span> This is a secondary alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
+                  <ThumbUpIcon class="h-5 w-5 text-black-400" aria-hidden="true" />
                 </div>
               </el-alert>
             </div>
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="info" class="bg-cyan-400">
-                <span style="color: white"
-                  ><span style="font-weight: bold">Info!</span> This is a info
-                  alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
+                <span class="text-white"><span class="font-semibold">Info!</span> This is a info alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
                 </div>
               </el-alert>
@@ -58,11 +71,15 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="success" class="bg-emerald-400">
-                <span style="color: white"
-                  ><span style="font-weight: bold">Success!</span> This is a
-                  success alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
+                <span class="text-white"><span class="font-semibold">Success!</span> This is a success alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
                 </div>
               </el-alert>
@@ -70,11 +87,15 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="warning" class="bg-rose-500">
-                <span style="color: white"
-                  ><span style="font-weight: bold">Warning!</span> This is a
-                  warning alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
+                <span class="text-white"><span class="font-semibold">Warning!</span> This is a warning alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
                 </div>
               </el-alert>
@@ -82,11 +103,15 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="error" class="bg-orange-500">
-                <span style="color: white"
-                  ><span style="font-weight: bold">Error!</span> This is a error
-                  alert—check it out!</span
-                >
-                <div class="absolute inset-y-0 left-0 pl-3 py-3 items-center">
+                <span class="text-white"><span class="font-semibold">Error!</span> This is a error alert—check it out!</span>
+                <div class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  pl-3
+                  py-3
+                  items-center
+                ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
                 </div>
               </el-alert>
@@ -96,11 +121,11 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg">
+        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-2xl">
           <div class="font-bold pb-4">Notifications</div>
           <el-button
             @click="openNotifDefault"
-            class="bg-slate-700 text-white font-bold"
+            class="bg-slate-800 text-white font-bold"
             >Default</el-button
           >
           <el-button
@@ -127,14 +152,14 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border-4 rounded-lg">
+        <div class="container mx-auto p-4 border-4 rounded-lg drop-shadow-2xl">
           <div class="font-bold pb-4">Sweet alerts</div>
           <el-button
             @click="openAlertDefault"
-            class="bg-slate-700 text-white font-bold"
+            class="bg-indigo-600 text-white font-bold"
             >Default</el-button
           >
-          <!-- <el-button
+          <el-button
             @click="openAlertInfo"
             class="bg-cyan-400 text-white font-bold"
             >Info</el-button
@@ -152,8 +177,13 @@
           <el-button
             @click="openAlertDanger"
             class="bg-rose-500 text-white font-bold"
+            >Danger</el-button
+          >
+          <el-button
+            @click="openAlertQuestion"
+            class="bg-slate-800 text-white font-bold"
             >Question</el-button
-          > -->
+          >
         </div>
       </div>
     </div>
@@ -162,11 +192,13 @@
 
 <script lang="ts">
 import { defineComponent, h, inject, ref } from 'vue'
-import { ElNotification, ElMessage, ElMessageBox } from 'element-plus'
-import type { Action } from 'element-plus'
+import { ElMessage } from 'element-plus'
 
 // Icon
-import { ThumbUpIcon, BellIcon } from '@heroicons/vue/outline'
+import {
+  ThumbUpIcon,
+  BellIcon,
+} from '@heroicons/vue/solid'
 
 export default defineComponent({
   name: 'Notification',
@@ -176,29 +208,15 @@ export default defineComponent({
     BellIcon,
   },
   setup(_) {
-    const dialogVisible = ref(false)
-    const dialogVisibleNotif = ref(false)
     const $swal = inject<any>('$swal')
-
-    const confirmNotif = (event: any) => {
-      dialogVisibleNotif.value = false
-    }
 
     const openNotifDefault = () => {
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h(
-            'span',
-            { style: 'color: white; font-weight: bold' },
-            'Bootstrap Notify',
-          ),
+          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
           h('br', null),
-          h(
-            'span',
-            { style: 'color: white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
-          ),
+          h('span', { class: 'text-white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
         ]),
         type: 'info',
       })
@@ -208,17 +226,9 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h(
-            'span',
-            { style: 'color: white; font-weight: bold' },
-            'Bootstrap Notify',
-          ),
+          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
           h('br', null),
-          h(
-            'span',
-            { style: 'color: white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
-          ),
+          h('span', { class: 'text-white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
         ]),
         type: 'success',
       })
@@ -228,17 +238,9 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h(
-            'span',
-            { style: 'color: white; font-weight: bold' },
-            'Bootstrap Notify',
-          ),
+          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
           h('br', null),
-          h(
-            'span',
-            { style: 'color: white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
-          ),
+          h('span', { class: 'text-white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
         ]),
         customClass: 'infoNotifClass',
       })
@@ -248,17 +250,9 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h(
-            'span',
-            { style: 'color: white; font-weight: bold' },
-            'Bootstrap Notify',
-          ),
+          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
           h('br', null),
-          h(
-            'span',
-            { style: 'color: white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
-          ),
+          h('span', { class: 'text-white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
         ]),
         type: 'warning',
       })
@@ -268,133 +262,93 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h(
-            'span',
-            { style: 'color: white; font-weight: bold' },
-            'Bootstrap Notify',
-          ),
+          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
           h('br', null),
-          h(
-            'span',
-            { style: 'color: white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
-          ),
+          h('span', { class: 'text-white' }, 'Turning standard Bootstrap alerts into awesome notifications'),
         ]),
         type: 'error',
       })
     }
 
     const openAlertDefault = () => {
-      $swal('Hello Vue world!!!')
-      // this.$swal('Hello Vue world!!!')
-      // console.log(new swal())
-      // swal('Hello Vue world!!!')
-      // swal.fire({
-      //   title: 'Error!',
-      //   text: 'Do you want to continue',
-      //   icon: 'error',
-      //   confirmButtonText: 'Cool'
-      // })
-      // swal.fire(
-      //   'The Internet?',
-      //   'That thing is still around?',
-      //   'question'
-      // )
-      // swal.fire({
-      //   title: 'Đã Xóa!',
-      //   text: "success",
-      //   icon: 'success',
-      //   customClass: {
-      //     confirmButton: 'btn btn-success btn-fill',
-      //   },
-      //   buttonsStyling: false,
-      // });
-      // swal
-      // .fire({
-      //   title: 'Bạn có chắc chắn?',
-      //   text: `Bạn sẽ không thể hoàn tác!`,
-      //   icon: 'warning',
-      //   showCancelButton: true,
-      //   customClass: {
-      //     confirmButton: 'btn btn-success btn-fill',
-      //     cancelButton: 'btn btn-danger btn-fill',
-      //   },
-      //   confirmButtonText: 'Xóa',
-      //   buttonsStyling: false,
-      // })
-      // .then((result) => {
-      //   if (result.value) {
-      //   }
-      // });
+      $swal({
+        title: 'Here\'s a message!',
+        text: 'A few words about this sweet alert ...',
+        customClass: {
+          confirmButton: 'bg-indigo-600 border-indigo-600'
+        },
+      });
     }
 
-    const confirm = (event: any) => {
-      dialogVisible.value = false
+    const openAlertSuccess = () => {
+      $swal({
+        title: 'Success!',
+        text: 'A few words about this sweet alert ...',
+        icon: 'success',
+        customClass: {
+          confirmButton: 'bg-emerald-400 border-emerald-400 '
+        },
+      })
     }
 
-    const openDefaultPopup = () => {
-      dialogVisible.value = true
+    const openAlertInfo = () => {
+      $swal({
+        title: 'Info!',
+        text: 'A few words about this sweet alert ...',
+        icon: 'info',
+        customClass: {
+          confirmButton: 'bg-cyan-400 border-cyan-400'
+        },
+      })
     }
 
-    // swal.fire({
-    //           title: 'Đã Xóa!',
-    //           text: (this.$t as any)('message.success', {
-    //             module: 'Xóa ',
-    //           }),
-    //           icon: 'success',
-    //           customClass: {
-    //             confirmButton: 'btn btn-success btn-fill',
-    //           },
-    //           buttonsStyling: false,
-    //         });
+    const openAlertDanger = () => {
+      $swal({
+        title: 'Danger!',
+        text: 'A few words about this sweet alert ...',
+        icon: 'error',
+        customClass: {
+          confirmButton: 'bg-rose-500 border-rose-500 '
+        },
+      })
+    }
+
+    const openAlertWarning = () => {
+      $swal({
+        title: 'Warning!',
+        text: 'A few words about this sweet alert ...',
+        icon: 'warning',
+        customClass: {
+          confirmButton: 'bg-orange-400 border-orange-400 '
+        },
+      })
+    }
+
+    const openAlertQuestion = () => {
+      $swal({
+        title: 'Question!',
+        text: 'A few words about this sweet alert ...',
+        icon: 'question',
+        customClass: {
+          confirmButton: 'bg-slate-800 border-slate-800 '
+        },
+      })
+    }
+
     return {
       // popup window
-      dialogVisible,
-      dialogVisibleNotif,
       openNotifDefault,
       openNotifWarning,
       openNotifSuccess,
       openNotifInfo,
       openNotifDanger,
       openAlertDefault,
-      // openAlertWarning,
-      // openAlertSuccess,
-      // openAlertInfo,
-      // openAlertDanger,
-      confirmNotif,
-      openDefaultPopup,
-      confirm,
+      openAlertWarning,
+      openAlertSuccess,
+      openAlertInfo,
+      openAlertDanger,
+      openAlertQuestion,
     }
   },
 })
 </script>
-
-<style>
-.el-message.el-message--info {
-  @apply bg-slate-700 border-slate-700 py-8 !important;
-}
-
-.el-message.el-message--info.infoNotifClass {
-  @apply bg-cyan-400 border-cyan-400 py-8 !important;
-}
-
-.el-message.el-message--warning {
-  @apply bg-orange-500 border-orange-400 py-8 !important;
-}
-
-.el-message.el-message--error {
-  @apply bg-rose-500 border-rose-500 py-8 !important;
-}
-
-.el-message.el-message--success {
-  @apply bg-emerald-400 border-emerald-400 py-8 !important;
-}
-
-.el-icon.el-message__closeBtn {
-  @apply text-slate-200 pb-12 hover:text-slate-50;
-}
-
-.el-icon.el-message__icon {
-  @apply text-slate-100 pb-6;
-}
-</style>
