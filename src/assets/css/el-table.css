@@ -1,5 +1,5 @@
 .el-table__header thead {
-  @apply font-bold text-base font-sans decoration-stone-400 !important;
+  @apply font-bold text-base font-sans text-slate-400 !important;
 }
 
 .el-table {

@@ -3,7 +3,7 @@
     <div class="block rounded h-full w-full">    
       <div class="pl-12 mt-4">
         <el-dropdown size="small" split-button type="primary" @command="handleCommand">
-          <span> Show: <span :style="'color: rgb(0, 100, 255);'"> {{ choosedItem }}</span></span>
+          <span> Show: <span class="text-blue"> {{ choosedItem }}</span></span>
           <template #dropdown>
             <el-dropdown-menu>
               <el-dropdown-item 
@@ -48,7 +48,7 @@
           </el-table-column>
           <el-table-column label="Date Create">
             <template #default="scope">
-              <div style="color: #8a8a8a">
+              <div class="text-slate-400">
                 {{ scope.row.creDate }}
               </div>
             </template>
