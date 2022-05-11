@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .el-table__header thead {
   @apply font-bold text-base font-sans decoration-stone-400 !important;
 }
@@ -29,6 +25,10 @@
 
 .el-table td {
   @apply py-3 !important;
+}
+
+.el-table__row {
+  @apply h-16;
 }
 
 .el-table__row,

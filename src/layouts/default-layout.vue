@@ -1,11 +1,11 @@
 <template>
-  <div class="h-screen flex overflow-hidden bg-white">
-    <div class="flex-1 min-w-0 flex flex-col overflow-hidden">
-      <main class="flex-1 flex overflow-hidden">
-        <div class="flex-1 flex xl:overflow-hidden w-full">
+  <div class="h-screen overflow-auto flex bg-white">
+    <div class="flex-1 min-w-0 flex flex-col ">
+      <main class="flex-1 flex ">
+        <div class="flex-1 flex w-full">
           <section
             aria-labelledby="primary-heading"
-            class="min-w-0 flex-1 h-full flex flex-col overflow-hidden lg:order-last"
+            class="min-w-0 flex-1 h-full flex flex-col"
           >
             <router-view v-slot="{ Component }">
               <component :is="Component" />
