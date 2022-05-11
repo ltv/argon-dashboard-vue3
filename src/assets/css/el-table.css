@@ -33,9 +33,6 @@
 
 .el-table__row,
 .el-table__row.hover-row {
-  @apply hover:bg-slate-300 !important;
+  @apply hover:bg-gray-200 !important;
 }
 
-.el-table--enable-row-hover .el-table__body tr:hover > td {
-  @apply bg-slate-300 hover:bg-slate-300 text-neutral-500 !important;
-}

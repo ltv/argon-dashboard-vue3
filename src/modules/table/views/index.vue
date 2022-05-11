@@ -1,7 +1,7 @@
 <template>
-  <div class="flex p-6 h-full">
+  <div class="flex p-6 h-full drop-shadow-sm">
     <div class="block rounded h-full w-full">    
-      <div class="pl-12 mt-4">
+      <div class="pl-12 mt-4 drop-shadow-lg">
         <el-dropdown size="small" split-button type="primary" @command="handleCommand">
           <span> Show: <span class="text-blue"> {{ choosedItem }}</span></span>
           <template #dropdown>
@@ -38,7 +38,7 @@
           <el-table-column label="Status" align="center" header-align="center">
             <template #default="scope">
               <el-tag
-                :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Done' ? 'primary' : 'success'"
+                :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Normal' ? 'primary' : 'success'"
                 effect="dark"
                 round
               >
@@ -99,8 +99,8 @@ export default defineComponent({
         id: 1,
         creDate: '12/12/2022',
         deadLine: '14/12/2022',
-        status: 'Urgent',
-        isDone: false,
+        status: 'Normal',
+        isDone: true,
         content: 'Store Saler',
       },
       {
@@ -123,8 +123,8 @@ export default defineComponent({
         id: 4,
         creDate: '12/12/2022',
         deadLine: '14/12/2022',
-        status: 'Urgent',
-        isDone: false,
+        status: 'Normal',
+        isDone: true,
         content: 'Store Saler',
       },
       {
@@ -218,8 +218,7 @@ export default defineComponent({
 <style>
 
 .deadline {
-  color: rgb(0, 180, 0);
+  @apply text-lime-400;
 }
-
 </style>
 

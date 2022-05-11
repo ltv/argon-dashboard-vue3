@@ -1,3 +1,11 @@
 .el-tag {
   @apply w-20 rounded-full font-light !important;
 }
+
+.el-tag.el-tag--success {
+  @apply bg-emerald-300 border-emerald-300 !important;
+}
+
+.el-tag.el-tag--danger {
+  @apply bg-rose-500 border-rose-500 !important;
+}
