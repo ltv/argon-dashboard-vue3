@@ -1,9 +1,5 @@
 // Custom css, do it later, now use the element plus css
-<<<<<<< HEAD
 import 'assets/css/var.scss'
-=======
-
->>>>>>> resole conflict
 import 'assets/css/el-button.scss'
 import 'assets/css/el-table.css'
 import 'assets/css/el-table-column.css'
