@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/buttons',
     component: Button,
-    name: 'Halana button',
+    name: 'Button',
   },
   {
     path: '/notification',
