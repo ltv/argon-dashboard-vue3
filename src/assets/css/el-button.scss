@@ -1,0 +1,34 @@
+/* @import */
+$types: 'primary', 'secondary', 'success', 'warning', 'info', 'danger';
+body {
+  .el-button {
+    --el-button-text-color: var(--button-text-color);
+    --el-button-hover-text-color: var(--button-hover-text-color);
+    --el-button-active-text-color: var(--button-active-text-color);
+
+    --el-button-bg-color: var(--button-bg-color);
+    --el-button-hover-bg-color: var(--button-hover-bg-color) !important;
+    --el-button-active-bg-color: var(--button-active-bg-color) !important;
+
+    --el-button-border-color: var(--button-border-color) !important;
+    --el-button-hover-border-color: var(--button-hover-border-color) !important;
+    --el-button-active-border-color: var(--button-active-border-color) !important;
+  }
+  @each $type in $types {
+    .el-button--#{$type} {
+      background-color: var(--el-button-bg-color) !important;
+
+      --el-button-bg-color: var(--button-bg-color-#{$type}) !important;
+      --el-button-hover-bg-color: var(--button-hover-bg-color-#{$type}) !important;
+      --el-button-active-bg-color: var(--button-active-bg-color-#{$type}) !important;
+
+      --el-button-border-color: var(--button-border-color-#{$type}) !important;
+      --el-button-hover-border-color: var(--button-hover-border-color-#{$type}) !important;
+      --el-button-active-border-color: var(--button-active-border-color-#{$type}) !important;
+
+      --el-button-text-color: var(--button-text-color-#{$type});
+      --el-button-hover-text-color: var(--button-hover-text-color-#{$type}) !important;
+      --el-button-active-text-color: var(--button-active-text-color-#{$type}) !important;
+    }
+  }
+}
