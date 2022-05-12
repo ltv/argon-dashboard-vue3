@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* @import */
 $types: 'primary', 'secondary', 'success', 'warning', 'info', 'danger';
 body {
@@ -32,3 +33,28 @@ body {
     }
   }
 }
+=======
+body {
+    .is-round {
+        @apply rounded-full;
+    }
+    .el-button--default {
+        @apply transition ease-in-out hover:-translate-y-1 rounded-full shadow font-semibold;
+    }
+    .el-button--primary {
+        @apply bg-blue-600 hover:bg-sky-500 #{!important};
+    }
+    .el-button--success {
+        @apply bg-green-500 border-green-400 hover:bg-green-400;
+    }
+    .el-button--danger {
+        @apply bg-red-500 border-red-400 hover:bg-red-400 #{!important};
+    }
+    .el-button--warning {
+        @apply bg-orange-500 border-orange-400 hover:bg-orange-400;
+    }
+    .el-button--info {
+        @apply bg-sky-500 border-sky-400 hover:bg-sky-400;
+    }
+}
+>>>>>>> resole conflict
