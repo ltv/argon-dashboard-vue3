@@ -1,5 +1,4 @@
 // Custom css, do it later, now use the element plus css
-import 'assets/css/el-button.css'
 import 'assets/css/el-table.css'
 import 'assets/css/el-table-column.css'
 import 'assets/css/el-dropdown.css'
