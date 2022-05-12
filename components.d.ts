@@ -26,5 +26,3 @@ declare module 'vue' {
     Table: typeof import('./src/components/Table/index.vue')['default']
   }
 }
-
-export { }
