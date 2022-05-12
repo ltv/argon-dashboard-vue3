@@ -9,9 +9,9 @@
             <el-divider />
         <e-row class="mb-5">
             <el-container class="px-5 flex flex-wrap">
-                <el-button type="primary" round>Primary</el-button>
-                <el-button type="primary" :icon="Box" round>With icon</el-button>
-                <el-button type="primary" :icon="Setting" round />                                    
+                <el-button type="primary">Primary</el-button>
+                <el-button type="primary" :icon="Box">With icon</el-button>
+                <el-button type="primary" :icon="Setting" />                                    
             </el-container>
         </e-row>
     </div>
@@ -25,13 +25,12 @@
             <el-divider />
         <e-row class="mb-5">
             <el-container class="px-5 flex flex-wrap">
-                <el-button round>Default</el-button>
-                <el-button type="primary" round>Primary</el-button>
-                <el-button class="secondary" round>Secondary</el-button>
-                <el-button type="success" round>Success</el-button>
-                <el-button type="info" round>Info</el-button>
-                <el-button type="warning" round>Warning</el-button>
-                <el-button type="danger" round>Danger</el-button>                                   
+                <el-button >Default</el-button>
+                <el-button type="primary">Primary</el-button>
+                <el-button type="success">Success</el-button>
+                <el-button type="info">Info</el-button>
+                <el-button type="danger">Danger</el-button>                                 
+                <el-button type="warning">Warning</el-button>
             </el-container>
         </e-row>
     </div>
@@ -45,13 +44,13 @@
             <el-divider />
         <e-row class="mb-5">
             <el-container class="px-5 flex flex-wrap">
-                <el-button plain round>Default</el-button>
-                <el-button type="primary" plain round>Primary</el-button>
-                <el-button class="secondary" plain round>Secondary</el-button>
-                <el-button type="success" plain round>Success</el-button>
-                <el-button type="info" plain round>Info</el-button>
-                <el-button type="warning" plain round>Warning</el-button>
-                <el-button type="danger" plain round>Danger</el-button>                                   
+                <el-button plain>Default</el-button>
+                <el-button type="primary" plain>Primary</el-button>
+                <el-button class="secondary" plain>Secondary</el-button>
+                <el-button type="success" plain>Success</el-button>
+                <el-button type="info" plain>Info</el-button>
+                <el-button type="warning" plain>Warning</el-button>
+                <el-button type="danger" plain>Danger</el-button>                                   
             </el-container>
         </e-row>
     </div>
