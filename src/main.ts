@@ -4,6 +4,9 @@ import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import App from './App.vue'
 import AppComponents from './components'
+import VueSweetAlert2 from 'vue-sweetalert2'
+import 'sweetalert2/dist/sweetalert2.min.css'
+
 import './index.css'
 import router from './router'
 // create new app instance
@@ -17,6 +20,8 @@ const createNewApp = () => {
   app.use(ElementPlus)
   app.use(AppComponents)
   app.use(createPinia())
+  app.use(VueSweetAlert2)
+
   app.mount('#app')
   app.config.performance = true
 }

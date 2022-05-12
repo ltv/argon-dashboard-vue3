@@ -1,8 +1,9 @@
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
 const Button = () => import('modules/dashboard/views/index.vue')
-const Table = () => import('modules/Table/views/index.vue')
-const Grid = () => import('modules/Grid/views/index.vue')
+const Table = () => import('modules/table/views/index.vue')
+const Grid = () => import('modules/grid/views/index.vue')
+const Notification = () => import('modules/notification/views/index.vue')
 const routes = [
   {
     path: '/',
@@ -13,6 +14,11 @@ const routes = [
     path: '/buttons',
     component: Button,
     name: 'Button',
+  },
+  {
+    path: '/notification',
+    component: Notification,
+    name: 'Notification',
   },
   {
     path: '/tables',

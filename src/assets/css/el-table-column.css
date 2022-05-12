@@ -1,7 +1,7 @@
 .el-table .success-row {
-  --el-table-tr-bg-color: var(--el-color-success-light);
+  @apply bg-gradient-to-r from-lime-100 to-lime-50;
 }
 
 .el-table .primary-row {
-  --el-table-tr-bg-color: var(--el-color-primary-light-8);
+  @apply bg-gradient-to-r from-cyan-100 to-cyan-50;
 }
