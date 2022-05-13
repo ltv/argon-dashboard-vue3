@@ -19,8 +19,12 @@
   @apply rounded-r-lg;
 } 
 
+.el-table .el-checkbox__inner {
+  @apply bg-slate-100 border-transparent !important;
+}
+
 .el-table th.is-leaf .el-checkbox__inner {
-  @apply bg-slate-300 border-transparent !important;
+  @apply bg-slate-300 !important;
 }
 
 .el-table td {
@@ -36,3 +40,10 @@
   @apply hover:bg-gray-200 !important;
 }
 
+.el-table__body .el-table_1_column_1 {
+   @apply bg-white border-transparent !important;
+}
+
+.el-table__body .el-table_1_column_2 {
+  @apply rounded-l-lg !important;
+}
