@@ -5,8 +5,6 @@ import 'assets/css/el-dropdown.css'
 import 'assets/css/el-tag.css'
 import 'assets/css/var.scss'
 import 'assets/css/typography.scss'
-import 'assets/css/el-alert.css'
-import 'assets/css/el-button.scss'
 
 import 'element-plus/dist/index.css'
 import 'element-plus/es/components/message/style/css'

@@ -9,7 +9,7 @@
       <!-- H1 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4">
-          <h1 class="opacity-50">Heading 1</h1>
+          <h1 class="opacity-60">Heading 1</h1>
         </div>
         <div class="w-3/4">
           <h1>Fancy Dashboard</h1>
@@ -18,16 +18,16 @@
       <!-- H2 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <h2 class="opacity-50">Heading 2</h2>
+          <h2 class="opacity-60">Heading 2</h2>
         </div>
         <div class="w-3/4 py-1">
-          <h2 >Fancy Dashboard</h2>
+          <h2>Fancy Dashboard</h2>
         </div>
       </div>
       <!-- H3 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <h3 class="opacity-50">Heading 3</h3>
+          <h3 class="opacity-60">Heading 3</h3>
         </div>
         <div class="w-3/4 py-1">
           <h3>Fancy Dashboard</h3>
@@ -36,7 +36,7 @@
       <!-- H4 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <h4 class="opacity-50">Heading 4</h4>
+          <h4 class="opacity-60">Heading 4</h4>
         </div>
         <div class="w-3/4 py-1">
           <h4>Fancy Dashboard</h4>
@@ -45,7 +45,7 @@
       <!-- H5 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <h5 class="opacity-50">Heading 5</h5>
+          <h5 class="opacity-60">Heading 5</h5>
         </div>
         <div class="w-3/4 py-1">
           <h5>Fancy Dashboard</h5>
@@ -54,7 +54,7 @@
       <!-- H6 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1 flex">
-          <h6 class="opacity-50">Heading 6</h6>
+          <h6 class="opacity-60">Heading 6</h6>
         </div>
         <div class="w-3/4 py-1">
           <h6>Fancy Dashboard</h6>
