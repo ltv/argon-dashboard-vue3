@@ -1,9 +1,23 @@
 <template>
-  <div class="flex p-6 h-full drop-shadow-sm">
-    <div class="block rounded h-full w-full">    
-      <div class="pl-12 mt-4 drop-shadow-lg">
+  <div class="flex p-6 h-full">
+    <div class="block rounded h-full w-full">  
+      <div class="pl-4">
+        <div class="text-blue">
+          <div class="relative flex flex-grow pt-1">
+            <div class="items-center">
+              <UserAddIcon class="h-7 w-7" aria-hidden="true" />
+            </div>
+            <span class="pl-1 text-xl text-blue font-bold">Recruitment Request</span>
+
+            <div class="py-1">
+              <span class="pl-6 text-sm text-gray-400">350 Total Request</span>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="pl-12 mt-4 drop-shadow-[0_6px_3px_rgba(0,64,255,0.25)]">
         <el-dropdown size="small" split-button type="primary" @command="handleCommand">
-          <span> Show: <span class="text-blue"> {{ choosedItem }}</span></span>
+          <span class="px-2"> Show: <span class="text-blue"> {{ choosedItem }}</span></span>
           <template #dropdown>
             <el-dropdown-menu>
               <el-dropdown-item 
@@ -27,8 +41,8 @@
           @selection-change="handleSelectionChange"
           class="h-full w-full"
         >
-          <el-table-column type="selection" class="flex-none" width="55"/>
-          <el-table-column property="content" label="Request" class="flex-1">
+          <el-table-column type="selection" class="flex-none" width="42"/>
+          <el-table-column property="content" label="Request">
             <template #default="scope">
               <div :class='{ done: scope.row.isDone }'>
                 {{ scope.row.content }}
@@ -60,11 +74,13 @@
           </el-table-column>
           <el-table-column label="Action" align="center">
             <template #default="scope">
-              <el-button  
-                size="small"
-                type="plain"
-                @click="console.log(scope.$index)"
-                round
+              <el-button 
+              class="px-8 border-blue-200 color-blue-200"
+              type="primary"
+              size="small"
+              @click="console.log(scope.$index)"
+              round
+              plain
               >
               View
               </el-button>
@@ -80,6 +96,11 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import type { ElTable } from 'element-plus'
+// Icon
+import {
+  UserAddIcon,
+} from '@heroicons/vue/outline'
+
 interface Task {
   id: any
   content: string
@@ -91,6 +112,10 @@ interface Task {
 
 export default defineComponent({
   name: 'Table',
+  components: {
+    //Icon
+    UserAddIcon,
+  },
   setup(_) {
     const newTask = ref('');
     const dialogVisible = ref(false)
@@ -99,25 +124,25 @@ export default defineComponent({
         id: 1,
         creDate: '12/12/2022',
         deadLine: '14/12/2022',
-        status: 'Normal',
-        isDone: true,
+        status: 'Urgent',
+        isDone: false,
         content: 'Store Saler',
       },
       {
         id: 2,
         creDate: '12/12/2022',
         deadLine: '14/12/2022',
-        status: 'Pending',
+        status: 'Urgent',
         isDone: false,
-        content: 'Retailer',
+        content: 'Product',
       },
       {
         id: 3,
         creDate: '12/12/2022',
         deadLine: '14/12/2022',
-        status: 'Urgent',
-        isDone: false,
-        content: 'Store Saler',
+        status: 'Normal',
+        isDone: true,
+        content: 'Retailer',
       },
       {
         id: 4,
@@ -131,7 +156,15 @@ export default defineComponent({
         id: 5,
         creDate: '12/12/2022',
         deadLine: '14/12/2022',
-        status: 'Urgent',
+        status: 'Normal',
+        isDone: true,
+        content: 'Store Saler',
+      },
+      {
+        id: 5,
+        creDate: '12/12/2022',
+        deadLine: '14/12/2022',
+        status: 'Pending',
         isDone: false,
         content: 'Accountant',
       },
@@ -220,5 +253,17 @@ export default defineComponent({
 .deadline {
   @apply text-lime-400;
 }
+
+.el-button.el-button--primary.el-button--small.is-plain:hover {
+  @apply bg-blue-50 text-blue-300 !important;
+}
+
+.el-dropdown .el-button-group .el-button.el-button--primary.el-button--small {
+  @apply border-none !important;
+}
+
+/* .el-dropdown .el-button-group .el-button.el-button--primary.el-button--small.el-dropdown__caret-button {
+  cursor: progress;
+} */
 </style>
 

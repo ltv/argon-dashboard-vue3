@@ -1,5 +1,5 @@
 /* @import */
-$types: 'primary', 'secondary', 'success', 'warning', 'info', 'danger';
+$types: 'default', 'primary', 'secondary', 'success', 'warning', 'info', 'danger';
 body {
   .el-button {
     --el-button-text-color: var(--button-text-color);
@@ -14,11 +14,40 @@ body {
     --el-button-hover-border-color: var(--button-hover-border-color) !important;
     --el-button-active-border-color: var(--button-active-border-color) !important;
   }
+
   @each $type in $types {
     .el-button--#{$type} {
-      background-color: var(--el-button-bg-color) !important;
+        background-color: var(--button-bg-color-#{$type}) !important;
+        --el-button-bg-color: var(--button-bg-color-#{$type}) !important;
+        --el-button-hover-bg-color: var(--button-hover-bg-color-#{$type}) !important;
+        --el-button-active-bg-color: var(--button-active-bg-color-#{$type}) !important;
 
-      --el-button-bg-color: var(--button-bg-color-#{$type}) !important;
+        --el-button-border-color: var(--button-border-color-#{$type}) !important;
+        --el-button-hover-border-color: var(--button-hover-border-color-#{$type}) !important;
+        --el-button-active-border-color: var(--button-active-border-color-#{$type}) !important;
+
+        --el-button-text-color: var(--button-text-color-#{$type});
+        --el-button-hover-text-color: var(--button-hover-text-color-#{$type}) !important;
+        --el-button-active-text-color: var(--button-active-text-color-#{$type}) !important;
+        
+        &:active {
+          filter: drop-shadow(0 0 #0000);
+          background-color: var(--button-active-bg-color-#{$type}) !important;
+        }
+
+        @if $type == 'secondary' {
+          @apply shadow-lg;
+        }
+        
+        &:hover {
+          filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+          background: var(--button-hover-bg-color-#{$type});
+        }
+    }
+
+    .el-button.el-button--#{$type}.is-plain {
+      background: none !important;
+      
       --el-button-hover-bg-color: var(--button-hover-bg-color-#{$type}) !important;
       --el-button-active-bg-color: var(--button-active-bg-color-#{$type}) !important;
 
@@ -29,6 +58,21 @@ body {
       --el-button-text-color: var(--button-text-color-#{$type});
       --el-button-hover-text-color: var(--button-hover-text-color-#{$type}) !important;
       --el-button-active-text-color: var(--button-active-text-color-#{$type}) !important;
+      
+      &:active {
+        filter: drop-shadow(0 0 #0000) !important;
+        background: var(--button-active-bg-color-#{$type}) !important;
+      }
+
+      @if $type == 'secondary' {
+        @apply shadow-none border-none;
+      }
+
+      &:hover {
+        filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+        background: var(--button-hover-bg-color-#{$type}) !important;
+      }
+      
     }
   }
 }
