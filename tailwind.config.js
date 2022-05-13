@@ -104,6 +104,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
+      gril: ['Grilroy', 'sans-serif'],
     },
   },
   plugins: [require('@tailwindcss/forms')],
