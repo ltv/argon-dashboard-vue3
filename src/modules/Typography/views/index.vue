@@ -9,67 +9,55 @@
       <!-- H1 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4">
-          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
-            Heading 1
-          </p>
+          <h1>Heading 1</h1>
         </div>
         <div class="w-3/4">
-          <h1>Argon Dashboard PRO React</h1>
+          <h1>Fancy Dashboard</h1>
         </div>
       </div>
       <!-- H2 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
-            Heading 2
-          </p>
+          <h2>Heading 2</h2>
         </div>
         <div class="w-3/4 py-1">
-          <h2>Argon Dashboard PRO React</h2>
+          <h2>Fancy Dashboard</h2>
         </div>
       </div>
       <!-- H3 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
-            Heading 3
-          </p>
+          <h3>Heading 3</h3>
         </div>
         <div class="w-3/4 py-1">
-          <h3>Argon Dashboard PRO React</h3>
+          <h3>Fancy Dashboard</h3>
         </div>
       </div>
       <!-- H4 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
-            Heading 4
-          </p>
+          <h4>Heading 4</h4>
         </div>
         <div class="w-3/4 py-1">
-          <h4>Argon Dashboard PRO React</h4>
+          <h4>Fancy Dashboard</h4>
         </div>
       </div>
       <!-- H5 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
-          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
-            Heading 5
-          </p>
+          <h5>Heading 5</h5>
         </div>
         <div class="w-3/4 py-1">
-          <h5>Argon Dashboard PRO React</h5>
+          <h5>Fancy Dashboard</h5>
         </div>
       </div>
       <!-- H6 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1 flex">
-          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
-            Heading 6
-          </p>
+          <h6>Heading 6</h6>
         </div>
         <div class="w-3/4 py-1">
-          <h6>Argon Dashboard PRO React</h6>
+          <h6>Fancy Dashboard</h6>
         </div>
       </div>
     </div>
@@ -91,7 +79,7 @@
           </p>
         </div>
         <div class="w-3/4">
-          <h1 class="display1">Argon Dashboard PRO React</h1>
+          <h1 class="display1">Fancy Dashboard</h1>
         </div>
       </div>
       <!-- Display2 -->
@@ -102,7 +90,7 @@
           </p>
         </div>
         <div class="w-3/4 py-1">
-          <h2 class="display2">Argon Dashboard PRO React</h2>
+          <h2 class="display2">Fancy Dashboard</h2>
         </div>
       </div>
       <!-- Display3 -->
@@ -113,7 +101,7 @@
           </p>
         </div>
         <div class="w-3/4 py-1">
-          <h3 class="display3">Argon Dashboard PRO React</h3>
+          <h3 class="display3">Fancy Dashboard</h3>
         </div>
       </div>
       <!-- Display4 -->
@@ -124,7 +112,7 @@
           </p>
         </div>
         <div class="w-3/4 py-1">
-          <h4 class="display4">Argon Dashboard PRO React</h4>
+          <h4 class="display4">Fancy Dashboard</h4>
         </div>
       </div>
     </div>
@@ -146,7 +134,7 @@
           </p>
         </div>
         <div class="w-3/4">
-          <h1 class="heading">Argon Dashboard PRO React</h1>
+          <h1 class="heading">Fancy Dashboard</h1>
         </div>
       </div>
       <!-- Heading title -->
@@ -157,7 +145,7 @@
           </p>
         </div>
         <div class="w-3/4 py-1">
-          <h2 class="heading_title">Argon Dashboard PRO React</h2>
+          <h2 class="heading_title">Fancy Dashboard</h2>
         </div>
       </div>
       <!-- Heading with small subtitle -->
