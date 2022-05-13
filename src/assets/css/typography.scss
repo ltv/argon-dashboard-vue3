@@ -1,50 +1,50 @@
 body {
     // Typography - H tags
     h1 {
-        @apply text-2xl font-sans font-normal opacity-80;
+        @apply text-2xl font-gril font-normal opacity-80;
     }
     h2 {
-        @apply text-xl font-sans font-normal opacity-80;
+        @apply text-xl font-gril font-normal opacity-80;
     }
     h3 {
-        @apply text-lg font-sans font-normal opacity-80;
+        @apply text-lg font-gril font-normal opacity-80;
     }
     h4 {
-        @apply text-base font-sans font-normal opacity-80;
+        @apply text-base font-gril font-normal opacity-80;
     }
     h5 {
-        @apply text-sm font-sans font-normal opacity-80;
+        @apply text-sm font-gril font-normal opacity-80;
     }
     h6 {
-        @apply text-xs font-sans font-normal opacity-80;
+        @apply text-xs font-gril font-normal opacity-80;
     }
 
     // Typograpy - display section
     .display1 {
-        @apply text-6xl font-sans font-normal opacity-80;
+        @apply text-6xl font-gril font-normal opacity-80;
     }
     .display2 {
-        @apply text-5xl font-sans font-normal opacity-80;
+        @apply text-5xl font-gril font-normal opacity-80;
     }
     .display3 {
-        @apply text-4xl font-sans font-normal opacity-80;
+        @apply text-4xl font-gril font-normal opacity-80;
     }
     .display4 {
-        @apply text-3xl font-sans font-normal opacity-80;
+        @apply text-3xl font-gril font-normal opacity-80;
     }
 
     // Typography - Specialized titles
     .heading {
-        @apply text-base uppercase font-sans font-normal tracking-wide;
+        @apply text-base uppercase font-gril font-normal tracking-wide;
     }
     .heading_title {
-        @apply text-2xl text-sky-400 uppercase font-sans font-semibold tracking-wide;
+        @apply text-2xl text-sky-400 uppercase font-gril font-semibold tracking-wide;
     }
     .heading_sub_title {
-        @apply text-3xl font-sans font-semibold leading-6;
+        @apply text-3xl font-gril font-semibold leading-6;
     }
     .heading_section {
-        @apply text-xl font-sans font-light;
+        @apply text-xl font-gril font-light;
     }
     
     // Paragraphs
