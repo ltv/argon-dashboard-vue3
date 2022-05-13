@@ -1,6 +1,6 @@
 <template>
   <!-- Headings -->
-  <div class="bg-white w-1/2 mx-auto mt-5 mb-2 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-3/4 mx-auto mt-5 mb-2 shadow-lg rounded-lg flex flex-col">
     <!-- Heading header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Headings</p>
@@ -65,7 +65,7 @@
   <!-- End Headings -->
 
   <!-- Display titles -->
-  <div class="bg-white w-1/2 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
     <!-- Display header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Display titles</p>
@@ -120,7 +120,7 @@
   <!-- End display titles -->
 
   <!-- Specialized titles -->
-  <div class="bg-white w-1/2 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
     <!-- Specialized header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Specialized titles</p>
@@ -177,7 +177,7 @@
   <!-- End display titles -->
 
   <!-- Specialized -->
-  <div class="bg-white w-1/2 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
     <!-- Paragraphs Header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Paragraphs</p>
