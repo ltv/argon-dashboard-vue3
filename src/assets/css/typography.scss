@@ -1,79 +1,82 @@
 body {
     // Typography - H tags
     h1 {
-        @apply text-2xl font-gril font-normal opacity-80;
+        @apply text-3xl font-gril font-medium leading-6 opacity-90;
     }
     h2 {
-        @apply text-xl font-gril font-normal opacity-80;
+        @apply text-xl font-gril font-medium leading-6 opacity-90;
     }
     h3 {
-        @apply text-lg font-gril font-normal opacity-80;
+        @apply text-lg font-gril font-medium leading-6 opacity-90;
     }
     h4 {
-        @apply text-base font-gril font-normal opacity-80;
+        @apply text-base font-gril font-medium leading-6 opacity-90;
     }
     h5 {
-        @apply text-sm font-gril font-normal opacity-80;
+        @apply text-sm font-gril;
     }
     h6 {
-        @apply text-xs font-gril font-normal opacity-80;
+        @apply text-xs font-gril;
     }
 
     // Typograpy - display section
     .display1 {
-        @apply text-6xl font-gril font-normal opacity-80;
+        @apply text-6xl font-gril;
     }
     .display2 {
-        @apply text-5xl font-gril font-normal opacity-80;
+        @apply text-5xl font-gril;
     }
     .display3 {
-        @apply text-4xl font-gril font-normal opacity-80;
+        @apply text-4xl font-gril;
     }
     .display4 {
-        @apply text-3xl font-gril font-normal opacity-80;
+        @apply text-3xl font-gril;
     }
 
     // Typography - Specialized titles
     .heading {
-        @apply text-base uppercase font-gril font-normal tracking-wide;
+        @apply text-base uppercase font-gril tracking-wide;
     }
     .heading_title {
-        @apply text-2xl text-sky-400 uppercase font-gril font-semibold tracking-wide;
+        @apply text-2xl text-sky-400 uppercase font-gril tracking-wide;
     }
     .heading_sub_title {
-        @apply text-3xl font-gril font-semibold leading-6;
+        @apply text-3xl font-gril opacity-90;
     }
     .heading_section {
-        @apply text-xl font-gril font-light;
+        @apply text-xl font-gril font-light opacity-60;
     }
     
     // Paragraphs
     p {
-        @apply text-base font-light leading-7
+        @apply text-base font-gril font-light leading-7
     }
     .lead {
-        @apply text-xl font-light leading-7
+        @apply text-xl font-gril font-light leading-7
     }
     .blockquote {
-        @apply mb-4 text-xl leading-6 block
+        @apply mb-4 font-gril text-base leading-6 block opacity-60
+    }
+    .blockquote-footer {
+        @apply mb-4 font-gril text-base leading-6 block opacity-80
     }
     .text-muted {
-        @apply text-slate-400
+        @apply font-gril text-slate-400
     }
     .text-primary {
-        @apply text-blue-500
+        @apply font-gril text-blue-500
     }
     .text-info {
-        @apply text-sky-400
+        @apply font-gril text-sky-400
     }
     .text-success {
-        @apply text-green-500
+        @apply font-gril text-green-500
     }
     .text-warning {
-        @apply text-orange-500
+        @apply font-gril text-orange-500
     }
     .text-danger {
-        @apply text-red-400
+        @apply font-gril text-red-400
     }
 
 }
