@@ -1,0 +1,36 @@
+//          type      bg       color    border    bg-hv     border-hv color-hv  bg-active
+$colors: 'default' '#b4ffff' '#000000' '#b4ffff' '#bbffff' '#bbffff' '#000000' '#6cffff',
+        'primary' '#1b459c' '#ffffff' '#1b459c' '#245dd3' '#4b7be1' '#ffffff' '#245dd3',
+        'secondary' '#f9f9f9' '#1b459c' '#f9f9f9' '#f9f9f9' '#f9f9f9' '#000000' '#f9f9f9',
+        'success' '#5eab46' '#ffffff' '#5eab46' '#6bb853' '#6bb853' '#ffffff' '#7bc066',
+        'info' '#334d6e' '#ffffff' '#334d6e' '#3e5d85' '#3e5d85' '#ffffff' '#496e9d',
+        'warning' '#ffb127' '#ffffff' '#ffb127' '#feb83c' '#feb83c' '#ffffff' '#ffc052',
+        'danger' '#e04462' '#ffffff' '#e04462' '#e35671' '#e35671' '#ffffff' '#e66981';
+:root {
+  --button-bg-color: #b7e2ff;
+  --button-hover-bg-color: #b7e2ff;
+  --button-active-bg-color: #b7e2ff;
+
+  --button-border-color: #b7e2ff;
+  --button-hover-border-color: #b7e2ff;
+  --button-active-border-color: #b7e2ff;
+
+  --button-text-color: #000000;
+  --button-hover-text-color: #000000;
+  --button-active-text-color: #000000;
+
+  @each $type, $bg, $color, $bd, $bg-hv, $bd-hv, $color-hv, $bg-active in $colors {
+    @debug $bg-hv;
+    --button-bg-color-#{$type}: #{$bg};
+    --button-active-bg-color-#{$type}: #{$bg-active};
+    --button-hover-bg-color-#{$type}: #{$bg-hv};
+
+    --button-border-color-#{$type}: #{$bd};
+    --button-active-border-color-#{$type}: #{$bd-hv};
+    --button-hover-border-color-#{$type}: #{$bd-hv};
+
+    --button-text-color-#{$type}: #{$color};
+    --button-hover-text-color-#{$type}: #{$color-hv};
+    --button-active-text-color-#{$type}: #{$color};
+  }
+}
