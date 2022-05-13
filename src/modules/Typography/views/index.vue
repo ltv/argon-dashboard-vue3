@@ -1,27 +1,52 @@
 <template>
   <!-- Headings -->
+<<<<<<< HEAD
   <div class="bg-white w-3/4 mx-auto mt-5 mb-2 shadow-lg rounded-lg flex flex-col">
     <!-- Heading header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-gril font-bold">Headings</p>
+=======
+  <div class="bg-white w-1/2 mx-auto mt-5 mb-2 shadow-lg rounded-lg flex flex-col">
+    <!-- Heading header -->
+    <div class="p-5 border-b-2">
+      <p class="text-lg font-sans font-bold">Headings</p>
+>>>>>>> 20efee3 (resole conflict)
     </div>
     <div class="p-5">
       <!-- H1 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4">
+<<<<<<< HEAD
           <h1 class="opacity-60">Heading 1</h1>
         </div>
         <div class="w-3/4">
           <h1>Fancy Dashboard</h1>
+=======
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 1
+          </p>
+        </div>
+        <div class="w-3/4">
+          <h1>Argon Dashboard PRO React</h1>
+>>>>>>> 20efee3 (resole conflict)
         </div>
       </div>
       <!-- H2 -->
       <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
         <div class="w-1/4 py-1">
+<<<<<<< HEAD
           <h2 class="opacity-60">Heading 2</h2>
         </div>
         <div class="w-3/4 py-1">
           <h2>Fancy Dashboard</h2>
+=======
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 2
+          </p>
+        </div>
+        <div class="w-3/4 py-1">
+          <h2>Argon Dashboard PRO React</h2>
+>>>>>>> 20efee3 (resole conflict)
         </div>
       </div>
       <!-- H3 -->
