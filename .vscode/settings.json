@@ -1,4 +1,7 @@
 {
   "editor.formatOnSave": true,
-  "cSpell.words": ["Srcs"]
+  "cSpell.words": [
+    "Srcs"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
