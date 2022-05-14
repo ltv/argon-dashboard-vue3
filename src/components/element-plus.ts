@@ -8,6 +8,7 @@ import 'assets/css/el-tag.css'
 import 'assets/css/el-alert.css'
 
 import 'assets/css/el-message.css'
+import 'assets/css/typography.scss'
 
 
 import 'element-plus/dist/index.css'

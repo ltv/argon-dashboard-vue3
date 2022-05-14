@@ -4,6 +4,7 @@ const Table = () => import('modules/table/views/index.vue')
 const Grid = () => import('modules/grid/views/index.vue')
 const Notification = () => import('modules/notification/views/index.vue')
 const Button = () => import('modules/buttons/views/index.vue')
+const Typography = () => import('modules/typography/views/index.vue')
 const routes = [
   {
     path: '/',
@@ -29,6 +30,11 @@ const routes = [
     path: '/grid',
     component: Grid,
     name: 'Grid',
+  },
+  {
+    path: '/typography',
+    component: Typography,
+    name: 'Typography',
   },
   {
     path: '/:pathMatch(.*)*',
