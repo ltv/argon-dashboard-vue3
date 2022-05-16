@@ -105,7 +105,7 @@
         </el-container>
       </div>
       <el-divider />
-      <div class="w-full">
+      <div class="w-full mb-6">
         <div class="py-1 px-2">
           <el-button class="w-full" type="primary" size="large" round>Block level button</el-button>
         </div>
@@ -165,49 +165,49 @@
             </el-button>
           </div>
           <div>
-            <el-button id="twitter">
+            <el-button class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white">
               <font-awesome-icon :icon="['fab', 'twitter']" class="pr-2" />
               Twitter
             </el-button>
           </div>
           <div>
-            <el-button id="google">
+            <el-button class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white">
               <font-awesome-icon :icon="['fab', 'google-plus-g']" class="pr-2" />
               Google +
             </el-button>
           </div>
           <div>
-            <el-button id="instagram">
+            <el-button class='bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white'>
               <font-awesome-icon :icon="['fab', 'instagram']" class="pr-2" />
               Instagram
             </el-button>
           </div>
           <div>
-            <el-button id="pinterest">
+            <el-button class='bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white'>
               <font-awesome-icon :icon="['fab', 'pinterest']" class="pr-2" />
               Pinterest
             </el-button>
           </div>
           <div>
-          <el-button id="youtube">
+          <el-button class='bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white'>
             <font-awesome-icon :icon="['fab', 'youtube']" class="pr-2" />
             Youtube
           </el-button>
           </div>
           <div>
-            <el-button id="vimeo">
+            <el-button class='bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white'>
               <font-awesome-icon :icon="['fab', 'vimeo']" class="pr-2" />
               Vimeo
             </el-button>
           </div>
           <div>
-          <el-button id="slack">
+          <el-button class='bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white'>
             <font-awesome-icon :icon="['fab', 'slack']" class="pr-2" />
             Slack
           </el-button>
           </div>
           <div>
-          <el-button id="dribbble">
+          <el-button class='bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white'>
             <font-awesome-icon :icon="['fab', 'dribbble']" class="pr-2" />
             Dribbble
           </el-button>     
@@ -223,42 +223,42 @@
             </el-button>
           </div>
           <div>
-            <el-button id="twitter">
+            <el-button class='bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white'>
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </el-button>
           </div>
           <div>
-            <el-button id="google">
+            <el-button class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white">
               <font-awesome-icon :icon="['fab', 'google-plus-g']" />
             </el-button>
           </div>
           <div>
-            <el-button id="instagram">
+            <el-button class='bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white'>
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
           </div>
           <div>
-            <el-button id="pinterest">
+            <el-button class='bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white'>
               <font-awesome-icon :icon="['fab', 'pinterest']" />
             </el-button>
           </div>
           <div>
-            <el-button id="youtube">
+            <el-button class='bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white'>
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>
           </div>
           <div>
-            <el-button id="vimeo">
+            <el-button class='bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white'>
               <font-awesome-icon :icon="['fab', 'vimeo']" />
             </el-button>
           </div>
           <div>
-            <el-button id="slack">
+            <el-button class='bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white'>
               <font-awesome-icon :icon="['fab', 'slack']" />
             </el-button>
           </div>
           <div>
-            <el-button id="dribbble">
+            <el-button class='bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white'>
               <font-awesome-icon :icon="['fab', 'dribbble']" />
             </el-button>   
           </div>                      
@@ -268,47 +268,47 @@
       <div class="mb-5">
         <el-container class="ml-4 px-2 py-2 flex flex-wrap gap-2">
           <div>
-            <el-button type="primary" circle class='px-3'>
+            <el-button type="primary" circle class="p-3 py-5">
               <font-awesome-icon :icon="['fab', 'facebook']" />
             </el-button>
           </div>
           <div>
-            <el-button id="twitter" circle class='px-3'>
+            <el-button circle class="p-3 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white">
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </el-button>
           </div>
           <div>
-            <el-button id="google" circle class='px-3'>
+            <el-button circle class="p-3 py-5 bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white">
               <font-awesome-icon :icon="['fab', 'google-plus-g']" />
             </el-button>
           </div>
           <div>
-            <el-button id="instagram" circle class='px-3'>
+            <el-button circle class='p-3 py-5 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white'>
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
           </div>
           <div>
-            <el-button id="pinterest" circle class='px-3'>
+            <el-button circle class='px-3.5 py-5 bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white'>
               <font-awesome-icon :icon="['fab', 'pinterest']" />
             </el-button>
           </div>
           <div>
-            <el-button id="youtube" circle class='px-3'>
+            <el-button circle class='p-3 py-5 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white'>
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>
           </div>
           <div>
-            <el-button id="vimeo" circle class='px-3'>
+            <el-button circle class='px-3.5 py-5 bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white'>
               <font-awesome-icon :icon="['fab', 'vimeo']" />
             </el-button>
           </div>
           <div>
-            <el-button id="slack" circle class='px-3'>
+            <el-button circle class='px-3.5 py-5 bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white'>
               <font-awesome-icon :icon="['fab', 'slack']" />
             </el-button>
           </div>
           <div>
-            <el-button id="dribbble" circle class='px-3'>
+            <el-button circle class='p-3 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white'>
               <font-awesome-icon :icon="['fab', 'dribbble']" />
             </el-button>
           </div>
@@ -326,56 +326,13 @@ import {
 </script>
 
 <style scoped>
-.el-button {
-  @apply hover:pt-1 hover:shadow-sm;
-}
 .el-button.el-button--default {
-  @apply font-bold h-10 !important;
+  @apply font-bold !important;
 }
 .body {
   @apply font-sans;
 }
 .el-button.active {
   background: var(--button-active-bg-color-primary) !important;
-}
-.el-button#twitter {
-  background-color: #1da1f2 !important;
-  border-color: #1da1f2;
-  color:#fff;
-}
-.el-button#google {
-  background-color: #dd4b39 !important;
-  border-color: #dd4b39;
-  color:#fff;
-}
-.el-button#instagram {
-  background-color: #e4405f !important;
-  border-color: #e4405f;
-  color:#fff;
-}
-.el-button#pinterest {
-  background-color: #bd081c !important;
-  border-color: #bd081c;
-  color:#fff;
-}
-.el-button#youtube {
-  background-color: #cd201f !important;
-  border-color: #cd201f;
-  color:#fff;
-}
-.el-button#vimeo {
-  background-color: #04a0f0 !important;
-  border-color: #04a0f0;
-  color:#fff;
-}
-.el-button#slack {
-  background-color: #3aaf85 !important;
-  border-color: #3aaf85;
-  color:#fff;
-}
-.el-button#dribbble {
-  background-color: #ea4c89 !important;
-  border-color: #ea4c89;
-  color:#fff;
 }
 </style>

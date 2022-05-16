@@ -139,7 +139,7 @@
             <div class="text-slate-400 p-4 hover:border-b-1">Vestibulum at eros</div>
           
             <div class="px-4 py-5">
-              <h5 class="font-bold text-blue-800">Card title</h5>
+              <h5 class="text-xl font-medium text-blue-800">Card title</h5>
             </div>
             <p class="break-normal text-slate-500 px-4">
               <span>
@@ -156,7 +156,7 @@
           <div class="pt-6">
             <el-card class="box-card">
               <div class="card-header py-2">
-                <h5 class="font-bold text-blue-800">Card title</h5>
+                <h5 class="text-xl font-medium text-blue-800">Card title</h5>
               </div>
               <p class="break-normal text-slate-500 py-2">
                 <span>
@@ -172,25 +172,22 @@
           </div>
 
           <div class="pt-6">
-            <el-card class="box-card text-center" :body-style="{ padding: '0px' }">
-              <div class="relative">
-                <img alt="..." src="src/assets/images/throne.jpg">
-                <div class="justify-center px-12">
-                  <div class="lg:order-2">
-                    <div class="absolute inset-x-0 top-2/3 pointer-events-none">
-                      <el-link :underline="false">
-                        <el-avatar :size="150" src="src/assets/images/tywin_lannister.jpg" class="hover:transition border border-white border-4"/>
-                      </el-link>
-                    </div>
-                  </div>
+            <el-card class="box-card text-center relative" :body-style="{ padding: '0px' }">
+              <img alt="..." src="src/assets/images/throne.jpg">
+                <div class="justify-center">
+                  <el-link :underline="false" class="card-avatar-profile">
+                      <el-avatar :size="!isHover ? 150 : 156"
+                      @mouseover="hoverCheck(true)"
+                      @mouseleave="hoverCheck(false)"
+                      src="src/assets/images/tywin_lannister.jpg" class="border border-white !border-4"/>
+                  </el-link>
                 </div>
-              </div>
-              <div class="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4 card-header">
+              <div class="text-center border-0 pt-14 md:pt-4 mb-0 card-header">
                 <div class="flex justify-between">
-                  <div class="ml-6">
+                  <div class="ml-4">
                     <el-button class="bg-cyan-400 text-white shadow-lg" size="small">Connect</el-button>
                   </div>
-                  <div class="mr-6">
+                  <div class="mr-4">
                     <el-button class="shadow-lg" size="small" type="info">Message</el-button>
                   </div>
                 </div>
@@ -242,7 +239,7 @@
           <el-card class="box-card">
             <template #header>
               <div class="card-header">
-                <h5 class="font-bold text-blue-800">Card title</h5>
+                <h5 class="text-xl font-medium text-blue-800">Card title</h5>
               </div>
             </template>
             <p class="break-normal text-slate-500 py-2">
@@ -294,13 +291,13 @@
                 <p class="text-base text-slate-500 mb-0">Hand of The King</p>
               </div>
               <div class="p-4">
-                <el-button type="primary" circle class="py-5 px-3">
+                <el-button type="primary" circle class="p-3 py-5">
                   <font-awesome-icon :icon="['fab', 'facebook']" size="lg"/>
                 </el-button>
-                <el-button id="twitter" circle class="py-5 px-3">
+                <el-button circle class="p-3 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white">
                   <font-awesome-icon :icon="['fab', 'twitter']" size="lg"/>
                 </el-button>
-                <el-button id="dribbble" circle class="py-5 px-3">
+                <el-button circle class="p-3 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white">
                   <font-awesome-icon :icon="['fab', 'dribbble']" size="lg"/>
                 </el-button>
               </div>
@@ -312,7 +309,7 @@
               <img alt="..." src="src/assets/images/man_draw.jpg">
               <div class="p-4">
                 <div class="text-xl font-semibold py-2 text-indigo-900">Get started with Argon</div>
-                <div class="font-thin text-xs text-slate-500">by John Snow on Oct 29th at 10:23 AM</div>
+                <div class="font-thin text-xs text-slate-500">by <el-link class="font-thin text-xs" :underline="false">John Snow</el-link> on Oct 29th at 10:23 AM</div>
                 <p class="mt-4 text-slate-500 py-4">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
                 <el-link :underline="false" class="px-0 text-base text-indigo-900 font-semibold text hover:drop-shadow-md">View article</el-link>
 
@@ -330,7 +327,7 @@
                   <span class="break-normal font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span>
                 </div>
                 <div class="py-3">
-                  <span class="font-light text-base text-rose-600">—— Someone famous in <span class="italic"> Source Title</span></span>
+                  <span class="font-light text-base text-rose-600"><MinusIcon class="inline h-4 w-4" aria-hidden="true" /> Someone famous in <span class="italic"> Source Title</span></span>
                 </div>
               </div>
             </el-card>
@@ -425,7 +422,7 @@
             <el-card class="box-card items-center">
               <template #header>
                 <div class="card-header flex justify-between py-2">
-                  <h5 class="font-bold text-blue-800">Card title</h5>
+                  <h5 class="font-semibold text-lg text-blue-800">Card title</h5>
                   <el-button class="el-button--secondary text-sky-700" size="small">Action</el-button>
                 </div>
               </template>
@@ -552,10 +549,11 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted } from 'vue'
+import { ref, defineComponent } from 'vue'
 // Icon
 import {
   ArrowUpIcon,
+  MinusIcon
 } from '@heroicons/vue/solid'
 import {
   Location
@@ -566,27 +564,21 @@ export default defineComponent({
   components: {
     //Icon
     ArrowUpIcon,
+    MinusIcon,
     Location,
   },
   setup() {
-
-    return {  }
+    const isHover = ref(false);
+    const hoverCheck = (b: boolean) => {
+      isHover.value = b
+    };
+    return { isHover, hoverCheck }
   },
 })
 </script>
 
 <style>
-.el-card {
-  @apply bg-white !important;
-}
-.el-button#twitter {
-  background-color: #1da1f2 !important;
-  border-color: #1da1f2;
-  color:#fff;
-}
-.el-button#dribbble {
-  background-color: #ea4c89 !important;
-  border-color: #ea4c89;
-  color:#fff;
+.el-link.card-avatar-profile .el-link--inner {
+  @apply absolute;
 }
 </style>

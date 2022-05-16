@@ -16,7 +16,7 @@
         </div>
       </div>  
       <div class="pl-12 mt-4 drop-shadow-[0_6px_3px_rgba(0,64,255,0.25)]">
-        <el-dropdown size="small" split-button type="primary" @command="handleCommand">
+        <el-dropdown size="small" split-button @command="handleCommand">
           <span class="px-2"> Show: <span class="text-blue"> {{ choosedItem }}</span></span>
           <template #dropdown>
             <el-dropdown-menu>
@@ -52,7 +52,7 @@
           <el-table-column label="Status" align="center" header-align="center">
             <template #default="scope">
               <el-tag
-                :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Normal' ? 'primary' : 'success'"
+                :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Normal' ? '' : 'success'"
                 effect="dark"
                 round
               >
@@ -205,7 +205,7 @@ export default defineComponent({
         if (task.status != "Pending") {
           if (multipleSelection.value.includes(task)) {
             task.isDone = true;
-            task.status = 'Done';
+            task.status = 'Normal';
           }
           else {
             task.isDone = false;
@@ -255,15 +255,8 @@ export default defineComponent({
 }
 
 .el-button.el-button--primary.el-button--small.is-plain:hover {
-  @apply bg-blue-50 text-blue-300 !important;
+  @apply bg-blue-50 text-blue-300 drop-shadow-none !important;
 }
 
-.el-dropdown .el-button-group .el-button.el-button--primary.el-button--small {
-  @apply border-none !important;
-}
-
-/* .el-dropdown .el-button-group .el-button.el-button--primary.el-button--small.el-dropdown__caret-button {
-  cursor: progress;
-} */
 </style>
 

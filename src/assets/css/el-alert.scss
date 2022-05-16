@@ -1,0 +1,6 @@
+.el-alert {
+  border-radius: 0.25rem !important; /* 4px */
+}
+.el-alert .el-alert__content .el-icon.el-alert__close-btn {
+  @apply py-3 text-slate-50 hover:text-slate-200;
+}

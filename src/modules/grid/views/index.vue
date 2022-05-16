@@ -1,8 +1,8 @@
 <template>
-  <div class="p-6 bg-zinc-50">
-    <div class="block w-full">
+  <div class="p-6 bg-zinc-50 w-full">
+    <div class="block w-4/5 h-auto mx-auto">
       <div class="flex">
-        <div class="container mx-auto p-4 border shadow-lg">
+        <div class="container mx-auto p-4 border shadow-lg rounded">
           <div class="font-bold">
             Grid system
           </div>
@@ -18,7 +18,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border shadow-lg">
+        <div class="container mx-auto p-4 border shadow-lg rounded">
           <div class="font-bold">
             Equal-width
           </div>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border shadow-lg">
+        <div class="container mx-auto p-4 border shadow-lg rounded">
           <div class="font-bold">
             Setting one column width
           </div>
@@ -61,30 +61,30 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border shadow-lg">
+        <div class="container mx-auto p-4 border shadow-lg rounded">
           <div class="font-bold">
             Variable width content
           </div>
           <el-divider />
           <div class="grid grid-cols-6 gap-4 text-center drop-shadow">
-            <div class="py-2 border border-slate-300 rounded col-end-3">01</div>
-            <div class="py-2 border border-slate-300 rounded col-start-3 col-span-2">02</div>
+            <div class="py-5 border border-slate-300 rounded col-end-3">01</div>
+            <div class="py-5 border border-slate-300 rounded col-start-3 col-span-2">02</div>
             <div class="py-2 border border-slate-300 rounded">Variable width content</div>
 
-            <div class="py-2 border border-slate-300 rounded col-start-2">01</div>
+            <div class="py-5 border border-slate-300 rounded col-start-2">01</div>
             <div class="py-2 border border-slate-300 rounded col-start-3 col-auto">Variable width content</div>
-            <div class="py-2 border border-slate-300 rounded col-start-4">03</div>
+            <div class="py-5 border border-slate-300 rounded col-start-4">03</div>
 
             <div class="py-2 border border-slate-300 rounded col-start-1">Variable width content</div>
-            <div class="py-2 border border-slate-300 rounded col-span-3">02</div>
-            <div class="py-2 border border-slate-300 rounded col-span-2">03</div>
+            <div class="py-5 border border-slate-300 rounded col-span-3">02</div>
+            <div class="py-5 border border-slate-300 rounded col-span-2">03</div>
 
           </div>
         </div>
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border shadow-lg">
+        <div class="container mx-auto p-4 border shadow-lg rounded">
           <div class="font-bold">
             Equal-width multi-row
           </div>
@@ -107,7 +107,7 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border shadow-lg">
+        <div class="container mx-auto p-4 border shadow-lg rounded">
           <div class="font-bold">
             Mix and match
           </div>

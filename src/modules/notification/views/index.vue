@@ -1,13 +1,14 @@
 <template>
   <div class="p-6 h-full bg-slate-50">
-    <div class="block rounded w-full">
+    <div class="block rounded w-4/5 h-auto mx-auto">
       <div class="flex">
-        <div class="container mx-auto p-4 border rounded-lg shadow-md">
-          <div class="font-bold pb-4">Alerts</div>
+        <div class="container mx-auto p-4 border rounded shadow-md">
+          <div class="font-bold mb-0">Alerts</div>
+          <el-divider />
           <div>
             <div class="relative flex flex-grow pt-1">
               <el-alert class="bg-slate-700">
-                <span class="text-white"><span class="font-semibold">Default!</span> This is a default alert—check it out!</span>
+                <span class="text-white pl-3"><span class="font-semibold">Default!</span> This is a default alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -23,7 +24,7 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert class="bg-indigo-500">
-                <span class="text-white"><span class="font-semibold">Primary!</span> This is a primary alert—check it out!</span>
+                <span class="text-white pl-3"><span class="font-semibold">Primary!</span> This is a primary alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -39,7 +40,7 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="primary">
-                <span><span class="font-semibold">Secondary!</span> This is a secondary alert—check it out!</span>
+                <span><span class="font-semibold pl-3">Secondary!</span> This is a secondary alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -55,7 +56,7 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="info" class="bg-cyan-400">
-                <span class="text-white"><span class="font-semibold">Info!</span> This is a info alert—check it out!</span>
+                <span class="text-white pl-3"><span class="font-semibold">Info!</span> This is a info alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -71,7 +72,7 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="success" class="bg-emerald-400">
-                <span class="text-white"><span class="font-semibold">Success!</span> This is a success alert—check it out!</span>
+                <span class="text-white pl-3"><span class="font-semibold">Success!</span> This is a success alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -87,7 +88,7 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="warning" class="bg-rose-500">
-                <span class="text-white"><span class="font-semibold">Warning!</span> This is a warning alert—check it out!</span>
+                <span class="text-white pl-3"><span class="font-semibold">Warning!</span> This is a warning alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -103,7 +104,7 @@
 
             <div class="relative flex flex-grow pt-1">
               <el-alert type="error" class="bg-orange-500">
-                <span class="text-white"><span class="font-semibold">Error!</span> This is a error alert—check it out!</span>
+                <span class="text-white pl-3"><span class="font-semibold">Error!</span> This is a error alert—check it out!</span>
                 <div class="
                   absolute
                   inset-y-0
@@ -121,69 +122,98 @@
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border rounded-lg shadow-md">
-          <div class="font-bold pb-4">Notifications</div>
-          <el-button
-            @click="openNotifDefault"
-            class="bg-slate-800 text-white font-bold"
-            >Default</el-button
-          >
-          <el-button
-            @click="openNotifInfo"
-            class="bg-cyan-400 text-white font-bold"
-            >Info</el-button
-          >
-          <el-button
-            @click="openNotifSuccess"
-            class="bg-emerald-400 text-white font-bold"
-            >Success</el-button
-          >
-          <el-button
-            @click="openNotifWarning"
-            class="bg-orange-500 text-white font-bold"
-            >Warning</el-button
-          >
-          <el-button
-            @click="openNotifDanger"
-            class="bg-rose-500 text-white font-bold"
-            >Danger</el-button
-          >
+        <div class="container mx-auto p-4 border rounded shadow-md">
+          <div class="font-bold mb-0">Notifications</div>
+          <el-divider />
+          <div class="flex flex-wrap gap-2">
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="bg-slate-800 border-slate-800 text-white font-bold"
+                >Default</el-button
+              >
+            </div>
+            <div>
+            <el-button
+              @click="openNotifInfo"
+              class="bg-cyan-400 border-cyan-400 text-white font-bold"
+              >Info</el-button
+            >
+            </div>
+            <div>
+            <el-button
+              @click="openNotifSuccess"
+              class="bg-emerald-400 border-emerald-400 text-white font-bold"
+              >Success</el-button
+            >
+            </div>
+            <div>
+            <el-button
+              @click="openNotifWarning"
+              class="bg-orange-500 border-orange-500 text-white font-bold"
+              >Warning</el-button
+            >
+            </div>
+            <div>
+            <el-button
+              @click="openNotifDanger"
+              class="bg-rose-500 border-rose-500 text-white font-bold"
+              >Danger</el-button
+            >
+            </div>
+          </div>
+          
         </div>
       </div>
 
       <div class="flex pt-4">
-        <div class="container mx-auto p-4 border rounded-lg shadow-md">
-          <div class="font-bold pb-4">Sweet alerts</div>
-          <el-button
-            @click="openAlertDefault"
-            class="bg-indigo-600 text-white font-bold"
-            >Default Alert</el-button
-          >
-          <el-button
-            @click="openAlertInfo"
-            class="bg-cyan-400 text-white font-bold"
-            >Info Alert</el-button
-          >
-          <el-button
-            @click="openAlertSuccess"
-            class="bg-emerald-400 text-white font-bold"
-            >Success Alert</el-button
-          >
-          <el-button
-            @click="openAlertWarning"
-            class="bg-orange-500 text-white font-bold"
-            >Warning Alert</el-button
-          >
-          <el-button
-            @click="openAlertDanger"
-            class="bg-rose-500 text-white font-bold"
-            >Danger Alert</el-button
-          >
-          <el-button
-            @click="openAlertQuestion"
-            class="bg-slate-800 text-white font-bold"
-            >Question Alert</el-button
-          >
+        <div class="container mx-auto p-4 border rounded shadow-md">
+          <div class="font-bold mb-0">Sweet alerts</div>
+          <el-divider />
+          <div class="flex flex-wrap gap-2">
+            <div>
+              <el-button
+                @click="openAlertDefault"
+                class="bg-indigo-600 border-indigo-600 text-white font-bold"
+                >Default Alert</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openAlertInfo"
+                class="bg-cyan-400 border-cyan-400 text-white font-bold"
+                >Info Alert</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openAlertSuccess"
+                class="bg-emerald-400 border-emerald-400 text-white font-bold"
+                >Success Alert</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openAlertWarning"
+                class="bg-orange-500 border-orange-500 text-white font-bold"
+                >Warning Alert</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openAlertDanger"
+                class="bg-rose-500 border-rose-500 text-white font-bold"
+                >Danger Alert</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openAlertQuestion"
+                class="bg-slate-800 border-slate-800 text-white font-bold"
+                >Question Alert</el-button
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -191,7 +221,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, h, inject, ref } from 'vue'
+import { defineComponent, h, inject } from 'vue'
 import { ElMessage } from 'element-plus'
 
 // Icon

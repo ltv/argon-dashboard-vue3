@@ -1,0 +1,13 @@
+.el-tag {
+  width: 5rem; /* 80px */
+  border-radius: 9999px !important;
+  font-weight: 300 !important;
+}
+
+.el-tag.el-tag--success {
+  @apply bg-[#7ACCC8] border-[#7ACCC8];
+}
+
+.el-tag.el-tag--danger {
+  @apply bg-[#E14E58] border-[#E14E58];
+}
