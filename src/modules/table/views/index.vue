@@ -73,18 +73,15 @@
             </template>
           </el-table-column>
           <el-table-column label="Action" align="center">
-            <template #default="scope">
-              <el-button 
-              class="px-8 border-blue-200 color-blue-200"
-              type="primary"
-              size="small"
-              @click="console.log(scope.$index)"
-              round
-              plain
-              >
-              View
-              </el-button>
-            </template>
+            <el-button 
+            class="px-8 border-blue-200 color-blue-200"
+            type="primary"
+            size="small"
+            round
+            plain
+            >
+            View
+            </el-button>
           </el-table-column>
         </el-table>
 
