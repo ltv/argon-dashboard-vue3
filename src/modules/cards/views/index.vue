@@ -422,7 +422,7 @@
             <el-card class="box-card items-center">
               <template #header>
                 <div class="card-header flex justify-between py-2">
-                  <h5 class="font-semibold text-lg text-blue-800">Card title</h5>
+                  <h5 class="text-xl font-medium text-blue-800">Card title</h5>
                   <el-button class="el-button--secondary text-sky-700" size="small">Action</el-button>
                 </div>
               </template>
