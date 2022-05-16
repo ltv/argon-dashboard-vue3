@@ -7,7 +7,7 @@
             <div class="items-center">
               <UserAddIcon class="h-7 w-7" aria-hidden="true" />
             </div>
-            <span class="pl-1 text-xl text-blue font-bold">Recruitment Request</span>
+            <span class="pl-2 text-xl text-blue font-bold">Recruitment Request</span>
 
             <div class="py-1">
               <span class="pl-6 text-sm text-gray-400">350 Total Request</span>
@@ -54,7 +54,7 @@
               <el-tag
                 :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Normal' ? '' : 'success'"
                 effect="dark"
-                round
+                class="w-20 rounded-full font-light"
               >
                 {{ scope.row.status }}
               </el-tag>
@@ -74,7 +74,7 @@
           </el-table-column>
           <el-table-column label="Action" align="center">
             <el-button 
-            class="px-8 border-blue-200 color-blue-200"
+            class="px-8 border-blue-200 color-blue-200 active: !bg-cyan-100"
             type="primary"
             size="small"
             round
@@ -248,7 +248,7 @@ export default defineComponent({
 <style>
 
 .deadline {
-  @apply text-lime-400;
+  @apply text-[#86CC60];
 }
 
 .el-button.el-button--primary.el-button--small.is-plain:hover {

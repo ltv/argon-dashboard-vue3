@@ -326,8 +326,8 @@ import {
 </script>
 
 <style scoped>
-.el-button.el-button--default {
-  @apply font-bold !important;
+.el-button {
+  @apply font-semibold !important;
 }
 .body {
   @apply font-sans;

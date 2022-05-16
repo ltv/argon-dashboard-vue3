@@ -71,7 +71,7 @@ body {
       }
 
       @if $type == 'secondary' {
-        @apply shadow-none border-none;
+        @apply shadow-none border-slate-100;
       }
 
       &:hover, &:focus {

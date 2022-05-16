@@ -14,7 +14,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
@@ -30,7 +30,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
@@ -46,7 +46,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-black-400" aria-hidden="true" />
@@ -62,7 +62,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
@@ -78,7 +78,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
@@ -94,7 +94,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
@@ -110,7 +110,7 @@
                   inset-y-0
                   left-0
                   pl-3
-                  py-3
+                  py-3.5
                   items-center
                 ">
                   <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
