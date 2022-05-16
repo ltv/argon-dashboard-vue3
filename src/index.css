@@ -8,7 +8,7 @@
 }
 
 @layer base {
-  html {
+  * {
     font-family: Grilroy, sans-serif;
   }
 }
