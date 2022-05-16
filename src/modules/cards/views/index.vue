@@ -441,7 +441,7 @@
 
           <div class="pt-6">
             <el-card class="box-card relative" :body-style="{ padding: '0px' }">
-              <img class="relative" src="src/assets/images/window-purple-image.jpg">
+              <img class="relative" alt="..." src="src/assets/images/window-purple-image.jpg">
               <div class="absolute top-0 text-white p-2">
                 <div class="py-3">
                   <span class="text-xl font-medium">Card title</span>
