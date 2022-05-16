@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="flex pt-4">
+      <div class="flex pt-8">
         <div class="container mx-auto p-4 border shadow-md drop-shadow-sm rounded">
           <div class="font-base text-lg text-indigo-900">
             Equal-width
@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <div class="flex pt-4">
+      <div class="flex pt-8">
         <div class="container mx-auto p-4 border shadow-md drop-shadow-sm rounded">
           <div class="font-base text-lg text-indigo-900">
             Setting one column width
@@ -57,7 +57,7 @@
         </div>
       </div>
 
-      <div class="flex pt-4">
+      <div class="flex pt-8">
         <div class="container mx-auto p-4 border shadow-md drop-shadow-sm rounded">
           <div class="font-base text-lg text-indigo-900">
             Variable width content
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div class="flex pt-4">
+      <div class="flex pt-8">
         <div class="container mx-auto p-4 border shadow-md drop-shadow-sm rounded">
           <div class="font-base text-lg text-indigo-900">
             Equal-width multi-row
@@ -103,7 +103,7 @@
         </div>
       </div>
 
-      <div class="flex pt-4">
+      <div class="flex pt-8">
         <div class="container mx-auto p-4 border shadow-md drop-shadow-sm rounded">
           <div class="font-base text-lg text-indigo-900">
             Mix and match
