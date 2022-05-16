@@ -31,7 +31,7 @@ const routes = [
     component: Grid,
     name: 'Grid',
   },
-  {
+  { 
     path: '/typography',
     component: Typography,
     name: 'Typography',

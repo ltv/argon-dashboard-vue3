@@ -6,3 +6,9 @@
     font-family: "Grilroy";
     src: url("/fonts/SVN-Gilroy-Regular.woff2");
 }
+
+@layer base {
+  html {
+    font-family: Grilroy, sans-serif;
+  }
+}
