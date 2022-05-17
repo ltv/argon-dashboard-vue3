@@ -3,7 +3,7 @@
     <div class="block rounded w-4/5 h-auto mx-auto">
       <div class="flex">
         <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
-          <div class="font-bold m-5">Alerts</div>
+          <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Alerts</div>
           <el-divider />
           <div class="px-6 my-6">
             <div>
@@ -125,7 +125,7 @@
 
       <div class="flex pt-4">
         <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
-          <div class="font-bold m-5">Notifications</div>
+          <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Notifications</div>
           <el-divider />
           <div class="flex flex-wrap gap-2 px-6 my-6">
             <div>
@@ -170,7 +170,7 @@
 
       <div class="flex pt-4">
         <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
-          <div class="font-bold m-5">Sweet alerts</div>
+          <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Sweet alerts</div>
           <el-divider />
           <div class="flex flex-wrap gap-2 px-6 my-6">
             <div>

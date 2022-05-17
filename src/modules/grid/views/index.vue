@@ -19,7 +19,7 @@
 
       <div class="flex pt-8">
         <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
-          <div class="font-semibold text-lg px-4 pt-4 text-indigo-900">
+          <div class="font-semibold text-lg text-indigo-900 px-4 pt-4">
             Equal-width
           </div>
           <el-divider />

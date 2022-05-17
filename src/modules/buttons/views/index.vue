@@ -2,7 +2,7 @@
   <div class="p-6 bg-slate-50 w-full h-full">
     <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
-        <el-container class="px-5 py-2">
+        <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
           <span class="font-bold block">Styles</span>                                           
         </el-container>          
       </div>
@@ -24,8 +24,8 @@
 
     <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
-        <el-container class="px-5 py-2">
-            <span class="font-bold block">Colors</span>                                           
+        <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
+          <span class="font-bold block">Colors</span>                                           
         </el-container>          
       </div>
       <el-divider />
@@ -58,7 +58,7 @@
 
     <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
-        <el-container class="px-5 py-2">
+        <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
           <span class="font-bold block">Outline</span>                                           
         </el-container>          
       </div>
@@ -92,7 +92,7 @@
 
     <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
-        <el-container class="px-5 py-2">
+        <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
           <span class="font-bold block">Size</span>                                           
         </el-container>          
       </div>
@@ -131,7 +131,7 @@
 
     <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
-        <el-container class="px-5 py-2">
+        <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
           <span class="font-bold block">Group</span>                                           
         </el-container>          
       </div>
@@ -165,7 +165,7 @@
     </div>
     <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
-        <el-container class="px-5 py-2">
+        <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
           <span class="font-bold block">Social</span>                                           
         </el-container>          
       </div>
