@@ -11,6 +11,7 @@ import 'assets/css/el-message.css'
 import 'assets/css/typography.scss'
 import 'assets/css/el-card.scss'
 import 'assets/css/el-tag.scss'
+import 'assets/css/icons.scss'
 
 
 import 'element-plus/dist/index.css'
