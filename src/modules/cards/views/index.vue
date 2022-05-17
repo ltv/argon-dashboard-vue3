@@ -347,7 +347,7 @@
               <span class="text-white">per application</span>
               <div class="list-none my-4 block pl-0">
                 <div class="flex flex-nowrap items-center py-2">
-                  <div class="pl-6">
+                  <div class="pl-4">
                     <font-awesome-icon class="
                     text-center 
                     inline-flex 
@@ -368,7 +368,7 @@
                 </div>
 
                 <div class="flex flex-nowrap items-center py-2">
-                  <div class="pl-6">
+                  <div class="pl-4">
                     <font-awesome-icon class="
                     text-center 
                     inline-flex 
@@ -389,7 +389,7 @@
                 </div>
 
                 <div class="flex flex-nowrap items-center py-2">
-                  <div class="pl-6">
+                  <div class="pl-4">
                     <font-awesome-icon class="
                     text-center 
                     inline-flex 
@@ -469,7 +469,7 @@
                 <span class="text-slate-400">per application</span>
                 <div class="list-none my-4 block pl-0">
                   <div class="flex flex-nowrap items-center py-2">
-                    <div class="pl-6">
+                    <div class="pl-4">
                       <font-awesome-icon class="
                       text-center 
                       inline-flex 
@@ -490,7 +490,7 @@
                   </div>
 
                   <div class="flex flex-nowrap items-center py-2">
-                    <div class="pl-6">
+                    <div class="pl-4">
                       <font-awesome-icon class="
                       text-center 
                       inline-flex 
@@ -511,7 +511,7 @@
                   </div>
 
                   <div class="flex flex-nowrap items-center py-2">
-                    <div class="pl-6">
+                    <div class="pl-4">
                       <font-awesome-icon class="
                       text-center 
                       inline-flex 
