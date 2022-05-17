@@ -311,8 +311,7 @@
                 <div class="text-xl font-semibold py-2 text-indigo-900">Get started with Argon</div>
                 <div class="font-thin text-xs text-slate-500">by <el-link class="font-thin text-xs" :underline="false">John Snow</el-link> on Oct 29th at 10:23 AM</div>
                 <p class="mt-4 text-slate-500 py-4">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
-                <el-link :underline="false" class="px-0 text-base text-indigo-900 font-semibold text hover:drop-shadow-md">View article</el-link>
-
+                <el-button class="el-button--secondary text-sky-700 px-0 text-base font-semibold py-4" plain><span class="text-indigo-900">View article</span></el-button>
               </div>
             </el-card>
           </div>
