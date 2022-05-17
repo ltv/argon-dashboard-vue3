@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full h-full">
-    <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
+  <div class="p-6 bg-slate-50 w-full h-full">
+    <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
         <el-container class="px-5 py-2">
           <span class="font-bold block">Styles</span>                                           
@@ -9,14 +9,20 @@
       <el-divider />
         <div class="mb-5">
           <el-container class="ml-4 px-2 py-2 flex flex-wrap gap-2">
-            <el-button type="primary">Primary</el-button>
-            <el-button type="primary" :icon="Box">With icon</el-button>
-            <el-button type="primary" :icon="Setting" />                                    
+            <div>
+              <el-button type="primary">Primary</el-button>
+            </div>
+            <div>
+              <el-button type="primary" :icon="Box">With icon</el-button>
+            </div>
+            <div>
+              <el-button type="primary" :icon="Setting" />     
+            </div>                               
           </el-container>
         </div>
     </div>
 
-    <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
+    <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
         <el-container class="px-5 py-2">
             <span class="font-bold block">Colors</span>                                           
@@ -50,7 +56,7 @@
       </div>
     </div>
 
-    <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
+    <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
         <el-container class="px-5 py-2">
           <span class="font-bold block">Outline</span>                                           
@@ -84,7 +90,7 @@
       </div>
     </div>
 
-    <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
+    <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
         <el-container class="px-5 py-2">
           <span class="font-bold block">Size</span>                                           
@@ -93,15 +99,23 @@
       <el-divider />
       <div>
         <el-container class="ml-4 px-2 py-2 flex flex-wrap gap-2">
-          <el-button type="primary" size="large" round>Large button</el-button>
-          <el-button size="large" round>Large button</el-button>
+          <div>
+            <el-button type="primary" size="large" round>Large button</el-button>
+          </div>
+          <div>
+            <el-button size="large" round>Large button</el-button>
+          </div>
         </el-container>
       </div>
       <el-divider />
       <div>
         <el-container class="ml-4 px-2 py-2 flex flex-wrap gap-2">
-          <el-button type="primary" size="small" round>Small button</el-button>
-          <el-button size="small" round>Small button</el-button>
+          <div>
+            <el-button type="primary" size="small" round>Small button</el-button>
+          </div>
+          <div>
+            <el-button size="small" round>Small button</el-button>
+          </div>
         </el-container>
       </div>
       <el-divider />
@@ -115,7 +129,7 @@
       </div>
     </div>
 
-    <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
+    <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
         <el-container class="px-5 py-2">
           <span class="font-bold block">Group</span>                                           
@@ -149,7 +163,7 @@
           </el-container>
         </div>
     </div>
-    <div class="w-3/5 h-auto flex flex-wrap bg-white shadow-lg mt-5 mx-auto rounded-lg">
+    <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
       <div>
         <el-container class="px-5 py-2">
           <span class="font-bold block">Social</span>                                           
@@ -268,12 +282,12 @@
       <div class="mb-5">
         <el-container class="ml-4 px-2 py-2 flex flex-wrap gap-2">
           <div>
-            <el-button type="primary" circle class="p-3 py-5">
+            <el-button type="primary" circle class="px-3.5 py-5">
               <font-awesome-icon :icon="['fab', 'facebook']" />
             </el-button>
           </div>
           <div>
-            <el-button circle class="p-3 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white">
+            <el-button circle class="px-3.5 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white">
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </el-button>
           </div>
@@ -283,7 +297,7 @@
             </el-button>
           </div>
           <div>
-            <el-button circle class='p-3 py-5 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white'>
+            <el-button circle class='px-3.5 py-5 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white'>
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
           </div>
@@ -308,7 +322,7 @@
             </el-button>
           </div>
           <div>
-            <el-button circle class='p-3 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white'>
+            <el-button circle class='px-3.5 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white'>
               <font-awesome-icon :icon="['fab', 'dribbble']" />
             </el-button>
           </div>

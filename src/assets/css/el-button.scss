@@ -14,7 +14,8 @@ body {
     --el-button-hover-border-color: var(--button-hover-border-color) !important;
     --el-button-active-border-color: var(--button-active-border-color) !important;
 
-    @apply hover:pt-1.5 hover:shadow-sm;
+    @apply hover:pt-1.5 hover:shadow-sm active:bg-[#6cffff];
+
   }
 
   @each $type in $types {
@@ -43,7 +44,9 @@ body {
           background: var(--button-hover-bg-color-#{$type});
         }
     }
-    .el-button--#{$type}:active {
+    .el-button--#{$type}:active, 
+    .el-button--#{$type}.el-button--large:active,
+    .el-button--#{$type}.el-button--small:active {
       filter: drop-shadow(0 0 #0000);
       background-color: var(--button-active-bg-color-#{$type});
       @if $type == 'primary' {

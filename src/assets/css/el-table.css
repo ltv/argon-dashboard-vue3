@@ -10,6 +10,13 @@
   @apply border-collapse mt-4 !important;
 }
 
+.el-table--border::after, 
+.el-table--border::before, 
+.el-table--border .el-table__inner-wrapper::after, 
+.el-table__inner-wrapper::before {
+  @apply bg-white !important;
+}
+
 .el-table__body {
   @apply font-semibold text-lg text-sky-900 font-sans;
   border-spacing: 0 0.5rem;

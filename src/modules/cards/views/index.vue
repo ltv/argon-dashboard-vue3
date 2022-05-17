@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-full px-12 bg-slate-100">
+  <div class="h-full w-full p-6 bg-slate-100">
     <div class="container mx-auto py-3">
       <div class="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-8">
         <div class="col-span-3">
@@ -134,9 +134,9 @@
         <div class="col-span-4">
           <el-card class="box-card" :body-style="{ padding: '0px' }">
             <img alt="..." src="src/assets/images/window-purple-image.jpg">
-            <div class="text-slate-400 p-4 hover:border-b-1">Cras justo odio</div>
-            <div class="text-slate-400 p-4 hover:border-b-1">Dapibus ac facilisis in</div>
-            <div class="text-slate-400 p-4 hover:border-b-1">Vestibulum at eros</div>
+            <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">Cras justo odio</div>
+            <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">Dapibus ac facilisis in</div>
+            <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">Vestibulum at eros</div>
           
             <div class="px-4 py-5">
               <h5 class="text-xl font-medium text-blue-800">Card title</h5>
@@ -179,7 +179,7 @@
                       <el-avatar :size="!isHover ? 150 : 156"
                       @mouseover="hoverCheck(true)"
                       @mouseleave="hoverCheck(false)"
-                      src="src/assets/images/tywin_lannister.jpg" class="border border-white !border-4"/>
+                      src="src/assets/images/tywin_lannister.jpg" class="border border-white border-4"/>
                   </el-link>
                 </div>
               <div class="text-center border-0 pt-14 md:pt-4 mb-0 card-header">
@@ -267,7 +267,7 @@
                     <h4 class="mb-0">
                       <el-link :underline="false" href="#index" class="text-base font-bold hover:text-blue">John Snow</el-link>
                     </h4>
-                    <p class="text-sm text-slate-500 mb-0">King of the north</p>
+                    <p class="text-base text-slate-500 mb-0">King of the north</p>
                     <span class="text-green-500 mr-1">●</span>
                     <small>Active</small>
                   </div>
@@ -442,7 +442,7 @@
           <div class="pt-6">
             <el-card class="box-card relative" :body-style="{ padding: '0px' }">
               <img class="relative" alt="..." src="src/assets/images/window-purple-image.jpg">
-              <div class="absolute top-0 text-white p-2">
+              <div class="absolute top-0 text-white p-3">
                 <div class="py-3">
                   <span class="text-xl font-medium">Card title</span>
                 </div>
@@ -577,8 +577,9 @@ export default defineComponent({
 })
 </script>
 
-<style>
-.el-link.card-avatar-profile .el-link--inner {
-  @apply absolute;
+<style scoped>
+.el-button {
+  @apply font-semibold !important;
 }
-</style>
+</style>>
+
