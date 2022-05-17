@@ -198,7 +198,8 @@ export default defineComponent({
 
     const handleSelectionChange = (val: Task[]) => {
       multipleSelection.value = val
-      tasks.value.forEach((task) => {
+      const tasksNormal = tasks.value.filter((task) => task.status=='Urgent')
+      tasksNormal.forEach((task) => {
         if (task.status != "Pending") {
           if (multipleSelection.value.includes(task)) {
             task.isDone = true;

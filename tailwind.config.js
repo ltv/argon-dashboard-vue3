@@ -105,6 +105,13 @@ module.exports = {
       fontSize: {
         xxs: ['0.5rem', '0.75rem'],
       },
+      boxShadow: {
+        'info': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(70, 184, 218, 0.6) 0px 0px 8px',
+        'warning': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(245,54,92, 0.6) 0px 0px 8px',
+        'danger': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(238, 162, 54, 0.6) 0px 0px 8px',
+        'success': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(76, 174, 76, 0.6) 0px 0px 8px',
+        'question': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(200, 200, 200, 0.6) 0px 0px 8px',
+      }
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
