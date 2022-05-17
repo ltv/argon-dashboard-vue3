@@ -6,6 +6,7 @@ const Notification = () => import('modules/notification/views/index.vue')
 const Button = () => import('modules/buttons/views/index.vue')
 const Typography = () => import('modules/typography/views/index.vue')
 const Card = () => import('modules/cards/views/index.vue')
+const Icons = () => import('modules/icons/views/index.vue')
 const routes = [
   {
     path: '/',
@@ -41,6 +42,11 @@ const routes = [
     path: '/card',
     component: Card,
     name: 'Card',
+  },
+  {
+    path: '/icons',
+    component: Icons,
+    name: 'Icons',
   },
   {
     path: '/:pathMatch(.*)*',
