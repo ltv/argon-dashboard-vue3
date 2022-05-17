@@ -17,7 +17,9 @@ $colors: 'default' '#b4ffff' '#000000' '#b4ffff' '#bbffff' '#bbffff' '#000000' '
 
   --button-text-color: #000000;
   --button-hover-text-color: #000000;
-  --button-active-text-color: #000000;
+  --button-active-text-color: #000000;  
+
+  --el-table-checked-fill-base: #E14E58;
 
   @each $type, $bg, $color, $bd, $bg-hv, $bd-hv, $color-hv, $bg-active in $colors {
     @debug $bg-hv;

@@ -1,5 +1,9 @@
 .el-table__header thead {
-  @apply font-bold text-base font-sans text-slate-400 !important;
+  @apply text-lg font-sans text-slate-400 !important;
+}
+
+.el-table th {
+  @apply font-semibold border-none !important;
 }
 
 .el-table {
@@ -7,7 +11,7 @@
 }
 
 .el-table__body {
-  @apply font-bold text-base text-sky-900 font-sans;
+  @apply font-semibold text-lg text-sky-900 font-sans;
   border-spacing: 0 0.5rem;
 }
 
@@ -28,7 +32,7 @@
 }
 
 .el-table td {
-  @apply py-3 !important;
+  @apply py-2 !important;
 }
 
 .el-table__row {

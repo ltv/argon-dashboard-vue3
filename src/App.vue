@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, inject, watch, onMounted } from 'vue'
+import { defineComponent, inject } from 'vue'
 import { ElConfigProvider } from 'element-plus'
 import DefaultLayout from './layouts/default-layout.vue'
 import AuthLayout from 'layouts/auth-layout.vue'

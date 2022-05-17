@@ -13,11 +13,15 @@ body {
     --el-button-border-color: var(--button-border-color) !important;
     --el-button-hover-border-color: var(--button-hover-border-color) !important;
     --el-button-active-border-color: var(--button-active-border-color) !important;
+
+    @apply hover:pt-1.5 hover:shadow-sm;
   }
 
   @each $type in $types {
     .el-button--#{$type} {
+      @if $type == 'primary' {
         background-color: var(--button-bg-color-#{$type}) !important;
+      }
         --el-button-bg-color: var(--button-bg-color-#{$type}) !important;
         --el-button-hover-bg-color: var(--button-hover-bg-color-#{$type}) !important;
         --el-button-active-bg-color: var(--button-active-bg-color-#{$type}) !important;
@@ -29,20 +33,22 @@ body {
         --el-button-text-color: var(--button-text-color-#{$type});
         --el-button-hover-text-color: var(--button-hover-text-color-#{$type}) !important;
         --el-button-active-text-color: var(--button-active-text-color-#{$type}) !important;
-        
-        &:active {
-          filter: drop-shadow(0 0 #0000);
-          background-color: var(--button-active-bg-color-#{$type}) !important;
-        }
 
         @if $type == 'secondary' {
           @apply shadow-lg;
         }
         
-        &:hover {
+        &:hover, &:focus {
           filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
           background: var(--button-hover-bg-color-#{$type});
         }
+    }
+    .el-button--#{$type}:active {
+      filter: drop-shadow(0 0 #0000);
+      background-color: var(--button-active-bg-color-#{$type});
+      @if $type == 'primary' {
+        background-color: var(--button-active-bg-color-#{$type}) !important;
+      }
     }
 
     .el-button.el-button--#{$type}.is-plain {
@@ -65,10 +71,10 @@ body {
       }
 
       @if $type == 'secondary' {
-        @apply shadow-none border-none;
+        @apply shadow-none border-slate-100;
       }
 
-      &:hover {
+      &:hover, &:focus {
         filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
         background: var(--button-hover-bg-color-#{$type}) !important;
       }

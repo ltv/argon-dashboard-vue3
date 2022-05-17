@@ -1,7 +1,6 @@
 import {
   createRouter,
   createWebHistory,
-  RouteLocationNormalized,
   Router,
 } from 'vue-router'
 import routes from './routes'

@@ -1,0 +1,7 @@
+.el-table .el-checkbox {
+  --el-checkbox-checked-icon-color: var(--el-color-primary-light-2) !important;
+}
+
+.el-table th.is-leaf .el-checkbox .el-checkbox__inner {
+  --el-checkbox-checked-icon-color: var(--el-text-color-primary) !important;
+}
