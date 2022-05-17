@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-full p-6 bg-slate-100">
-    <div class="container mx-auto py-3">
+    <div class="container mx-auto py-4">
       <div class="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-8">
         <div class="col-span-3">
           <el-card class="box-card relative flex flex-col px-2">
@@ -129,8 +129,8 @@
       </div>
     </div>
 
-    <div class="container mx-auto py-3">
-      <div class="grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 gap-16">
+    <div class="container mx-auto py-4">
+      <div class="grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 gap-8">
         <div class="col-span-4">
           <el-card class="box-card" :body-style="{ padding: '0px' }">
             <img alt="..." src="src/assets/images/window-purple-image.jpg">
@@ -153,7 +153,7 @@
             </div>
           </el-card>
           
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card">
               <div class="card-header py-2">
                 <h5 class="text-xl font-medium text-blue-800">Card title</h5>
@@ -171,7 +171,7 @@
             </el-card>
           </div>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card text-center relative" :body-style="{ padding: '0px' }">
               <img alt="..." src="src/assets/images/throne.jpg">
                 <div class="justify-center">
@@ -254,7 +254,7 @@
             </div>
           </el-card>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card>
               <div class="relative items-center justify-center">
                 <div class="flex flex-wrap">
@@ -279,7 +279,7 @@
             </el-card>
           </div>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card text-center">
               <el-link :underline="false">
                 <el-avatar :size="150" src="src/assets/images/tyrion_lannister.jpg" />
@@ -304,7 +304,7 @@
             </el-card>
           </div>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card" :body-style="{ padding: '0px' }">
               <img alt="..." src="src/assets/images/man_draw.jpg">
               <div class="p-4">
@@ -316,7 +316,7 @@
             </el-card>
           </div>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card" :body-style="{ padding: '0px' }">
               <div class="text-white p-4 bg-gradient-to-r from-slate-800 to-indigo-900">
                 <div class="py-3">
@@ -417,7 +417,7 @@
             <el-link :underline="false" class="text-white text-base hover:text-slate-200 pb-4">Request a demo</el-link>
           </el-card>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card items-center">
               <template #header>
                 <div class="card-header flex justify-between py-2">
@@ -438,7 +438,7 @@
             </el-card>
           </div>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card class="box-card relative" :body-style="{ padding: '0px' }">
               <img class="relative" alt="..." src="src/assets/images/window-purple-image.jpg">
               <div class="absolute top-0 text-white p-3">
@@ -455,7 +455,7 @@
             </el-card>
           </div>
 
-          <div class="pt-6">
+          <div class="pt-8">
             <el-card :body-style="{ padding: '0px' }"
             class="box-card text-center"
             >
