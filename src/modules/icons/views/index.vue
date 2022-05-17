@@ -7083,236 +7083,238 @@
 </template>
 
 <script>
-import { AcademicCapIcon } from '@heroicons/vue/solid'
-import { AdjustmentsIcon } from '@heroicons/vue/solid'
-import { ThumbUpIcon } from '@heroicons/vue/solid'
-import { AnnotationIcon } from '@heroicons/vue/solid'
-import { ArchiveIcon } from '@heroicons/vue/solid'
-import { ArrowCircleDownIcon } from '@heroicons/vue/solid'
-import { ArrowCircleLeftIcon } from '@heroicons/vue/solid'
-import { ArrowCircleRightIcon } from '@heroicons/vue/solid'
-import { ArrowCircleUpIcon } from '@heroicons/vue/solid'
-import { ArrowDownIcon } from '@heroicons/vue/solid'
-import { ArrowLeftIcon } from '@heroicons/vue/solid'
-import { ArrowNarrowDownIcon } from '@heroicons/vue/solid'
-import { ArrowNarrowLeftIcon } from '@heroicons/vue/solid'
-import { ArrowNarrowRightIcon } from '@heroicons/vue/solid'
-import { ArrowNarrowUpIcon } from '@heroicons/vue/solid'
-import { ArrowRightIcon } from '@heroicons/vue/solid'
-import { ArrowSmDownIcon } from '@heroicons/vue/solid'
-import { ArrowSmLeftIcon } from '@heroicons/vue/solid'
-import { ArrowSmRightIcon } from '@heroicons/vue/solid'
-import { ArrowSmUpIcon } from '@heroicons/vue/solid'
-import { ArrowUpIcon } from '@heroicons/vue/solid'
-import { ArrowsExpandIcon } from '@heroicons/vue/solid'
-import { AtSymbolIcon } from '@heroicons/vue/solid'
-import { BackspaceIcon } from '@heroicons/vue/solid'
-import { BadgeCheckIcon } from '@heroicons/vue/solid'
-import { BanIcon } from '@heroicons/vue/solid'
-import { BeakerIcon } from '@heroicons/vue/solid'
-import { BellIcon } from '@heroicons/vue/solid'
-import { BookOpenIcon } from '@heroicons/vue/solid'
-import { BookmarkAltIcon } from '@heroicons/vue/solid'
-import { BookmarkIcon } from '@heroicons/vue/solid'
-import { BriefcaseIcon } from '@heroicons/vue/solid'
-import { CakeIcon } from '@heroicons/vue/solid'
-import { CalculatorIcon } from '@heroicons/vue/solid'
-import { CalendarIcon } from '@heroicons/vue/solid'
-import { CameraIcon } from '@heroicons/vue/solid'
-import { CashIcon } from '@heroicons/vue/solid'
-import { ChartBarIcon } from '@heroicons/vue/solid'
-import { ChartPieIcon } from '@heroicons/vue/solid'
-import { ChartSquareBarIcon } from '@heroicons/vue/solid'
-import { ChatAlt2Icon } from '@heroicons/vue/solid'
-import { ChatAltIcon } from '@heroicons/vue/solid'
-import { ChatIcon } from '@heroicons/vue/solid'
-import { CheckCircleIcon } from '@heroicons/vue/solid'
-import { CheckIcon } from '@heroicons/vue/solid'
-import { ChevronDoubleDownIcon } from '@heroicons/vue/solid'
-import { ChevronDoubleLeftIcon } from '@heroicons/vue/solid'
-import { ChevronDoubleRightIcon } from '@heroicons/vue/solid'
-import { ChevronDoubleUpIcon } from '@heroicons/vue/solid'
-import { ChevronDownIcon } from '@heroicons/vue/solid'
-import { ChevronLeftIcon } from '@heroicons/vue/solid'
-import { ChevronRightIcon } from '@heroicons/vue/solid'
-import { ChevronUpIcon } from '@heroicons/vue/solid'
-import { ChipIcon } from '@heroicons/vue/solid'
-import { ClipboardCheckIcon } from '@heroicons/vue/solid'
-import { ClipboardCopyIcon } from '@heroicons/vue/solid'
-import { ClipboardIcon } from '@heroicons/vue/solid'
-import { ClipboardListIcon } from '@heroicons/vue/solid'
-import { ClockIcon } from '@heroicons/vue/solid'
-import { CloudDownloadIcon } from '@heroicons/vue/solid'
-import { CloudIcon } from '@heroicons/vue/solid'
-import { CloudUploadIcon } from '@heroicons/vue/solid'
-import { CodeIcon } from '@heroicons/vue/solid'
-import { CogIcon } from '@heroicons/vue/solid'
-import { CollectionIcon } from '@heroicons/vue/solid'
-import { ColorSwatchIcon } from '@heroicons/vue/solid'
-import { CreditCardIcon } from '@heroicons/vue/solid'
-import { CubeIcon } from '@heroicons/vue/solid'
-import { CubeTransparentIcon } from '@heroicons/vue/solid'
-import { CurrencyBangladeshiIcon } from '@heroicons/vue/solid'
-import { CurrencyDollarIcon } from '@heroicons/vue/solid'
-import { CurrencyEuroIcon } from '@heroicons/vue/solid'
-import { CurrencyPoundIcon } from '@heroicons/vue/solid'
-import { CurrencyRupeeIcon } from '@heroicons/vue/solid'
-import { CurrencyYenIcon } from '@heroicons/vue/solid'
-import { CursorClickIcon } from '@heroicons/vue/solid'
-import { DatabaseIcon } from '@heroicons/vue/solid'
-import { DesktopComputerIcon } from '@heroicons/vue/solid'
-import { DeviceMobileIcon } from '@heroicons/vue/solid'
-import { DeviceTabletIcon } from '@heroicons/vue/solid'
-import { DocumentAddIcon } from '@heroicons/vue/solid'
-import { DocumentDownloadIcon } from '@heroicons/vue/solid'
-import { DocumentDuplicateIcon } from '@heroicons/vue/solid'
-import { DocumentIcon } from '@heroicons/vue/solid'
-import { DocumentRemoveIcon } from '@heroicons/vue/solid'
-import { DocumentReportIcon } from '@heroicons/vue/solid'
-import { DocumentSearchIcon } from '@heroicons/vue/solid'
-import { DocumentTextIcon } from '@heroicons/vue/solid'
-import { DotsCircleHorizontalIcon } from '@heroicons/vue/solid'
-import { DotsHorizontalIcon } from '@heroicons/vue/solid'
-import { DotsVerticalIcon } from '@heroicons/vue/solid'
-import { DownloadIcon } from '@heroicons/vue/solid'
-import { DuplicateIcon } from '@heroicons/vue/solid'
-import { EmojiHappyIcon } from '@heroicons/vue/solid'
-import { EmojiSadIcon } from '@heroicons/vue/solid'
-import { ExclamationCircleIcon } from '@heroicons/vue/solid'
-import { ExclamationIcon } from '@heroicons/vue/solid'
-import { ExternalLinkIcon } from '@heroicons/vue/solid'
-import { EyeIcon } from '@heroicons/vue/solid'
-import { EyeOffIcon } from '@heroicons/vue/solid'
-import { FastForwardIcon } from '@heroicons/vue/solid'
-import { FilmIcon } from '@heroicons/vue/solid'
-import { FilterIcon } from '@heroicons/vue/solid'
-import { FingerPrintIcon } from '@heroicons/vue/solid'
-import { FireIcon } from '@heroicons/vue/solid'
-import { FlagIcon } from '@heroicons/vue/solid'
-import { FolderAddIcon } from '@heroicons/vue/solid'
-import { FolderDownloadIcon } from '@heroicons/vue/solid'
-import { FolderIcon } from '@heroicons/vue/solid'
-import { FolderOpenIcon } from '@heroicons/vue/solid'
-import { FolderRemoveIcon } from '@heroicons/vue/solid'
-import { GiftIcon } from '@heroicons/vue/solid'
-import { GlobeAltIcon } from '@heroicons/vue/solid'
-import { GlobeIcon } from '@heroicons/vue/solid'
-import { HandIcon } from '@heroicons/vue/solid'
-import { HashtagIcon } from '@heroicons/vue/solid'
-import { HeartIcon } from '@heroicons/vue/solid'
-import { HomeIcon } from '@heroicons/vue/solid'
-import { IdentificationIcon } from '@heroicons/vue/solid'
-import { InboxIcon } from '@heroicons/vue/solid'
-import { InboxInIcon } from '@heroicons/vue/solid'
-import { InformationCircleIcon } from '@heroicons/vue/solid'
-import { KeyIcon } from '@heroicons/vue/solid'
-import { LibraryIcon } from '@heroicons/vue/solid'
-import { LightBulbIcon } from '@heroicons/vue/solid'
-import { LightningBoltIcon } from '@heroicons/vue/solid'
-import { LinkIcon } from '@heroicons/vue/solid'
-import { LocationMarkerIcon } from '@heroicons/vue/solid'
-import { LockClosedIcon } from '@heroicons/vue/solid'
-import { LockOpenIcon } from '@heroicons/vue/solid'
-import { LoginIcon } from '@heroicons/vue/solid'
-import { LogoutIcon } from '@heroicons/vue/solid'
-import { MailIcon } from '@heroicons/vue/solid'
-import { MailOpenIcon } from '@heroicons/vue/solid'
-import { MapIcon } from '@heroicons/vue/solid'
-import { MenuAlt1Icon } from '@heroicons/vue/solid'
-import { MenuAlt2Icon } from '@heroicons/vue/solid'
-import { MenuAlt3Icon } from '@heroicons/vue/solid'
-import { MenuAlt4Icon } from '@heroicons/vue/solid'
-import { MenuIcon } from '@heroicons/vue/solid'
-import { MicrophoneIcon } from '@heroicons/vue/solid'
-import { MinusCircleIcon } from '@heroicons/vue/solid'
-import { MinusIcon } from '@heroicons/vue/solid'
-import { MinusSmIcon } from '@heroicons/vue/solid'
-import { MoonIcon } from '@heroicons/vue/solid'
-import { MusicNoteIcon } from '@heroicons/vue/solid'
-import { NewspaperIcon } from '@heroicons/vue/solid'
-import { OfficeBuildingIcon } from '@heroicons/vue/solid'
-import { PaperAirplaneIcon } from '@heroicons/vue/solid'
-import { PaperClipIcon } from '@heroicons/vue/solid'
-import { PauseIcon } from '@heroicons/vue/solid'
-import { PencilAltIcon } from '@heroicons/vue/solid'
-import { PencilIcon } from '@heroicons/vue/solid'
-import { PhoneIcon } from '@heroicons/vue/solid'
-import { PhoneIncomingIcon } from '@heroicons/vue/solid'
-import { PhoneMissedCallIcon } from '@heroicons/vue/solid'
-import { PhoneOutgoingIcon } from '@heroicons/vue/solid'
-import { PhotographIcon } from '@heroicons/vue/solid'
-import { PlayIcon } from '@heroicons/vue/solid'
-import { PlusCircleIcon } from '@heroicons/vue/solid'
-import { PlusIcon } from '@heroicons/vue/solid'
-import { PlusSmIcon } from '@heroicons/vue/solid'
-import { PresentationChartBarIcon } from '@heroicons/vue/solid'
-import { PresentationChartLineIcon } from '@heroicons/vue/solid'
-import { PrinterIcon } from '@heroicons/vue/solid'
-import { PuzzleIcon } from '@heroicons/vue/solid'
-import { QrcodeIcon } from '@heroicons/vue/solid'
-import { QuestionMarkCircleIcon } from '@heroicons/vue/solid'
-import { ReceiptRefundIcon } from '@heroicons/vue/solid'
-import { ReceiptTaxIcon } from '@heroicons/vue/solid'
-import { RefreshIcon } from '@heroicons/vue/solid'
-import { ReplyIcon } from '@heroicons/vue/solid'
-import { RewindIcon } from '@heroicons/vue/solid'
-import { RssIcon } from '@heroicons/vue/solid'
-import { SaveAsIcon } from '@heroicons/vue/solid'
-import { SaveIcon } from '@heroicons/vue/solid'
-import { ScaleIcon } from '@heroicons/vue/solid'
-import { ScissorsIcon } from '@heroicons/vue/solid'
-import { SearchCircleIcon } from '@heroicons/vue/solid'
-import { SearchIcon } from '@heroicons/vue/solid'
-import { SelectorIcon } from '@heroicons/vue/solid'
-import { ServerIcon } from '@heroicons/vue/solid'
-import { ShareIcon } from '@heroicons/vue/solid'
-import { ShieldCheckIcon } from '@heroicons/vue/solid'
-import { ShieldExclamationIcon } from '@heroicons/vue/solid'
-import { ShoppingBagIcon } from '@heroicons/vue/solid'
-import { ShoppingCartIcon } from '@heroicons/vue/solid'
-import { SortAscendingIcon } from '@heroicons/vue/solid'
-import { SortDescendingIcon } from '@heroicons/vue/solid'
-import { SparklesIcon } from '@heroicons/vue/solid'
-import { SpeakerphoneIcon } from '@heroicons/vue/solid'
-import { StarIcon } from '@heroicons/vue/solid'
-import { StatusOfflineIcon } from '@heroicons/vue/solid'
-import { StatusOnlineIcon } from '@heroicons/vue/solid'
-import { StopIcon } from '@heroicons/vue/solid'
-import { SunIcon } from '@heroicons/vue/solid'
-import { SupportIcon } from '@heroicons/vue/solid'
-import { SwitchHorizontalIcon } from '@heroicons/vue/solid'
-import { SwitchVerticalIcon } from '@heroicons/vue/solid'
-import { TableIcon } from '@heroicons/vue/solid'
-import { TagIcon } from '@heroicons/vue/solid'
-import { TemplateIcon } from '@heroicons/vue/solid'
-import { TerminalIcon } from '@heroicons/vue/solid'
-import { ThumbDownIcon } from '@heroicons/vue/solid'
-import { TicketIcon } from '@heroicons/vue/solid'
-import { TranslateIcon } from '@heroicons/vue/solid'
-import { TrashIcon } from '@heroicons/vue/solid'
-import { TrendingDownIcon } from '@heroicons/vue/solid'
-import { TrendingUpIcon } from '@heroicons/vue/solid'
-import { TruckIcon } from '@heroicons/vue/solid'
-import { UploadIcon } from '@heroicons/vue/solid'
-import { UserAddIcon } from '@heroicons/vue/solid'
-import { UserCircleIcon } from '@heroicons/vue/solid'
-import { UserGroupIcon } from '@heroicons/vue/solid'
-import { UserIcon } from '@heroicons/vue/solid'
-import { UserRemoveIcon } from '@heroicons/vue/solid'
-import { UsersIcon } from '@heroicons/vue/solid'
-import { VariableIcon } from '@heroicons/vue/solid'
-import { VideoCameraIcon } from '@heroicons/vue/solid'
-import { ViewBoardsIcon } from '@heroicons/vue/solid'
-import { ViewGridAddIcon } from '@heroicons/vue/solid'
-import { ViewGridIcon } from '@heroicons/vue/solid'
-import { ViewListIcon } from '@heroicons/vue/solid'
-import { VolumeOffIcon } from '@heroicons/vue/solid'
-import { VolumeUpIcon } from '@heroicons/vue/solid'
-import { WifiIcon } from '@heroicons/vue/solid'
-import { XCircleIcon } from '@heroicons/vue/solid'
-import { XIcon } from '@heroicons/vue/solid'
-import { ZoomInIcon } from '@heroicons/vue/solid'
-import { ZoomOutIcon } from '@heroicons/vue/solid'
+import { 
+  ThumbUpIcon,
+    AcademicCapIcon,
+    AdjustmentsIcon,
+    AnnotationIcon,
+    ArchiveIcon,
+    ArrowCircleDownIcon,
+    ArrowCircleLeftIcon,
+    ArrowCircleRightIcon,
+    ArrowCircleUpIcon,
+    ArrowDownIcon,
+    ArrowLeftIcon,
+    ArrowNarrowDownIcon,
+    ArrowNarrowLeftIcon,
+    ArrowNarrowRightIcon,
+    ArrowNarrowUpIcon,
+    ArrowRightIcon,
+    ArrowSmDownIcon,
+    ArrowSmLeftIcon,
+    ArrowSmRightIcon,
+    ArrowSmUpIcon,
+    ArrowUpIcon,
+    ArrowsExpandIcon,
+    AtSymbolIcon,
+    BackspaceIcon,
+    BadgeCheckIcon,
+    BanIcon,
+    BeakerIcon,
+    BellIcon,
+    BookOpenIcon,
+    BookmarkAltIcon,
+    BookmarkIcon,
+    BriefcaseIcon,
+    CakeIcon,
+    CalculatorIcon,
+    CalendarIcon,
+    CameraIcon,
+    CashIcon,
+    ChartBarIcon,
+    ChartPieIcon,
+    ChartSquareBarIcon,
+    ChatAlt2Icon,
+    ChatAltIcon,
+    ChatIcon,
+    CheckCircleIcon,
+    CheckIcon,
+    ChevronDoubleDownIcon,
+    ChevronDoubleLeftIcon,
+    ChevronDoubleRightIcon,
+    ChevronDoubleUpIcon,
+    ChevronDownIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    ChevronUpIcon,
+    ChipIcon,
+    ClipboardCheckIcon,
+    ClipboardCopyIcon,
+    ClipboardIcon,
+    ClipboardListIcon,
+    ClockIcon,
+    CloudDownloadIcon,
+    CloudIcon,
+    CloudUploadIcon,
+    CodeIcon,
+    CogIcon,
+    CollectionIcon,
+    ColorSwatchIcon,
+    CreditCardIcon,
+    CubeIcon,
+    CubeTransparentIcon,
+    CurrencyBangladeshiIcon,
+    CurrencyDollarIcon,
+    CurrencyEuroIcon,
+    CurrencyPoundIcon,
+    CurrencyRupeeIcon,
+    CurrencyYenIcon,
+    CursorClickIcon,
+    DatabaseIcon,
+    DesktopComputerIcon,
+    DeviceMobileIcon,
+    DeviceTabletIcon,
+    DocumentAddIcon,
+    DocumentDownloadIcon,
+    DocumentDuplicateIcon,
+    DocumentIcon,
+    DocumentRemoveIcon,
+    DocumentReportIcon,
+    DocumentSearchIcon,
+    DocumentTextIcon,
+    DotsCircleHorizontalIcon,
+    DotsHorizontalIcon,
+    DotsVerticalIcon,
+    DownloadIcon,
+    DuplicateIcon,
+    EmojiHappyIcon,
+    EmojiSadIcon,
+    ExclamationCircleIcon,
+    ExclamationIcon,
+    ExternalLinkIcon,
+    EyeIcon,
+    EyeOffIcon,
+    FastForwardIcon,
+    FilmIcon,
+    FilterIcon,
+    FingerPrintIcon,
+    FireIcon,
+    FlagIcon,
+    FolderAddIcon,
+    FolderDownloadIcon,
+    FolderIcon,
+    FolderOpenIcon,
+    FolderRemoveIcon,
+    GiftIcon,
+    GlobeAltIcon,
+    GlobeIcon,
+    HandIcon,
+    HashtagIcon,
+    HeartIcon,
+    HomeIcon,
+    IdentificationIcon,
+    InboxIcon,
+    InboxInIcon,
+    InformationCircleIcon,
+    KeyIcon,
+    LibraryIcon,
+    LightBulbIcon,
+    LightningBoltIcon,
+    LinkIcon,
+    LocationMarkerIcon,
+    LockClosedIcon,
+    LockOpenIcon,
+    LoginIcon,
+    LogoutIcon,
+    MailIcon,
+    MailOpenIcon,
+    MapIcon,
+    MenuAlt1Icon,
+    MenuAlt2Icon,
+    MenuAlt3Icon,
+    MenuAlt4Icon,
+    MenuIcon,
+    MicrophoneIcon,
+    MinusCircleIcon,
+    MinusIcon,
+    MinusSmIcon,
+    MoonIcon,
+    MusicNoteIcon,
+    NewspaperIcon,
+    OfficeBuildingIcon,
+    PaperAirplaneIcon,
+    PaperClipIcon,
+    PauseIcon,
+    PencilAltIcon,
+    PencilIcon,
+    PhoneIcon,
+    PhoneIncomingIcon,
+    PhoneMissedCallIcon,
+    PhoneOutgoingIcon,
+    PhotographIcon,
+    PlayIcon,
+    PlusCircleIcon,
+    PlusIcon,
+    PlusSmIcon,
+    PresentationChartBarIcon,
+    PresentationChartLineIcon,
+    PrinterIcon,
+    PuzzleIcon,
+    QrcodeIcon,
+    QuestionMarkCircleIcon,
+    ReceiptRefundIcon,
+    ReceiptTaxIcon,
+    RefreshIcon,
+    ReplyIcon,
+    RewindIcon,
+    RssIcon,
+    SaveAsIcon,
+    SaveIcon,
+    ScaleIcon,
+    ScissorsIcon,
+    SearchCircleIcon,
+    SearchIcon,
+    SelectorIcon,
+    ServerIcon,
+    ShareIcon,
+    ShieldCheckIcon,
+    ShieldExclamationIcon,
+    ShoppingBagIcon,
+    ShoppingCartIcon,
+    SortAscendingIcon,
+    SortDescendingIcon,
+    SparklesIcon,
+    SpeakerphoneIcon,
+    StarIcon,
+    StatusOfflineIcon,
+    StatusOnlineIcon,
+    StopIcon,
+    SunIcon,
+    SupportIcon,
+    SwitchHorizontalIcon,
+    SwitchVerticalIcon,
+    TableIcon,
+    TagIcon,
+    TemplateIcon,
+    TerminalIcon,
+    ThumbDownIcon,
+    TicketIcon,
+    TranslateIcon,
+    TrashIcon,
+    TrendingDownIcon,
+    TrendingUpIcon,
+    TruckIcon,
+    UploadIcon,
+    UserAddIcon,
+    UserCircleIcon,
+    UserGroupIcon,
+    UserIcon,
+    UserRemoveIcon,
+    UsersIcon,
+    VariableIcon,
+    VideoCameraIcon,
+    ViewBoardsIcon,
+    ViewGridAddIcon,
+    ViewGridIcon,
+    ViewListIcon,
+    VolumeOffIcon,
+    VolumeUpIcon,
+    WifiIcon,
+    XCircleIcon,
+    XIcon,
+    ZoomInIcon,
+    ZoomOutIcon
+} from '@heroicons/vue/solid'
 
 
 export default {
