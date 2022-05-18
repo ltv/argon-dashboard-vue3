@@ -1,3 +1,13 @@
+import {
+  HomeIcon,
+  TableIcon,
+  ViewGridIcon,
+  CreditCardIcon,
+  IdentificationIcon,
+  MenuAlt1Icon,
+  AnnotationIcon,
+} from '@heroicons/vue/outline'
+
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
 const Table = () => import('modules/table/views/index.vue')
@@ -11,42 +21,74 @@ const routes = [
   {
     path: '/',
     component: Dashboard,
-    name: 'Halana messenger',
+    name: 'Dashboard',
+    meta: {
+      title: 'Dashboard',
+      icon: HomeIcon,
+    },
   },
   {
     path: '/buttons',
     component: Button,
     name: 'Button',
+    meta: {
+      title: 'Buttons',
+      icon: MenuAlt1Icon,
+    },
   },
   {
-    path: '/notification',
+    path: '/notifications',
     component: Notification,
-    name: 'Notification',
+    name: 'Notifications',
+    meta: {
+      title: 'Notifications',
+      icon: AnnotationIcon,
+    },
   },
   {
     path: '/tables',
     component: Table,
-    name: 'Table',
+    name: 'Tables',
+    meta: {
+      title: 'Tables',
+      icon: TableIcon,
+    },
   },
   {
     path: '/grid',
     component: Grid,
     name: 'Grid',
+    meta: {
+      title: 'Grid',
+      icon: ViewGridIcon,
+    },
   },
   {
     path: '/typography',
     component: Typography,
     name: 'Typography',
+    meta: {
+      title: 'Typography',
+      icon: HomeIcon,
+    },
   },
   {
-    path: '/card',
+    path: '/cards',
     component: Card,
-    name: 'Card',
+    name: 'Cards',
+    meta: {
+      title: 'Cards',
+      icon: CreditCardIcon,
+    },
   },
   {
     path: '/icons',
     component: Icons,
     name: 'Icons',
+    meta: {
+      title: 'Icons',
+      icon: IdentificationIcon,
+    },
   },
   {
     path: '/:pathMatch(.*)*',
