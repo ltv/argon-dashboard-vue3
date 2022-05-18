@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20 mx-auto w-3/4 shadow bg-white-500 rounded-md">
+  <div class="mx-auto shadow bg-white rounded-md">
     <div class="p-5 border-y w-full mb-5">
       <h2 class="ml-7">Icons</h2>
     </div>
@@ -7,25 +7,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><AcademicCapIcon /></el-icon>
 
@@ -35,25 +17,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><AdjustmentsIcon /></el-icon>
 
@@ -63,25 +27,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><AnnotationIcon /></el-icon>
 
@@ -91,25 +37,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArchiveIcon /></el-icon>
           Archive
@@ -120,25 +48,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowCircleDownIcon /></el-icon>
           ArrowCircleDown
@@ -147,25 +57,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowCircleLeftIcon /></el-icon>
           ArrowCircleLeft
@@ -174,25 +66,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowCircleRightIcon /></el-icon>
           ArrowCircleRight
@@ -201,25 +75,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowCircleUpIcon /></el-icon>
           ArrowCircleUp
@@ -230,25 +86,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowDownIcon /></el-icon>
           ArrowDown
@@ -257,25 +95,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowLeftIcon /></el-icon>
           ArrowLeft
@@ -284,25 +104,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowNarrowDownIcon /></el-icon>
           ArrowNarrowDown
@@ -311,25 +113,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowNarrowLeftIcon /></el-icon>
           ArrowNarrowLeft
@@ -340,25 +124,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowNarrowRightIcon /></el-icon>
           ArrowNarrowRight
@@ -367,25 +133,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowNarrowUpIcon /></el-icon>
           ArrowNarrowUp
@@ -394,25 +142,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowRightIcon /></el-icon>
           ArrowRight
@@ -421,25 +151,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowSmDownIcon /></el-icon>
           ArrowSmDown
@@ -450,25 +162,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowSmLeftIcon /></el-icon>
           ArrowSmLeft
@@ -477,25 +171,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowSmRightIcon /></el-icon>
           ArrowSmRight
@@ -504,25 +180,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowSmUpIcon /></el-icon>
           ArrowSmUpIcon
@@ -531,25 +189,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowUpIcon /></el-icon>
           ArrowUp
@@ -560,25 +200,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ArrowsExpandIcon /></el-icon>
           ArrowsExpand
@@ -587,25 +209,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><AtSymbolIcon /></el-icon>
           AtSymbol
@@ -614,25 +218,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BackspaceIcon /></el-icon>
           Backspace
@@ -641,25 +227,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BadgeCheckIcon /></el-icon>
           BadgeCheck
@@ -670,25 +238,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BanIcon /></el-icon>
           Ban
@@ -697,25 +247,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BeakerIcon /></el-icon>
           Beaker
@@ -724,25 +256,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BellIcon /></el-icon>
           BellIcon
@@ -751,25 +265,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BookOpenIcon /></el-icon>
           BookOpen
@@ -780,25 +276,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BookmarkAltIcon /></el-icon>
           BookmarkAlt
@@ -807,25 +285,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BookmarkIcon /></el-icon>
           Bookmark
@@ -834,25 +294,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><BriefcaseIcon /></el-icon>
           Briefcase
@@ -861,25 +303,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CakeIcon /></el-icon>
           Cake
@@ -890,25 +314,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CalculatorIcon /></el-icon>
           Calculator
@@ -917,25 +323,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CalendarIcon /></el-icon>
           Calendar
@@ -944,25 +332,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CameraIcon /></el-icon>
           Camera
@@ -971,25 +341,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CashIcon /></el-icon>
           Cash
@@ -1000,25 +352,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChartBarIcon /></el-icon>
           ChartBar
@@ -1027,25 +361,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChartPieIcon /></el-icon>
           ChartPie
@@ -1054,25 +370,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChartSquareBarIcon /></el-icon>
           ChartSquareBar
@@ -1081,25 +379,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChatAlt2Icon /></el-icon>
           ChatAlt2
@@ -1110,25 +390,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChatAltIcon /></el-icon>
           ChatAlt
@@ -1137,25 +399,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChatIcon /></el-icon>
           Chat
@@ -1164,25 +408,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CheckCircleIcon /></el-icon>
           CheckCircle
@@ -1191,25 +417,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CheckIcon /></el-icon>
           Check
@@ -1220,25 +428,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronDoubleDownIcon /></el-icon>
           ChevronDoubleDown
@@ -1247,25 +437,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronDoubleLeftIcon /></el-icon>
           ChevronDoubleLeft
@@ -1274,25 +446,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronDoubleRightIcon /></el-icon>
           ChevronDoubleRight
@@ -1301,25 +455,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronDoubleUpIcon /></el-icon>
           ChevronDoubleUp
@@ -1330,25 +466,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronDownIcon /></el-icon>
           ChevronDown
@@ -1357,25 +475,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronLeftIcon /></el-icon>
           ChevronLeft
@@ -1384,25 +484,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronRightIcon /></el-icon>
           ChevronRight
@@ -1411,25 +493,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChevronUpIcon /></el-icon>
           ChevronUp
@@ -1440,25 +504,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ChipIcon /></el-icon>
           Chip
@@ -1467,25 +513,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ClipboardCheckIcon /></el-icon>
           ClipboardCheck
@@ -1494,25 +522,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ClipboardCopyIcon /></el-icon>
           ClipboardCopy
@@ -1521,25 +531,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ClipboardIcon /></el-icon>
           ClipboardIcon
@@ -1550,25 +542,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ClipboardListIcon /></el-icon>
           ClipboardList
@@ -1577,25 +551,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ClockIcon /></el-icon>
           Clock
@@ -1604,25 +560,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CloudDownloadIcon /></el-icon>
           CloudDownload
@@ -1631,25 +569,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CloudIcon /></el-icon>
           Cloud
@@ -1660,25 +580,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CloudUploadIcon /></el-icon>
           CloudUpload
@@ -1687,25 +589,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CodeIcon /></el-icon>
           Code
@@ -1714,25 +598,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CogIcon /></el-icon>
           Cog
@@ -1741,25 +607,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CollectionIcon /></el-icon>
           Collection
@@ -1770,25 +618,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ColorSwatchIcon /></el-icon>
           ColorSwatch
@@ -1797,25 +627,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CreditCardIcon /></el-icon>
           CreditCard
@@ -1824,25 +636,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CubeIcon /></el-icon>
           CubeIcon
@@ -1851,25 +645,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CubeTransparentIcon /></el-icon>
           CubeTransparent
@@ -1880,25 +656,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyBangladeshiIcon /></el-icon>
           CurrencyBangladeshi
@@ -1907,25 +665,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyDollarIcon /></el-icon>
           CurrencyDollarIcon
@@ -1934,25 +674,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyEuroIcon /></el-icon>
           CurrencyEuro
@@ -1961,25 +683,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CubeTransparentIcon /></el-icon>
           CubeTransparent
@@ -1990,25 +694,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyPoundIcon /></el-icon>
           CurrencyPound
@@ -2017,25 +703,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyRupeeIcon /></el-icon>
           CurrencyRupee
@@ -2044,25 +712,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyEuroIcon /></el-icon>
           CurrencyEuro
@@ -2071,25 +721,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CurrencyYenIcon /></el-icon>
           CurrencyYen
@@ -2100,25 +732,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><CursorClickIcon /></el-icon>
           CursorClick
@@ -2127,25 +741,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DatabaseIcon /></el-icon>
           Database
@@ -2154,25 +750,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DesktopComputerIcon /></el-icon>
           DesktopComputer
@@ -2181,25 +759,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DeviceMobileIcon /></el-icon>
           DeviceMobile
@@ -2210,25 +770,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DeviceTabletIcon /></el-icon>
           DeviceTablet
@@ -2237,25 +779,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentAddIcon /></el-icon>
           DocumentAdd
@@ -2264,25 +788,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentDownloadIcon /></el-icon>
           DocumentDownload
@@ -2291,25 +797,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentDuplicateIcon /></el-icon>
           DocumentDuplicate
@@ -2320,25 +808,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentIcon /></el-icon>
           Document
@@ -2347,25 +817,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentRemoveIcon /></el-icon>
           DocumentRemove
@@ -2374,25 +826,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentReportIcon /></el-icon>
           DocumentReport
@@ -2401,25 +835,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentSearchIcon /></el-icon>
           DocumentSearch
@@ -2430,25 +846,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DocumentTextIcon /></el-icon>
           DocumentText
@@ -2457,25 +855,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DotsCircleHorizontalIcon /></el-icon>
           DotsCircleHorizontalIcon
@@ -2484,25 +864,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DotsHorizontalIcon /></el-icon>
           DotsHorizontal
@@ -2511,25 +873,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DotsVerticalIcon /></el-icon>
           DotsVertical
@@ -2540,25 +884,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DownloadIcon /></el-icon>
           Download
@@ -2567,25 +893,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><DuplicateIcon /></el-icon>
           Duplicate
@@ -2594,25 +902,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><EmojiHappyIcon /></el-icon>
           EmojiHappy
@@ -2621,25 +911,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><EmojiSadIcon /></el-icon>
           EmojiSad
@@ -2650,25 +922,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ExclamationCircleIcon /></el-icon>
           ExclamationCircle
@@ -2677,25 +931,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ExclamationIcon /></el-icon>
           Exclamation
@@ -2704,25 +940,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ExternalLinkIcon /></el-icon>
           ExternalLink
@@ -2731,25 +949,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><EyeIcon /></el-icon>
           EyeIcon
@@ -2760,25 +960,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><EyeOffIcon /></el-icon>
           EyeOff
@@ -2787,25 +969,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FastForwardIcon /></el-icon>
           FastForward
@@ -2814,25 +978,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FilmIcon /></el-icon>
           Film
@@ -2841,25 +987,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FilterIcon /></el-icon>
           Filter
@@ -2870,25 +998,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FingerPrintIcon /></el-icon>
           FingerPrint
@@ -2897,25 +1007,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FireIcon /></el-icon>
           Fire
@@ -2924,25 +1016,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FlagIcon /></el-icon>
           Flag
@@ -2951,25 +1025,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FolderAddIcon /></el-icon>
           FolderAdd
@@ -2980,25 +1036,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FolderDownloadIcon /></el-icon>
           FolderDownload
@@ -3007,25 +1045,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FolderIcon /></el-icon>
           Folder
@@ -3034,25 +1054,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FolderOpenIcon /></el-icon>
           FolderOpen
@@ -3061,25 +1063,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><FolderRemoveIcon /></el-icon>
           FolderRemove
@@ -3090,25 +1074,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><GiftIcon /></el-icon>
           Gift
@@ -3117,25 +1083,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><GlobeAltIcon /></el-icon>
           GlobeAlt
@@ -3144,25 +1092,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><GlobeIcon /></el-icon>
           Globe
@@ -3171,25 +1101,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><HandIcon /></el-icon>
           Hand
@@ -3200,25 +1112,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><HashtagIcon /></el-icon>
           Hashtag
@@ -3227,25 +1121,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><HeartIcon /></el-icon>
           Heart
@@ -3254,25 +1130,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><HomeIcon /></el-icon>
           Home
@@ -3281,25 +1139,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><IdentificationIcon /></el-icon>
           Identification
@@ -3310,25 +1150,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><InboxIcon /></el-icon>
           Inbox
@@ -3337,25 +1159,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><InboxInIcon /></el-icon>
           InboxIn
@@ -3364,25 +1168,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><InformationCircleIcon /></el-icon>
           InformationCircle
@@ -3391,25 +1177,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><KeyIcon /></el-icon>
           Key
@@ -3420,25 +1188,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LibraryIcon /></el-icon>
           Library
@@ -3447,25 +1197,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LightBulbIcon /></el-icon>
           LightBulb
@@ -3474,25 +1206,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LightningBoltIcon /></el-icon>
           LightningBoltIcon
@@ -3501,25 +1215,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LinkIcon /></el-icon>
           Link
@@ -3530,25 +1226,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LocationMarkerIcon /></el-icon>
           LocationMarker
@@ -3557,25 +1235,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LockClosedIcon /></el-icon>
           LockClosed
@@ -3584,25 +1244,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LockOpenIcon /></el-icon>
           LockOpen
@@ -3611,25 +1253,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LoginIcon /></el-icon>
           Login
@@ -3640,25 +1264,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><LogoutIcon /></el-icon>
           Logout
@@ -3667,25 +1273,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MailIcon /></el-icon>
           Mail
@@ -3694,25 +1282,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MailOpenIcon /></el-icon>
           MailOpen
@@ -3721,25 +1291,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MapIcon /></el-icon>
           Map
@@ -3750,25 +1302,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MenuAlt1Icon /></el-icon>
           MenuAlt1
@@ -3777,25 +1311,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MenuAlt2Icon /></el-icon>
           MenuAlt2
@@ -3804,25 +1320,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MenuAlt3Icon /></el-icon>
           MenuAlt3Icon
@@ -3831,25 +1329,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MenuAlt3Icon /></el-icon>
           MenuAlt4Icon
@@ -3860,25 +1340,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MenuIcon /></el-icon>
           MenuIcon
@@ -3887,25 +1349,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MicrophoneIcon /></el-icon>
           Microphone
@@ -3914,25 +1358,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MinusCircleIcon /></el-icon>
           MinusCircleIcon
@@ -3941,25 +1367,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MinusIcon /></el-icon>
           Minus
@@ -3970,25 +1378,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MinusSmIcon /></el-icon>
           MinusSm
@@ -3997,25 +1387,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MoonIcon /></el-icon>
           Moon
@@ -4024,25 +1396,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><MusicNoteIcon /></el-icon>
           MusicNote
@@ -4051,25 +1405,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><NewspaperIcon /></el-icon>
           Newspaper
@@ -4080,25 +1416,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><OfficeBuildingIcon /></el-icon>
           OfficeBuilding
@@ -4107,25 +1425,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PaperAirplaneIcon /></el-icon>
           PaperAirplane
@@ -4134,25 +1434,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PaperClipIcon /></el-icon>
           PaperClip
@@ -4161,25 +1443,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PauseIcon /></el-icon>
           Pause
@@ -4190,25 +1454,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PencilAltIcon /></el-icon>
           PencilAltIcon
@@ -4217,25 +1463,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PencilIcon /></el-icon>
           Pencil
@@ -4244,25 +1472,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PhoneIcon /></el-icon>
           Phone
@@ -4271,25 +1481,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PhoneIncomingIcon /></el-icon>
           PhoneIncoming
@@ -4300,25 +1492,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PhoneMissedCallIcon /></el-icon>
           PhoneMissedCall
@@ -4327,25 +1501,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PhoneOutgoingIcon /></el-icon>
           PhoneOutgoing
@@ -4354,25 +1510,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PhotographIcon /></el-icon>
           Photograph
@@ -4381,25 +1519,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PlayIcon /></el-icon>
           Play
@@ -4410,25 +1530,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PlusCircleIcon /></el-icon>
           PlusCircle
@@ -4437,25 +1539,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PlusIcon /></el-icon>
           Plus
@@ -4464,25 +1548,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PlusSmIcon /></el-icon>
           PlusSm
@@ -4491,25 +1557,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PresentationChartBarIcon /></el-icon>
           PresentationChartBar
@@ -4520,25 +1568,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PresentationChartLineIcon /></el-icon>
           PresentationChartLine
@@ -4547,25 +1577,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PrinterIcon /></el-icon>
           Printer
@@ -4574,25 +1586,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><PuzzleIcon /></el-icon>
           Puzzle
@@ -4601,25 +1595,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><QrcodeIcon /></el-icon>
           Qrcode
@@ -4630,25 +1606,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><QuestionMarkCircleIcon /></el-icon>
           QuestionMarkCircle
@@ -4657,25 +1615,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ReceiptRefundIcon /></el-icon>
           ReceiptRefund
@@ -4684,25 +1624,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ReceiptTaxIcon /></el-icon>
           ReceiptTax
@@ -4711,25 +1633,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><RefreshIcon /></el-icon>
           Refresh
@@ -4740,25 +1644,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ReplyIcon /></el-icon>
           Reply
@@ -4767,25 +1653,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><RewindIcon /></el-icon>
           Rewind
@@ -4794,25 +1662,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><RssIcon /></el-icon>
           Rss
@@ -4821,25 +1671,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SaveAsIcon /></el-icon>
           SaveAs
@@ -4850,25 +1682,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SaveIcon /></el-icon>
           Save
@@ -4877,25 +1691,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ScaleIcon /></el-icon>
           Scale
@@ -4904,25 +1700,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ScissorsIcon /></el-icon>
           Scissors
@@ -4931,25 +1709,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SearchCircleIcon /></el-icon>
           SearchCircle
@@ -4960,25 +1720,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SearchIcon /></el-icon>
           Search
@@ -4987,25 +1729,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SelectorIcon /></el-icon>
           Selector
@@ -5014,25 +1738,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ServerIcon /></el-icon>
           Server
@@ -5041,25 +1747,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ShareIcon /></el-icon>
           Share
@@ -5070,25 +1758,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ShieldCheckIcon /></el-icon>
           ShieldCheck
@@ -5097,25 +1767,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ShieldExclamationIcon /></el-icon>
           ShieldExclamation
@@ -5124,25 +1776,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ShoppingBagIcon /></el-icon>
           ShoppingBag
@@ -5151,25 +1785,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ShoppingCartIcon /></el-icon>
           ShoppingCart
@@ -5180,25 +1796,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SortAscendingIcon /></el-icon>
           SortAscending
@@ -5207,25 +1805,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SortDescendingIcon /></el-icon>
           SortDescending
@@ -5234,25 +1814,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SparklesIcon /></el-icon>
           Sparkles
@@ -5261,25 +1823,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SpeakerphoneIcon /></el-icon>
           SpeakerphoneIcon
@@ -5290,25 +1834,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><StarIcon /></el-icon>
           Star
@@ -5317,25 +1843,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><StatusOfflineIcon /></el-icon>
           StatusOffline
@@ -5344,25 +1852,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><StatusOnlineIcon /></el-icon>
           StatusOnlin
@@ -5371,25 +1861,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><StopIcon /></el-icon>
           Stop
@@ -5400,25 +1872,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SunIcon /></el-icon>
           SunIcon
@@ -5427,25 +1881,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SupportIcon /></el-icon>
           Support
@@ -5454,25 +1890,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SwitchHorizontalIcon /></el-icon>
           SwitchHorizontal
@@ -5481,25 +1899,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><SwitchVerticalIcon /></el-icon>
           SwitchVertical
@@ -5510,25 +1910,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TableIcon /></el-icon>
           Table
@@ -5537,25 +1919,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TagIcon /></el-icon>
           Tag
@@ -5564,25 +1928,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TemplateIcon /></el-icon>
           Template
@@ -5591,25 +1937,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TerminalIcon /></el-icon>
           Terminal
@@ -5620,25 +1948,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ThumbDownIcon /></el-icon>
           ThumbDown
@@ -5647,25 +1957,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ThumbUpIcon /></el-icon>
           ThumbUp
@@ -5674,25 +1966,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TicketIcon /></el-icon>
           Ticket
@@ -5701,25 +1975,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TranslateIcon /></el-icon>
           Translate
@@ -5730,25 +1986,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TrashIcon /></el-icon>
           Trash
@@ -5757,25 +1995,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TrendingDownIcon /></el-icon>
           TrendingDown
@@ -5784,25 +2004,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TrendingUpIcon /></el-icon>
           TrendingUpIcon
@@ -5811,25 +2013,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><TruckIcon /></el-icon>
           Truck
@@ -5840,25 +2024,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UploadIcon /></el-icon>
           Upload
@@ -5867,25 +2033,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UserAddIcon /></el-icon>
           UserAdd
@@ -5894,25 +2042,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UserCircleIcon /></el-icon>
           UserCircle
@@ -5921,25 +2051,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UserGroupIcon /></el-icon>
           UserGroup
@@ -5950,25 +2062,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UserIcon /></el-icon>
           User
@@ -5977,25 +2071,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UserRemoveIcon /></el-icon>
           UserRemove
@@ -6004,25 +2080,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><UsersIcon /></el-icon>
           Users
@@ -6031,25 +2089,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><VariableIcon /></el-icon>
           Variable
@@ -6060,25 +2100,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><VideoCameraIcon /></el-icon>
           VideoCamera
@@ -6087,25 +2109,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ViewBoardsIcon /></el-icon>
           ViewBoards
@@ -6114,25 +2118,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ViewGridAddIcon /></el-icon>
           ViewGridAdd
@@ -6141,25 +2127,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ViewGridIcon /></el-icon>
           ViewGrid
@@ -6170,25 +2138,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ViewListIcon /></el-icon>
           ViewList
@@ -6197,25 +2147,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><VolumeOffIcon /></el-icon>
           VolumeOff
@@ -6224,25 +2156,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><VolumeUpIcon /></el-icon>
           VolumeUp
@@ -6251,25 +2165,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><WifiIcon /></el-icon>
           Wifi
@@ -6280,25 +2176,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-normal
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-normal leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><XCircleIcon /></el-icon>
           XCircleIcon
@@ -6307,25 +2185,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><XIcon /></el-icon>
           XIcon
@@ -6334,25 +2194,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ZoomInIcon /></el-icon>
           ZoomIn
@@ -6361,25 +2203,7 @@
       <el-container class="text-lg basis-full">
         <a
           href="#_"
-          class="
-            w-full
-            m-6
-            flex flex-col
-            items-center
-            justify-center
-            p-6
-            text-base
-            font-medium
-            leading-6
-            text-blue-500
-            whitespace-no-wrap
-            bg-slate-50
-            hover:border hover:border-gray-200
-            rounded-md
-            shadow-sm
-            hover:bg-white hover:shadow-lg
-            focus:outline-none focus:shadow-none
-          "
+          class="w-full m-6 flex flex-col items-center justify-center p-6 text-base font-medium leading-6 text-blue-500 whitespace-no-wrap bg-slate-50 hover:border hover:border-gray-200 rounded-md shadow-sm hover:bg-white hover:shadow-lg focus:outline-none focus:shadow-none"
         >
           <el-icon :size="20"><ZoomOutIcon /></el-icon>
           ZoomOut
@@ -6858,5 +2682,3 @@ export default {
   },
 }
 </script>
-
-

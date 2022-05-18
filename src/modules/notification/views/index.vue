@@ -2,9 +2,7 @@
   <div class="p-2">
     <div class="block rounded h-auto mx-auto">
       <div class="flex">
-        <div
-          class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
-        >
+        <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg rounded">
           <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Alerts</div>
           <el-divider />
           <div class="px-6 my-6">
