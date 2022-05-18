@@ -1,62 +1,74 @@
 <template>
   <!-- Headings -->
-  <div class="bg-white w-3/4 mx-auto mt-5 mb-2 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-full p-5 sm:w-3/4 md:w-3/4 mx-auto mt-5 mb-2 shadow-lg rounded-lg flex flex-col">
     <!-- Heading header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-gril font-bold">Headings</p>
     </div>
     <div class="p-5">
       <!-- H1 -->
-      <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
-        <div class="w-1/4">
-          <h1 class="opacity-50">Heading 1</h1>
+      <div class="flex flex-col h-10 w-full mt-5 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 1
+          </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full md:w-3/4">
           <h1>Fancy Dashboard</h1>
         </div>
       </div>
       <!-- H2 -->
-      <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
-        <div class="w-1/4 py-1">
-          <h2 class="opacity-50">Heading 2</h2>
+      <div class="flex flex-col h-10 w-full mt-8 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 2
+          </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h2 >Fancy Dashboard</h2>
         </div>
       </div>
       <!-- H3 -->
-      <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
-        <div class="w-1/4 py-1">
-          <h3 class="opacity-50">Heading 3</h3>
+      <div class="flex flex-col h-10 w-full mt-8 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 3
+          </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h3>Fancy Dashboard</h3>
         </div>
       </div>
       <!-- H4 -->
-      <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
-        <div class="w-1/4 py-1">
-          <h4 class="opacity-50">Heading 4</h4>
+      <div class="flex flex-col h-10 w-full mt-8 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 4
+          </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h4>Fancy Dashboard</h4>
         </div>
       </div>
       <!-- H5 -->
-      <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
-        <div class="w-1/4 py-1">
-          <h5 class="opacity-50">Heading 5</h5>
+      <div class="flex flex-col h-10 w-full mt-8 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 5
+          </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h5>Fancy Dashboard</h5>
         </div>
       </div>
       <!-- H6 -->
-      <div class="flex justify-center items-center h-10 w-full mt-5 mb-5">
-        <div class="w-1/4 py-1 flex">
-          <h6 class="opacity-50">Heading 6</h6>
+      <div class="flex flex-col h-10 w-full mt-8 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
+          <p class="opacity-30 uppercase text-sm font-sans font-semibold">
+            Heading 6
+          </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h6>Fancy Dashboard</h6>
         </div>
       </div>
@@ -65,53 +77,53 @@
   <!-- End Headings -->
 
   <!-- Display titles -->
-  <div class="bg-white w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-full p-5 sm:w-3/4 md:w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
     <!-- Display header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Display titles</p>
     </div>
     <div class="p-5">
       <!-- Display1 -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-10 mb-36 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Display 1
           </p>
         </div>
-        <div class="w-3/4">
-          <h1 class="display1">Fancy Dashboard</h1>
+        <div class="w-full md:w-3/4">
+          <h1 class="display1 leading-tight">Fancy Dashboard</h1>
         </div>
       </div>
       <!-- Display2 -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4 py-1">
+      <div class="flex flex-col h-10 w-full mt-5 mb-28 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4 py-1">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Display 2
           </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h2 class="display2">Fancy Dashboard</h2>
         </div>
       </div>
       <!-- Display3 -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4 py-1">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4 py-1">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Display 3
           </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h3 class="display3">Fancy Dashboard</h3>
         </div>
       </div>
       <!-- Display4 -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4 py-1">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4 py-1">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Display 4
           </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h4 class="display4">Fancy Dashboard</h4>
         </div>
       </div>
@@ -120,51 +132,51 @@
   <!-- End display titles -->
 
   <!-- Specialized titles -->
-  <div class="bg-white w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-full p-5 sm:w-3/4 md:w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
     <!-- Specialized header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Specialized titles</p>
     </div>
     <div class="p-5">
       <!-- Heading -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Heading
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full md:w-3/4">
           <h1 class="heading">Fancy Dashboard</h1>
         </div>
       </div>
       <!-- Heading title -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4 py-1">
+      <div class="flex flex-col h-10 w-full mt-5 mb-15 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4 py-1">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Heading title
           </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h2 class="heading_title">Fancy Dashboard</h2>
         </div>
       </div>
       <!-- Heading with small subtitle -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4 py-1">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4 py-1">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold"></p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h3 class="heading_sub_title">Header with small subtitle</h3>
         </div>
       </div>
       <!-- Heading section -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4 py-1">
+      <div class="flex flex-col h-10 w-full mt-2 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full md:w-1/4 py-1">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Heading section
           </p>
         </div>
-        <div class="w-3/4 py-1">
+        <div class="w-full md:w-3/4 py-1">
           <h4 class="heading_section">
             According to the National Oceanic and Atmospheric Administration,
             Ted, Scambos, NSIDClead scentist, puts the potentially record
@@ -177,20 +189,20 @@
   <!-- End display titles -->
 
   <!-- Specialized -->
-  <div class="bg-white w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
+  <div class="bg-white w-full p-5 sm:w-3/4 md:w-3/4 mx-auto mt-5 shadow-lg rounded-lg flex flex-col">
     <!-- Paragraphs Header -->
     <div class="p-5 border-b-2">
       <p class="text-lg font-sans font-bold">Paragraphs</p>
     </div>
     <div class="p-5">
       <!-- Paragraphs -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-52 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Paragraphs
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4 py-1">
           <p class="">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers. I understand culture. I am
@@ -201,13 +213,13 @@
         </div>
       </div>
       <!-- Lead text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-56 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Lead text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <p class="lead">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers. I understand culture. I am
@@ -218,13 +230,13 @@
         </div>
       </div>
       <!-- Quote -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Quote
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <blockquote class="blockquote">
             <p class="mb-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -238,13 +250,13 @@
         </div>
       </div>
       <!-- Muted text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Muted text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <p class="text-muted mb-0">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers...
@@ -252,13 +264,13 @@
         </div>
       </div>
       <!-- Primary text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Primary text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:3/4 md:w-3/4">
           <p class="text-primary mb-0">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers...
@@ -266,13 +278,13 @@
         </div>
       </div>
       <!-- Info text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Info text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <p class="text-info mb-0">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers...
@@ -280,13 +292,13 @@
         </div>
       </div>
       <!-- Success text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Success text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <p class="text-success mb-0">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers...
@@ -294,13 +306,13 @@
         </div>
       </div>
       <!-- Warning text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Warning text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <p class="text-warning mb-0">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers...
@@ -308,13 +320,13 @@
         </div>
       </div>
       <!-- Danger text -->
-      <div class="flex justify-center items-center h-30 w-full mt-10 mb-10">
-        <div class="w-1/4">
+      <div class="flex flex-col h-10 w-full mt-5 mb-20 md:flex-row md:justify-center md:items-center">
+        <div class="w-full sm:w-1/4 md:w-1/4">
           <p class="opacity-30 uppercase text-sm font-sans font-semibold">
             Danger text
           </p>
         </div>
-        <div class="w-3/4">
+        <div class="w-full sm:w-3/4 md:w-3/4">
           <p class="text-danger mb-0">
             I will be the leader of a company that ends up being worth billions
             of dollars, because I got the answers...

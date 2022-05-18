@@ -1,82 +1,81 @@
 body {
     // Typography - H tags
     h1 {
-        @apply text-3xl font-gril font-medium leading-6 opacity-90;
+        @apply text-h1 font-gril font-medium;
     }
     h2 {
-        @apply text-xl font-gril font-medium leading-6 opacity-90;
+        @apply text-xl font-gril font-medium;
     }
     h3 {
-        @apply text-lg font-gril font-medium leading-6 opacity-90;
+        @apply text-lg font-gril font-medium;
     }
     h4 {
-        @apply text-base font-gril font-medium leading-6 opacity-90;
+        @apply text-base font-gril font-medium;
     }
     h5 {
-        @apply text-sm font-gril;
+        @apply text-sm font-gril font-medium;
     }
     h6 {
-        @apply text-xs font-gril;
+        @apply text-xs font-gril font-medium;
     }
 
     // Typograpy - display section
     .display1 {
-        @apply text-6xl font-gril;
+        @apply text-6xl font-gril font-medium;
     }
     .display2 {
-        @apply text-5xl font-gril;
+        @apply text-5xl font-gril font-medium;
     }
     .display3 {
-        @apply text-4xl font-gril;
+        @apply text-4xl font-gril font-medium;
     }
     .display4 {
-        @apply text-3xl font-gril;
+        @apply text-3xl font-gril font-medium;
     }
 
     // Typography - Specialized titles
     .heading {
-        @apply text-base uppercase font-gril tracking-wide;
+        @apply text-base uppercase font-gril font-medium tracking-wide;
     }
     .heading_title {
-        @apply text-2xl text-sky-400 uppercase font-gril tracking-wide;
+        @apply text-heading text-cyan-400 uppercase font-gril font-medium tracking-wide;
     }
     .heading_sub_title {
-        @apply text-3xl font-gril opacity-90;
+        @apply text-headingSub font-gril font-medium;
     }
     .heading_section {
-        @apply text-xl font-gril font-light opacity-60;
+        @apply text-xl font-gril font-light leading-6 text-slate-400;
     }
     
     // Paragraphs
     p {
-        @apply text-base font-gril font-light leading-7
+        @apply text-base font-gril font-light leading-7 text-slate-500;
     }
     .lead {
         @apply text-xl font-gril font-light leading-7
     }
     .blockquote {
-        @apply mb-4 font-gril text-base leading-6 block opacity-60
+        @apply mb-4 font-gril text-base leading-6
     }
     .blockquote-footer {
-        @apply mb-4 font-gril text-base leading-6 block opacity-80
+        @apply mb-4 text-blockquoteFooter leading-6 text-slate-400 font-medium
     }
     .text-muted {
-        @apply font-gril text-slate-400
+        @apply font-gril text-slate-400 font-extralight
     }
     .text-primary {
-        @apply font-gril text-blue-500
+        @apply font-gril text-blue-500 font-extralight
     }
     .text-info {
-        @apply font-gril text-sky-400
+        @apply font-gril text-sky-400 font-extralight
     }
     .text-success {
-        @apply font-gril text-green-500
+        @apply font-gril text-green-500 font-extralight
     }
     .text-warning {
-        @apply font-gril text-orange-500
+        @apply font-gril text-orange-500 font-extralight
     }
     .text-danger {
-        @apply font-gril text-red-400
+        @apply font-gril text-red-400 font-extralight
     }
-
 }
