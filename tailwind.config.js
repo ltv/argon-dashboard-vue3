@@ -106,6 +106,10 @@ module.exports = {
       },
       fontSize: {
         xxs: ['0.5rem', '0.75rem'],
+        h1: ['1.625rem', '1.5'],
+        heading: ['1.375rem', '1.5'],
+        headingSub: ['2.1875rem', '1.5'],
+        blockquoteFooter: ['80%', '1.5'],
       },
       boxShadow: {
         'info': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(70, 184, 218, 0.6) 0px 0px 8px',
