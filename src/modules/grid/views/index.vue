@@ -1,10 +1,8 @@
 <template>
-  <div class="p-6 bg-slate-50 w-full h-full">
+  <div class="p-2">
     <div class="block h-auto mx-auto">
       <div class="flex">
-        <div
-          class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
-        >
+        <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg rounded">
           <div class="font-semibold text-lg text-indigo-900 px-4 pt-4">Grid system</div>
           <el-divider />
           <div class="md:grid grid-cols-5 gap-6 px-8 mb-6 text-center">
@@ -27,7 +25,7 @@
         </div>
       </div>
 
-      <div class="flex pt-8">
+      <div class="flex pt-4">
         <div
           class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
         >
@@ -54,7 +52,7 @@
         </div>
       </div>
 
-      <div class="flex pt-8">
+      <div class="flex pt-4">
         <div
           class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
         >
@@ -100,7 +98,7 @@
         </div>
       </div>
 
-      <div class="flex pt-8">
+      <div class="flex pt-4">
         <div
           class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
         >
@@ -150,7 +148,7 @@
         </div>
       </div>
 
-      <div class="flex pt-8">
+      <div class="flex pt-4">
         <div
           class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
         >
@@ -172,7 +170,7 @@
         </div>
       </div>
 
-      <div class="flex pt-8">
+      <div class="flex pt-4">
         <div
           class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
         >
