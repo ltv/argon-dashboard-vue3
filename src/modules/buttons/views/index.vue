@@ -1,7 +1,7 @@
 <template>
   <div class="p-2">
     <div class="block rounded h-auto mx-auto">
-      <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
+      <div class="h-auto flex flex-wrap border border-slate-50 border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
         <div>
           <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
             <span class="font-bold block">Styles</span>                                           
@@ -23,7 +23,7 @@
           </div>
       </div>
 
-      <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
+      <div class="h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
         <div>
           <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
             <span class="font-bold block">Colors</span>                                           
@@ -57,7 +57,7 @@
         </div>
       </div>
 
-      <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
+      <div class="h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
         <div>
           <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
             <span class="font-bold block">Outline</span>                                           
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
+      <div class="h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
         <div>
           <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
             <span class="font-bold block">Size</span>                                           
@@ -130,7 +130,7 @@
         </div>
       </div>
 
-      <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
+      <div class="h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
         <div>
           <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
             <span class="font-bold block">Group</span>                                           
@@ -164,7 +164,7 @@
             </el-container>
           </div>
       </div>
-      <div class="w-3/5 h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
+      <div class="h-auto flex flex-wrap border border-slate-50 bg-white shadow-lg mt-5 mx-auto rounded-lg">
         <div>
           <el-container class="font-semibold text-lg text-indigo-900 px-6 pt-4">
             <span class="font-bold block">Social</span>                                           

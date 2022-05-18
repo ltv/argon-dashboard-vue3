@@ -275,24 +275,6 @@
                 </h4>
                 <p class="text-base text-slate-500 mb-0">Hand of The King</p>
               </div>
-<<<<<<< HEAD
-              <div class="p-4">
-                <el-button type="primary" circle class="p-3 py-5">
-                  <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
-                </el-button>
-                <el-button
-                  circle
-                  class="p-3 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
-                >
-                  <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
-                </el-button>
-                <el-button
-                  circle
-                  class="p-3 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
-                >
-                  <font-awesome-icon :icon="['fab', 'dribbble']" size="lg" />
-                </el-button>
-=======
               <div class="flex flex-wrap items-center justify-center p-4 gap-3">
                 <div>
                   <el-button type="primary" circle class="p-3 py-5">
@@ -309,7 +291,6 @@
                     <font-awesome-icon :icon="['fab', 'dribbble']" size="lg"/>
                   </el-button>
                 </div>
->>>>>>> fix(frontend): fix grid
               </div>
             </el-card>
           </div>
@@ -372,34 +353,6 @@
             <div class="px-16 flex flex-col items-center">
               <div class="text-white text-5xl pt-4 pb-2 font-medium">$49</div>
               <span class="text-white">per application</span>
-<<<<<<< HEAD
-              <div class="list-none my-4 block pl-0">
-                <div class="flex flex-nowrap items-center py-2">
-                  <div class="pl-4">
-                    <font-awesome-icon
-                      class="text-center inline-flex items-center justify-center rounded-full p-1.5 text-slate-500 bg-white"
-                      :icon="['fas', 'terminal']"
-                      size="xs"
-                    />
-                  </div>
-
-                  <div class="pl-2">
-                    <span class="text-sm text-white">Complete documentation</span>
-                  </div>
-                </div>
-
-                <div class="flex flex-nowrap items-center py-2">
-                  <div class="pl-4">
-                    <font-awesome-icon
-                      class="text-center inline-flex items-center justify-center rounded-full p-1.5 text-slate-500 bg-white"
-                      :icon="['fas', 'pen-fancy']"
-                      size="xs"
-                    />
-                  </div>
-
-                  <div class="pl-2">
-                    <span class="text-sm text-white">Working materials in Sketch</span>
-=======
 
               <div class="table w-1/3 my-6">
                 <div class="table-row-group">
@@ -421,29 +374,8 @@
                         <span class="text-sm text-white">Complete documentation</span>
                       </div>
                     </div>
->>>>>>> fix(frontend): fix grid
                   </div>
 
-<<<<<<< HEAD
-                <div class="flex flex-nowrap items-center py-2">
-                  <div class="pl-4">
-                    <font-awesome-icon
-                      class="text-center inline-flex items-center justify-center rounded-full p-1.5 text-slate-500 bg-white"
-                      :icon="['fas', 'hard-drive']"
-                      size="xs"
-                    />
-                  </div>
-
-                  <div class="pl-2">
-                    <span class="text-sm text-white">2GB cloud storage</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-3 mb-3">
-                <el-button class="el-button--secondary py-5 w-32 font-bold text-base"
-                  >Start free trial</el-button
-                >
-=======
                   <div class="table-row h-14">
                     <div class="table-cell w-10 justify-center align-middle">
                       <div class="flex pl-4">
@@ -487,7 +419,6 @@
               </div>
               <div class="mb-3">
                 <el-button class="el-button--secondary py-5 w-32 font-bold text-base">Start free trial</el-button>
->>>>>>> fix(frontend): fix grid
               </div>
             </div>
             <el-divider />
@@ -520,22 +451,6 @@
           </div>
 
           <div class="pt-8">
-<<<<<<< HEAD
-            <el-card class="box-card relative" :body-style="{ padding: '0px' }">
-              <img class="relative" alt="..." src="src/assets/images/window-purple-image.jpg" />
-              <div class="absolute top-0 text-white p-3">
-                <div class="py-3">
-                  <span class="text-xl font-medium">Card title</span>
-                </div>
-                <div class="py-px">
-                  <span class="break-normal font-light"
-                    >This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</span
-                  >
-                </div>
-                <div class="py-3">
-                  <span class="font-semibold">Last updated 3 mins ago</span>
-=======
             <el-card class="box-card" :body-style="{ padding: '0px', position: 'relative' }">
               <img class="" alt="..." src="src/assets/images/window-purple-image.jpg">
               <div class="absolute text-white p-3 inset-y-0 left-0 flex items-center justify-center">
@@ -549,7 +464,6 @@
                   <div class="py-3">
                     <span class="font-semibold">Last updated 3 mins ago</span>
                   </div>
->>>>>>> fix(frontend): fix grid
                 </div>
               </div>
 
@@ -566,34 +480,6 @@
               <div class="px-16 flex flex-col items-center">
                 <div class="text-slate-500 text-5xl pt-4 pb-2 font-medium">$49</div>
                 <span class="text-slate-400">per application</span>
-<<<<<<< HEAD
-                <div class="list-none my-4 block pl-0">
-                  <div class="flex flex-nowrap items-center py-2">
-                    <div class="pl-4">
-                      <font-awesome-icon
-                        class="text-center inline-flex items-center justify-center rounded-full p-1.5 text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
-                        :icon="['fas', 'terminal']"
-                        size="xs"
-                      />
-                    </div>
-
-                    <div class="pl-2">
-                      <span class="text-sm text-slate-400">Complete documentation</span>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-nowrap items-center py-2">
-                    <div class="pl-4">
-                      <font-awesome-icon
-                        class="text-center inline-flex items-center justify-center rounded-full p-1.5 text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
-                        :icon="['fas', 'pen-fancy']"
-                        size="xs"
-                      />
-                    </div>
-
-                    <div class="pl-2">
-                      <span class="text-sm text-slate-400">Working materials in Sketch</span>
-=======
 
                 <div class="table w-1/3 my-6">
                   <div class="table-row-group">
@@ -615,29 +501,8 @@
                           <span class="text-sm text-slate-400">Complete documentation</span>
                         </div>
                       </div>
->>>>>>> fix(frontend): fix grid
                     </div>
 
-<<<<<<< HEAD
-                  <div class="flex flex-nowrap items-center py-2">
-                    <div class="pl-4">
-                      <font-awesome-icon
-                        class="text-center inline-flex items-center justify-center rounded-full p-1.5 text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
-                        :icon="['fas', 'hard-drive']"
-                        size="xs"
-                      />
-                    </div>
-
-                    <div class="pl-2">
-                      <span class="text-sm text-slate-400">2GB cloud storage</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-3 mb-3">
-                  <el-button class="py-5 w-32 font-bold text-base" type="info"
-                    >Start free trial</el-button
-                  >
-=======
                     <div class="table-row h-14">
                       <div class="table-cell w-10 justify-center align-middle">
                         <div class="flex pl-4">
@@ -681,7 +546,6 @@
                 </div>
                 <div class="mb-3">
                   <el-button class="py-5 w-32 font-bold text-base" type="info">Start free trial</el-button>
->>>>>>> fix(frontend): fix grid
                 </div>
               </div>
               <el-divider />
