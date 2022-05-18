@@ -30,6 +30,8 @@ module.exports = {
           light: '#52cb55',
           DEFAULT: '#009925',
           dark: '#006900',
+          greenFrom: 'rgb(116, 222, 96, 0.2)',
+          greenTo: 'rgb(183, 226, 255, 0.28)',
           50: 'rgb(235, 255, 240, 1)',
           100: 'rgb(112, 255, 148, 1)',
           150: 'rgb(92, 255, 133, 1)',
@@ -52,6 +54,8 @@ module.exports = {
           light: '#7596ff',
           DEFAULT: '#3369e8',
           dark: '#003fb5',
+          blueFrom: 'rgb(183, 226, 255, 0.5)',
+          blueTo: 'rgb(183, 226, 255, 0.28)',
           50: 'rgb(237, 242, 253, 1)',
           100: 'rgb(218, 228, 251, 1)',
           150: 'rgb(200, 215, 249, 1)',
@@ -74,6 +78,8 @@ module.exports = {
           light: '#372e31',
           DEFAULT: '#120309',
           dark: '#000000',
+          100: 'rgb(249, 249, 249, 1)',
+          200: 'rgb(241, 241, 241, 1)',
         },
         yellow: {
           light: '#ffe450',
@@ -105,6 +111,13 @@ module.exports = {
         headingSub: ['2.1875rem', '1.5'],
         blockquoteFooter: ['80%', '1.5'],
       },
+      boxShadow: {
+        'info': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(70, 184, 218, 0.6) 0px 0px 8px',
+        'warning': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(245,54,92, 0.6) 0px 0px 8px',
+        'danger': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(238, 162, 54, 0.6) 0px 0px 8px',
+        'success': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(76, 174, 76, 0.6) 0px 0px 8px',
+        'question': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(200, 200, 200, 0.6) 0px 0px 8px',
+      }
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],

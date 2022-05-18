@@ -1,0 +1,20 @@
+.el-dropdown {
+  @apply rounded-full shadow-teal-400;
+}
+
+.el-dropdown .el-button-group .el-button:first-child {
+  @apply rounded-l-full border-solid border-slate-300 border-r-0 text-black;
+}
+
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  @apply rounded-r-full border-solid border-slate-300 border-l-0 text-black;
+}
+
+.el-dropdown .el-button-group .el-button.el-button.el-button--small {
+  @apply border-none;
+}
+
+.el-dropdown .el-button:first-child, 
+.el-dropdown .el-button-group .el-dropdown__caret-button {
+  @apply bg-white font-sans hover:bg-slate-100;
+}

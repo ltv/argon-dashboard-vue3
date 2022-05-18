@@ -1,9 +1,5 @@
 <template>
-  <div class="p-6 h-full">
-    <div class="block rounded h-full w-full">
-      <slot></slot>
-    </div>
-  </div>
+  <slot></slot>
 </template>
 
 <script lang="ts">

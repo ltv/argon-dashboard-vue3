@@ -1,13 +1,24 @@
 .el-table__header thead {
-  @apply font-bold text-base font-sans text-slate-400 !important;
+  @apply text-lg font-sans text-slate-400 !important;
+}
+
+.el-table th {
+  @apply font-semibold border-none !important;
 }
 
 .el-table {
   @apply border-collapse mt-4 !important;
 }
 
+.el-table--border::after, 
+.el-table--border::before, 
+.el-table--border .el-table__inner-wrapper::after, 
+.el-table__inner-wrapper::before {
+  @apply bg-white !important;
+}
+
 .el-table__body {
-  @apply font-bold text-base text-sky-900 font-sans;
+  @apply font-semibold text-lg text-sky-900 font-sans;
   border-spacing: 0 0.5rem;
 }
 
@@ -19,12 +30,16 @@
   @apply rounded-r-lg;
 } 
 
+.el-table .el-checkbox__inner {
+  @apply bg-slate-100 border-transparent !important;
+}
+
 .el-table th.is-leaf .el-checkbox__inner {
-  @apply bg-slate-300 border-transparent !important;
+  @apply bg-slate-300 !important;
 }
 
 .el-table td {
-  @apply py-3 !important;
+  @apply py-2 !important;
 }
 
 .el-table__row {
@@ -36,3 +51,10 @@
   @apply hover:bg-gray-200 !important;
 }
 
+.el-table__body .el-table_1_column_1 {
+   @apply bg-white border-transparent !important;
+}
+
+.el-table__body .el-table_1_column_2 {
+  @apply rounded-l-lg !important;
+}

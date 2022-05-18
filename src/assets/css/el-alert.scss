@@ -1,0 +1,27 @@
+.el-alert .el-alert__content .el-icon.el-alert__close-btn {
+  @apply py-3 text-slate-50 hover:text-slate-200;
+}
+
+.el-alert.el-alert--primary .el-alert__content .el-icon.el-alert__close-btn {
+  @apply text-gray-600 hover:text-gray-500;
+}
+
+.swal2-popup.swal2-modal.swal2-icon-info.swal2-show .swal2-styled.swal2-confirm:focus {
+  @apply shadow-info;
+}
+
+.swal2-popup.swal2-modal.swal2-icon-warning.swal2-show .swal2-styled.swal2-confirm:focus {
+  @apply shadow-warning;
+}
+
+.swal2-popup.swal2-modal.swal2-icon-error.swal2-show .swal2-styled.swal2-confirm:focus {
+  @apply shadow-danger;
+}
+
+.swal2-popup.swal2-modal.swal2-icon-success.swal2-show .swal2-styled.swal2-confirm:focus {
+  @apply shadow-success;
+}
+
+.swal2-popup.swal2-modal.swal2-icon-question.swal2-show .swal2-styled.swal2-confirm:focus {
+  @apply shadow-question;
+}
