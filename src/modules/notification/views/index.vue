@@ -218,12 +218,12 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
+          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
           h('br', null),
           h(
             'span',
             { class: 'text-white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard Fancy alerts into awesome notifications',
           ),
         ]),
         type: 'info',
@@ -234,12 +234,12 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
+          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
           h('br', null),
           h(
             'span',
             { class: 'text-white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard Fancy alerts into awesome notifications',
           ),
         ]),
         type: 'success',
@@ -250,12 +250,12 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
+          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
           h('br', null),
           h(
             'span',
             { class: 'text-white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard Fancy alerts into awesome notifications',
           ),
         ]),
         customClass: 'infoNotifClass',
@@ -266,12 +266,12 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
+          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
           h('br', null),
           h(
             'span',
             { class: 'text-white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard Fancy alerts into awesome notifications',
           ),
         ]),
         type: 'warning',
@@ -282,12 +282,12 @@ export default defineComponent({
       ElMessage({
         showClose: true,
         message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Bootstrap Notify'),
+          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
           h('br', null),
           h(
             'span',
             { class: 'text-white' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard Fancy alerts into awesome notifications',
           ),
         ]),
         type: 'error',

@@ -7,6 +7,7 @@ import 'assets/css/el-dropdown.scss'
 import 'assets/css/el-alert.scss'
 import 'assets/css/el-checkbox.scss'
 import 'assets/css/el-link.scss'
+import 'assets/css/el-divider.scss'
 
 import 'assets/css/el-message.css'
 import 'assets/css/typography.scss'

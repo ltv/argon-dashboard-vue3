@@ -7,7 +7,7 @@
 }
 
 .el-table {
-  @apply border-collapse mt-4 !important;
+  @apply border-collapse mt-4 rounded !important;
 }
 
 .el-table--border::after, 
@@ -51,10 +51,14 @@
   @apply hover:bg-gray-200 !important;
 }
 
-.el-table__body .el-table_1_column_1 {
+.el-table__body tr td:first-child {
    @apply bg-white border-transparent !important;
 }
 
-.el-table__body .el-table_1_column_2 {
+.el-table__body tr td:nth-child(2) {
   @apply rounded-l-lg !important;
+}
+
+.green-col {
+  @apply text-[#86CC60];
 }
