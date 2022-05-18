@@ -1,7 +1,7 @@
 <template>
   <div class="flex p-6 h-full">
-    <div class="block rounded h-full w-full">  
-      <div class="pl-4">
+    <div class="block rounded h-full w-full">
+      <div class="">
         <div class="text-blue">
           <div class="relative flex flex-grow pt-1">
             <div class="items-center">
@@ -14,18 +14,20 @@
             </div>
           </div>
         </div>
-      </div>  
-      <div class="pl-12 mt-4 drop-shadow-[0_6px_3px_rgba(0,64,255,0.25)]">
+      </div>
+      <div class="pl-8 mt-4 drop-shadow-[0_6px_3px_rgba(0,64,255,0.25)]">
         <el-dropdown size="small" split-button @command="handleCommand">
-          <span class="px-2"> Show: <span class="text-blue"> {{ choosedItem }}</span></span>
+          <span class="px-2">
+            Show: <span class="text-blue"> {{ choosedItem }}</span></span
+          >
           <template #dropdown>
             <el-dropdown-menu>
-              <el-dropdown-item 
+              <el-dropdown-item
                 v-for="item in options"
                 :key="item.value"
                 :value="item.value"
                 :command="item.label"
-                >
+              >
                 {{ item.label }}
               </el-dropdown-item>
             </el-dropdown-menu>
@@ -41,10 +43,10 @@
           @selection-change="handleSelectionChange"
           class="h-full w-full"
         >
-          <el-table-column type="selection" class="flex-none" width="42"/>
+          <el-table-column type="selection" class="flex-none" width="42" />
           <el-table-column property="content" label="Request">
             <template #default="scope">
-              <div :class='{ done: scope.row.isDone }'>
+              <div :class="{ done: scope.row.isDone }">
                 {{ scope.row.content }}
               </div>
             </template>
@@ -52,7 +54,13 @@
           <el-table-column label="Status" align="center" header-align="center">
             <template #default="scope">
               <el-tag
-                :type="scope.row.status == 'Urgent' ? 'danger': scope.row.status == 'Normal' ? '' : 'success'"
+                :type="
+                  scope.row.status == 'Urgent'
+                    ? 'danger'
+                    : scope.row.status == 'Normal'
+                    ? ''
+                    : 'success'
+                "
                 effect="dark"
                 class="w-20 rounded-full font-light"
               >
@@ -73,18 +81,17 @@
             </template>
           </el-table-column>
           <el-table-column label="Action" align="center">
-            <el-button 
-            class="px-8 border-blue-200 color-blue-200 active: !bg-cyan-100"
-            type="primary"
-            size="small"
-            round
-            plain
+            <el-button
+              class="px-8 border-blue-200 color-blue-200 active: !bg-cyan-100"
+              type="primary"
+              size="small"
+              round
+              plain
             >
-            View
+              View
             </el-button>
           </el-table-column>
         </el-table>
-
       </div>
     </div>
   </div>
@@ -94,9 +101,7 @@
 import { defineComponent, ref } from 'vue'
 import type { ElTable } from 'element-plus'
 // Icon
-import {
-  UserAddIcon,
-} from '@heroicons/vue/outline'
+import { UserAddIcon } from '@heroicons/vue/outline'
 
 interface Task {
   id: any
@@ -114,7 +119,7 @@ export default defineComponent({
     UserAddIcon,
   },
   setup(_) {
-    const newTask = ref('');
+    const newTask = ref('')
     const dialogVisible = ref(false)
     const tasks = ref<Task[]>([
       {
@@ -165,7 +170,7 @@ export default defineComponent({
         isDone: false,
         content: 'Accountant',
       },
-    ]);
+    ])
     const multipleTableRef = ref<InstanceType<typeof ElTable>>()
     const multipleSelection = ref<Task[]>([])
 
@@ -193,42 +198,34 @@ export default defineComponent({
     const choosedItem = ref(options[0].label)
 
     const handleCommand = (command: string) => {
-      choosedItem.value = " " + command
+      choosedItem.value = ' ' + command
     }
 
     const handleSelectionChange = (val: Task[]) => {
       multipleSelection.value = val
-      const tasksNormal = tasks.value.filter((task) => task.status=='Urgent')
+      const tasksNormal = tasks.value.filter((task) => task.status == 'Urgent')
       tasksNormal.forEach((task) => {
-        if (task.status != "Pending") {
+        if (task.status != 'Pending') {
           if (multipleSelection.value.includes(task)) {
-            task.isDone = true;
-            task.status = 'Normal';
-          }
-          else {
-            task.isDone = false;
-            task.status = 'Urgent';
+            task.isDone = true
+            task.status = 'Normal'
+          } else {
+            task.isDone = false
+            task.status = 'Urgent'
           }
         }
       })
     }
 
-    const tableRowClassName = ({
-      _row,
-      rowIndex,
-    }: {
-      _row: Task
-      rowIndex: number
-    }) => {
+    const tableRowClassName = ({ _row, rowIndex }: { _row: Task; rowIndex: number }) => {
       if (rowIndex % 2 == 0) {
         return 'success-row'
       } else return 'primary-row'
     }
 
     const toggleDone = (task: any) => {
-      task.isDone = !task.isDone;
-    };
-
+      task.isDone = !task.isDone
+    }
 
     return {
       tasks,
@@ -242,12 +239,11 @@ export default defineComponent({
       toggleDone,
       handleSelectionChange,
       tableRowClassName,
-    };
+    }
   },
 })
 </script>
 <style>
-
 .deadline {
   @apply text-[#86CC60];
 }
@@ -255,6 +251,4 @@ export default defineComponent({
 .el-button.el-button--primary.el-button--small.is-plain:hover {
   @apply bg-blue-50 text-blue-300 drop-shadow-none !important;
 }
-
 </style>
-

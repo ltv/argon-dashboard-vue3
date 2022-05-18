@@ -78,6 +78,8 @@ module.exports = {
           light: '#372e31',
           DEFAULT: '#120309',
           dark: '#000000',
+          100: 'rgb(249, 249, 249, 1)',
+          200: 'rgb(241, 241, 241, 1)',
         },
         yellow: {
           light: '#ffe450',
