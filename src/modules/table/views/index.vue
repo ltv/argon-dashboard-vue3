@@ -1,7 +1,7 @@
 <template>
-  <div class="flex p-6 h-full">
-    <div class="block rounded h-full w-full">
-      <div class="">
+  <div class="">
+    <div class="block rounded h-auto mx-auto">
+      <div class="flex">
         <div class="text-blue">
           <div class="relative flex flex-grow pt-1">
             <div class="items-center">
@@ -75,7 +75,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label-class-name="deadline" label="Deadline">
+          <el-table-column label-class-name="green-col" label="Deadline">
             <template #default="scope">
               {{ scope.row.deadLine }}
             </template>
@@ -243,12 +243,18 @@ export default defineComponent({
   },
 })
 </script>
-<style>
-.deadline {
-  @apply text-[#86CC60];
-}
-
+<style scoped>
 .el-button.el-button--primary.el-button--small.is-plain:hover {
   @apply bg-blue-50 text-blue-300 drop-shadow-none !important;
 }
+
+.el-button.el-button--primary.el-button--small.is-plain:active {
+  @apply bg-blue-200 text-blue-100 !important;
+}
+
+.el-button.el-button--primary.el-button--small.is-plain:focus {
+  @apply bg-blue-100 text-blue-300 drop-shadow-none !important;
+}
+
 </style>
+

@@ -113,12 +113,18 @@ module.exports = {
         'danger': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(238, 162, 54, 0.6) 0px 0px 8px',
         'success': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(76, 174, 76, 0.6) 0px 0px 8px',
         'question': 'rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(200, 200, 200, 0.6) 0px 0px 8px',
-      }
+      },
+    },
+    translate: {
+      '0.25': '0.075rem',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       gril: ['Grilroy', 'sans-serif'],
     },
+    // screens: {
+    //   'lg': '1366px',
+    // },
   },
   plugins: [require('@tailwindcss/forms')],
 }

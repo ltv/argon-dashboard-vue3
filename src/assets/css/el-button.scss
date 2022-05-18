@@ -14,7 +14,14 @@ body {
     --el-button-hover-border-color: var(--button-hover-border-color) !important;
     --el-button-active-border-color: var(--button-active-border-color) !important;
     background-color: var(--el-button-bg-color, var(--el-color-white));
-    @apply hover:pt-1.5 hover:shadow-sm active:bg-[#6cffff];
+
+    @apply hover:shadow-sm active:bg-[#6cffff];
+
+    &:hover {
+      i, span {
+        @apply -translate-y-0.25;
+      }
+    }
   }
 
   @each $type in $types {
