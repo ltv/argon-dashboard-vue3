@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-gray-200">
+  <div class="h-screen overflow-hidden flex bg-white">
     <sidebar />
     <div class="flex flex-col flex-1 w-full">
       <navigation />

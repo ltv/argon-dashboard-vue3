@@ -2,100 +2,6 @@
   <div class="p-2">
     <div class="block rounded h-auto mx-auto">
       <div class="flex">
-        <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg rounded">
-          <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Alerts</div>
-          <el-divider />
-          <div class="px-6 my-6">
-            <div>
-              <div class="relative flex flex-grow mb-2">
-                <el-alert class="bg-slate-700">
-                  <span class="text-white pl-3"
-                    ><span class="font-semibold">Default!</span> This is a default alert—check it
-                    out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-
-              <div class="relative flex flex-grow mb-2">
-                <el-alert class="bg-indigo-500">
-                  <span class="text-white pl-3"
-                    ><span class="font-semibold">Primary!</span> This is a primary alert—check it
-                    out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-
-              <div class="relative flex flex-grow mb-2">
-                <el-alert type="primary" class="bg-slate-50">
-                  <span
-                    ><span class="font-semibold pl-3">Secondary!</span> This is a secondary
-                    alert—check it out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-black-400" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-
-              <div class="relative flex flex-grow mb-2">
-                <el-alert type="info" class="bg-cyan-400">
-                  <span class="text-white pl-3"
-                    ><span class="font-semibold">Info!</span> This is a info alert—check it
-                    out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-
-              <div class="relative flex flex-grow mb-2">
-                <el-alert type="success" class="bg-emerald-400">
-                  <span class="text-white pl-3"
-                    ><span class="font-semibold">Success!</span> This is a success alert—check it
-                    out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-
-              <div class="relative flex flex-grow mb-2">
-                <el-alert type="warning" class="bg-rose-500">
-                  <span class="text-white pl-3"
-                    ><span class="font-semibold">Warning!</span> This is a warning alert—check it
-                    out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-
-              <div class="relative flex flex-grow mb-2">
-                <el-alert type="error" class="bg-orange-500">
-                  <span class="text-white pl-3"
-                    ><span class="font-semibold">Error!</span> This is a error alert—check it
-                    out!</span
-                  >
-                  <div class="absolute inset-y-0 left-0 pl-3 py-3.5 items-center">
-                    <ThumbUpIcon class="h-5 w-5 text-white" aria-hidden="true" />
-                  </div>
-                </el-alert>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex pt-4">
         <div
           class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
         >
@@ -140,66 +46,13 @@
           </div>
         </div>
       </div>
-
-      <div class="flex pt-4">
-        <div
-          class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
-        >
-          <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Sweet alerts</div>
-          <el-divider />
-          <div class="flex flex-wrap gap-2 px-6 my-6">
-            <div>
-              <el-button
-                @click="openAlertDefault"
-                class="bg-indigo-600 border-indigo-600 text-white font-bold"
-                >Default Alert</el-button
-              >
-            </div>
-            <div>
-              <el-button
-                @click="openAlertInfo"
-                class="bg-cyan-400 border-cyan-400 text-white font-bold"
-                >Info Alert</el-button
-              >
-            </div>
-            <div>
-              <el-button
-                @click="openAlertSuccess"
-                class="bg-emerald-400 border-emerald-400 text-white font-bold"
-                >Success Alert</el-button
-              >
-            </div>
-            <div>
-              <el-button
-                @click="openAlertWarning"
-                class="bg-orange-500 border-orange-500 text-white font-bold"
-                >Warning Alert</el-button
-              >
-            </div>
-            <div>
-              <el-button
-                @click="openAlertDanger"
-                class="bg-rose-500 border-rose-500 text-white font-bold"
-                >Danger Alert</el-button
-              >
-            </div>
-            <div>
-              <el-button
-                @click="openAlertQuestion"
-                class="bg-slate-800 border-slate-800 text-white font-bold"
-                >Question Alert</el-button
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, h, inject } from 'vue'
-import { ElMessage } from 'element-plus'
+import { defineComponent, inject } from 'vue'
+import { IElMessageBox, Message } from 'element-plus'
 
 // Icon
 import { ThumbUpIcon, BellIcon } from '@heroicons/vue/solid'
@@ -213,85 +66,37 @@ export default defineComponent({
   },
   setup(_) {
     const $swal = inject<any>('$swal')
+    const $message = inject<Message>('$message')
+    const $messageBox = inject<IElMessageBox>('$messageBox')
 
     const openNotifDefault = () => {
-      ElMessage({
-        showClose: true,
-        message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
-          h('br', null),
-          h(
-            'span',
-            { class: 'text-white' },
-            'Turning standard Fancy alerts into awesome notifications',
-          ),
-        ]),
-        type: 'info',
+      $message?.success({
+        message: 'this is a message.',
+        grouping: true,
+        center: true,
+      })
+      // messageBox
+      $messageBox?.alert('Message', 'Title', {
+        showCancelButton: true,
+        confirmButtonText: 'OK',
+        cancelButtonText: 'Cancel',
       })
     }
 
     const openNotifSuccess = () => {
-      ElMessage({
-        showClose: true,
-        message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
-          h('br', null),
-          h(
-            'span',
-            { class: 'text-white' },
-            'Turning standard Fancy alerts into awesome notifications',
-          ),
-        ]),
-        type: 'success',
-      })
+      $message?.success(`Couldn't initialize the system with error: `)
     }
 
     const openNotifInfo = () => {
-      ElMessage({
-        showClose: true,
-        message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
-          h('br', null),
-          h(
-            'span',
-            { class: 'text-white' },
-            'Turning standard Fancy alerts into awesome notifications',
-          ),
-        ]),
-        customClass: 'infoNotifClass',
-      })
+      $message?.info(`Couldn't initialize the system with error: `)
     }
 
     const openNotifWarning = () => {
-      ElMessage({
-        showClose: true,
-        message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
-          h('br', null),
-          h(
-            'span',
-            { class: 'text-white' },
-            'Turning standard Fancy alerts into awesome notifications',
-          ),
-        ]),
-        type: 'warning',
-      })
+      $message?.warning(`Couldn't initialize the system with error: `)
     }
 
     const openNotifDanger = () => {
-      ElMessage({
-        showClose: true,
-        message: h('p', null, [
-          h('span', { class: 'text-white font-semibold' }, 'Fancy Notify'),
-          h('br', null),
-          h(
-            'span',
-            { class: 'text-white' },
-            'Turning standard Fancy alerts into awesome notifications',
-          ),
-        ]),
-        type: 'error',
-      })
+      $message?.error(`Couldn't initialize the system with error: `)
     }
 
     const openAlertDefault = () => {
