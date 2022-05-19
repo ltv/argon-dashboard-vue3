@@ -1,5 +1,6 @@
 // Custom css, do it later, now use the element plus css
 import 'assets/css/el-button.scss'
+import 'assets/css/typography.scss'
 
 import 'element-plus/dist/index.css'
 import 'element-plus/es/components/message/style/css'
