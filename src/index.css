@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "Grilroy";
-    src: url("/fonts/SVN-Gilroy-Regular.woff2");
-}
-
 @layer base {
   * {
-    font-family: Grilroy, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 }

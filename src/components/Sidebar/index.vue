@@ -1,7 +1,7 @@
 <template>
   <aside
     aria-labelledby="primary-heading"
-    class="z-20 bg-gray-100 flex-shrink-0 w-64 overflow-y-auto h-full rounded-tr-3xl rounded-br-3xl hidden lg:block"
+    class="z-20 bg-slate-100 flex-shrink-0 w-64 overflow-y-auto h-full rounded-tr-3xl rounded-br-3xl hidden md:block"
   >
     <div class="py-4 text-gray-500">
       <ul class="mt-2">
@@ -24,16 +24,6 @@
       </ul>
     </div>
   </aside>
-  <div
-    v-if="isSideMenuOpen"
-    x-transition:enter="transition ease-in-out duration-150"
-    x-transition:enter-start="opacity-0"
-    x-transition:enter-end="opacity-100"
-    x-transition:leave="transition ease-in-out duration-150"
-    x-transition:leave-start="opacity-100"
-    x-transition:leave-end="opacity-0"
-    class="fixed inset-0 z-10 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center"
-  ></div>
 </template>
 
 <script lang="ts">

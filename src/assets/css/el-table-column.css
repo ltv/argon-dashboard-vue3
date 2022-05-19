@@ -1,7 +1,0 @@
-.el-table .success-row {
-  @apply bg-gradient-to-r from-green-greenFrom to-green-greenTo;
-}
-
-.el-table .primary-row {
-  @apply bg-gradient-to-r from-blue-blueFrom to-blue-blueTo;
-}
