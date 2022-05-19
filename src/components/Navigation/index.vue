@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center px-4 py-2 shadow-sm">
+  <div class="flex items-center px-4 py-2 shadow-sm bg-slate-100">
     <div class="mr-auto"><strong>Hi Bieber,</strong> Have a nice day!</div>
     <div class="flex">
       <el-button type="primary" class="rounded-full px-2 ml-2">

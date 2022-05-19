@@ -1,11 +1,14 @@
 import {
   HomeIcon,
+  DesktopComputerIcon,
   TableIcon,
   ViewGridIcon,
   CreditCardIcon,
-  IdentificationIcon,
+  CursorClickIcon,
   MenuAlt1Icon,
   AnnotationIcon,
+  GlobeAltIcon,
+  LocationMarkerIcon,
 } from '@heroicons/vue/outline'
 
 const NotFound = () => import('modules/pages/views/404.vue')
@@ -24,7 +27,8 @@ const routes = [
     name: 'Dashboard',
     meta: {
       title: 'Dashboard',
-      icon: HomeIcon,
+      icon: DesktopComputerIcon,
+      color: '#5e72e4'
     },
   },
   {
@@ -33,7 +37,8 @@ const routes = [
     name: 'Button',
     meta: {
       title: 'Buttons',
-      icon: MenuAlt1Icon,
+      icon: CursorClickIcon,
+      color: '#172b4d'
     },
   },
   {
@@ -43,6 +48,7 @@ const routes = [
     meta: {
       title: 'Notifications',
       icon: AnnotationIcon,
+      color: '#f4645f'
     },
   },
   {
@@ -52,6 +58,7 @@ const routes = [
     meta: {
       title: 'Tables',
       icon: TableIcon,
+      color: '#172b4d'
     },
   },
   {
@@ -61,6 +68,7 @@ const routes = [
     meta: {
       title: 'Grid',
       icon: ViewGridIcon,
+      color: '#fb6340'
     },
   },
   {
@@ -69,7 +77,8 @@ const routes = [
     name: 'Typography',
     meta: {
       title: 'Typography',
-      icon: HomeIcon,
+      icon: LocationMarkerIcon,
+      color: '#fb6340'
     },
   },
   {
@@ -79,6 +88,7 @@ const routes = [
     meta: {
       title: 'Cards',
       icon: CreditCardIcon,
+      color: '#172b4d'
     },
   },
   {
@@ -87,7 +97,8 @@ const routes = [
     name: 'Icons',
     meta: {
       title: 'Icons',
-      icon: IdentificationIcon,
+      icon: GlobeAltIcon,
+      color: '#172b4d'
     },
   },
   {
