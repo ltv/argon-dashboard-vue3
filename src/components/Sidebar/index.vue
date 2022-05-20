@@ -103,6 +103,7 @@ export default defineComponent({
     const isSideMenuOpen = ref(false)
     const isHover = ref<boolean>(true)
     const isHide = ref<boolean>(false)
+
     watch(isHide, () => {
       store.setSideBar(isHide.value)
     })
@@ -116,12 +117,8 @@ export default defineComponent({
     }
 
     const hoverLeftBar = (b: boolean) => {
-      if (isHide.value == true) return (isHover.value = b)
+      if (isHide.value) isHover.value = b
     }
-
-    watch(route, () => {
-      console.log(route.name)
-    })
 
     return {
       isPagesMenuOpen,
