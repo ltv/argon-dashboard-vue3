@@ -2,9 +2,6 @@ module.exports = {
   important: true,
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    fontSize: {
-      'sm': '.9rem',
-    },
     extend: {
       colors: {
         'left-bar-yellow': '#ffd600',

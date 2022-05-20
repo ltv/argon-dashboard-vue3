@@ -60,7 +60,7 @@
                 />
               </div>
               <span
-                class="transition-opacity opacity-1 duration-300 ml-4"
+                class="transition-opacity opacity-1 duration-300 ml-4 text-base"
                 :class="{ 'opacity-0': !isHover }"
                 >{{ item.title }}</span
               >
