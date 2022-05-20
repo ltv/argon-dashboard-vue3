@@ -1,9 +1,9 @@
 <template>
   <aside
-    @mouseover="isHide == true ? (isHover = true) : ''"
-    @mouseleave="isHide == true ? (isHover = false) : ''"
+    @mouseover="hoverLeftBar(true)"
+    @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 bg-white flex-shrink-0 w-14 overflow-y-auto h-full hidden md:block items-center"
+    class="transition-all duration-300 fixed z-20 bg-white flex-shrink-0 w-15 overflow-y-auto h-full hidden md:block items-center"
     :class="{ 'w-64': isHover }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
@@ -15,18 +15,18 @@
         >
           <img
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/blue.png"
-            class="max-h-8 max-w-full align-middle"
+            class="max-h-9 max-w-full align-middle"
             alt="..."
           />
         </a>
         <div class="ml-auto">
           <div class="lg:col-span-10 xl:col-span-10 flex">
             <div class="hidden md:block flex-grow">
-              <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-4">
-                <MenuIcon v-if="isHide" class="cursor-pointer h-5 w-5" @click="isHide = !isHide" />
+              <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
+                <MenuIcon v-if="isHide" class="cursor-pointer h-6 w-6" @click="isHide = !isHide" />
                 <MenuAlt1Icon
                   v-if="isHover && !isHide"
-                  class="cursor-pointer h-5 w-5"
+                  class="cursor-pointer h-6 w-6"
                   @click="isHide = !isHide"
                 />
               </div>
@@ -34,10 +34,10 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col text-gray-400 px-6 before:block before:mt-4">
+      <div class="flex flex-col text-gray-400 px-6 before:block before:mt-6">
         <ul class="flex flex-col -mx-6">
           <li
-            class="relative flex flex-row px-5 py-3 h-11"
+            class="relative flex flex-row px-5 py-3 h-12"
             v-for="(item, index) in menuItems"
             :key="index"
           >
@@ -55,7 +55,7 @@
               <div>
                 <component
                   :is="item.icon"
-                  :class="'h-5 w-5 block ' + item.color"
+                  :class="'h-6 w-6 block ' + item.color"
                   aria-hidden="true"
                 />
               </div>
@@ -67,11 +67,6 @@
             </router-link>
           </li>
         </ul>
-        <!-- <ul class="flex flex-col" v-if="isHide && !isHover">
-          <li class="relative flex flex-row py-3 h-11" v-for="(item, index) in menuItems" :key="index">
-            <component :is="item.icon" :class="'h-5 w-5 ' + item.color" aria-hidden="true" />
-          </li>
-        </ul> -->
       </div>
     </div>
   </aside>
@@ -115,9 +110,15 @@ export default defineComponent({
     const togglePagesMenu = () => {
       isSideMenuOpen.value = !isSideMenuOpen.value
     }
+
     const closeSideMenu = () => {
       isSideMenuOpen.value = false
     }
+
+    const hoverLeftBar = (b: boolean) => {
+      if (isHide.value == true) return (isHover.value = b)
+    }
+
     watch(route, () => {
       console.log(route.name)
     })
@@ -129,6 +130,7 @@ export default defineComponent({
       menuItems,
       route,
       isHide,
+      hoverLeftBar,
       togglePagesMenu,
       closeSideMenu,
     }

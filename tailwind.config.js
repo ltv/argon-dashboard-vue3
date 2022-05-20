@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      width: {
+        '15': '3.75rem',
+      },
       colors: {
         'left-bar-yellow': '#ffd600',
         'left-bar-indigo': '#5e72e4',
