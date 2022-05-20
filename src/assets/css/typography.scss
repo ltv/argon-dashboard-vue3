@@ -3,7 +3,7 @@ body {
         @apply bg-white break-words w-full sm:w-3/4 md:w-3/4 mx-auto mt-5 mb-2 shadow rounded-lg flex flex-col
     }
     .card-header {
-        @apply p-5 border-b
+        @apply p-5 border-b border-primary-white
     }
     .row {
         @apply my-8 w-full h-auto
