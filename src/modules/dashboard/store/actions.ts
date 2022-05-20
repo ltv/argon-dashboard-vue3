@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { useState } from './state'
 import { useGetters } from './getters'
+import { boolean } from 'yup'
 
 export const useActions = defineStore('dashboard.actions', () => {
   const state = useState()
@@ -17,8 +18,15 @@ export const useActions = defineStore('dashboard.actions', () => {
     state.welcomeText = value
   }
 
+  const setSideBar = (value:boolean) => {
+    console.log("value::: ", value)
+    state.isHide = value
+    console.log("state.isHide::: ", state.isHide)
+  }
+
   return {
     showWelcomeText,
     setWelcomeText,
+    setSideBar,
   }
 })

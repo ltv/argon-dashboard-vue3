@@ -7,7 +7,7 @@ import {
   DocumentTextIcon,
   GlobeAltIcon,
   BellIcon,
-} from '@heroicons/vue/solid'
+} from '@heroicons/vue/outline'
 
 
 const NotFound = () => import('modules/pages/views/404.vue')
@@ -25,7 +25,7 @@ const routes = [
     component: Dashboard,
     name: 'Dashboard',
     meta: {
-      title: 'Dashboard',
+      title: 'Dashboards',
       icon: ViewBoardsIcon,
       color: 'text-left-bar-gray'
     },
