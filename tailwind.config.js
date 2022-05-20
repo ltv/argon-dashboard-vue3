@@ -20,6 +20,7 @@ module.exports = {
           200: 'rgb(136 152 170)',
           blue: 'rgb(94 114 228)',
           red: 'rgb(245 54 92)',
+          white: 'rgba(0, 0, 0, 0.05)',
         },
         muted: {
           DEFAULT: 'rgb(136 152 170)',

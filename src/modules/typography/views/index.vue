@@ -11,7 +11,7 @@
                     <span class="title block">Heading 1</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h1>Fancy Dasboard</h1>
+                    <h1>Fancy Dashboard</h1>
                 </div>
             </div>
             <!-- Heading 2 -->
@@ -20,7 +20,7 @@
                     <span class="title block">Heading 2</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h2>Fancy Dasboard</h2>
+                    <h2>Fancy Dashboard</h2>
                 </div>
             </div>
             <!-- Heading 3 -->
@@ -29,7 +29,7 @@
                     <span class="title block">Heading 3</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h3>Fancy Dasboard</h3>
+                    <h3>Fancy Dashboard</h3>
                 </div>
             </div>
             <!-- Heading 4 -->
@@ -38,7 +38,7 @@
                     <span class="title block">Heading 4</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h4>Fancy Dasboard</h4>
+                    <h4>Fancy Dashboard</h4>
                 </div>
             </div>
             <!-- Heading 5 -->
@@ -47,7 +47,7 @@
                     <span class="title block">Heading 5</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h5>Fancy Dasboard</h5>
+                    <h5>Fancy Dashboard</h5>
                 </div>
             </div>
             <!-- Heading 6 -->
@@ -56,7 +56,7 @@
                     <span class="title block">Heading 6</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h6>Fancy Dasboard</h6>
+                    <h6>Fancy Dashboard</h6>
                 </div>
             </div>
         </div>
@@ -74,34 +74,34 @@
                     <span class="title block">Display 1</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h1 class="display-1">Fancy Dasboard</h1>
+                    <h1 class="display-1">Fancy Dashboard</h1>
                 </div>
             </div>
             <!-- Display 2 -->
             <div class="row medium">
                 <div class="md:w-1/4">
-                    <span class="title block">Heading 2</span>
+                    <span class="title block">Display 2</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h2 class="display-2">Fancy Dasboard</h2>
+                    <h2 class="display-2">Fancy Dashboard</h2>
                 </div>
             </div>
             <!-- Heading 3 -->
             <div class="row medium">
                 <div class="md:w-1/4">
-                    <span class="title block">Heading 3</span>
+                    <span class="title block">Display 3</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="display-3">Fancy Dasboard</h3>
+                    <h3 class="display-3">Fancy Dashboard</h3>
                 </div>
             </div>
             <!-- Heading 4 -->
             <div class="row medium">
                 <div class="md:w-1/4">
-                    <span class="title block">Heading 4</span>
+                    <span class="title block">Display 4</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h4 class="display-4">Fancy Dasboard</h4>
+                    <h4 class="display-4">Fancy Dashboard</h4>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <span class="title block">Heading</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="heading">Fancy Dasboard</h3>
+                    <h3 class="heading">Fancy Dashboard</h3>
                 </div>
             </div>
             <!-- Heading title -->
@@ -128,7 +128,7 @@
                     <span class="title block">Heading Title</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h2 class="heading-title text-warning">Fancy Dasboard</h2>
+                    <h2 class="heading-title text-warning">Fancy Dashboard</h2>
                 </div>
             </div>
             <!-- Heading section -->
@@ -137,7 +137,7 @@
                     <span class="title block">Heading Section</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="display-3">Fancy Dasboard</h3>
+                    <h3 class="display-3">Fancy Dashboard</h3>
                 </div>
             </div>
             <!--  -->
@@ -146,7 +146,7 @@
                     <span class="title block"></span>
                 </div>
                 <div class="md:w-3/4">
-                    <h4 class="lead text-muted">Fancy Dasboard</h4>
+                    <h4 class="lead text-muted">Fancy Dashboard</h4>
                 </div>
             </div>
         </div>
