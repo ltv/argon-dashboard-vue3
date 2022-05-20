@@ -1,15 +1,14 @@
 import {
-  HomeIcon,
-  DesktopComputerIcon,
+  ViewBoardsIcon,
   TableIcon,
   ViewGridIcon,
   CreditCardIcon,
   CursorClickIcon,
-  MenuAlt1Icon,
-  AnnotationIcon,
+  DocumentTextIcon,
   GlobeAltIcon,
-  LocationMarkerIcon,
-} from '@heroicons/vue/outline'
+  BellIcon,
+} from '@heroicons/vue/solid'
+
 
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
@@ -27,8 +26,8 @@ const routes = [
     name: 'Dashboard',
     meta: {
       title: 'Dashboard',
-      icon: DesktopComputerIcon,
-      color: '#5e72e4'
+      icon: ViewBoardsIcon,
+      color: 'text-left-bar-gray'
     },
   },
   {
@@ -38,7 +37,7 @@ const routes = [
     meta: {
       title: 'Buttons',
       icon: CursorClickIcon,
-      color: '#172b4d'
+      color: 'text-left-bar-orange'
     },
   },
   {
@@ -47,8 +46,8 @@ const routes = [
     name: 'Notifications',
     meta: {
       title: 'Notifications',
-      icon: AnnotationIcon,
-      color: '#f4645f'
+      icon: BellIcon,
+      color: 'text-left-bar-rose'
     },
   },
   {
@@ -58,7 +57,7 @@ const routes = [
     meta: {
       title: 'Tables',
       icon: TableIcon,
-      color: '#172b4d'
+      color: 'text-left-bar-red'
     },
   },
   {
@@ -68,7 +67,7 @@ const routes = [
     meta: {
       title: 'Grid',
       icon: ViewGridIcon,
-      color: '#fb6340'
+      color: 'text-left-bar-cyan'
     },
   },
   {
@@ -77,8 +76,8 @@ const routes = [
     name: 'Typography',
     meta: {
       title: 'Typography',
-      icon: LocationMarkerIcon,
-      color: '#fb6340'
+      icon: DocumentTextIcon,
+      color: 'text-left-bar-yellow'
     },
   },
   {
@@ -88,7 +87,7 @@ const routes = [
     meta: {
       title: 'Cards',
       icon: CreditCardIcon,
-      color: '#172b4d'
+      color: 'text-left-bar-indigo'
     },
   },
   {
@@ -98,7 +97,7 @@ const routes = [
     meta: {
       title: 'Icons',
       icon: GlobeAltIcon,
-      color: '#172b4d'
+      color: 'text-left-bar-red'
     },
   },
   {
