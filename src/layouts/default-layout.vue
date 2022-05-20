@@ -1,7 +1,10 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-white">
+  <div class="h-screen overflow-hidden flex bg-slate-100">
     <sidebar />
-    <div class="flex flex-col flex-1 w-full">
+    <div
+      class="transition-all duration-300 flex flex-col flex-1 w-full"
+      :class="`${isExpanded ? 'ml-14' : 'ml-64'}`"
+    >
       <navigation />
       <router-view v-slot="{ Component }">
         <div class="overflow-auto p-4">
@@ -13,14 +16,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
+import { useDashboardStore } from '../modules/dashboard/store'
 
 export default defineComponent({
   name: 'Layout',
   components: {},
 
   setup() {
-    return {}
+    const store = useDashboardStore()
+    const isExpanded = computed(() => store.isHide)
+    return { isExpanded }
   },
 })
 </script>

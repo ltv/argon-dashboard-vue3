@@ -3,7 +3,17 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      width: {
+        '15': '3.75rem',
+      },
       colors: {
+        'left-bar-yellow': '#ffd600',
+        'left-bar-indigo': '#5e72e4',
+        'left-bar-gray': '#939cac',
+        'left-bar-red': '#f5365c',
+        'left-bar-orange': '#fb6340',
+        'left-bar-cyan': '#22d1f0',
+        'left-bar-rose': '#f4645f',
         primary: {
           DEFAULT: 'rgb(50 50 93)',
           100: 'rgb(82 95 127)',

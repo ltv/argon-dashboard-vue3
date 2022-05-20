@@ -17,8 +17,11 @@ export const useActions = defineStore('dashboard.actions', () => {
     state.welcomeText = value
   }
 
+  const setSideBar = (value:boolean) => state.isHide = value
+
   return {
     showWelcomeText,
     setWelcomeText,
+    setSideBar,
   }
 })
