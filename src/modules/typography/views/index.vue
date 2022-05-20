@@ -241,10 +241,10 @@
             <!-- Danger text -->
             <div class="row medium">
                 <div class="md:w-1/4">
-                    <span class="title block">Danger Text</span>
+                    <span class="title block">Text Danger</span>
                 </div>
                 <div class="md:w-3/4">
-                    <p class="danger-text">I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...</p>
+                    <p class="text-danger">I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...</p>
                 </div>
             </div>
         </div>

@@ -80,8 +80,8 @@ body {
     .text-success {
         @apply text-green-500 #{!important}
     }
-    .danger-text {
-        @apply text-danger
+    .text-danger {
+        @apply text-primary-red
     }
     
 }

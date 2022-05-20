@@ -9,15 +9,13 @@ module.exports = {
           100: 'rgb(82 95 127)',
           200: 'rgb(136 152 170)',
           blue: 'rgb(94 114 228)',
+          red: 'rgb(245 54 92)',
         },
         muted: {
           DEFAULT: 'rgb(136 152 170)',
         },
         warnning: {
           DEFAULT: 'rgb(251 99 64)',
-        },
-        danger: {
-          DEFAULT: 'rgb(245 54 92)',
         },
       },
       fontSize: {
