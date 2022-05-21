@@ -12,7 +12,7 @@
           v-if="(isHover && !isPin) || isPin"
           :class="{ 'opacity-0': !isHover && !isPin }"
           class="transition-opacity duration-300 flex opacity-1 p-6 block"
-          href="https://argon-dashboard-pro-laravel.creative-tim.com/dashboard"
+          href="#index"
         >
           <img
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/blue.png"
