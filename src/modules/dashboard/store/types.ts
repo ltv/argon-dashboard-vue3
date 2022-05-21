@@ -1,4 +1,4 @@
 export interface DashboardState {
   welcomeText: string
-  isHide?: boolean
+  isPin: boolean
 }
