@@ -28,6 +28,9 @@ module.exports = {
         warnning: {
           DEFAULT: 'rgb(251 99 64)',
         },
+        icon: {
+          DEFAULT: 'rgb(246 249 252)'
+        }
       },
       fontSize: {
         0.625: ['0.625rem', '1.5'],
