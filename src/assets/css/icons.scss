@@ -4,14 +4,15 @@ body {
     }
 
     #icon .el-button {
-        @apply bg-icon p-9 flex w-full text-primary text-base font-normal leading-5 rounded-md border-0 border-transparent text-left items-center align-middle no-underline my-2 mx-1 hover:border-transparent hover:drop-shadow hover:border-gray-200 hover:bg-white hover:text-primary focus:outline focus:outline-black focus:outline-2 #{!important}
+        @apply text-primary hover:text-primary focus:outline focus:outline-black focus:outline-2 #{!important}
     }
 
     #icon .el-button>span {
-        @apply w-full text-ellipsis overflow-hidden whitespace-nowrap #{!important}
+        @apply w-full overflow-hidden text-ellipsis whitespace-nowrap #{!important}
     }
 
     #icon .el-button [class*=el-icon]+span {
-        @apply w-full inline-block text-sm text-left font-normal leading-6 ml-4 text-ellipsis overflow-hidden whitespace-nowrap #{!important}
+        @apply w-full inline-block text-sm text-left font-normal leading-6 ml-4 overflow-hidden text-ellipsis whitespace-nowrap #{!important}
     }
+
 }
