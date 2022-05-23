@@ -3,15 +3,16 @@
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 bg-white flex-shrink-0 w-15 overflow-y-auto h-full hidden md:block items-center"
-    :class="{ 'w-64': isHover }"
+    class="transition-all duration-300 fixed z-20 w-64 bg-white flex-shrink-0 overflow-y-auto h-full items-center"
+    :class="{ 'w-15 hidden lg:block': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
       <div class="h-20 flex items-center">
         <a
-          v-if="isHover"
-          class="flex p-6 block"
-          href="https://argon-dashboard-pro-laravel.creative-tim.com/dashboard"
+          v-if="(isHover && !isPin) || isPin"
+          :class="{ 'opacity-0': !isHover && !isPin }"
+          class="transition-opacity duration-300 flex opacity-1 p-6 block"
+          href="#index"
         >
           <img
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/blue.png"
@@ -21,20 +22,20 @@
         </a>
         <div class="ml-auto">
           <div class="lg:col-span-10 xl:col-span-10 flex">
-            <div class="hidden md:block flex-grow">
+            <div class="hidden lg:block flex-grow">
               <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
-                <MenuIcon v-if="isHide" class="cursor-pointer h-6 w-6" @click="isHide = !isHide" />
+                <MenuIcon v-if="!isPin" class="cursor-pointer h-5 w-5" @click="setIsPin(true)" />
                 <MenuAlt1Icon
-                  v-if="isHover && !isHide"
-                  class="cursor-pointer h-6 w-6"
-                  @click="isHide = !isHide"
+                  v-if="isPin"
+                  class="cursor-pointer h-5 w-5"
+                  @click="setIsPin(false)"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-col text-gray-400 px-6 before:block before:mt-6">
+      <div class="flex flex-col text-gray-500 px-6 before:block before:mt-6">
         <ul class="flex flex-col -mx-6">
           <li
             class="relative flex flex-row px-5 py-3 h-12"
@@ -55,13 +56,13 @@
               <div>
                 <component
                   :is="item.icon"
-                  :class="'h-6 w-6 block ' + item.color"
+                  :class="'h-5 w-5 block ' + item.color"
                   aria-hidden="true"
                 />
               </div>
               <span
-                class="transition-opacity opacity-1 duration-300 ml-4 text-base"
-                :class="{ 'opacity-0': !isHover }"
+                class="transition-opacity duration-300 opacity-1 ml-4 text-base"
+                :class="{ 'opacity-0': !isHover && !isPin }"
                 >{{ item.title }}</span
               >
             </router-link>
@@ -73,7 +74,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch } from 'vue'
+import { defineComponent, ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
@@ -101,12 +102,13 @@ export default defineComponent({
     const menuItems = routeItems.value.sort((a, b) => a.title.localeCompare(b.title))
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
-    const isHover = ref<boolean>(true)
-    const isHide = ref<boolean>(false)
+    const isHover = ref<boolean>(false)
 
-    watch(isHide, () => {
-      store.setSideBar(isHide.value)
-    })
+    const isPin = computed<boolean>(() => store.isPin)
+
+    const setIsPin = (value: boolean) => {
+      store.setSideBar(value)
+    }
 
     const togglePagesMenu = () => {
       isSideMenuOpen.value = !isSideMenuOpen.value
@@ -117,7 +119,7 @@ export default defineComponent({
     }
 
     const hoverLeftBar = (b: boolean) => {
-      if (isHide.value) isHover.value = b
+      isHover.value = b
     }
 
     return {
@@ -126,7 +128,8 @@ export default defineComponent({
       isSideMenuOpen,
       menuItems,
       route,
-      isHide,
+      isPin,
+      setIsPin,
       hoverLeftBar,
       togglePagesMenu,
       closeSideMenu,
