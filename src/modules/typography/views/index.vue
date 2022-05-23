@@ -131,22 +131,18 @@
                     <h2 class="heading-title text-warning">Fancy Dashboard</h2>
                 </div>
             </div>
-            <!-- Heading section -->
+            
             <div class="row medium">
                 <div class="md:w-1/4">
-                    <span class="title block">Heading Section</span>
+                    <span class="title block">Heading Seaction</span>
                 </div>
                 <div class="md:w-3/4">
-                    <h3 class="display-3">Fancy Dashboard</h3>
-                </div>
-            </div>
-            <!--  -->
-            <div class="row medium">
-                <div class="md:w-1/4">
-                    <span class="title block"></span>
-                </div>
-                <div class="md:w-3/4">
-                    <h4 class="lead text-muted">Fancy Dashboard</h4>
+                    <div class="mb-2">
+                        <h3 class="display-3">Header with small subtitle</h3>
+                    </div>
+                    <div class="mt-6 mb-4">
+                        <h4 class="lead text-muted">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -241,7 +237,7 @@
             <!-- Danger text -->
             <div class="row medium">
                 <div class="md:w-1/4">
-                    <span class="title block">Text Danger</span>
+                    <span class="title block">Danger Text</span>
                 </div>
                 <div class="md:w-3/4">
                     <p class="text-danger">I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...</p>
