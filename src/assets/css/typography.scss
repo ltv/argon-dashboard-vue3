@@ -1,6 +1,6 @@
 body {
     .card {
-        @apply bg-white break-words w-full sm:w-3/4 md:w-3/4 mx-auto mt-5 mb-2 shadow rounded-lg flex flex-col
+        @apply bg-white break-words w-full sm:w-2/3 md:w-2/3 mx-auto mt-5 mb-7 shadow rounded-lg flex flex-col
     }
     .card-header {
         @apply p-5 border-b border-primary-white
