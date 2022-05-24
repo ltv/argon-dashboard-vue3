@@ -1,21 +1,16 @@
 <template>
-  <div class="card w-2/3">
+  <div class="card max-w-full">
     <div class="card-header p-5">
       <h3 class="text-lg">Headings</h3>
     </div>
     <div class="p-5 mx-auto w-full">
       <div class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-4 lg:gap-x-7">
         <div class="w-full" v-for="(icon, key) in icons" :key="key">
-          <el-button
-            class="bg-icon py-9 px-6 flex w-full text-primary text-base font-normal leading-5 rounded-md border-0 border-transparent text-left items-center align-middle no-underline my-2 mx-1 hover:border-transparent hover:drop-shadow hover:border-gray-200 hover:bg-white hover:text-primary focus:outline focus:outline-black focus:outline-2"
-          >
-            <el-icon class="text-2xl text-primary-blue inline-block">
+          <el-button>
+            <el-icon>
               <component :is="icon.icon" />
             </el-icon>
-            <span
-              class="w-full inline-block text-sm text-left font-normal leading-6 ml-4 overflow-hidden text-ellipsis whitespace-nowrap"
-              >{{ icon.name }}</span
-            >
+            <span>{{ icon.name }}</span>
           </el-button>
         </div>
       </div>
@@ -736,10 +731,16 @@ export default defineComponent({
 <style lang="scss" scoped>
 body {
   .el-button {
-    @apply text-primary hover:text-primary focus:outline focus:outline-black focus:outline-2 #{!important};
+    @apply bg-icon py-9 px-6 flex w-full text-primary text-base font-normal leading-5 rounded-md border-0 border-transparent text-left items-center align-middle no-underline my-2 mx-1 hover:border-transparent hover:drop-shadow hover:border-gray-200 hover:bg-white hover:text-primary focus:outline focus:outline-black focus:outline-2 text-primary hover:text-primary focus:outline focus:outline-black focus:outline-2 #{!important};
   }
   .el-button::v-deep > span {
     @apply w-full;
+  }
+  .el-button [class*='el-icon'] + span {
+    @apply w-full inline-block text-sm text-left font-normal leading-6 ml-4 overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+  .el-button .el-icon {
+    @apply text-2xl text-primary-blue inline-block #{!important};
   }
 }
 </style>
