@@ -1,19 +1,5 @@
 body {
-    .card {
-        @apply bg-white break-words w-full sm:w-2/3 md:w-2/3 mx-auto mt-5 mb-7 shadow rounded-lg flex flex-col
-    }
-    .card-header {
-        @apply p-5 border-b border-primary-white
-    }
-    .row {
-        @apply my-8 w-full h-auto
-    }
-    .title {
-        @apply uppercase text-80 font-semibold text-muted
-    }
-    .medium {
-        @apply flex flex-col md:flex-row md:justify-center md:items-center
-    }
+
     h1 {
         @apply text-1.625 text-primary font-semibold
     }
