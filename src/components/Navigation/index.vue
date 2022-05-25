@@ -181,7 +181,7 @@
                   <Menu />
                 </el-icon>
               </template>
-              <!-- <div class="w-full m-0">
+              <div class="w-full m-0">
                 <div class="flex flex-wrap px-2 w-full m-0">
                   <a
                     href="#!"
@@ -279,7 +279,7 @@
                     <span class="font-0.8125 text-white font-semibold mt-3">Shop</span>
                   </a>
                 </div>
-              </div> -->
+              </div>
             </el-popover>
           </div>
         </div>
