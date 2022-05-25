@@ -1,9 +1,9 @@
 <template>
-  <div class="card-typography max-w-full">
+  <div class="card-typography w-full md:w-full lg:w-2/3 mx-auto">
     <div class="card-header p-5">
       <h3 class="text-lg">Icons</h3>
     </div>
-    <div class="p-5 mx-auto w-full">
+    <div class="p-5">
       <div class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-4 lg:gap-x-7">
         <div class="w-full overflow-hidden p-0.5" v-for="(icon, key) in icons" :key="key">
           <el-button>
