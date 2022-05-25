@@ -309,7 +309,7 @@
                 </h4>
               </div>
             </div>
-            <!-- <template #dropdown>
+            <template #dropdown>
               <el-dropdown-menu>
                 <el-dropdown-item class="m-0 hover:bg-white">
                   <div class="flex items-center w-full pt-2 cursor-default">
@@ -350,7 +350,7 @@
                   </div>
                 </el-dropdown-item>
               </el-dropdown-menu>
-            </template> -->
+            </template>
           </el-dropdown>
         </div>
       </div>
