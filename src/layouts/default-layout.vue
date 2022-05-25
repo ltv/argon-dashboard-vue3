@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-slate-100">
+  <div class="h-screen overflow-hidden flex bg-slate-100 w-full">
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full"
-      :class="`${!isExpanded ? 'ml-14' : 'ml-64'}`"
+      :class="`${!isPin ? 'ml-14' : 'ml-64 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
       <router-view v-slot="{ Component }">
@@ -25,9 +25,9 @@ export default defineComponent({
 
   setup() {
     const store = useDashboardStore()
-    const isExpanded = computed(() => store.isPin)
-
-    return { isExpanded }
+    const isPin = computed<boolean>(() => store.isPin)
+    const setIsPin = (b: boolean) => store.setSideBar(b)
+    return { isPin, setIsPin }
   },
 })
 </script>

@@ -3,8 +3,28 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      translate: {
+        '3/2': '150%',
+      },
+      padding: {
+        3.7: '0.975rem',
+        4.5: '1.15rem',
+        5.5: '1.375rem'
+      },
+      margin: {
+        '64': '15.5rem',
+        '68': '17rem',
+      },
       width: {
-        '15': '3.75rem',
+        15: '3.75rem',
+        108: '28rem',
+        68: '17rem',
+        '94/100': '94%',
+        '97/100': '97%'
+      },
+      height: {
+        13: '3.275rem',
+        15: '3.75rem',
       },
       colors: {
         'left-bar-yellow': '#ffd600',
@@ -14,6 +34,7 @@ module.exports = {
         'left-bar-orange': '#fb6340',
         'left-bar-cyan': '#22d1f0',
         'left-bar-rose': '#f4645f',
+        'left-bar-green': '#2dce89',
         primary: {
           DEFAULT: 'rgb(50 50 93)',
           100: 'rgb(82 95 127)',
@@ -48,6 +69,7 @@ module.exports = {
         2.75: ['2.75rem', '1.5'],
         3.3: ['3.3rem', '1.5'],
         80: ['80%', '1.5'],
+        'sm': ['.875rem', '1.5'],
       },
       lineHeight: {
         '1.7': '1.7',

@@ -3,11 +3,11 @@
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 w-64 bg-white flex-shrink-0 overflow-y-auto h-full items-center"
+    class="transition-all duration-300 fixed z-20 w-64 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center"
     :class="{ 'w-15 hidden lg:block': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
-      <div class="h-20 flex items-center">
+      <div class="h-24 flex items-center">
         <a
           v-if="(isHover && !isPin) || isPin"
           :class="{ 'opacity-0': !isHover && !isPin }"
@@ -16,7 +16,7 @@
         >
           <img
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/blue.png"
-            class="max-h-9 max-w-full align-middle"
+            class="max-h-8 max-w-full align-middle"
             alt="..."
           />
         </a>
@@ -24,10 +24,10 @@
           <div class="lg:col-span-10 xl:col-span-10 flex">
             <div class="hidden lg:block flex-grow">
               <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
-                <MenuIcon v-if="!isPin" class="cursor-pointer h-5 w-5" @click="setIsPin(true)" />
+                <MenuIcon v-if="!isPin" class="cursor-pointer h-7 w-6" @click="setIsPin(true)" />
                 <MenuAlt1Icon
                   v-if="isPin"
-                  class="cursor-pointer h-5 w-5"
+                  class="cursor-pointer h-7 w-6"
                   @click="setIsPin(false)"
                 />
               </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col text-gray-500 px-6 before:block before:mt-6">
+      <div ref="target" class="flex flex-col text-gray-500 px-6 before:block before:mt-2">
         <ul class="flex flex-col -mx-6">
           <li
             class="relative flex flex-row px-5 py-3 h-12"
@@ -48,7 +48,7 @@
               aria-hidden="true"
             ></span>
             <router-link
-              class="inline-flex items-center w-full text-sm my-0.5 transition-colors duration-150 hover:text-gray-800"
+              class="inline-flex items-center w-full text-sm my-0.5 transition-colors duration-150 hover:text-gray-600"
               :class="{ 'text-gray-800': route.name === item.name }"
               :to="{ name: item.name }"
               :title="item.title"
@@ -61,7 +61,7 @@
                 />
               </div>
               <span
-                class="transition-opacity duration-300 opacity-1 ml-4 text-base"
+                class="transition-opacity duration-300 opacity-1 ml-4 text-sm font-medium"
                 :class="{ 'opacity-0': !isHover && !isPin }"
                 >{{ item.title }}</span
               >
@@ -74,11 +74,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
 import { useDashboardStore } from '../../modules/dashboard/store'
+import { onClickOutside } from '@vueuse/core'
 
 interface MenuItem {
   title: string
@@ -98,11 +99,23 @@ export default defineComponent({
   setup() {
     const route = useRoute()
     const store = useDashboardStore()
-    const routeItems = ref<MenuItem[]>(navigation)
-    const menuItems = routeItems.value.sort((a, b) => a.title.localeCompare(b.title))
+    const menuItems = ref<MenuItem[]>(navigation)
+    // const menuItems = routeItems.value.sort((a, b) => a.title.localeCompare(b.title))
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isHover = ref<boolean>(false)
+    const target = ref(null)
+
+    onClickOutside(target, (_) => {
+      const winWidth = ref<number>(window.innerWidth)
+      if (winWidth.value < 1024 && isPin) {
+        store.setSideBar(false)
+      }
+    })
+
+    onMounted(() => {
+      if (window.innerWidth < 640) store.setSideBar(false)
+    })
 
     const isPin = computed<boolean>(() => store.isPin)
 
@@ -129,6 +142,7 @@ export default defineComponent({
       menuItems,
       route,
       isPin,
+      target,
       setIsPin,
       hoverLeftBar,
       togglePagesMenu,

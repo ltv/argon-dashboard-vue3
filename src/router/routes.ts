@@ -1,14 +1,16 @@
 import {
-  ViewBoardsIcon,
-  TableIcon,
   ViewGridIcon,
-  CreditCardIcon,
   CursorClickIcon,
   DocumentTextIcon,
-  GlobeAltIcon,
+  StarIcon,
+  HomeIcon,
+  ViewBoardsIcon,
   BellIcon,
 } from '@heroicons/vue/outline'
 
+import {
+  CreditCardIcon,
+} from '@heroicons/vue/solid'
 
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
@@ -25,9 +27,9 @@ const routes = [
     component: Dashboard,
     name: 'Dashboard',
     meta: {
-      title: 'Dashboards',
-      icon: ViewBoardsIcon,
-      color: 'text-left-bar-gray'
+      title: 'Dashboard',
+      icon: HomeIcon,
+      color: 'text-left-bar-indigo'
     },
   },
   {
@@ -37,7 +39,7 @@ const routes = [
     meta: {
       title: 'Buttons',
       icon: CursorClickIcon,
-      color: 'text-left-bar-orange'
+      color: 'text-left-bar-rose'
     },
   },
   {
@@ -47,7 +49,7 @@ const routes = [
     meta: {
       title: 'Notifications',
       icon: BellIcon,
-      color: 'text-left-bar-rose'
+      color: 'text-left-bar-green'
     },
   },
   {
@@ -56,8 +58,8 @@ const routes = [
     name: 'Tables',
     meta: {
       title: 'Tables',
-      icon: TableIcon,
-      color: 'text-left-bar-red'
+      icon: ViewBoardsIcon,
+      color: 'text-left-bar-indigo'
     },
   },
   {
@@ -87,7 +89,7 @@ const routes = [
     meta: {
       title: 'Cards',
       icon: CreditCardIcon,
-      color: 'text-left-bar-indigo'
+      color: 'text-left-bar-orange'
     },
   },
   {
@@ -96,7 +98,7 @@ const routes = [
     name: 'Icons',
     meta: {
       title: 'Icons',
-      icon: GlobeAltIcon,
+      icon: StarIcon,
       color: 'text-left-bar-red'
     },
   },
