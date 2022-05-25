@@ -30,6 +30,9 @@ module.exports = {
         },
         icon: {
           DEFAULT: 'rgb(246 249 252)'
+        },
+        webkit: {
+          DEFAULT: '-webkit-focus-ring-color'
         }
       },
       fontSize: {
