@@ -100,7 +100,6 @@ export default defineComponent({
     const route = useRoute()
     const store = useDashboardStore()
     const menuItems = ref<MenuItem[]>(navigation)
-    // const menuItems = routeItems.value.sort((a, b) => a.title.localeCompare(b.title))
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isHover = ref<boolean>(false)
