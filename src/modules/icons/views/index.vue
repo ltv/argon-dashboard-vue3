@@ -5,7 +5,7 @@
     </div>
     <div class="p-5 mx-auto w-full">
       <div class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-4 lg:gap-x-7">
-        <div class="w-full overflow-hidden" v-for="(icon, key) in icons" :key="key">
+        <div class="w-full overflow-hidden p-0.5" v-for="(icon, key) in icons" :key="key">
           <el-button>
             <el-icon>
               <component :is="icon.icon" />
@@ -731,7 +731,31 @@ export default defineComponent({
 <style lang="scss" scoped>
 body {
   .el-button {
-    @apply bg-icon py-9 px-6 flex w-full text-primary text-base font-normal leading-5 rounded-md border-0 border-transparent text-left items-center align-middle no-underline my-2 hover:border-transparent hover:drop-shadow hover:border-gray-200 hover:bg-white hover:text-primary focus:outline focus:outline-black focus:outline-2 text-primary hover:text-primary focus:outline focus:outline-black focus:outline-2 #{!important};
+    @apply bg-icon 
+    py-9 
+    px-6 
+    flex 
+    w-full 
+    text-primary 
+    text-base 
+    font-normal 
+    leading-5 
+    rounded-md 
+    border-0 
+    border-transparent 
+    text-left 
+    items-center 
+    align-middle 
+    no-underline 
+    my-2 
+    hover:border-transparent 
+    hover:drop-shadow 
+    hover:border-gray-200 
+    hover:bg-white 
+    hover:text-primary
+    focus:outline
+    focus:outline-2
+    focus:outline-webkit;
   }
   .el-button > :deep(span) {
     @apply w-full;
