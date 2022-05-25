@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-center mx-0 p-4 shadow-sm bg-indigo-500 h-24">
+  <div
+    class="flex items-center mx-0 p-4 shadow-sm bg-indigo-500 h-24 border border-indigo-500 border-b-slate-50/10"
+  >
     <div class="w-full items-center justify-between px-3">
       <div class="w-full flex basis-auto md:grow items-center">
         <div

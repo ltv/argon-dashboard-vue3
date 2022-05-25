@@ -24,6 +24,10 @@ module.exports = {
       height: {
         13: '3.275rem',
         15: '3.75rem',
+        17: '4.25rem',
+        18: '4.5rem',
+        21: '5.25rem',
+        22: '5.5rem',
       },
       colors: {
         'left-bar-yellow': '#ffd600',
