@@ -1,7 +1,6 @@
 // Custom css, do it later, now use the element plus css
 import 'assets/css/el-button.scss'
 import 'assets/css/typography.scss'
-import 'assets/css/el-input.scss'
 import 'assets/css/el-popper.scss'
 
 

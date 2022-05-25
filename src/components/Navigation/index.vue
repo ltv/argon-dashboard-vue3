@@ -426,17 +426,26 @@ export default defineComponent({
   },
 })
 </script>
-<style>
+<style lang="scss">
 .menu-popper {
-  @apply lg:w-96 md:w-96 sm:w-96 w-97/100 border-none bg-[#182c4e] !important;
+  @apply lg:w-96 md:w-96 sm:w-96 w-97/100 border-none bg-[#182c4e] #{!important};
 }
 .notification-popper {
-  @apply lg:w-108 md:w-108 sm:w-108 w-97/100 !important;
+  @apply lg:w-108 md:w-108 sm:w-108 w-97/100 #{!important};
 }
 .profile-popper {
-  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 !important;
+  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 #{!important};
 }
 .profile-popper .el-dropdown-menu {
-  @apply py-2 rounded-lg !important;
+  @apply py-2 rounded-lg #{!important};
+}
+.el-input {
+  --el-text-color-placeholder: #4c4c52;
+  .el-input__inner {
+    @apply relative transition-all duration-200 text-base w-full sm:w-72 h-13 resize-y leading-6 rounded-full bg-slate-100 pl-10 font-thin shadow-none border-none;
+    &:focus {
+      @apply w-full sm:w-96 bg-white text-black border-indigo-400;
+    }
+  }
 }
 </style>
