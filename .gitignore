@@ -109,3 +109,4 @@ dist-ssr
 stats.html
 *.env.*
 !default.env
+components.d.ts
