@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       translate: {
         '3/2': '150%',
+        '0.25': '0.075rem',
       },
       padding: {
         3.7: '0.975rem',

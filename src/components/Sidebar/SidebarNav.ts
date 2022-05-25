@@ -4,7 +4,7 @@ const navigation = () => {
   return routes.reduce((prev: any, curr) => {
     const { meta, path, name } = curr
     if (meta.icon) {
-      prev.push({ name, href: path, icon: meta.icon, color: meta.color, title: meta.title })
+      prev.push({ name, href: path, icon: meta.icon, color: meta.color, title: meta.title, parentPath: meta.breadcrumb.parentPath })
     }
     return prev
   }, [])

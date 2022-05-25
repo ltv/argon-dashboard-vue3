@@ -1,5 +1,8 @@
 body {
   .el-button {
     background-color: var(--el-button-bg-color, var(--el-color-white));
+    &:hover {
+      @apply -translate-y-0.25;
+    }
   }
 }

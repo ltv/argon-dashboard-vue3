@@ -31,7 +31,7 @@ const routes = [
       icon: HomeIcon,
       color: 'text-left-bar-indigo',
       breadcrumb: {
-        path: '/',
+        parentPath: '/',
         title: 'Dashboard'
       }
     },
@@ -45,7 +45,7 @@ const routes = [
       icon: CursorClickIcon,
       color: 'text-left-bar-rose',
       breadcrumb: {
-        path: '/Components/buttons',
+        parentPath: 'Components',
         title: 'Buttons'
       }
     },
@@ -59,7 +59,7 @@ const routes = [
       icon: BellIcon,
       color: 'text-left-bar-green',
       breadcrumb: {
-        path: '/Components/notifications',
+        parentPath: 'Components',
         title: 'Notifications'
       } 
     },
@@ -73,7 +73,7 @@ const routes = [
       icon: ViewBoardsIcon,
       color: 'text-left-bar-indigo',
       breadcrumb: {
-        path: '/Components/tables',
+        parentPath: 'Components',
         title: 'Tables'
       } 
     },
@@ -87,7 +87,7 @@ const routes = [
       icon: ViewGridIcon,
       color: 'text-left-bar-cyan',
       breadcrumb: {
-        path: '/Components/grid',
+        parentPath: 'Components',
         title: 'Grid'
       } 
     },
@@ -101,7 +101,7 @@ const routes = [
       icon: DocumentTextIcon,
       color: 'text-left-bar-yellow',
       breadcrumb: {
-        path: '/Components/typography',
+        parentPath: 'Components',
         title: 'Typography'
       } 
     },
@@ -115,7 +115,7 @@ const routes = [
       icon: CreditCardIcon,
       color: 'text-left-bar-orange',
       breadcrumb: {
-        path: '/Components/cards',
+        parentPath: 'Components',
         title: 'Cards'
       } 
     },
@@ -129,7 +129,7 @@ const routes = [
       icon: StarIcon,
       color: 'text-left-bar-red',
       breadcrumb: {
-        path: '/Components/icons',
+        parentPath: 'Components',
         title: 'Icons'
       } 
     },

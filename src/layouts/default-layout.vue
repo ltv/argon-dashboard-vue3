@@ -10,7 +10,9 @@
         <div class="flex items-center p-4 pt-6">
           <div class="w-full flex flex-wrap flex-row px-3">
             <div class="flex w-1/2">
-              <div class="text-white text-xl font-semibold inline-block mb-0">Typography</div>
+              <div class="text-white text-xl font-semibold inline-block mb-0">
+                {{ route.meta.breadcrumb.title }}
+              </div>
               <div class="inline-block md:ml-6 hidden lg:block pt-1">
                 <el-breadcrumb separator="-" class="flex items-center justify-center">
                   <el-breadcrumb-item :to="{ path: '/' }">
@@ -31,14 +33,16 @@
                           href="/"
                           class="text-sm text-slate-50 hover:text-white font-semibold"
                         >
-                          Components
+                          {{ route.meta.breadcrumb.parentPath }}
                         </el-link>
                       </div>
                     </div>
                   </el-breadcrumb-item>
                   <el-breadcrumb-item>
                     <div class="inline-block items-center">
-                      <div class="text-sm text-slate-200 font-semibold">Typography</div>
+                      <div class="text-sm text-slate-200 font-semibold">
+                        {{ route.meta.breadcrumb.title }}
+                      </div>
                     </div>
                   </el-breadcrumb-item>
                 </el-breadcrumb>
@@ -69,15 +73,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref, watch } from 'vue'
+import { defineComponent, computed } from 'vue'
 import { useDashboardStore } from '../modules/dashboard/store'
 import { HomeFilled } from '@element-plus/icons-vue'
-import navigation from '../components/Sidebar/SidebarNav'
-interface component {
-  title: string
-  path: string
-  name: string
-}
+import { useRoute } from 'vue-router'
+
 export default defineComponent({
   name: 'Layout',
   components: {
@@ -85,14 +85,11 @@ export default defineComponent({
   },
 
   setup() {
+    const route = useRoute()
     const store = useDashboardStore()
-    const currentComponent = ref<component[]>(navigation)
-    watch(navigation, () => {
-      console.log('current:::', navigation)
-    })
     const isPin = computed<boolean>(() => store.isPin)
     const setIsPin = (b: boolean) => store.setSideBar(b)
-    return { isPin, setIsPin }
+    return { isPin, setIsPin, route }
   },
 })
 </script>
