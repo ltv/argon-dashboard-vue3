@@ -1,7 +1,7 @@
 <template>
-  <div class="card max-w-full">
+  <div class="card-typography max-w-full">
     <div class="card-header p-5">
-      <h3 class="text-lg">Headings</h3>
+      <h3 class="text-lg">Icons</h3>
     </div>
     <div class="p-5 mx-auto w-full">
       <div class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-4 lg:gap-x-7">
@@ -765,6 +765,21 @@ body {
   }
   .el-button .el-icon {
     @apply text-2xl text-primary-blue inline-block #{!important};
+  }
+  .card-typography {
+    @apply bg-white break-words mt-5 mb-7 shadow rounded-lg flex flex-col;
+  }
+  .card-header {
+    @apply p-5 border-b border-primary-white;
+  }
+  .row {
+    @apply my-8 w-full h-auto;
+  }
+  .title {
+    @apply uppercase text-80 font-semibold text-muted;
+  }
+  .medium {
+    @apply flex flex-col md:flex-row md:justify-center md:items-center;
   }
 }
 </style>
