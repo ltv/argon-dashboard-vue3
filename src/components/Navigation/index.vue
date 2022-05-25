@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="relative inline-block pt-1">
-            <el-dropdown placement="bottom-end" trigger="click" popper-class="notificationClass">
+            <el-dropdown placement="bottom-end" trigger="click" popper-class="notification-popper">
               <div class="el-dropdown-link">
                 <el-icon
                   :size="22"
@@ -172,7 +172,7 @@
             </el-dropdown>
           </div>
           <div class="relative inline-block pt-1">
-            <el-popover placement="bottom-end" trigger="click" popper-class="MenuPopperClass">
+            <el-popover placement="bottom-end" trigger="click" popper-class="menu-popper">
               <template #reference>
                 <el-icon
                   :size="22"
@@ -287,7 +287,7 @@
           class="flex flex-none flex-row ml-auto md:ml-0 pl-7"
           :class="[!isSearchOpen ? 'hidden sm:flex md:flex lg:flex' : '']"
         >
-          <el-dropdown placement="bottom-end" trigger="click" popper-class="profilePopperClass">
+          <el-dropdown placement="bottom-end" trigger="click" popper-class="profile-popper">
             <div class="flex flex-row items-center gap-2">
               <div class="pt-1">
                 <el-link :underline="false">
@@ -427,16 +427,16 @@ export default defineComponent({
 })
 </script>
 <style>
-.MenuPopperClass {
+.menu-popper {
   @apply lg:w-96 md:w-96 sm:w-96 w-97/100 border-none bg-[#182c4e] !important;
 }
-.notificationClass {
+.notification-popper {
   @apply lg:w-108 md:w-108 sm:w-108 w-97/100 !important;
 }
-.profilePopperClass {
+.profile-popper {
   @apply lg:w-48 md:w-48 sm:w-48 w-97/100 !important;
 }
-.profilePopperClass .el-dropdown-menu {
+.profile-popper .el-dropdown-menu {
   @apply py-2 rounded-lg !important;
 }
 </style>
