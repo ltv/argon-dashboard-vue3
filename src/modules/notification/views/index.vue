@@ -1,16 +1,82 @@
 <template>
-  <div class="p-2">
-    <div class="block rounded h-auto mx-auto">
-      <div class="flex">
-        <div
-          class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded"
-        >
-          <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Notifications</div>
-          <el-divider />
-          <div class="flex flex-wrap gap-2 px-6 my-6">
+  <div class="w-full sm:w-3/4 md:w-3/4 mx-auto">
+    <!-- Alerts -->
+    <div class="card-typography">
+      <div class="card-header">
+        <h3 class="text-lg">Alerts</h3>
+      </div>
+      <div class="p-5">
+        <div class="">
+          <div class="flex flex-wrap gap-2">
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+            <div class="w-full mb-4">
+              <el-alert title="success alert" type="success" show-icon />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modals -->
+    <div class="card-typography">
+      <div class="card-header">
+        <h3 class="text-lg">Modals</h3>
+      </div>
+      <div class="p-5">
+        <div class="">
+          <div class="grid grid-cols-3 gap-2">
             <div>
               <el-button
                 @click="openNotifDefault"
+                class="w-full bg-slate-800 border-slate-800 text-white font-bold"
+                >Default</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="w-full bg-slate-800 border-slate-800 text-white font-bold"
+                >Default</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="w-full bg-slate-800 border-slate-800 text-white font-bold"
+                >Default</el-button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Notifications -->
+    <div class="card-typography">
+      <div class="card-header">
+        <h3 class="text-lg">Notifications</h3>
+      </div>
+      <div class="p-5">
+        <div class="">
+          <div class="flex flex-wrap gap-2">
+            <div>
+              <el-button
+                @click="openNotifInfo"
                 class="bg-slate-800 border-slate-800 text-white font-bold"
                 >Default</el-button
               >
@@ -39,6 +105,53 @@
             <div>
               <el-button
                 @click="openNotifDanger"
+                class="bg-rose-500 border-rose-500 text-white font-bold"
+                >Danger</el-button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sweet alerts -->
+    <div class="card-typography">
+      <div class="card-header">
+        <h3 class="text-lg">Sweet alerts</h3>
+      </div>
+      <div class="p-5">
+        <div class="">
+          <div class="flex flex-wrap gap-2">
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="bg-slate-800 border-slate-800 text-white font-bold"
+                >Default</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="bg-cyan-400 border-cyan-400 text-white font-bold"
+                >Info</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="bg-emerald-400 border-emerald-400 text-white font-bold"
+                >Success</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openNotifDefault"
+                class="bg-orange-500 border-orange-500 text-white font-bold"
+                >Warning</el-button
+              >
+            </div>
+            <div>
+              <el-button
+                @click="openNotifDefault"
                 class="bg-rose-500 border-rose-500 text-white font-bold"
                 >Danger</el-button
               >
@@ -181,3 +294,25 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.card-typography {
+  @apply bg-white break-words mt-5 mb-7 shadow rounded-lg flex flex-col;
+}
+.card-header {
+  @apply p-5 border-b border-primary-white;
+}
+.row {
+  @apply my-8 w-full h-auto;
+}
+.title {
+  @apply uppercase text-80 font-semibold text-muted;
+}
+.medium {
+  @apply flex flex-col md:flex-row md:justify-center md:items-center;
+}
+
+.el-alert--success.is-light {
+  // @apply bg-blue-200;
+}
+</style>
