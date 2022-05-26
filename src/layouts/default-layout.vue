@@ -13,7 +13,7 @@
               <div class="text-white text-xl font-semibold inline-block mb-0">
                 {{ route.meta.breadcrumb.title }}
               </div>
-              <div class="inline-block md:ml-6 hidden lg:block pt-1">
+              <div class="inline-block md:ml-6 hidden lg:block pt-1.5">
                 <el-breadcrumb separator="-" class="flex items-center justify-center">
                   <el-breadcrumb-item :to="{ path: '/' }">
                     <div class="inline-block items-center">
