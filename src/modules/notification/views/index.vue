@@ -9,25 +9,49 @@
         <div class="">
           <div class="flex flex-wrap gap-2">
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert
+                title="Default! This is a default alert—check it out!"
+                type="success"
+                show-icon
+              />
             </div>
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert
+                title="Primary! This is a primary alert—check it out!"
+                type="success"
+                show-icon
+              />
             </div>
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert
+                title="Secondary! This is a secondary alert—check it out!"
+                type="success"
+                show-icon
+              />
             </div>
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert title="Info! This is a info alert—check it out!" type="success" show-icon />
             </div>
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert
+                title="Success! This is a success alert—check it out!"
+                type="success"
+                show-icon
+              />
             </div>
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert
+                title="Danger! This is a danger alert—check it out!"
+                type="success"
+                show-icon
+              />
             </div>
             <div class="w-full mb-4">
-              <el-alert title="success alert" type="success" show-icon />
+              <el-alert
+                title="Warning! This is a warning alert—check it out!"
+                type="success"
+                show-icon
+              />
             </div>
           </div>
         </div>
@@ -52,14 +76,14 @@
               <el-button
                 @click="openNotifDefault"
                 class="w-full bg-slate-800 border-slate-800 text-white font-bold"
-                >Default</el-button
+                >Notification</el-button
               >
             </div>
             <div>
               <el-button
                 @click="openNotifDefault"
                 class="w-full bg-slate-800 border-slate-800 text-white font-bold"
-                >Default</el-button
+                >Form</el-button
               >
             </div>
           </div>
@@ -178,7 +202,6 @@ export default defineComponent({
     BellIcon,
   },
   setup(_) {
-    const $swal = inject<any>('$swal')
     const $message = inject<Message>('$message')
     const $messageBox = inject<IElMessageBox>('$messageBox')
 
@@ -212,71 +235,6 @@ export default defineComponent({
       $message?.error(`Couldn't initialize the system with error: `)
     }
 
-    const openAlertDefault = () => {
-      $swal({
-        title: "Here's a message!",
-        text: 'A few words about this sweet alert ...',
-        customClass: {
-          confirmButton: 'bg-indigo-600 border-indigo-600',
-        },
-      })
-    }
-
-    const openAlertSuccess = () => {
-      $swal({
-        title: 'Success!',
-        text: 'A few words about this sweet alert ...',
-        icon: 'success',
-        customClass: {
-          confirmButton: 'bg-emerald-400 border-emerald-400 ',
-        },
-      })
-    }
-
-    const openAlertInfo = () => {
-      $swal({
-        title: 'Info!',
-        text: 'A few words about this sweet alert ...',
-        icon: 'info',
-        customClass: {
-          confirmButton: 'bg-cyan-400 border-cyan-400',
-        },
-      })
-    }
-
-    const openAlertDanger = () => {
-      $swal({
-        title: 'Danger!',
-        text: 'A few words about this sweet alert ...',
-        icon: 'error',
-        customClass: {
-          confirmButton: 'bg-rose-500 border-rose-500 ',
-        },
-      })
-    }
-
-    const openAlertWarning = () => {
-      $swal({
-        title: 'Warning!',
-        text: 'A few words about this sweet alert ...',
-        icon: 'warning',
-        customClass: {
-          confirmButton: 'bg-orange-400 border-orange-400 ',
-        },
-      })
-    }
-
-    const openAlertQuestion = () => {
-      $swal({
-        title: 'Question!',
-        text: 'A few words about this sweet alert ...',
-        icon: 'question',
-        customClass: {
-          confirmButton: 'bg-slate-800 border-slate-800 ',
-        },
-      })
-    }
-
     return {
       // popup window
       openNotifDefault,
@@ -284,12 +242,6 @@ export default defineComponent({
       openNotifSuccess,
       openNotifInfo,
       openNotifDanger,
-      openAlertDefault,
-      openAlertWarning,
-      openAlertSuccess,
-      openAlertInfo,
-      openAlertDanger,
-      openAlertQuestion,
     }
   },
 })
