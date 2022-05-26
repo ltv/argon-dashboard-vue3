@@ -24,7 +24,7 @@ jobs:
       - name: S3 and CloudFront Deploy
         uses: lbertenasco/s3-deploy@v1.2.4
         with:
-          folder: build
+          folder: dist
           bucket: ${{ secrets.S3_BUCKET_NAME }}
           dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           invalidation: / *
