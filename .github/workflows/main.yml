@@ -21,8 +21,8 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Deploy
-        uses: lbertenasco/s3-deploy@v1
+      - name: S3 and CloudFront Deploy
+        uses: lbertenasco/s3-deploy@v1.2.4
         with:
           folder: build
           bucket: ${{ secrets.S3_BUCKET_NAME }}
