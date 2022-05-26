@@ -1,12 +1,14 @@
 <template>
-  <div class="flex items-center mx-0 p-4 shadow-sm bg-indigo-500 h-24">
-    <div class="w-full items-center justify-between px-3">
-      <div class="w-full flex basis-auto md:grow items-center">
+  <div
+    class="flex items-center mx-0 py-4 px-2.5 md:px-8 shadow-sm bg-indigo-500 h-20 border border-indigo-500 border-b-slate-50/10"
+  >
+    <div class="w-full items-center justify-between">
+      <div class="w-full flex basis-auto items-center">
         <div
-          class="transition-all duration-200 mr-auto w-full sm:transform-none sm:block"
+          class="transition-all duration-300 w-full sm:w-auto mr-auto sm:mr-4 sm:transform-none sm:block"
           :class="{ '-translate-x-3/2 hidden': isSearchOpen }"
         >
-          <div class="relative flex-grow h-13 w-full">
+          <div class="relative flex-grow h-12 w-full">
             <div class="z-10 absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <SearchIcon class="h-5 w-4 text-gray-800" aria-hidden="true" />
             </div>
@@ -15,7 +17,7 @@
                 v-model="textInput"
                 type="text"
                 placeholder="Search"
-                input-style="color: black;"
+                input-style="color: black; font-weight: 400;font-size: .875rem;"
               />
               <div
                 class="flex z-10 absolute inset-y-0 right-0 pr-4 items-center lg:hidden md:hidden sm:hidden"
@@ -33,8 +35,8 @@
           </div>
         </div>
         <div
-          class="flex flex-row md:ml-auto items-center mt-0 text-slate-50 gap-8"
-          :class="[!isSearchOpen ? 'hidden sm:flex md:flex lg:flex' : '']"
+          class="flex flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-8"
+          :class="[!isSearchOpen ? 'hidden sm:flex' : '']"
         >
           <div class="relative inline-block lg:hidden">
             <div class="flex items-center">
@@ -56,7 +58,7 @@
               <div class="el-dropdown-link">
                 <el-icon
                   :size="22"
-                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300"
+                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300 focus:text-slate-300"
                 >
                   <BellFilled />
                 </el-icon>
@@ -65,12 +67,17 @@
                 <el-dropdown-menu>
                   <el-dropdown-item class="m-0 hover:bg-white">
                     <div class="flex items-center w-full py-3 cursor-default">
-                      <h6 class="text-base text-slate-400 font-semibold m-0">
+                      <h6 class="text-sm lg:text-base text-slate-400 font-semibold m-0">
                         You have <strong class="text-primary">13</strong> notifications.
                       </h6>
                     </div>
                   </el-dropdown-item>
-                  <el-dropdown-item divided class="m-0 hover:bg-slate-50">
+                  <el-dropdown-item
+                    divided
+                    class="m-0 hover:bg-slate-50"
+                    v-for="index in 5"
+                    :key="index"
+                  >
                     <div class="flex flex-row items-center w-full py-3">
                       <div class="flex w-auto">
                         <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
@@ -81,82 +88,14 @@
                             <h4 class="mb-0">John Snow</h4>
                           </div>
                           <div class="text-right">
-                            <p class="text-sm">2 hrs ago</p>
+                            <span class="text-90 lg:text-sm font-normal text-gray-400"
+                              >2 hrs ago</span
+                            >
                           </div>
                         </div>
-                        <p class="mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                      </div>
-                    </div>
-                  </el-dropdown-item>
-                  <el-dropdown-item divided class="m-0 hover:bg-slate-50">
-                    <div class="flex flex-row items-center w-full py-3">
-                      <div class="flex w-auto">
-                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
-                      </div>
-                      <div class="basis-0 grow w-full ml-4">
-                        <div class="flex justify-between items-center">
-                          <div>
-                            <h4 class="mb-0">John Snow</h4>
-                          </div>
-                          <div class="text-right">
-                            <p class="text-sm">2 hrs ago</p>
-                          </div>
-                        </div>
-                        <p class="mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                      </div>
-                    </div>
-                  </el-dropdown-item>
-                  <el-dropdown-item divided class="m-0 hover:bg-slate-50">
-                    <div class="flex flex-row items-center w-full py-3">
-                      <div class="flex w-auto">
-                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
-                      </div>
-                      <div class="basis-0 grow w-full ml-4">
-                        <div class="flex justify-between items-center">
-                          <div>
-                            <h4 class="mb-0">John Snow</h4>
-                          </div>
-                          <div class="text-right">
-                            <p class="text-sm">2 hrs ago</p>
-                          </div>
-                        </div>
-                        <p class="mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                      </div>
-                    </div>
-                  </el-dropdown-item>
-                  <el-dropdown-item divided class="m-0 hover:bg-slate-50">
-                    <div class="flex flex-row items-center w-full py-3">
-                      <div class="flex w-auto">
-                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
-                      </div>
-                      <div class="basis-0 grow w-full ml-4">
-                        <div class="flex justify-between items-center">
-                          <div>
-                            <h4 class="mb-0">John Snow</h4>
-                          </div>
-                          <div class="text-right">
-                            <p class="text-sm">2 hrs ago</p>
-                          </div>
-                        </div>
-                        <p class="mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
-                      </div>
-                    </div>
-                  </el-dropdown-item>
-                  <el-dropdown-item divided class="m-0 hover:bg-slate-50">
-                    <div class="flex flex-row items-center w-full py-3">
-                      <div class="flex w-auto">
-                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
-                      </div>
-                      <div class="basis-0 grow w-full ml-4">
-                        <div class="flex justify-between items-center">
-                          <div>
-                            <h4 class="mb-0">John Snow</h4>
-                          </div>
-                          <div class="text-right">
-                            <p class="text-sm">2 hrs ago</p>
-                          </div>
-                        </div>
-                        <p class="mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                        <p class="mb-0 text-sm leading-relaxed md:text-base">
+                          Let's meet at Starbucks at 11:30. Wdyt?
+                        </p>
                       </div>
                     </div>
                   </el-dropdown-item>
@@ -176,7 +115,7 @@
               <template #reference>
                 <el-icon
                   :size="22"
-                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300"
+                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300 focus:text-slate-300"
                 >
                   <Menu />
                 </el-icon>
@@ -288,11 +227,11 @@
           :class="[!isSearchOpen ? 'hidden sm:flex md:flex lg:flex' : '']"
         >
           <el-dropdown placement="bottom-end" trigger="click" popper-class="profile-popper">
-            <div class="flex flex-row items-center gap-2">
+            <div class="flex flex-row items-center gap-1 md:gap-1.5">
               <div class="pt-1">
                 <el-link :underline="false">
                   <el-avatar
-                    :size="40"
+                    :size="37"
                     class="cursor-pointer"
                     src="src/assets/images/Jon_Snow.png"
                   />
@@ -303,8 +242,8 @@
                   <el-link
                     :underline="false"
                     href="#index"
-                    class="text-base font-semibold text-slate-50 hover:text-slate-300"
-                    >John Snow</el-link
+                    class="text-sm font-semibold text-slate-50 hover:text-slate-300"
+                    >Admin</el-link
                   >
                 </h4>
               </div>
@@ -316,7 +255,7 @@
                     <h6 class="truncate m-0 text-[#32325d]">WELCOME!</h6>
                   </div>
                 </el-dropdown-item>
-                <el-dropdown-item class="mx-0 my-2 hover:bg-slate-50 text-zinc-800">
+                <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">
                   <div class="flex flex-row items-center w-full h-8">
                     <div class="flex w-auto">
                       <el-icon :size="22" class="cursor-pointer w-5 h-6">
@@ -333,7 +272,7 @@
                   </div>
                 </el-dropdown-item>
 
-                <el-dropdown-item divided class="mx-0 mt-2 hover:bg-slate-50 text-zinc-800">
+                <el-dropdown-item divided class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800">
                   <div class="flex flex-row items-center w-full h-8">
                     <div class="flex w-auto">
                       <el-icon :size="22" class="cursor-pointer w-5 h-6">
@@ -428,13 +367,16 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .menu-popper {
-  @apply lg:w-96 md:w-96 sm:w-96 w-97/100 border-none bg-[#182c4e] #{!important};
+  @apply lg:w-96 md:w-96 sm:w-96 w-97/100 border-none bg-[#182c4e] top-4 sm:top-1 #{!important};
 }
 .notification-popper {
-  @apply lg:w-108 md:w-108 sm:w-108 w-97/100 #{!important};
+  @apply lg:w-100 md:w-100 sm:w-100 w-97/100 top-9/100 sm:top-16 #{!important};
+}
+.notification-popper .el-dropdown-menu {
+  @apply p-0 rounded-lg #{!important};
 }
 .profile-popper {
-  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 #{!important};
+  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 top-9/100 sm:top-18 #{!important};
 }
 .profile-popper .el-dropdown-menu {
   @apply py-2 rounded-lg #{!important};
@@ -442,9 +384,9 @@ export default defineComponent({
 .el-input {
   --el-text-color-placeholder: #4c4c52;
   .el-input__inner {
-    @apply relative transition-all duration-200 text-base w-full sm:w-72 h-13 resize-y leading-6 rounded-full bg-slate-100 pl-10 font-thin shadow-none border-none;
+    @apply relative transition-all duration-200 text-base w-full sm:w-72 h-12 resize-y leading-6 rounded-full bg-slate-100 pl-10 font-thin shadow-none border-none;
     &:focus {
-      @apply w-full sm:w-96 bg-white text-black border-indigo-400;
+      @apply w-full sm:w-98 bg-white text-black border-indigo-400;
     }
   }
 }

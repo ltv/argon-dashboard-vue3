@@ -29,7 +29,11 @@ const routes = [
     meta: {
       title: 'Dashboard',
       icon: HomeIcon,
-      color: 'text-left-bar-indigo'
+      color: 'text-left-bar-indigo',
+      breadcrumb: {
+        parentPath: '/',
+        title: 'Dashboard'
+      }
     },
   },
   {
@@ -39,7 +43,11 @@ const routes = [
     meta: {
       title: 'Buttons',
       icon: CursorClickIcon,
-      color: 'text-left-bar-rose'
+      color: 'text-left-bar-rose',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Buttons'
+      }
     },
   },
   {
@@ -49,7 +57,11 @@ const routes = [
     meta: {
       title: 'Notifications',
       icon: BellIcon,
-      color: 'text-left-bar-green'
+      color: 'text-left-bar-green',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Notifications'
+      } 
     },
   },
   {
@@ -59,7 +71,11 @@ const routes = [
     meta: {
       title: 'Tables',
       icon: ViewBoardsIcon,
-      color: 'text-left-bar-indigo'
+      color: 'text-left-bar-indigo',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Tables'
+      } 
     },
   },
   {
@@ -69,7 +85,11 @@ const routes = [
     meta: {
       title: 'Grid',
       icon: ViewGridIcon,
-      color: 'text-left-bar-cyan'
+      color: 'text-left-bar-cyan',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Grid'
+      } 
     },
   },
   {
@@ -79,7 +99,11 @@ const routes = [
     meta: {
       title: 'Typography',
       icon: DocumentTextIcon,
-      color: 'text-left-bar-yellow'
+      color: 'text-left-bar-yellow',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Typography'
+      } 
     },
   },
   {
@@ -89,7 +113,11 @@ const routes = [
     meta: {
       title: 'Cards',
       icon: CreditCardIcon,
-      color: 'text-left-bar-orange'
+      color: 'text-left-bar-orange',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Cards'
+      } 
     },
   },
   {
@@ -99,7 +127,11 @@ const routes = [
     meta: {
       title: 'Icons',
       icon: StarIcon,
-      color: 'text-left-bar-red'
+      color: 'text-left-bar-red',
+      breadcrumb: {
+        parentPath: 'Components',
+        title: 'Icons'
+      } 
     },
   },
   {

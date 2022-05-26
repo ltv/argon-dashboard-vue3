@@ -7,7 +7,7 @@
     :class="{ 'w-15 hidden lg:block': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
-      <div class="h-24 flex items-center">
+      <div class="h-20 flex items-center">
         <a
           v-if="(isHover && !isPin) || isPin"
           :class="{ 'opacity-0': !isHover && !isPin }"
@@ -48,7 +48,7 @@
               aria-hidden="true"
             ></span>
             <router-link
-              class="inline-flex items-center w-full text-sm my-0.5 transition-colors duration-150 hover:text-gray-600"
+              class="inline-flex items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-600 focus:text-gray-800"
               :class="{ 'text-gray-800': route.name === item.name }"
               :to="{ name: item.name }"
               :title="item.title"
