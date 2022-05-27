@@ -3,7 +3,7 @@ name: Build DEV
 
 on:
   push:
-    branches: [main-deployment]
+    branches: [main]
 
 jobs:
   deploy-cloudfront:
@@ -21,7 +21,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install dependencies
-        run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files 
+        run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
 
       - name: Build source
         run: yarn build
