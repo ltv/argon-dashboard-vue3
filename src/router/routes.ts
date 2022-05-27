@@ -30,10 +30,7 @@ const routes = [
       title: 'Dashboard',
       icon: HomeIcon,
       color: 'text-left-bar-indigo',
-      breadcrumb: {
-        parentPath: '/',
-        title: 'Dashboard'
-      }
+      parentPath: 'Components',
     },
   },
   {
@@ -44,10 +41,7 @@ const routes = [
       title: 'Buttons',
       icon: CursorClickIcon,
       color: 'text-left-bar-rose',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Buttons'
-      }
+      parentPath: 'Components'
     },
   },
   {
@@ -58,10 +52,7 @@ const routes = [
       title: 'Notifications',
       icon: BellIcon,
       color: 'text-left-bar-green',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Notifications'
-      } 
+      parentPath: 'Components',
     },
   },
   {
@@ -72,10 +63,7 @@ const routes = [
       title: 'Tables',
       icon: ViewBoardsIcon,
       color: 'text-left-bar-indigo',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Tables'
-      } 
+      parentPath: 'Components',
     },
   },
   {
@@ -86,10 +74,7 @@ const routes = [
       title: 'Grid',
       icon: ViewGridIcon,
       color: 'text-left-bar-cyan',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Grid'
-      } 
+      parentPath: 'Components',
     },
   },
   {
@@ -100,10 +85,7 @@ const routes = [
       title: 'Typography',
       icon: DocumentTextIcon,
       color: 'text-left-bar-yellow',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Typography'
-      } 
+      parentPath: 'Components',
     },
   },
   {
@@ -114,10 +96,7 @@ const routes = [
       title: 'Cards',
       icon: CreditCardIcon,
       color: 'text-left-bar-orange',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Cards'
-      } 
+      parentPath: 'Components',
     },
   },
   {
@@ -128,10 +107,7 @@ const routes = [
       title: 'Icons',
       icon: StarIcon,
       color: 'text-left-bar-red',
-      breadcrumb: {
-        parentPath: 'Components',
-        title: 'Icons'
-      } 
+      parentPath: 'Components',
     },
   },
   {

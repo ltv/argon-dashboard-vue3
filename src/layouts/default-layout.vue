@@ -11,7 +11,7 @@
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
               <div class="text-white text-xl font-semibold inline-block mb-0">
-                {{ route.meta.breadcrumb.title }}
+                {{ route.meta.title }}
               </div>
               <div class="inline-block md:ml-6 hidden md:block pt-1.5">
                 <el-breadcrumb separator="-" class="flex items-center justify-center">
@@ -33,7 +33,7 @@
                           :href="route.path"
                           class="text-sm text-slate-50 hover:text-white font-semibold"
                         >
-                          {{ route.meta.breadcrumb.parentPath }}
+                          {{ route.meta.parentPath }}
                         </el-link>
                       </div>
                     </div>
@@ -41,7 +41,7 @@
                   <el-breadcrumb-item>
                     <div class="inline-block items-center">
                       <div class="text-sm text-slate-200 font-semibold">
-                        {{ route.meta.breadcrumb.title }}
+                        {{ route.meta.title }}
                       </div>
                     </div>
                   </el-breadcrumb-item>

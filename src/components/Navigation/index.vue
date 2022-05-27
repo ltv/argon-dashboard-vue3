@@ -54,11 +54,17 @@
             </div>
           </div>
           <div class="relative inline-block pt-1">
-            <el-dropdown placement="bottom-end" trigger="click" popper-class="notification-popper">
+            <el-dropdown
+              placement="bottom-end"
+              trigger="click"
+              popper-class="notification-popper"
+              @visible-change="clickIconBell = !clickIconBell"
+            >
               <div class="el-dropdown-link">
                 <el-icon
                   :size="20"
-                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300 focus:text-slate-300"
+                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300"
+                  :class="{ 'text-slate-300': clickIconBell }"
                 >
                   <BellFilled />
                 </el-icon>
@@ -111,11 +117,18 @@
             </el-dropdown>
           </div>
           <div class="relative inline-block pt-1">
-            <el-popover placement="bottom-end" trigger="click" popper-class="menu-popper">
+            <el-popover
+              placement="bottom-end"
+              trigger="click"
+              popper-class="menu-popper"
+              @show="clickIconMenu = !clickIconMenu"
+              @hide="clickIconMenu = !clickIconMenu"
+            >
               <template #reference>
                 <el-icon
                   :size="20"
-                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300 focus:text-slate-300"
+                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300"
+                  :class="{ 'text-slate-300': clickIconMenu }"
                 >
                   <Menu />
                 </el-icon>
@@ -298,7 +311,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, watch } from 'vue'
 import {
   Search,
   BellFilled,
@@ -335,7 +348,8 @@ export default defineComponent({
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isSearchOpen = ref(true)
-
+    const clickIconBell = ref(false)
+    const clickIconMenu = ref(false)
     const textInput = ref('')
     const togglePagesMenu = () => {
       isSideMenuOpen.value = !isSideMenuOpen.value
@@ -356,6 +370,8 @@ export default defineComponent({
       isSideMenuOpen,
       isSearchOpen,
       isPin,
+      clickIconBell,
+      clickIconMenu,
       textInput,
       setIsPin,
       setSearchOpen,
