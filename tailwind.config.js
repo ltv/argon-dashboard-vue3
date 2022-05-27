@@ -42,6 +42,9 @@ module.exports = {
         100: '28rem',
         '97/100': '97%'
       },
+      maxWidth: {
+        '2/3': '66.666667%',
+      },
       height: {
         11.5: '2.875rem',
         12.5: '3.15rem',
@@ -75,6 +78,9 @@ module.exports = {
         },
         muted: {
           DEFAULT: 'rgb(136 152 170)',
+        },
+        secondary: {
+          DEFAULT: 'rgb(67 133 177)',
         },
         info: {
           DEFAULT: 'rgb(17 205 239)',

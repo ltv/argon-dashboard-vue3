@@ -1,10 +1,6 @@
 <template>
   <div
-<<<<<<< HEAD
-    class="flex items-center mx-0 py-4 px-2.5 md:px-7 shadow-sm bg-indigo-500 h-20 border border-indigo-500 border-b-slate-50/10"
-=======
     class="flex items-center mx-0 py-4 px-2.5 md:px-8 shadow-sm bg-primary-blue h-20 border border-primary-blue border-b-slate-50/10"
->>>>>>> feat(button): Design lay out for button | JIRA: PT-81
   >
     <div class="w-full items-center justify-between">
       <div class="w-full flex basis-auto items-center">

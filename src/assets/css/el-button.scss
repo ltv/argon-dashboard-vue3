@@ -1,13 +1,38 @@
 body {
   .el-button {
-    background-color: var(--el-button-bg-color, var(--el-color-white));
     &:hover {
       @apply -translate-y-0.25;
     }
   }
-  .el-button.is-plain {
-    @apply bg-transparent;
+  
+  .el-button.el-button--default.is-plain {
+    @apply bg-transparent text-btn-default border-btn-default;
   }
+
+  .el-button.el-button--primary.is-plain {
+    @apply bg-transparent text-primary-blue border-primary-blue;
+  }
+
+  .el-button.el-button--secondary.is-plain {
+    @apply bg-transparent text-secondary border-slate-100 shadow-none;
+  }
+
+  .el-button.el-button--success.is-plain {
+    @apply bg-transparent text-success border-success;
+  }
+
+  .el-button.el-button--warning.is-plain {
+    @apply bg-transparent text-warning border-warning;
+  }
+
+  .el-button.el-button--info.is-plain {
+    @apply bg-transparent text-info border-info;
+  }
+
+  .el-button.el-button--danger.is-plain {
+    @apply bg-transparent text-danger border-danger;
+  }
+
   .el-button.el-button--primary {
     @apply bg-primary-blue border border-primary-blue text-white;
     &:hover {
