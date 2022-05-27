@@ -95,8 +95,8 @@
           <h3 class="cursor-auto">Size</h3>
         </div>
       </div>
-      <div class="px-5 py-6 border-b border-primary-white">
-        <div class="flex flex-wrap gap-2">
+      <div class="px-5">
+        <div class="flex flex-wrap gap-2 py-6 border-b border-primary-white">
           <div>
             <el-button type="primary" size="large">Large button</el-button>
           </div>
@@ -105,8 +105,8 @@
           </div>
         </div>
       </div>
-      <div class="px-5 py-6 border-b border-primary-white">
-        <div class="flex flex-wrap gap-2">
+      <div class="px-5">
+        <div class="flex flex-wrap gap-2 py-6 border-b border-primary-white">
           <div>
             <el-button type="primary" size="small">Small button</el-button>
           </div>
@@ -131,8 +131,8 @@
           <h3 class="cursor-auto">Group</h3>
         </div>
       </div>
-      <div class="px-5 py-6 border-b border-primary-white">
-        <div class="flex flex-wrap gap-2">
+      <div class="px-5">
+        <div class="flex flex-wrap gap-2 py-6 border-b border-primary-white">
           <el-button-group>
             <el-button class="el-button--secondary shadow-none">Left</el-button>
             <el-button class="el-button--secondary active shadow-none">Middle</el-button>
@@ -163,8 +163,8 @@
           <h3 class="cursor-auto">Social</h3>
         </div>
       </div>
-      <div class="px-5 py-6 border-b border-primary-white">
-        <div class="flex flex-wrap gap-2">
+      <div class="px-5">
+        <div class="flex flex-wrap gap-2 py-6 border-b border-primary-white">
           <div>
             <el-button
               class="bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
@@ -239,8 +239,8 @@
           </div>
         </div>
       </div>
-      <div class="px-5 py-6 border-b border-primary-white">
-        <div class="flex flex-wrap gap-2">
+      <div class="px-5">
+        <div class="flex flex-wrap gap-2 py-6 border-b border-primary-white">
           <div>
             <el-button
               class="bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white w-10"
