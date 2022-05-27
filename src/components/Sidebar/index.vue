@@ -24,10 +24,10 @@
           <div class="lg:col-span-10 xl:col-span-10 flex">
             <div class="hidden lg:block flex-grow">
               <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
-                <MenuIcon v-if="!isPin" class="cursor-pointer h-7 w-6" @click="setIsPin(true)" />
+                <MenuIcon v-if="!isPin" class="cursor-pointer h-6 w-5" @click="setIsPin(true)" />
                 <MenuAlt1Icon
                   v-if="isPin"
-                  class="cursor-pointer h-7 w-6"
+                  class="cursor-pointer h-6 w-5"
                   @click="setIsPin(false)"
                 />
               </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div ref="target" class="flex flex-col text-gray-500 px-6 before:block before:mt-2">
+      <div ref="target" class="flex flex-col text-gray-500 px-6 before:block before:mt-3.5">
         <ul class="flex flex-col -mx-6">
           <li
             class="relative flex flex-row px-5 py-3 h-12"
