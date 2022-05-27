@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full block w-full mx-auto h-auto w-full lg:max-w-2/3">
+  <div class="w-full block w-full mx-auto h-auto w-full lg:max-w-2/3 py-2">
     <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
       <div class="p-5 border-b border-primary-white">
         <h3 class="cursor-auto">Styles</h3>
