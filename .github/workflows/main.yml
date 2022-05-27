@@ -1,0 +1,46 @@
+# This workflow will build a docker container, publish it to Github Packages
+name: Build DEV
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-cloudfront:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.yarn
+          key: ${{ runner.os }}-build-source-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-source-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install dependencies
+        run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
+
+      - name: Build source
+        run: yarn build
+
+      - name: S3 and CloudFront Deploy
+        run: |
+          aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_NAME }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+  notify:
+    needs: [deploy-cloudfront]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_RELEASE_BOT_TOKEN }}
+          format: markdown
+          message: |
+            `[Fancy-Dashboard]` Deployed Fancy-Dashboard on Dev

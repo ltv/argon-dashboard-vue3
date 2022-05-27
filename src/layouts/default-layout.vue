@@ -85,7 +85,7 @@ export default defineComponent({
   },
 
   setup() {
-    const route = useRoute()
+    const route: any = useRoute()
     const store = useDashboardStore()
     const isPin = computed<boolean>(() => store.isPin)
     const setIsPin = (b: boolean) => store.setSideBar(b)
