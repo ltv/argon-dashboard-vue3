@@ -30,7 +30,7 @@
                       <div>
                         <el-link
                           :underline="false"
-                          :href="route.path"
+                          href="#!"
                           class="text-sm text-slate-50 hover:text-white font-semibold"
                         >
                           {{ route.meta.parentPath }}
