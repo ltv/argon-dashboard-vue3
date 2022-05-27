@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sm:w-2/3 md:w-2/3 mx-auto">
+  <div class="w-full sm:w-2/3 md:w-2/3 mx-auto py-2">
     <!-- Heading section -->
     <div class="card-typography">
       <div class="card-header">
