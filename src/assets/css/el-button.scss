@@ -5,4 +5,76 @@ body {
       @apply -translate-y-0.25;
     }
   }
+  .el-button.is-plain {
+    @apply bg-transparent;
+  }
+  .el-button.el-button--primary {
+    @apply bg-primary-blue border border-primary-blue text-white;
+    &:hover {
+
+    }
+    &:active {
+      @apply bg-primary-blue-active;
+    }
+  }
+
+  .el-button.el-button--info {
+    @apply bg-info border border-info text-white;
+    &:hover {
+
+    }
+    &:active {
+      @apply bg-info-active;
+    }
+  }
+
+  .el-button.el-button--warning {
+    @apply bg-warning border border-warning text-white;
+    &:hover {
+
+    }
+    &:active {
+      @apply bg-warning-active;
+    }
+  }
+
+  .el-button.el-button--success {
+    @apply bg-success border border-success text-white;
+    &:hover {
+
+    }
+    &:active {
+      @apply bg-success-active;
+    }
+  }
+
+  .el-button.el-button--danger {
+    @apply bg-danger border border-danger text-white;
+    &:hover {
+
+    }
+    &:active {
+      @apply bg-danger-active;
+    }
+  }
+
+  .el-button.el-button--secondary {
+    @apply bg-slate-100 border border-slate-100 text-black shadow-md;
+    &:hover {
+
+    }
+    &:active {
+      @apply shadow-none border-slate-200 bg-slate-200;
+    }
+  }
+
+  .el-button.btn-default {
+    @apply bg-btn-default border border-btn-default text-white;
+    &:hover {
+
+    }
+    &:active {
+      @apply bg-btn-default-active;
+    }
+  }
 }
