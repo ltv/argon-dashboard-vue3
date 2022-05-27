@@ -404,7 +404,7 @@ export default defineComponent({
   @apply font-semibold #{!important};
 }
 .el-button.el-button--secondary.active {
-  @apply bg-slate-200 #{!important};
+  @apply bg-slate-300 #{!important};
 }
 .el-button.el-button--info.active {
   @apply bg-info-active #{!important};

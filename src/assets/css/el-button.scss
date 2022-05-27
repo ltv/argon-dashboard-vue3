@@ -7,30 +7,72 @@ body {
   
   .el-button.el-button--default.is-plain {
     @apply bg-transparent text-btn-default border-btn-default;
+    &:hover {
+      @apply bg-btn-default text-white drop-shadow-lg;
+    }
+    &:active {
+      @apply drop-shadow-none;
+    }
   }
 
   .el-button.el-button--primary.is-plain {
     @apply bg-transparent text-primary-blue border-primary-blue;
+    &:hover {
+      @apply bg-primary-blue text-white drop-shadow-lg;
+    }
+    &:active {
+      @apply drop-shadow-none;
+    }
   }
 
   .el-button.el-button--secondary.is-plain {
-    @apply bg-transparent text-secondary border-slate-100 shadow-none;
+    @apply bg-transparent text-secondary border-slate-50 shadow-none;
+    &:hover {
+      @apply bg-slate-50 text-black drop-shadow-lg border-slate-50;
+    }
+    &:active {
+      @apply drop-shadow-none bg-slate-50;
+    }
   }
 
   .el-button.el-button--success.is-plain {
     @apply bg-transparent text-success border-success;
+    &:hover {
+      @apply bg-success text-white drop-shadow-lg border-success;
+    }
+    &:active {
+      @apply drop-shadow-none;
+    }
   }
 
   .el-button.el-button--warning.is-plain {
     @apply bg-transparent text-warning border-warning;
+    &:hover {
+      @apply bg-warning text-white drop-shadow-lg border-warning;
+    }
+    &:active {
+      @apply drop-shadow-none;
+    }
   }
 
   .el-button.el-button--info.is-plain {
     @apply bg-transparent text-info border-info;
+    &:hover {
+      @apply bg-info text-white drop-shadow-lg border-info;
+    }
+    &:active {
+      @apply drop-shadow-none;
+    }
   }
 
   .el-button.el-button--danger.is-plain {
     @apply bg-transparent text-danger border-danger;
+    &:hover {
+      @apply bg-danger text-white drop-shadow-lg border-danger;
+    }
+    &:active {
+      @apply drop-shadow-none;
+    }
   }
 
   .el-button.el-button--primary {
@@ -89,7 +131,7 @@ body {
 
     }
     &:active {
-      @apply shadow-none border-slate-200 bg-slate-200;
+      @apply shadow-none border-slate-300 bg-slate-300;
     }
   }
 

@@ -51,12 +51,12 @@
             <div class="w-1/2 text-right">
               <el-button
                 size="small"
-                class="w-11 h-7 shadow-lg text-primary-blue border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="w-11 h-7 shadow-lg text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
                 >New</el-button
               >
               <el-button
                 size="small"
-                class="h-7 shadow-lg text-primary-blue border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="h-7 shadow-lg text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
                 >Filters</el-button
               >
             </div>
