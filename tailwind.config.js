@@ -42,6 +42,9 @@ module.exports = {
         100: '28rem',
         '97/100': '97%'
       },
+      maxWidth: {
+        '2/3': '66.666667%',
+      },
       height: {
         11.5: '2.875rem',
         12.5: '3.15rem',
@@ -62,20 +65,42 @@ module.exports = {
         'left-bar-cyan': '#22d1f0',
         'left-bar-rose': '#f4645f',
         'left-bar-green': '#2dce89',
-        'indigo-500': '#5e72e4',
         primary: {
           DEFAULT: 'rgb(50 50 93)',
           100: 'rgb(82 95 127)',
           200: 'rgb(136 152 170)',
-          blue: 'rgb(94 114 228)',
+          blue: {
+            DEFAULT: 'rgb(94 114 228)',
+            active: 'rgb(50 76 221)'
+          },
           red: 'rgb(245 54 92)',
           white: 'rgba(0, 0, 0, 0.05)',
         },
         muted: {
           DEFAULT: 'rgb(136 152 170)',
         },
-        warnning: {
+        secondary: {
+          DEFAULT: 'rgb(67 133 177)',
+        },
+        info: {
+          DEFAULT: 'rgb(17 205 239)',
+          active: 'rgb(13 165 192)'
+        },
+        warning: {
           DEFAULT: 'rgb(251 99 64)',
+          active: 'rgb(250 58 14)'
+        },
+        success: {
+          DEFAULT: 'rgb(45 206 137)',
+          active: 'rgb(36 164 109)'
+        },
+        danger: {
+          DEFAULT: 'rgb(245 54 92)',
+          active: 'rgb(236 12 56)'
+        },
+        'btn-default': {
+          DEFAULT: 'rgb(23 43 77)',
+          active: 'rgb(11 21 38)'
         },
         icon: {
           DEFAULT: 'rgb(246 249 252)'

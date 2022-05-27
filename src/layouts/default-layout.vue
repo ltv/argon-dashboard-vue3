@@ -6,8 +6,8 @@
       :class="`${!isPin ? 'ml-14' : 'ml-64 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
-      <div class="w-full h-20 relative bg-indigo-500">
-        <div class="flex items-center py-5 mb-0 px-2.5 md:px-8 pt-6">
+      <div class="w-full h-17 relative bg-primary-blue">
+        <div class="flex items-center py-5 mb-0 px-2.5 md:px-8 pt-5">
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
               <div class="text-white text-xl font-semibold inline-block mb-0">
@@ -51,12 +51,12 @@
             <div class="w-1/2 text-right">
               <el-button
                 size="small"
-                class="w-11 h-7 shadow-lg font-semibold text-indigo-500 border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="w-11 h-7 shadow-lg text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
                 >New</el-button
               >
               <el-button
                 size="small"
-                class="w-14 h-7 shadow-lg font-semibold text-indigo-500 border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="h-7 shadow-lg text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
                 >Filters</el-button
               >
             </div>
@@ -64,7 +64,7 @@
         </div>
       </div>
       <router-view v-slot="{ Component }">
-        <div class="h-17 bg-indigo-500 px-2.5">
+        <div class="h-19 bg-primary-blue px-2.5 sm:px-7.5 md:px-8">
           <component :is="Component" />
         </div>
       </router-view>

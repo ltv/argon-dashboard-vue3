@@ -44,7 +44,7 @@
           >
             <span
               v-if="route.name === item.name"
-              class="absolute flex inset-y-1 left-0 w-0.5 h-5/6 bg-indigo-500 rounded-tr-lg rounded-br-lg"
+              class="absolute flex inset-y-1 left-0 w-0.5 h-5/6 bg-primary-blue rounded-tr-lg rounded-br-lg"
               aria-hidden="true"
             ></span>
             <router-link
