@@ -1,0 +1,66 @@
+body {
+  .el-alert {
+    @apply py-4 p-6 text-sm rounded-md;
+  }
+  .el-alert .el-alert__close-btn {
+    @apply inset-y-5;
+  }
+  .el-alert .el-alert__icon {
+    @apply text-xl;
+  }
+  .el-alert__title {
+    @apply text-sm font-semibold leading-8;
+  }
+  .el-alert .el-alert__close-btn {
+    @apply inset-y-7 right-7;
+  }
+
+  .el-message {
+    @apply py-4 pl-6 pr-20 max-w-600 w-messBox items-start;
+  }
+  .el-message .is-closable {
+    @apply mb-4;
+  }
+  .el-message .el-message__closeBtn {
+    @apply top-6 right-7 text-base font-bold #{!important};
+  }
+  .el-message .message-header {
+    @apply text-base font-semibold #{!important};
+  }
+  .el-message .message-footer {
+    @apply text-sm font-normal font-semibold #{!important};
+  }
+
+  .el-message .el-message-icon--success {
+    @apply text-xl mr-5 #{!important};
+  }
+  .el-message .el-message-icon--info {
+    @apply text-xl mr-5 #{!important};
+  }
+  .el-message .el-message-icon--warning {
+    @apply text-xl mr-5 #{!important};
+  }
+  .el-message .el-message-icon--error {
+    @apply text-xl mr-5 #{!important};
+  }
+
+  .el-dialog {
+    @apply rounded-md;
+  }
+  .el-dialog__title {
+    @apply text-1.0625 font-semibold;
+  }
+  .el-dialog__footer .dialog-footer {
+    @apply w-full flex justify-between;
+  }
+  .el-dialog__body .el-icon {
+    @apply text-5xl text-center #{!important};
+  }
+
+  .modal-heading {
+    @apply font-semibold text-0.95 uppercase tracking-wide mb-2 mt-6 #{!important};
+  }
+  .modal-body {
+    @apply text-center;
+  }
+}

@@ -20,7 +20,8 @@ module.exports = {
         4.5: '1.15rem',
         4.625: '1.175rem',
         4.75: '1.2rem',
-        5.5: '1.375rem'
+        5.5: '1.375rem',
+        72: '72px',
       },
       margin: {
         2.75: '0.6875rem',
@@ -29,6 +30,16 @@ module.exports = {
       },
       width: {
         12.5: '3.15rem',
+        15: '3.75rem',
+        108: '28rem',
+        68: '17rem',
+        '97/100': '97%',
+        'messBox': '100% -30px'
+      },
+      maxWidth: {
+        '600': '600px',
+      },
+      height: {
         13: '3.275rem',
         15: '3.75rem',
         62: '15.5rem',
@@ -69,6 +80,9 @@ module.exports = {
         'left-bar-cyan': '#22d1f0',
         'left-bar-rose': '#f4645f',
         'left-bar-green': '#2dce89',
+        'alert-primary': 'rgb(120 137 232)',
+        'alert-secondary': '#f8fbfc',
+        'alert-closebtn': '#ffffff99',
         primary: {
           DEFAULT: 'rgb(50 50 93)',
           100: 'rgb(82 95 127)',
@@ -111,7 +125,7 @@ module.exports = {
         },
         webkit: {
           DEFAULT: '-webkit-focus-ring-color'
-        }
+        },
       },
       fontSize: {
         0.625: ['0.625rem', '1.5'],
@@ -122,6 +136,7 @@ module.exports = {
         1.0625: ['1.0625rem', '1.5'],
         1.375: ['1.375rem', '1.5'],
         1.625: ['1.625rem', '1.5'],
+        1.0625: ['1.0625rem', '1.5'],
         1.6275: ['1.6275rem', '1.5'],
         2.1875: ['2.1875rem', '1.5'],
         2.75: ['2.75rem', '1.5'],
