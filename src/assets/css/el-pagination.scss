@@ -1,0 +1,26 @@
+.el-pagination.is-background .number {
+  @apply h-9 w-9 text-gray-500 font-normal rounded-full bg-transparent border border-slate-200 #{!important};
+  &:hover {
+    @apply bg-slate-200 #{!important};
+  }
+}
+
+.el-pagination.is-background button {
+  @apply w-9 h-9 text-gray-500 rounded-full font-bold bg-transparent border border-red-200 text-center #{!important};
+  &:hover {
+    @apply bg-slate-200 #{!important};
+  }
+}
+
+.el-pagination.is-background button .el-icon {
+  @apply font-extrabold border border-slate-200 rounded-full w-9 h-9 #{!important};
+}
+
+.el-pagination.is-background button .el-icon .icon {
+  @apply m-auto mt-2.75 #{!important};
+}
+
+
+.el-pagination.is-background .el-pager .active {
+  @apply bg-primary-blue text-white drop-shadow-md #{!important};
+}
