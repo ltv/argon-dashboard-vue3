@@ -7,13 +7,13 @@
     >
       <navigation />
       <div class="w-full h-17 relative bg-primary-blue">
-        <div class="flex items-center py-5 mb-0 px-2.5 md:px-8 pt-5">
+        <div class="flex items-center py-5 mb-0 px-2.5 md:px-8 pt-5.5">
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
               <div class="text-white text-xl font-semibold inline-block mb-0">
                 {{ route.meta.title }}
               </div>
-              <div class="inline-block md:ml-6 hidden md:block pt-1.5">
+              <div class="inline-block md:ml-7 hidden md:block pt-1.5">
                 <el-breadcrumb separator="-" class="flex items-center justify-center">
                   <el-breadcrumb-item :to="{ path: '/' }">
                     <div class="inline-block items-center">
@@ -48,15 +48,15 @@
                 </el-breadcrumb>
               </div>
             </div>
-            <div class="w-1/2 text-right">
+            <div class="w-1/2 text-right pt-0.5">
               <el-button
                 size="small"
-                class="w-11 h-7 shadow-lg text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="w-11 h-7 font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
                 >New</el-button
               >
               <el-button
                 size="small"
-                class="h-7 shadow-lg text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="w-14 h-7 font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
                 >Filters</el-button
               >
             </div>
