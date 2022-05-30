@@ -2,6 +2,7 @@
 import 'assets/css/el-button.scss'
 import 'assets/css/typography.scss'
 import 'assets/css/el-popper.scss'
+import 'assets/css/el-breadcrumb.scss'
 
 
 import 'element-plus/dist/index.css'
