@@ -403,10 +403,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .el-button.el-button--default {
-  @apply font-semibold h-10.5;
+  @apply font-semibold h-11;
 }
 .el-button.el-button--large {
-  @apply h-13 rounded-lg #{!important};
+  @apply h-14 rounded-lg #{!important};
 }
 .el-button.el-button--small {
   @apply rounded #{!important};

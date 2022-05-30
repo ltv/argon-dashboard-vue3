@@ -4,7 +4,8 @@ import 'assets/css/typography.scss'
 import 'assets/css/el-popper.scss'
 import 'assets/css/el-breadcrumb.scss'
 
-
+import 'assets/css/el-pagination.scss'
+import 'assets/css/el-table.scss'
 import 'element-plus/dist/index.css'
 import 'element-plus/es/components/message/style/css'
 import 'element-plus/es/components/message-box/style/css'

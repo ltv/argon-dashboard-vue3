@@ -17,111 +17,111 @@ body {
   }
 
   .el-button.el-button--primary.is-plain {
-    @apply bg-transparent text-primary-blue border-primary-blue drop-shadow-none;
+    @apply bg-transparent text-primary-blue border-primary-blue drop-shadow-none #{!important};
     &:hover {
-      @apply bg-primary-blue text-white drop-shadow-lg;
+      @apply bg-primary-blue text-white drop-shadow-lg #{!important};
     }
     &:active {
-      @apply drop-shadow-none;
+      @apply drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--secondary.is-plain {
-    @apply bg-transparent text-secondary border-slate-50 shadow-none drop-shadow-none;
+    @apply bg-transparent text-secondary border-slate-50 shadow-none drop-shadow-none #{!important};
     &:hover {
-      @apply bg-slate-50 text-black drop-shadow-md border-slate-50;
+      @apply bg-slate-50 text-black drop-shadow-md border-slate-50 #{!important};
     }
     &:active {
-      @apply drop-shadow-none bg-slate-50;
+      @apply drop-shadow-none bg-slate-50 #{!important};
     }
   }
 
   .el-button.el-button--success.is-plain {
-    @apply bg-transparent text-success border-success drop-shadow-none;
+    @apply bg-transparent text-success border-success drop-shadow-none #{!important};
     &:hover {
-      @apply bg-success text-white drop-shadow-lg border-success;
+      @apply bg-success text-white drop-shadow-lg border-success #{!important};
     }
     &:active {
-      @apply drop-shadow-none;
+      @apply drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--warning.is-plain {
-    @apply bg-transparent text-warning border-warning drop-shadow-none;
+    @apply bg-transparent text-warning border-warning drop-shadow-none #{!important};
     &:hover {
-      @apply bg-warning text-white drop-shadow-lg border-warning;
+      @apply bg-warning text-white drop-shadow-lg border-warning #{!important};
     }
     &:active {
-      @apply drop-shadow-none;
+      @apply drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--info.is-plain {
-    @apply bg-transparent text-info border-info drop-shadow-none;
+    @apply bg-transparent text-info border-info drop-shadow-none #{!important};
     &:hover {
-      @apply bg-info text-white drop-shadow-lg border-info;
+      @apply bg-info text-white drop-shadow-lg border-info #{!important};
     }
     &:active {
-      @apply drop-shadow-none;
+      @apply drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--danger.is-plain {
     @apply bg-transparent text-danger border-danger drop-shadow-none;
     &:hover {
-      @apply bg-danger text-white drop-shadow-lg border-danger;
+      @apply bg-danger text-white drop-shadow-lg border-danger #{!important};
     }
     &:active {
-      @apply drop-shadow-none;
+      @apply drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--primary {
-    @apply bg-primary-blue border border-primary-blue text-white;
+    @apply bg-primary-blue border border-primary-blue text-white #{!important};
     &:active {
-      @apply bg-primary-blue-active drop-shadow-none;
+      @apply bg-primary-blue-active drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--info {
-    @apply bg-info border border-info text-white;
+    @apply bg-info border border-info text-white #{!important};
     &:active {
-      @apply bg-info-active drop-shadow-none;
+      @apply bg-info-active drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--warning {
-    @apply bg-warning border border-warning text-white;
+    @apply bg-warning border border-warning text-white #{!important};
     &:active {
-      @apply bg-warning-active drop-shadow-none;
+      @apply bg-warning-active drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--success {
-    @apply bg-success border border-success text-white;
+    @apply bg-success border border-success text-white #{!important};
     &:active {
-      @apply bg-success-active drop-shadow-none;
+      @apply bg-success-active drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--danger {
-    @apply bg-danger border border-danger text-white;
+    @apply bg-danger border border-danger text-white #{!important};
     &:active {
-      @apply bg-danger-active drop-shadow-none;
+      @apply bg-danger-active drop-shadow-none #{!important};
     }
   }
 
   .el-button.el-button--secondary {
-    @apply bg-slate-100 border border-slate-100 text-black shadow-sm;
+    @apply bg-slate-100/25 border border-slate-100/25 text-black shadow-sm #{!important};
     &:hover {
-      @apply shadow-md;
+      @apply shadow-md #{!important};
     }
     &:active {
-      @apply shadow-none drop-shadow-none border-slate-300 bg-slate-300;
+      @apply shadow-none drop-shadow-none border-slate-300 bg-slate-300 #{!important};
     }
   }
 
-  .el-button.btn-default {
+  .el-button.el-button--default {
     @apply bg-btn-default border border-btn-default text-white;
     &:active {
       @apply bg-btn-default-active drop-shadow-none;
