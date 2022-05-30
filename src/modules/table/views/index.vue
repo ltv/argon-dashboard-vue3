@@ -29,7 +29,7 @@
           <el-table-column label="STATUS" width="167">
             <template #default="scope">
               <div class="flex items-center">
-                <i class="w-1 h-1 bg-warning"></i>
+                <i class="w-1 h-1 bg-warning" aria-hidden="true"></i>
                 <span class="ml-3 text-0.875 font-normal">{{ scope.row.status }}</span>
               </div>
             </template>
