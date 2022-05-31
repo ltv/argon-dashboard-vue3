@@ -340,45 +340,4 @@ export default defineComponent({
 .dialog-footer button:first-child {
   margin-right: 10px;
 }
-
-// .el-alert.el-alert--success.is-light {
-//   @apply py-4 pl-6 pr-16 #{!important};
-// }
-
-// .el-button {
-//   @apply w-full px-5 py-5 font-semibold;
-// }
-
-// .default {
-//   @apply bg-slate-800 border-slate-800 text-white;
-// }
-
-// .warning {
-//   @apply bg-orange-500 border-orange-500 text-white;
-// }
-
-// .info {
-//   @apply bg-cyan-400 border-cyan-400 text-white;
-// }
-
-// .success {
-//   @apply bg-emerald-400 border-emerald-400 text-white;
-// }
-
-// .danger {
-//   @apply bg-rose-500 border-rose-500 text-white;
-// }
-
-// .primary {
-//   @apply bg-alert-primary border-alert-primary text-white;
-// }
-
-// .secondary {
-//   @apply bg-alert-secondary border-alert-secondary text-primary-100;
-// }
-
-// // CSS not working
-// .el-alert__title {
-//   @apply text-4xl #{!important};
-// }
 </style>
