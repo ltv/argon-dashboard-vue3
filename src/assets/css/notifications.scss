@@ -1,4 +1,5 @@
 body {
+  // Alerts
   .el-alert {
     @apply py-4 p-6 text-sm rounded-md;
   }
@@ -15,8 +16,23 @@ body {
     @apply inset-y-7 right-7;
   }
 
+  // Alerts - Custom
+  .el-alert.success {
+    @apply bg-success-noti text-white;
+  }
+  .el-alert.info {
+    @apply bg-info-noti text-white;
+  }
+  .el-alert.warning {
+    @apply bg-warning-noti text-white;
+  }
+  .el-alert.danger {
+    @apply bg-danger-noti text-white;
+  }
+
+  // Notifications
   .el-message {
-    @apply py-4 pl-6 pr-20 max-w-600 w-messBox items-start;
+    @apply py-4 pl-6 pr-20 max-w-600 w-messBox items-start rounded-md;
   }
   .el-message .is-closable {
     @apply mb-4;
@@ -28,9 +44,8 @@ body {
     @apply text-base font-semibold #{!important};
   }
   .el-message .message-footer {
-    @apply text-sm font-normal font-semibold #{!important};
+    @apply text-sm font-normal #{!important};
   }
-
   .el-message .el-message-icon--success {
     @apply text-xl mr-5 #{!important};
   }
@@ -44,8 +59,71 @@ body {
     @apply text-xl mr-5 #{!important};
   }
 
+  // Notifications Custom
+  .el-message.default {
+    @apply bg-default-noti border-default-noti text-white #{!important};
+  }
+  .el-message.default .el-icon {
+    @apply text-white #{!important};
+  }
+  .el-message.is-closable.default .message-header,
+  .el-message.is-closable.default .message-footer {
+    @apply text-white;
+  }
+
+  .el-message.info {
+    @apply bg-info-noti border-info-noti text-white #{!important};
+  }
+  .el-message.info .el-icon {
+    @apply text-white #{!important};
+  }
+  .el-message.is-closable.info .message-header,
+  .el-message.is-closable.info .message-footer {
+    @apply text-white;
+  }
+
+  .el-message.success {
+    @apply bg-success-noti border-success-noti text-white #{!important};
+  }
+  .el-message.success .el-icon {
+    @apply text-white #{!important};
+  }
+  .el-message.is-closable.success .message-header,
+  .el-message.is-closable.success .message-footer {
+    @apply text-white;
+  }
+
+  .el-message.warning {
+    @apply bg-warning-noti border-warning-noti text-white #{!important};
+  }
+  .el-message.warning .el-icon {
+    @apply text-white #{!important};
+  }
+  .el-message.is-closable.warning .message-header,
+  .el-message.is-closable.warning .message-footer {
+    @apply text-white;
+  }
+
+  .el-message.danger {
+    @apply bg-danger-noti border-danger-noti text-white #{!important};
+  }
+  .el-message.danger .el-icon {
+    @apply text-white #{!important};
+  }
+  .el-message.is-closable.danger .message-header,
+  .el-message.is-closable.danger .message-footer {
+    @apply text-white;
+  }
+
+  // Modals
   .el-dialog {
-    @apply rounded-md;
+    @apply rounded-md w-4/12;
+  }
+  .el-dialog .el-button {
+    @apply py-5 px-5 border-transparent text-sm tracking-wide font-semibold;
+  }
+  .el-dialog .btn-close {
+    @apply bg-transparent text-black hover:translate-y-0;
   }
   .el-dialog__title {
     @apply text-1.0625 font-semibold;
@@ -53,14 +131,103 @@ body {
   .el-dialog__footer .dialog-footer {
     @apply w-full flex justify-between;
   }
-  .el-dialog__body .el-icon {
+  .open-notification .el-dialog__body .el-icon {
     @apply text-5xl text-center #{!important};
   }
-
   .modal-heading {
-    @apply font-semibold text-0.95 uppercase tracking-wide mb-2 mt-6 #{!important};
+    @apply font-semibold text-0.95  uppercase tracking-wide mb-2 mt-6 #{!important};
   }
   .modal-body {
     @apply text-center;
+  }
+  .open-notification {
+    @apply bg-gradient-to-r from-left-bar-red to-left-bar-red-light;
+  }
+  .open-notification .el-dialog__title,
+  .open-notification .el-dialog__body,
+  .open-notification .modal-heading,
+  .open-notification .modal-desc {
+    @apply text-white #{!important};
+  }
+  .open-notification .btn1-close {
+    @apply bg-transparent text-white hover:translate-y-0;
+  }
+  .el-button.el-button--default.btn-close {
+    @apply bg-transparent text-left-bar-indigo hover:translate-y-0 #{!important};
+  }
+  .open-notification .btn-open {
+    @apply bg-white hover:bg-white text-black;
+  }
+
+  // Modals - Form
+  .el-dialog.open-form {
+    @apply w-1/4 rounded-md bg-mess-box-bg;
+  }
+  .open-form .el-dialog__body {
+    @apply p-0 flex flex-col gap-4 text-center;
+  }
+  .open-form .el-dialog__header {
+    @apply hidden;
+  }
+  .open-form .el-dialog__body {
+    @apply flex flex-col items-center justify-center bg-white pt-0 rounded-md text-mess-box-text;
+  }
+
+  .open-form-header {
+    @apply w-full pt-5 pb-12 border-b p-10;
+  }
+  .open-form-body {
+    @apply w-full p-10;
+  }
+  .open-form-title {
+    @apply mb-4 mt-2 text-center;
+  }
+  .open-form-title small {
+    @apply text-12.8 #{!important};
+  }
+  .open-form-header-body {
+    @apply flex justify-center gap-6;
+  }
+  .btn {
+    @apply block flex justify-between items-center gap-3 py-2.5 px-5 shadow-md rounded-md hover:translate-y-0.25;
+  }
+  .btn img {
+    @apply h-5 w-5;
+  }
+  .btn span {
+    @apply font-semibold text-left-bar-indigo hover:text-black;
+  }
+  .el-form.el-form--default {
+    @apply flex flex-col items-center;
+  }
+  .el-dialog__body .el-icon {
+    @apply text-base #{!important};
+  }
+  .form-icon {
+    @apply bg-white py-2.5 px-3 h-11 w-15/100;
+  }
+  .el-input .el-input__inner {
+    @apply h-11 rounded-none w-full bg-el-form-input;
+  }
+  .el-input.el-input--default {
+    @apply w-85/100;
+  }
+  .el-form-item__content {
+    @apply rounded-md overflow-hidden;
+  }
+  .form-input {
+    @apply rounded-md shadow;
+  }
+  .checkbox {
+    @apply self-start;
+  }
+  .el-checkbox__inner {
+    @apply rounded shadow h-4 w-4 outline-none #{!important};
+  }
+  .el-checkbox__label {
+    @apply text-mess-box-text font-normal focus:border-transparent hover:border-transparent;
+  }
+  .el-form-item.el-form-item--default.form-input {
+    @apply w-full;
   }
 }

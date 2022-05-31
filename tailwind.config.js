@@ -33,13 +33,6 @@ module.exports = {
         15: '3.75rem',
         108: '28rem',
         68: '17rem',
-        '97/100': '97%',
-        'messBox': '100% -30px'
-      },
-      maxWidth: {
-        '600': '600px',
-      },
-      height: {
         13: '3.275rem',
         15: '3.75rem',
         62: '15.5rem',
@@ -54,10 +47,16 @@ module.exports = {
         88: '22rem',
         98: '26rem',
         100: '28rem',
-        '97/100': '97%'
+        '97/100': '97%',
+        'messBox': '100% -30px',
+        '45/100': '45%',
+        '15/100': '15%',
+        '85/100': '85%',
+
       },
       maxWidth: {
         '2/3': '66.666667%',
+        '600': '600px',
       },
       height: {
         10.5: '2.625rem',
@@ -76,6 +75,7 @@ module.exports = {
         'left-bar-indigo': '#5e72e4',
         'left-bar-gray': '#939cac',
         'left-bar-red': '#f5365c',
+        'left-bar-red-light': '#f56036',
         'left-bar-orange': '#fb6340',
         'left-bar-cyan': '#22d1f0',
         'left-bar-rose': '#f4645f',
@@ -83,6 +83,14 @@ module.exports = {
         'alert-primary': 'rgb(120 137 232)',
         'alert-secondary': '#f8fbfc',
         'alert-closebtn': '#ffffff99',
+        'default-noti': '#000000f2',
+        'info-noti': '#37d5f2',
+        'success-noti': '#4fd69c',
+        'warning-noti': '#fc7c5f',
+        'danger-noti': '#f75676',
+        'mess-box-text': '#8898aa',
+        'mess-box-bg': '#f7fafc',
+        'el-form-input': '#E8F0FE',
         primary: {
           DEFAULT: 'rgb(50 50 93)',
           100: 'rgb(82 95 127)',
@@ -110,7 +118,7 @@ module.exports = {
         },
         success: {
           DEFAULT: 'rgb(45 206 137)',
-          active: 'rgb(36 164 109)'
+          active: 'rgb(36 164 109)',
         },
         danger: {
           DEFAULT: 'rgb(245 54 92)',
@@ -146,13 +154,16 @@ module.exports = {
         70: ['70%', '1.5'],
         60: ['60%', '1.5'],
         'sm': ['.875rem', '1.5'],
+        12.8: ['12.8px', '1.5'],
       },
       lineHeight: {
         '1.7': '1.7',
       },
       boxShadow: {},
     },
-    translate: {},
+    translate: {
+      '0': '0 px',
+    },
     fontFamily: {
       body: ['"Open Sans"'],
     },
