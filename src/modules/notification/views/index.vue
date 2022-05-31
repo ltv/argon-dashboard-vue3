@@ -172,8 +172,7 @@
 </template>
 
 <script lang="ts">
-import { h } from 'vue'
-import { defineComponent, inject, ref, reactive } from 'vue'
+import { defineComponent, inject, ref, reactive, h } from 'vue'
 import { Message } from 'element-plus'
 
 // Icon
