@@ -156,7 +156,7 @@ body {
     @apply bg-transparent text-left-bar-indigo hover:translate-y-0 #{!important};
   }
   .open-notification .btn-open {
-    @apply bg-white hover:bg-white text-black;
+    @apply bg-white hover:bg-white text-black #{!important};
   }
 
   // Modals - Form

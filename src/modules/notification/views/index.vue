@@ -21,7 +21,9 @@
       <div class="p-5 grid grid-cols-3 gap-6">
         <!-- Modals - Default -->
         <div class="w-full mb-4">
-          <el-button class="w-full" text @click="openDefault = true">Default</el-button>
+          <el-button type="primary" size="large" class="w-full" text @click="openDefault = true"
+            >Default</el-button
+          >
           <el-dialog v-model="openDefault" title="Type your modal title" width="60%">
             <p>
               Far far away, behind the word mountains, far from the countries Vokalia and
@@ -47,7 +49,14 @@
 
         <!-- Modal - Notifications -->
         <div class="w-full mb-4">
-          <el-button class="w-full" text @click="openNotification = true">Notifications</el-button>
+          <el-button
+            type="warning"
+            size="large"
+            class="w-full"
+            text
+            @click="openNotification = true"
+            >Notifications</el-button
+          >
           <el-dialog
             v-model="openNotification"
             title="Your attention is required"
@@ -63,7 +72,7 @@
             </div>
             <template #footer>
               <span class="dialog-footer">
-                <el-button class="btn-open" type="primary" @click="openNotification = false"
+                <el-button class="btn-open" type="danger" @click="openNotification = false"
                   >Ok, got it</el-button
                 >
                 <el-button class="btn1-close" @click="openNotification = false">Close</el-button>
@@ -74,7 +83,14 @@
 
         <!-- Modals - Form -->
         <div class="w-full mb-4">
-          <el-button class="w-full" text @click="dialogFormVisible = true">Form</el-button>
+          <el-button
+            type="default"
+            size="large"
+            class="w-full"
+            text
+            @click="dialogFormVisible = true"
+            >Form</el-button
+          >
           <el-dialog v-model="dialogFormVisible" custom-class="open-form">
             <div class="open-form-header">
               <div class="open-form-title">
@@ -145,16 +161,16 @@
           <el-button type="default" @click="openNotifDefault">Default</el-button>
         </div>
         <div>
-          <el-button @click="openNotifInfo">Info</el-button>
+          <el-button type="info" @click="openNotifInfo">Info</el-button>
         </div>
         <div>
-          <el-button @click="openNotifSuccess">Success</el-button>
+          <el-button type="success" @click="openNotifSuccess">Success</el-button>
         </div>
         <div>
-          <el-button @click="openNotifWarning">Warning</el-button>
+          <el-button type="warning" @click="openNotifWarning">Warning</el-button>
         </div>
         <div>
-          <el-button @click="openNotifDanger">Danger</el-button>
+          <el-button type="danger" @click="openNotifDanger">Danger</el-button>
         </div>
       </div>
     </div>

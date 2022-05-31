@@ -2,11 +2,8 @@
 import 'assets/css/el-button.scss'
 import 'assets/css/typography.scss'
 import 'assets/css/el-popper.scss'
-<<<<<<< HEAD
 import 'assets/css/el-breadcrumb.scss'
-=======
 import 'assets/css/notifications.scss'
->>>>>>> 3b55a75 (feat(Notifications): Destop layout | JIRA: PT-84)
 
 import 'assets/css/el-pagination.scss'
 import 'assets/css/el-table.scss'
