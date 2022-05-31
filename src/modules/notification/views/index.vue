@@ -98,19 +98,11 @@
               </div>
               <div class="open-form-header-body">
                 <a class="btn" href="#">
-                  <span
-                    ><img
-                      src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/icons/common/github.svg"
-                      alt=""
-                  /></span>
+                  <span><img src="../../../assets/images/github.png" alt="" /></span>
                   <span>Github</span>
                 </a>
                 <a class="btn" href="#">
-                  <span
-                    ><img
-                      src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/icons/common/google.svg"
-                      alt=""
-                  /></span>
+                  <span><img src="../../../assets/images/google.png" alt="" /></span>
                   <span>Google</span>
                 </a>
               </div>
