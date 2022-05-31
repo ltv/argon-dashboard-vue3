@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center mx-0 py-4 px-2.5 md:px-8 shadow-sm bg-primary-blue h-20 border border-primary-blue border-b-slate-50/10"
+    class="flex items-center mx-0 py-4 px-4 md:px-8 shadow-sm bg-primary-blue h-19.75 border border-primary-blue border-b-slate-50/10"
   >
     <div class="w-full items-center justify-between">
       <div class="w-full flex basis-auto items-center">
@@ -8,9 +8,9 @@
           class="transition-all duration-300 w-full sm:w-auto mr-auto sm:mr-4 sm:transform-none sm:block"
           :class="{ '-translate-x-3/2 hidden': isSearchOpen }"
         >
-          <div class="relative flex-grow h-11.5 w-full">
+          <div class="relative flex-grow w-full h-11.5 mb-0.5">
             <div class="z-10 absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <SearchIcon class="h-5 w-4 text-gray-800" aria-hidden="true" />
+              <font-awesome-icon class="text-gray-500" :icon="['fas', 'search']" size="sm" />
             </div>
             <div>
               <el-input
@@ -35,10 +35,10 @@
           </div>
         </div>
         <div
-          class="flex flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-8"
+          class="flex flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7 md:gap-8"
           :class="[!isSearchOpen ? 'hidden sm:flex' : '']"
         >
-          <div class="relative inline-block lg:hidden">
+          <div class="relative inline-block lg:hidden text-white">
             <div class="flex items-center">
               <MenuIcon v-if="!isPin" class="cursor-pointer w-6 h-6" @click="setIsPin(true)" />
               <MenuAlt1Icon v-if="isPin" class="cursor-pointer w-6 h-6" @click="setIsPin(false)" />
@@ -48,7 +48,7 @@
             <div class="flex items-center">
               <SearchCircleIcon
                 v-if="!isPin && isSearchOpen"
-                class="cursor-pointer w-5 h-5"
+                class="cursor-pointer w-4.5 h-4.5"
                 @click="setSearchOpen(false)"
               />
             </div>
@@ -63,7 +63,7 @@
               <div class="el-dropdown-link">
                 <el-icon
                   :size="20"
-                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300"
+                  class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
                   :class="{ 'text-slate-300': clickIconBell }"
                 >
                   <BellFilled />
@@ -127,7 +127,7 @@
               <template #reference>
                 <el-icon
                   :size="20"
-                  class="cursor-pointer w-5 h-5 text-slate-50 hover:text-slate-300"
+                  class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
                   :class="{ 'text-slate-300': clickIconMenu }"
                 >
                   <Menu />
@@ -399,7 +399,7 @@ export default defineComponent({
 }
 .el-input {
   .el-input__inner {
-    @apply relative transition-all duration-200 placeholder:pl-0.5 placeholder:text-sm placeholder:text-gray-500 text-base w-full sm:w-73.5 h-11.5 resize-y leading-6 rounded-full bg-slate-100 pl-10 font-thin shadow-none border-none;
+    @apply relative transition-all duration-200 placeholder:pl-0.25 pb-1.5 placeholder:text-sm placeholder:text-gray-500 text-base w-full sm:w-73.75 h-11.5 resize-y leading-6 rounded-full bg-slate-100 pl-10 font-thin shadow-none border-none;
     &:focus {
       @apply w-full sm:w-98 bg-white text-black border-indigo-400;
     }

@@ -68,7 +68,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="ACTION">
+          <el-table-column width="102">
             <div class="text-center">
               <el-dropdown placement="bottom-end" trigger="click">
                 <el-button class="w-5 h-7 el-button--secondary border-none" plain>
@@ -209,7 +209,7 @@ export default defineComponent({
         completion: 20,
       },
     ]
-    return { tableData, usersData }
+    return { tableData }
   },
 })
 </script>

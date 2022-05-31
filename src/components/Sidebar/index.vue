@@ -3,11 +3,11 @@
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 w-63 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center"
+    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center"
     :class="{ 'w-15 hidden lg:block': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
-      <div class="h-20 flex items-center">
+      <div class="h-19.5 flex items-center">
         <a
           v-if="(isHover && !isPin) || isPin"
           :class="{ 'opacity-0': !isHover && !isPin }"
@@ -35,33 +35,37 @@
           </div>
         </div>
       </div>
-      <div ref="target" class="flex flex-col text-gray-500 px-6 before:block before:mt-3.5">
+      <div
+        ref="target"
+        class="flex flex-col text-gray-500/80 px-6 before:block before:md:mt-4 mt-0"
+      >
         <ul class="flex flex-col -mx-6">
           <li
-            class="relative flex flex-row px-5 py-3 h-12"
+            class="relative flex flex-row mx-2 px-4 h-11 rounded-lg mt-0.5"
+            :class="{ ' bg-slate-100/50 ': route.name === item.name }"
             v-for="(item, index) in menuItems"
             :key="index"
           >
             <span
               v-if="route.name === item.name"
-              class="absolute flex inset-y-1 left-0 w-0.5 h-5/6 bg-primary-blue rounded-tr-lg rounded-br-lg"
+              class="absolute inset-y-1 -left-2 w-0.5 h-5/6 bg-primary-blue rounded-tr-lg rounded-br-lg"
               aria-hidden="true"
             ></span>
             <router-link
               class="inline-flex items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-600 focus:text-gray-800"
-              :class="{ 'text-gray-800': route.name === item.name }"
+              :class="{ ' text-gray-800 ': route.name === item.name }"
               :to="{ name: item.name }"
               :title="item.title"
             >
               <div>
                 <component
                   :is="item.icon"
-                  :class="'h-5 w-5 block ' + item.color"
+                  :class="'h-4 w-4 block ' + item.color"
                   aria-hidden="true"
                 />
               </div>
               <span
-                class="transition-opacity duration-300 opacity-1 ml-4 text-sm font-medium"
+                class="transition-opacity duration-300 opacity-1 ml-4 text-sm font-normal"
                 :class="{ 'opacity-0': !isHover && !isPin }"
                 >{{ item.title }}</span
               >
