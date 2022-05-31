@@ -6,7 +6,7 @@
       </div>
       <div class="block overflow-x-auto w-full">
         <el-table :data="tableData" style="width: 100%" tooltip-effect="light">
-          <el-table-column label="PROJECT" width="288">
+          <el-table-column label="PROJECT" min-width="288">
             <template #default="scope">
               <div class="flex items-center">
                 <a
@@ -19,14 +19,14 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="BUDGET" width="115">
+          <el-table-column label="BUDGET" min-width="115">
             <template #default="scope">
               <div class="cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="STATUS" width="167">
+          <el-table-column label="STATUS" min-width="167">
             <template #default="scope">
               <div class="flex items-center">
                 <i class="w-1 h-1 bg-warning" aria-hidden="true"></i>
@@ -34,7 +34,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="USERS" width="155">
+          <el-table-column label="USERS" min-width="155">
             <template #default="scope">
               <div class="flex items-center">
                 <div class="flex justify-center -space-x-3">
@@ -56,7 +56,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="COMPLETION" width="210">
+          <el-table-column label="COMPLETION" min-width="200">
             <template #default="scope">
               <div class="flex flex-row items-center">
                 <div>
@@ -68,7 +68,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column width="102">
+          <el-table-column width="60" fixed="right">
             <div class="text-center">
               <el-dropdown placement="bottom-end" trigger="click">
                 <el-button class="w-5 h-7 el-button--secondary border-none" plain>
@@ -153,7 +153,7 @@ export default defineComponent({
     ]
     const tableData: Project[] = [
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: '@/assets/images/bootstrap.jpg',
         project: 'Argon Design System',
         budget: '2500 ',
         status: 'pending',
@@ -161,7 +161,7 @@ export default defineComponent({
         completion: 60,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: '@/assets/images/bootstrap.jpg',
         project: 'Argon Design System',
         budget: '4000 ',
         status: 'pending',
@@ -169,7 +169,7 @@ export default defineComponent({
         completion: 40,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: '@/assets/images/bootstrap.jpg',
         project: 'Argon',
         budget: '2500 ',
         status: 'pending',
@@ -177,7 +177,7 @@ export default defineComponent({
         completion: 40,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: '@/assets/images/bootstrap.jpg',
         project: 'Argon Design',
         budget: '3300 ',
         status: 'pending',
@@ -185,7 +185,7 @@ export default defineComponent({
         completion: 10,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: '@/assets/images/bootstrap.jpg',
         project: 'Argon System',
         budget: '3000 ',
         status: 'pending',

@@ -86,7 +86,7 @@
                   >
                     <div class="flex flex-row items-center w-full py-2.75">
                       <div class="flex w-auto">
-                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
+                        <el-avatar :size="48" src="@/assets/images/Jon_Snow.png" />
                       </div>
                       <div class="basis-0 grow w-full ml-4">
                         <div class="flex justify-between items-center">
@@ -243,11 +243,7 @@
             <div class="flex flex-row items-center gap-1 md:gap-1.5 mb-1">
               <div class="pt-1">
                 <el-link :underline="false">
-                  <el-avatar
-                    :size="37"
-                    class="cursor-pointer"
-                    src="src/assets/images/Jon_Snow.png"
-                  />
+                  <el-avatar :size="37" class="cursor-pointer" src="@/assets/images/Jon_Snow.png" />
                 </el-link>
               </div>
               <div class="hidden lg:block">

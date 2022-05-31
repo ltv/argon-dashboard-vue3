@@ -6,7 +6,7 @@ export const useState = defineStore({
   state: (): DashboardState => {
     return {
       welcomeText: 'Welcome to Dashboard! ...',
-      isPin: true,
+      isPin: false,
     }
   },
 })
