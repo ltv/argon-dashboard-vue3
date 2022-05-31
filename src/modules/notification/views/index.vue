@@ -101,6 +101,7 @@
                   <span
                     ><img
                       src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/icons/common/github.svg"
+                      alt=""
                   /></span>
                   <span>Github</span>
                 </a>
@@ -108,6 +109,7 @@
                   <span
                     ><img
                       src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/icons/common/google.svg"
+                      alt=""
                   /></span>
                   <span>Google</span>
                 </a>
@@ -221,11 +223,11 @@ export default defineComponent({
     const openNotifDefault = () => {
       $message({
         message: h('div', null, [
-          h('p', { class: 'message-header' }, 'Bootstrap Notify'),
+          h('p', { class: 'message-header' }, ' Notify'),
           h(
             'p',
             { class: 'message-footer' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard  alerts into awesome notifications',
           ),
         ]),
         showClose: true,
@@ -239,11 +241,11 @@ export default defineComponent({
     const openNotifSuccess = () => {
       $message({
         message: h('div', null, [
-          h('p', { class: 'message-header' }, 'Bootstrap Notify'),
+          h('p', { class: 'message-header' }, ' Notify'),
           h(
             'p',
             { class: 'message-footer' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard  alerts into awesome notifications',
           ),
         ]),
         showClose: true,
@@ -257,11 +259,11 @@ export default defineComponent({
     const openNotifInfo = () => {
       $message({
         message: h('div', null, [
-          h('p', { class: 'message-header' }, 'Bootstrap Notify'),
+          h('p', { class: 'message-header' }, ' Notify'),
           h(
             'p',
             { class: 'message-footer' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard  alerts into awesome notifications',
           ),
         ]),
         showClose: true,
@@ -275,11 +277,11 @@ export default defineComponent({
     const openNotifWarning = () => {
       $message({
         message: h('div', null, [
-          h('p', { class: 'message-header' }, 'Bootstrap Notify'),
+          h('p', { class: 'message-header' }, ' Notify'),
           h(
             'p',
             { class: 'message-footer' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard  alerts into awesome notifications',
           ),
         ]),
         showClose: true,
@@ -293,11 +295,11 @@ export default defineComponent({
     const openNotifDanger = () => {
       $message({
         message: h('div', null, [
-          h('p', { class: 'message-header' }, 'Bootstrap Notify'),
+          h('p', { class: 'message-header' }, ' Notify'),
           h(
             'p',
             { class: 'message-footer' },
-            'Turning standard Bootstrap alerts into awesome notifications',
+            'Turning standard  alerts into awesome notifications',
           ),
         ]),
         showClose: true,
@@ -309,16 +311,11 @@ export default defineComponent({
     }
 
     return {
-      // popup window
-      // openNotifDefault,
       openNotifWarning,
       openNotifDefault,
       openNotifSuccess,
       openNotifInfo,
       openNotifDanger,
-      // openNotification,
-      // openNotiForm,
-      // openNotifMess,
       openDefault,
       openNotification,
       dialogFormVisible,
