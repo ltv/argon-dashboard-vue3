@@ -154,7 +154,9 @@ module.exports = {
       },
       boxShadow: {},
     },
-    translate: {},
+    translate: {
+      0: '0px',
+    },
     fontFamily: {
       body: ['"Open Sans"'],
     },

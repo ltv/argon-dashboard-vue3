@@ -4,7 +4,7 @@
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
     class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center"
-    :class="{ 'w-15 hidden lg:block': !isHover && !isPin }"
+    :class="{ 'hidden-aside w-15': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
       <div class="h-19.5 flex items-center">
@@ -154,3 +154,8 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+.hidden-aside {
+  @apply -translate-x-3/2 lg:translate-x-0 lg:block;
+}
+</style>
