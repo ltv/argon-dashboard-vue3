@@ -7,10 +7,10 @@
     >
       <navigation />
       <div class="w-full h-17 relative bg-primary-blue">
-        <div class="flex items-center py-5 mb-0 px-2.5 md:px-8 pt-5.5">
+        <div class="flex items-center py-5 mb-0 px-4 md:px-8 pt-6">
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
-              <div class="text-white text-xl font-semibold inline-block mb-0">
+              <div class="text-white text-xl font-semibold inline-block">
                 {{ route.meta.title }}
               </div>
               <div class="inline-block md:ml-7 hidden md:block pt-1.5">
@@ -64,7 +64,7 @@
         </div>
       </div>
       <router-view v-slot="{ Component }">
-        <div class="h-19 bg-primary-blue px-2.5 sm:px-7.5 md:px-8">
+        <div class="h-19 bg-primary-blue px-4 sm:px-7.5 md:px-8">
           <component :is="Component" />
         </div>
       </router-view>

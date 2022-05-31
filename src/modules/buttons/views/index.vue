@@ -313,7 +313,7 @@
           <div>
             <el-button
               circle
-              class="px-2.5 py-4 h-9 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
+              class="px-1 py-4 h-9 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
             >
               <font-awesome-icon :icon="['fab', 'facebook']" />
             </el-button>
@@ -321,7 +321,7 @@
           <div>
             <el-button
               circle
-              class="px-2.5 py-4 h-9 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
+              class="px-1 py-4 h-9 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
             >
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </el-button>
@@ -329,7 +329,7 @@
           <div>
             <el-button
               circle
-              class="p-2 py-4 h-9 bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white"
+              class="px-[2.5px] py-4 h-9 bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white"
             >
               <font-awesome-icon :icon="['fab', 'google-plus-g']" />
             </el-button>
@@ -337,7 +337,7 @@
           <div>
             <el-button
               circle
-              class="px-2.5 py-4 h-9 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
+              class="px-1 py-4 h-9 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
             >
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
@@ -345,7 +345,7 @@
           <div>
             <el-button
               circle
-              class="px-2.5 py-4 h-9 bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white"
+              class="px-1 py-4 h-9 bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white"
             >
               <font-awesome-icon :icon="['fab', 'pinterest']" />
             </el-button>
@@ -353,7 +353,7 @@
           <div>
             <el-button
               circle
-              class="2.75 py-4 h-9 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
+              class="px-1.25 py-4 h-9 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
             >
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>
@@ -361,7 +361,7 @@
           <div>
             <el-button
               circle
-              class="px-2.75 py-4 h-9 bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white"
+              class="px-1.25 py-4 h-9 bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white"
             >
               <font-awesome-icon :icon="['fab', 'vimeo']" />
             </el-button>
@@ -369,7 +369,7 @@
           <div>
             <el-button
               circle
-              class="px-2.75 py-4 h-9 bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white"
+              class="px-1.25 py-4 h-9 bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white"
             >
               <font-awesome-icon :icon="['fab', 'slack']" />
             </el-button>
@@ -377,7 +377,7 @@
           <div>
             <el-button
               circle
-              class="px-2.5 py-4 h-9 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
+              class="px-1 py-4 h-9 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
             >
               <font-awesome-icon :icon="['fab', 'dribbble']" />
             </el-button>
@@ -406,7 +406,7 @@ export default defineComponent({
   @apply font-semibold h-11;
 }
 .el-button.el-button--large {
-  @apply h-14 rounded-lg #{!important};
+  @apply h-13 rounded-lg #{!important};
 }
 .el-button.el-button--small {
   @apply rounded #{!important};
