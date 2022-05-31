@@ -77,38 +77,22 @@
                   </div>
                 </el-button>
                 <template #dropdown>
-                  <el-dropdown-menu>
-                    <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">
-                      <div class="flex flex-row items-center w-full h-6">
-                        <div class="flex w-auto">
-                          <el-icon :size="22" class="cursor-pointer w-5 h-6">
-                            <UserFilled />
-                          </el-icon>
-                        </div>
-                        <div class="basis-0 grow w-full ml-4">
-                          <div class="">
-                            <div>
-                              <span class="mb-0 text-sm font-normal">My profile</span>
-                            </div>
-                          </div>
-                        </div>
+                  <el-dropdown-menu class="my-0.5">
+                    <el-dropdown-item class="mx-0 hover:bg-slate-100 text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Action</span>
                       </div>
                     </el-dropdown-item>
 
-                    <el-dropdown-item divided class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800">
-                      <div class="flex flex-row items-center w-full h-6">
-                        <div class="flex w-auto">
-                          <el-icon :size="20" class="cursor-pointer w-5 h-6">
-                            <CircleClose />
-                          </el-icon>
-                        </div>
-                        <div class="basis-0 grow w-full ml-4">
-                          <div class="">
-                            <div>
-                              <span class="mb-0 text-sm font-normal">Logout</span>
-                            </div>
-                          </div>
-                        </div>
+                    <el-dropdown-item class="mx-0 hover:bg-slate-100 text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Another Action</span>
+                      </div>
+                    </el-dropdown-item>
+
+                    <el-dropdown-item class="mx-0 hover:bg-slate-100 text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Something else here</span>
                       </div>
                     </el-dropdown-item>
                   </el-dropdown-menu>
