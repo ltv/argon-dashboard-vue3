@@ -4,16 +4,14 @@ body {
     @apply py-4 p-6 text-sm rounded-md;
   }
   .el-alert .el-alert__close-btn {
-    @apply inset-y-5;
+    @apply inset-y-5 inset-y-7 right-7;
   }
+
   .el-alert .el-alert__icon {
     @apply text-xl;
   }
   .el-alert__title {
     @apply text-sm font-semibold leading-8;
-  }
-  .el-alert .el-alert__close-btn {
-    @apply inset-y-7 right-7;
   }
 
   // Alerts - Custom
@@ -163,14 +161,13 @@ body {
   .el-dialog.open-form {
     @apply w-1/4 rounded-md bg-mess-box-bg;
   }
-  .open-form .el-dialog__body {
-    @apply p-0 flex flex-col gap-4 text-center;
-  }
+
   .open-form .el-dialog__header {
     @apply hidden;
   }
+
   .open-form .el-dialog__body {
-    @apply flex flex-col items-center justify-center bg-white pt-0 rounded-md text-mess-box-text;
+    @apply flex flex-col items-center justify-center bg-white pt-0 rounded-md text-mess-box-text p-0 flex flex-col gap-4 text-center;
   }
 
   .open-form-header {

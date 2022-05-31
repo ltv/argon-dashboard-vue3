@@ -186,7 +186,6 @@ import { IElMessageBox, Message } from 'element-plus'
 
 // Icon
 import { ThumbUpIcon, BellIcon, MailIcon, LockClosedIcon } from '@heroicons/vue/solid'
-import { Console } from 'console'
 
 export default defineComponent({
   name: 'Notification',
@@ -197,7 +196,6 @@ export default defineComponent({
   },
   setup(_) {
     const $message = inject<Message>('$message')
-    const $messageBox = inject<IElMessageBox>('$messageBox')
 
     // Modals - Default
     const openDefault = ref(false)
