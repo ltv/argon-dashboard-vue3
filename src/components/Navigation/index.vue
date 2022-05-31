@@ -5,8 +5,8 @@
     <div class="w-full items-center justify-between">
       <div class="w-full flex basis-auto items-center">
         <div
-          class="transition-all duration-300 w-full sm:w-auto mr-auto sm:mr-4 sm:transform-none sm:block"
-          :class="{ '-translate-x-3/2 hidden': isSearchOpen }"
+          class="transition-all duration-300 mr-auto sm:mr-4 sm:transform-none sm:block overflow-hidden"
+          :class="{ 'w-0 sm:w-full': isSearchOpen, 'w-full': !isSearchOpen }"
         >
           <div class="relative flex-grow w-full h-11.5 mb-0.5">
             <div class="z-10 absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -35,8 +35,8 @@
           </div>
         </div>
         <div
-          class="flex flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7 md:gap-8"
-          :class="[!isSearchOpen ? 'hidden sm:flex' : '']"
+          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7 md:gap-8"
+          :class="[!isSearchOpen ? 'w-0 overflow-hidden sm:flex' : 'w-full']"
         >
           <div class="relative inline-block lg:hidden text-white">
             <div class="flex items-center">
