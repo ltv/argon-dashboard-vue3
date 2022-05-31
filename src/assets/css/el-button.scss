@@ -1,6 +1,9 @@
 body {
   .el-button {
     @apply drop-shadow-md;
+    span {
+      @apply px-1.5;
+    }
     &:hover {
       @apply -translate-y-0.25;
     }
@@ -27,12 +30,12 @@ body {
   }
 
   .el-button.el-button--secondary.is-plain {
-    @apply bg-transparent text-secondary border-slate-50 shadow-none drop-shadow-none #{!important};
+    @apply bg-transparent text-secondary-text border-slate-50 shadow-none drop-shadow-none #{!important};
     &:hover {
       @apply bg-slate-50 text-black drop-shadow-md border-slate-50 #{!important};
     }
     &:active {
-      @apply drop-shadow-none bg-slate-50 #{!important};
+      @apply drop-shadow-none bg-secondary #{!important};
     }
   }
 
@@ -67,7 +70,7 @@ body {
   }
 
   .el-button.el-button--danger.is-plain {
-    @apply bg-transparent text-danger border-danger drop-shadow-none;
+    @apply bg-transparent text-danger border-danger drop-shadow-none #{!important};
     &:hover {
       @apply bg-danger text-white drop-shadow-lg border-danger #{!important};
     }
@@ -112,12 +115,12 @@ body {
   }
 
   .el-button.el-button--secondary {
-    @apply bg-slate-100/25 border border-slate-100/25 text-black shadow-sm #{!important};
+    @apply bg-secondary border border-secondary text-black  #{!important};
     &:hover {
-      @apply shadow-md #{!important};
+      @apply shadow-lg #{!important};
     }
     &:active {
-      @apply shadow-none drop-shadow-none border-slate-300 bg-slate-300 #{!important};
+      @apply shadow-none drop-shadow-none border-secondary bg-secondary-active #{!important};
     }
   }
 
