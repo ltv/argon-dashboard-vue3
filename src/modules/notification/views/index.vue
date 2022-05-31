@@ -174,7 +174,7 @@
 <script lang="ts">
 import { h } from 'vue'
 import { defineComponent, inject, ref, reactive } from 'vue'
-import { IElMessageBox, Message } from 'element-plus'
+import { Message } from 'element-plus'
 
 // Icon
 import { ThumbUpIcon, BellIcon, MailIcon, LockClosedIcon } from '@heroicons/vue/solid'
