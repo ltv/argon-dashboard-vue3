@@ -98,11 +98,11 @@
               </div>
               <div class="open-form-header-body">
                 <a class="btn" href="#">
-                  <span><img src="../../../assets/images/github.png" alt="" /></span>
+                  <span><img src="@/assets/images/github.png" alt="" /></span>
                   <span>Github</span>
                 </a>
                 <a class="btn" href="#">
-                  <span><img src="../../../assets/images/google.png" alt="" /></span>
+                  <span><img src="@/assets/images/google.png" alt="" /></span>
                   <span>Google</span>
                 </a>
               </div>
@@ -210,7 +210,7 @@ export default defineComponent({
 
     // Notifications
     const openNotifDefault = () => {
-      $message({
+      $message?.success({
         message: h('div', null, [
           h('p', { class: 'message-header' }, ' Notify'),
           h(
@@ -220,7 +220,6 @@ export default defineComponent({
           ),
         ]),
         showClose: true,
-        duration: 0,
         type: 'success',
         icon: ThumbUpIcon,
         customClass: 'default',
@@ -228,7 +227,7 @@ export default defineComponent({
     }
 
     const openNotifSuccess = () => {
-      $message({
+      $message?.success({
         message: h('div', null, [
           h('p', { class: 'message-header' }, ' Notify'),
           h(
@@ -238,7 +237,6 @@ export default defineComponent({
           ),
         ]),
         showClose: true,
-        duration: 0,
         type: 'success',
         icon: ThumbUpIcon,
         customClass: 'success',
@@ -246,7 +244,7 @@ export default defineComponent({
     }
 
     const openNotifInfo = () => {
-      $message({
+      $message?.success({
         message: h('div', null, [
           h('p', { class: 'message-header' }, ' Notify'),
           h(
@@ -256,7 +254,6 @@ export default defineComponent({
           ),
         ]),
         showClose: true,
-        duration: 0,
         type: 'info',
         icon: ThumbUpIcon,
         customClass: 'info',
@@ -264,7 +261,7 @@ export default defineComponent({
     }
 
     const openNotifWarning = () => {
-      $message({
+      $message?.success({
         message: h('div', null, [
           h('p', { class: 'message-header' }, ' Notify'),
           h(
@@ -274,7 +271,6 @@ export default defineComponent({
           ),
         ]),
         showClose: true,
-        duration: 0,
         type: 'warning',
         icon: ThumbUpIcon,
         customClass: 'warning',
@@ -282,7 +278,7 @@ export default defineComponent({
     }
 
     const openNotifDanger = () => {
-      $message({
+      $message?.success({
         message: h('div', null, [
           h('p', { class: 'message-header' }, ' Notify'),
           h(
@@ -292,7 +288,6 @@ export default defineComponent({
           ),
         ]),
         showClose: true,
-        duration: 0,
         type: 'error',
         icon: ThumbUpIcon,
         customClass: 'danger',
