@@ -1,6 +1,6 @@
 body {
   .el-form.el-form--default {
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center mb-5;
   }
 
   .el-form-item {
@@ -23,6 +23,9 @@ body {
   }
   .el-form-item.checkbox {
     @apply self-start shadow-none #{!important};
+  }
+  .el-form-item .el-button.el-button--primary.el-button--default {
+    @apply px-2.5 py-5 #{!important};
   }
 
   //   Checkbox
