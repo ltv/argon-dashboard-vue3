@@ -10,7 +10,7 @@
         <div class="flex items-center py-5 mb-0 px-4 md:px-8 pt-6">
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
-              <div class="text-white text-xl font-semibold inline-block">
+              <div class="text-white text-xl font-semibold inline-block pt-px">
                 {{ route.meta.title }}
               </div>
               <div class="inline-block md:ml-7 hidden md:block pt-1.5">

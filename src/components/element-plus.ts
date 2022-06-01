@@ -7,6 +7,8 @@ import 'assets/css/notifications.scss'
 import 'assets/css/form.scss'
 
 import 'assets/css/el-progress.scss'
+
+import 'assets/css/el-card.scss'
 import 'assets/css/el-pagination.scss'
 import 'assets/css/el-table.scss'
 import 'element-plus/dist/index.css'
