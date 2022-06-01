@@ -41,11 +41,12 @@
             <el-button class="el-button--secondary">Secondary</el-button>
           </div>
           <div>
-            <el-button type="success" class="">Success</el-button>
-          </div>
-          <div>
             <el-button type="info" class="">Info</el-button>
           </div>
+          <div>
+            <el-button type="success" class="">Success</el-button>
+          </div>
+
           <div>
             <el-button type="danger" class="">Danger</el-button>
           </div>
@@ -74,11 +75,12 @@
             <el-button class="el-button--secondary" plain>Secondary</el-button>
           </div>
           <div>
-            <el-button type="success" plain class="">Success</el-button>
-          </div>
-          <div>
             <el-button type="info" plain class="">Info</el-button>
           </div>
+          <div>
+            <el-button type="success" plain class="">Success</el-button>
+          </div>
+
           <div>
             <el-button type="danger" plain class="">Danger</el-button>
           </div>
