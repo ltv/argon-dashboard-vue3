@@ -246,7 +246,9 @@
                   plain
                 >
                   <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
-                    <DotsVerticalIcon class="cursor-pointer h-5 w-5 text-gray-400 font-extrabold" />
+                    <DotsVerticalIcon
+                      class="cursor-pointer h-5 w-5 text-slate-100 font-extrabold"
+                    />
                   </div>
                 </el-button>
                 <template #dropdown>
