@@ -313,7 +313,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .card-typography {
-  @apply bg-white break-words mt-5 mb-7 shadow rounded-lg flex flex-col;
+  @apply bg-white break-words mt-2.5 mb-7 shadow rounded-lg flex flex-col;
 }
 .card-header {
   @apply p-5 border-b border-primary-white;

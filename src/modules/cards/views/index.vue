@@ -1,9 +1,9 @@
 <template>
-  <div class="h-full w-full p-6">
+  <div class="w-full">
     <div class="container mx-auto py-4">
       <div class="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-6">
         <div class="col-span-3">
-          <el-card class="box-card relative flex flex-col px-2">
+          <el-card class="relative flex flex-col px-2">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -27,7 +27,7 @@
           </el-card>
         </div>
         <div class="col-span-3">
-          <el-card class="box-card relative flex flex-col px-2">
+          <el-card class="relative flex flex-col px-2">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -36,7 +36,7 @@
                 <span class="text-lg text-indigo-900 font-bold mb-0">2,356</span>
               </div>
               <font-awesome-icon
-                class="text-center inline-flex items-center justify-center rounded-full p-3.5 text-white bg-gradient-to-r from-orange-500 to-orange-200"
+                class="text-center inline-flex items-center justify-center rounded-full p-3 text-white bg-gradient-to-r from-orange-500 to-orange-200"
                 :icon="['fas', 'chart-pie']"
                 size="lg"
               />
@@ -51,7 +51,7 @@
           </el-card>
         </div>
         <div class="col-span-3">
-          <el-card class="box-card relative flex flex-col px-2">
+          <el-card class="relative flex flex-col px-2">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -75,7 +75,7 @@
           </el-card>
         </div>
         <div class="col-span-3">
-          <el-card class="box-card relative flex flex-col px-2">
+          <el-card class="relative flex flex-col px-2">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -104,7 +104,7 @@
     <div class="container mx-auto py-4">
       <div class="grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 gap-8">
         <div class="col-span-4">
-          <el-card class="box-card" :body-style="{ padding: '0px' }">
+          <el-card class="" :body-style="{ padding: '0px' }">
             <img alt="..." src="@/assets/images/window-purple-image.jpg" />
             <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">
               Cras justo odio
@@ -132,7 +132,7 @@
           </el-card>
 
           <div class="pt-8">
-            <el-card class="box-card">
+            <el-card class="">
               <div class="card-header py-2">
                 <h5 class="text-xl font-medium text-blue-800">Card title</h5>
               </div>
@@ -150,10 +150,7 @@
           </div>
 
           <div class="pt-8">
-            <el-card
-              class="box-card text-center"
-              :body-style="{ padding: '0px', position: 'relative' }"
-            >
+            <el-card class="text-center" :body-style="{ padding: '0px', position: 'relative' }">
               <img alt="..." src="@/assets/images/throne.jpg" />
               <div class="justify-center">
                 <el-link :underline="false" class="card-avatar-profile">
@@ -169,12 +166,12 @@
               <div class="text-center border-0 pt-8 md:py-4 pb-0 card-header">
                 <div class="flex justify-between">
                   <div class="ml-4 z-0">
-                    <el-button class="bg-cyan-400 text-white shadow-lg" size="small"
-                      >Connect</el-button
-                    >
+                    <el-button class="shadow-lg w-16" size="small" type="info">Connect</el-button>
                   </div>
                   <div class="mr-4 z-0">
-                    <el-button class="shadow-lg" size="small" type="info">Message</el-button>
+                    <el-button class="shadow-lg w-16" size="small" type="default"
+                      >Message</el-button
+                    >
                   </div>
                 </div>
               </div>
@@ -224,7 +221,7 @@
         </div>
 
         <div class="col-span-4">
-          <el-card class="box-card">
+          <el-card class="">
             <template #header>
               <div class="card-header">
                 <h5 class="text-xl font-medium text-blue-800">Card title</h5>
@@ -256,16 +253,16 @@
                       <el-link
                         :underline="false"
                         href="#index"
-                        class="text-base font-bold hover:text-blue"
+                        class="text-normal font-semibold hover:text-blue"
                         >John Snow</el-link
                       >
                     </h4>
-                    <p class="text-base text-slate-500 mb-0">King of the north</p>
+                    <p class="text-sm text-slate-500 mb-0">King of the north</p>
                     <span class="text-green-500 mr-1">●</span>
                     <small>Active</small>
                   </div>
                   <div class="py-8">
-                    <el-button type="primary" size="small">Add</el-button>
+                    <el-button type="primary" size="small" class="w-10">Add</el-button>
                   </div>
                 </div>
               </div>
@@ -273,7 +270,7 @@
           </div>
 
           <div class="pt-8">
-            <el-card class="box-card text-center">
+            <el-card class="text-center">
               <el-link :underline="false">
                 <el-avatar :size="150" src="@/assets/images/tyrion_lannister.jpg" />
               </el-link>
@@ -285,14 +282,17 @@
               </div>
               <div class="flex flex-wrap items-center justify-center p-4 gap-3">
                 <div>
-                  <el-button type="primary" circle class="p-3 py-5">
+                  <el-button
+                    circle
+                    class="px-1 py-4.5 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
+                  >
                     <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
                   </el-button>
                 </div>
                 <div>
                   <el-button
                     circle
-                    class="p-3 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
+                    class="px-1 py-4.5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
                   </el-button>
@@ -300,7 +300,7 @@
                 <div>
                   <el-button
                     circle
-                    class="p-3 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
+                    class="px-1 py-4.5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'dribbble']" size="lg" />
                   </el-button>
@@ -310,29 +310,28 @@
           </div>
 
           <div class="pt-8">
-            <el-card class="box-card" :body-style="{ padding: '0px' }">
+            <el-card class="" :body-style="{ padding: '0px' }">
               <img alt="..." src="@/assets/images/man_draw.jpg" />
-              <div class="p-4">
+              <div class="py-4 px-6">
                 <div class="text-xl font-semibold py-2 text-indigo-900">Get started with Argon</div>
-                <div class="font-thin text-xs text-slate-500">
-                  by <el-link class="font-thin text-xs" :underline="false">John Snow</el-link> on
-                  Oct 29th at 10:23 AM
+                <div class="font-normal text-80 text-slate-500">
+                  by John Snow on Oct 29th at 10:23 AM
                 </div>
-                <p class="mt-4 text-slate-500 py-4">
+                <p class="mt-4 text-slate-500 py-3.5">
                   Argon is a great free UI package based on Bootstrap 4 that includes the most
                   important components and features.
                 </p>
-                <el-button
-                  class="el-button--secondary text-sky-700 px-0 text-base font-semibold py-4"
-                  plain
-                  ><span class="text-indigo-900">View article</span></el-button
-                >
+                <a href="#!" class="px-0 py-8">
+                  <span class="text-primary-blue hover:text-indigo-800 text-sm font-semibold"
+                    >View article</span
+                  >
+                </a>
               </div>
             </el-card>
           </div>
 
           <div class="pt-8">
-            <el-card class="box-card" :body-style="{ padding: '0px' }">
+            <el-card class="" :body-style="{ padding: '0px' }">
               <div class="text-white p-4 bg-gradient-to-r from-slate-800 to-indigo-900">
                 <div class="py-3">
                   <span class="text-xl font-medium">Testimonial</span>
@@ -357,7 +356,7 @@
         <div class="col-span-4">
           <el-card
             :body-style="{ padding: '0px' }"
-            class="box-card text-center bg-gradient-to-r from-emerald-500 to-emerald-300"
+            class="text-center bg-gradient-to-r from-emerald-500 to-emerald-300"
           >
             <template #header>
               <div class="card-header">
@@ -435,7 +434,7 @@
           </el-card>
 
           <div class="pt-8">
-            <el-card class="box-card items-center">
+            <el-card class="items-center">
               <template #header>
                 <div class="card-header flex justify-between py-2">
                   <h5 class="text-xl font-medium text-blue-800">Card title</h5>
@@ -458,7 +457,7 @@
           </div>
 
           <div class="pt-8">
-            <el-card class="box-card" :body-style="{ padding: '0px', position: 'relative' }">
+            <el-card class="" :body-style="{ padding: '0px', position: 'relative' }">
               <img class="" alt="..." src="@/assets/images/window-purple-image.jpg" />
               <div
                 class="absolute text-white p-3 inset-y-0 left-0 flex items-center justify-center"
@@ -482,7 +481,7 @@
           </div>
 
           <div class="pt-8">
-            <el-card :body-style="{ padding: '0px' }" class="box-card text-center">
+            <el-card :body-style="{ padding: '0px' }" class="text-center">
               <template #header>
                 <div class="card-header">
                   <h5 class="font-bold text-indigo-500 py-4">BRAVO PACK</h5>
@@ -589,6 +588,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+:deep(.card-avatar-profile.el-link) .el-link--inner {
+  @apply absolute;
+}
+
 .el-button {
   @apply font-semibold !important;
 }
