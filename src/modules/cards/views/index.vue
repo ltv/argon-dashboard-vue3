@@ -256,16 +256,16 @@
                       <el-link
                         :underline="false"
                         href="#index"
-                        class="text-base font-bold hover:text-blue"
+                        class="text-normal font-semibold hover:text-blue"
                         >John Snow</el-link
                       >
                     </h4>
-                    <p class="text-base text-slate-500 mb-0">King of the north</p>
+                    <p class="text-sm text-slate-500 mb-0">King of the north</p>
                     <span class="text-green-500 mr-1">●</span>
                     <small>Active</small>
                   </div>
                   <div class="py-8">
-                    <el-button type="primary" size="small">Add</el-button>
+                    <el-button type="primary" size="small" class="w-10">Add</el-button>
                   </div>
                 </div>
               </div>
@@ -325,11 +325,11 @@
                   Argon is a great free UI package based on Bootstrap 4 that includes the most
                   important components and features.
                 </p>
-                <el-button
-                  class="el-button--secondary text-sky-700 px-0 text-base font-semibold py-4"
-                  plain
-                  ><span class="text-indigo-900">View article</span></el-button
-                >
+                <a href="#!" class="px-0 py-8">
+                  <span class="text-primary-blue hover:text-indigo-800 text-sm font-semibold"
+                    >View article</span
+                  >
+                </a>
               </div>
             </el-card>
           </div>
@@ -592,6 +592,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+:deep(.card-avatar-profile.el-link) .el-link--inner {
+  @apply absolute;
+}
+
 .el-button {
   @apply font-semibold !important;
 }
