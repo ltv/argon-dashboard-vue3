@@ -24,7 +24,7 @@
           <el-button type="primary" size="large" class="w-full" text @click="openDefault = true"
             >Default</el-button
           >
-          <el-dialog v-model="openDefault" title="Type your modal title" width="60%">
+          <el-dialog v-model="openDefault" title="Type your modal title">
             <p>
               Far far away, behind the word mountains, far from the countries Vokalia and
               Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
@@ -55,7 +55,7 @@
             class="w-full"
             text
             @click="openNotification = true"
-            >Notifications</el-button
+            >Notification</el-button
           >
           <el-dialog
             v-model="openNotification"

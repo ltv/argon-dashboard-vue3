@@ -8,7 +8,7 @@ body {
       @apply -translate-y-0.25;
     }
   }
-  
+
   .el-button.el-button--default.is-plain {
     @apply bg-transparent text-btn-default border-btn-default drop-shadow-none;
     &:hover {

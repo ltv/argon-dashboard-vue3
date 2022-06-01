@@ -16,7 +16,7 @@ body {
     @apply w-full;
   }
   .el-input.el-input--default .el-input__inner {
-    @apply rounded-none bg-el-form-input p-0 focus:text-slate-400 focus:font-normal text-slate-400 font-normal focus:ring-0 focus:bg-white #{!important};
+    @apply p-0 rounded-none bg-el-form-input border-transparent focus:text-slate-400 focus:font-normal text-slate-400 font-normal focus:ring-0 focus:bg-white #{!important};
   }
   .el-input.el-input--default {
     @apply w-85/100;

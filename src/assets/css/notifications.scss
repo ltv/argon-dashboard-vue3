@@ -151,7 +151,7 @@ body {
   .open-notification .el-dialog__body,
   .open-notification .modal-heading,
   .open-notification .modal-desc {
-    @apply text-white #{!important};
+    @apply text-white break-normal #{!important};
   }
   .open-notification .btn1-close {
     @apply bg-transparent text-white hover:translate-y-0;
@@ -164,6 +164,10 @@ body {
   }
 
   // Modals - Form
+  .el-dialog__body {
+    @apply break-normal;
+  }
+
   .el-dialog__body .el-icon {
     @apply text-base #{!important};
   }
@@ -203,7 +207,7 @@ body {
 
   // Responsive
   .el-dialog {
-    @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-4/12 rounded-md;
+    @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-4/12 rounded-md #{!important};
   }
   .open-form {
     @apply rounded-md bg-mess-box-bg w-97/100 md:w-96 #{!important};
