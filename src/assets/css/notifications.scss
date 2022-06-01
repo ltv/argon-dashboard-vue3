@@ -164,6 +164,9 @@ body {
   }
 
   // Modals - Form
+  .el-dialog__body .el-icon {
+    @apply text-base #{!important};
+  }
 
   .open-form .el-dialog__header {
     @apply hidden;
@@ -197,43 +200,10 @@ body {
   .btn span {
     @apply font-semibold text-left-bar-indigo hover:text-black;
   }
-  .el-form.el-form--default {
-    @apply flex flex-col items-center;
-  }
-  .el-dialog__body .el-icon {
-    @apply text-base #{!important};
-  }
-  .form-icon {
-    @apply bg-white py-2.5 px-3 h-11 w-15/100;
-  }
-  .el-input .el-input__inner {
-    @apply h-11 rounded-none w-full bg-el-form-input;
-  }
-  .el-input.el-input--default {
-    @apply w-85/100;
-  }
-  .el-form-item__content {
-    @apply rounded-md overflow-hidden;
-  }
-  .form-input {
-    @apply rounded-md shadow;
-  }
-  .checkbox {
-    @apply self-start;
-  }
-  .el-checkbox__inner {
-    @apply rounded shadow h-4 w-4 outline-none #{!important};
-  }
-  .el-checkbox__label {
-    @apply text-mess-box-text font-normal focus:border-transparent hover:border-transparent;
-  }
-  .el-form-item.el-form-item--default.form-input {
-    @apply w-full;
-  }
 
   // Responsive
   .el-dialog {
-    @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 rounded-md;
+    @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-4/12 rounded-md;
   }
   .open-form {
     @apply rounded-md bg-mess-box-bg w-97/100 md:w-96 #{!important};
