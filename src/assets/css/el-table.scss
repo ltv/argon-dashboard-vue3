@@ -1,71 +1,68 @@
-// .el-table__header {
-//   background-color: rgba(17, 24, 39, var(--tw-bg-opacity)) !important;
-// }
-
-.el-table__header thead tr {
+.is-light .el-table__header thead tr {
   @apply h-10;
 }
 
-.el-table__header thead tr > th {
+.is-light .el-table__body .el-table__row {
+  @apply h-18;
+}
+
+.is-light .el-table__header thead tr > th {
   @apply bg-slate-50 font-semibold px-4 py-2 whitespace-nowrap text-0.65 text-[#8898aa] #{!important};
 }
 
-.el-table__body-wrapper tr td:first-child {
+.is-light .el-table__body-wrapper tr td:first-child {
   @apply pl-4 #{!important};
 }
 
-.el-table__body .el-table__row {
-  @apply text-[#525f7f] #{!important};
+.is-dark.el-table {
+  --el-table-border-color: red,
 }
 
-// .el-table {
-//   color: #909399 !important;
-// }
+.is-dark .el-table__body .el-table__row {
+  @apply text-white h-18 #{!important};
+}
 
-// .el-table th,
-// .el-table tr {
-//   background-color: rgba(17, 24, 39, var(--tw-bg-opacity)) !important;
-// }
+.is-dark .el-table__header thead tr {
+  @apply h-10;
+}
 
-// .el-table__row:hover,
-// .el-table__row.hover-row {
-//   background-color: rgba(31, 41, 55, 0.1) !important;
-//   color: #ffffff !important;
-// }
+.is-dark .el-table__header thead tr > th {
+  @apply bg-dark-light font-semibold px-4 py-2 whitespace-nowrap text-0.65 text-[#4d7bca] #{!important};
+}
 
-// .el-table__body tr.hover-row.current-row > td,
-// .el-table__body tr.hover-row.el-table__row--striped.current-row > td,
-// .el-table__body tr.hover-row.el-table__row--striped > td,
-// .el-table__body tr.hover-row > td {
-//   background-color: rgba(31, 41, 55, 0.1) !important;
-//   color: #ffffff !important;
-// }
 
-// .el-table--enable-row-hover .el-table__body tr:hover > td {
-//   background-color: rgba(31, 41, 55, 0.1) !important;
-//   color: #ffffff !important;
-// }
+// Dark table style
+.is-dark .el-table__body-wrapper tr td:first-child {
+  @apply pl-4 #{!important};
+}
 
-// .el-table td {
-//   padding: 0 0 !important;
-// }
+.is-dark.el-table th,
+.is-dark.el-table tr {
+  @apply bg-dark;
+}
 
-// .el-table__row td {
-//   height: 57px;
-// }
+.is-dark .el-table__row {
+  @apply border-dark-light #{!important};
+}
 
-// .el-table td,
-// .el-table th,
-// .el-table th.is-leaf {
-//   border-bottom: 1px solid rgba(31, 41, 55, var(--tw-bg-opacity)) !important;
-// }
+.is-dark .el-table__row:hover,
+.is-dark .el-table__row.hover-row {
+  @apply bg-dark-light text-white #{!important};
+}
 
-// .el-table--border::after,
-// .el-table--group::after,
-// .el-table::before {
-//   background-color: rgba(31, 41, 55, var(--tw-bg-opacity)) !important;
-// }
-// .el-table__fixed-right::before,
-// .el-table__fixed::before {
-//   background-color: rgba(31, 41, 55, var(--tw-bg-opacity)) !important;
-// }
+.is-dark.el-table td,
+.is-dark.el-table th,
+.is-dark.el-table th.is-leaf {
+  @apply border-solid border-dark-light #{!important};
+}
+
+.is-dark .el-table__body tr > td {
+  @apply bg-dark text-white #{!important};
+}
+
+.is-dark .el-table__body tr.hover-row.current-row > td,
+.is-dark .el-table__body tr.hover-row.el-table__row--striped.current-row > td,
+.is-dark .el-table__body tr.hover-row.el-table__row--striped > td,
+.is-dark .el-table__body tr.hover-row > td {
+  @apply bg-dark-light text-white #{!important};
+}

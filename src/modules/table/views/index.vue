@@ -5,8 +5,8 @@
         <h3 class="cursor-auto">Light table</h3>
       </div>
       <div class="block overflow-x-auto w-full">
-        <el-table :data="tableData" style="width: 100%" tooltip-effect="light">
-          <el-table-column label="PROJECT" width="288">
+        <el-table :data="tableData" style="width: 100%" class="is-light">
+          <el-table-column label="PROJECT" min-width="280">
             <template #default="scope">
               <div class="flex items-center">
                 <a
@@ -15,100 +15,115 @@
                 >
                   <el-avatar :size="46" :src="scope.row.projectLogoPath" />
                 </a>
-                <span class="ml-3 mb-0 text-0.8125 font-semibold">{{ scope.row.project }}</span>
+                <span class="ml-3 mb-0 text-0.875 font-semibold cursor-auto">{{
+                  scope.row.project
+                }}</span>
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="BUDGET" width="115">
+          <el-table-column label="BUDGET" min-width="115">
             <template #default="scope">
-              <div class="cursor-auto">
+              <div class="pl-3 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="STATUS" width="167">
+          <el-table-column label="STATUS" min-width="167">
             <template #default="scope">
-              <div class="flex items-center">
-                <i class="w-1 h-1 bg-warning" aria-hidden="true"></i>
-                <span class="ml-3 text-0.875 font-normal">{{ scope.row.status }}</span>
+              <div class="pl-2.5 flex items-center">
+                <i
+                  class="w-1.5 h-1.5 rounded-full"
+                  aria-hidden="true"
+                  :class="[
+                    scope.row.status == 'on schedule'
+                      ? 'bg-info'
+                      : scope.row.status == 'delayed'
+                      ? 'bg-danger'
+                      : scope.row.status == 'pending'
+                      ? 'bg-warning'
+                      : 'bg-success',
+                  ]"
+                ></i>
+                <span class="ml-2 pb-0.5 text-0.875 font-normal">{{ scope.row.status }}</span>
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="USERS" width="155">
+          <el-table-column label="USERS" min-width="155">
             <template #default="scope">
               <div class="flex items-center">
-                <div class="flex justify-center -space-x-3">
+                <div class="flex justify-center -space-x-3 pl-2">
                   <div
                     v-for="(value, index) in scope.row.users"
                     :key="index"
-                    class="relative"
+                    class="relative hover:z-10"
                     :class="'z-' + index"
                   >
-                    <a href="#" data-toggle="tooltip" :data-original-title="value.name">
-                      <el-avatar
-                        :size="35"
-                        class="cursor-pointer border border-2 rounded-full border-white"
-                        :src="value.avatarPath"
-                      />
-                    </a>
+                    <el-popover
+                      placement="top"
+                      :width="10"
+                      trigger="hover"
+                      :content="value.name"
+                      effect="dark"
+                      popper-class="ava-column-popper"
+                    >
+                      <template #reference>
+                        <el-avatar
+                          :size="35"
+                          class="cursor-pointer border border-2 rounded-full border-white"
+                          :src="value.avatarPath"
+                        />
+                      </template>
+                    </el-popover>
                   </div>
                 </div>
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="COMPLETION" width="210">
+          <el-table-column label="COMPLETION" min-width="200">
             <template #default="scope">
               <div class="flex flex-row items-center">
                 <div>
                   <span class="text-0.8125">{{ scope.row.completion }}%</span>
                 </div>
                 <div class="w-2/3 ml-2">
-                  <el-progress :percentage="scope.row.completion" :show-text="false" />
+                  <el-progress
+                    :percentage="scope.row.completion"
+                    :show-text="false"
+                    :color="customColorMethod(scope.row.status)"
+                  />
                 </div>
               </div>
             </template>
           </el-table-column>
-          <el-table-column width="102">
-            <div class="text-center">
-              <el-dropdown placement="bottom-end" trigger="click">
-                <el-button class="w-5 h-7 el-button--secondary border-none" plain>
+          <el-table-column width="60" fixed="right">
+            <div class="text-center h-12 pt-2.5">
+              <el-dropdown
+                placement="bottom-end"
+                trigger="click"
+                popper-class="action-column-popper"
+              >
+                <el-button class="w-5 h-7 border-none el-button--secondary" plain>
                   <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
                     <DotsVerticalIcon class="cursor-pointer h-5 w-5 text-gray-400 font-extrabold" />
                   </div>
                 </el-button>
                 <template #dropdown>
-                  <el-dropdown-menu>
-                    <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">
-                      <div class="flex flex-row items-center w-full h-6">
-                        <div class="flex w-auto">
-                          <el-icon :size="22" class="cursor-pointer w-5 h-6">
-                            <UserFilled />
-                          </el-icon>
-                        </div>
-                        <div class="basis-0 grow w-full ml-4">
-                          <div class="">
-                            <div>
-                              <span class="mb-0 text-sm font-normal">My profile</span>
-                            </div>
-                          </div>
-                        </div>
+                  <el-dropdown-menu class="my-0.5">
+                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Action</span>
                       </div>
                     </el-dropdown-item>
 
-                    <el-dropdown-item divided class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800">
-                      <div class="flex flex-row items-center w-full h-6">
-                        <div class="flex w-auto">
-                          <el-icon :size="20" class="cursor-pointer w-5 h-6">
-                            <CircleClose />
-                          </el-icon>
-                        </div>
-                        <div class="basis-0 grow w-full ml-4">
-                          <div class="">
-                            <div>
-                              <span class="mb-0 text-sm font-normal">Logout</span>
-                            </div>
-                          </div>
-                        </div>
+                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Another Action</span>
+                      </div>
+                    </el-dropdown-item>
+
+                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Something else here</span>
                       </div>
                     </el-dropdown-item>
                   </el-dropdown-menu>
@@ -122,6 +137,145 @@
         <div class="flex justify-end mb-0">
           <el-pagination background layout="prev, pager, next" :total="30" />
         </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap flex-col shadow mb-7 mx-auto rounded-md bg-dark">
+      <div class="py-5 px-6 border-b border-dark-light">
+        <h3 class="cursor-auto text-slate-50">Dark table</h3>
+      </div>
+      <div class="block overflow-x-auto w-full">
+        <el-table :data="tableData" style="width: 100%" class="is-dark">
+          <el-table-column label="PROJECT" min-width="288">
+            <template #default="scope">
+              <div class="flex items-center">
+                <a
+                  href="#"
+                  class="inline-flex border border-slate-50 w-12 h-12 rounded-full bg-[#adb5bd] items-center justify-center"
+                >
+                  <el-avatar :size="46" :src="scope.row.projectLogoPath" />
+                </a>
+                <span class="ml-3 mb-0 text-0.875 font-semibold cursor-auto">{{
+                  scope.row.project
+                }}</span>
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column label="BUDGET" min-width="115">
+            <template #default="scope">
+              <div class="pl-3 cursor-auto">
+                <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column label="STATUS" min-width="167">
+            <template #default="scope">
+              <div class="pl-2.5 flex items-center">
+                <i
+                  class="w-1.5 h-1.5 rounded-full"
+                  aria-hidden="true"
+                  :class="[
+                    scope.row.status == 'on schedule'
+                      ? 'bg-info'
+                      : scope.row.status == 'delayed'
+                      ? 'bg-danger'
+                      : scope.row.status == 'pending'
+                      ? 'bg-warning'
+                      : 'bg-success',
+                  ]"
+                ></i>
+                <span class="ml-2 pb-0.5 text-0.875 font-normal">{{ scope.row.status }}</span>
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column label="USERS" min-width="155">
+            <template #default="scope">
+              <div class="flex items-center">
+                <div class="flex justify-center -space-x-3 pl-2">
+                  <div
+                    v-for="(value, index) in scope.row.users"
+                    :key="index"
+                    class="relative hover:z-10"
+                    :class="'z-' + index"
+                  >
+                    <el-popover
+                      placement="top"
+                      :width="10"
+                      trigger="hover"
+                      :content="value.name"
+                      effect="dark"
+                      popper-class="ava-column-popper"
+                    >
+                      <template #reference>
+                        <el-avatar
+                          :size="35"
+                          class="cursor-pointer border border-2 rounded-full border-white"
+                          :src="value.avatarPath"
+                        />
+                      </template>
+                    </el-popover>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column label="COMPLETION" min-width="200">
+            <template #default="scope">
+              <div class="flex flex-row items-center">
+                <div>
+                  <span class="text-0.8125">{{ scope.row.completion }}%</span>
+                </div>
+                <div class="w-2/3 ml-2">
+                  <el-progress
+                    :percentage="scope.row.completion"
+                    :show-text="false"
+                    :color="customColorMethod(scope.row.status)"
+                  />
+                </div>
+              </div>
+            </template>
+          </el-table-column>
+          <el-table-column width="60" fixed="right">
+            <div class="text-center h-12 pt-2.5">
+              <el-dropdown
+                placement="bottom-end"
+                trigger="click"
+                popper-class="action-column-popper"
+              >
+                <el-button
+                  class="w-5 h-7 border-none bg-transparent hover:bg-dark hover:shadow-md"
+                  plain
+                >
+                  <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
+                    <DotsVerticalIcon
+                      class="cursor-pointer h-5 w-5 text-slate-100 font-extrabold"
+                    />
+                  </div>
+                </el-button>
+                <template #dropdown>
+                  <el-dropdown-menu class="my-0.5">
+                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Action</span>
+                      </div>
+                    </el-dropdown-item>
+
+                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Another Action</span>
+                      </div>
+                    </el-dropdown-item>
+
+                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                      <div class="flex items-center w-40 h-6">
+                        <span class="mb-0 text-sm font-normal">Something else here</span>
+                      </div>
+                    </el-dropdown-item>
+                  </el-dropdown-menu>
+                </template>
+              </el-dropdown>
+            </div>
+          </el-table-column>
+        </el-table>
       </div>
     </div>
   </div>
@@ -180,7 +334,7 @@ export default defineComponent({
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
         project: 'Argon Design System',
         budget: '4000 ',
-        status: 'pending',
+        status: 'completed',
         users: usersData,
         completion: 40,
       },
@@ -188,7 +342,7 @@ export default defineComponent({
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
         project: 'Argon',
         budget: '2500 ',
-        status: 'pending',
+        status: 'delayed',
         users: usersData,
         completion: 40,
       },
@@ -196,7 +350,7 @@ export default defineComponent({
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
         project: 'Argon Design',
         budget: '3300 ',
-        status: 'pending',
+        status: 'on schedule',
         users: usersData,
         completion: 10,
       },
@@ -204,18 +358,36 @@ export default defineComponent({
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
         project: 'Argon System',
         budget: '3000 ',
-        status: 'pending',
+        status: 'completed',
         users: usersData,
         completion: 20,
       },
     ]
-    return { tableData }
+
+    const customColorMethod = (status: string) => {
+      if (status == 'on schedule') {
+        return '#11CDEF'
+      } else if (status == 'delayed') {
+        return '#F5365C'
+      } else if (status == 'pending') {
+        return '#FB6340'
+      } else {
+        return '#2DCE89'
+      }
+    }
+    return { tableData, customColorMethod }
   },
 })
 </script>
 
-<style>
-.el-progress-bar .el-progress-bar__outer {
-  @apply h-1 !important;
+<style lang="scss">
+.ava-column-popper.el-popover.el-popper {
+  @apply p-1 min-w-fit rounded-md #{!important};
+}
+.action-column-popper {
+  @apply rounded-lg -mt-3 #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
 }
 </style>
