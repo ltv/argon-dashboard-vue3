@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-slate-100 w-full">
+  <div class="h-screen overflow-hidden flex bg-background-page w-full">
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full overflow-auto"

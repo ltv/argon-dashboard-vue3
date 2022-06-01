@@ -3,7 +3,7 @@
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center"
+    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center drop-shadow-xl"
     :class="{ 'hidden-aside w-15': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">

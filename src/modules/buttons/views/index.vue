@@ -412,7 +412,7 @@ export default defineComponent({
   @apply rounded #{!important};
 }
 .el-button.el-button--secondary.active {
-  @apply bg-slate-300 #{!important};
+  @apply bg-secondary-active #{!important};
 }
 .el-button.el-button--info.active {
   @apply bg-info-active #{!important};

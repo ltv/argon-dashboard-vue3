@@ -85,6 +85,7 @@ module.exports = {
         22: '5.5rem',
       },
       colors: {
+        'background-page': '#f8f9fe',
         'left-bar-yellow': '#ffd600',
         'left-bar-indigo': '#5e72e4',
         'left-bar-gray': '#939cac',
