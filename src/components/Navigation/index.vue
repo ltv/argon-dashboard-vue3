@@ -86,7 +86,7 @@
                   >
                     <div class="flex flex-row items-center w-full py-2.75">
                       <div class="flex w-auto">
-                        <el-avatar :size="48" src="@/assets/images/Jon_Snow.png" />
+                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
                       </div>
                       <div class="basis-0 grow w-full ml-4">
                         <div class="flex justify-between items-center">
@@ -243,7 +243,11 @@
             <div class="flex flex-row items-center gap-1 md:gap-1.5 mb-1">
               <div class="pt-1">
                 <el-link :underline="false">
-                  <el-avatar :size="37" class="cursor-pointer" src="@/assets/images/Jon_Snow.png" />
+                  <el-avatar
+                    :size="37"
+                    class="cursor-pointer"
+                    src="src/assets/images/Jon_Snow.png"
+                  />
                 </el-link>
               </div>
               <div class="hidden lg:block">
@@ -377,28 +381,39 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss">
-.menu-popper {
-  @apply lg:w-80 md:w-80 sm:w-80 w-97/100 border-none bg-[#182c4e] top-4 sm:top-1 rounded-lg #{!important};
-}
-.notification-popper {
-  @apply lg:w-98 md:w-98 sm:w-98 w-97/100 top-9/100 sm:top-16 rounded-lg #{!important};
-}
-.notification-popper .el-dropdown-menu {
-  @apply p-0 #{!important};
-}
-.profile-popper {
-  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 top-9/100 sm:top-18 rounded-lg #{!important};
-}
-.profile-popper .el-dropdown-menu {
-  @apply py-2 #{!important};
-}
-.el-input {
+<style lang="scss" scoped>
+:deep(.el-input) {
   .el-input__inner {
     @apply relative transition-all duration-200 placeholder:pl-0.25 pb-1.5 placeholder:text-sm placeholder:text-gray-500 text-base w-full sm:w-73.75 h-11.5 resize-y leading-6 rounded-full bg-slate-100 pl-10 font-thin shadow-none border-none;
     &:focus {
       @apply w-full sm:w-98 bg-white text-black border-indigo-400;
     }
+  }
+}
+</style>
+<style lang="scss">
+.menu-popper {
+  @apply lg:w-80 md:w-80 sm:w-80 w-97/100 border-none bg-[#182c4e] top-4 sm:top-1 rounded-lg #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
+}
+.notification-popper {
+  @apply lg:w-98 md:w-98 sm:w-98 w-97/100 top-9/100 sm:top-16 rounded-lg #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
+  .el-dropdown-menu {
+    @apply p-0 #{!important};
+  }
+}
+.profile-popper {
+  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 top-9/100 sm:top-18 rounded-lg #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
+  .el-dropdown-menu {
+    @apply py-2 #{!important};
   }
 }
 </style>
