@@ -25,9 +25,8 @@ export default defineComponent({
     }
 
     initialize().catch((error: Error) => {
-      $message?.error(
-        `Couldn't initialize the system with error: ${error.message}`,
-      )
+      console.log('object')
+      $message?.error(`Couldn't initialize the system with error: ${error.message}`)
     })
 
     return { zIndex: 3000, size: 'small' }
