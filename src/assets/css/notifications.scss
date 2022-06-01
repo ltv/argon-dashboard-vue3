@@ -13,6 +13,9 @@ body {
   .el-alert__title {
     @apply text-sm font-semibold leading-8;
   }
+  .el-icon.el-alert__close-btn {
+    @apply text-lg text-alert-closebtn top-6 font-semibold #{!important};
+  }
 
   // Alerts - Custom
   .el-alert.success {
@@ -114,9 +117,6 @@ body {
   }
 
   // Modals
-  .el-dialog {
-    @apply rounded-md w-4/12;
-  }
   .el-dialog .el-button {
     @apply py-5 px-5 border-transparent text-sm tracking-wide font-semibold;
   }
@@ -131,6 +131,12 @@ body {
   }
   .open-notification .el-dialog__body .el-icon {
     @apply text-5xl text-center #{!important};
+  }
+  .open-notification .el-dialog__body {
+    @apply mt-5 mb-5;
+  }
+  .open-notification .el-dialog__close {
+    @apply text-white opacity-60;
   }
   .modal-heading {
     @apply font-semibold text-0.95  uppercase tracking-wide mb-2 mt-6 #{!important};
@@ -154,39 +160,36 @@ body {
     @apply bg-transparent text-left-bar-indigo hover:translate-y-0 #{!important};
   }
   .open-notification .btn-open {
-    @apply bg-white hover:bg-white text-black #{!important};
+    @apply bg-white hover:bg-white text-black shadow-sm #{!important};
   }
 
   // Modals - Form
-  .el-dialog.open-form {
-    @apply w-1/4 rounded-md bg-mess-box-bg;
-  }
 
   .open-form .el-dialog__header {
     @apply hidden;
   }
 
   .open-form .el-dialog__body {
-    @apply flex flex-col items-center justify-center bg-white pt-0 rounded-md text-mess-box-text p-0 flex flex-col gap-4 text-center;
+    @apply flex flex-col items-center justify-center bg-white pt-0 rounded-md text-mess-box-text p-0 flex flex-col text-center;
   }
 
   .open-form-header {
     @apply w-full pt-5 pb-12 border-b p-10;
   }
   .open-form-body {
-    @apply w-full p-10;
+    @apply w-full p-6 pt-5 md:px-10;
   }
   .open-form-title {
     @apply mb-4 mt-2 text-center;
   }
   .open-form-title small {
-    @apply text-12.8 #{!important};
+    @apply text-12.8 mb-6 #{!important};
   }
   .open-form-header-body {
-    @apply flex justify-center gap-6;
+    @apply flex flex-wrap justify-center gap-3;
   }
   .btn {
-    @apply block flex justify-between items-center gap-3 py-2.5 px-5 shadow-md rounded-md hover:translate-y-0.25;
+    @apply block shadow-sm flex justify-between items-center gap-3 py-2.5 px-5 shadow-md rounded-md hover:translate-y-0.25;
   }
   .btn img {
     @apply h-5 w-5;
@@ -226,5 +229,13 @@ body {
   }
   .el-form-item.el-form-item--default.form-input {
     @apply w-full;
+  }
+
+  // Responsive
+  .el-dialog {
+    @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 rounded-md;
+  }
+  .open-form {
+    @apply rounded-md bg-mess-box-bg w-97/100 md:w-96 #{!important};
   }
 }
