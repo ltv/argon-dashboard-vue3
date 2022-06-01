@@ -1,9 +1,11 @@
 .is-light .el-table__header thead tr {
   @apply h-10;
 }
+
 .is-light .el-table__body .el-table__row {
   @apply h-18;
 }
+
 .is-light .el-table__header thead tr > th {
   @apply bg-slate-50 font-semibold px-4 py-2 whitespace-nowrap text-0.65 text-[#8898aa] #{!important};
 }
@@ -11,23 +13,25 @@
 .is-light .el-table__body-wrapper tr td:first-child {
   @apply pl-4 #{!important};
 }
+
 .is-dark.el-table {
   --el-table-border-color: red,
 }
+
 .is-dark .el-table__body .el-table__row {
-  @apply text-[#525f7f] #{!important};
+  @apply text-white h-18 #{!important};
 }
 
 .is-dark .el-table__header thead tr {
   @apply h-10;
 }
-.is-dark .el-table__body .el-table__row {
-  @apply h-18;
-}
+
 .is-dark .el-table__header thead tr > th {
   @apply bg-[#1c345d] font-semibold px-4 py-2 whitespace-nowrap text-0.65 text-[#4d7bca] #{!important};
 }
 
+
+// Dark table style
 .is-dark .el-table__body-wrapper tr td:first-child {
   @apply pl-4 #{!important};
 }
@@ -45,12 +49,12 @@
 .is-dark .el-table__row.hover-row {
   @apply bg-[#1c345d] text-white #{!important};
 }
+
 .is-dark.el-table td,
 .is-dark.el-table th,
 .is-dark.el-table th.is-leaf {
   @apply border-solid border-[#1c345d] #{!important};
 }
-
 
 .is-dark .el-table__body tr > td {
   @apply bg-[#172b4d] text-white #{!important};
@@ -61,8 +65,4 @@
 .is-dark .el-table__body tr.hover-row.el-table__row--striped > td,
 .is-dark .el-table__body tr.hover-row > td {
   @apply bg-[#1c345d] text-white #{!important};
-}
-
-.is-dark .el-table__body .el-table__row {
-  @apply text-white #{!important};
 }
