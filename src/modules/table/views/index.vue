@@ -139,8 +139,8 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap flex-col shadow mb-7 mx-auto rounded-md bg-[#172b4d]">
-      <div class="py-5 px-6 border-b border-[#1c345d]">
+    <div class="flex flex-wrap flex-col shadow mb-7 mx-auto rounded-md bg-dark">
+      <div class="py-5 px-6 border-b border-dark-light">
         <h3 class="cursor-auto text-slate-50">Dark table</h3>
       </div>
       <div class="block overflow-x-auto w-full">
@@ -242,7 +242,7 @@
                 popper-class="action-column-popper"
               >
                 <el-button
-                  class="w-5 h-7 border-none bg-transparent hover:bg-[#172b4d] hover:shadow-md"
+                  class="w-5 h-7 border-none bg-transparent hover:bg-dark hover:shadow-md"
                   plain
                 >
                   <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
@@ -379,9 +379,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.el-progress-bar .el-progress-bar__outer {
-  @apply h-1 #{!important};
-}
 .ava-column-popper.el-popover.el-popper {
   @apply p-1 min-w-fit rounded-md #{!important};
 }

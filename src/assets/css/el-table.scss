@@ -27,7 +27,7 @@
 }
 
 .is-dark .el-table__header thead tr > th {
-  @apply bg-[#1c345d] font-semibold px-4 py-2 whitespace-nowrap text-0.65 text-[#4d7bca] #{!important};
+  @apply bg-dark-light font-semibold px-4 py-2 whitespace-nowrap text-0.65 text-[#4d7bca] #{!important};
 }
 
 
@@ -38,31 +38,31 @@
 
 .is-dark.el-table th,
 .is-dark.el-table tr {
-  @apply bg-[#172b4d];
+  @apply bg-dark;
 }
 
 .is-dark .el-table__row {
-  @apply border-[#1c345d] #{!important};
+  @apply border-dark-light #{!important};
 }
 
 .is-dark .el-table__row:hover,
 .is-dark .el-table__row.hover-row {
-  @apply bg-[#1c345d] text-white #{!important};
+  @apply bg-dark-light text-white #{!important};
 }
 
 .is-dark.el-table td,
 .is-dark.el-table th,
 .is-dark.el-table th.is-leaf {
-  @apply border-solid border-[#1c345d] #{!important};
+  @apply border-solid border-dark-light #{!important};
 }
 
 .is-dark .el-table__body tr > td {
-  @apply bg-[#172b4d] text-white #{!important};
+  @apply bg-dark text-white #{!important};
 }
 
 .is-dark .el-table__body tr.hover-row.current-row > td,
 .is-dark .el-table__body tr.hover-row.el-table__row--striped.current-row > td,
 .is-dark .el-table__body tr.hover-row.el-table__row--striped > td,
 .is-dark .el-table__body tr.hover-row > td {
-  @apply bg-[#1c345d] text-white #{!important};
+  @apply bg-dark-light text-white #{!important};
 }

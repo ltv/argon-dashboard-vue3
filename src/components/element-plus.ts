@@ -5,6 +5,7 @@ import 'assets/css/el-popper.scss'
 import 'assets/css/el-breadcrumb.scss'
 import 'assets/css/notifications.scss'
 
+import 'assets/css/el-progress.scss'
 import 'assets/css/el-pagination.scss'
 import 'assets/css/el-table.scss'
 import 'element-plus/dist/index.css'
