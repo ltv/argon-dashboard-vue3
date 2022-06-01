@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sm:w-2/3 md:w-2/3 mx-auto">
+  <div class="w-full lg:w-2/3 mx-auto">
     <!-- Alerts -->
     <div class="card-typography">
       <div class="card-header">
@@ -18,7 +18,7 @@
         <h3 class="text-md">Modals</h3>
       </div>
 
-      <div class="p-5 grid grid-cols-3 gap-6">
+      <div class="p-5 grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
         <!-- Modals - Default -->
         <div class="w-full mb-4">
           <el-button type="primary" size="large" class="w-full" text @click="openDefault = true"
@@ -176,7 +176,7 @@ import { defineComponent, inject, ref, reactive, h } from 'vue'
 import { Message } from 'element-plus'
 
 // Icon
-import { ThumbUpIcon, BellIcon, MailIcon, LockClosedIcon } from '@heroicons/vue/solid'
+import { ThumbUpIcon, BellIcon, MailIcon, LockClosedIcon, XIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
   name: 'Notification',
@@ -318,9 +318,9 @@ export default defineComponent({
 .card-header {
   @apply p-5 border-b border-primary-white;
 }
-.row {
-  @apply my-8 w-full h-auto;
-}
+// .row {
+//   @apply my-8 w-full h-auto;
+// }
 .title {
   @apply uppercase text-80 font-semibold text-muted;
 }
