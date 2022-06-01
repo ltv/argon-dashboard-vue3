@@ -1,0 +1,44 @@
+body {
+  .el-form.el-form--default {
+    @apply flex flex-col items-center;
+  }
+
+  .el-form-item {
+    @apply shadow rounded overflow-hidden;
+  }
+
+  .form-icon {
+    @apply bg-white w-15/100;
+  }
+
+  //   Input
+  .el-form-item.el-form-item--default.form-input {
+    @apply w-full;
+  }
+  .el-input.el-input--default .el-input__inner {
+    @apply rounded-none bg-el-form-input p-0 focus:text-slate-400 focus:font-normal text-slate-400 font-normal focus:ring-0 focus:bg-white #{!important};
+  }
+  .el-input.el-input--default {
+    @apply w-85/100;
+  }
+  .el-form-item.checkbox {
+    @apply self-start shadow-none #{!important};
+  }
+
+  //   Checkbox
+  .el-checkbox__inner {
+    @apply rounded shadow h-4 w-4 #{!important};
+  }
+  .el-checkbox__label {
+    @apply text-mess-box-text font-normal focus:border-transparent hover:border-transparent;
+  }
+  .el-checkbox.el-checkbox--default .el-checkbox__inner {
+    @apply hover:border-transparent;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner {
+    @apply bg-primary-blue;
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    @apply text-slate-400;
+  }
+}

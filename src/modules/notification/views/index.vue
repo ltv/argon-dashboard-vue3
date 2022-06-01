@@ -18,7 +18,7 @@
         <h3 class="text-md">Modals</h3>
       </div>
 
-      <div class="p-5 grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
+      <div class="p-5 grid grid-cols-1 md:grid-cols-3 md:gap-6 lg:grid-cols-3 lg:gap-6">
         <!-- Modals - Default -->
         <div class="w-full mb-4">
           <el-button type="primary" size="large" class="w-full" text @click="openDefault = true"
@@ -119,7 +119,7 @@
                       <component :is="form.MailIcon" />
                     </el-icon>
                   </div>
-                  <el-input />
+                  <el-input v-model="form.email" />
                 </el-form-item>
                 <!-- Password -->
                 <el-form-item class="form-input" prop="LockClosedIcon">
@@ -128,7 +128,7 @@
                       <component :is="form.LockClosedIcon" />
                     </el-icon>
                   </div>
-                  <el-input />
+                  <el-input v-model="form.password" />
                 </el-form-item>
                 <!-- Checkbox -->
                 <el-form-item class="checkbox">
