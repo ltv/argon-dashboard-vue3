@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-full p-6">
+  <div class="w-full">
     <div class="container mx-auto py-4">
       <div class="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-6">
         <div class="col-span-3">
@@ -285,14 +285,17 @@
               </div>
               <div class="flex flex-wrap items-center justify-center p-4 gap-3">
                 <div>
-                  <el-button type="primary" circle class="p-3 py-5">
+                  <el-button
+                    circle
+                    class="px-1 py-4.5 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
+                  >
                     <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
                   </el-button>
                 </div>
                 <div>
                   <el-button
                     circle
-                    class="p-3 py-5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
+                    class="px-1 py-4.5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
                   </el-button>
@@ -300,7 +303,7 @@
                 <div>
                   <el-button
                     circle
-                    class="p-3 py-5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
+                    class="px-1 py-4.5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'dribbble']" size="lg" />
                   </el-button>
