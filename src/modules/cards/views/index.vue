@@ -105,7 +105,7 @@
       <div class="grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 gap-8">
         <div class="col-span-4">
           <el-card class="box-card" :body-style="{ padding: '0px' }">
-            <img alt="..." src="src/assets/images/window-purple-image.jpg" />
+            <img alt="..." src="@/assets/images/window-purple-image.jpg" />
             <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">
               Cras justo odio
             </div>
@@ -154,14 +154,14 @@
               class="box-card text-center"
               :body-style="{ padding: '0px', position: 'relative' }"
             >
-              <img alt="..." src="src/assets/images/throne.jpg" />
+              <img alt="..." src="@/assets/images/throne.jpg" />
               <div class="justify-center">
                 <el-link :underline="false" class="card-avatar-profile">
                   <el-avatar
                     :size="!isHover ? 140 : 146"
                     @mouseover="hoverCheck(true)"
                     @mouseleave="hoverCheck(false)"
-                    src="src/assets/images/tywin_lannister.jpg"
+                    src="@/assets/images/tywin_lannister.jpg"
                     class="border border-white border-4"
                   />
                 </el-link>
@@ -248,7 +248,7 @@
                 <div class="flex flex-wrap">
                   <div>
                     <el-link :underline="false">
-                      <el-avatar :size="80" src="src/assets/images/Jon_Snow.png" />
+                      <el-avatar :size="80" src="@/assets/images/Jon_Snow.png" />
                     </el-link>
                   </div>
                   <div class="py-2 ml-2 flex-grow">
@@ -275,7 +275,7 @@
           <div class="pt-8">
             <el-card class="box-card text-center">
               <el-link :underline="false">
-                <el-avatar :size="150" src="src/assets/images/tyrion_lannister.jpg" />
+                <el-avatar :size="150" src="@/assets/images/tyrion_lannister.jpg" />
               </el-link>
               <div class="pt-4">
                 <h4 class="mb-0 py-2">
@@ -311,7 +311,7 @@
 
           <div class="pt-8">
             <el-card class="box-card" :body-style="{ padding: '0px' }">
-              <img alt="..." src="src/assets/images/man_draw.jpg" />
+              <img alt="..." src="@/assets/images/man_draw.jpg" />
               <div class="p-4">
                 <div class="text-xl font-semibold py-2 text-indigo-900">Get started with Argon</div>
                 <div class="font-thin text-xs text-slate-500">
@@ -459,7 +459,7 @@
 
           <div class="pt-8">
             <el-card class="box-card" :body-style="{ padding: '0px', position: 'relative' }">
-              <img class="" alt="..." src="src/assets/images/window-purple-image.jpg" />
+              <img class="" alt="..." src="@/assets/images/window-purple-image.jpg" />
               <div
                 class="absolute text-white p-3 inset-y-0 left-0 flex items-center justify-center"
               >
