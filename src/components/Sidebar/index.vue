@@ -75,7 +75,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted, watch } from 'vue'
+import { defineComponent, ref, computed, onMounted, watch, onUnmounted, onBeforeMount } from 'vue'
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
@@ -112,7 +112,12 @@ export default defineComponent({
     onClickOutside(target, (_) => {
       if (window.innerWidth < 640) store.setIsSBOpen(false)
     })
-
+    onBeforeMount(() => {
+      if (isMobile) {
+        store.setIsSBOpen(false)
+        store.setIsSBPin(false)
+      }
+    })
     onMounted(() => {
       window.addEventListener('resize', () => {
         if (window.innerWidth < 1024) {
@@ -120,6 +125,10 @@ export default defineComponent({
           store.setIsSBPin(false)
         }
       })
+    })
+
+    onUnmounted(() => {
+      window.removeEventListener('resize', () => {})
     })
 
     const isSBPin = computed<boolean>(() => store.isSBPin)

@@ -17,7 +17,6 @@ import 'element-plus/es/components/message-box/style/css'
 import { App } from 'vue'
 
 export const useElementPlus = (app: App) => {
-  console.log('useElementPlus', app.config.globalProperties)
   app.provide('$message', app.config.globalProperties.$message)
   app.provide('$messageBox', app.config.globalProperties.$messageBox)
 }
