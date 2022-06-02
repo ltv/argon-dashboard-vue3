@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-2 mx-auto h-auto w-full md:w-2/3">
+  <div class="flex flex-col gap-2 mx-auto h-auto w-full lg:w-2/3">
     <!-- Grid system -->
     <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
       <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Grid system</div>
@@ -29,15 +29,15 @@
     <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
       <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Setting one column width</div>
       <el-divider />
-      <div class="grid grid-cols-12 gap-7 mb-6 text-center px-6 py-2">
-        <div class="grid-items col-span-3">1 of 3</div>
-        <div class="grid-items col-span-6">2 of 3 (wider)</div>
-        <div class="grid-items col-span-3">3 of 3</div>
+      <div class="flex gap-4 text-center px-6 py-2">
+        <div class="grid-items flex-auto">1 of 3</div>
+        <div class="grid-items flex-auto w-2/4">2 of 3 (wider)</div>
+        <div class="grid-items flex-auto">3 of 3</div>
       </div>
-      <div class="grid grid-cols-7 gap-7 mb-6 text-center px-6 py-2">
-        <div class="grid-items col-span-2">1 of 3</div>
-        <div class="grid-items col-span-3">2 of 3 (wider)</div>
-        <div class="grid-items col-span-2">3 of 3</div>
+      <div class="flex gap-4 mb-6 text-center px-6 py-2">
+        <div class="grid-items flex-auto">1 of 3</div>
+        <div class="grid-items flex-auto w-2/5">2 of 3 (wider)</div>
+        <div class="grid-items flex-auto">3 of 3</div>
       </div>
     </div>
 
@@ -45,14 +45,24 @@
     <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
       <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Variable width content</div>
       <el-divider />
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-7 mb-6 text-center px-6 py-2">
-        <div class="grid-items sm:col-start-3 sm:col-span-2">1 of 3</div>
-        <div class="grid-items sm:col-span-3">Variable width content</div>
-        <div class="grid-items sm:col-span-2">3 of 3</div>
+      <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-7 mb-6 text-center px-6 py-2">
+        <div class="grid-items md:col-start-3 md:col-span-2">1 of 3</div>
+        <div class="grid-items md:col-span-3">Variable width content</div>
+        <div class="grid-items md:col-span-2">3 of 3</div>
 
-        <div class="grid-items sm:col-span-7">1 of 3</div>
-        <div class="grid-items sm:col-span-3">Variable width content</div>
-        <div class="grid-items sm:col-span-2">3 of 3</div>
+        <div class="grid-items md:col-span-7">1 of 3</div>
+        <div class="grid-items md:col-span-3">Variable width content</div>
+        <div class="grid-items md:col-span-2">3 of 3</div>
+      </div> -->
+      <div class="flex flex-col md:flex-row xl:flex-row gap-4 justify-center text-center px-6 py-2">
+        <div class="grid-items flex-auto md:flex-none w-full xl:w-1/6">1 of 3</div>
+        <div class="grid-items flex-auto md:flex-none">Variable width content</div>
+        <div class="grid-items flex-auto md:flex-none w-full xl:w-1/6">3 of 3</div>
+      </div>
+      <div class="flex gap-4 text-center mb-6 px-6 py-2">
+        <div class="grid-items flex-none w-1/12">1 of 3</div>
+        <div class="grid-items flex-auto">Variable width content</div>
+        <div class="grid-items flex-auto w-1/12">3 of 3</div>
       </div>
     </div>
 
@@ -60,12 +70,13 @@
     <div class="container h-auto mx-auto border border-slate-50 bg-white shadow-lg mt-5 rounded">
       <div class="font-semibold text-lg text-indigo-900 px-6 pt-4">Equal-width multi-row</div>
       <el-divider />
-      <div class="grid grid-cols-12 gap-7 mb-6 text-center px-6 py-2">
-        <div class="grid-items shadow col-span-6">col</div>
-        <div class="grid-items shadow col-span-6">col</div>
-
-        <div class="grid-items shadow col-span-6">col</div>
-        <div class="grid-items shadow col-span-6">col</div>
+      <div class="flex gap-4 text-center px-6 py-2">
+        <div class="grid-items flex-auto">col</div>
+        <div class="grid-items flex-auto">col</div>
+      </div>
+      <div class="flex gap-4 mb-6 text-center px-6 py-2">
+        <div class="grid-items flex-auto">col</div>
+        <div class="grid-items flex-auto">col</div>
       </div>
     </div>
 
