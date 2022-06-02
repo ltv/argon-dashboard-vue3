@@ -8,9 +8,6 @@ body {
       @apply -translate-y-0.25;
     }
   }
-  .el-button.el-button--default {
-    @apply font-semibold h-11;
-  }
   .el-button.el-button--large {
     @apply h-13 rounded-lg #{!important};
   }
@@ -138,7 +135,7 @@ body {
   }
 
   .el-button.el-button--default {
-    @apply bg-btn-default border border-btn-default text-white;
+    @apply bg-btn-default border border-btn-default text-white font-semibold h-11;
     &:active {
       @apply bg-btn-default-active drop-shadow-none;
     }
