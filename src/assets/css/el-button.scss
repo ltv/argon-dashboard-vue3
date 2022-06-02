@@ -6,7 +6,7 @@ body {
       @apply px-1.5;
     }
     &:hover {
-      transform: translateY(-1px);
+      @apply -translate-y-px;
     }
   }
   .el-button.el-button--large {

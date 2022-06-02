@@ -193,6 +193,7 @@ module.exports = {
     },
     translate: {
       0: '0px',
+      'px': '1px',
     },
     fontFamily: {
       body: ['"Open Sans"'],

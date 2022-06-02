@@ -162,7 +162,7 @@
                     @mouseover="hoverCheck(true)"
                     @mouseleave="hoverCheck(false)"
                     src="@/assets/images/tywin_lannister.jpg"
-                    class="border border-white border-4"
+                    class="transition-all border-white border-4"
                   />
                 </el-link>
               </div>
@@ -208,11 +208,11 @@
               </div>
               <div class="p-8">
                 <div class="text-center text-indigo-900">
-                  <h5 class="text-lg font-semibold">
+                  <h5 class="text-base font-semibold">
                     Tywin Lannister<span class="font-thin">, 67</span>
                   </h5>
-                  <div class="font-light">
-                    <el-icon :size="15">
+                  <div class="font-light text-sm">
+                    <el-icon :size="12">
                       <Location />
                     </el-icon>
                     The Castle of Trujillo, Spain
@@ -541,7 +541,7 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <el-button class="py-5 w-32 font-bold text-base" type="info"
+                  <el-button class="py-5 w-32 font-semibold text-normal" type="primary"
                     >Start free trial</el-button
                   >
                 </div>
