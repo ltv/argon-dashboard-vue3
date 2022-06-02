@@ -8,9 +8,7 @@ import type {
 import type { ToRefs } from 'vue'
 import { isReactive, isRef, toRaw, toRef } from 'vue'
 
-type Extracted<SS> = ToRefs<
-  StoreState<SS> & StoreGetters<SS> & PiniaCustomStateProperties<StoreState<SS>>
-> &
+type Extracted<SS> = ToRefs<StoreState<SS> & StoreGetters<SS> & PiniaCustomStateProperties<any>> &
   StoreActions<SS>
 
 /**
@@ -19,9 +17,7 @@ type Extracted<SS> = ToRefs<
  *
  * @param store - store to extract the refs from
  */
-export function extractStore<SS extends StoreGeneric>(
-  store: SS,
-): Extracted<SS> {
+export function extractStore<SS extends StoreGeneric>(store: SS): Extracted<SS> {
   const rawStore = toRaw(store)
   const refs: Record<string, unknown> = {}
 
