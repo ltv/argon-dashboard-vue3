@@ -1,13 +1,13 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-slate-100 w-full">
+  <div class="h-screen overflow-hidden flex bg-background-page w-full">
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full overflow-auto"
-      :class="`${!isPin ? 'ml-14' : 'ml-64 cursor-pointer lg:cursor-default'}`"
+      :class="`${!isPin ? 'ml-15.5' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
       <div class="w-full h-17 relative bg-primary-blue">
-        <div class="flex items-center py-5 mb-0 px-4 md:px-8 pt-6">
+        <div class="flex items-center py-5 mb-0 px-4 md:px-[29px] md:pl-[30px] pt-6">
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
               <div class="text-white text-xl font-semibold inline-block pt-px">
@@ -48,15 +48,15 @@
                 </el-breadcrumb>
               </div>
             </div>
-            <div class="w-1/2 text-right pt-0.5">
+            <div class="w-1/2 text-right pt-px">
               <el-button
                 size="small"
-                class="w-11 h-7 font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="w-[45px] h-7 rounded font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
                 >New</el-button
               >
               <el-button
                 size="small"
-                class="w-14 h-7 font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100"
+                class="w-14 h-7 rounded font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
                 >Filters</el-button
               >
             </div>
@@ -64,7 +64,7 @@
         </div>
       </div>
       <router-view v-slot="{ Component }">
-        <div class="h-19 bg-primary-blue px-4 sm:px-7.5 md:px-8">
+        <div class="h-20.5 bg-primary-blue px-4 sm:px-7.5 md:px-[29px]">
           <component :is="Component" class="pb-2.5" />
         </div>
       </router-view>

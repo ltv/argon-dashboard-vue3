@@ -3,8 +3,8 @@
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center"
-    :class="{ 'hidden-aside w-15': !isHover && !isPin }"
+    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center drop-shadow-xl"
+    :class="{ 'hidden-aside w-15.5': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
       <div class="h-19.5 flex items-center">
@@ -41,7 +41,7 @@
       >
         <ul class="flex flex-col -mx-6">
           <li
-            class="relative flex flex-row mx-2 px-4 h-11 rounded-lg mt-0.5"
+            class="relative flex flex-row mx-2 px-4 h-11 rounded-lg mb-px mt-0.5"
             :class="{ ' bg-slate-100/50 ': route.name === item.name }"
             v-for="(item, index) in menuItems"
             :key="index"
