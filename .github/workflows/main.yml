@@ -24,7 +24,8 @@ jobs:
           echo "VITE_APP_VERSION=${{ secrets.VITE_APP_VERSION }}" >> .env
 
       - name: Install dependencies
-        run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
+        # run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
+        run: yarn
 
       - name: Build source
         run: yarn build
