@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.yarn
-          key: ${{ runner.os }}-build-source-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-build-source-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+      # - name: Cache node modules
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: ~/.yarn
+      #     key: ${{ runner.os }}-build-source-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-build-source-
+      #       ${{ runner.os }}-build-
+      #       ${{ runner.os }}-
 
       - name: Create env
         run: |
@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         # run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
-        run: yarn
+        run: yarn --force
 
       - name: Build source
         run: yarn build
