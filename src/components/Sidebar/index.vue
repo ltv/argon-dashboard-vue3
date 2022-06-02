@@ -113,7 +113,7 @@ export default defineComponent({
       if (window.innerWidth < 640) store.setIsSBOpen(false)
     })
     onBeforeMount(() => {
-      if (isMobile) {
+      if (isMobile || window.innerWidth < 1024) {
         store.setIsSBOpen(false)
         store.setIsSBPin(false)
       }
