@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center mx-0 py-4 px-4 md:px-8 shadow-sm bg-primary-blue h-19.75 border border-primary-blue border-b-slate-50/10"
+    class="flex items-center mx-0 py-4 px-4 md:px-[29px] shadow-sm bg-primary-blue h-19.75 border border-primary-blue border-b-slate-50/10"
   >
     <div class="w-full items-center justify-between">
       <div class="w-full flex basis-auto items-center">
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div
-          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7 md:gap-8"
+          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7 md:gap-7.5"
           :class="[!isSearchOpen ? 'w-0 overflow-hidden sm:flex' : 'w-full']"
         >
           <div class="relative inline-block lg:hidden text-white">
@@ -236,7 +236,7 @@
           </div>
         </div>
         <div
-          class="flex flex-none flex-row ml-auto md:ml-0 pl-7"
+          class="flex flex-none flex-row ml-auto md:ml-0 pl-8"
           :class="[!isSearchOpen ? 'hidden sm:flex md:flex lg:flex' : '']"
         >
           <el-dropdown placement="bottom-end" trigger="click" popper-class="profile-popper">
@@ -255,7 +255,7 @@
                   <el-link
                     :underline="false"
                     href="#index"
-                    class="text-sm font-semibold text-slate-50 hover:text-slate-300"
+                    class="text-sm font-semibold text-slate-50 hover:text-slate-300 pt-1"
                     >Admin</el-link
                   >
                 </h4>
@@ -385,7 +385,7 @@ export default defineComponent({
 .search-bar {
   :deep(.el-input) {
     .el-input__inner {
-      @apply relative transition-all duration-200 pt-0.5 pl-10 placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-73.75 h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
+      @apply relative transition-all duration-200 pt-0.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-73.75 h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
       &:focus {
         @apply w-full sm:w-98 bg-white text-black border-indigo-400 #{!important};
       }

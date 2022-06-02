@@ -1,10 +1,12 @@
 <template>
-  <div class="w-full block w-full mx-auto h-auto w-full lg:max-w-2/3 py-2.5">
-    <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
-      <div class="p-5 border-b border-primary-white">
+  <div class="w-full block w-full mx-auto h-auto w-full lg:max-w-2/3 py-2.5 px-1.5">
+    <div
+      class="flex flex-wrap flex-col bg-white shadow-xl drop-shadow-sm shadow-slate-200/60 mb-7 mx-auto rounded-md"
+    >
+      <div class="p-5 pl-6 border-b border-primary-white">
         <h3 class="cursor-auto">Styles</h3>
       </div>
-      <div class="px-5 py-6">
+      <div class="px-5 pl-6 py-6">
         <div class="flex flex-wrap gap-3">
           <div>
             <el-button type="primary" class="">Primary</el-button>
@@ -25,11 +27,13 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
-      <div class="p-5 border-b border-primary-white">
+    <div
+      class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
+    >
+      <div class="p-5 pl-6 border-b border-primary-white">
         <h3 class="cursor-auto">Colors</h3>
       </div>
-      <div class="px-5 py-6">
+      <div class="px-5 pl-6 py-6">
         <div class="flex flex-wrap gap-3">
           <div>
             <el-button class="btn-default">Default</el-button>
@@ -57,13 +61,15 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
+    <div
+      class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
+    >
       <div>
-        <div class="p-5 border-b border-primary-white">
+        <div class="p-5 pl-6 border-b border-primary-white">
           <h3 class="cursor-auto">Outline</h3>
         </div>
       </div>
-      <div class="px-5 py-6">
+      <div class="px-5 pl-6 py-6">
         <div class="flex flex-wrap gap-3">
           <div>
             <el-button plain class="">Default</el-button>
@@ -91,13 +97,15 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
+    <div
+      class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
+    >
       <div>
-        <div class="p-5 border-b border-primary-white">
+        <div class="p-5 pl-6 border-b border-primary-white">
           <h3 class="cursor-auto">Sizes</h3>
         </div>
       </div>
-      <div class="px-5">
+      <div class="px-5 pl-6">
         <div class="flex flex-wrap gap-3 py-6 border-b border-primary-white">
           <div>
             <el-button type="primary" size="large">Large button</el-button>
@@ -127,13 +135,15 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
+    <div
+      class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
+    >
       <div>
-        <div class="p-5 border-b border-primary-white">
+        <div class="p-5 pl-6 border-b border-primary-white">
           <h3 class="cursor-auto">Group</h3>
         </div>
       </div>
-      <div class="px-5">
+      <div class="px-5 pl-6">
         <div class="flex flex-wrap gap-3 py-6 border-b border-primary-white">
           <el-button-group>
             <el-button class="el-button--secondary shadow-none drop-shadow-none">Left</el-button>
@@ -161,13 +171,15 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-lg">
+    <div
+      class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
+    >
       <div>
-        <div class="p-5 border-b border-primary-white">
+        <div class="p-5 pl-6 border-b border-primary-white">
           <h3 class="cursor-auto">Social</h3>
         </div>
       </div>
-      <div class="px-5">
+      <div class="px-5 pl-6">
         <div class="flex flex-wrap gap-3 py-6 border-b border-primary-white">
           <div>
             <el-button
@@ -404,15 +416,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.el-button.el-button--default {
-  @apply font-semibold h-11;
-}
-.el-button.el-button--large {
-  @apply h-13 rounded-lg #{!important};
-}
-.el-button.el-button--small {
-  @apply rounded #{!important};
-}
 .el-button.el-button--secondary.active {
   @apply bg-secondary-active #{!important};
 }
