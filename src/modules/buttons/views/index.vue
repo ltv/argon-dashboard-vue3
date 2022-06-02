@@ -347,7 +347,7 @@
           <div>
             <el-button
               circle
-              class="px-1 py-4 h-9 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
+              class="px-1.25 py-4 h-9 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
             >
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
@@ -363,7 +363,7 @@
           <div>
             <el-button
               circle
-              class="px-1.25 py-4 h-9 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
+              class="px-1 py-4 h-9 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
             >
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>
