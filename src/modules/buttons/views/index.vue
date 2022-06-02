@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full block w-full mx-auto h-auto w-full lg:max-w-2/3">
+  <div class="w-full block mx-auto h-auto lg:max-w-2/3">
     <el-card class="mb-7.5 border-white">
       <template #header>
         <h3 class="cursor-auto mb-0 text-[#32325d]">Styles</h3>

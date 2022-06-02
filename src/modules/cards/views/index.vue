@@ -461,7 +461,7 @@
               >
                 <div>
                   <div class="py-3">
-                    <span class="text-xl font-medium font-semibold">Card title</span>
+                    <span class="text-xl font-semibold">Card title</span>
                   </div>
                   <div class="py-px">
                     <span class="break-normal font-light"
@@ -586,7 +586,6 @@ export default defineComponent({
 :deep(.card-avatar-profile.el-link) .el-link--inner {
   @apply absolute;
 }
-
 .el-button {
   @apply font-semibold !important;
 }
