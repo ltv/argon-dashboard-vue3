@@ -22,6 +22,7 @@ module.exports = {
         0.75: '3px',
         1.25: '5px',
         2.75: '0.6875rem',
+        3.25: '13px',
         3.7: '0.975rem',
         4.25: '1rem',
         4.5: '1.15rem',
@@ -49,6 +50,7 @@ module.exports = {
         11.75: '2.9375rem',
         12.5: '3.15rem',
         13: '3.275rem',
+        13.5: '3.275rem',
         15: '3.75rem',
         15.5: '3.875rem',
         62: '15.5rem',
@@ -95,6 +97,7 @@ module.exports = {
         22: '5.5rem',
       },
       colors: {
+        'card-title': '#32325d',
         'background-page': '#f8f9fe',
         'left-bar-yellow': '#ffd600',
         'left-bar-indigo': '#5e72e4',

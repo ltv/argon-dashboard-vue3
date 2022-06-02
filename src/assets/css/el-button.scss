@@ -10,10 +10,13 @@ body {
     }
   }
   .el-button.el-button--large {
-    @apply h-13 rounded-lg font-semibold text-sm tracking-wide #{!important};
+    @apply h-12.5 rounded-md font-semibold text-sm tracking-wide p-2 #{!important};
   }
   .el-button.el-button--small {
-    @apply rounded max-w-fit text-xs tracking-tight #{!important};
+    @apply rounded max-w-fit text-xs p-1 py-3.25 #{!important};
+    // span {
+    //   @apply py-0.5;
+    // }
   }
   .el-button.el-button--default.el-button--small {
     @apply rounded max-w-fit h-[25px] #{!important};
