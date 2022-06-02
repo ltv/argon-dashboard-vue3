@@ -1,11 +1,12 @@
 body {
   .el-button {
-    @apply drop-shadow-md;
+    background-color: var(--el-button-bg-color, var(--el-color-white));
+    @apply drop-shadow-md duration-100 transition-all;
     span {
       @apply px-1.5;
     }
     &:hover {
-      @apply -translate-y-0.25;
+      transform: translateY(-1px);
     }
   }
   .el-button.el-button--large {
@@ -125,9 +126,9 @@ body {
   }
 
   .el-button.el-button--secondary {
-    @apply bg-secondary border border-secondary text-black  #{!important};
+    @apply bg-secondary border border-secondary text-black shadow-sm  #{!important};
     &:hover {
-      @apply shadow-lg #{!important};
+      @apply shadow-md #{!important};
     }
     &:active {
       @apply shadow-none drop-shadow-none border-secondary bg-secondary-active #{!important};

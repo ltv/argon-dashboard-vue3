@@ -19,6 +19,10 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
+      - name: Create env
+        run: |
+          source default.env
+
       - name: Install dependencies
         run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
 

@@ -7,7 +7,8 @@
     :class="{ 'hidden-aside w-15.5': !isHover && !isPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
-      <div class="h-19.5 flex items-center">
+      <div class="h-19.5 flex items-center relative">
+        <small class="absolute left-36 top-10 italic text-cyan-800">v{{ version }}</small>
         <a
           v-if="(isHover && !isPin) || isPin"
           :class="{ 'opacity-0': !isHover && !isPin }"
@@ -84,6 +85,7 @@ import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
 import { useDashboardStore } from '../../modules/dashboard/store'
 import { onClickOutside } from '@vueuse/core'
+import env from 'core/env'
 
 interface MenuItem {
   title: string
@@ -108,6 +110,7 @@ export default defineComponent({
     const isSideMenuOpen = ref(false)
     const isHover = ref<boolean>(false)
     const target = ref(null)
+    const version = ref(env('VITE_APP_VERSION'))
 
     onClickOutside(target, (_) => {
       const winWidth = ref<number>(window.innerWidth)
@@ -146,6 +149,7 @@ export default defineComponent({
       route,
       isPin,
       target,
+      version,
       setIsPin,
       hoverLeftBar,
       togglePagesMenu,
