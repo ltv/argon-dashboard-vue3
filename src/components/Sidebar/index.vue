@@ -4,14 +4,14 @@
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
     class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center drop-shadow-xl"
-    :class="{ 'hidden-aside w-15.5': !isHover && !isPin }"
+    :class="{ 'hidden-aside w-15.5': !isSBOpen && !isSBPin }"
   >
     <div class="container flex flex-col mx-auto items-stretch">
       <div class="h-19.5 flex items-center relative">
         <small class="absolute left-36 top-10 italic text-cyan-800">v{{ version }}</small>
         <a
-          v-if="(isHover && !isPin) || isPin"
-          :class="{ 'opacity-0': !isHover && !isPin }"
+          v-if="(isSBOpen && !isSBPin) || isSBPin"
+          :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
           class="transition-opacity duration-300 opacity-1 p-6 block"
           href="#index"
         >
@@ -25,12 +25,8 @@
           <div class="lg:col-span-10 xl:col-span-10 flex">
             <div class="hidden lg:block flex-grow">
               <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
-                <MenuIcon v-if="!isPin" class="cursor-pointer h-6 w-5" @click="setIsPin(true)" />
-                <MenuAlt1Icon
-                  v-if="isPin"
-                  class="cursor-pointer h-6 w-5"
-                  @click="setIsPin(false)"
-                />
+                <MenuIcon v-if="!isSBPin" class="cursor-pointer h-6 w-5" @click="handleMenuClick" />
+                <MenuAlt1Icon v-else class="cursor-pointer h-6 w-5" @click="handleMenuClick" />
               </div>
             </div>
           </div>
@@ -42,7 +38,7 @@
       >
         <ul class="flex flex-col -mx-6">
           <li
-            class="relative flex flex-row mx-2 px-4 h-11 rounded-lg mb-px mt-0.5"
+            class="relative flex flex-row mx-2 h-11 rounded-lg mb-px mt-0.5"
             :class="{ ' bg-slate-100/50 ': route.name === item.name }"
             v-for="(item, index) in menuItems"
             :key="index"
@@ -53,7 +49,7 @@
               aria-hidden="true"
             ></span>
             <router-link
-              class="inline-flex items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-600 focus:text-gray-800"
+              class="inline-flex px-4 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-600 focus:text-gray-800"
               :class="{ ' text-gray-800 ': route.name === item.name }"
               :to="{ name: item.name }"
               :title="item.title"
@@ -67,7 +63,7 @@
               </div>
               <span
                 class="transition-opacity duration-300 opacity-1 ml-4 text-sm font-normal"
-                :class="{ 'opacity-0': !isHover && !isPin }"
+                :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
                 >{{ item.title }}</span
               >
             </router-link>
@@ -79,13 +75,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted } from 'vue'
+import { defineComponent, ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
 import { useDashboardStore } from '../../modules/dashboard/store'
 import { onClickOutside } from '@vueuse/core'
 import env from 'core/env'
+import { checkIsMobile } from 'utils/index'
 
 interface MenuItem {
   title: string
@@ -108,52 +105,49 @@ export default defineComponent({
     const menuItems = ref<MenuItem[]>(navigation)
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
-    const isHover = ref<boolean>(false)
     const target = ref(null)
     const version = ref(env('VITE_APP_VERSION'))
+    const isMobile = checkIsMobile()
 
     onClickOutside(target, (_) => {
-      const winWidth = ref<number>(window.innerWidth)
-      if (winWidth.value < 1024 && isPin) {
-        store.setSideBar(false)
-      }
+      if (window.innerWidth < 640) store.setIsSBOpen(false)
     })
 
     onMounted(() => {
-      if (window.innerWidth < 640) store.setSideBar(false)
+      window.addEventListener('resize', () => {
+        if (window.innerWidth < 1024) {
+          store.setIsSBOpen(false)
+          store.setIsSBPin(false)
+        }
+      })
     })
 
-    const isPin = computed<boolean>(() => store.isPin)
+    const isSBPin = computed<boolean>(() => store.isSBPin)
+    const isSBOpen = computed<boolean>(() => store.isSBOpen)
 
-    const setIsPin = (value: boolean) => {
-      store.setSideBar(value)
+    const hoverLeftBar = (v: boolean) => {
+      if (!isMobile) store.setIsSBOpen(v)
     }
 
-    const togglePagesMenu = () => {
-      isSideMenuOpen.value = !isSideMenuOpen.value
+    const handleMenuClick = () => {
+      store.toggleMenu()
     }
 
-    const closeSideMenu = () => {
-      isSideMenuOpen.value = false
-    }
-
-    const hoverLeftBar = (b: boolean) => {
-      isHover.value = b
-    }
+    watch(route, () => {
+      store.setIsSBOpen(false)
+    })
 
     return {
       isPagesMenuOpen,
-      isHover,
       isSideMenuOpen,
       menuItems,
       route,
-      isPin,
+      isSBPin,
+      isSBOpen,
       target,
       version,
-      setIsPin,
       hoverLeftBar,
-      togglePagesMenu,
-      closeSideMenu,
+      handleMenuClick,
     }
   },
 })

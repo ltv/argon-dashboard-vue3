@@ -21,7 +21,7 @@
               />
               <div
                 class="flex z-10 absolute inset-y-0 right-0 pr-4 items-center lg:hidden md:hidden sm:hidden"
-                :class="{ hidden: isPin }"
+                :class="{ hidden: isSBPin }"
               >
                 <el-icon
                   :size="20"
@@ -40,14 +40,14 @@
         >
           <div class="relative inline-block lg:hidden text-white">
             <div class="flex items-center">
-              <MenuIcon v-if="!isPin" class="cursor-pointer w-6 h-6" @click="setIsPin(true)" />
-              <MenuAlt1Icon v-if="isPin" class="cursor-pointer w-6 h-6" @click="setIsPin(false)" />
+              <MenuIcon v-if="!isSBOpen" class="cursor-pointer h-6 w-6" @click="handleMenuClick" />
+              <MenuAlt1Icon v-else class="cursor-pointer h-6 w-6" @click="handleMenuClick" />
             </div>
           </div>
           <div class="relative inline-block sm:hidden">
             <div class="flex items-center">
               <SearchCircleIcon
-                v-if="!isPin && isSearchOpen"
+                v-if="!isSBPin && isSearchOpen"
                 class="cursor-pointer w-4.5 h-4.5"
                 @click="setSearchOpen(false)"
               />
@@ -357,10 +357,11 @@ export default defineComponent({
     const closeSideMenu = () => {
       isSideMenuOpen.value = false
     }
-    const isPin = computed(() => store.isPin)
+    const isSBPin = computed(() => store.isSBPin)
+    const isSBOpen = computed(() => store.isSBOpen)
 
-    const setIsPin = (v: boolean) => {
-      store.setSideBar(v)
+    const handleMenuClick = () => {
+      store.toggleMenu()
     }
 
     const setSearchOpen = (v: boolean) => (isSearchOpen.value = v)
@@ -369,11 +370,12 @@ export default defineComponent({
       isPagesMenuOpen,
       isSideMenuOpen,
       isSearchOpen,
-      isPin,
+      isSBPin,
+      isSBOpen,
       clickIconBell,
       clickIconMenu,
       textInput,
-      setIsPin,
+      handleMenuClick,
       setSearchOpen,
       togglePagesMenu,
       closeSideMenu,
