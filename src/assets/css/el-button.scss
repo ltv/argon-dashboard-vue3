@@ -10,10 +10,10 @@ body {
     }
   }
   .el-button.el-button--large {
-    @apply h-13 rounded-lg #{!important};
+    @apply h-13 rounded-lg font-semibold text-sm tracking-wide #{!important};
   }
   .el-button.el-button--small {
-    @apply rounded max-w-fit #{!important};
+    @apply rounded max-w-fit text-xs tracking-tight #{!important};
   }
   .el-button.el-button--default.el-button--small {
     @apply rounded max-w-fit h-[25px] #{!important};
@@ -136,7 +136,10 @@ body {
   }
 
   .el-button.el-button--default {
-    @apply bg-btn-default border border-btn-default text-white font-semibold h-11;
+    @apply bg-btn-default border border-btn-default text-white font-semibold h-10.75 text-sm tracking-wide;
+    span {
+      @apply px-1.5 ;
+    }
     &:active {
       @apply bg-btn-default-active drop-shadow-none;
     }
