@@ -4,18 +4,18 @@ module.exports = {
   theme: {
     extend: {
       gap: {
-        '7.5': '30px',
-        '8.5': '34px',
+        7.5: '30px',
+        8.5: '34px',
       },
       inset: {
         '8/100': '8%',
         '9/100': '9%',
         '10/100': '10%',
-        18: '4.5rem'
+        18: '4.5rem',
       },
       translate: {
         '3/2': '150%',
-        '0.25': '0.075rem',
+        0.25: '0.075rem',
       },
       padding: {
         0.25: '1.5px',
@@ -37,8 +37,8 @@ module.exports = {
         2.75: '0.6875rem',
         15.5: '3.875rem',
         62.5: '15.625rem',
-        '64': '15.5rem',
-        '68': '17rem',
+        64: '15.5rem',
+        68: '17rem',
       },
       width: {
         4.25: '1.0625rem',
@@ -63,15 +63,14 @@ module.exports = {
         98: '26rem',
         100: '28rem',
         '97/100': '97%',
-        'messBox': '100% -30px',
+        messBox: '100% -30px',
         '45/100': '45%',
         '15/100': '15%',
         '85/100': '85%',
-
       },
       maxWidth: {
         '2/3': '66.666667%',
-        '600': '600px',
+        600: '600px',
       },
       height: {
         4.25: '1.0625rem',
@@ -115,7 +114,7 @@ module.exports = {
         'el-form-input': '#E8F0FE',
         dark: {
           DEFAULT: 'rgb(23 43 77)',
-          light: 'rgb(28 52 93)'
+          light: 'rgb(28 52 93)',
         },
         primary: {
           DEFAULT: 'rgb(50 50 93)',
@@ -123,7 +122,7 @@ module.exports = {
           200: 'rgb(136 152 170)',
           blue: {
             DEFAULT: 'rgb(94 114 228)',
-            active: 'rgb(50 76 221)'
+            active: 'rgb(50 76 221)',
           },
           red: 'rgb(245 54 92)',
           white: 'rgba(0, 0, 0, 0.05)',
@@ -138,11 +137,11 @@ module.exports = {
         },
         info: {
           DEFAULT: 'rgb(17 205 239)',
-          active: 'rgb(13 165 192)'
+          active: 'rgb(13 165 192)',
         },
         warning: {
           DEFAULT: 'rgb(251 99 64)',
-          active: 'rgb(250 58 14)'
+          active: 'rgb(250 58 14)',
         },
         success: {
           DEFAULT: 'rgb(45 206 137)',
@@ -150,17 +149,17 @@ module.exports = {
         },
         danger: {
           DEFAULT: 'rgb(245 54 92)',
-          active: 'rgb(236 12 56)'
+          active: 'rgb(236 12 56)',
         },
         'btn-default': {
           DEFAULT: 'rgb(23 43 77)',
-          active: 'rgb(11 21 38)'
+          active: 'rgb(11 21 38)',
         },
         icon: {
-          DEFAULT: 'rgb(246 249 252)'
+          DEFAULT: 'rgb(246 249 252)',
         },
         webkit: {
-          DEFAULT: '-webkit-focus-ring-color'
+          DEFAULT: '-webkit-focus-ring-color',
         },
       },
       fontSize: {
@@ -180,11 +179,11 @@ module.exports = {
         80: ['80%', '1.5'],
         70: ['70%', '1.5'],
         60: ['60%', '1.5'],
-        'sm': ['.875rem', '1.5'],
+        sm: ['.875rem', '1.5'],
         12.8: ['12.8px', '1.5'],
       },
       lineHeight: {
-        '1.7': '1.7',
+        1.7: '1.7',
       },
       boxShadow: {},
     },

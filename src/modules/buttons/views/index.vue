@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full block w-full mx-auto h-auto w-full lg:max-w-2/3 py-2.5 px-1.5">
+  <div class="block mx-auto h-auto w-full lg:max-w-2/3 py-2.5 px-1.5">
     <div
       class="flex flex-wrap flex-col bg-white shadow-xl drop-shadow-sm shadow-slate-200/60 mb-7 mx-auto rounded-md"
     >
@@ -114,8 +114,6 @@
             <el-button size="large" class="el-button--secondary">Large button</el-button>
           </div>
         </div>
-      </div>
-      <div class="px-5">
         <div class="flex flex-wrap gap-3 py-6 border-b border-primary-white">
           <div>
             <el-button type="primary" size="small">Small button</el-button>
@@ -124,13 +122,15 @@
             <el-button size="small" class="el-button--secondary">Small button</el-button>
           </div>
         </div>
-      </div>
-      <div class="px-5 py-6 w-full">
-        <div class="py-1">
-          <el-button class="w-full" type="primary" size="large">Block level button</el-button>
-        </div>
-        <div class="py-1">
-          <el-button class="el-button--secondary w-full" size="large">Block level button</el-button>
+        <div class="grid grid-flow-row gap-2 py-6">
+          <div>
+            <el-button class="w-full" type="primary" size="large">Block level button</el-button>
+          </div>
+          <div>
+            <el-button class="el-button--secondary w-full" size="large"
+              >Block level button</el-button
+            >
+          </div>
         </div>
       </div>
     </div>
