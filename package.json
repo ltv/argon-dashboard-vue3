@@ -21,7 +21,7 @@
     "axios": "^0.21.1",
     "buffer": "^6.0.3",
     "click-outside-vue3": "^4.0.1",
-    "element-plus": "^2.0.1",
+    "element-plus": "2.0.1",
     "emitter-io": "^1.39.0",
     "emoji-mart-vue-fast": "^10.2.1",
     "lodash": "^4.17.21",
@@ -35,7 +35,7 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/forms": "0.5.2",
     "@types/lodash": "^4.14.178",
     "@types/node": "^17.0.10",
     "@vitejs/plugin-vue": "^2.0.1",
