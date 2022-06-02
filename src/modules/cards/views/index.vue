@@ -284,7 +284,7 @@
                 <div>
                   <el-button
                     circle
-                    class="px-1 py-4.5 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
+                    class="px-1 py-4.5 h-9 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
                   </el-button>
@@ -292,7 +292,7 @@
                 <div>
                   <el-button
                     circle
-                    class="px-1 py-4.5 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
+                    class="px-1 py-4.5 h-9 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
                   </el-button>
@@ -300,7 +300,7 @@
                 <div>
                   <el-button
                     circle
-                    class="px-1 py-4.5 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
+                    class="px-1 py-4.5 h-9 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
                   >
                     <font-awesome-icon :icon="['fab', 'dribbble']" size="lg" />
                   </el-button>
