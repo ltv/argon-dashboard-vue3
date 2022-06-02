@@ -3,7 +3,7 @@
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full overflow-auto"
-      :class="`${!isPin ? 'ml-15.5' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
+      :class="`${!isSBPin ? 'ml-15.5' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
       <div class="w-full h-17 relative bg-primary-blue">
@@ -87,9 +87,9 @@ export default defineComponent({
   setup() {
     const route: any = useRoute()
     const store = useDashboardStore()
-    const isPin = computed<boolean>(() => store.isPin)
-    const setIsPin = (b: boolean) => store.setSideBar(b)
-    return { isPin, setIsPin, route }
+    const isSBPin = computed<boolean>(() => store.isSBPin)
+    const setIsSBPin = (b: boolean) => store.setIsSBPin(b)
+    return { isSBPin, setIsSBPin, route }
   },
 })
 </script>

@@ -1,4 +1,5 @@
 export interface DashboardState {
   welcomeText: string
-  isPin: boolean
+  isSBPin: boolean
+  isSBOpen: boolean
 }
