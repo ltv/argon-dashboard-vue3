@@ -386,6 +386,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .search-bar {
   :deep(.el-input) {
+    @apply w-full;
     .el-input__inner {
       @apply relative transition-all duration-200 pt-0.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-73.75 h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
       &:focus {
