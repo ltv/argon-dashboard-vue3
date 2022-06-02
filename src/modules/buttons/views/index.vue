@@ -23,9 +23,6 @@
       </div>
     </el-card>
 
-    <!-- <div
-      class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
-    > -->
     <el-card class="mb-7.5 border-white">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Colors</h3>
