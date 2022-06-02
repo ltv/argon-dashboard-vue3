@@ -265,7 +265,7 @@
               <el-dropdown-menu>
                 <el-dropdown-item class="m-0 hover:bg-white">
                   <div class="flex items-center w-full pt-1 cursor-default">
-                    <h6 class="truncate m-0 text-[#32325d]">WELCOME!</h6>
+                    <h6 class="truncate m-0 text-card-title">WELCOME!</h6>
                   </div>
                 </el-dropdown-item>
                 <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">
