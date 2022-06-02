@@ -1,31 +1,27 @@
 <template>
-  <div class="block mx-auto h-auto w-full lg:max-w-2/3 py-2.5 px-1.5">
-    <div
-      class="flex flex-wrap flex-col bg-white shadow-xl drop-shadow-sm shadow-slate-200/60 mb-7 mx-auto rounded-md"
-    >
-      <div class="p-5 pl-6 border-b border-primary-white">
-        <h3 class="cursor-auto">Styles</h3>
-      </div>
-      <div class="px-5 pl-6 py-6">
-        <div class="flex flex-wrap gap-3">
-          <div>
-            <el-button type="primary" class="">Primary</el-button>
-          </div>
-          <div>
-            <el-button type="primary" class="">
-              <el-icon :size="17" class="mr-2"> <Shop /> </el-icon>With icon</el-button
-            >
-          </div>
-          <div>
-            <el-button type="primary" class="">
-              <el-icon :size="17">
-                <Tools />
-              </el-icon>
-            </el-button>
-          </div>
+  <div class="w-full block mx-auto h-auto lg:max-w-2/3">
+    <el-card class="mb-7.5 border-white">
+      <template #header>
+        <h3 class="cursor-auto mb-0 text-[#32325d]">Styles</h3>
+      </template>
+      <div class="flex flex-wrap gap-3">
+        <div>
+          <el-button type="primary" class="">Button</el-button>
+        </div>
+        <div>
+          <el-button type="primary" class="">
+            <el-icon :size="17" class="mr-3"> <Shop /> </el-icon>With icon</el-button
+          >
+        </div>
+        <div>
+          <el-button type="primary" class="">
+            <el-icon :size="17">
+              <Tools />
+            </el-icon>
+          </el-button>
         </div>
       </div>
-    </div>
+    </el-card>
 
     <div
       class="flex flex-wrap flex-col bg-white shadow-xl shadow-slate-200/60 mb-7 mx-auto rounded-lg"
@@ -351,7 +347,7 @@
           <div>
             <el-button
               circle
-              class="px-1 py-4 h-9 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
+              class="px-1.25 py-4 h-9 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
             >
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
@@ -367,7 +363,7 @@
           <div>
             <el-button
               circle
-              class="px-1.25 py-4 h-9 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
+              class="px-1 py-4 h-9 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
             >
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>

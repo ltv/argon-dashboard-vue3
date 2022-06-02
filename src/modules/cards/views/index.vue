@@ -3,7 +3,7 @@
     <div class="container mx-auto py-4">
       <div class="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-6">
         <div class="col-span-3">
-          <el-card class="relative flex flex-col px-2">
+          <el-card class="px-2 border-white">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -27,7 +27,7 @@
           </el-card>
         </div>
         <div class="col-span-3">
-          <el-card class="relative flex flex-col px-2">
+          <el-card class="px-2 border-white">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -51,7 +51,7 @@
           </el-card>
         </div>
         <div class="col-span-3">
-          <el-card class="relative flex flex-col px-2">
+          <el-card class="px-2 border-white">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -75,7 +75,7 @@
           </el-card>
         </div>
         <div class="col-span-3">
-          <el-card class="relative flex flex-col px-2">
+          <el-card class="px-2 border-white">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -104,20 +104,20 @@
     <div class="container mx-auto py-4">
       <div class="grid lg:grid-cols-12 md:grid-cols-4 sm:grid-cols-4 gap-8">
         <div class="col-span-4">
-          <el-card class="" :body-style="{ padding: '0px' }">
+          <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
             <img alt="..." src="@/assets/images/window-purple-image.jpg" />
-            <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">
+            <div class="text-slate-400 p-4 border border-white border-b-slate-200">
               Cras justo odio
             </div>
-            <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">
+            <div class="text-slate-400 p-4 border border-white border-b-slate-200">
               Dapibus ac facilisis in
             </div>
-            <div class="text-slate-400 p-4 border border-white hover:border-b-slate-200">
+            <div class="text-slate-400 p-4 border border-white border-b-slate-200">
               Vestibulum at eros
             </div>
 
-            <div class="px-4 py-5">
-              <h5 class="text-xl font-medium text-blue-800">Card title</h5>
+            <div class="card-header px-4 py-5">
+              <h3>Card title</h3>
             </div>
             <p class="break-normal text-slate-500 px-4">
               <span>
@@ -132,9 +132,9 @@
           </el-card>
 
           <div class="pt-8">
-            <el-card class="">
+            <el-card class="border-white">
               <div class="card-header py-2">
-                <h5 class="text-xl font-medium text-blue-800">Card title</h5>
+                <h3>Card title</h3>
               </div>
               <p class="break-normal text-slate-500 py-2">
                 <span>
@@ -150,7 +150,10 @@
           </div>
 
           <div class="pt-8">
-            <el-card class="text-center" :body-style="{ padding: '0px', position: 'relative' }">
+            <el-card
+              class="text-center border-slate-100"
+              :body-style="{ padding: '0px', position: 'relative' }"
+            >
               <img alt="..." src="@/assets/images/throne.jpg" />
               <div class="justify-center">
                 <el-link :underline="false" class="card-avatar-profile">
@@ -159,7 +162,7 @@
                     @mouseover="hoverCheck(true)"
                     @mouseleave="hoverCheck(false)"
                     src="@/assets/images/tywin_lannister.jpg"
-                    class="border border-white border-4"
+                    class="transition-all border-white border-4"
                   />
                 </el-link>
               </div>
@@ -205,11 +208,11 @@
               </div>
               <div class="p-8">
                 <div class="text-center text-indigo-900">
-                  <h5 class="text-lg font-semibold">
+                  <h5 class="text-base font-semibold">
                     Tywin Lannister<span class="font-thin">, 67</span>
                   </h5>
-                  <div class="font-light">
-                    <el-icon :size="15">
+                  <div class="font-light text-sm">
+                    <el-icon :size="12">
                       <Location />
                     </el-icon>
                     The Castle of Trujillo, Spain
@@ -221,13 +224,11 @@
         </div>
 
         <div class="col-span-4">
-          <el-card class="">
+          <el-card class="border-white">
             <template #header>
-              <div class="card-header">
-                <h5 class="text-xl font-medium text-blue-800">Card title</h5>
-              </div>
+              <h3>Card title</h3>
             </template>
-            <p class="break-normal text-slate-500 py-2">
+            <p class="break-normal text-slate-500 py-1 pb-2">
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis non dolore est
                 fuga nobis ipsum illum eligendi nemo iure repellat, soluta, optio minus ut
@@ -240,37 +241,35 @@
           </el-card>
 
           <div class="pt-8">
-            <el-card>
-              <div class="relative items-center justify-center">
-                <div class="flex flex-wrap">
-                  <div>
-                    <el-link :underline="false">
-                      <el-avatar :size="80" src="@/assets/images/Jon_Snow.png" />
-                    </el-link>
-                  </div>
-                  <div class="py-2 ml-2 flex-grow">
-                    <h4 class="mb-0">
-                      <el-link
-                        :underline="false"
-                        href="#index"
-                        class="text-normal font-semibold hover:text-blue"
-                        >John Snow</el-link
-                      >
-                    </h4>
-                    <p class="text-sm text-slate-500 mb-0">King of the north</p>
-                    <span class="text-green-500 mr-1">●</span>
-                    <small>Active</small>
-                  </div>
-                  <div class="py-8">
-                    <el-button type="primary" size="small" class="w-10">Add</el-button>
-                  </div>
+            <el-card class="border-white">
+              <div class="flex flex-wrap">
+                <div class="pt-1">
+                  <el-link :underline="false">
+                    <el-avatar :size="70" src="@/assets/images/Jon_Snow.png" />
+                  </el-link>
+                </div>
+                <div class="py-2 ml-4 flex-grow">
+                  <h4 class="mb-0">
+                    <el-link
+                      :underline="false"
+                      href="#index"
+                      class="text-normal font-semibold hover:text-blue"
+                      >John Snow</el-link
+                    >
+                  </h4>
+                  <p class="text-sm text-muted mb-0">King of the north</p>
+                  <span class="text-green-500 mr-1">●</span>
+                  <small>Active</small>
+                </div>
+                <div class="py-6">
+                  <el-button type="primary" size="small" class="w-10">Add</el-button>
                 </div>
               </div>
             </el-card>
           </div>
 
           <div class="pt-8">
-            <el-card class="text-center">
+            <el-card class="text-center border-white">
               <el-link :underline="false">
                 <el-avatar :size="150" src="@/assets/images/tyrion_lannister.jpg" />
               </el-link>
@@ -310,7 +309,7 @@
           </div>
 
           <div class="pt-8">
-            <el-card class="" :body-style="{ padding: '0px' }">
+            <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
               <img alt="..." src="@/assets/images/man_draw.jpg" />
               <div class="py-4 px-6">
                 <div class="text-xl font-semibold py-2 text-indigo-900">Get started with Argon</div>
@@ -356,15 +355,13 @@
         <div class="col-span-4">
           <el-card
             :body-style="{ padding: '0px' }"
-            class="text-center bg-gradient-to-r from-emerald-500 to-emerald-300"
+            class="text-center bg-gradient-to-r from-[#2dce89] to-[#2dcecc]"
           >
             <template #header>
-              <div class="card-header">
-                <h5 class="font-bold text-slate-50 py-4">BRAVO PACK</h5>
-              </div>
+              <h3 class="font-semibold text-slate-50 py-4.5">BRAVO PACK</h3>
             </template>
-            <div class="px-16 flex flex-col items-center">
-              <div class="text-white text-5xl pt-4 pb-2 font-medium">$49</div>
+            <div class="px-16 flex flex-col items-center pt-4">
+              <div class="text-white text-5xl pt-4 pb-2 font-semibold">$49</div>
               <span class="text-white">per application</span>
 
               <div class="table w-1/3 my-6">
@@ -422,22 +419,22 @@
                 </div>
               </div>
               <div class="mb-3">
-                <el-button class="el-button--secondary py-5 w-32 font-bold text-base"
+                <el-button type="primary" class="py-5 w-32 font-semibold text-normal"
                   >Start free trial</el-button
                 >
               </div>
             </div>
-            <el-divider />
+            <el-divider class="border-[#2bc6a1]" />
             <el-link :underline="false" class="text-white text-base hover:text-slate-200 pb-4"
               >Request a demo</el-link
             >
           </el-card>
 
           <div class="pt-8">
-            <el-card class="items-center">
+            <el-card class="items-center border-white">
               <template #header>
-                <div class="card-header flex justify-between py-2">
-                  <h5 class="text-xl font-medium text-blue-800">Card title</h5>
+                <div class="flex justify-between py-2">
+                  <h3>Card title</h3>
                   <el-button class="el-button--secondary text-sky-700" size="small"
                     >Action</el-button
                   >
@@ -464,7 +461,7 @@
               >
                 <div>
                   <div class="py-3">
-                    <span class="text-xl font-medium">Card title</span>
+                    <span class="text-xl font-semibold">Card title</span>
                   </div>
                   <div class="py-px">
                     <span class="break-normal font-light"
@@ -481,14 +478,12 @@
           </div>
 
           <div class="pt-8">
-            <el-card :body-style="{ padding: '0px' }" class="text-center">
+            <el-card :body-style="{ padding: '0px' }" class="text-center border-white">
               <template #header>
-                <div class="card-header">
-                  <h5 class="font-bold text-indigo-500 py-4">BRAVO PACK</h5>
-                </div>
+                <h3 class="font-semibold text-indigo-500 py-4.5">BRAVO PACK</h3>
               </template>
-              <div class="px-16 flex flex-col items-center">
-                <div class="text-slate-500 text-5xl pt-4 pb-2 font-medium">$49</div>
+              <div class="px-16 flex flex-col items-center pt-4">
+                <div class="text-slate-500 text-5xl pt-4 pb-2 font-semibold">$49</div>
                 <span class="text-slate-400">per application</span>
 
                 <div class="table w-1/3 my-6">
@@ -546,7 +541,7 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <el-button class="py-5 w-32 font-bold text-base" type="info"
+                  <el-button class="py-5 w-32 font-semibold text-normal" type="primary"
                     >Start free trial</el-button
                   >
                 </div>
@@ -591,7 +586,6 @@ export default defineComponent({
 :deep(.card-avatar-profile.el-link) .el-link--inner {
   @apply absolute;
 }
-
 .el-button {
   @apply font-semibold !important;
 }
