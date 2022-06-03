@@ -192,7 +192,10 @@ module.exports = {
       lineHeight: {
         1.7: '1.7',
       },
-      boxShadow: {},
+      boxShadow: {
+        'light': '0 0 0 1px rgb(0 0 0 / 10%)',
+        'medium': '0 0 0 1px rgb(0 0 0 / 10%), 0 4px 16px rgb(0 0 0 / 10%)',
+      },
     },
     translate: {
       0: '0px',
