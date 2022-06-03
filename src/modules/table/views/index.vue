@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full block w-full mx-auto h-auto w-full py-2">
+  <div class="w-full block mx-auto h-auto py-2">
     <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-md">
       <div class="py-5 px-6 border-b border-primary-white">
         <h3 class="cursor-auto">Light table</h3>
@@ -15,7 +15,7 @@
                 >
                   <el-avatar :size="46" :src="scope.row.projectLogoPath" />
                 </a>
-                <span class="ml-3 mb-0 text-0.875 font-semibold cursor-auto">{{
+                <span class="pl-5 mb-0 text-0.875 font-semibold cursor-auto">{{
                   scope.row.project
                 }}</span>
               </div>
@@ -23,14 +23,14 @@
           </el-table-column>
           <el-table-column label="BUDGET" min-width="115">
             <template #default="scope">
-              <div class="pl-3 cursor-auto">
+              <div class="pl-3.5 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
               </div>
             </template>
           </el-table-column>
           <el-table-column label="STATUS" min-width="167">
             <template #default="scope">
-              <div class="pl-2.5 flex items-center">
+              <div class="pl-4 flex items-center">
                 <i
                   class="w-1.5 h-1.5 rounded-full"
                   aria-hidden="true"
@@ -51,7 +51,7 @@
           <el-table-column label="USERS" min-width="155">
             <template #default="scope">
               <div class="flex items-center">
-                <div class="flex justify-center -space-x-3 pl-2">
+                <div class="flex justify-center -space-x-3 pl-3">
                   <div
                     v-for="(value, index) in scope.row.users"
                     :key="index"
@@ -68,8 +68,8 @@
                     >
                       <template #reference>
                         <el-avatar
-                          :size="35"
-                          class="cursor-pointer border border-2 rounded-full border-white"
+                          :size="38"
+                          class="cursor-pointer border-[2px] rounded-full border-white"
                           :src="value.avatarPath"
                         />
                       </template>
@@ -81,11 +81,11 @@
           </el-table-column>
           <el-table-column label="COMPLETION" min-width="200">
             <template #default="scope">
-              <div class="flex flex-row items-center">
+              <div class="flex flex-row items-center pl-4">
                 <div>
                   <span class="text-0.8125">{{ scope.row.completion }}%</span>
                 </div>
-                <div class="w-2/3 ml-2">
+                <div class="w-2/4 ml-2">
                   <el-progress
                     :percentage="scope.row.completion"
                     :show-text="false"
@@ -104,7 +104,9 @@
               >
                 <el-button class="w-5 h-7 border-none el-button--secondary" plain>
                   <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
-                    <DotsVerticalIcon class="cursor-pointer h-5 w-5 text-gray-400 font-extrabold" />
+                    <DotsVerticalIcon
+                      class="cursor-pointer h-5 w-5 text-[#ced4da] font-extrabold"
+                    />
                   </div>
                 </el-button>
                 <template #dropdown>
@@ -154,7 +156,7 @@
                 >
                   <el-avatar :size="46" :src="scope.row.projectLogoPath" />
                 </a>
-                <span class="ml-3 mb-0 text-0.875 font-semibold cursor-auto">{{
+                <span class="pl-5 mb-0 text-0.875 font-semibold cursor-auto">{{
                   scope.row.project
                 }}</span>
               </div>
@@ -162,14 +164,14 @@
           </el-table-column>
           <el-table-column label="BUDGET" min-width="115">
             <template #default="scope">
-              <div class="pl-3 cursor-auto">
+              <div class="pl-3.5 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
               </div>
             </template>
           </el-table-column>
           <el-table-column label="STATUS" min-width="167">
             <template #default="scope">
-              <div class="pl-2.5 flex items-center">
+              <div class="pl-4 flex items-center">
                 <i
                   class="w-1.5 h-1.5 rounded-full"
                   aria-hidden="true"
@@ -190,7 +192,7 @@
           <el-table-column label="USERS" min-width="155">
             <template #default="scope">
               <div class="flex items-center">
-                <div class="flex justify-center -space-x-3 pl-2">
+                <div class="flex justify-center -space-x-3 pl-3">
                   <div
                     v-for="(value, index) in scope.row.users"
                     :key="index"
@@ -207,8 +209,8 @@
                     >
                       <template #reference>
                         <el-avatar
-                          :size="35"
-                          class="cursor-pointer border border-2 rounded-full border-white"
+                          :size="38"
+                          class="cursor-pointer border-[2px] rounded-full border-slate-100"
                           :src="value.avatarPath"
                         />
                       </template>
@@ -220,7 +222,7 @@
           </el-table-column>
           <el-table-column label="COMPLETION" min-width="200">
             <template #default="scope">
-              <div class="flex flex-row items-center">
+              <div class="flex flex-row items-center pl-4">
                 <div>
                   <span class="text-0.8125">{{ scope.row.completion }}%</span>
                 </div>
@@ -253,19 +255,19 @@
                 </el-button>
                 <template #dropdown>
                   <el-dropdown-menu class="my-0.5">
-                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                    <el-dropdown-item>
                       <div class="flex items-center w-40 h-6">
                         <span class="mb-0 text-sm font-normal">Action</span>
                       </div>
                     </el-dropdown-item>
 
-                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                    <el-dropdown-item>
                       <div class="flex items-center w-40 h-6">
                         <span class="mb-0 text-sm font-normal">Another Action</span>
                       </div>
                     </el-dropdown-item>
 
-                    <el-dropdown-item class="mx-0 hover:bg-secondary text-zinc-800">
+                    <el-dropdown-item>
                       <div class="flex items-center w-40 h-6">
                         <span class="mb-0 text-sm font-normal">Something else here</span>
                       </div>
@@ -388,6 +390,9 @@ export default defineComponent({
   @apply rounded-lg -mt-3 #{!important};
   .el-popper__arrow {
     @apply hidden;
+  }
+  .el-dropdown-menu__item {
+    @apply mx-0 hover:bg-secondary text-zinc-800 #{!important};
   }
 }
 </style>

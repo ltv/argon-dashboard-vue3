@@ -14,10 +14,6 @@
   @apply pl-4 #{!important};
 }
 
-.is-dark.el-table {
-  --el-table-border-color: red,
-}
-
 .is-dark .el-table__body .el-table__row {
   @apply text-white h-18 #{!important};
 }
@@ -50,11 +46,16 @@
   @apply bg-dark-light text-white #{!important};
 }
 
-.is-dark.el-table td,
-.is-dark.el-table th,
 .is-dark.el-table th.is-leaf {
-  @apply border-solid border-dark-light #{!important};
+  @apply border-y-[0.5px] border-[#1f3a68] #{!important};
 }
+
+.is-dark.el-table td,
+.is-dark.el-table th {
+  @apply border-solid border-[#274a84] #{!important};
+}
+
+
 
 .is-dark .el-table__body tr > td {
   @apply bg-dark text-white #{!important};
