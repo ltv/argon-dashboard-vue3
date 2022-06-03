@@ -164,7 +164,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white px-[16.5px]"
+              class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'twitter']" class="pr-3" />
               Twitter
@@ -172,7 +172,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white"
+              class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'google-plus-g']" class="pr-3" />
               Google +
@@ -180,7 +180,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white px-3.5"
+              class="bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'instagram']" class="pr-3" />
               Instagram
@@ -188,7 +188,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white px-3.5"
+              class="bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'pinterest']" class="pr-3" />
               Pinterest
@@ -204,7 +204,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white px-3.5"
+              class="bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'vimeo']" class="pr-3" />
               Vimeo
@@ -212,7 +212,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white px-3.5"
+              class="bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'slack']" class="pr-3" />
               Slack
@@ -220,7 +220,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white px-3.5"
+              class="bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white px-3.4"
             >
               <font-awesome-icon :icon="['fab', 'dribbble']" class="pr-3" />
               Dribbble
