@@ -6,14 +6,14 @@
       :class="`${!isSBPin ? 'ml-15.5' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
-      <div class="w-full h-17 relative bg-primary-blue">
-        <div class="flex items-center py-5 mb-0 px-4 md:px-[29px] md:pl-[30px] pt-6">
+      <div class="w-full h-[150px] relative bg-primary-blue border-none">
+        <div class="flex items-center py-5 mb-0 px-[15px] pr-[14px] md:px-[29px] md:pl-[30px] pt-6">
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
               <div class="text-white text-xl font-semibold inline-block pt-px">
                 {{ route.meta.title }}
               </div>
-              <div class="inline-block md:ml-7 hidden md:block pt-1.5">
+              <div class="md:ml-7 hidden md:inline-block pt-1.5">
                 <el-breadcrumb separator="-" class="flex items-center justify-center">
                   <el-breadcrumb-item :to="{ path: '/' }">
                     <div class="inline-block items-center">
@@ -40,7 +40,7 @@
                   </el-breadcrumb-item>
                   <el-breadcrumb-item>
                     <div class="inline-block items-center">
-                      <div class="text-sm text-slate-200 font-semibold">
+                      <div class="text-sm text-slate-200/95 font-semibold">
                         {{ route.meta.title }}
                       </div>
                     </div>
@@ -48,7 +48,7 @@
                 </el-breadcrumb>
               </div>
             </div>
-            <div class="w-1/2 text-right pt-px">
+            <div class="w-1/2 text-right pt-px pr-px">
               <el-button
                 size="small"
                 class="w-[45px] h-7 rounded font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
@@ -62,12 +62,13 @@
             </div>
           </div>
         </div>
+
+        <router-view v-slot="{ Component }">
+          <div class="px-4 sm:px-7.5 lg:px-[28.5px]">
+            <component :is="Component" class="py-1.25 lg:px-1.5 lg:pl-[6px]" />
+          </div>
+        </router-view>
       </div>
-      <router-view v-slot="{ Component }">
-        <div class="h-20.5 bg-primary-blue px-4 sm:px-7.5 md:px-[29px]">
-          <component :is="Component" class="py-2.5 px-px lg:px-1.5" />
-        </div>
-      </router-view>
     </div>
   </div>
 </template>

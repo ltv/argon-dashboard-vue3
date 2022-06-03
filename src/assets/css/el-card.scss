@@ -1,6 +1,6 @@
 body {
   .el-card {
-    @apply relative flex flex-col bg-clip-border break-words min-w-0 rounded-[5px] shadow-[0_0_2rem_0_rgba(136,152,170,0.15)] cursor-auto text-card-title #{!important};
+    @apply relative flex flex-col bg-clip-border break-words min-w-0 rounded-[5px] shadow-card cursor-auto text-card-title #{!important};
     --el-card-bg-color: white !important
   }
   .el-card .card-header {
@@ -9,9 +9,9 @@ body {
     }
   }
   .el-card .el-card__header {
-    @apply w-full py-5.75 px-6.75 mb-0 border-b-[#0000000d] ;
+    @apply w-full py-[20px] px-6 mb-0 border-b-[#0000000d] ;
   }
   .el-card .el-card__body {
-    @apply w-full py-6 px-6.75 grow shrink;
+    @apply w-full py-6 px-6 grow shrink;
   }
 }

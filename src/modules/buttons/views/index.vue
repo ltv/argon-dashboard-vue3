@@ -1,20 +1,20 @@
 <template>
   <div class="w-full block mx-auto h-auto lg:max-w-2/3">
-    <el-card class="mb-7.5 border-white">
+    <el-card class="mb-7.5 border-none">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Styles</h3>
       </template>
       <div class="flex flex-wrap gap-3">
         <div>
-          <el-button type="primary" class="">Button</el-button>
+          <el-button type="primary">Button</el-button>
         </div>
         <div>
-          <el-button type="primary" class="">
+          <el-button type="primary" class="pr-[15px]">
             <el-icon :size="17" class="mr-3"> <Shop /> </el-icon>With icon</el-button
           >
         </div>
         <div>
-          <el-button type="primary" class="px-3">
+          <el-button type="primary" class="px-[13.5px]">
             <el-icon :size="17">
               <Tools />
             </el-icon>
@@ -23,11 +23,11 @@
       </div>
     </el-card>
 
-    <el-card class="mb-7.5 border-white">
+    <el-card class="mb-7.5 border-none">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Colors</h3>
       </template>
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3.25">
         <div>
           <el-button class="btn-default">Default</el-button>
         </div>
@@ -53,7 +53,7 @@
       </div>
     </el-card>
 
-    <el-card class="mb-7.5 border-white">
+    <el-card class="mb-7.5 border-none">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Outline</h3>
       </template>
@@ -82,13 +82,13 @@
       </div>
     </el-card>
 
-    <el-card class="mb-7.5 border-white">
+    <el-card class="mb-7.5 border-none">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Sizes</h3>
       </template>
 
       <div>
-        <div class="flex flex-wrap gap-3 pb-7 border-b border-primary-white">
+        <div class="flex flex-wrap gap-3 pb-7 border-b border-slate-200/90">
           <div>
             <el-button type="primary" size="large">Large button</el-button>
           </div>
@@ -96,7 +96,7 @@
             <el-button size="large" class="el-button--secondary">Large button</el-button>
           </div>
         </div>
-        <div class="flex flex-wrap gap-3 py-9 border-b border-primary-white">
+        <div class="flex flex-wrap gap-3 py-9 border-b border-slate-200/90">
           <div>
             <el-button type="primary" size="small">Small button</el-button>
           </div>
@@ -117,48 +117,46 @@
       </div>
     </el-card>
 
-    <el-card class="mb-7.5 border-white">
+    <el-card class="mb-7.5 border-none">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Group</h3>
       </template>
 
       <div>
-        <div class="flex flex-wrap gap-3 pb-7 border-b border-primary-white">
+        <div class="flex flex-wrap gap-3 pb-7 border-b border-slate-200/90">
           <el-button-group>
-            <el-button class="el-button--secondary shadow-none drop-shadow-none">Left</el-button>
-            <el-button class="el-button--secondary active shadow-none drop-shadow-none"
-              >Middle</el-button
-            >
-            <el-button class="el-button--secondary shadow-none drop-shadow-none">Right</el-button>
+            <el-button class="el-button--secondary shadow-none">Left</el-button>
+            <el-button class="el-button--secondary active shadow-none">Middle</el-button>
+            <el-button class="el-button--secondary shadow-none">Right</el-button>
           </el-button-group>
         </div>
       </div>
       <div class="pt-9">
         <div class="flex flex-wrap gap-2">
           <el-button-group>
-            <el-button type="info" class="active shadow-none drop-shadow-none w-13.5">1</el-button>
-            <el-button type="info" class="shadow-none drop-shadow-none w-13.5">2</el-button>
-            <el-button type="info" class="shadow-none drop-shadow-none w-13.5">3</el-button>
-            <el-button type="info" class="shadow-none drop-shadow-none w-13.5">4</el-button>
+            <el-button type="info" class="active shadow-none w-[50.36px]">1</el-button>
+            <el-button type="info" class="shadow-none w-[50.36px]">2</el-button>
+            <el-button type="info" class="shadow-none w-[50.36px]">3</el-button>
+            <el-button type="info" class="shadow-none w-[50.36px]">4</el-button>
           </el-button-group>
 
           <el-button-group>
-            <el-button class="btn-default shadow-none drop-shadow-none w-13.5">5</el-button>
-            <el-button class="btn-default shadow-none drop-shadow-none w-13.5">6</el-button>
-            <el-button class="btn-default shadow-none drop-shadow-none w-13.5">7</el-button>
+            <el-button class="btn-default shadow-none w-[50.36px]">5</el-button>
+            <el-button class="btn-default shadow-none w-[50.36px]">6</el-button>
+            <el-button class="btn-default shadow-none w-[50.36px]">7</el-button>
           </el-button-group>
         </div>
       </div>
     </el-card>
-    <el-card class="mb-7.5 border-white">
+    <el-card class="mb-7.5 border-none">
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Social</h3>
       </template>
       <div>
-        <div class="flex flex-wrap gap-3 pb-6 border-b border-primary-white">
+        <div class="flex flex-wrap gap-3 pb-6 border-b border-slate-200/90">
           <div>
             <el-button
-              class="bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white px-3.5"
+              class="bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white px-[15.5px]"
             >
               <font-awesome-icon :icon="['fab', 'facebook']" class="pr-3" />
               Facebook
@@ -166,7 +164,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white px-3.5"
+              class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white px-[16.5px]"
             >
               <font-awesome-icon :icon="['fab', 'twitter']" class="pr-3" />
               Twitter
@@ -174,7 +172,7 @@
           </div>
           <div>
             <el-button
-              class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white px-3.5"
+              class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white"
             >
               <font-awesome-icon :icon="['fab', 'google-plus-g']" class="pr-3" />
               Google +
@@ -231,66 +229,66 @@
         </div>
       </div>
       <div>
-        <div class="flex flex-wrap gap-3 py-8 border-b border-primary-white">
+        <div class="flex flex-wrap gap-3 py-8 border-b border-slate-200/90">
           <div>
             <el-button
-              class="bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white w-10 h-10"
+              class="bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'facebook']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white w-10 h-10"
+              class="bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white w-10 h-10"
+              class="bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'google-plus-g']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white w-10 h-10"
+              class="bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white w-10 h-10"
+              class="bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'pinterest']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white w-10 h-10"
+              class="bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white w-10 h-10"
+              class="bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'vimeo']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white w-10 h-10"
+              class="bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'slack']" />
             </el-button>
           </div>
           <div>
             <el-button
-              class="bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white w-10 h-10"
+              class="bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white w-[38px] h-[38px]"
             >
               <font-awesome-icon :icon="['fab', 'dribbble']" />
             </el-button>
@@ -302,7 +300,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
+              class="w-[38px] h-[38px] bg-[#3b5999] border-[#3b5999] active:bg-[#2d4474] active:border-[#2d4474] text-white"
             >
               <font-awesome-icon :icon="['fab', 'facebook']" />
             </el-button>
@@ -310,7 +308,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
+              class="w-[38px] h-[38px] bg-[#1da1f2] border-[#1da1f2] active:bg-[#33aaf3] active:border-[#33aaf3] text-white"
             >
               <font-awesome-icon :icon="['fab', 'twitter']" />
             </el-button>
@@ -318,7 +316,7 @@
           <div>
             <el-button
               circle
-              class="px-[3.5px] py-4 h-10 bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white"
+              class="w-[38px] h-[38px] bg-[#dd4b39] border-[#dd4b39] active:bg-[#e05d4c] active:border-[#e05d4c] text-white"
             >
               <font-awesome-icon :icon="['fab', 'google-plus-g']" />
             </el-button>
@@ -326,7 +324,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
+              class="w-[38px] h-[38px] bg-[#e4405f] border-[#e4405f] active:bg-[#e6536f] active:border-[#e6536f] text-white"
             >
               <font-awesome-icon :icon="['fab', 'instagram']" />
             </el-button>
@@ -334,7 +332,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white"
+              class="w-[38px] h-[38px] bg-[#bd081c] border-[#bd081c] active:bg-[#db0920] active:border-[#db0920] text-white"
             >
               <font-awesome-icon :icon="['fab', 'pinterest']" />
             </el-button>
@@ -342,7 +340,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
+              class="w-[38px] h-[38px] bg-[#cd201f] border-[#cd201f] active:bg-[#de2928] active:border-[#de2928] text-white"
             >
               <font-awesome-icon :icon="['fab', 'youtube']" />
             </el-button>
@@ -350,7 +348,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white"
+              class="w-[38px] h-[38px] bg-[#04a0f0] border-[#04a0f0] active:bg-[#13acfb] active:border-[#13acfb] text-white"
             >
               <font-awesome-icon :icon="['fab', 'vimeo']" />
             </el-button>
@@ -358,7 +356,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white"
+              class="w-[38px] h-[38px] bg-[#3aaf85] border-[#3aaf85] active:bg-[#43c094] active:border-[#43c094] text-white"
             >
               <font-awesome-icon :icon="['fab', 'slack']" />
             </el-button>
@@ -366,7 +364,7 @@
           <div>
             <el-button
               circle
-              class="px-1.5 py-4 h-10 bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
+              class="w-[38px] h-[38px] bg-[#ea4c89] border-[#ea4c89] active:bg-[#ec5d94] active:border-[#ec5d94] text-white"
             >
               <font-awesome-icon :icon="['fab', 'dribbble']" />
             </el-button>

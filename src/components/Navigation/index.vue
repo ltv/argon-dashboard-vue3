@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center mx-0 py-4 px-4 md:px-[29px] shadow-sm bg-primary-blue h-19.75 border border-primary-blue border-b-slate-50/10"
+    class="flex items-center mx-0 py-2 px-[13px] pl-[11px] md:px-[29px] shadow-sm bg-primary-blue h-[77px] md:h-19.75 border border-primary-blue border-b-slate-50/10"
   >
     <div class="w-full items-center justify-between">
       <div class="w-full flex basis-auto items-center">
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div
-          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7 md:gap-7.5"
+          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-[29px] md:gap-7.5"
           :class="[!isSearchOpen ? 'w-0 overflow-hidden sm:flex' : 'w-full']"
         >
           <div class="relative inline-block lg:hidden text-white">
@@ -78,12 +78,7 @@
                       </span>
                     </div>
                   </el-dropdown-item>
-                  <el-dropdown-item
-                    divided
-                    class="m-0 hover:bg-slate-50"
-                    v-for="index in 5"
-                    :key="index"
-                  >
+                  <el-dropdown-item divided v-for="index in 5" :key="index">
                     <div class="flex flex-row items-center w-full py-2.75">
                       <div class="flex w-auto">
                         <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
@@ -236,11 +231,11 @@
           </div>
         </div>
         <div
-          class="flex flex-none flex-row ml-auto md:ml-0 pl-8"
+          class="flex flex-none flex-row ml-auto md:ml-0 pl-7.5"
           :class="[!isSearchOpen ? 'hidden sm:flex md:flex lg:flex' : '']"
         >
           <el-dropdown placement="bottom-end" trigger="click" popper-class="profile-popper">
-            <div class="flex flex-row items-center gap-1 md:gap-1.5 mb-1">
+            <div class="flex flex-row items-center gap-1 md:gap-2 mb-1">
               <div class="pt-1">
                 <el-link :underline="false">
                   <el-avatar
@@ -388,7 +383,7 @@ export default defineComponent({
   :deep(.el-input) {
     @apply w-full;
     .el-input__inner {
-      @apply relative transition-all duration-200 pt-0.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-73.75 h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
+      @apply relative transition-all duration-200 pt-0.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
       &:focus {
         @apply w-full sm:w-98 bg-white text-black border-indigo-400 #{!important};
       }
@@ -402,6 +397,9 @@ export default defineComponent({
   .el-popper__arrow {
     @apply hidden;
   }
+  .el-dropdown-menu__item--divided {
+    @apply m-0;
+  }
 }
 .notification-popper {
   @apply lg:w-98 md:w-98 sm:w-98 w-97/100 top-9/100 sm:top-16 rounded-lg #{!important};
@@ -411,6 +409,15 @@ export default defineComponent({
   .el-dropdown-menu {
     @apply p-0 #{!important};
   }
+  .el-dropdown-menu__item--divided {
+    @apply m-0;
+  }
+  .el-dropdown-menu__item:first-child {
+    @apply m-0 hover:bg-white rounded-lg;
+  }
+  .el-dropdown-menu__item {
+    @apply m-0 hover:bg-slate-50;
+  }
 }
 .profile-popper {
   @apply lg:w-48 md:w-48 sm:w-48 w-97/100 top-9/100 sm:top-18 rounded-lg #{!important};
@@ -419,6 +426,12 @@ export default defineComponent({
   }
   .el-dropdown-menu {
     @apply py-2 #{!important};
+  }
+  .el-dropdown-menu__item:first-child {
+    @apply m-0 hover:bg-white rounded-lg;
+  }
+  .el-dropdown-menu__item {
+    @apply m-0 hover:bg-slate-50;
   }
 }
 </style>
