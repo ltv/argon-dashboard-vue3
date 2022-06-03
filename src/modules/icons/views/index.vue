@@ -5,7 +5,9 @@
         <h3 class="text-lg">Icons</h3>
       </div>
       <div class="p-5">
-        <div class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-4 lg:gap-x-7">
+        <div
+          class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-2 lg:gap-x-7 xl:grid-cols-4 xl:gap-7"
+        >
           <div class="w-full overflow-hidden p-0.5" v-for="(icon, key) in icons" :key="key">
             <el-button>
               <el-icon>
@@ -735,7 +737,7 @@ body {
   .el-button {
     @apply bg-icon 
     py-9 
-    px-6 
+    px-6
     flex 
     w-full 
     text-primary 
@@ -743,30 +745,35 @@ body {
     font-normal 
     leading-5 
     rounded-md 
-    border-0 
-    border-transparent 
+    border-transparent
     text-left 
     items-center 
     align-middle 
     no-underline 
     my-2 
     hover:border-transparent 
-    hover:drop-shadow 
-    hover:border-gray-200 
-    hover:bg-white 
-    hover:text-primary
     focus:outline
     focus:outline-2
-    focus:outline-webkit;
+    focus:outline-webkit 
+    shadow-none
+    drop-shadow-none
+    translate-x-0
+    translate-y-0
+    hover:border-opacity-95
+    hover:bg-white 
+    hover:text-primary
+    hover:shadow-light
+    hover:drop-shadow
+    #{!important};
   }
   .el-button > :deep(span) {
     @apply w-full;
   }
   .el-button [class*='el-icon'] + span {
-    @apply w-full inline-block text-sm text-left font-normal leading-6 ml-4 overflow-hidden text-ellipsis whitespace-nowrap;
+    @apply w-full inline-block text-sm text-left font-normal leading-6 overflow-hidden text-ellipsis whitespace-nowrap;
   }
   .el-button .el-icon {
-    @apply text-2xl text-primary-blue inline-block #{!important};
+    @apply text-2xl text-primary-blue inline-block ml-[-8px] mr-0.5 #{!important};
   }
   .card-typography {
     @apply bg-white break-words mt-2 mb-7 shadow rounded-lg flex flex-col;
