@@ -6,9 +6,9 @@
       </div>
       <div class="p-5">
         <div
-          class="grid md:grid-cols-2 md:gap-x-7 lg:grid-cols-2 lg:gap-x-7 xl:grid-cols-4 xl:gap-7"
+          class="grid grid-cols-1 md:grid-cols-2 md:gap-x-7 lg:grid-cols-2 lg:gap-x-7 xl:grid-cols-4 xl:gap-7"
         >
-          <div class="w-full overflow-hidden p-0.5" v-for="(icon, key) in icons" :key="key">
+          <div class="block" v-for="(icon, key) in icons" :key="key">
             <el-button>
               <el-icon>
                 <component :is="icon.icon" />
@@ -762,7 +762,7 @@ body {
     hover:border-opacity-95
     hover:bg-white 
     hover:text-primary
-    hover:shadow-light
+    hover:shadow-medium
     hover:drop-shadow
     #{!important};
   }

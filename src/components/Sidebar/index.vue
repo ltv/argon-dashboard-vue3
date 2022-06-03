@@ -1,5 +1,6 @@
 <template>
   <aside
+    ref="target"
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
@@ -8,19 +9,19 @@
   >
     <div class="container flex flex-col mx-auto items-stretch">
       <div class="h-19.5 flex items-center relative">
-        <small class="absolute left-36 top-10 italic text-cyan-800">v{{ version }}</small>
-        <a
+        <router-link
           v-if="(isSBOpen && !isSBPin) || isSBPin"
           :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
           class="transition-opacity duration-300 opacity-1 p-6 block"
-          href="#index"
+          :to="{ name: 'Dashboard' }"
         >
           <img
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/blue.png"
             class="max-h-8 max-w-full align-middle"
             alt="..."
           />
-        </a>
+          <small class="absolute pl-2 left-32 top-10 italic text-cyan-800">v{{ version }}</small>
+        </router-link>
         <div class="ml-auto">
           <div class="lg:col-span-10 xl:col-span-10 flex">
             <div class="hidden lg:block flex-grow">
@@ -112,7 +113,9 @@ export default defineComponent({
     const isMobile = checkIsMobile()
 
     onClickOutside(target, (_) => {
-      if (window.innerWidth < 640) store.setIsSBOpen(false)
+      console.log(target.value)
+      console.log('outside click')
+      if (window.innerWidth < 1024) store.setIsSBOpen(false)
     })
     onBeforeMount(() => {
       if (isMobile || window.innerWidth < 1024) {
@@ -137,7 +140,7 @@ export default defineComponent({
     const isSBOpen = computed<boolean>(() => store.isSBOpen)
 
     const hoverLeftBar = (v: boolean) => {
-      if (!isMobile) store.setIsSBOpen(v)
+      if (!isMobile && window.innerWidth > 1023) store.setIsSBOpen(v)
     }
 
     const handleMenuClick = () => {
