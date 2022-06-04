@@ -1,70 +1,82 @@
 body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-primary font-semibold leading-normal #{!important};
+  }
+  h1 {
+    @apply text-1.625;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-1.0625;
+  }
+  h4 {
+    @apply text-0.9375;
+  }
+  h5 {
+    @apply text-0.8125;
+  }
+  h6 {
+    @apply text-0.625;
+  }
 
-    h1 {
-        @apply text-1.625 text-primary font-semibold
-    }
-    h2 {
-        @apply text-xl text-primary font-semibold leading-normal
-    }
-    h3 {
-        @apply text-1.0625 text-primary font-semibold
-    }
-    h4 {
-        @apply text-0.9375 text-primary font-semibold
-    }
-    h5 {
-        @apply text-0.8125 text-primary font-semibold
-    }
-    h6 {
-        @apply text-0.625 text-primary font-semibold
-    }
+  // Display-1
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4 {
+    @apply text-primary font-semibold break-all sm:break-normal;
+  }
+  .display-1 {
+    @apply text-3.3;
+  }
+  .display-2 {
+    @apply text-2.75;
+  }
+  .display-3 {
+    @apply text-2.1875;
+  }
+  .display-4 {
+    @apply text-1.6275;
+  }
 
-    // Display-1
-    .display-1 {
-        @apply text-3.3 text-primary font-semibold
-    }
-    .display-2 {
-        @apply text-2.75 text-primary font-semibold
-    }
-    .display-3 {
-        @apply text-2.1875 text-primary font-semibold
-    }
-    .display-4 {
-        @apply text-1.6275 text-primary font-semibold
-    }
+  // Specialized title
+  .heading {
+    @apply uppercase text-0.95 text-primary font-semibold tracking-wide #{!important};
+  }
+  .heading-title {
+    @apply uppercase text-1.375 text-primary font-semibold tracking-wide;
+  }
+  .lead {
+    @apply text-xl font-light leading-1.7 mt-5;
+  }
 
-    // Specialized title
-    .heading {
-        @apply uppercase text-0.95 text-primary font-semibold tracking-wide #{!important}
-    }
-    .heading-title {
-        @apply uppercase text-1.375 text-primary font-semibold tracking-wide
-    }
-    .lead {
-        @apply text-xl font-light leading-1.7
-    }
-
-    // Paragraphs
-    p {
-        @apply text-primary-100 text-base font-light leading-1.7
-    }
-    .blockquote {
-        @apply mb-4 text-xl text-primary-100 font-normal leading-normal
-    }
-    .blockquote-footer {
-        @apply text-primary-200 text-80 block font-normal leading-normal
-    }
-    .text-primary {
-        @apply text-primary-blue #{!important}
-    }
-    .text-info {
-        @apply text-cyan-400 #{!important}
-    }
-    .text-success {
-        @apply text-green-500 #{!important}
-    }
-    .text-danger {
-        @apply text-primary-red
-    }
-    
+  // Paragraphs
+  p {
+    @apply text-primary-100 text-base font-light leading-1.7;
+  }
+  .blockquote {
+    @apply mb-4 text-xl text-primary-100 font-normal leading-normal;
+  }
+  .blockquote-footer {
+    @apply text-primary-200 text-80 block font-normal leading-normal;
+  }
+  .text-primary {
+    @apply text-primary-blue #{!important};
+  }
+  .text-info {
+    @apply text-cyan-400 #{!important};
+  }
+  .text-success {
+    @apply text-green-500 #{!important};
+  }
+  .text-danger {
+    @apply text-primary-red;
+  }
 }
