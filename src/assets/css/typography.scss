@@ -27,17 +27,23 @@ body {
   }
 
   // Display-1
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4 {
+    @apply text-primary font-semibold break-all sm:break-normal;
+  }
   .display-1 {
-    @apply text-3.3 text-primary font-semibold break-all sm:break-normal;
+    @apply text-3.3;
   }
   .display-2 {
-    @apply text-2.75 text-primary font-semibold break-all sm:break-normal;
+    @apply text-2.75;
   }
   .display-3 {
-    @apply text-2.1875 text-primary font-semibold;
+    @apply text-2.1875;
   }
   .display-4 {
-    @apply text-1.6275 text-primary font-semibold;
+    @apply text-1.6275;
   }
 
   // Specialized title
