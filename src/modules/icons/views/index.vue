@@ -1,26 +1,4 @@
 <template>
-  <!-- <div class="w-full md:w-full lg:w-2/3 mx-auto">
-    <div class="card-typography">
-      <div class="card-header p-6">
-        <h3 class="text-lg">Icons</h3>
-      </div>
-      <div class="p-6">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 md:gap-x-7 lg:grid-cols-2 lg:gap-x-7 xl:grid-cols-4 xl:gap-7"
-        >
-          <div class="block" v-for="(icon, key) in icons" :key="key">
-            <el-button>
-              <el-icon>
-                <component :is="icon.icon" />
-              </el-icon>
-              <span>{{ icon.name }}</span>
-            </el-button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="w-full mx-auto lg:w-[65.95%]">
     <div class="container py-4 mx-auto">
       <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
