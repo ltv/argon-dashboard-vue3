@@ -127,6 +127,7 @@ module.exports = {
         'mess-box-bg': '#f7fafc',
         'el-form-input': '#E8F0FE',
         normal: 'rgb(82 95 127)',
+        'overlay': '#00000033',
         dark: {
           DEFAULT: 'rgb(23 43 77)',
           light: 'rgb(28 52 93)',
