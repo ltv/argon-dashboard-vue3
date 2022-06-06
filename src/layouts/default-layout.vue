@@ -64,7 +64,7 @@
         </div>
 
         <router-view v-slot="{ Component }">
-          <div class="px-4 sm:px-7.5 lg:px-[28.5px]">
+          <div class="px-4 md:px-7.5 lg:px-[28.5px]">
             <component :is="Component" class="py-1.25 lg:px-1.5 lg:pl-[6px]" />
           </div>
         </router-view>

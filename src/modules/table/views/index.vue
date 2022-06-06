@@ -226,7 +226,7 @@
                 <div>
                   <span class="text-0.8125">{{ scope.row.completion }}%</span>
                 </div>
-                <div class="w-2/3 ml-2">
+                <div class="w-2/4 ml-2">
                   <el-progress
                     :percentage="scope.row.completion"
                     :show-text="false"
@@ -392,7 +392,10 @@ export default defineComponent({
     @apply hidden;
   }
   .el-dropdown-menu__item {
-    @apply mx-0 hover:bg-secondary text-zinc-800 #{!important};
+    @apply mx-0 text-zinc-800 #{!important};
+    &:hover {
+      @apply bg-secondary;
+    }
   }
 }
 </style>
