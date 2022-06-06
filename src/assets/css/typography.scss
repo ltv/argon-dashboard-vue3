@@ -40,7 +40,7 @@ body {
     @apply text-2.75;
   }
   .display-3 {
-    @apply text-2.1875;
+    @apply text-2.1875 break-normal #{!important};
   }
   .display-4 {
     @apply text-1.6275;
@@ -55,6 +55,9 @@ body {
   }
   .lead {
     @apply text-xl font-light leading-1.7 mt-5;
+  }
+  .text-muted {
+    @apply text-mess-box-text font-light leading-1.7 #{!important};
   }
 
   // Paragraphs
