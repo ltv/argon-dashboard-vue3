@@ -3,9 +3,6 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      lineHeight: {
-        7.5: '30px',
-      },
       gap: {
         3.25: '13px',
         7.5: '30px',
@@ -204,6 +201,7 @@ module.exports = {
       },
       lineHeight: {
         1.7: '1.7',
+        7.5: '30px',
       },
       boxShadow: {
         'light': '0 0 0 1px rgb(0 0 0 / 10%)',
