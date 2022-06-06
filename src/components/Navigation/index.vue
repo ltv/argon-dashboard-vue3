@@ -413,10 +413,16 @@ export default defineComponent({
     @apply m-0;
   }
   .el-dropdown-menu__item:first-child {
-    @apply m-0 hover:bg-white rounded-lg;
+    @apply m-0 bg-white rounded-lg;
+    &:hover {
+      @apply bg-white #{!important};
+    }
   }
   .el-dropdown-menu__item {
-    @apply m-0 hover:bg-slate-50;
+    @apply m-0;
+    &:hover {
+      @apply bg-secondary #{!important};
+    }
   }
 }
 .profile-popper {
@@ -426,12 +432,18 @@ export default defineComponent({
   }
   .el-dropdown-menu {
     @apply py-2 #{!important};
-  }
-  .el-dropdown-menu__item:first-child {
-    @apply m-0 hover:bg-white rounded-lg;
-  }
-  .el-dropdown-menu__item {
-    @apply m-0 hover:bg-slate-50;
+    .el-dropdown-menu__item:first-child {
+      @apply m-0 rounded-lg;
+      &:hover {
+        @apply bg-white #{!important};
+      }
+    }
+    .el-dropdown-menu__item {
+      @apply m-0;
+      &:hover {
+        @apply bg-secondary #{!important};
+      }
+    }
   }
 }
 </style>
