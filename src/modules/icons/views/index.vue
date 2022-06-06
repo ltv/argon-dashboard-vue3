@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full mx-auto lg:w-[65.95%]">
+  <div class="w-full mx-auto lg:w-[70.25%] xl:w-[65.95%]">
     <div class="container py-4 mx-auto">
       <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
         <div class="card-header px-6 py-5">
-          <h3>Headings</h3>
+          <h3>Icons</h3>
         </div>
         <p class="break-normal text-slate-500 px-4"></p>
         <div class="p-6">
