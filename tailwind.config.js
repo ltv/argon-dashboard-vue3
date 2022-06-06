@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      lineHeight: {
+        7.5: '30px',
+      },
       gap: {
         3.25: '13px',
         7.5: '30px',
@@ -126,6 +129,7 @@ module.exports = {
         'mess-box-text': '#8898aa',
         'mess-box-bg': '#f7fafc',
         'el-form-input': '#E8F0FE',
+        normal: 'rgb(82 95 127)',
         dark: {
           DEFAULT: 'rgb(23 43 77)',
           light: 'rgb(28 52 93)',
@@ -195,6 +199,8 @@ module.exports = {
         60: ['60%', '1.5'],
         sm: ['.875rem', '1.5'],
         12.8: ['12.8px', '1.5'],
+        15: ['15px', '1.5'],
+        17: ['17px', '1.5']
       },
       lineHeight: {
         1.7: '1.7',

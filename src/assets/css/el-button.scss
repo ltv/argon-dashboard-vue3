@@ -13,7 +13,7 @@ body {
     @apply h-[51px] rounded-md font-semibold text-sm tracking-wide px-[11px] #{!important};
   }
   .el-button.el-button--small {
-    @apply rounded max-w-fit text-xs font-semibold tracking-wide p-0.5 py-3.25 #{!important};
+    @apply rounded text-xs font-semibold tracking-wide p-0.5 py-3.25 #{!important};
   }
   .el-button.el-button--default.el-button--small {
     @apply rounded max-w-fit h-[25px] #{!important};

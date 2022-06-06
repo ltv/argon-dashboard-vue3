@@ -57,7 +57,7 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Outline</h3>
       </template>
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3.25">
         <div>
           <el-button plain class="">Default</el-button>
         </div>
