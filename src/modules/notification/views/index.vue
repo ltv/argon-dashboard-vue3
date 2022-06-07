@@ -192,8 +192,8 @@ export default defineComponent({
     const dialogFormVisible = ref(false)
     const formLabelWidth = '140px'
     const form = reactive({
-      email: 'admin@argon.com',
-      password: '....',
+      email: '',
+      password: '',
       type: [],
       MailIcon: MailIcon,
       LockClosedIcon: LockClosedIcon,
