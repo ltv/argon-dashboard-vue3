@@ -280,7 +280,11 @@
                   </div>
                 </el-dropdown-item>
 
-                <el-dropdown-item divided class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800">
+                <el-dropdown-item
+                  divided
+                  class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800"
+                  @click="handleLogoutClick(false)"
+                >
                   <div class="flex flex-row items-center w-full h-6">
                     <div class="flex w-auto">
                       <el-icon :size="20" class="cursor-pointer w-5 h-6">
@@ -320,7 +324,7 @@ import {
 } from '@element-plus/icons-vue'
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
 import { useDashboardStore } from '../../modules/dashboard/store'
-
+import { useAuthStore } from '../../modules/auth/store'
 export default defineComponent({
   name: 'Sidebar',
   components: {
@@ -340,6 +344,7 @@ export default defineComponent({
   },
   setup() {
     const store = useDashboardStore()
+    const storeAuth = useAuthStore()
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isSearchOpen = ref(true)
@@ -359,6 +364,10 @@ export default defineComponent({
       store.toggleMenu()
     }
 
+    const handleLogoutClick = async (b: boolean) => {
+      storeAuth.setAuthentication(b)
+    }
+
     const setSearchOpen = (v: boolean) => (isSearchOpen.value = v)
 
     return {
@@ -370,6 +379,7 @@ export default defineComponent({
       clickIconBell,
       clickIconMenu,
       textInput,
+      handleLogoutClick,
       handleMenuClick,
       setSearchOpen,
       togglePagesMenu,

@@ -77,7 +77,7 @@ export default defineComponent({
         await form.value?.validate()
         store.setAuthentication(true)
       } catch (e) {
-        console.log('login err::: ', e)
+        console.log('err::: ', e)
       }
     }
 
