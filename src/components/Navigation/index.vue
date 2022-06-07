@@ -323,8 +323,8 @@ import {
   Close,
 } from '@element-plus/icons-vue'
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
-import { useDashboardStore } from '../../modules/dashboard/store'
-import { useAuthStore } from '../../modules/auth/store'
+import useStore from 'store'
+
 export default defineComponent({
   name: 'Sidebar',
   components: {
@@ -343,8 +343,7 @@ export default defineComponent({
     SearchCircleIcon,
   },
   setup() {
-    const store = useDashboardStore()
-    const storeAuth = useAuthStore()
+    const store = useStore()
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isSearchOpen = ref(true)
@@ -357,15 +356,15 @@ export default defineComponent({
     const closeSideMenu = () => {
       isSideMenuOpen.value = false
     }
-    const isSBPin = computed(() => store.isSBPin)
-    const isSBOpen = computed(() => store.isSBOpen)
+    const isSBPin = computed(() => store.dashboard.isSBPin)
+    const isSBOpen = computed(() => store.dashboard.isSBOpen)
 
     const handleMenuClick = () => {
-      store.toggleMenu()
+      store.dashboard.toggleMenu()
     }
 
     const handleLogoutClick = async (b: boolean) => {
-      storeAuth.setAuthentication(b)
+      store.auth.setAuthentication(b)
     }
 
     const setSearchOpen = (v: boolean) => (isSearchOpen.value = v)

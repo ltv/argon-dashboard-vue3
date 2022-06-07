@@ -1,36 +1,41 @@
 <template>
   <div v-if="!isAuthenticated">
-    <div class="card py-5">
-      <div class="flex flex-wrap justify-center text-center mb-18">
-        <div class="w-full px-4">
-          <h1 class="display-1 mb-4 font-semibold">Welcome to LOGIN PAGE</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="py-6">
-      <el-form ref="form" :model="formData" :rules="rules">
-        <el-form-item class="border border-gray-900 rounded-full" prop="identifier">
-          <el-input placeholder="UserName / Email" v-model="formData.identifier"></el-input>
-        </el-form-item>
-        <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
-          <el-input
-            type="password"
-            placeholder="Password"
-            v-model="formData.password"
-            @keydown.enter="handleKeyDown"
-          ></el-input>
-        </el-form-item>
-      </el-form>
-      <div class="text-sm text-left px-2 pt-2">
-        <router-link to="/forgot-password" class="text-secondary hover:text-primary">
-          Forgot password?
-        </router-link>
-      </div>
-      <div class="flex">
-        <div class="empty flex-grow"></div>
-        <div>
-          <el-button class="px-12" type="primary" @click="handleLoginClick"> Login </el-button>
+    <div class="container mt-8 pb-5">
+      <div class="flex flex-wrap -mx-3.75 content-center">
+        <div class="relative w-full px-3.75">
+          <el-card class="bg-secondary">
+            <template #header>
+              <h3 class="cursor-auto mb-0 text-card-title">Sign in with</h3>
+            </template>
+            <div class="content-center">
+              <el-form ref="form" :model="formData" :rules="rules">
+                <el-form-item class="border border-gray-900 rounded-full" prop="identifier">
+                  <el-input placeholder="UserName / Email" v-model="formData.identifier" />
+                </el-form-item>
+                <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
+                  <el-input
+                    type="password"
+                    placeholder="Password"
+                    v-model="formData.password"
+                    @keydown.enter="handleKeyDown"
+                  ></el-input>
+                </el-form-item>
+              </el-form>
+            </div>
+            <div class="text-sm text-left px-2 pt-2">
+              <router-link to="/forgot-password" class="text-secondary hover:text-primary">
+                Forgot password?
+              </router-link>
+            </div>
+            <div class="flex">
+              <div class="empty flex-grow"></div>
+              <div>
+                <el-button class="px-12" type="primary" @click="handleLoginClick">
+                  Login
+                </el-button>
+              </div>
+            </div>
+          </el-card>
         </div>
       </div>
     </div>
@@ -38,15 +43,15 @@
 </template>
 <script lang="ts">
 import { defineComponent, computed, ref } from 'vue'
-import { useAuthStore } from '../store'
+import useStore from 'store'
 
 export default defineComponent({
   setup() {
     const form = ref<ElementForm>()
-    const store = useAuthStore()
+    const store = useStore()
 
-    const isAuthenticated = computed<boolean>(() => store.getAuthenticationState)
-    const formData = ref({ identifier: '', password: '' })
+    const isAuthenticated = computed<boolean>(() => store.auth.getAuthenticationState)
+    const formData = ref({ identifier: 'admin@gmail.com', password: 'admin123456' })
     const rules = ref({
       identifier: [
         {
@@ -75,7 +80,7 @@ export default defineComponent({
     const login = async () => {
       try {
         await form.value?.validate()
-        store.setAuthentication(true)
+        store.auth.setAuthentication(true)
       } catch (e) {
         console.log('err::: ', e)
       }
