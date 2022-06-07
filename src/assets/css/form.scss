@@ -7,38 +7,42 @@ body {
     @apply shadow rounded overflow-hidden;
   }
 
-  .form-icon {
-    @apply bg-white w-15/100;
-  }
-
-  //   Input
-  .el-form-item.el-form-item--default.form-input {
-    @apply w-full;
-  }
-  .el-input.el-input--default .el-input__inner {
-    @apply p-0 rounded-none bg-el-form-input border-transparent focus:text-slate-400 focus:font-normal text-slate-400 font-normal focus:ring-0 focus:bg-white #{!important};
+  .el-form .form-icon {
+    @apply bg-white flex-none text-lg px-3 py-[10px] #{!important};
   }
   .el-input.el-input--default {
-    @apply w-85/100;
+    @apply flex-1;
   }
+
+  .el-form-item.el-form-item--default.form-input {
+    @apply w-full border-0 p-0 drop-shadow-sm;
+  }
+  .el-input.el-input--default .el-input__inner {
+    @apply h-[46px] p-0 rounded-none bg-white border-transparent focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
+  }
+
   .el-form-item.checkbox {
     @apply self-start shadow-none #{!important};
   }
-
-  //   Checkbox
   .el-checkbox__inner {
-    @apply rounded shadow h-4 w-4 #{!important};
+    @apply rounded h-4 w-4 border-0 shadow #{!important};
   }
   .el-checkbox__label {
-    @apply text-mess-box-text font-normal focus:border-transparent hover:border-transparent;
+    @apply text-mess-box-text font-normal focus:border-transparent;
   }
-  .el-checkbox.el-checkbox--default .el-checkbox__inner {
-    @apply hover:border-transparent;
+  .el-checkbox__inner:hover {
+    @apply border-inherit;
   }
   .el-checkbox__input.is-checked .el-checkbox__inner {
-    @apply bg-primary-blue;
+    @apply bg-primary-blue border-0 #{!important};
   }
   .el-checkbox__input.is-checked + .el-checkbox__label {
     @apply text-slate-400;
+  }
+  .el-button.el-button--default {
+    @apply will-change-transform #{!important};
+  }
+  .el-checkbox__inner::after {
+    @apply border-[2.5px];
   }
 }

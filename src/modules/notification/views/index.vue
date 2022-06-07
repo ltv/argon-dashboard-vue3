@@ -1,29 +1,27 @@
 <template>
-  <div class="w-full lg:w-2/3 mx-auto">
+  <div class="w-full block mx-auto h-auto lg:max-w-2/3">
     <!-- Alerts -->
-    <div class="card-typography">
-      <div class="card-header">
-        <h3 class="text-md">Alerts</h3>
-      </div>
-      <div class="p-5 flex flex-col gap-4">
+    <el-card class="mb-7.5 border-none">
+      <template #header>
+        <h3 class="cursor-auto mb-0 text-card-title">Alerts</h3>
+      </template>
+      <div class="flex flex-col gap-4">
         <el-alert class="success" title="success alert" type="success" show-icon />
         <el-alert class="info" title="info alert" type="info" show-icon />
         <el-alert class="warning" title="warning alert" type="warning" show-icon />
         <el-alert class="danger" title="error alert" type="error" show-icon />
       </div>
-    </div>
-    <!-- Modals -->
-    <div class="card-typography">
-      <div class="card-header">
-        <h3 class="text-md">Modals</h3>
-      </div>
+    </el-card>
 
-      <div class="p-5 grid grid-cols-1 md:grid-cols-3 md:gap-6 lg:grid-cols-3 lg:gap-6">
+    <!-- Modals -->
+    <el-card class="mb-7.5 border-none">
+      <template #header>
+        <h3 class="cursor-auto mb-0 text-card-title">Modals</h3>
+      </template>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-3 lg:gap-6">
         <!-- Modals - Default -->
-        <div class="w-full mb-4">
-          <el-button type="primary" size="large" class="w-full" text @click="openDefault = true"
-            >Default</el-button
-          >
+        <div class="w-full">
+          <el-button type="primary" class="w-full" @click="openDefault = true">Default</el-button>
           <el-dialog v-model="openDefault" title="Type your modal title">
             <p>
               Far far away, behind the word mountains, far from the countries Vokalia and
@@ -41,20 +39,17 @@
                 <el-button class="btn-open" type="primary" @click="openDefault = false"
                   >Save changes</el-button
                 >
-                <el-button class="btn-close" @click="openDefault = false">Close</el-button>
+                <el-button class="btn-close" type="primary" @click="openDefault = false"
+                  >Close</el-button
+                >
               </span>
             </template>
           </el-dialog>
         </div>
 
         <!-- Modal - Notifications -->
-        <div class="w-full mb-4">
-          <el-button
-            type="warning"
-            size="large"
-            class="w-full"
-            text
-            @click="openNotification = true"
+        <div class="w-full">
+          <el-button type="warning" class="w-full" @click="openNotification = true"
             >Notification</el-button
           >
           <el-dialog
@@ -75,20 +70,17 @@
                 <el-button class="btn-open" type="danger" @click="openNotification = false"
                   >Ok, got it</el-button
                 >
-                <el-button class="btn1-close" @click="openNotification = false">Close</el-button>
+                <el-button class="btn1-close" type="primary" @click="openNotification = false"
+                  >Close</el-button
+                >
               </span>
             </template>
           </el-dialog>
         </div>
 
         <!-- Modals - Form -->
-        <div class="w-full mb-4">
-          <el-button
-            type="default"
-            size="large"
-            class="w-full"
-            text
-            @click="dialogFormVisible = true"
+        <div class="w-full">
+          <el-button type="default" class="w-full" @click="dialogFormVisible = true"
             >Form</el-button
           >
           <el-dialog v-model="dialogFormVisible" custom-class="open-form">
@@ -97,14 +89,14 @@
                 <small>Sign in with</small>
               </div>
               <div class="open-form-header-body">
-                <a class="btn" href="#">
-                  <span><img src="@/assets/images/github.png" alt="" /></span>
-                  <span>Github</span>
-                </a>
-                <a class="btn" href="#">
-                  <span><img src="@/assets/images/google.png" alt="" /></span>
-                  <span>Google</span>
-                </a>
+                <el-button type="primary" class="sign-btn" href="#">
+                  <span class="sign-img"><img src="@/assets/images/github.png" alt="" /></span>
+                  <span class="sign-text">Github</span>
+                </el-button>
+                <el-button type="primary" class="sign-btn" href="#">
+                  <span class="sign-img"><img src="@/assets/images/google.png" alt="" /></span>
+                  <span class="sign-text">Google</span>
+                </el-button>
               </div>
             </div>
             <div class="open-form-body">
@@ -130,10 +122,12 @@
                   </div>
                   <el-input v-model="form.password" />
                 </el-form-item>
+
                 <!-- Checkbox -->
                 <el-form-item class="checkbox">
                   <el-checkbox v-model="form.type" label="Remember me" name="type" />
                 </el-form-item>
+
                 <!-- Submit -->
                 <el-form-item>
                   <el-button type="primary" @click="onSubmit">Sign in</el-button>
@@ -143,14 +137,14 @@
           </el-dialog>
         </div>
       </div>
-    </div>
-    <!-- Notifications -->
-    <div class="card-typography">
-      <div class="card-header">
-        <h3 class="text-md">Notifications</h3>
-      </div>
+    </el-card>
 
-      <div class="p-5 flex flex-wrap gap-2">
+    <!-- Notifications -->
+    <el-card class="mb-7.5 border-none">
+      <template #header>
+        <h3 class="cursor-auto mb-0 text-card-title">Notifications</h3>
+      </template>
+      <div class="flex flex-wrap gap-2">
         <div>
           <el-button type="default" @click="openNotifDefault">Default</el-button>
         </div>
@@ -167,7 +161,7 @@
           <el-button type="danger" @click="openNotifDanger">Danger</el-button>
         </div>
       </div>
-    </div>
+    </el-card>
   </div>
 </template>
 
@@ -312,9 +306,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.card-typography {
-  @apply bg-white break-words mt-2.5 mb-7 shadow rounded-lg flex flex-col;
-}
 .card-header {
   @apply p-5 border-b border-primary-white;
 }
@@ -323,18 +314,5 @@ export default defineComponent({
 }
 .medium {
   @apply flex flex-col md:flex-row md:justify-center md:items-center;
-}
-
-.el-button--text {
-  margin-right: 15px;
-}
-.el-select {
-  width: 300px;
-}
-.el-input {
-  width: 300px;
-}
-.dialog-footer button:first-child {
-  margin-right: 10px;
 }
 </style>
