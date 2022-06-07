@@ -369,74 +369,64 @@
           class="text-center bg-gradient-to-r from-[#2dce89] to-[#2dcecc]"
         >
           <template #header>
-            <h3 class="font-semibold text-slate-50 py-4.5">BRAVO PACK</h3>
+            <h3 class="font-semibold text-white py-4">BRAVO PACK</h3>
           </template>
-          <div class="px-16 flex flex-col items-center pt-4">
-            <div class="text-white text-5xl pt-4 pb-2 font-semibold">$49</div>
+          <div class="flex flex-col items-center p-6">
+            <div class="text-white text-[44px] font-semibold">$49</div>
             <span class="text-white">per application</span>
 
-            <div class="table w-1/3 my-6">
+            <div class="table w-1/3 my-4">
               <div class="table-row-group">
-                <div class="table-row h-14">
+                <div class="table-row h-16">
                   <div class="table-cell w-10 justify-center align-middle">
-                    <div class="flex pl-4">
-                      <font-awesome-icon
-                        class="rounded-full p-1.5 text-slate-500 bg-white"
-                        :icon="['fas', 'terminal']"
-                        size="xs"
-                      />
+                    <div class="w-6 h-6 rounded-full text-slate-500 bg-white">
+                      <font-awesome-icon :icon="['fas', 'terminal']" size="xs" />
                     </div>
                   </div>
                   <div class="table-cell w-10 justify-center align-middle">
-                    <div class="pl-2 mr-8">
+                    <div class="pl-2">
                       <span class="text-sm text-white">Complete documentation</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="table-row h-14">
+                <div class="table-row h-16">
                   <div class="table-cell w-10 justify-center align-middle">
-                    <div class="flex pl-4">
-                      <font-awesome-icon
-                        class="rounded-full p-1.5 text-slate-500 bg-white"
-                        :icon="['fas', 'pen-fancy']"
-                        size="xs"
-                      />
+                    <div class="w-6 h-6 rounded-full text-slate-500 bg-white">
+                      <font-awesome-icon :icon="['fas', 'pen-fancy']" size="xs" />
                     </div>
                   </div>
                   <div class="table-cell w-10 justify-center align-middle">
-                    <div class="pl-2 mr-8">
+                    <div class="pl-2">
                       <span class="text-sm text-white">Working materials in Sketch</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="table-row h-14">
+                <div class="table-row h-16">
                   <div class="table-cell w-10 justify-center align-middle">
-                    <div class="flex pl-4">
-                      <font-awesome-icon
-                        class="rounded-full p-1.5 text-slate-500 bg-white"
-                        :icon="['fas', 'hard-drive']"
-                        size="xs"
-                      />
+                    <div class="w-6 h-6 rounded-full text-slate-500 bg-white">
+                      <font-awesome-icon :icon="['fas', 'hard-drive']" size="xs" />
                     </div>
                   </div>
                   <div class="table-cell w-10 justify-center align-middle">
-                    <div class="pl-2 mr-8">
+                    <div class="pl-2">
                       <span class="text-sm text-white">2GB cloud storage</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-3">
-              <el-button type="primary" class="py-5 w-32 font-semibold text-normal"
+            <div>
+              <el-button type="primary" class="py-5 w-[142,56px] font-semibold text-normal"
                 >Start free trial</el-button
               >
             </div>
           </div>
-          <el-divider class="border-[#2bc6a1]" />
-          <el-link :underline="false" class="text-white text-base hover:text-slate-200 pb-4"
+          <el-divider class="border-[#2bc6a1] my-5" />
+          <el-link
+            :underline="false"
+            class="text-white text-base font-normal hover:text-slate-200 pb-5"
             >Request a demo</el-link
           >
         </el-card>
@@ -487,74 +477,72 @@
         <div class="mt-7">
           <el-card :body-style="{ padding: '0px' }" class="text-center border-white">
             <template #header>
-              <h3 class="font-semibold text-indigo-500 py-4.5">BRAVO PACK</h3>
+              <h4 class="font-semibold text-primary-blue py-4">BRAVO PACK</h4>
             </template>
-            <div class="px-16 flex flex-col items-center pt-4">
-              <div class="text-slate-500 text-5xl pt-4 pb-2 font-semibold">$49</div>
-              <span class="text-normal">per application</span>
+            <div class="flex flex-col items-center p-6">
+              <div class="text-normal text-[44px] font-semibold">$49</div>
+              <span class="text-muted font-normal">per application</span>
 
-              <div class="table w-1/3 my-6">
+              <div class="table w-1/3 my-4">
                 <div class="table-row-group">
-                  <div class="table-row h-14">
+                  <div class="table-row h-16">
                     <div class="table-cell w-10 justify-center align-middle">
-                      <div class="flex pl-4">
-                        <font-awesome-icon
-                          class="rounded-full p-1.5 text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
-                          :icon="['fas', 'terminal']"
-                          size="xs"
-                        />
+                      <div
+                        class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
+                      >
+                        <font-awesome-icon :icon="['fas', 'terminal']" size="xs" />
                       </div>
                     </div>
                     <div class="table-cell w-10 justify-center align-middle">
-                      <div class="pl-2 mr-8">
-                        <span class="text-sm text-normal">Complete documentation</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="table-row h-14">
-                    <div class="table-cell w-10 justify-center align-middle">
-                      <div class="flex pl-4">
-                        <font-awesome-icon
-                          class="rounded-full p-1.5 text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
-                          :icon="['fas', 'pen-fancy']"
-                          size="xs"
-                        />
-                      </div>
-                    </div>
-                    <div class="table-cell w-10 justify-center align-middle">
-                      <div class="pl-2 mr-8">
-                        <span class="text-sm text-normal">Working materials in Sketch</span>
+                      <div class="pl-2">
+                        <span class="text-sm font-normal text-muted">Complete documentation</span>
                       </div>
                     </div>
                   </div>
 
-                  <div class="table-row h-14">
+                  <div class="table-row h-16">
                     <div class="table-cell w-10 justify-center align-middle">
-                      <div class="flex pl-4">
-                        <font-awesome-icon
-                          class="rounded-full p-1.5 text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
-                          :icon="['fas', 'hard-drive']"
-                          size="xs"
-                        />
+                      <div
+                        class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
+                      >
+                        <font-awesome-icon :icon="['fas', 'pen-fancy']" size="xs" />
                       </div>
                     </div>
                     <div class="table-cell w-10 justify-center align-middle">
-                      <div class="pl-2 mr-8">
-                        <span class="text-sm text-normal">2GB cloud storage</span>
+                      <div class="pl-2">
+                        <span class="text-sm font-normal text-muted"
+                          >Working materials in Sketch</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="table-row h-16">
+                    <div class="table-cell w-10 justify-center align-middle">
+                      <div
+                        class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
+                      >
+                        <font-awesome-icon :icon="['fas', 'hard-drive']" size="xs" />
+                      </div>
+                    </div>
+                    <div class="table-cell w-10 justify-center align-middle">
+                      <div class="pl-2">
+                        <span class="text-sm font-normal text-muted">2GB cloud storage</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="mb-3">
-                <el-button class="py-5 w-32 font-semibold text-normal" type="primary"
+              <div>
+                <el-button class="py-5 w-[142,56px] font-semibold text-normal" type="primary"
                   >Start free trial</el-button
                 >
               </div>
             </div>
-            <el-divider />
-            <el-link :underline="false" class="text-normal text-base hover:text-slate-500 pb-4"
+            <el-divider class="my-5" />
+            <el-link
+              :underline="false"
+              class="text-muted hover:text-muted font-normal text-base pb-5"
               >Request a demo</el-link
             >
           </el-card>
