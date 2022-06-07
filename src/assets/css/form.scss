@@ -8,7 +8,10 @@ body {
   }
 
   .el-form .form-icon {
-    @apply bg-white w-[12%] text-lg;
+    @apply bg-white flex-none text-lg px-3 py-[10px] #{!important};
+  }
+  .el-input.el-input--default {
+    @apply flex-1;
   }
 
   .el-form-item.el-form-item--default.form-input {
@@ -17,9 +20,7 @@ body {
   .el-input.el-input--default .el-input__inner {
     @apply h-[46px] p-0 rounded-none bg-white border-transparent focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
   }
-  .el-input.el-input--default {
-    @apply w-[88%];
-  }
+
   .el-form-item.checkbox {
     @apply self-start shadow-none #{!important};
   }
