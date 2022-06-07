@@ -5,7 +5,7 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Grid system</h3>
       </template>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 text-center items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 text-center items-center my-3">
         <div class="grid-items">One of three columns</div>
         <div class="grid-items">One of three columns</div>
         <div class="grid-items">One of three columns</div>
@@ -17,7 +17,7 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Equal-width</h3>
       </template>
-      <div class="grid grid-cols-6 gap-7 text-center items-center">
+      <div class="grid grid-cols-6 gap-7 text-center items-center my-3">
         <div class="grid-items col-span-3">1 of 2</div>
         <div class="grid-items col-span-3">2 of 2</div>
 
@@ -32,15 +32,17 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Setting one column width</h3>
       </template>
-      <div class="flex gap-4 text-center mb-6">
-        <div class="grid-items flex-auto">1 of 3</div>
-        <div class="grid-items flex-auto w-2/4">2 of 3 (wider)</div>
-        <div class="grid-items flex-auto">3 of 3</div>
-      </div>
-      <div class="flex gap-4 text-center">
-        <div class="grid-items flex-auto">1 of 3</div>
-        <div class="grid-items flex-auto w-2/5">2 of 3 (wider)</div>
-        <div class="grid-items flex-auto">3 of 3</div>
+      <div class="my-3">
+        <div class="flex gap-4 text-center mb-6">
+          <div class="grid-items flex-auto">1 of 3</div>
+          <div class="grid-items flex-auto w-2/4">2 of 3 (wider)</div>
+          <div class="grid-items flex-auto">3 of 3</div>
+        </div>
+        <div class="flex gap-4 text-center">
+          <div class="grid-items flex-auto">1 of 3</div>
+          <div class="grid-items flex-auto w-2/5">2 of 3 (wider)</div>
+          <div class="grid-items flex-auto">3 of 3</div>
+        </div>
       </div>
     </el-card>
 
@@ -49,15 +51,17 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Variable width content</h3>
       </template>
-      <div class="flex gap-4 justify-center mb-6">
-        <div class="grid-items flex-auto md:flex-initial">1 of 3</div>
-        <div class="grid-items">Variable width content</div>
-        <div class="grid-items flex-auto md:flex-initial">3 of 3</div>
-      </div>
-      <div class="flex gap-4 justify-center">
-        <div class="grid-items flex-auto md:w-[60%] md:flex-initial">1 of 3</div>
-        <div class="grid-items">Variable width content</div>
-        <div class="grid-items flex-auto md:w-[15%] md:flex-initial">3 of 3</div>
+      <div class="my-3">
+        <div class="flex gap-4 justify-center mb-6">
+          <div class="grid-items flex-auto md:flex-initial">1 of 3</div>
+          <div class="grid-items">Variable width content</div>
+          <div class="grid-items flex-auto md:flex-initial">3 of 3</div>
+        </div>
+        <div class="flex gap-4 justify-center">
+          <div class="grid-items flex-auto md:w-[60%] md:flex-initial">1 of 3</div>
+          <div class="grid-items">Variable width content</div>
+          <div class="grid-items flex-auto md:w-[15%] md:flex-initial">3 of 3</div>
+        </div>
       </div>
     </el-card>
 
@@ -66,13 +70,15 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Equal-width multi-row</h3>
       </template>
-      <div class="flex gap-4 text-center mb-6">
-        <div class="grid-items flex-auto">col</div>
-        <div class="grid-items flex-auto">col</div>
-      </div>
-      <div class="flex gap-4 text-center">
-        <div class="grid-items flex-auto">col</div>
-        <div class="grid-items flex-auto">col</div>
+      <div class="my-3">
+        <div class="flex gap-4 text-center mb-6">
+          <div class="grid-items flex-auto">col</div>
+          <div class="grid-items flex-auto">col</div>
+        </div>
+        <div class="flex gap-4 text-center">
+          <div class="grid-items flex-auto">col</div>
+          <div class="grid-items flex-auto">col</div>
+        </div>
       </div>
     </el-card>
 
@@ -81,7 +87,7 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-card-title">Grid system</h3>
       </template>
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 text-center my-3">
         <div class="grid-items col-span-8">.col-6 .col-md-8</div>
         <div class="grid-items col-span-4">.col-6 .col-md-4</div>
 
