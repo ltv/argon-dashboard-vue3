@@ -134,14 +134,14 @@
           <span class="title block">Heading Seaction</span>
         </div>
         <div class="md:w-3/4 flex flex-wrap">
-          <div class="mb-1">
+          <div class="mb-4">
             <h3 class="display-3">Header with small subtitle</h3>
           </div>
-          <div class="mb-8">
-            <h4 class="lead text-muted">
+          <div class="mb-4 mt-4 text-muted">
+            <p>
               According to the National Oceanic and Atmospheric Administration, Ted, Scambos,
               NSIDClead scentist, puts the potentially record maximum.
-            </h4>
+            </p>
           </div>
         </div>
       </div>

@@ -56,8 +56,8 @@ body {
   .lead {
     @apply text-xl font-light leading-1.7 mt-5;
   }
-  .text-muted {
-    @apply text-mess-box-text font-light leading-1.7 #{!important};
+  .text-muted p {
+    @apply text-mess-box-text text-xl font-light leading-1.7 #{!important};
   }
 
   // Paragraphs
