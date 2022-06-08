@@ -140,15 +140,17 @@ body {
   .el-dialog__footer .dialog-footer {
     @apply w-full flex justify-between;
   }
-  .el-dialog .btn-close {
+
+  .el-dialog .el-button.btn-close {
     @apply bg-transparent text-primary-blue hover:translate-y-0 border-transparent shadow-none #{!important};
   }
   .open-notification .btn1-close {
     @apply bg-transparent text-white border-transparent shadow-none hover:translate-y-0 hover:border-transparent #{!important};
   }
-  .el-button.el-button--primary:active {
+  .open-notification .el-button.el-button--default.btn1-close:active {
     @apply bg-transparent #{!important};
   }
+
   .el-button.el-button--default span {
     @apply will-change-transform;
   }
@@ -179,51 +181,7 @@ body {
     @apply bg-white text-black will-change-transform  #{!important};
   }
 
-  // el-dialog - form
-  .open-form .open-form-body {
-    @apply w-full p-12;
-  }
-  .open-form .el-dialog__body {
-    @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 text-center;
-  }
-  .open-form .el-dialog__header {
-    @apply hidden;
-  }
-  .open-form-header {
-    @apply w-full pt-5 pb-12 border-b p-10;
-  }
-  .open-form-title {
-    @apply mb-4 mt-2 text-center;
-  }
-  .open-form-title small {
-    @apply text-12.8 mb-6 #{!important};
-  }
-  .open-form-header-body {
-    @apply flex flex-wrap justify-center gap-0;
-  }
-
-  .el-button.el-button--primary.el-button--default.sign-btn {
-    @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
-  }
-  .el-button img {
-    @apply h-5 w-5;
-  }
-  .el-button.el-button--default span .sign-img,
-  .el-button.el-button--default span .sign-text {
-    @apply p-0 #{!important};
-  }
-  .el-button.el-button--default span .sign-text {
-    @apply ml-[14px] #{!important};
-  }
-  .btn span {
-    @apply font-semibold text-left-bar-indigo hover:text-black;
-  }
-
-  // Responsive
   .el-dialog {
     @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-[32.95%] rounded-md #{!important};
-  }
-  .open-form {
-    @apply rounded-md w-[96%] md:w-[40%] xl:w-[25%] #{!important};
   }
 }
