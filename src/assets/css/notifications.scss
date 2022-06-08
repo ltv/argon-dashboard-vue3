@@ -184,7 +184,7 @@ body {
     @apply w-full p-12;
   }
   .open-form .el-dialog__body {
-    @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 flex flex-col text-center;
+    @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 text-center;
   }
   .open-form .el-dialog__header {
     @apply hidden;

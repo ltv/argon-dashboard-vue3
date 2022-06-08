@@ -1,4 +1,4 @@
-import { defineStore, StoreGetters } from 'pinia'
+import { defineStore } from 'pinia'
 
 import { computed } from 'vue'
 import { useState } from './state'

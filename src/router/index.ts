@@ -11,7 +11,7 @@ const router: Router = createRouter({
   routes,
 })
 
-router.beforeEach(async (to, from) => {
+router.beforeEach(async (to, _) => {
   const store = useStore()
   const isAuthenticated: boolean = store.auth.getAuthenticationState
   const isLoginPage = to.name === 'login'

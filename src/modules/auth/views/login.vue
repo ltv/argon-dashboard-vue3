@@ -51,7 +51,7 @@ export default defineComponent({
     const store = useStore()
 
     const isAuthenticated = computed<boolean>(() => store.auth.getAuthenticationState)
-    const formData = ref({ identifier: 'admin@gmail.com', password: 'admin123456' })
+    const formData = ref({ identifier: 'admin@gmail.com', password: '*******' })
     const rules = ref({
       identifier: [
         {
@@ -97,5 +97,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style scoped></style>
