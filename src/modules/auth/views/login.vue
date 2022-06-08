@@ -14,7 +14,6 @@
                 </el-form-item>
                 <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
                   <el-input
-                    type="password"
                     placeholder="Password"
                     v-model="formData.password"
                     @keydown.enter="handleKeyDown"
