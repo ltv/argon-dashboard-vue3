@@ -1,41 +1,51 @@
 <template>
   <div v-if="!isAuthenticated">
-    <div class="container mt-8 pb-5">
-      <div class="flex flex-wrap -mx-3.75 content-center">
-        <div class="relative w-full px-3.75">
-          <el-card class="bg-secondary">
-            <template #header>
-              <h3 class="cursor-auto mb-0 text-card-title">Sign in with</h3>
-            </template>
-            <div class="content-center">
-              <el-form ref="form" :model="formData" :rules="rules">
-                <el-form-item class="border border-gray-900 rounded-full" prop="username">
-                  <el-input placeholder="UserName / Email" v-model="formData.username" />
-                </el-form-item>
-                <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
-                  <el-input
-                    type="password"
-                    placeholder="Password"
-                    v-model="formData.password"
-                    @keydown.enter="handleKeyDown"
-                  ></el-input>
-                </el-form-item>
-              </el-form>
-            </div>
-            <div class="text-sm text-left px-2 pt-2">
-              <router-link to="/forgot-password" class="text-secondary hover:text-primary">
-                Forgot password?
-              </router-link>
-            </div>
-            <div class="flex">
-              <div class="empty flex-grow"></div>
-              <div>
-                <el-button class="px-12" type="primary" @click="handleLoginClick">
-                  Login
-                </el-button>
-              </div>
-            </div>
-          </el-card>
+    <div class="relative w-full">
+      <el-card class="bg-secondary text-center">
+        <template #header class="pb-12">
+          <div class="text-muted text-center mt-2 mb-4"><small>Sign in with</small></div>
+          <div class="text-center">
+            <el-button class="el-button--secondary" href="#">
+              <img src="@/assets/images/github.png" alt="" />
+              <span class="text-primary-blue">Github</span>
+            </el-button>
+            <el-button class="el-button--secondary" href="#">
+              <img src="@/assets/images/google.png" alt="" />
+              <span class="text-primary-blue">Google</span>
+            </el-button>
+          </div>
+        </template>
+        <div class="content-center">
+          <el-form ref="form" :model="formData" :rules="rules">
+            <el-form-item class="border border-gray-900 rounded-full" prop="username">
+              <el-input placeholder="UserName / Email" v-model="formData.username" />
+            </el-form-item>
+            <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
+              <el-input
+                type="password"
+                placeholder="Password"
+                v-model="formData.password"
+                @keydown.enter="handleKeyDown"
+              ></el-input>
+            </el-form-item>
+            <el-form-item>
+              <el-button class="px-12" type="primary" @click="handleLoginClick">
+                Sign in
+              </el-button>
+            </el-form-item>
+          </el-form>
+        </div>
+      </el-card>
+      <div class="flex px-2 pt-2">
+        <div class="text-sm text-left">
+          <router-link to="/forgot-password" class="text-secondary hover:text-primary">
+            Forgot password?
+          </router-link>
+        </div>
+        <div class="text-sm ml-auto">
+          <router-link to="/forgot-password" class="text-secondary hover:text-primary">
+            Create Account
+          </router-link>
         </div>
       </div>
     </div>

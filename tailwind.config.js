@@ -3,6 +3,15 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      zIndex: {
+        '100': '100',
+      },
+      flex: {
+        5: '0 0 41.666667%',
+        6: '0 0 50%',
+        8: '0 0 66.666667%',
+        9: '0 0 75%',
+      },
       gap: {
         3.25: '13px',
         7.5: '30px',
@@ -87,6 +96,7 @@ module.exports = {
       height: {
         4.25: '1.0625rem',
         4.5: '1.125rem',
+        7.5: '30px',
         9.5: '2.125rem',
         10.5: '2.625rem',
         10.75: '2.6875rem',
@@ -105,6 +115,7 @@ module.exports = {
         22: '5.5rem',
       },
       colors: {
+        default: '#172b4d',
         'card-title': '#32325d',
         'background-page': '#f8f9fe',
         'left-bar-yellow': '#ffd600',
@@ -132,6 +143,9 @@ module.exports = {
         dark: {
           DEFAULT: 'rgb(23 43 77)',
           light: 'rgb(28 52 93)',
+        },
+        light: {
+          DEFAULT: 'rgb(206 212 218)',
         },
         primary: {
           DEFAULT: 'rgb(50 50 93)',
