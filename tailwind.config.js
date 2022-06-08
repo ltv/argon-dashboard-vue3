@@ -211,6 +211,9 @@ module.exports = {
         'card': '0 0 2rem 0 rgba(136, 152, 170, 0.15)',
         'button': '0 4px 6px rgb(50, 50, 93, 0.11), 0 1px 3px rgb(0, 0, 0 ,0.08)'
       },
+      screens: {
+        'sm-xl': '593px',
+      },
     },
     translate: {
       0: '0px',

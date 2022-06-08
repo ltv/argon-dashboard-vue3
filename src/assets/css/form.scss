@@ -1,6 +1,6 @@
 body {
   .open-form {
-    @apply rounded-md w-[90%] sm:w-[380px] #{!important};
+    @apply rounded-md w-[90%] sm-xl:w-[380px] #{!important};
 
     .el-button.el-button--primary.el-button--default.sign-btn {
       @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
@@ -42,7 +42,7 @@ body {
     }
 
     .el-form-item.checkbox {
-      @apply self-start shadow-none #{!important};
+      @apply self-start shadow-none mt-[9px] #{!important};
     }
     .el-checkbox__inner {
       @apply rounded h-4 w-4 border-0 shadow #{!important};
