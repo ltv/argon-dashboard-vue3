@@ -70,7 +70,7 @@
                 <el-button class="btn-open" type="danger" @click="openNotification = false"
                   >Ok, got it</el-button
                 >
-                <el-button class="btn1-close" type="primary" @click="openNotification = false"
+                <el-button class="btn1-close" type="danger" @click="openNotification = false"
                   >Close</el-button
                 >
               </span>
@@ -111,7 +111,7 @@
                       <component :is="form.MailIcon" />
                     </el-icon>
                   </div>
-                  <el-input v-model="form.email" />
+                  <el-input v-model="form.email" placeholder="Email" />
                 </el-form-item>
                 <!-- Password -->
                 <el-form-item class="form-input" prop="LockClosedIcon">
@@ -120,7 +120,7 @@
                       <component :is="form.LockClosedIcon" />
                     </el-icon>
                   </div>
-                  <el-input v-model="form.password" />
+                  <el-input v-model="form.password" placeholder="Password" />
                 </el-form-item>
 
                 <!-- Checkbox -->
