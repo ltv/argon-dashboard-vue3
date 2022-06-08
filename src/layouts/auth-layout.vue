@@ -24,7 +24,7 @@
                 <li v-for="(account, index) in accounts" :key="index" class="flex">
                   {{ index }}.
                   <div class="w-full">
-                    Username <b>{{ account }}</b> Password <b>secret</b>
+                    Username <strong>{{ account }}</strong> Password <strong>secret</strong>
                   </div>
                 </li>
               </ul>

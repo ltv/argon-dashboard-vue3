@@ -4,7 +4,7 @@ import { AUTH_TOKEN } from 'core/constants'
 
 
 export const useActions = defineStore('auth.actions', () => {
-  const actLogin = async (params: ILogin) => {
+  const actLogin = async (_: ILogin) => {
     localStorage.setItem(AUTH_TOKEN, 'user') 
     window.location.href = '/'
   }

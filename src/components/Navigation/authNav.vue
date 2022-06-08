@@ -4,7 +4,7 @@
       class="w-full md:w-[720px] lg:w-[1138px] h-[56px] flex flex-nowrap basis-auto justify-between items-center mx-auto px-3.375"
     >
       <div class="mr-9 pt-1.5">
-        <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="...">
+        <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="#" alt="...">
           <img
             class="h-7.5"
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/white.png"
@@ -37,41 +37,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
-import {
-  Search,
-  BellFilled,
-  Menu,
-  LocationFilled,
-  List,
-  GoodsFilled,
-  UserFilled,
-  CircleClose,
-  Close,
-} from '@element-plus/icons-vue'
-import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
-import useStore from 'store'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'AuthNav',
-  components: {
-    Search,
-    BellFilled,
-    Menu,
-    LocationFilled,
-    List,
-    GoodsFilled,
-    UserFilled,
-    CircleClose,
-    Close,
-    SearchIcon,
-    MenuIcon,
-    MenuAlt1Icon,
-    SearchCircleIcon,
-  },
   setup() {
-    const store = useStore()
-
     return {}
   },
 })
