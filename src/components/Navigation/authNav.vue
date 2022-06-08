@@ -4,9 +4,10 @@
       class="w-full md:w-[720px] lg:w-[1138px] h-[56px] flex flex-nowrap basis-auto justify-between items-center mx-auto px-3.375"
     >
       <div class="mr-9 pt-1.5">
-        <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="#" alt="...">
+        <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="#">
           <img
             class="h-7.5"
+            alt="..."
             src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/white.png"
           />
         </a>
