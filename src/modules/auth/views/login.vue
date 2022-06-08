@@ -14,6 +14,7 @@
                 </el-form-item>
                 <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
                   <el-input
+                    type="password"
                     placeholder="Password"
                     v-model="formData.password"
                     @keydown.enter="handleKeyDown"
@@ -50,7 +51,7 @@ export default defineComponent({
     const store = useStore()
 
     const isAuthenticated = computed<boolean>(() => store.auth.getAuthenticationState)
-    const formData = ref({ identifier: 'admin@gmail.com', password: '*******' })
+    const formData = ref({ identifier: 'admin@gmail.com', password: '' })
     const rules = ref({
       identifier: [
         {
@@ -78,7 +79,6 @@ export default defineComponent({
 
     const login = async () => {
       try {
-        await form.value?.validate()
         store.auth.setAuthentication(true)
       } catch (e) {
         console.log('err::: ', e)
