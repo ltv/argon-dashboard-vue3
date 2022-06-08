@@ -82,7 +82,7 @@ import { defineComponent, ref, computed, onMounted, watch, onUnmounted, onBefore
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
-import { useDashboardStore } from '../../modules/dashboard/store'
+import useStore from 'store'
 import { onClickOutside } from '@vueuse/core'
 import env from 'core/env'
 import { checkIsMobile } from 'utils/index'
@@ -104,7 +104,7 @@ export default defineComponent({
   },
   setup() {
     const route = useRoute()
-    const store = useDashboardStore()
+    const store = useStore()
     const menuItems = ref<MenuItem[]>(navigation)
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
@@ -113,21 +113,19 @@ export default defineComponent({
     const isMobile = checkIsMobile()
 
     onClickOutside(target, (_) => {
-      console.log(target.value)
-      console.log('outside click')
-      if (window.innerWidth < 1024) store.setIsSBOpen(false)
+      if (window.innerWidth < 1024) store.dashboard.setIsSBOpen(false)
     })
     onBeforeMount(() => {
       if (isMobile || window.innerWidth < 1024) {
-        store.setIsSBOpen(false)
-        store.setIsSBPin(false)
+        store.dashboard.setIsSBOpen(false)
+        store.dashboard.setIsSBPin(false)
       }
     })
     onMounted(() => {
       window.addEventListener('resize', () => {
         if (window.innerWidth < 1024) {
-          store.setIsSBOpen(false)
-          store.setIsSBPin(false)
+          store.dashboard.setIsSBOpen(false)
+          store.dashboard.setIsSBPin(false)
         }
       })
     })
@@ -136,19 +134,19 @@ export default defineComponent({
       window.removeEventListener('resize', () => {})
     })
 
-    const isSBPin = computed<boolean>(() => store.isSBPin)
-    const isSBOpen = computed<boolean>(() => store.isSBOpen)
+    const isSBPin = computed<boolean>(() => store.dashboard.isSBPin)
+    const isSBOpen = computed<boolean>(() => store.dashboard.isSBOpen)
 
     const hoverLeftBar = (v: boolean) => {
-      if (!isMobile && window.innerWidth > 1023) store.setIsSBOpen(v)
+      if (!isMobile && window.innerWidth > 1023) store.dashboard.setIsSBOpen(v)
     }
 
     const handleMenuClick = () => {
-      store.toggleMenu()
+      store.dashboard.toggleMenu()
     }
 
     watch(route, () => {
-      store.setIsSBOpen(false)
+      store.dashboard.setIsSBOpen(false)
     })
 
     return {

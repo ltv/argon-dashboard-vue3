@@ -27,7 +27,7 @@
       "router/*": ["src/router/*"],
       "router": ["src/router/index"],
       "utils/*": ["src/utils/*"],
-      "mixins": ["src/mixins/index.ts"]
+      "mixins": ["src/mixins/index.ts"],
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

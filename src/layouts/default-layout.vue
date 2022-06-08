@@ -75,7 +75,7 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
-import { useDashboardStore } from '../modules/dashboard/store'
+import useStore from 'store'
 import { HomeFilled } from '@element-plus/icons-vue'
 import { useRoute } from 'vue-router'
 
@@ -87,9 +87,9 @@ export default defineComponent({
 
   setup() {
     const route: any = useRoute()
-    const store = useDashboardStore()
-    const isSBPin = computed<boolean>(() => store.isSBPin)
-    const setIsSBPin = (b: boolean) => store.setIsSBPin(b)
+    const store = useStore()
+    const isSBPin = computed<boolean>(() => store.dashboard.isSBPin)
+    const setIsSBPin = (b: boolean) => store.dashboard.setIsSBPin(b)
     return { isSBPin, setIsSBPin, route }
   },
 })

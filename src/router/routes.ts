@@ -12,6 +12,7 @@ import {
   CreditCardIcon,
 } from '@heroicons/vue/solid'
 
+const Login = () => import('modules/auth/views/login.vue')
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
 const Table = () => import('modules/table/views/index.vue')
@@ -108,6 +109,14 @@ const routes = [
       icon: StarIcon,
       color: 'text-left-bar-red',
       parentPath: 'Components',
+    },
+  },
+  {
+    path: '/login',
+    component: Login,
+    name: 'login',
+    meta: {
+      requiresAuth: false,
     },
   },
   {

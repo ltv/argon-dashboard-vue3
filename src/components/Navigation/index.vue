@@ -280,7 +280,11 @@
                   </div>
                 </el-dropdown-item>
 
-                <el-dropdown-item divided class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800">
+                <el-dropdown-item
+                  divided
+                  class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800"
+                  @click="handleLogoutClick(false)"
+                >
                   <div class="flex flex-row items-center w-full h-6">
                     <div class="flex w-auto">
                       <el-icon :size="20" class="cursor-pointer w-5 h-6">
@@ -319,7 +323,7 @@ import {
   Close,
 } from '@element-plus/icons-vue'
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
-import { useDashboardStore } from '../../modules/dashboard/store'
+import useStore from 'store'
 
 export default defineComponent({
   name: 'Sidebar',
@@ -339,7 +343,7 @@ export default defineComponent({
     SearchCircleIcon,
   },
   setup() {
-    const store = useDashboardStore()
+    const store = useStore()
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isSearchOpen = ref(true)
@@ -352,11 +356,15 @@ export default defineComponent({
     const closeSideMenu = () => {
       isSideMenuOpen.value = false
     }
-    const isSBPin = computed(() => store.isSBPin)
-    const isSBOpen = computed(() => store.isSBOpen)
+    const isSBPin = computed(() => store.dashboard.isSBPin)
+    const isSBOpen = computed(() => store.dashboard.isSBOpen)
 
     const handleMenuClick = () => {
-      store.toggleMenu()
+      store.dashboard.toggleMenu()
+    }
+
+    const handleLogoutClick = async (b: boolean) => {
+      store.auth.setAuthentication(b)
     }
 
     const setSearchOpen = (v: boolean) => (isSearchOpen.value = v)
@@ -370,6 +378,7 @@ export default defineComponent({
       clickIconBell,
       clickIconMenu,
       textInput,
+      handleLogoutClick,
       handleMenuClick,
       setSearchOpen,
       togglePagesMenu,

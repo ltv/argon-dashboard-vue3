@@ -383,7 +383,7 @@
                       <font-awesome-icon :icon="['fas', 'terminal']" size="xs" />
                     </div>
                   </div>
-                  <div class="table-cell w-10 justify-center align-middle">
+                  <div class="table-cell justify-center align-middle">
                     <div class="pl-2">
                       <span class="text-sm text-white">Complete documentation</span>
                     </div>
@@ -396,7 +396,7 @@
                       <font-awesome-icon :icon="['fas', 'pen-fancy']" size="xs" />
                     </div>
                   </div>
-                  <div class="table-cell w-10 justify-center align-middle">
+                  <div class="table-cell justify-center align-middle">
                     <div class="pl-2">
                       <span class="text-sm text-white">Working materials in Sketch</span>
                     </div>
@@ -409,7 +409,7 @@
                       <font-awesome-icon :icon="['fas', 'hard-drive']" size="xs" />
                     </div>
                   </div>
-                  <div class="table-cell w-10 justify-center align-middle">
+                  <div class="table-cell justify-center align-middle">
                     <div class="pl-2">
                       <span class="text-sm text-white">2GB cloud storage</span>
                     </div>
@@ -493,7 +493,7 @@
                         <font-awesome-icon :icon="['fas', 'terminal']" size="xs" />
                       </div>
                     </div>
-                    <div class="table-cell w-10 justify-center align-middle">
+                    <div class="table-cell justify-center align-middle">
                       <div class="pl-2">
                         <span class="text-sm font-normal text-muted">Complete documentation</span>
                       </div>
@@ -508,7 +508,7 @@
                         <font-awesome-icon :icon="['fas', 'pen-fancy']" size="xs" />
                       </div>
                     </div>
-                    <div class="table-cell w-10 justify-center align-middle">
+                    <div class="table-cell justify-center align-middle">
                       <div class="pl-2">
                         <span class="text-sm font-normal text-muted"
                           >Working materials in Sketch</span
@@ -525,7 +525,7 @@
                         <font-awesome-icon :icon="['fas', 'hard-drive']" size="xs" />
                       </div>
                     </div>
-                    <div class="table-cell w-10 justify-center align-middle">
+                    <div class="table-cell justify-center align-middle">
                       <div class="pl-2">
                         <span class="text-sm font-normal text-muted">2GB cloud storage</span>
                       </div>
@@ -539,7 +539,7 @@
                 >
               </div>
             </div>
-            <el-divider class="my-5" />
+            <el-divider class="border-[#0000000d] my-5" />
             <el-link
               :underline="false"
               class="text-muted hover:text-muted font-normal text-base pb-5"
