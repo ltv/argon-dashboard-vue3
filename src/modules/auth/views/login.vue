@@ -6,11 +6,11 @@
           <div class="text-muted text-center mt-2 mb-4"><small>Sign in with</small></div>
           <div class="text-center">
             <el-button class="el-button--secondary" href="#">
-              <img src="@/assets/images/github.png" alt="" />
+              <img src="@/assets/images/github.png" alt="" class="h-5 w-5" />
               <span class="text-primary-blue">Github</span>
             </el-button>
             <el-button class="el-button--secondary" href="#">
-              <img src="@/assets/images/google.png" alt="" />
+              <img src="@/assets/images/google.png" alt="" class="h-5 w-5" />
               <span class="text-primary-blue">Google</span>
             </el-button>
           </div>
@@ -29,9 +29,7 @@
               ></el-input>
             </el-form-item>
             <el-form-item>
-              <el-button class="px-12" type="primary" @click="handleLoginClick">
-                Sign in
-              </el-button>
+              <el-button type="primary" @click="handleLoginClick"> Sign in </el-button>
             </el-form-item>
           </el-form>
         </div>
