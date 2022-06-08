@@ -1,6 +1,6 @@
 body {
   .open-form {
-    @apply rounded-md w-[90%] sm-xl:w-[380px] #{!important};
+    @apply rounded-md w-[90%] sm:w-[380px] #{!important};
 
     .el-button.el-button--primary.el-button--default.sign-btn {
       @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
