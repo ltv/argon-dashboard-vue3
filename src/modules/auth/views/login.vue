@@ -9,8 +9,8 @@
             </template>
             <div class="content-center">
               <el-form ref="form" :model="formData" :rules="rules">
-                <el-form-item class="border border-gray-900 rounded-full" prop="identifier">
-                  <el-input placeholder="UserName / Email" v-model="formData.identifier" />
+                <el-form-item class="border border-gray-900 rounded-full" prop="username">
+                  <el-input placeholder="UserName / Email" v-model="formData.username" />
                 </el-form-item>
                 <el-form-item class="border border-gray-900 rounded-full mb-2" prop="password">
                   <el-input
@@ -51,9 +51,9 @@ export default defineComponent({
     const store = useStore()
 
     const isAuthenticated = computed<boolean>(() => store.auth.getAuthenticationState)
-    const formData = ref({ identifier: 'admin@gmail.com', password: '' })
+    const formData = ref({ username: 'admin@gmail.com', password: '' })
     const rules = ref({
-      identifier: [
+      username: [
         {
           required: true,
           message: 'Wrong Username',
@@ -79,7 +79,7 @@ export default defineComponent({
 
     const login = async () => {
       try {
-        store.auth.setAuthentication(true)
+        store.auth.actLogin(formData.value)
       } catch (e) {
         console.log('err::: ', e)
       }
