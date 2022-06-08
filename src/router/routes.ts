@@ -22,6 +22,7 @@ const Button = () => import('modules/buttons/views/index.vue')
 const Typography = () => import('modules/typography/views/index.vue')
 const Card = () => import('modules/cards/views/index.vue')
 const Icons = () => import('modules/icons/views/index.vue')
+const Profile = () => import('modules/profile/views/index.vue')
 const routes = [
   {
     path: '/',
@@ -115,6 +116,14 @@ const routes = [
     path: '/login',
     component: Login,
     name: 'login',
+    meta: {
+      requiresAuth: false,
+    },
+  },
+  {
+    path: '/profile',
+    component: Profile,
+    name: 'profile',
     meta: {
       requiresAuth: false,
     },

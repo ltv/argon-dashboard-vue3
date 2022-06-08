@@ -42,7 +42,7 @@ body {
     }
 
     .el-form-item.checkbox {
-      @apply self-start shadow-none #{!important};
+      @apply self-start shadow-none mt-[9px] #{!important};
     }
     .el-checkbox__inner {
       @apply rounded h-4 w-4 border-0 shadow #{!important};
