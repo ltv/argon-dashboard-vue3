@@ -11,12 +11,22 @@ const router: Router = createRouter({
   routes,
 })
 
-router.beforeEach(async (to, _) => {
+router.beforeEach(async (to) => {
   const store = useStore()
-  const isAuthenticated: boolean = store.auth.getAuthenticationState
-  const isLoginPage = to.name === 'login'
-  if (!isAuthenticated && !isLoginPage) {
-    return { name: 'login' }
+  const isLoginPage: boolean = to.name === 'login'
+  try {
+    const isAuthenticated: boolean = store.auth.getAuthenticationState
+    const requiresAuth: boolean = to.meta.requiresAuth as boolean ?? true
+    
+    if (isAuthenticated && isLoginPage) {
+      return '/'
+    }
+
+    if (!isAuthenticated && requiresAuth) {
+      return '/login'
+    }
+  } catch (err) {
+    return isLoginPage ? '/' : '/login'
   }
 })
 

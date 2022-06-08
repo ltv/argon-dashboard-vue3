@@ -283,7 +283,7 @@
                 <el-dropdown-item
                   divided
                   class="mx-0 mt-2 hover:bg-slate-100 text-zinc-800"
-                  @click="handleLogoutClick(false)"
+                  @click="handleLogoutClick"
                 >
                   <div class="flex flex-row items-center w-full h-6">
                     <div class="flex w-auto">
@@ -363,8 +363,8 @@ export default defineComponent({
       store.dashboard.toggleMenu()
     }
 
-    const handleLogoutClick = async (b: boolean) => {
-      store.auth.setAuthentication(b)
+    const handleLogoutClick = () => {
+      store.auth.actLogout()
     }
 
     const setSearchOpen = (v: boolean) => (isSearchOpen.value = v)

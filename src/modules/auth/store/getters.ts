@@ -6,6 +6,6 @@ import { useState } from './state'
 export const useGetters = defineStore('auth.getters', () => {
   const state = useState()
   const getAuthenticationState = computed((): boolean => state.isAuthenticated)
-
-  return { getAuthenticationState }
+  const getuser = computed((): any => state.user)
+  return { getAuthenticationState, getuser }
 })
