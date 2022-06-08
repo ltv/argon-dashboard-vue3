@@ -120,7 +120,6 @@ const routes = [
       requiresAuth: false,
     },
   },
-  ,
   {
     path: '/profile',
     component: Profile,
