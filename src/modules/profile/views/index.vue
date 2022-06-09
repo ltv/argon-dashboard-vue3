@@ -1,6 +1,8 @@
 <template>
   <div class="w-full grid grid-cols-3 gap-7">
+    <!-- Left side -->
     <div class="col-span-2 col-left">
+      <!-- Indicator section -->
       <div class="grid grid-cols-6 gap-7">
         <div class="col-span-3">
           <el-card
@@ -57,6 +59,9 @@
           </el-card>
         </div>
       </div>
+      <!-- End Indicator -->
+
+      <!-- Edit profile section -->
       <div class="mt-7">
         <el-card class="items-center border-white">
           <template #header>
@@ -65,17 +70,65 @@
               <el-button class="el-button--secondary text-sky-700" size="small">Settings</el-button>
             </div>
           </template>
-          <p class="break-normal text-slate-500 py-2">
-            <span> Form right here. </span>
-          </p>
-          <div class="pt-3">
-            <el-button type="primary" class="py-5">Save</el-button>
+          <!-- USER INFORMATION -->
+          <div class="user-info">
+            <h6>USER INFORMATION</h6>
+            <div class="user-form">
+              <el-form :model="userForm" label-position="top">
+                <el-form-item label="Name">
+                  <el-input v-model="userForm.name" placeholder="Admin" />
+                </el-form-item>
+                <el-form-item label="Email">
+                  <el-input v-model="userForm.mail" placeholder="admin@argon.com" />
+                </el-form-item>
+                <el-form-item label="Profile photo">
+                  <el-input placeholder="demo.png">
+                    <template #append>Browse</template>
+                  </el-input>
+                </el-form-item>
+                <el-form-item>
+                  <el-button type="success">Save</el-button>
+                </el-form-item>
+              </el-form>
+            </div>
+          </div>
+          <!-- Password -->
+          <div class="pass-info">
+            <h6>PASSWORD</h6>
+            <div class="pass-form">
+              <el-form :model="passForm" label-position="top" show-password>
+                <el-form-item label="Current Password">
+                  <el-input
+                    v-model="passForm.oldPass"
+                    type="password"
+                    placeholder="Current Password"
+                  />
+                </el-form-item>
+                <el-form-item label="New Password">
+                  <el-input v-model="passForm.newPass" type="password" placeholder="New Password" />
+                </el-form-item>
+                <el-form-item label="Confirm New Password">
+                  <el-input
+                    v-model="passForm.confirmPass"
+                    type="password"
+                    placeholder="Confirm New Password"
+                  />
+                </el-form-item>
+                <el-form-item>
+                  <el-button type="success">Change Password</el-button>
+                </el-form-item>
+              </el-form>
+            </div>
           </div>
         </el-card>
       </div>
     </div>
+    <!-- End edit profile -->
+
+    <!-- Right side -->
     <div class="col-right">
       <div class="grid grid-flow-row grid-cols-6 gap-7">
+        <!-- Admin card -->
         <div class="col-span-6">
           <el-card
             class="text-center border-slate-100"
@@ -145,32 +198,133 @@
             </div>
           </el-card>
         </div>
+        <!-- End admin -->
+
+        <!-- Progress track -->
         <div class="col-span-6">
           <el-card class="mb-7.5 border-none">
             <template #header>
               <h3 class="cursor-auto mb-0 text-card-title">Progress track</h3>
             </template>
             <div class="demo-progress">
-              <el-progress :percentage="50" />
-              <el-progress :percentage="10" />
-              <el-progress :percentage="30" />
-              <el-progress :percentage="40" />
-              <el-progress :percentage="50" />
+              <div class="flex flex-col gap-3">
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <el-link :underline="false" class="card-avatar-profile">
+                      <el-avatar
+                        :size="!isHover ? 48 : 48"
+                        @mouseover="hoverCheck(true)"
+                        @mouseleave="hoverCheck(false)"
+                        src="@/assets/images/tywin_lannister.jpg"
+                        class="transition-all border-white border-4"
+                      />
+                    </el-link>
+                  </div>
+                  <el-progress :percentage="20" :show-text="false" :color="customColors" />
+                </div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <el-link :underline="false" class="card-avatar-profile">
+                      <el-avatar
+                        :size="!isHover ? 48 : 48"
+                        @mouseover="hoverCheck(true)"
+                        @mouseleave="hoverCheck(false)"
+                        src="@/assets/images/tywin_lannister.jpg"
+                        class="transition-all border-white border-4"
+                      />
+                    </el-link>
+                  </div>
+                  <el-progress :percentage="20" :show-text="false" :color="customColors" />
+                </div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <el-link :underline="false" class="card-avatar-profile">
+                      <el-avatar
+                        :size="!isHover ? 48 : 48"
+                        @mouseover="hoverCheck(true)"
+                        @mouseleave="hoverCheck(false)"
+                        src="@/assets/images/tywin_lannister.jpg"
+                        class="transition-all border-white border-4"
+                      />
+                    </el-link>
+                  </div>
+                  <el-progress :percentage="20" :show-text="false" :color="customColors" />
+                </div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <el-link :underline="false" class="card-avatar-profile">
+                      <el-avatar
+                        :size="!isHover ? 48 : 48"
+                        @mouseover="hoverCheck(true)"
+                        @mouseleave="hoverCheck(false)"
+                        src="@/assets/images/tywin_lannister.jpg"
+                        class="transition-all border-white border-4"
+                      />
+                    </el-link>
+                  </div>
+                  <el-progress :percentage="20" :show-text="false" :color="customColors" />
+                </div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <el-link :underline="false" class="card-avatar-profile">
+                      <el-avatar
+                        :size="!isHover ? 48 : 48"
+                        @mouseover="hoverCheck(true)"
+                        @mouseleave="hoverCheck(false)"
+                        src="@/assets/images/tywin_lannister.jpg"
+                        class="transition-all border-white border-4"
+                      />
+                    </el-link>
+                  </div>
+                  <el-progress :percentage="20" :show-text="false" :color="customColors" />
+                </div>
+              </div>
             </div>
           </el-card>
         </div>
+        <!-- End progress track -->
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
-const format = (percentage) => (percentage === 100 ? 'Full' : `${percentage}%`)
+<script lang="ts">
+import { defineComponent, ref, reactive } from 'vue'
+
+export default defineComponent({
+  name: 'Profile',
+  components: {},
+  setup(_) {
+    const customColors = [
+      { color: '#f56c6c', percentage: 20 },
+      { color: '#e6a23c', percentage: 40 },
+      { color: '#5cb87a', percentage: 60 },
+      { color: '#1989fa', percentage: 80 },
+      { color: '#6f7ad3', percentage: 100 },
+    ]
+
+    const userForm = reactive({
+      name: '',
+      email: '',
+    })
+
+    const passForm = reactive({
+      oldPass: '',
+      newPass: '',
+      confirmPass: '',
+    })
+    return {
+      customColors,
+      userForm,
+      passForm,
+    }
+  },
+})
 </script>
 
 <style scoped>
 .demo-progress .el-progress--line {
   margin-bottom: 15px;
-  width: 350px;
+  width: 100%;
 }
 </style>
