@@ -342,7 +342,7 @@
 
         <div class="mt-7">
           <el-card class="" :body-style="{ padding: '0px' }">
-            <div class="text-white p-6 bg-gradient-to-r from-[#172b4d] to-[#1a174d]">
+            <div class="text-white p-6 bg-gradient-to-r from-default to-[#1a174d]">
               <div class="mb-4">
                 <h3 class="text-17 font-semimedium text-white">Testimonial</h3>
               </div>
