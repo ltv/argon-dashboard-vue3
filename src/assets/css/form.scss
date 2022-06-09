@@ -1,6 +1,6 @@
 body {
   .open-form {
-    @apply rounded-md w-[90%] sm:w-[380px] #{!important};
+    @apply rounded-md w-[90%] sm:w-[380px] shadow-lg drop-shadow-lg #{!important};
 
     .el-button.el-button--primary.el-button--default.sign-btn {
       @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
@@ -67,7 +67,7 @@ body {
     }
 
     .open-form-body {
-      @apply w-full p-6;
+      @apply w-full p-6 lg:p-12 #{!important};
     }
     .el-dialog__body {
       @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 flex flex-col text-center;
