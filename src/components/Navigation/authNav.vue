@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full md:h-[40px] lg:h-[56px] flex flex-nowrap basis-auto justify-between items-center mx-auto lg:px-3.375"
+    class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full lg:h-14 h-10 flex flex-nowrap basis-auto justify-between items-center mx-auto lg:px-3.375"
   >
     <div class="mr-9 pt-1.5">
       <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="#">
@@ -30,24 +30,16 @@
                 </div>
               </el-dropdown-item>
               <el-dropdown-item divided>
-                <div href="/" class="flex flex-col items-start gap-y-4 pt-4.5 pb-9">
-                  <el-link :underline="false" class="ml-1 py-px text-default font-medium">
+                <div class="flex flex-col items-start gap-y-4 pt-4.5 pb-9">
+                  <router-link to="/" class="ml-1 py-px text-default text-sm font-medium">
                     Dashboard
-                  </el-link>
-                  <el-link
-                    href="/login"
-                    :underline="false"
-                    class="ml-1 py-px text-default font-medium"
-                  >
+                  </router-link>
+                  <router-link to="/login" class="ml-1 py-px text-default text-sm font-medium">
                     Login
-                  </el-link>
-                  <el-link
-                    href="/register"
-                    :underline="false"
-                    class="ml-1 py-px text-default font-medium"
-                  >
+                  </router-link>
+                  <router-link to="/register" class="ml-1 py-px text-default text-sm font-medium">
                     Register
-                  </el-link>
+                  </router-link>
                 </div>
               </el-dropdown-item>
               <el-dropdown-item divided>
@@ -143,28 +135,28 @@
     <div class="hidden basis-auto lg:flex items-center w-full pb-0.5">
       <div class="flex flex-row mr-auto items-center gap-11 md:h-[40px] lg:h-[56px]">
         <div>
-          <el-link
-            :underline="false"
-            class="text-secondary hover:text-secondary-active font-normal"
+          <router-link
+            to="/"
+            class="text-secondary text-sm hover:text-secondary-active font-normal"
           >
             Dashboard
-          </el-link>
+          </router-link>
         </div>
         <div>
-          <el-link
-            :underline="false"
-            class="text-secondary hover:text-secondary-active font-normal"
+          <router-link
+            to="/login"
+            class="text-secondary text-sm hover:text-secondary-active font-normal"
           >
             Login
-          </el-link>
+          </router-link>
         </div>
         <div>
-          <el-link
-            :underline="false"
-            class="text-secondary hover:text-secondary-active font-normal"
+          <router-link
+            to="/register"
+            class="text-secondary text-sm hover:text-secondary-active font-normal"
           >
             Register
-          </el-link>
+          </router-link>
         </div>
       </div>
       <div class="flex flex-row items-center ml-auto gap-x-[21px] md:h-[40px] lg:h-[56px]">

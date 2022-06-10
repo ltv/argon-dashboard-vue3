@@ -1,55 +1,110 @@
 <template>
   <div v-if="!isAuthenticated">
-    <div class="relative w-full">
-      <el-card class="bg-secondary text-center pb-8">
-        <template #header>
-          <div class="text-muted text-center mt-2 mb-4"><small>Sign in with</small></div>
-          <div class="text-center pb-6">
-            <el-button class="el-button--secondary" href="#">
-              <img src="@/assets/images/github.png" alt="" class="h-4 w-4" />
-              <span class="pl-4 text-primary-blue">Github</span>
-            </el-button>
-            <el-button class="el-button--secondary" href="#">
-              <img src="@/assets/images/google.png" alt="" class="h-4 w-4" />
-              <span class="pl-4 text-primary-blue">Google</span>
-            </el-button>
+    <div
+      class="relative w-full bg-gradient-to-r from-left-bar-indigo to-[#825ee4] py-24 lg:py-32 lg:pt-40"
+    >
+      <div
+        class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.375"
+      >
+        <div class="text-center mb-12">
+          <div class="flex flex-wrap -mx-3.75 justify-center px-3.375">
+            <div class="md:flex-9 md:max-w-9/12 lg:flex-8 lg:max-w-2/3">
+              <h1 class="text-white font-semibold">
+                Welcome to Fancy Dashboard Pro Laravel Live Preview.
+              </h1>
+              <p class="text-light mt-4 mb-0">
+                Log in and see how you can save more than 150 hours of work with CRUDs for managing:
+                #users, #roles, #items, #categories, #tags and more.
+              </p>
+            </div>
+            <div class="md:flex-6 md:max-w-1/2 lg:flex-5 lg:max-w-5/12">
+              <h3 class="text-white mt-12 mb-0">
+                <span class="font-bold">You can log in with 3 user types:</span>
+              </h3>
+              <ul class="text-light mt-4 mb-0 pl-7.5">
+                <li v-for="(account, index) in accounts" :key="index" class="flex">
+                  <div class="px-2">{{ index }}.</div>
+                  <div class="w-full">
+                    Username <strong>{{ account }}</strong> Password <strong>secret</strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </template>
-        <div class="content-center items-center w-full p-6">
-          <el-form ref="form" :model="formData" :rules="rules" class="authentication-form">
-            <el-form-item class="mb-4 rounded-md" prop="username">
-              <div
-                class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-              >
-                <MailIcon class="w-4 h-3.5 text-mess-box-text" />
-              </div>
-              <el-input placeholder="Email" v-model="formData.username" />
-            </el-form-item>
-            <el-form-item class="mb-6 rounded-md" prop="password">
-              <div
-                class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-              >
-                <LockOpenIcon class="w-4 h-3.5 text-mess-box-text" />
-              </div>
-              <el-input type="password" placeholder="Password" v-model="formData.password" />
-            </el-form-item>
-            <el-form-item class="mb-4">
-              <el-checkbox class="text-mess-box-text">Remember me</el-checkbox>
-            </el-form-item>
-          </el-form>
-          <el-button type="primary" @click="handleLoginClick"> Sign in </el-button>
         </div>
-      </el-card>
-      <div class="flex pt-8">
-        <div class="text-sm text-left">
-          <router-link to="/forgot-password" class="text-[#ced4da] text-80 hover:text-[#b1bbc4]">
-            Forgot password?
-          </router-link>
-        </div>
-        <div class="text-sm ml-auto">
-          <router-link to="/forgot-password" class="text-[#ced4da] text-80 hover:text-[#b1bbc4]">
-            Create new account
-          </router-link>
+      </div>
+
+      <div class="absolute pointer-events-none overflow-hidden w-full top-auto bottom-0 inset-x-0">
+        <svg
+          x="0"
+          y="0"
+          viewBox="0 0 2560 100"
+          preserveAspectRatio="none"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <div
+      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-4"
+    >
+      <div class="relative lg:max-w-5/12 md:max-w-7/12 w-full mx-auto px-4 -mt-32">
+        <el-card class="bg-secondary text-center pb-8">
+          <template #header>
+            <div class="text-muted text-center mt-2 mb-4"><small>Sign in with</small></div>
+            <div class="pb-6 flex flex-nowrap text-center justify-center">
+              <el-button class="el-button--secondary" href="#">
+                <img src="@/assets/images/github.png" alt="" class="h-4 w-4" />
+                <span class="pl-4 text-primary-blue">Github</span>
+              </el-button>
+              <el-button class="el-button--secondary" href="#">
+                <img src="@/assets/images/google.png" alt="" class="h-4 w-4" />
+                <span class="pl-4 text-primary-blue">Google</span>
+              </el-button>
+            </div>
+          </template>
+          <div class="content-center items-center w-full p-6">
+            <el-form ref="form" :model="formData" :rules="rules" class="authentication-form">
+              <el-form-item class="warning-input mb-4 rounded-md" prop="email">
+                <div
+                  class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                >
+                  <div class="w-3.5 h-[13.76px]">
+                    <MailIcon class="w-4 h-4 text-[#adb5bd]" />
+                  </div>
+                </div>
+                <el-input placeholder="Email" v-model="formData.email" />
+              </el-form-item>
+              <el-form-item class="mb-6 rounded-md" prop="password">
+                <div
+                  class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                >
+                  <div class="w-3.5 h-[13.76px]">
+                    <LockOpenIcon class="w-4 h-4 text-[#adb5bd]" />
+                  </div>
+                </div>
+                <el-input type="password" placeholder="Password" v-model="formData.password" />
+              </el-form-item>
+              <el-form-item class="mb-4">
+                <el-checkbox class="text-mess-box-text">Remember me</el-checkbox>
+              </el-form-item>
+            </el-form>
+            <el-button type="primary" @click="handleLoginClick"> Sign in </el-button>
+          </div>
+        </el-card>
+        <div class="flex pt-8">
+          <div class="text-sm text-left">
+            <router-link to="/forgot-password" class="text-[#ced4da] text-80 hover:text-[#b1bbc4]">
+              Forgot password?
+            </router-link>
+          </div>
+          <div class="text-sm ml-auto">
+            <router-link to="/register" class="text-[#ced4da] text-80 hover:text-[#b1bbc4]">
+              Create new account
+            </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -70,9 +125,9 @@ export default defineComponent({
     const store = useStore()
 
     const isAuthenticated = computed<boolean>(() => store.auth.getAuthenticationState)
-    const formData = ref({ username: 'admin@gmail.com', password: '' })
+    const formData = ref({ email: 'admin@gmail.com', password: '' })
     const rules = ref({
-      username: [
+      email: [
         {
           required: true,
           message: 'These credentials do not match our records.',
@@ -96,55 +151,16 @@ export default defineComponent({
         console.log('err::: ', e)
       }
     }
-
+    const accounts: string[] = ['admin@fancy.com', 'creator@fancy.com', 'member@fancy.com']
     return {
       isAuthenticated,
       form,
       formData,
       rules,
+      accounts,
       handleLoginClick,
       handleKeyDown,
     }
   },
 })
 </script>
-
-<style lang="scss">
-.authentication-form {
-  .el-form-item:first-child .el-input__inner {
-    @apply placeholder:text-red-500;
-  }
-  .el-form-item__error {
-    @apply font-bold;
-  }
-  .el-input {
-    .el-input__inner {
-      @apply rounded-md shadow-md border-none h-[46px] pl-12 text-mess-box-text text-sm #{!important};
-      &:focus {
-        @apply border-none shadow-lg ring-0 #{!important};
-      }
-    }
-  }
-  .el-checkbox {
-    .el-checkbox__input {
-      @apply shadow-lg;
-    }
-    .el-checkbox__inner {
-      @apply rounded h-4 w-4 border-0 shadow #{!important};
-    }
-    .el-checkbox__inner::after {
-      @apply border-2 w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
-    }
-  }
-  .el-checkbox.is-checked {
-    .el-checkbox__input {
-      .el-checkbox__inner {
-        @apply bg-primary-blue border-primary-blue;
-      }
-    }
-    .el-checkbox__label {
-      @apply text-mess-box-text focus:border-transparent;
-    }
-  }
-}
-</style>

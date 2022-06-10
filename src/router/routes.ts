@@ -13,6 +13,8 @@ import {
 } from '@heroicons/vue/solid'
 
 const Login = () => import('modules/auth/views/login.vue')
+const Register = () => import('modules/auth/views/register.vue')
+const ForgotPassword = () => import('modules/auth/views/forgot-password.vue')
 const NotFound = () => import('modules/pages/views/404.vue')
 const Dashboard = () => import('modules/dashboard/views/index.vue')
 const Table = () => import('modules/table/views/index.vue')
@@ -116,6 +118,22 @@ const routes = [
     path: '/login',
     component: Login,
     name: 'login',
+    meta: {
+      requiresAuth: false,
+    },
+  },
+  {
+    path: '/register',
+    component: Register,
+    name: 'register',
+    meta: {
+      requiresAuth: false,
+    },
+  },
+  {
+    path: '/forgot-password',
+    component: ForgotPassword,
+    name: 'forgot-password',
     meta: {
       requiresAuth: false,
     },

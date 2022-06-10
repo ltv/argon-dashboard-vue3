@@ -326,7 +326,7 @@ export default defineComponent({
     const tableData: Project[] = [
       {
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
-        project: 'Argon Design System',
+        project: 'Fancy Design System',
         budget: '2500 ',
         status: 'pending',
         users: usersData,
@@ -334,7 +334,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
-        project: 'Argon Design System',
+        project: 'Fancy Design System',
         budget: '4000 ',
         status: 'completed',
         users: usersData,
@@ -342,7 +342,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
-        project: 'Argon',
+        project: 'Fancy',
         budget: '2500 ',
         status: 'delayed',
         users: usersData,
@@ -350,7 +350,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
-        project: 'Argon Design',
+        project: 'Fancy Design',
         budget: '3300 ',
         status: 'on schedule',
         users: usersData,
@@ -358,7 +358,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: 'src/assets/images/bootstrap.jpg',
-        project: 'Argon System',
+        project: 'Fancy System',
         budget: '3000 ',
         status: 'completed',
         users: usersData,

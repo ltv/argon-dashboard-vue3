@@ -241,7 +241,8 @@ module.exports = {
         'light': '0 0 0 1px rgb(0 0 0 / 10%)',
         'medium': '0 0 0 1px rgb(0 0 0 / 10%), 0 4px 16px rgb(0 0 0 / 10%)',
         'card': '0 0 2rem 0 rgba(136, 152, 170, 0.15)',
-        'button': '0 4px 6px rgb(50, 50, 93, 0.11), 0 1px 3px rgb(0, 0, 0 ,0.08)'
+        'button': '0 4px 6px rgb(50, 50, 93, 0.11), 0 1px 3px rgb(0, 0, 0 , 0.08)',
+        'form-input': '0 1px 3px rgb(50, 50, 93, 0.15), 0 1px 0 rgb(0, 0, 0, 0.08)'
       },
     },
     translate: {
