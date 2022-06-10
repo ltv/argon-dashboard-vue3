@@ -30,14 +30,22 @@
                 </div>
               </el-dropdown-item>
               <el-dropdown-item divided>
-                <div class="flex flex-col items-start gap-y-4 pt-4.5 pb-9">
+                <div href="/" class="flex flex-col items-start gap-y-4 pt-4.5 pb-9">
                   <el-link :underline="false" class="ml-1 py-px text-default font-medium">
                     Dashboard
                   </el-link>
-                  <el-link :underline="false" class="ml-1 py-px text-default font-medium">
+                  <el-link
+                    href="/login"
+                    :underline="false"
+                    class="ml-1 py-px text-default font-medium"
+                  >
                     Login
                   </el-link>
-                  <el-link :underline="false" class="ml-1 py-px text-default font-medium">
+                  <el-link
+                    href="/register"
+                    :underline="false"
+                    class="ml-1 py-px text-default font-medium"
+                  >
                     Register
                   </el-link>
                 </div>

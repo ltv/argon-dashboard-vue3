@@ -68,6 +68,9 @@
             <component :is="Component" class="py-1.25 lg:px-1.5 lg:pl-[6px]" />
           </div>
         </router-view>
+        <div class="w-full py-13 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
+          <AuthFooter />
+        </div>
       </div>
     </div>
   </div>

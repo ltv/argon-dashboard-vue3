@@ -136,7 +136,7 @@ export default defineComponent({
       @apply rounded h-4 w-4 border-0 shadow #{!important};
     }
     .el-checkbox__inner::after {
-      @apply border-2 w-0.5	h-[5px] mt-0.5 ml-[1.5px]  #{!important};
+      @apply border-2 w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
     }
   }
   .el-checkbox.is-checked {
