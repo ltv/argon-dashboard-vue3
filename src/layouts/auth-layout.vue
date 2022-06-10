@@ -20,8 +20,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue'
-import useStore from 'store'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   setup() {
