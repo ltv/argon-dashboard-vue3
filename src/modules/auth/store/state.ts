@@ -8,6 +8,7 @@ export const useState = defineStore({
   state: (): AuthState => {
     return {
       isAuthenticated: !!localStorage.getItem(AUTH_TOKEN),
+      isLoginPage: true,
     }
   },
 })

@@ -21,7 +21,7 @@
                   managing: #users, #roles, #items, #categories, #tags and more.
                 </p>
               </div>
-              <div class="md:flex-6 md:max-w-1/2 lg:flex-5 lg:max-w-5/12">
+              <div class="md:flex-6 md:max-w-1/2 lg:flex-5 lg:max-w-5/12" v-if="isLoginPage">
                 <h3 class="text-white mt-12 mb-0">
                   <span class="font-bold">You can log in with 3 user types:</span>
                 </h3>
@@ -56,7 +56,7 @@
       <div
         class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.375"
       >
-        <div class="relative z-100 lg:max-w-5/12 md:max-w-7/12 w-full mx-auto -mt-32 px-4">
+        <div class="relative z-100">
           <router-view v-slot="{ Component }">
             <component :is="Component" />
           </router-view>
@@ -72,12 +72,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
+import useStore from 'store'
 
 export default defineComponent({
   setup() {
+    const store = useStore()
     const accounts: string[] = ['admin@argon.com', 'creator@argon.com', 'member@argon.com']
-    return { accounts }
+    const isLoginPage = computed<boolean>(() => store.auth.isLoginPage)
+    return { accounts, isLoginPage }
   },
 })
 </script>
