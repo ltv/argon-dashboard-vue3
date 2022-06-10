@@ -13,12 +13,7 @@
     </div>
     <div class="relative inline-block lg:hidden w-11">
       <div class="flex items-center">
-        <el-dropdown
-          placement="bottom-end"
-          trigger="click"
-          popper-class="auth-menu-popper"
-          @visible-change="clickIconBell = !clickIconBell"
-        >
+        <el-dropdown placement="bottom-end" trigger="click" popper-class="auth-menu-popper">
           <MenuIcon class="cursor-pointer h-8 w-8 text-secondary" />
           <template #dropdown>
             <el-dropdown-menu>

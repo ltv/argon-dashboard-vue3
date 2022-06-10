@@ -51,10 +51,14 @@
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
-      <div class="absolute z-100 mx-auto inset-x-0 px-4 pb-20 w-max">
-        <router-view v-slot="{ Component }">
-          <component :is="Component" />
-        </router-view>
+      <div
+        class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.375"
+      >
+        <div class="lg:max-w-5/12 md:max-w-9/12 mx-auto absolute z-100 inset-x-0 px-4">
+          <router-view v-slot="{ Component }">
+            <component :is="Component" />
+          </router-view>
+        </div>
       </div>
     </div>
   </div>
