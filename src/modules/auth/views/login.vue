@@ -17,19 +17,23 @@
         </template>
         <div class="content-center items-center w-full p-6">
           <el-form ref="form" :model="formData" :rules="rules" class="authentication-form">
-            <el-form-item class="mb-4 rounded-md" prop="username">
+            <el-form-item class="warning-input mb-4 rounded-md" prop="email">
               <div
                 class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
               >
-                <MailIcon class="w-4 h-3.5 text-mess-box-text" />
+                <div class="w-3.5 h-[13.76px]">
+                  <MailIcon class="w-4 h-4 text-[#adb5bd]" />
+                </div>
               </div>
-              <el-input placeholder="Email" v-model="formData.username" />
+              <el-input placeholder="Email" v-model="formData.email" />
             </el-form-item>
             <el-form-item class="mb-6 rounded-md" prop="password">
               <div
                 class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
               >
-                <LockOpenIcon class="w-4 h-3.5 text-mess-box-text" />
+                <div class="w-3.5 h-[13.76px]">
+                  <LockOpenIcon class="w-4 h-4 text-[#adb5bd]" />
+                </div>
               </div>
               <el-input type="password" placeholder="Password" v-model="formData.password" />
             </el-form-item>
@@ -70,9 +74,9 @@ export default defineComponent({
     const store = useStore()
 
     const isAuthenticated = computed<boolean>(() => store.auth.getAuthenticationState)
-    const formData = ref({ username: 'admin@gmail.com', password: '' })
+    const formData = ref({ email: 'admin@gmail.com', password: '' })
     const rules = ref({
-      username: [
+      email: [
         {
           required: true,
           message: 'These credentials do not match our records.',
@@ -109,42 +113,4 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
-.authentication-form {
-  .el-form-item:first-child .el-input__inner {
-    @apply placeholder:text-red-500;
-  }
-  .el-form-item__error {
-    @apply font-bold;
-  }
-  .el-input {
-    .el-input__inner {
-      @apply rounded-md shadow-md border-none h-[46px] pl-12 text-mess-box-text text-sm #{!important};
-      &:focus {
-        @apply border-none shadow-lg ring-0 #{!important};
-      }
-    }
-  }
-  .el-checkbox {
-    .el-checkbox__input {
-      @apply shadow-lg;
-    }
-    .el-checkbox__inner {
-      @apply rounded h-4 w-4 border-0 shadow #{!important};
-    }
-    .el-checkbox__inner::after {
-      @apply border-2 w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
-    }
-  }
-  .el-checkbox.is-checked {
-    .el-checkbox__input {
-      .el-checkbox__inner {
-        @apply bg-primary-blue border-primary-blue;
-      }
-    }
-    .el-checkbox__label {
-      @apply text-mess-box-text focus:border-transparent;
-    }
-  }
-}
-</style>
+<style lang="scss"></style>

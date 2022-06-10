@@ -14,7 +14,7 @@
             <div class="flex flex-wrap -mx-3.75 justify-center">
               <div class="md:flex-9 md:max-w-9/12 lg:flex-8 lg:max-w-2/3 px-3.375">
                 <h1 class="text-white font-semibold">
-                  Welcome to Argon Dashboard Pro Laravel Live Preview.
+                  Welcome to Fancy Dashboard Pro Laravel Live Preview.
                 </h1>
                 <p class="text-light mt-4 mb-0">
                   Log in and see how you can save more than 150 hours of work with CRUDs for
@@ -78,7 +78,7 @@ import useStore from 'store'
 export default defineComponent({
   setup() {
     const store = useStore()
-    const accounts: string[] = ['admin@argon.com', 'creator@argon.com', 'member@argon.com']
+    const accounts: string[] = ['admin@fancy.com', 'creator@fancy.com', 'member@fancy.com']
     const isLoginPage = computed<boolean>(() => store.auth.isLoginPage)
     return { accounts, isLoginPage }
   },

@@ -88,4 +88,43 @@ body {
       @apply flex flex-wrap justify-center gap-0;
     }
   }
+  .authentication-form {
+    .el-form-item.warning-input .el-input__inner {
+      @apply placeholder:text-red-500;
+    }
+
+    .el-form-item__error {
+      @apply font-bold;
+    }
+
+    .el-input {
+      .el-input__inner {
+        @apply transition-all duration-300 rounded-md shadow-form-input border-none h-[46px] pl-12 text-mess-box-text text-sm placeholder:font-normal #{!important};
+        &:focus {
+          @apply border-none shadow-md ring-0 #{!important};
+        }
+      }
+    }
+    .el-checkbox {
+      .el-checkbox__input {
+        @apply shadow-lg;
+      }
+      .el-checkbox__inner {
+        @apply rounded h-4 w-4 border-0 shadow #{!important};
+      }
+      .el-checkbox__inner::after {
+        @apply border-2 w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
+      }
+    }
+    .el-checkbox.is-checked {
+      .el-checkbox__input {
+        .el-checkbox__inner {
+          @apply bg-primary-blue border-primary-blue;
+        }
+      }
+      .el-checkbox__label {
+        @apply text-mess-box-text focus:border-transparent;
+      }
+    }
+  }
 }
