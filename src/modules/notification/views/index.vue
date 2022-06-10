@@ -39,7 +39,7 @@
                 <el-button class="btn-open" type="primary" @click="openDefault = false"
                   >Save changes</el-button
                 >
-                <el-button class="btn-close" type="primary" @click="openDefault = false"
+                <el-button class="el-button--secondary" plain @click="openDefault = false"
                   >Close</el-button
                 >
               </span>
@@ -83,12 +83,12 @@
           <el-button type="default" class="w-full" @click="dialogFormVisible = true"
             >Form</el-button
           >
-          <el-dialog v-model="dialogFormVisible" custom-class="open-form">
-            <div class="open-form-header">
-              <div class="open-form-title">
+          <el-dialog v-model="dialogFormVisible" custom-class="shadow-form">
+            <div class="shadow-form-header">
+              <div class="shadow-form-title">
                 <small>Sign in with</small>
               </div>
-              <div class="open-form-header-body">
+              <div class="shadow-form-header-body">
                 <el-button type="primary" class="sign-btn" href="#">
                   <span class="sign-img"><img src="@/assets/images/github.png" alt="" /></span>
                   <span class="sign-text">Github</span>
@@ -99,8 +99,8 @@
                 </el-button>
               </div>
             </div>
-            <div class="open-form-body">
-              <div class="open-form-title">
+            <div class="shadow-form-body">
+              <div class="shadow-form-title">
                 <small class="block w-full">Or sign in with credentials</small>
               </div>
               <el-form :model="form">

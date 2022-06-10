@@ -141,7 +141,7 @@ body {
     @apply w-full flex justify-between;
   }
 
-  .el-dialog .el-button.btn-close {
+  .el-dialog .el-button.el-button--secondary.is-plain {
     @apply bg-transparent text-primary-blue hover:translate-y-0 border-transparent shadow-none #{!important};
   }
   .open-notification .btn1-close {

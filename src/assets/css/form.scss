@@ -1,6 +1,30 @@
 body {
-  .open-form {
-    @apply rounded-md w-[90%] sm:w-[380px] shadow-lg drop-shadow-lg #{!important};
+  // Default
+  hr {
+    @apply border-0 border-b-[1px] border-b-[#e9ecef] my-6;
+  }
+  .el-form-item__content:last-child {
+    @apply flex justify-center;
+  }
+  .el-form-item__content:last-child .el-button {
+    @apply mt-6;
+  }
+  .el-input__inner {
+    @apply h-[46px] rounded-[0.25rem] border border-form-input placeholder:text-muted text-sm;
+  }
+  .el-input-group__append {
+    @apply text-base text-muted bg-white font-normal;
+  }
+  .el-upload .el-input__inner {
+    @apply text-base font-medium placeholder:text-muted;
+  }
+  .el-input__inner:focus {
+    @apply border-[1px] outline-0 border-primary-blue ring-0 shadow-[0_3px_9px_transparent] drop-shadow-[3px_4px_8px_rgb(94,114,228,0.10)];
+  }
+
+  // Login form
+  .shadow-form {
+    @apply rounded-md w-[90%] sm:w-[380px] #{!important};
 
     .el-button.el-button--primary.el-button--default.sign-btn {
       @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
@@ -38,7 +62,7 @@ body {
       @apply w-full border-0 p-0 drop-shadow-sm;
     }
     .el-input.el-input--default .el-input__inner {
-      @apply h-[46px] p-0 text-sm rounded-none bg-white border-transparent focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
+      @apply h-[46px] p-0 text-sm rounded-none bg-white border-transparent placeholder:text-mess-box-text focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
     }
 
     .el-form-item.checkbox {
@@ -66,8 +90,8 @@ body {
       @apply border-[2.5px];
     }
 
-    .open-form-body {
-      @apply w-full p-6 lg:p-12 #{!important};
+    .shadow-form-body {
+      @apply w-full p-6;
     }
     .el-dialog__body {
       @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 flex flex-col text-center;
@@ -75,17 +99,20 @@ body {
     .el-dialog__header {
       @apply hidden;
     }
-    .open-form-header {
+    .shadow-form-header {
       @apply w-full pt-5 pb-12 border-b px-6;
     }
-    .open-form-title {
+    .shadow-form-title {
       @apply mb-4 mt-2 text-center;
     }
-    .open-form-title small {
+    .shadow-form-title small {
       @apply text-12.8 mb-6 #{!important};
     }
-    .open-form-header-body {
+    .shadow-form-header-body {
       @apply flex flex-wrap justify-center gap-0;
+    }
+    .el-form-item__content:last-child .el-button {
+      @apply mt-0;
     }
   }
   .authentication-form {
