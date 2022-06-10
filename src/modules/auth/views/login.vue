@@ -129,9 +129,6 @@ export default defineComponent({
     .el-checkbox__input {
       @apply shadow-lg;
     }
-    .el-checkbox__inner::after {
-      @apply border-[2px];
-    }
     .el-checkbox__inner {
       @apply rounded h-4 w-4 border-0 shadow #{!important};
     }
