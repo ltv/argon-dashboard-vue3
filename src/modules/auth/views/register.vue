@@ -103,7 +103,7 @@
               </el-checkbox>
             </el-form-item>
           </el-form>
-          <el-button type="primary" @click="handleLoginClick"> Create account </el-button>
+          <el-button type="primary"> Create account </el-button>
         </div>
       </el-card>
     </div>
