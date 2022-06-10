@@ -15,25 +15,25 @@
             </el-button>
           </div>
         </template>
-        <div class="content-center items-center w-[395px] p-6">
+        <div class="content-center items-center w-full p-6">
           <el-form ref="form" :model="formData" :rules="rules" class="authentication-form">
-            <el-form-item class="mb-6 rounded-md" prop="username">
+            <el-form-item class="mb-4 rounded-md" prop="username">
               <div
-                class="z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
+                class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
               >
-                <MailIcon class="w-4 h-4" />
+                <MailIcon class="w-4 h-3.5 text-mess-box-text" />
               </div>
               <el-input placeholder="Email" v-model="formData.username" />
             </el-form-item>
             <el-form-item class="mb-6 rounded-md" prop="password">
               <div
-                class="z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
+                class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
               >
-                <LockOpenIcon class="w-4 h-4" />
+                <LockOpenIcon class="w-4 h-3.5 text-mess-box-text" />
               </div>
               <el-input type="password" placeholder="Password" v-model="formData.password" />
             </el-form-item>
-            <el-form-item class="mb-6">
+            <el-form-item class="mb-4">
               <el-checkbox class="text-mess-box-text">Remember me</el-checkbox>
             </el-form-item>
           </el-form>
@@ -58,7 +58,7 @@
 <script lang="ts">
 import { defineComponent, computed, ref } from 'vue'
 import useStore from 'store'
-import { MailIcon, LockOpenIcon } from '@heroicons/vue/outline'
+import { MailIcon, LockOpenIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
   components: {
@@ -119,10 +119,21 @@ export default defineComponent({
   }
   .el-input {
     .el-input__inner {
-      @apply rounded-md shadow-md border-none h-[46px] pl-10 text-mess-box-text text-sm #{!important};
-      &:active:focus {
-        @apply border-none shadow-lg #{!important};
+      @apply rounded-md shadow-md border-none h-[46px] pl-12 text-mess-box-text text-sm #{!important};
+      &:focus {
+        @apply border-none shadow-lg ring-0 #{!important};
       }
+    }
+  }
+  .el-checkbox {
+    .el-checkbox__input {
+      @apply shadow-lg;
+    }
+    .el-checkbox__inner {
+      @apply rounded h-4 w-4 border-0 shadow #{!important};
+    }
+    .el-checkbox__inner::after {
+      @apply border-2 w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
     }
   }
   .el-checkbox.is-checked {
@@ -132,7 +143,7 @@ export default defineComponent({
       }
     }
     .el-checkbox__label {
-      @apply text-mess-box-text;
+      @apply text-mess-box-text focus:border-transparent;
     }
   }
 }
