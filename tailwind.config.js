@@ -2,6 +2,14 @@ module.exports = {
   important: true,
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      screens: {
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1200px',
+      },
+    },
     extend: {
       zIndex: {
         '100': '100',
@@ -14,6 +22,7 @@ module.exports = {
       },
       gap: {
         3.25: '13px',
+        4.5: '18px',
         7.5: '30px',
         8.5: '34px',
       },
@@ -45,6 +54,7 @@ module.exports = {
         6.5: '1.625rem',
         6.75: '1.438rem',
         7.5: '1.875rem',
+        9.5: '38px',
         72: '72px',
         8.5: '34px',
       },
@@ -53,6 +63,8 @@ module.exports = {
         2.75: '0.6875rem',
         3.75: '15px',
         4.5: '18px',
+        4.75: '19px',
+        5.5: '22px',
         7.5: '30px',
         15.5: '3.875rem',
         62.5: '15.625rem',
@@ -90,6 +102,10 @@ module.exports = {
         '85/100': '85%',
       },
       maxWidth: {
+        '1/3': '33.333333%',
+        '5/12': '41.666667%',
+        '1/2': '50%',
+        '9/12': '75%',
         '2/3': '66.666667%',
         600: '600px',
       },

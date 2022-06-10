@@ -1,13 +1,17 @@
 <template>
   <div class="relative w-full bg-default overflow-y-auto h-screen">
-    <AuthNavigation />
+    <div class="absolute w-full z-100 p-4 bg-transparent border-0">
+      <AuthNavigation />
+    </div>
     <div
-      class="relative bg-gradient-to-r from-left-bar-indigo to-[#825ee4] py-24 lg:py-32 lg:pt-40"
+      class="relative w-full bg-gradient-to-r from-left-bar-indigo to-[#825ee4] py-24 lg:py-32 lg:pt-40"
     >
-      <div class="lg:max-w-[1140px] md:max-w-[960px] sm:max-w-[720px] mx-auto px-3.375 w-full">
+      <div
+        class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.375"
+      >
         <div class="text-center mb-12">
           <div class="flex flex-wrap -mx-3.75 justify-center">
-            <div class="md:flex-9 md:max-w-9/12 lg:flex-8 lg:max-w-4/6">
+            <div class="md:flex-9 md:max-w-9/12 lg:flex-8 lg:max-w-2/3 px-3.375">
               <h1 class="text-white font-semibold">
                 Welcome to Argon Dashboard Pro Laravel Live Preview.
               </h1>
@@ -18,11 +22,11 @@
             </div>
             <div class="md:flex-6 md:max-w-1/2 lg:flex-5 lg:max-w-5/12">
               <h3 class="text-white mt-12 mb-0">
-                <strong>You can log in with 3 user types:</strong>
+                <span class="font-bold">You can log in with 3 user types:</span>
               </h3>
-              <ul class="text-light mt-4 mb-0">
+              <ul class="text-light mt-4 mb-0 pl-7.5">
                 <li v-for="(account, index) in accounts" :key="index" class="flex">
-                  {{ index }}.
+                  <div class="px-2">{{ index }}.</div>
                   <div class="w-full">
                     Username <strong>{{ account }}</strong> Password <strong>secret</strong>
                   </div>
@@ -47,7 +51,7 @@
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
-      <div class="absolute z-100 inset-x-0 md:inset-x-1/3 mt-2 pb-20">
+      <div class="absolute z-100 mx-auto inset-x-0 px-4 pb-20 w-max">
         <router-view v-slot="{ Component }">
           <component :is="Component" />
         </router-view>

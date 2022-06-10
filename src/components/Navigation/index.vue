@@ -60,7 +60,7 @@
               popper-class="notification-popper"
               @visible-change="clickIconBell = !clickIconBell"
             >
-              <div class="el-dropdown-link">
+              <div>
                 <el-icon
                   :size="20"
                   class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
