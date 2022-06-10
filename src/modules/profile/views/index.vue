@@ -312,7 +312,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive, toRefs } from 'vue'
+import { defineComponent, reactive } from 'vue'
 import imageUrl from '@/assets/images/team-3.jpg'
 import reactLogo from '@/assets/images/react.jpg'
 import sketchLogo from '@/assets/images/sketch.jpg'
@@ -341,12 +341,6 @@ export default defineComponent({
       newPass: '',
       confirmPass: '',
     })
-
-    // Images
-    // const state = reactive({
-    //   imageUrl: '@/assets/images/throne.jpg',
-    // })
-    // const { imageUrl } = toRefs(state)
 
     return {
       customColors,
