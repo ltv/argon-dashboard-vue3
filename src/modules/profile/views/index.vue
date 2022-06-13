@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full grid grid-cols-1 xl:grid xl:grid-cols-3 gap-7">
+  <div class="w-full grid grid-cols-1 gap-y-7 xl:grid xl:grid-cols-3 xl:gap-7">
     <!-- Left side -->
     <div class="col-span-2 col-left order-2 xl:order-none">
       <!-- Indicator section -->
@@ -147,7 +147,7 @@
     <!-- End edit profile -->
 
     <!-- Right side -->
-    <div class="col-right order-1 xl:order-none">
+    <div class="order-1 xl:order-none">
       <div class="grid grid-flow-row grid-cols-6 gap-7">
         <!-- Admin card -->
         <div class="col-span-6">
