@@ -73,9 +73,6 @@ body {
     .el-checkbox__inner {
       @apply rounded h-4 w-4 border-0 shadow #{!important};
     }
-    .el-checkbox__inner {
-      @apply rounded h-4 w-4 border-0 shadow #{!important};
-    }
     .el-checkbox__label {
       @apply text-mess-box-text font-normal focus:border-transparent;
     }
