@@ -19,12 +19,18 @@ export const useActions = defineStore('dashboard.actions', () => {
 
   const setIsSBPin = (value: boolean) => (state.isSBPin = value)
   const setIsSBOpen = (value: boolean) => (state.isSBOpen = value)
+  
   const toggleMenu = () => {
     if (window.innerWidth < 1024) {
       setIsSBOpen(!state.isSBOpen)
     } else {
       setIsSBPin(!state.isSBPin)
     }
+  }
+  
+  const actProfilePage = (value: boolean) => {
+    console.log("profilePage::: ", value)
+    state.isProfilePage = value
   }
 
   return {
@@ -33,5 +39,6 @@ export const useActions = defineStore('dashboard.actions', () => {
     setIsSBPin,
     setIsSBOpen,
     toggleMenu,
+    actProfilePage,
   }
 })

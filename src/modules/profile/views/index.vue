@@ -228,7 +228,9 @@
                 <h3 class="text-[13px] mt-6 font-semibold pb-2">
                   Solution Manager - Creative Tim Officer
                 </h3>
-                <h5 class="text-base text-[#525f7f] font-normal">University of Computer Science</h5>
+                <h5 class="text-base text-dark-lighter font-normal">
+                  University of Computer Science
+                </h5>
               </div>
             </div>
           </el-card>

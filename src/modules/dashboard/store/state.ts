@@ -8,6 +8,7 @@ export const useState = defineStore({
       welcomeText: 'Welcome to Dashboard! ...',
       isSBPin: true,
       isSBOpen: true,
+      isProfilePage: false,
     }
   },
 })
