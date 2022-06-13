@@ -6,8 +6,16 @@
       :class="`${!isSBPin ? 'ml-15.5' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
-      <div class="w-full h-[150px] relative bg-primary-blue border-none">
-        <div class="flex items-center py-5 mb-0 px-[15px] pr-[14px] md:px-[29px] md:pl-[30px] pt-6">
+      <div
+        class="w-full h-[150px] relative bg-transparent border-none"
+        :class="{
+          'bg-primary-blue': !route.meta.isDarkBackground,
+        }"
+      >
+        <div
+          class="flex items-center py-5 mb-0 px-[15px] pr-[14px] md:px-[29px] md:pl-[30px] pt-6"
+          v-if="!route.meta.isDarkBackground"
+        >
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
               <div class="text-white text-xl font-semibold inline-block pt-px">
@@ -64,9 +72,7 @@
         </div>
 
         <router-view v-slot="{ Component }">
-          <div class="px-4 md:px-7.5 lg:px-[28.5px]">
-            <component :is="Component" class="py-1.25 lg:px-1.5 lg:pl-[6px]" />
-          </div>
+          <component :is="Component" class="py-1.25 px-4 md:px-7.5 lg:px-[25px]" />
         </router-view>
         <div class="w-full py-13 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
           <AuthFooter />
@@ -92,8 +98,14 @@ export default defineComponent({
     const route: any = useRoute()
     const store = useStore()
     const isSBPin = computed<boolean>(() => store.dashboard.isSBPin)
+
     const setIsSBPin = (b: boolean) => store.dashboard.setIsSBPin(b)
-    return { isSBPin, setIsSBPin, route }
+    return {
+      isSBPin,
+      setIsSBPin,
+      route,
+      store,
+    }
   },
 })
 </script>

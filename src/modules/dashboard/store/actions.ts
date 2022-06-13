@@ -19,6 +19,7 @@ export const useActions = defineStore('dashboard.actions', () => {
 
   const setIsSBPin = (value: boolean) => (state.isSBPin = value)
   const setIsSBOpen = (value: boolean) => (state.isSBOpen = value)
+  
   const toggleMenu = () => {
     if (window.innerWidth < 1024) {
       setIsSBOpen(!state.isSBOpen)
@@ -26,6 +27,7 @@ export const useActions = defineStore('dashboard.actions', () => {
       setIsSBPin(!state.isSBPin)
     }
   }
+  
 
   return {
     showWelcomeText,

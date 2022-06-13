@@ -21,27 +21,27 @@
     <div class="xl:flex-6 xl:max-w-1/2">
       <div class="flex flex-wrap mb-0 pl-0 justify-center lg:justify-end gap-6">
         <div class="">
-          <a href="#" class="text-sm text-[#525f7f] hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
             >Creative Tim</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-[#525f7f] hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
             >Updivision</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-[#525f7f] hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
             >About Us</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-[#525f7f] hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
             >Blog</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-[#525f7f] hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
             >MIT License</a
           >
         </div>

@@ -1,6 +1,10 @@
 <template>
   <div
-    class="flex items-center mx-0 py-2 px-[13px] pl-[11px] md:px-[29px] shadow-sm bg-primary-blue h-[77px] md:h-19.75 border border-primary-blue border-b-slate-50/10"
+    class="flex items-center bg-default border mx-0 py-2 px-[13px] pl-[11px] md:px-[29px] shadow-sm h-[77px] md:h-19.75"
+    :class="{
+      'bg-primary-blue border-primary-blue border-b-slate-50/10': !route.meta.isDarkBackground,
+      'border-default border-b-cyan-30': route.meta.isDarkBackground,
+    }"
   >
     <div class="w-full items-center justify-between">
       <div class="w-full flex basis-auto items-center">
@@ -48,7 +52,10 @@
             <div class="flex items-center">
               <SearchCircleIcon
                 v-if="!isSBPin && isSearchOpen"
-                class="cursor-pointer w-4.5 h-4.5"
+                class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
+                :class="{
+                  'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                }"
                 @click="setSearchOpen(false)"
               />
             </div>
@@ -63,8 +70,11 @@
               <div>
                 <el-icon
                   :size="20"
-                  class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
-                  :class="{ 'text-slate-300': clickIconBell }"
+                  class="cursor-pointer w-4.5 h-4.5 primary-blue text-slate-50 hover:text-slate-300"
+                  :class="{
+                    'text-slate-300': clickIconBell,
+                    'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                  }"
                 >
                   <BellFilled />
                 </el-icon>
@@ -123,7 +133,10 @@
                 <el-icon
                   :size="20"
                   class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
-                  :class="{ 'text-slate-300': clickIconMenu }"
+                  :class="{
+                    'text-slate-300': clickIconMenu,
+                    'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                  }"
                 >
                   <Menu />
                 </el-icon>
@@ -324,9 +337,10 @@ import {
 } from '@element-plus/icons-vue'
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
 import useStore from 'store'
+import { useRoute } from 'vue-router'
 
 export default defineComponent({
-  name: 'Sidebar',
+  name: 'TopNav',
   components: {
     Search,
     BellFilled,
@@ -343,6 +357,7 @@ export default defineComponent({
     SearchCircleIcon,
   },
   setup() {
+    const route: any = useRoute()
     const store = useStore()
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
@@ -356,6 +371,7 @@ export default defineComponent({
     const closeSideMenu = () => {
       isSideMenuOpen.value = false
     }
+
     const isSBPin = computed(() => store.dashboard.isSBPin)
     const isSBOpen = computed(() => store.dashboard.isSBOpen)
 
@@ -378,6 +394,7 @@ export default defineComponent({
       clickIconBell,
       clickIconMenu,
       textInput,
+      route,
       handleLogoutClick,
       handleMenuClick,
       setSearchOpen,
@@ -392,7 +409,7 @@ export default defineComponent({
   :deep(.el-input) {
     @apply w-full;
     .el-input__inner {
-      @apply relative transition-all duration-200 pt-0.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
+      @apply relative transition-all duration-200 pt-2.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
       &:focus {
         @apply w-full sm:w-98 bg-white text-black border-indigo-400 #{!important};
       }

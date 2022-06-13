@@ -134,6 +134,9 @@ module.exports = {
       },
       colors: {
         default: '#172b4d',
+        cyan: {
+          30: 'rgb(233 236 239)'
+        },
         'card-title': '#32325d',
         'background-page': '#f8f9fe',
         'left-bar-yellow': '#ffd600',
@@ -165,6 +168,7 @@ module.exports = {
         dark: {
           DEFAULT: 'rgb(23 43 77)',
           light: 'rgb(28 52 93)',
+          lighter: 'rgb(82 95 127)' //#525f7f
         },
         light: {
           DEFAULT: 'rgb(206 212 218)',
