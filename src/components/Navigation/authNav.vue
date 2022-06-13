@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full lg:h-14 h-10 flex flex-nowrap basis-auto justify-between items-center mx-auto lg:px-3.375"
+    class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full lg:h-14 h-10 flex flex-nowrap basis-auto justify-between items-center mx-auto lg:px-3.75"
   >
     <div class="mr-9 pt-1.5">
       <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="#">

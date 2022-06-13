@@ -4,10 +4,10 @@
       class="relative w-full bg-gradient-to-r from-left-bar-indigo to-[#825ee4] py-24 lg:py-32 lg:pt-40"
     >
       <div
-        class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.375"
+        class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75"
       >
         <div class="text-center mb-12">
-          <div class="flex flex-wrap -mx-3.75 justify-center px-3.375">
+          <div class="flex flex-wrap -mx-3.75 justify-center px-3.75">
             <div class="md:flex-9 md:max-w-9/12 lg:flex-8 lg:max-w-2/3">
               <h1 class="text-white font-semibold">
                 Welcome to Fancy Dashboard Pro Laravel Live Preview.

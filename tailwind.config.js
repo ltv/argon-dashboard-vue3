@@ -10,11 +10,22 @@ module.exports = {
         xl: '1200px',
       },
     },
+    letterSpacing: {
+      tightest: '-.075em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
+      '0.625': '.0625rem',
+    },
     extend: {
       zIndex: {
         '100': '100',
       },
       flex: {
+        4: '0 0 33.333333%',
         5: '0 0 41.666667%',
         6: '0 0 50%',
         8: '0 0 66.666667%',
@@ -42,7 +53,7 @@ module.exports = {
         1.25: '5px',
         2.75: '0.6875rem',
         3.25: '13px',
-        3.375: '15px',
+        3.75: '15px',
         3.4: '16.5px',
         3.7: '0.975rem',
         4.25: '1rem',
