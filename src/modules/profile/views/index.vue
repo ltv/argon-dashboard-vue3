@@ -1,4 +1,15 @@
 <template>
+  <div class="background-url">
+    <span></span>
+    <div>
+      <h1 class="text-white text-[44px]">Hello Admin</h1>
+      <p class="text-white text-base">
+        This is your profile page. You can see the progress you've made with your work and manage
+        your projects or assigned tasks
+      </p>
+    </div>
+  </div>
+
   <div class="w-full grid grid-cols-1 gap-y-7 xl:grid xl:grid-cols-3 xl:gap-7">
     <!-- Left side -->
     <div class="col-span-2 col-left order-2 xl:order-none">
@@ -336,18 +347,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from 'vue'
+import { defineComponent, reactive, ref } from 'vue'
 import imageUrl from '@/assets/images/team-3.jpg'
 import reactLogo from '@/assets/images/react.jpg'
 import sketchLogo from '@/assets/images/sketch.jpg'
 import bootstrapLogo from '@/assets/images/bootstrap.jpg'
 import vueLogo from '@/assets/images/vue.jpg'
 import angularLogo from '@/assets/images/angular.jpg'
+import backGround from '@/assets/images/profile-cover.jpg'
 
 export default defineComponent({
   name: 'Profile',
   components: {},
   setup(_) {
+    const isHover = ref(false)
+    const hoverCheck = (b: boolean) => {
+      isHover.value = b
+    }
+
     const customColors = [
       { color: '#fb6340', percentage: 60 },
       { color: '#f5365c', percentage: 80 },
@@ -357,7 +374,7 @@ export default defineComponent({
 
     const userForm = reactive({
       name: '',
-      email: '',
+      mail: '',
     })
 
     const passForm = reactive({
@@ -376,6 +393,9 @@ export default defineComponent({
       sketchLogo,
       vueLogo,
       angularLogo,
+      isHover,
+      hoverCheck,
+      backGround,
     }
   },
 })
@@ -397,5 +417,8 @@ export default defineComponent({
 }
 .el-card__body .progress:last-child {
   @apply border-0 border-b-[#e9ecef] #{!important};
+}
+.background-url {
+  @apply bg-[url('@/assets/images/profile-cover.jpg')] #{!important};
 }
 </style>
