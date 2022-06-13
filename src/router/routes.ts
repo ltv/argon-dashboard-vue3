@@ -115,11 +115,14 @@ const routes = [
     },
   },
   {
-    path: '/login',
-    component: Login,
-    name: 'login',
+    path: '/profile',
+    component: Profile,
+    name: 'Profile',
     meta: {
-      requiresAuth: false,
+      title: 'Profile',
+      icon: StarIcon,
+      color: 'text-left-bar-red',
+      parentPath: 'Components',
     },
   },
   {
@@ -139,9 +142,10 @@ const routes = [
     },
   },
   {
-    path: '/profile',
-    component: Profile,
-    name: 'profile',
+    
+    path: '/login',
+    component: Login,
+    name: 'login',
     meta: {
       requiresAuth: false,
     },

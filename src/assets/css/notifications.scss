@@ -16,7 +16,7 @@ body {
   }
   // Alerts - Custom
   .el-alert.success {
-    @apply bg-success-noti;
+    @apply bg-success;
   }
   .el-alert.info {
     @apply bg-info-noti;
@@ -113,75 +113,63 @@ body {
     @apply text-white;
   }
 
-  // el-dialog -default
-  .el-dialog__header {
-    @apply p-5 h-[60px];
-  }
-  .el-dialog__title {
-    @apply inline-block text-1.0625 font-semibold h-[18.7px];
-  }
-  .el-dialog__headerbtn .el-dialog__close {
-    @apply h-5 w-5;
-  }
-
-  .el-dialog__body {
-    @apply break-normal p-6 mb-4;
-  }
-  .el-dialog__body .el-icon {
-    @apply text-base #{!important};
-  }
-  .el-dialog__body p {
-    @apply text-base leading-[1.7rem];
-  }
-
-  .el-dialog__footer {
-    @apply p-6;
-  }
-  .el-dialog__footer .dialog-footer {
-    @apply w-full flex justify-between;
-  }
-
-  .el-dialog .el-button.btn-close {
-    @apply bg-transparent text-primary-blue hover:translate-y-0 border-transparent shadow-none #{!important};
-  }
-  .open-notification .btn1-close {
-    @apply bg-transparent text-white border-transparent shadow-none hover:translate-y-0 hover:border-transparent #{!important};
-  }
-  .open-notification .el-button.el-button--default.btn1-close:active {
-    @apply bg-transparent #{!important};
-  }
-
-  .el-button.el-button--default span {
-    @apply will-change-transform;
-  }
-  .el-icon.el-dialog__close {
-    @apply text-slate-300 hover:text-slate-200 #{!important};
-  }
-
-  // el-dialog - notification
-  .open-notification {
+  // el-dialog - danger
+  .el-dialog.danger {
     @apply bg-gradient-to-r from-left-bar-red to-left-bar-red-light;
-  }
-  .open-notification .el-dialog__title,
-  .open-notification .el-dialog__body,
-  .open-notification .modal-heading,
-  .open-notification .modal-desc {
-    @apply text-white break-normal #{!important};
-  }
-  .open-notification .el-dialog__body .el-icon {
-    @apply text-5xl text-center #{!important};
-  }
-  .open-notification .modal-body {
-    @apply text-center py-4;
-  }
-  .open-notification .modal-heading {
-    @apply mt-6 mb-2 uppercase;
-  }
-  .open-notification .btn-open {
-    @apply bg-white text-black will-change-transform  #{!important};
+    .el-dialog__title,
+    .el-dialog__body {
+      @apply text-white break-normal #{!important};
+    }
+    .el-dialog__body .el-icon {
+      @apply text-5xl text-center #{!important};
+    }
+
+    .el-button.el-button--danger {
+      @apply bg-transparent text-white border-transparent shadow-none hover:translate-y-0 hover:border-transparent #{!important};
+    }
   }
 
+  // el-dialog -default
   .el-dialog {
     @apply w-97/100 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-[32.95%] rounded-md #{!important};
+
+    .el-button {
+      @apply will-change-transform;
+    }
+
+    .el-dialog__header {
+      @apply p-5 h-[60px];
+    }
+    .el-dialog__title {
+      @apply inline-block text-1.0625 font-semibold h-[18.7px];
+    }
+    .el-dialog__headerbtn .el-dialog__close {
+      @apply h-5 w-5;
+    }
+
+    .el-dialog__body {
+      @apply break-normal p-6 mb-4;
+    }
+    .el-dialog__body .el-icon {
+      @apply text-base #{!important};
+    }
+    .el-dialog__body p {
+      @apply text-base leading-[1.7rem];
+    }
+
+    .el-dialog__footer {
+      @apply p-6;
+    }
+    .el-dialog__footer .dialog-footer {
+      @apply w-full flex justify-between;
+    }
+
+    .el-button.el-button--secondary.is-plain {
+      @apply bg-transparent text-primary-blue hover:translate-y-0 border-transparent shadow-none hover:bg-transparent #{!important};
+    }
+
+    .el-icon.el-dialog__close {
+      @apply text-slate-300 hover:text-slate-200 #{!important};
+    }
   }
 }

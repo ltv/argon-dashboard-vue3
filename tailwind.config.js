@@ -156,6 +156,10 @@ module.exports = {
         'mess-box-text': '#8898aa',
         'mess-box-bg': '#f7fafc',
         'el-form-input': '#E8F0FE',
+        'indicator-cyan': '#11cdef',
+        'indicator-blue': '#1171ef',
+        'indicator-slate': '#ced4da',
+        'form-input': '#dee2e6',
         normal: 'rgb(82 95 127)',
         'overlay': '#00000033',
         dark: {
