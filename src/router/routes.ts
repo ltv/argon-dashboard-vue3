@@ -6,6 +6,7 @@ import {
   HomeIcon,
   ViewBoardsIcon,
   BellIcon,
+  LocationMarkerIcon
 } from '@heroicons/vue/outline'
 
 import {
@@ -141,10 +142,10 @@ const routes = [
     name: 'Map',
     meta: {
       title: 'Map',
-      icon: StarIcon,
+      icon: LocationMarkerIcon,
       color: 'text-left-bar-red',
       parentPath: 'Components',
-      isDarkBackground: true,
+      isDarkBackground: false,
     },
   },
   {
