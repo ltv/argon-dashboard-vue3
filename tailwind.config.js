@@ -160,7 +160,6 @@ module.exports = {
         'indicator-blue': '#1171ef',
         'indicator-slate': '#ced4da',
         'form-input': '#dee2e6',
-        'bg-white': '#fff',
         normal: 'rgb(82 95 127)',
         'overlay': '#00000033',
         dark: {

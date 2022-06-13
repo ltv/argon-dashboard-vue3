@@ -22,51 +22,56 @@ body {
     @apply border-[1px] outline-0 border-primary-blue ring-0 shadow-[0_3px_9px_transparent] drop-shadow-[3px_4px_8px_rgb(94,114,228,0.10)];
   }
 
-  // Login form
-  .shadow-form {
+  .el-upload.el-upload--text {
+    @apply w-full #{!important};
+  }
+  .el-form-item__label {
+    @apply font-semibold;
+  }
+
+  // Notification - Form popup
+  .el-dialog.sign-in {
     @apply rounded-md w-[90%] sm:w-[380px] #{!important};
+
+    .el-dialog__body {
+      @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 text-center;
+    }
+    .el-dialog__header {
+      @apply hidden;
+    }
 
     .el-button.el-button--primary.el-button--default.sign-btn {
       @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
     }
-    .el-button img {
-      @apply h-5 w-5;
-    }
-    .el-button.el-button--default span .sign-img,
-    .el-button.el-button--default span .sign-text {
+
+    .el-button.el-button--default span {
       @apply p-0 #{!important};
     }
-    .el-button.el-button--default span .sign-text {
-      @apply ml-[14px] #{!important};
-    }
-    .btn span {
-      @apply font-semibold text-left-bar-indigo hover:text-black;
-    }
+  }
 
-    .el-form.el-form--default {
-      @apply flex flex-col items-center;
-    }
-
+  // Shadow form
+  .el-form.el-form--default.shadow-form {
     .el-form-item {
-      @apply shadow rounded overflow-hidden;
+      @apply rounded;
     }
-
-    .el-form .form-icon {
-      @apply bg-white flex-none text-lg px-3 py-[10px] leading-[1.6rem] #{!important};
+    .el-form-item__content .el-icon {
+      @apply block flex-none text-lg leading-[1.6rem] mx-2.5 #{!important};
     }
     .el-input.el-input--default {
       @apply flex-1;
     }
-
-    .el-form-item.el-form-item--default.form-input {
+    .el-form-item.el-form-item--default {
       @apply w-full border-0 p-0 drop-shadow-sm;
     }
     .el-input.el-input--default .el-input__inner {
-      @apply h-[46px] p-0 text-sm rounded-none bg-white border-transparent placeholder:text-mess-box-text focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
+      @apply h-[46px] p-0 text-sm rounded bg-white border-transparent placeholder:text-mess-box-text focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
     }
 
-    .el-form-item.checkbox {
-      @apply self-start shadow-none mt-[9px] #{!important};
+    .el-form-item.el-form-item--default.checkbox .el-form-item__content {
+      @apply flex-none;
+    }
+    .el-checkbox__inner {
+      @apply rounded h-4 w-4 border-0 shadow #{!important};
     }
     .el-checkbox__inner {
       @apply rounded h-4 w-4 border-0 shadow #{!important};
@@ -88,31 +93,6 @@ body {
     }
     .el-checkbox__inner::after {
       @apply border-[2.5px];
-    }
-
-    .shadow-form-body {
-      @apply w-full p-6;
-    }
-    .el-dialog__body {
-      @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 flex flex-col text-center;
-    }
-    .el-dialog__header {
-      @apply hidden;
-    }
-    .shadow-form-header {
-      @apply w-full pt-5 pb-12 border-b px-6;
-    }
-    .shadow-form-title {
-      @apply mb-4 mt-2 text-center;
-    }
-    .shadow-form-title small {
-      @apply text-12.8 mb-6 #{!important};
-    }
-    .shadow-form-header-body {
-      @apply flex flex-wrap justify-center gap-0;
-    }
-    .el-form-item__content:last-child .el-button {
-      @apply mt-0;
     }
   }
   .authentication-form {

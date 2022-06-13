@@ -47,7 +47,7 @@
           </el-dialog>
         </div>
 
-        <!-- Modal - Notifications -->
+        <!-- Modal - Danger -->
         <div class="w-full">
           <el-button type="warning" class="w-full" @click="openNotification = true"
             >Notification</el-button
@@ -55,19 +55,19 @@
           <el-dialog
             v-model="openNotification"
             title="Your attention is required"
-            custom-class="open-notification"
+            custom-class="danger"
           >
-            <div class="modal-body">
+            <div class="text-center py-4 text-white break-normal">
               <el-icon><BellIcon /></el-icon>
-              <h4 class="modal-heading">You should read this!</h4>
-              <p class="modal-desc">
+              <h4 class="text-white mt-6 mb-2 uppercase break-normal">You should read this!</h4>
+              <p class="text-white break-normal">
                 A small river named Duden flows by their place and supplies it with the necessary
                 regelialia.
               </p>
             </div>
             <template #footer>
               <span class="dialog-footer">
-                <el-button class="btn-open" type="danger" @click="openNotification = false"
+                <el-button class="el-button--secondary" @click="openNotification = false"
                   >Ok, got it</el-button
                 >
                 <el-button class="btn1-close" type="danger" @click="openNotification = false"
@@ -83,43 +83,39 @@
           <el-button type="default" class="w-full" @click="dialogFormVisible = true"
             >Form</el-button
           >
-          <el-dialog v-model="dialogFormVisible" custom-class="shadow-form">
-            <div class="shadow-form-header">
-              <div class="shadow-form-title">
-                <small>Sign in with</small>
+          <el-dialog v-model="dialogFormVisible" custom-class="sign-in">
+            <div class="w-full pt-5 pb-12 border-b px-6">
+              <div class="mb-4 mt-2 text-center">
+                <small class="text-12.8 mb-6">Sign in with</small>
               </div>
-              <div class="shadow-form-header-body">
+              <div class="flex flex-wrap justify-center gap-0">
                 <el-button type="primary" class="sign-btn" href="#">
-                  <span class="sign-img"><img src="@/assets/images/github.png" alt="" /></span>
-                  <span class="sign-text">Github</span>
+                  <span><img class="h-5 w-5" src="@/assets/images/github.png" alt="" /></span>
+                  <span class="ml-[14px]">Github</span>
                 </el-button>
                 <el-button type="primary" class="sign-btn" href="#">
-                  <span class="sign-img"><img src="@/assets/images/google.png" alt="" /></span>
-                  <span class="sign-text">Google</span>
+                  <span><img class="h-5 w-5" src="@/assets/images/google.png" alt="" /></span>
+                  <span class="ml-[14px]">Google</span>
                 </el-button>
               </div>
             </div>
-            <div class="shadow-form-body">
-              <div class="shadow-form-title">
-                <small class="block w-full">Or sign in with credentials</small>
+            <div class="w-full p-6 xl:p-12">
+              <div class="mb-4 mt-2 text-center">
+                <small class="block w-full text-12.8 mb-6">Or sign in with credentials</small>
               </div>
-              <el-form :model="form">
+              <el-form :model="form" class="shadow-form">
                 <!-- Email -->
                 <el-form-item class="form-input" prop="MailIcon">
-                  <div class="form-icon">
-                    <el-icon>
-                      <component :is="form.MailIcon" />
-                    </el-icon>
-                  </div>
+                  <el-icon>
+                    <component :is="form.MailIcon" />
+                  </el-icon>
                   <el-input v-model="form.email" placeholder="Email" />
                 </el-form-item>
                 <!-- Password -->
                 <el-form-item class="form-input" prop="LockClosedIcon">
-                  <div class="form-icon">
-                    <el-icon>
-                      <component :is="form.LockClosedIcon" />
-                    </el-icon>
-                  </div>
+                  <el-icon>
+                    <component :is="form.LockClosedIcon" />
+                  </el-icon>
                   <el-input v-model="form.password" placeholder="Password" />
                 </el-form-item>
 
