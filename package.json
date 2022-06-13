@@ -31,6 +31,7 @@
     "vue": "^3.2.27",
     "vue-router": "^4.0.8",
     "vue-sweetalert2": "^5.0.5",
+    "vue3-google-map": "^0.13.0",
     "vuex": "^4.0.2",
     "yup": "^0.32.9"
   },
