@@ -6,7 +6,6 @@
       :center="center"
       :zoom="15"
     >
-      <!-- <Marker :options="{ position: center }" /> -->
       <Marker :options="markerOptions" />
     </GoogleMap>
   </div>
