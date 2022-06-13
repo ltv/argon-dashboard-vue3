@@ -9,12 +9,12 @@
       <div
         class="w-full h-[150px] relative bg-transparent border-none"
         :class="{
-          'bg-primary-blue': !isProfilePage,
+          'bg-primary-blue': !route.meta.isDarkBackground,
         }"
       >
         <div
           class="flex items-center py-5 mb-0 px-[15px] pr-[14px] md:px-[29px] md:pl-[30px] pt-6"
-          v-if="!isProfilePage"
+          v-if="!route.meta.isDarkBackground"
         >
           <div class="w-full flex flex-wrap flex-row">
             <div class="flex w-1/2">
@@ -98,13 +98,13 @@ export default defineComponent({
     const route: any = useRoute()
     const store = useStore()
     const isSBPin = computed<boolean>(() => store.dashboard.isSBPin)
-    const isProfilePage = computed<boolean>(() => store.dashboard.isProfilePage)
+
     const setIsSBPin = (b: boolean) => store.dashboard.setIsSBPin(b)
     return {
       isSBPin,
       setIsSBPin,
       route,
-      isProfilePage,
+      store,
     }
   },
 })

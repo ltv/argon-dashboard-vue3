@@ -28,10 +28,6 @@ export const useActions = defineStore('dashboard.actions', () => {
     }
   }
   
-  const actProfilePage = (value: boolean) => {
-    console.log("profilePage::: ", value)
-    state.isProfilePage = value
-  }
 
   return {
     showWelcomeText,
@@ -39,6 +35,5 @@ export const useActions = defineStore('dashboard.actions', () => {
     setIsSBPin,
     setIsSBOpen,
     toggleMenu,
-    actProfilePage,
   }
 })

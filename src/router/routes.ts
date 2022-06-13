@@ -35,6 +35,7 @@ const routes = [
       icon: HomeIcon,
       color: 'text-left-bar-indigo',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -45,7 +46,8 @@ const routes = [
       title: 'Buttons',
       icon: CursorClickIcon,
       color: 'text-left-bar-rose',
-      parentPath: 'Components'
+      parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -57,6 +59,7 @@ const routes = [
       icon: BellIcon,
       color: 'text-left-bar-green',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -68,6 +71,7 @@ const routes = [
       icon: ViewBoardsIcon,
       color: 'text-left-bar-indigo',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -79,6 +83,7 @@ const routes = [
       icon: ViewGridIcon,
       color: 'text-left-bar-cyan',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -90,6 +95,7 @@ const routes = [
       icon: DocumentTextIcon,
       color: 'text-left-bar-yellow',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -101,6 +107,7 @@ const routes = [
       icon: CreditCardIcon,
       color: 'text-left-bar-orange',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -112,6 +119,7 @@ const routes = [
       icon: StarIcon,
       color: 'text-left-bar-red',
       parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
@@ -123,6 +131,7 @@ const routes = [
       icon: StarIcon,
       color: 'text-left-bar-red',
       parentPath: 'Components',
+      isDarkBackground: true,
     },
   },
   {

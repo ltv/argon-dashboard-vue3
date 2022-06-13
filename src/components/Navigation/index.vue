@@ -2,8 +2,8 @@
   <div
     class="flex items-center bg-default border mx-0 py-2 px-[13px] pl-[11px] md:px-[29px] shadow-sm h-[77px] md:h-19.75"
     :class="{
-      'bg-primary-blue border-primary-blue border-b-slate-50/10': !isProfilePage,
-      'border-default border-b-cyan-30': isProfilePage,
+      'bg-primary-blue border-primary-blue border-b-slate-50/10': !route.meta.isDarkBackground,
+      'border-default border-b-cyan-30': route.meta.isDarkBackground,
     }"
   >
     <div class="w-full items-center justify-between">
@@ -53,7 +53,9 @@
               <SearchCircleIcon
                 v-if="!isSBPin && isSearchOpen"
                 class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
-                :class="{ 'text-dark-lighter hover:text-primary-blue': isProfilePage }"
+                :class="{
+                  'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                }"
                 @click="setSearchOpen(false)"
               />
             </div>
@@ -71,7 +73,7 @@
                   class="cursor-pointer w-4.5 h-4.5 primary-blue text-slate-50 hover:text-slate-300"
                   :class="{
                     'text-slate-300': clickIconBell,
-                    'text-dark-lighter hover:text-primary-blue': isProfilePage,
+                    'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
                   }"
                 >
                   <BellFilled />
@@ -133,7 +135,7 @@
                   class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
                   :class="{
                     'text-slate-300': clickIconMenu,
-                    'text-dark-lighter hover:text-primary-blue': isProfilePage,
+                    'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
                   }"
                 >
                   <Menu />
@@ -335,6 +337,7 @@ import {
 } from '@element-plus/icons-vue'
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
 import useStore from 'store'
+import { useRoute } from 'vue-router'
 
 export default defineComponent({
   name: 'TopNav',
@@ -354,13 +357,13 @@ export default defineComponent({
     SearchCircleIcon,
   },
   setup() {
+    const route: any = useRoute()
     const store = useStore()
     const isPagesMenuOpen = ref(false)
     const isSideMenuOpen = ref(false)
     const isSearchOpen = ref(true)
     const clickIconBell = ref(false)
     const clickIconMenu = ref(false)
-    const isProfilePage = computed<boolean>(() => store.dashboard.isProfilePage)
     const textInput = ref('')
     const togglePagesMenu = () => {
       isSideMenuOpen.value = !isSideMenuOpen.value
@@ -368,6 +371,7 @@ export default defineComponent({
     const closeSideMenu = () => {
       isSideMenuOpen.value = false
     }
+
     const isSBPin = computed(() => store.dashboard.isSBPin)
     const isSBOpen = computed(() => store.dashboard.isSBOpen)
 
@@ -390,7 +394,7 @@ export default defineComponent({
       clickIconBell,
       clickIconMenu,
       textInput,
-      isProfilePage,
+      route,
       handleLogoutClick,
       handleMenuClick,
       setSearchOpen,
