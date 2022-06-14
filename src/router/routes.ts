@@ -6,7 +6,8 @@ import {
   HomeIcon,
   ViewBoardsIcon,
   BellIcon,
-  LocationMarkerIcon
+  LocationMarkerIcon,
+  UserIcon
 } from '@heroicons/vue/outline'
 
 import {
@@ -130,7 +131,7 @@ const routes = [
     name: 'Profile',
     meta: {
       title: 'Profile',
-      icon: StarIcon,
+      icon: UserIcon,
       color: 'text-left-bar-red',
       parentPath: 'Components',
       isDarkBackground: true,

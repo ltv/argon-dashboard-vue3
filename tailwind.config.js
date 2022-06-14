@@ -218,6 +218,10 @@ module.exports = {
         webkit: {
           DEFAULT: '-webkit-focus-ring-color',
         },
+        indigo: {
+          850: "#172b4d",
+          950: "#1a174d"
+        },
       },
       fontSize: {
         0.625: ['0.625rem', '1.5'],
