@@ -1,8 +1,10 @@
 <template>
-  <div class="background-url">
-    <span></span>
-    <div>
-      <h1 class="text-white text-[44px]">Hello Admin</h1>
+  <div class="background-url bg-top bg-cover pt-[100px] pb-[300px] px-[30px] relative">
+    <span
+      class="absolute block w-full inset-0 opacity-90 bg-gradient-to-r from-indigo-850 to-indigo-950"
+    ></span>
+    <div class="max-w-[38%] z-10 absolute top-1/3">
+      <h1 class="text-white text-[2.75rem]">Hello Admin</h1>
       <p class="text-white text-base">
         This is your profile page. You can see the progress you've made with your work and manage
         your projects or assigned tasks
@@ -10,7 +12,9 @@
     </div>
   </div>
 
-  <div class="w-full grid grid-cols-1 gap-y-7 xl:grid xl:grid-cols-3 xl:gap-7">
+  <div
+    class="w-[93%] mx-auto grid grid-cols-1 gap-y-7 xl:w-[96%] xl:grid xl:grid-cols-3 xl:gap-7 mt-[-5%]"
+  >
     <!-- Left side -->
     <div class="col-span-2 col-left order-2 xl:order-none">
       <!-- Indicator section -->
