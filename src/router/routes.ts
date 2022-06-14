@@ -6,6 +6,7 @@ import {
   HomeIcon,
   ViewBoardsIcon,
   BellIcon,
+  LocationMarkerIcon
 } from '@heroicons/vue/outline'
 
 import {
@@ -25,6 +26,7 @@ const Typography = () => import('modules/typography/views/index.vue')
 const Card = () => import('modules/cards/views/index.vue')
 const Icons = () => import('modules/icons/views/index.vue')
 const Profile = () => import('modules/profile/views/index.vue')
+const Map = () => import('modules/map/views/index.vue')
 const routes = [
   {
     path: '/',
@@ -132,6 +134,18 @@ const routes = [
       color: 'text-left-bar-red',
       parentPath: 'Components',
       isDarkBackground: true,
+    },
+  },
+  {
+    path: '/map',
+    component: Map,
+    name: 'Map',
+    meta: {
+      title: 'Map',
+      icon: LocationMarkerIcon,
+      color: 'text-left-bar-red',
+      parentPath: 'Components',
+      isDarkBackground: false,
     },
   },
   {
