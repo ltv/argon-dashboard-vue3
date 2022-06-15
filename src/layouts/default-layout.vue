@@ -74,7 +74,7 @@
         <router-view v-slot="{ Component }">
           <component :is="Component" class="py-1.25 px-4 md:px-7.5 lg:px-[25px]" />
         </router-view>
-        <div class="w-full py-13 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
+        <div class="w-full py-8 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
           <AuthFooter />
         </div>
       </div>

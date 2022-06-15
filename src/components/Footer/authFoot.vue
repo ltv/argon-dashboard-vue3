@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap items-center md:justify-between w-full">
-    <div class="xl:flex-6 xl:max-w-1/2">
+    <div class="xl:flex-6 xl:max-w-1/2 mx-auto md:mx-0">
       <div class="text-center lg:text-left text-muted">
         © 2022
         <a
@@ -18,7 +18,7 @@
         >
       </div>
     </div>
-    <div class="xl:flex-6 xl:max-w-1/2">
+    <div class="xl:flex-6 xl:max-w-1/2 mx-auto md:mx-0">
       <div class="flex flex-wrap mb-0 pl-0 justify-center lg:justify-end gap-6">
         <div class="">
           <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
