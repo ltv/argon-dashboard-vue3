@@ -110,7 +110,7 @@ export default defineComponent({
             display: true,
             drawOnChartArea: true,
             drawTicks: false,
-            color: 'rgba(30, 35, 53, 1)',
+            color: 'rgba(29,140,248,0.1)',
             borderDash: [2, 2],
           },
           ticks: {
