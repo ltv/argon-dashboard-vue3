@@ -102,6 +102,11 @@ export default defineComponent({
               style: 'normal',
               lineHeight: 2,
             },
+            callback: function (value: number) {
+              if (!(value % 10)) {
+                return '$' + value + 'k'
+              }
+            },
           },
         },
         y: {
@@ -115,8 +120,8 @@ export default defineComponent({
           },
           ticks: {
             display: true,
-            padding: 10,
             color: 'rgb(136 152 170)',
+            padding: 20,
             font: {
               size: 12,
               family: 'Open Sans',
