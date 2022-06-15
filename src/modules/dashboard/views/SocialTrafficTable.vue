@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref } from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'SocialTrafficTable',
