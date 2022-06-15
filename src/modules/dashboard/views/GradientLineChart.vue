@@ -82,19 +82,28 @@ export default defineComponent({
     }))
 
     const chartOptions = ref({
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          display: false,
-        },
-      },
-      interaction: {
-        intersect: false,
-        mode: 'index',
-      },
-
       scales: {
+        x: {
+          grid: {
+            drawBorder: false,
+            display: false,
+            drawOnChartArea: false,
+            drawTicks: false,
+            zeroLineColor: 'transparent',
+            borderDash: [5, 5],
+          },
+          ticks: {
+            display: true,
+            color: 'rgb(136 152 170)',
+            padding: 20,
+            font: {
+              size: 12,
+              family: 'Open Sans',
+              style: 'normal',
+              lineHeight: 2,
+            },
+          },
+        },
         y: {
           grid: {
             drawBorder: false,
@@ -121,27 +130,17 @@ export default defineComponent({
             },
           },
         },
-        x: {
-          grid: {
-            drawBorder: false,
-            display: false,
-            drawOnChartArea: false,
-            drawTicks: false,
-            zeroLineColor: 'transparent',
-            borderDash: [5, 5],
-          },
-          ticks: {
-            display: true,
-            color: 'rgb(136 152 170)',
-            padding: 20,
-            font: {
-              size: 12,
-              family: 'Open Sans',
-              style: 'normal',
-              lineHeight: 2,
-            },
-          },
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false,
         },
+      },
+      interaction: {
+        intersect: false,
+        mode: 'index',
       },
     })
 
