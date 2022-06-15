@@ -10,17 +10,7 @@
           <GradientLineChart />
         </div>
         <div class="lg:flex-4 lg:max-w-1/3 w-full lg:pl-3.5">
-          <el-card>
-            <template #header>
-              <div class="flex flex-wrap items-center -mx-3.75">
-                <div class="max-w-full basis-0 grow">
-                  <h6 class="uppercase text-muted tracking-0.625 mb-1">Performance</h6>
-                  <h2 class="mb-0">Total orders</h2>
-                </div>
-              </div>
-            </template>
-            <div class="card-body">NewComponent</div>
-          </el-card>
+          <TotalBarChart />
         </div>
       </div>
     </div>
@@ -31,11 +21,13 @@
 import { defineComponent } from 'vue'
 import AnalysisCard from './AnalysisCard.vue'
 import GradientLineChart from './GradientLineChart.vue'
+import TotalBarChart from './TotalBarChart.vue'
 export default defineComponent({
   name: 'DashBoard',
   components: {
     AnalysisCard,
     GradientLineChart,
+    TotalBarChart,
   },
   setup() {
     return {}

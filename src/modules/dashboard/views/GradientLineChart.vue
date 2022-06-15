@@ -35,7 +35,7 @@
       </template>
 
       <div class="card-body bg-transparent">
-        <LineChart ref="salesChart" :chartData="salesData" :options="chartOptions" />
+        <LineChart ref="salesChart" :chartData="salesData" :options="chartOptions" :height="350" />
       </div>
     </el-card>
   </div>
@@ -73,6 +73,7 @@ export default defineComponent({
           tension: 0.4,
           pointRadius: 0,
           borderColor: 'rgb(94 114 228)',
+          backgroundColor: 'rgba(23, 43, 77, 0.01)',
           borderWidth: 4,
           fill: true,
           data: data.value,
@@ -81,19 +82,28 @@ export default defineComponent({
     }))
 
     const chartOptions = ref({
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          display: false,
-        },
-      },
-      interaction: {
-        intersect: false,
-        mode: 'index',
-      },
-
       scales: {
+        x: {
+          grid: {
+            drawBorder: false,
+            display: false,
+            drawOnChartArea: false,
+            drawTicks: false,
+            zeroLineColor: 'transparent',
+            borderDash: [5, 5],
+          },
+          ticks: {
+            display: true,
+            color: 'rgb(136 152 170)',
+            padding: 20,
+            font: {
+              size: 12,
+              family: 'Open Sans',
+              style: 'normal',
+              lineHeight: 2,
+            },
+          },
+        },
         y: {
           grid: {
             drawBorder: false,
@@ -114,31 +124,23 @@ export default defineComponent({
               lineHeight: 2,
             },
             callback: function (value: number) {
-              return '$' + value + 'k'
+              if (!(value % 10)) {
+                return '$' + value + 'k'
+              }
             },
           },
         },
-        x: {
-          grid: {
-            drawBorder: false,
-            display: false,
-            drawOnChartArea: false,
-            drawTicks: false,
-            zeroLineColor: 'transparent',
-            borderDash: [5, 5],
-          },
-          ticks: {
-            display: true,
-            color: 'rgb(136 152 170)',
-            padding: 10,
-            font: {
-              size: 12,
-              family: 'Open Sans',
-              style: 'normal',
-              lineHeight: 2,
-            },
-          },
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false,
         },
+      },
+      interaction: {
+        intersect: false,
+        mode: 'index',
       },
     })
 
