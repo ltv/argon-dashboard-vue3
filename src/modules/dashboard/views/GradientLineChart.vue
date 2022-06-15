@@ -8,11 +8,12 @@
             <h2 class="text-white mb-0">{{ subcription }}</h2>
           </div>
           <div class="max-w-full basis-0 grow">
-            <div class="flex flex-wrap mb-0 pl-0 justify-end gap-x-3">
+            <div class="flex flex-nowrap mb-0 pl-0 justify-end gap-x-3">
               <div>
                 <el-button
                   type="primary"
-                  class="py-2 px-3 w-20 h-9"
+                  size="small"
+                  class="py-2 px-3 lh:w-20 lg:h-9"
                   @click="changeDataChart([0, 20, 10, 30, 15, 40, 20, 60])"
                 >
                   <span class="hidden md:block font-medium text-sm">Month</span>
@@ -21,7 +22,7 @@
               </div>
               <div>
                 <el-button
-                  class="el-button--secondary py-2 px-3 w-20 h-9"
+                  class="el-button--secondary py-2 px-3 lh:w-20 lg:h-9"
                   size="small"
                   @click="changeDataChart([0, 20, 5, 25, 10, 30, 15, 40])"
                 >

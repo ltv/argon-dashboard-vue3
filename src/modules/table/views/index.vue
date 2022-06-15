@@ -23,14 +23,14 @@
           </el-table-column>
           <el-table-column label="BUDGET" min-width="115">
             <template #default="scope">
-              <div class="pl-3.5 cursor-auto">
+              <div class="px-4 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
               </div>
             </template>
           </el-table-column>
           <el-table-column label="STATUS" min-width="167">
             <template #default="scope">
-              <div class="pl-4 flex items-center">
+              <div class="px-4 flex items-center">
                 <i
                   class="w-1.5 h-1.5 rounded-full"
                   aria-hidden="true"
@@ -50,8 +50,8 @@
           </el-table-column>
           <el-table-column label="USERS" min-width="155">
             <template #default="scope">
-              <div class="flex items-center">
-                <div class="flex justify-center -space-x-3 pl-3">
+              <div class="px-4 flex items-center">
+                <div class="flex justify-center -space-x-3">
                   <div
                     v-for="(value, index) in scope.row.users"
                     :key="index"
@@ -81,7 +81,7 @@
           </el-table-column>
           <el-table-column label="COMPLETION" min-width="200">
             <template #default="scope">
-              <div class="flex flex-row items-center pl-4">
+              <div class="px-4 flex flex-row items-center">
                 <div>
                   <span class="text-0.8125">{{ scope.row.completion }}%</span>
                 </div>
@@ -147,7 +147,7 @@
       </div>
       <div class="block overflow-x-auto w-full">
         <el-table :data="tableData" style="width: 100%" class="is-dark">
-          <el-table-column label="PROJECT" min-width="288">
+          <el-table-column label="PROJECT" min-width="280">
             <template #default="scope">
               <div class="flex items-center">
                 <a
@@ -164,14 +164,14 @@
           </el-table-column>
           <el-table-column label="BUDGET" min-width="115">
             <template #default="scope">
-              <div class="pl-3.5 cursor-auto">
+              <div class="px-4 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
               </div>
             </template>
           </el-table-column>
           <el-table-column label="STATUS" min-width="167">
             <template #default="scope">
-              <div class="pl-4 flex items-center">
+              <div class="px-4 flex items-center">
                 <i
                   class="w-1.5 h-1.5 rounded-full"
                   aria-hidden="true"
@@ -191,8 +191,8 @@
           </el-table-column>
           <el-table-column label="USERS" min-width="155">
             <template #default="scope">
-              <div class="flex items-center">
-                <div class="flex justify-center -space-x-3 pl-3">
+              <div class="px-4 flex items-center">
+                <div class="flex justify-center -space-x-3">
                   <div
                     v-for="(value, index) in scope.row.users"
                     :key="index"
@@ -222,7 +222,7 @@
           </el-table-column>
           <el-table-column label="COMPLETION" min-width="200">
             <template #default="scope">
-              <div class="flex flex-row items-center pl-4">
+              <div class="px-4 flex flex-row items-center">
                 <div>
                   <span class="text-0.8125">{{ scope.row.completion }}%</span>
                 </div>
