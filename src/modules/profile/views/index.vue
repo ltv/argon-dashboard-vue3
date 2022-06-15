@@ -1,11 +1,13 @@
 <template>
-  <div class="background-url bg-top bg-cover pt-[100px] pb-[300px] px-[30px] relative">
+  <div
+    class="background-url bg-top bg-cover pt-[100px] pb-[330px] md:pb-[250px] lg:pt-[100px] lg:pb-[300px] relative"
+  >
     <span
       class="absolute block w-full inset-0 opacity-90 bg-gradient-to-r from-indigo-850 to-indigo-950"
     ></span>
-    <div class="max-w-[38%] z-10 absolute top-1/3">
+    <div class="w-full px-4 lg:px-[30px] lg:max-w-[38%] absolute top-[15%] lg:top-1/3 break-normal">
       <h1 class="text-white text-[2.75rem]">Hello Admin</h1>
-      <p class="text-white text-base">
+      <p class="text-white text-base mb-12">
         This is your profile page. You can see the progress you've made with your work and manage
         your projects or assigned tasks
       </p>
@@ -13,17 +15,16 @@
   </div>
 
   <div
-    class="w-[93%] mx-auto grid grid-cols-1 gap-y-7 xl:w-[96%] xl:grid xl:grid-cols-3 xl:gap-7 mt-[-5%]"
+    class="w-[93%] mx-auto grid grid-cols-1 gap-y-7 xl:w-[96%] xl:grid xl:grid-cols-3 xl:gap-7 mt-[-20%] md:mt-[-10%] lg:mt-[-5%]"
   >
     <!-- Left side -->
     <div class="col-span-2 col-left order-2 xl:order-none">
       <!-- Indicator section -->
-      <div class="grid grid-cols-6 gap-7">
+      <div class="grid grid-cols-1 lg:grid-cols-6 gap-7">
         <div class="col-span-3">
           <!-- Left indicator -->
           <el-card
             class="border-white indicator bg-gradient-to-r from-indicator-cyan to-indicator-blue border-0"
-            :body-style="{ 'padding-top': '16px', 'padding-bottom': '16px' }"
           >
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
@@ -51,7 +52,6 @@
           <!-- Right indicator -->
           <el-card
             class="border-white indicator bg-gradient-to-r from-left-bar-red to-left-bar-red-light border-0"
-            :body-style="{ 'padding-top': '16px', 'padding-bottom': '16px' }"
           >
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
@@ -94,7 +94,7 @@
               <h6 class="text-xs text-muted py-1 -tracking-tighter uppercase mb-6 leading-6">
                 USER INFORMATION
               </h6>
-              <div class="pl-6">
+              <div class="lg:pl-6">
                 <el-form :model="userForm" label-position="top">
                   <el-form-item label="Name">
                     <el-input v-model="userForm.name" placeholder="Admin" />
@@ -126,7 +126,7 @@
               <h6 class="text-xs text-muted py-1 -tracking-tighter uppercase mb-6 leading-6">
                 PASSWORD
               </h6>
-              <div class="pl-6">
+              <div class="lg:pl-6">
                 <el-form :model="passForm" label-position="top" show-password>
                   <el-form-item label="Current Password">
                     <el-input
@@ -170,7 +170,7 @@
             class="border-0 text-center border-slate-100"
             :body-style="{ padding: '0px', position: 'relative' }"
           >
-            <img alt="..." src="@/assets/images/throne.jpg" />
+            <img alt="..." src="@/assets/images/window-purple-image.jpg" />
             <div class="justify-center p-1">
               <el-link :underline="false" class="card-avatar-profile hover:scale-105">
                 <!-- Avatar -->
@@ -183,7 +183,7 @@
                 />
               </el-link>
             </div>
-            <div class="text-center border-0 pb-6 card-header">
+            <div class="text-center border-0 pb-6 card-header mt-[100px] md:mt-0 lg:mt-0">
               <div class="flex justify-between">
                 <div class="ml-4 z-0">
                   <el-button class="shadow-lg w-16" size="small" type="info">Connect</el-button>
@@ -193,7 +193,7 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8">
+            <div class="md:mt-8 lg:mt-8">
               <div class="flex justify-center gap-x-11">
                 <div class="block">
                   <div>
@@ -243,7 +243,7 @@
 
         <!-- Progress track -->
         <div class="col-span-6">
-          <el-card class="mb-7.5 border-none">
+          <el-card class="border-none">
             <template #header>
               <h3 class="cursor-auto mb-0 text-card-title">Progress track</h3>
             </template>
@@ -354,6 +354,8 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref } from 'vue'
+import { ArrowUpIcon } from '@heroicons/vue/solid'
+
 import imageUrl from '@/assets/images/team-3.jpg'
 import reactLogo from '@/assets/images/react.jpg'
 import sketchLogo from '@/assets/images/sketch.jpg'
@@ -364,7 +366,10 @@ import backGround from '@/assets/images/profile-cover.jpg'
 
 export default defineComponent({
   name: 'Profile',
-  components: {},
+  components: {
+    //Icon
+    ArrowUpIcon,
+  },
   setup(_) {
     const isHover = ref(false)
     const hoverCheck = (b: boolean) => {
@@ -402,6 +407,7 @@ export default defineComponent({
       isHover,
       hoverCheck,
       backGround,
+      ArrowUpIcon,
     }
   },
 })
