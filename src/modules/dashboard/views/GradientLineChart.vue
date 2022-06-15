@@ -35,7 +35,7 @@
       </template>
 
       <div class="card-body bg-transparent">
-        <LineChart ref="salesChart" :chartData="salesData" :options="chartOptions" />
+        <LineChart ref="salesChart" :chartData="salesData" :options="chartOptions" :height="350" />
       </div>
     </el-card>
   </div>
@@ -73,6 +73,7 @@ export default defineComponent({
           tension: 0.4,
           pointRadius: 0,
           borderColor: 'rgb(94 114 228)',
+          backgroundColor: 'rgba(23, 43, 77, 0.01)',
           borderWidth: 4,
           fill: true,
           data: data.value,
@@ -114,7 +115,9 @@ export default defineComponent({
               lineHeight: 2,
             },
             callback: function (value: number) {
-              return '$' + value + 'k'
+              if (!(value % 10)) {
+                return '$' + value + 'k'
+              }
             },
           },
         },
@@ -130,7 +133,7 @@ export default defineComponent({
           ticks: {
             display: true,
             color: 'rgb(136 152 170)',
-            padding: 10,
+            padding: 20,
             font: {
               size: 12,
               family: 'Open Sans',
