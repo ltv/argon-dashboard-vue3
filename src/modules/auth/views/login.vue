@@ -48,9 +48,9 @@
       </div>
     </div>
     <div
-      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-4"
+      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75 pb-12"
     >
-      <div class="relative lg:max-w-5/12 md:max-w-7/12 w-full mx-auto px-4 -mt-32">
+      <div class="relative lg:max-w-5/12 md:max-w-7/12 w-full mx-auto px-1.5 -mt-32">
         <el-card class="bg-secondary text-center pb-8">
           <template #header>
             <div class="text-muted text-center mt-2 mb-4"><small>Sign in with</small></div>
@@ -65,7 +65,7 @@
               </el-button>
             </div>
           </template>
-          <div class="content-center items-center w-full p-6">
+          <div class="content-center items-center w-full lg:p-6">
             <el-form ref="form" :model="formData" :rules="rules" class="authentication-form">
               <el-form-item class="warning-input mb-4 rounded-md" prop="email">
                 <div
@@ -96,12 +96,15 @@
         </el-card>
         <div class="flex pt-8">
           <div class="text-sm text-left">
-            <router-link to="/forgot-password" class="text-[#ced4da] text-80 hover:text-[#b1bbc4]">
+            <router-link
+              to="/forgot-password"
+              class="text-light text-90 font-normal hover:text-[#b1bbc4]"
+            >
               Forgot password?
             </router-link>
           </div>
           <div class="text-sm ml-auto">
-            <router-link to="/register" class="text-[#ced4da] text-80 hover:text-[#b1bbc4]">
+            <router-link to="/register" class="text-light text-90 font-normal hover:text-[#b1bbc4]">
               Create new account
             </router-link>
           </div>

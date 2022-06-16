@@ -91,7 +91,7 @@
                   <el-dropdown-item divided v-for="index in 5" :key="index">
                     <div class="flex flex-row items-center w-full py-2.75">
                       <div class="flex w-auto">
-                        <el-avatar :size="48" src="src/assets/images/Jon_Snow.png" />
+                        <el-avatar :size="48" :src="John_Snow_Url" />
                       </div>
                       <div class="basis-0 grow w-full ml-4">
                         <div class="flex justify-between items-center">
@@ -251,11 +251,7 @@
             <div class="flex flex-row items-center gap-1 md:gap-2 mb-1">
               <div class="pt-1">
                 <el-link :underline="false">
-                  <el-avatar
-                    :size="37"
-                    class="cursor-pointer"
-                    src="src/assets/images/Jon_Snow.png"
-                  />
+                  <el-avatar :size="37" class="cursor-pointer" :src="John_Snow_Url" />
                 </el-link>
               </div>
               <div class="hidden lg:block">
@@ -323,7 +319,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, reactive, toRefs } from 'vue'
 import {
   Search,
   BellFilled,
@@ -338,7 +334,7 @@ import {
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
 import useStore from 'store'
 import { useRoute } from 'vue-router'
-
+import John_Snow_Url from '@/assets/images/John_Snow.png'
 export default defineComponent({
   name: 'TopNav',
   components: {
@@ -400,6 +396,7 @@ export default defineComponent({
       setSearchOpen,
       togglePagesMenu,
       closeSideMenu,
+      John_Snow_Url,
     }
   },
 })

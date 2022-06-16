@@ -109,10 +109,10 @@
                       </el-input>
                     </el-upload>
                   </el-form-item>
-                  <el-form-item>
-                    <el-button type="success">Save</el-button>
-                  </el-form-item>
                 </el-form>
+                <div class="flex justify-center">
+                  <el-button type="success">Save</el-button>
+                </div>
               </div>
             </div>
           </div>
@@ -149,10 +149,10 @@
                       placeholder="Confirm New Password"
                     />
                   </el-form-item>
-                  <el-form-item>
-                    <el-button type="success">Change Password</el-button>
-                  </el-form-item>
                 </el-form>
+                <div class="flex justify-center">
+                  <el-button type="success">Change Password</el-button>
+                </div>
               </div>
             </div>
           </div>

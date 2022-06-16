@@ -90,7 +90,7 @@
                     placement="top"
                     :width="10"
                     trigger="hover"
-                    content="Like us on Instagram"
+                    content="Like us on Twitter"
                     effect="dark"
                     popper-class="icon-popper"
                   >
@@ -111,12 +111,13 @@
                     placement="top"
                     :width="10"
                     trigger="hover"
-                    content="Like us on Instagram"
+                    content="Like us on Github"
                     effect="dark"
                     popper-class="icon-popper"
                   >
                     <template #reference>
                       <el-link
+                        href="https://github.com/ltv/fancy-dashboard-vue3"
                         :underline="false"
                         class="py-px text-default font-medium w-full justify-start"
                       >

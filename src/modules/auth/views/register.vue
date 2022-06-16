@@ -37,7 +37,7 @@
     <div
       class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-4"
     >
-      <div class="relative lg:max-w-1/2 md:max-w-2/3 w-full mx-auto px-4 -mt-32 mb-20">
+      <div class="relative lg:max-w-1/2 md:max-w-2/3 w-full mx-auto -mt-32 mb-20">
         <el-card class="bg-secondary text-center">
           <template #header>
             <div class="text-muted text-center mt-1.5 mb-6"><small>Sign up with</small></div>
@@ -126,13 +126,13 @@
               </el-form-item>
               <el-form-item class="mb-6 rounded-md">
                 <div class="italic">
-                  <span class="text-0.8125 text-muted font-base">
+                  <span class="text-0.8125 text-muted font-normal">
                     password strength: <strong class="text-success">strong</strong>
                   </span>
                 </div>
               </el-form-item>
               <el-form-item class="mb-6">
-                <el-checkbox class="w-4 h-4 text-muted"
+                <el-checkbox class="w-4 h-4 text-muted font-normal"
                   >I agree with the
                   <a href="#!" class="text-primary-blue hover:text-primary-blue-active"
                     >Privacy Policy</a

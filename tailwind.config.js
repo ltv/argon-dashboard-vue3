@@ -66,6 +66,7 @@ module.exports = {
         6.75: '1.438rem',
         7.5: '1.875rem',
         9.5: '38px',
+        11.5: '46px',
         13: '3.25rem',
         72: '72px',
         8.5: '34px',
@@ -182,7 +183,7 @@ module.exports = {
           lighter: 'rgb(82 95 127)' //#525f7f
         },
         light: {
-          DEFAULT: 'rgb(206 212 218)',
+          DEFAULT: 'rgb(206 212 218)', //#ced4da
         },
         primary: {
           DEFAULT: 'rgb(50 50 93)',

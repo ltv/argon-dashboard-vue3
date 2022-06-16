@@ -286,7 +286,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { DotsVerticalIcon } from '@heroicons/vue/outline'
-
+import John_Snow_Url from '@/assets/images/John_Snow.png'
+import BootStrap_Url from '@/assets/images/bootstrap.jpg'
 interface User {
   avatarPath: string
   name: string
@@ -307,25 +308,25 @@ export default defineComponent({
   setup() {
     const usersData: User[] = [
       {
-        avatarPath: 'src/assets/images/Jon_Snow.png',
+        avatarPath: John_Snow_Url,
         name: 'Ryan Tompson',
       },
       {
-        avatarPath: 'src/assets/images/Jon_Snow.png',
+        avatarPath: John_Snow_Url,
         name: 'Romina Hadid',
       },
       {
-        avatarPath: 'src/assets/images/Jon_Snow.png',
+        avatarPath: John_Snow_Url,
         name: 'Alexander Smith',
       },
       {
-        avatarPath: 'src/assets/images/Jon_Snow.png',
+        avatarPath: John_Snow_Url,
         name: 'Jessica Doe',
       },
     ]
     const tableData: Project[] = [
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: BootStrap_Url,
         project: 'Fancy Design System',
         budget: '2500 ',
         status: 'pending',
@@ -333,7 +334,7 @@ export default defineComponent({
         completion: 60,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: BootStrap_Url,
         project: 'Fancy Design System',
         budget: '4000 ',
         status: 'completed',
@@ -341,7 +342,7 @@ export default defineComponent({
         completion: 40,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: BootStrap_Url,
         project: 'Fancy',
         budget: '2500 ',
         status: 'delayed',
@@ -349,7 +350,7 @@ export default defineComponent({
         completion: 40,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: BootStrap_Url,
         project: 'Fancy Design',
         budget: '3300 ',
         status: 'on schedule',
@@ -357,7 +358,7 @@ export default defineComponent({
         completion: 10,
       },
       {
-        projectLogoPath: 'src/assets/images/bootstrap.jpg',
+        projectLogoPath: BootStrap_Url,
         project: 'Fancy System',
         budget: '3000 ',
         status: 'completed',
