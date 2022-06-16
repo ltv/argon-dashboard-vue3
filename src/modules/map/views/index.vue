@@ -1,6 +1,6 @@
 <template>
-  <div class="map w-full">
-    <GoogleMap :api-key="googleApi" class="w-full h-[500px]" :center="center" :zoom="15">
+  <div class="map">
+    <GoogleMap :api-key="googleApi" class="w-full h-[600px]" :center="center" :zoom="15">
       <Marker :options="markerOptions" />
     </GoogleMap>
   </div>
@@ -25,6 +25,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .map {
-  @apply w-[96%] rounded-lg overflow-hidden p-0 mt-[25px] mx-auto #{!important};
+  @apply sm:w-[92%] md:w-[94%] lg:w-[96%] w-[92%] rounded-lg overflow-hidden p-0 mt-[25px] mx-auto #{!important};
 }
 </style>
