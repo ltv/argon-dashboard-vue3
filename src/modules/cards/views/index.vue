@@ -180,7 +180,7 @@
                     :size="!isHover ? 140 : 146"
                     @mouseover="hoverCheck(true)"
                     @mouseleave="hoverCheck(false)"
-                    src="@/assets/images/tywin_lannister.jpg"
+                    :src="Tywin_Lanister_Url"
                     class="transition-all border-white border-4"
                   />
                 </el-link>
@@ -264,7 +264,7 @@
               <div class="flex flex-wrap">
                 <div class="pt-1">
                   <el-link :underline="false">
-                    <el-avatar :size="70" src="@/assets/images/Jon_Snow.png" />
+                    <el-avatar :size="70" :src="John_Snow_Url" />
                   </el-link>
                 </div>
                 <div class="py-2 ml-4 flex-grow">
@@ -290,7 +290,7 @@
           <div class="mt-7">
             <el-card class="text-center border-white">
               <el-link :underline="false">
-                <el-avatar :size="140" src="@/assets/images/tyrion_lannister.jpg" />
+                <el-avatar :size="140" :src="Tyrion_Lanister_Url" />
               </el-link>
               <div class="pt-4">
                 <h4 class="mb-0 py-2">
@@ -573,6 +573,9 @@ import { ref, defineComponent } from 'vue'
 // Icon
 import { ArrowUpIcon, MinusIcon } from '@heroicons/vue/solid'
 import { Location } from '@element-plus/icons-vue'
+import John_Snow_Url from '@/assets/images/John_Snow.png'
+import Tyrion_Lanister_Url from '@/assets/images/tyrion_lannister.jpg'
+import Tywin_Lanister_Url from '@/assets/images/tywin_lannister.jpg'
 
 export default defineComponent({
   name: 'Card',
@@ -587,7 +590,13 @@ export default defineComponent({
     const hoverCheck = (b: boolean) => {
       isHover.value = b
     }
-    return { isHover, hoverCheck }
+    return {
+      isHover,
+      hoverCheck,
+      John_Snow_Url,
+      Tyrion_Lanister_Url,
+      Tywin_Lanister_Url,
+    }
   },
 })
 </script>
