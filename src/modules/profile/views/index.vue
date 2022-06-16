@@ -429,7 +429,7 @@ export default defineComponent({
 
 // Progress
 .el-card__body .progress {
-  @apply border-b py-4 border-b-[#e9ecef] #{!important};
+  @apply border-b py-5 border-b-[#e9ecef] #{!important};
 }
 .el-card__body .progress:last-child {
   @apply border-0 border-b-[#e9ecef] #{!important};
@@ -451,10 +451,6 @@ export default defineComponent({
   .el-input-group__append {
     @apply focus:outline-1 focus:outline-blue-400;
   }
-}
-
-.el-card__body .progress {
-  @apply py-5 #{!important};
 }
 
 :deep(.el-input.el-input--default.el-input-group.el-input-group--append):focus-within {
