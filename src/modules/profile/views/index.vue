@@ -152,7 +152,7 @@
                   </el-form-item>
                 </el-form>
                 <div class="flex justify-center mt-4.5">
-                  <el-button type="success">Change Password</el-button>
+                  <el-button type="success">Change password</el-button>
                 </div>
               </div>
             </div>
