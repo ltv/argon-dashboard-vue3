@@ -3,7 +3,7 @@
 }
 
 .is-light .el-table__body .el-table__row {
-  @apply h-18;
+  @apply h-13;
 }
 
 .is-light .el-table__header thead tr > th {
@@ -15,7 +15,7 @@
 }
 
 .is-dark .el-table__body .el-table__row {
-  @apply text-white h-18 #{!important};
+  @apply text-white h-13 #{!important};
 }
 
 .is-dark .el-table__header thead tr {

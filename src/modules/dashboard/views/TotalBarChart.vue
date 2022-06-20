@@ -3,7 +3,7 @@
     <el-card>
       <template #header>
         <div class="flex flex-wrap items-center -mx-3.75">
-          <div class="max-w-full basis-0 grow">
+          <div class="max-w-full basis-0 grow py-2 px-6">
             <h6 class="uppercase text-muted tracking-0.625 mb-1">{{ title }}</h6>
             <h2 class="mb-0">{{ subcription }}</h2>
           </div>

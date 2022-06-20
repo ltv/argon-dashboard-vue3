@@ -16,7 +16,7 @@
                   class="py-2 px-3 lh:w-20 lg:h-9"
                   @click="changeDataChart([0, 20, 10, 30, 15, 40, 20, 60])"
                 >
-                  <span class="hidden md:block font-medium text-sm">Month</span>
+                  <span class="hidden md:block font-medium text-sm px-2">Month</span>
                   <span class="md:hidden font-medium text-sm">M</span>
                 </el-button>
               </div>
@@ -26,7 +26,9 @@
                   size="small"
                   @click="changeDataChart([0, 20, 5, 25, 10, 30, 15, 40])"
                 >
-                  <span class="hidden md:block text-primary-blue font-medium text-sm">Week</span>
+                  <span class="hidden md:block text-primary-blue font-medium text-sm px-2"
+                    >Week</span
+                  >
                   <span class="md:hidden text-primary-blue font-medium text-sm">W</span>
                 </el-button>
               </div>
@@ -137,6 +139,17 @@ export default defineComponent({
       plugins: {
         legend: {
           display: false,
+        },
+        tooltip: {
+          callbacks: {
+            label: function (context: any) {
+              let label = context.dataset.label || ''
+              if (label) {
+                label += ': $' + context.parsed.y + 'k'
+              }
+              return label
+            },
+          },
         },
       },
       interaction: {
