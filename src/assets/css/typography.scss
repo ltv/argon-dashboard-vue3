@@ -73,13 +73,4 @@ body {
   .text-primary {
     @apply text-primary-blue #{!important};
   }
-  .text-info {
-    @apply text-cyan-400 #{!important};
-  }
-  .text-success {
-    @apply text-green-500 #{!important};
-  }
-  .text-danger {
-    @apply text-primary-red;
-  }
 }

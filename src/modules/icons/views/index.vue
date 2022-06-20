@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mx-auto lg:w-[70.25%] xl:w-[65.95%]">
-    <div class="container py-4 mx-auto">
+    <div class="container mx-auto">
       <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
         <div class="card-header px-6 py-5">
           <h3>Icons</h3>

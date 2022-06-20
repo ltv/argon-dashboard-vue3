@@ -25,6 +25,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .map {
-  @apply sm:w-[92%] md:w-[94%] lg:w-[96%] w-[92%] rounded-lg overflow-hidden p-0 mt-[25px] mx-auto #{!important};
+  @apply sm:w-[92%] md:w-[94%] lg:w-[96%] w-[92%] rounded-lg overflow-hidden p-0 mx-auto #{!important};
 }
 </style>

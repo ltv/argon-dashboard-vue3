@@ -1,13 +1,13 @@
 <template>
   <div
-    class="background-url bg-top bg-cover pt-[100px] pb-[330px] md:pb-[250px] lg:pt-[100px] lg:pb-[300px] relative"
+    class="background-url bg-top bg-cover pt-[100px] pb-[330px] md:pb-[250px] lg:pt-[155px] lg:pb-[272px] relative"
   >
     <span
       class="absolute block w-full inset-0 opacity-90 bg-gradient-to-r from-indigo-850 to-indigo-950"
     ></span>
-    <div class="w-full px-4 lg:px-[30px] lg:max-w-[38%] absolute top-[15%] lg:top-1/3 break-normal">
-      <h1 class="text-white text-[2.75rem]">Hello Admin</h1>
-      <p class="text-white text-base mb-12">
+    <div class="w-full px-4 lg:px-[30px] lg:max-w-[42%] absolute top-[15%] lg:top-1/3 break-normal">
+      <h1 class="text-white text-[2.75rem] mb-2">Hello Admin</h1>
+      <p class="text-white text-base mb-12 leading-[1.7]">
         This is your profile page. You can see the progress you've made with your work and manage
         your projects or assigned tasks
       </p>
@@ -102,15 +102,16 @@
                   <el-form-item label="Email">
                     <el-input v-model="userForm.mail" placeholder="admin@argon.com" />
                   </el-form-item>
+
                   <el-form-item label="Profile photo">
                     <el-upload class="w-full">
-                      <el-input placeholder="demo.png">
+                      <el-input placeholder="demo.png" class="input-upload">
                         <template #append>Browse</template>
                       </el-input>
                     </el-upload>
                   </el-form-item>
                 </el-form>
-                <div class="flex justify-center">
+                <div class="flex justify-center mt-4.5">
                   <el-button type="success">Save</el-button>
                 </div>
               </div>
@@ -150,8 +151,8 @@
                     />
                   </el-form-item>
                 </el-form>
-                <div class="flex justify-center">
-                  <el-button type="success">Change Password</el-button>
+                <div class="flex justify-center mt-4.5">
+                  <el-button type="success">Change password</el-button>
                 </div>
               </div>
             </div>
@@ -175,7 +176,7 @@
               <el-link :underline="false" class="card-avatar-profile hover:scale-105">
                 <!-- Avatar -->
                 <el-avatar
-                  :size="!isHover ? 140 : 146"
+                  :size="!isHover ? 134 : 134"
                   @mouseover="hoverCheck(true)"
                   @mouseleave="hoverCheck(false)"
                   :src="imageUrl"
@@ -223,7 +224,7 @@
             </div>
             <div class="p-8">
               <div class="text-center text-card-title">
-                <h3 class="text-[13px] mt-6 font-semibold pb-2">
+                <h3 class="text-[17px] mt-6 font-semibold pb-2">
                   Admin<span class="font-thin">, 27</span>
                 </h3>
                 <h5 class="font-light">Bucharest, Romania</h5>
@@ -251,7 +252,7 @@
               <div class="flex gap-7 progress items-center">
                 <el-link
                   :underline="false"
-                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border rounded-full"
+                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border-[0.2px] rounded-full"
                 >
                   <el-avatar
                     :size="!isHover ? 48 : 48"
@@ -270,7 +271,7 @@
               <div class="flex gap-7 progress items-center">
                 <el-link
                   :underline="false"
-                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border rounded-full"
+                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border-[0.2px] rounded-full"
                 >
                   <el-avatar
                     :size="!isHover ? 48 : 48"
@@ -289,7 +290,7 @@
               <div class="flex gap-7 progress items-center">
                 <el-link
                   :underline="false"
-                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border rounded-full"
+                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border-[0.2px] rounded-full"
                 >
                   <el-avatar
                     :size="!isHover ? 48 : 48"
@@ -308,7 +309,7 @@
               <div class="flex gap-7 progress items-center">
                 <el-link
                   :underline="false"
-                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border rounded-full"
+                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border-[0.2px] rounded-full"
                 >
                   <el-avatar
                     :size="!isHover ? 48 : 48"
@@ -327,7 +328,7 @@
               <div class="flex gap-7 progress items-center">
                 <el-link
                   :underline="false"
-                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border rounded-full"
+                  class="card-avatar-profile block flex-none h-12 w-12 overflow-hidden border-[0.2px] rounded-full"
                 >
                   <el-avatar
                     :size="!isHover ? 48 : 48"
@@ -422,15 +423,43 @@ export default defineComponent({
 :deep(.progress) .el-link--inner {
   @apply border-0 #{!important};
 }
+.background-url {
+  @apply bg-[url('@/assets/images/profile-cover.jpg')] #{!important};
+}
 
 // Progress
 .el-card__body .progress {
-  @apply border-b py-4 border-b-[#e9ecef] #{!important};
+  @apply border-b py-5 border-b-[#e9ecef] #{!important};
 }
 .el-card__body .progress:last-child {
   @apply border-0 border-b-[#e9ecef] #{!important};
 }
-.background-url {
-  @apply bg-[url('@/assets/images/profile-cover.jpg')] #{!important};
+
+.el-form-item.el-form-item--default:last-child {
+  @apply mb-0;
+}
+
+:deep(.el-form-item__label) {
+  @apply text-dark-lighter;
+}
+
+:deep(.el-input-group__append) {
+  @apply px-3 #{!important};
+}
+
+:deep(.el-input__inner):focus {
+  .el-input-group__append {
+    @apply focus:outline-1 focus:outline-blue-400;
+  }
+}
+
+:deep(.el-input.el-input--default.el-input-group.el-input-group--append):focus-within {
+  @apply border border-blue-500 rounded #{!important};
+  &.input-upload .el-input__inner {
+    @apply focus:border-t-0 focus:border-l-0 focus:border-b-0;
+  }
+  &.input-upload .el-input-group__append {
+    @apply border-0 #{!important};
+  }
 }
 </style>
