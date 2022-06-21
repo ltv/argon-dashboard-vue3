@@ -21,7 +21,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="BUDGET" min-width="115">
+          <el-table-column label="BUDGET" min-width="130">
             <template #default="scope">
               <div class="px-4 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
@@ -162,7 +162,7 @@
               </div>
             </template>
           </el-table-column>
-          <el-table-column label="BUDGET" min-width="115">
+          <el-table-column label="BUDGET" min-width="130">
             <template #default="scope">
               <div class="px-4 cursor-auto">
                 <span class="text-0.8125 font-normal">${{ scope.row.budget }} USD</span>
