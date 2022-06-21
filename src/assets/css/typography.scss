@@ -111,14 +111,11 @@ body {
   .text-primary {
     @apply text-primary-blue #{!important};
   }
-<<<<<<< HEAD
-=======
 
   // List
   ul {
     @apply list-disc pl-10;
   }
-  .list-inline,
   .list-unstyled {
     @apply pl-0 list-none;
   }
@@ -128,5 +125,4 @@ body {
   .list-inline-item {
     @apply mr-2 inline-block;
   }
->>>>>>> e1390f2 (fix(notifiction): Fix Sign-in Button Of Login Form | JIRA PT-186)
 }
