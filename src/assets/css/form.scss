@@ -63,6 +63,9 @@ body {
     .el-input.el-input--default .el-input__inner {
       @apply h-[46px] p-0 text-sm rounded bg-white border-transparent placeholder:text-mess-box-text focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
     }
+    .el-form-item__content {
+      @apply justify-center;
+    }
 
     .el-form-item.el-form-item--default.checkbox .el-form-item__content {
       @apply flex-none;
