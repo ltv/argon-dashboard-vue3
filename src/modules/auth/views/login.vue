@@ -21,7 +21,7 @@
               <h3 class="text-white mt-12 mb-0">
                 <span class="font-bold">You can log in with 3 user types:</span>
               </h3>
-              <ul class="text-light mt-4 mb-0 pl-7.5">
+              <ul class="text-light mt-4 mb-0 lg:pl-7.5">
                 <li v-for="(account, index) in accounts" :key="index" class="flex">
                   <div class="px-2">{{ index }}.</div>
                   <div class="w-full">
@@ -50,16 +50,16 @@
     <div
       class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75 pb-12"
     >
-      <div class="relative lg:max-w-5/12 md:max-w-7/12 w-full mx-auto px-1.5 -mt-32">
+      <div class="relative lg:max-w-5/12 md:max-w-7/12 w-full mx-auto md:px-2 -mt-32">
         <el-card class="bg-secondary text-center pb-8">
           <template #header>
             <div class="text-muted text-center mt-2 mb-4"><small>Sign in with</small></div>
             <div class="pb-6 flex flex-nowrap text-center justify-center">
-              <el-button class="el-button--secondary" href="#">
+              <el-button class="bg-white border-white" href="#">
                 <img src="@/assets/images/github.png" alt="" class="h-4 w-4" />
                 <span class="pl-4 text-primary-blue">Github</span>
               </el-button>
-              <el-button class="el-button--secondary" href="#">
+              <el-button class="bg-white border-white" href="#">
                 <img src="@/assets/images/google.png" alt="" class="h-4 w-4" />
                 <span class="pl-4 text-primary-blue">Google</span>
               </el-button>
@@ -88,7 +88,7 @@
                 <el-input type="password" placeholder="Password" v-model="formData.password" />
               </el-form-item>
               <el-form-item class="mb-4">
-                <el-checkbox class="text-mess-box-text">Remember me</el-checkbox>
+                <el-checkbox class="text-mess-box-text font-normal">Remember me</el-checkbox>
               </el-form-item>
             </el-form>
             <el-button type="primary" @click="handleLoginClick"> Sign in </el-button>

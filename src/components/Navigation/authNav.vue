@@ -48,69 +48,6 @@
                     placement="top"
                     :width="10"
                     trigger="hover"
-                    content="Like us on Facebook"
-                    effect="dark"
-                    popper-class="icon-popper"
-                  >
-                    <template #reference>
-                      <el-link
-                        :underline="false"
-                        class="py-px text-default font-medium w-full justify-start"
-                      >
-                        <font-awesome-icon
-                          class="w-3.5 h-3.5 pr-0.5"
-                          :icon="['fab', 'facebook-square']"
-                        />
-                        Facebook
-                      </el-link>
-                    </template>
-                  </el-popover>
-                  <el-popover
-                    placement="top"
-                    :width="10"
-                    trigger="hover"
-                    content="Like us on Instagram"
-                    effect="dark"
-                    popper-class="icon-popper"
-                  >
-                    <template #reference>
-                      <el-link
-                        :underline="false"
-                        class="py-px text-default font-medium w-full justify-start"
-                      >
-                        <font-awesome-icon
-                          class="w-3.5 h-3.5 pr-0.5"
-                          :icon="['fab', 'instagram']"
-                        />
-                        Instagram
-                      </el-link>
-                    </template>
-                  </el-popover>
-                  <el-popover
-                    placement="top"
-                    :width="10"
-                    trigger="hover"
-                    content="Like us on Twitter"
-                    effect="dark"
-                    popper-class="icon-popper"
-                  >
-                    <template #reference>
-                      <el-link
-                        :underline="false"
-                        class="py-px text-default font-medium w-full justify-start"
-                      >
-                        <font-awesome-icon
-                          class="w-3.5 h-3.5 pr-0.5"
-                          :icon="['fab', 'twitter-square']"
-                        />
-                        Twitter
-                      </el-link>
-                    </template>
-                  </el-popover>
-                  <el-popover
-                    placement="top"
-                    :width="10"
-                    trigger="hover"
                     content="Like us on Github"
                     effect="dark"
                     popper-class="icon-popper"
@@ -133,7 +70,7 @@
         </el-dropdown>
       </div>
     </div>
-    <div class="hidden basis-auto lg:flex items-center w-full pb-0.5">
+    <div class="hidden basis-auto lg:flex items-center w-full">
       <div class="flex flex-row mr-auto items-center gap-11 md:h-[40px] lg:h-[56px]">
         <div>
           <router-link
@@ -161,55 +98,7 @@
         </div>
       </div>
       <div class="flex flex-row items-center ml-auto gap-x-[21px] md:h-[40px] lg:h-[56px]">
-        <div class="pt-1">
-          <el-popover
-            placement="bottom"
-            :width="10"
-            trigger="hover"
-            content="Like us on Facebook"
-            effect="dark"
-            popper-class="icon-popper"
-          >
-            <template #reference>
-              <el-link :underline="false" class="text-secondary hover:text-secondary-active">
-                <font-awesome-icon class="w-[17px] h-[17px]" :icon="['fab', 'facebook-square']" />
-              </el-link>
-            </template>
-          </el-popover>
-        </div>
-        <div class="pt-1">
-          <el-popover
-            placement="bottom"
-            :width="10"
-            trigger="hover"
-            content="Like us on Instagram"
-            effect="dark"
-            popper-class="icon-popper"
-          >
-            <template #reference>
-              <el-link :underline="false" class="text-secondary hover:text-secondary-active">
-                <font-awesome-icon class="w-[17px] h-[17px]" :icon="['fab', 'instagram']" />
-              </el-link>
-            </template>
-          </el-popover>
-        </div>
-        <div class="pt-1">
-          <el-popover
-            placement="bottom"
-            :width="10"
-            trigger="hover"
-            content="Like us on Twitter"
-            effect="dark"
-            popper-class="icon-popper"
-          >
-            <template #reference>
-              <el-link :underline="false" class="text-secondary hover:text-secondary-active">
-                <font-awesome-icon class="w-[17px] h-[17px]" :icon="['fab', 'twitter-square']" />
-              </el-link>
-            </template>
-          </el-popover>
-        </div>
-        <div class="pt-1">
+        <div>
           <el-popover
             placement="bottom"
             :width="10"
@@ -224,12 +113,6 @@
               </el-link>
             </template>
           </el-popover>
-        </div>
-        <div class="ml-4.75 mr-2 pt-0.5">
-          <el-button class="el-button--secondary w-[169.72px] h-[43.5px]">
-            <el-icon :size="16" class="text-primary-blue ml-1.5"> <Shop /> </el-icon>
-            <span class="text-primary-blue">Purchase now</span>
-          </el-button>
         </div>
       </div>
     </div>

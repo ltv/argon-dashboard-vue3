@@ -12,7 +12,7 @@
       </div>
     </div>
     <div
-      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full py-13 mx-auto px-4"
+      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full py-13 lg:pb-4.5 mx-auto px-4"
     >
       <AuthFooter />
     </div>

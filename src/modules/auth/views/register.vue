@@ -37,27 +37,27 @@
     <div
       class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-4"
     >
-      <div class="relative lg:max-w-1/2 md:max-w-2/3 w-full mx-auto -mt-32 mb-20">
+      <div class="relative lg:max-w-1/2 md:max-w-2/3 w-full mx-auto md:px-1.5 -mt-32 mb-20">
         <el-card class="bg-secondary text-center">
           <template #header>
             <div class="text-muted text-center mt-1.5 mb-6"><small>Sign up with</small></div>
             <div class="flex flex-nowrap text-center justify-center pb-7.5">
-              <el-button class="el-button--secondary" href="#">
+              <el-button class="bg-white border-white" href="#">
                 <img src="@/assets/images/github.png" alt="" class="h-4 w-4" />
                 <span class="pl-4 text-primary-blue">Github</span>
               </el-button>
-              <el-button class="el-button--secondary ml-7" href="#">
+              <el-button class="bg-white border-white ml-7" href="#">
                 <img src="@/assets/images/google.png" alt="" class="h-4 w-4" />
                 <span class="pl-4 text-primary-blue">Google</span>
               </el-button>
             </div>
           </template>
-          <div class="content-center items-center w-full md:p-6">
-            <div class="text-muted text-center -mt-0.5 mb-4">
+          <div class="content-center items-center w-full lg:p-6">
+            <div class="text-muted text-center mb-5">
               <small>Or sign up with credentials </small>
             </div>
             <el-form ref="form" :model="formData" class="authentication-form pb-6">
-              <el-form-item class="mb-4 rounded-md" prop="username">
+              <el-form-item class="mb-6 rounded-md" prop="username">
                 <div
                   class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
                 >
@@ -110,7 +110,7 @@
                 </div>
                 <el-input type="password" placeholder="Password" v-model="formData.password" />
               </el-form-item>
-              <el-form-item class="mb-4 rounded-md" prop="password">
+              <el-form-item class="mb-6 rounded-md" prop="password">
                 <div
                   class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
                 >
