@@ -271,26 +271,6 @@
       </div>
     </el-card>
   </div>
-
-  <!-- Demo section -->
-  <el-card class="mb-7.5 border-none">
-    <template #header>
-      <h3 class="cursor-auto mb-0 text-card-title">Headings</h3>
-    </template>
-    <!-- Heading 1 -->
-    <div class="row medium">
-      <div class="md:w-1/4">
-        <span class="title block">Heading 1</span>
-      </div>
-      <div class="md:w-3/4">
-        <ul class="list-inline">
-          <li class="list-inline-item">Lorem ipsum</li>
-          <li class="list-inline-item">Phasellus iaculis</li>
-          <li class="list-inline-item">Nulla volutpat</li>
-        </ul>
-      </div>
-    </div>
-  </el-card>
 </template>
 
 <script lang="ts">
