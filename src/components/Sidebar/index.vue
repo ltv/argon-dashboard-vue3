@@ -33,11 +33,57 @@
           </div>
         </div>
       </div>
-      <div
-        ref="target"
-        class="flex flex-col text-[#00000099] px-6 before:block before:md:mt-4 mt-0"
-      >
-        <ul class="flex flex-col -mx-6">
+      <div>
+        <el-menu ref="target" class="text-[#00000099] before:block before:md:mt-4 mt-0">
+          <el-sub-menu :class="{ 'hidden-arrow': !isSBOpen && !isSBPin }">
+            <template #title>
+              <div class="h-5 w-6 block">
+                <ColorSwatchIcon class="w-5 text-primary-blue" aria-hidden="true" />
+              </div>
+              <span
+                class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
+                :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                >Components</span
+              >
+            </template>
+            <el-menu-item-group class="flex flex-col px-6 -mx-6">
+              <el-menu-item
+                class="relative flex flex-row h-[45px] rounded-lg mb-px mt-0.5"
+                :class="{ ' bg-slate-100/50 ': route.name === item.name }"
+                v-for="(item, index) in menuItems"
+                :key="index"
+              >
+                <span
+                  v-if="route.name === item.name"
+                  class="absolute inset-y-1 -left-2 w-0.5 h-5/6 bg-primary-blue rounded-tr-lg rounded-br-lg"
+                  aria-hidden="true"
+                ></span>
+                <router-link
+                  class="inline-flex px-3 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
+                  :class="{ ' text-gray-800 ': route.name === item.name }"
+                  :to="{ name: item.name }"
+                  :title="item.title"
+                >
+                  <div>
+                    <em class="h-5 w-6 block">
+                      <component
+                        :is="item.icon"
+                        :class="' w-5 mx-auto ' + item.color"
+                        aria-hidden="true"
+                      />
+                    </em>
+                  </div>
+                  <span
+                    class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
+                    :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                    >{{ item.title }}</span
+                  >
+                </router-link>
+              </el-menu-item>
+            </el-menu-item-group>
+          </el-sub-menu>
+        </el-menu>
+        <!-- <ul class="flex flex-col -mx-6">
           <li
             class="relative flex flex-row mx-2 h-[45px] rounded-lg mb-px mt-0.5"
             :class="{ ' bg-slate-100/50 ': route.name === item.name }"
@@ -71,7 +117,7 @@
               >
             </router-link>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </aside>
@@ -81,12 +127,11 @@
 import { defineComponent, ref, computed, onMounted, watch, onUnmounted, onBeforeMount } from 'vue'
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
-import { BellIcon, MenuIcon, MenuAlt1Icon } from '@heroicons/vue/outline'
+import { BellIcon, MenuIcon, MenuAlt1Icon, ColorSwatchIcon } from '@heroicons/vue/outline'
 import useStore from 'store'
 import { onClickOutside } from '@vueuse/core'
 import env from 'core/env'
 import { checkIsMobile } from 'utils/index'
-
 interface MenuItem {
   title: string
   icon: any
@@ -101,6 +146,7 @@ export default defineComponent({
     BellIcon,
     MenuIcon,
     MenuAlt1Icon,
+    ColorSwatchIcon,
   },
   setup() {
     const route = useRoute()

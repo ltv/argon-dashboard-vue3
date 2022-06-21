@@ -1,0 +1,35 @@
+.el-menu {
+  .hidden-arrow {
+    .el-sub-menu__title {
+      .el-icon.el-sub-menu__icon-arrow {
+        @apply hidden #{!important};
+      }
+    }
+  }
+  .el-menu-item-group__title {
+    @apply p-0;
+  }
+  .el-sub-menu {
+    .el-sub-menu__title {
+      @apply rounded pl-5 h-[45px] #{!important};
+      .el-icon.el-sub-menu__icon-arrow {
+        @apply text-primary-blue;
+      }
+      &:hover {
+        @apply bg-white;
+      }
+    }
+    
+    .el-menu-item {
+      @apply text-[#00000099];
+      @apply  px-1.5 #{!important};
+      &:hover {
+        @apply bg-white;
+      }
+    }
+    
+  }
+  
+  
+
+}
