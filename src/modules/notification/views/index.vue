@@ -125,7 +125,7 @@
                 </el-form-item>
 
                 <!-- Submit -->
-                <el-form-item>
+                <el-form-item class="submit-btn">
                   <el-button type="primary" @click="onSubmit">Sign in</el-button>
                 </el-form-item>
               </el-form>

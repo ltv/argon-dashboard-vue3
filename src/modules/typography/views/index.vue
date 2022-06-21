@@ -137,8 +137,8 @@
           <div class="mb-4">
             <h3 class="display-3">Header with small subtitle</h3>
           </div>
-          <div class="mb-4 mt-4 text-muted">
-            <p>
+          <div class="mb-4 mt-4">
+            <p class="lead text-muted">
               According to the National Oceanic and Atmospheric Administration, Ted, Scambos,
               NSIDClead scentist, puts the potentially record maximum.
             </p>
@@ -271,6 +271,26 @@
       </div>
     </el-card>
   </div>
+
+  <!-- Demo section -->
+  <el-card class="mb-7.5 border-none">
+    <template #header>
+      <h3 class="cursor-auto mb-0 text-card-title">Headings</h3>
+    </template>
+    <!-- Heading 1 -->
+    <div class="row medium">
+      <div class="md:w-1/4">
+        <span class="title block">Heading 1</span>
+      </div>
+      <div class="md:w-3/4">
+        <ul class="list-inline">
+          <li class="list-inline-item">Lorem ipsum</li>
+          <li class="list-inline-item">Phasellus iaculis</li>
+          <li class="list-inline-item">Nulla volutpat</li>
+        </ul>
+      </div>
+    </div>
+  </el-card>
 </template>
 
 <script lang="ts">
@@ -280,12 +300,6 @@ export default defineComponent({})
 </script>
 
 <style lang="scss" scoped>
-.card-typography {
-  @apply bg-white break-words mb-7 shadow rounded-lg flex flex-col;
-}
-.card-header {
-  @apply p-5 border-b border-primary-white;
-}
 .row {
   @apply py-4 w-full h-auto break-normal;
 }
