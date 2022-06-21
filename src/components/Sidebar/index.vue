@@ -83,41 +83,6 @@
             </el-menu-item-group>
           </el-sub-menu>
         </el-menu>
-        <!-- <ul class="flex flex-col -mx-6">
-          <li
-            class="relative flex flex-row mx-2 h-[45px] rounded-lg mb-px mt-0.5"
-            :class="{ ' bg-slate-100/50 ': route.name === item.name }"
-            v-for="(item, index) in menuItems"
-            :key="index"
-          >
-            <span
-              v-if="route.name === item.name"
-              class="absolute inset-y-1 -left-2 w-0.5 h-5/6 bg-primary-blue rounded-tr-lg rounded-br-lg"
-              aria-hidden="true"
-            ></span>
-            <router-link
-              class="inline-flex px-3 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
-              :class="{ ' text-gray-800 ': route.name === item.name }"
-              :to="{ name: item.name }"
-              :title="item.title"
-            >
-              <div>
-                <em class="h-5 w-6 block">
-                  <component
-                    :is="item.icon"
-                    :class="' w-5 mx-auto ' + item.color"
-                    aria-hidden="true"
-                  />
-                </em>
-              </div>
-              <span
-                class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
-                :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
-                >{{ item.title }}</span
-              >
-            </router-link>
-          </li>
-        </ul> -->
       </div>
     </div>
   </aside>
