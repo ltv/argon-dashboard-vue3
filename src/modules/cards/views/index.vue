@@ -226,7 +226,7 @@
                 </div>
               </div>
               <div class="p-8">
-                <div class="text-center text-card-title">
+                <div class="text-center text-primary">
                   <h3 class="font-semibold pb-2">
                     Tywin Lannister<span class="font-thin">, 67</span>
                   </h3>
@@ -272,7 +272,7 @@
                     <el-link
                       :underline="false"
                       href="#index"
-                      class="text-15 text-card-title font-semibold hover:text-[#233dd2]"
+                      class="text-15 text-primary font-semibold hover:text-[#233dd2]"
                       >John Snow</el-link
                     >
                   </h4>
@@ -294,7 +294,7 @@
               </el-link>
               <div class="pt-4">
                 <h4 class="mb-0 py-2">
-                  <span class="text-17 font-semibold text-card-title">Tyrion Lannister</span>
+                  <span class="text-17 font-semibold text-primary">Tyrion Lannister</span>
                 </h4>
                 <h4 class="text-15 text-muted font-light mb-0">Hand of The King</h4>
               </div>
@@ -332,7 +332,7 @@
             <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
               <img alt="..." src="@/assets/images/man_draw.jpg" />
               <div class="px-6 pt-4 pb-8">
-                <div class="text-xl font-semibold pt-2 pb-1 text-card-title">
+                <div class="text-xl font-semibold pt-2 pb-1 text-primary">
                   Get started with Fancy
                 </div>
                 <div class="font-normal text-80 text-muted">
@@ -343,7 +343,7 @@
                   important components and features.
                 </p>
                 <a href="#!" class="">
-                  <span class="text-primary-blue hover:text-[#233dd2] text-sm font-semibold"
+                  <span class="text-indigo-410 hover:text-[#233dd2] text-sm font-semibold"
                     >View article</span
                   >
                 </a>
@@ -492,7 +492,7 @@
           <div class="mt-7">
             <el-card :body-style="{ padding: '0px' }" class="text-center border-white">
               <template #header>
-                <h4 class="font-semibold text-primary-blue py-4">BRAVO PACK</h4>
+                <h4 class="font-semibold text-indigo-410 py-4">BRAVO PACK</h4>
               </template>
               <div class="flex flex-col items-center p-6">
                 <div class="text-normal text-[44px] font-semibold">$49</div>
@@ -503,7 +503,7 @@
                     <div class="table-row h-16">
                       <div class="table-cell w-10 justify-center align-middle">
                         <div
-                          class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
+                          class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-410"
                         >
                           <font-awesome-icon :icon="['fas', 'terminal']" size="xs" />
                         </div>
@@ -518,7 +518,7 @@
                     <div class="table-row h-16">
                       <div class="table-cell w-10 justify-center align-middle">
                         <div
-                          class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
+                          class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-410"
                         >
                           <font-awesome-icon :icon="['fas', 'pen-fancy']" size="xs" />
                         </div>
@@ -535,7 +535,7 @@
                     <div class="table-row h-16">
                       <div class="table-cell w-10 justify-center align-middle">
                         <div
-                          class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-400"
+                          class="w-6 h-6 rounded-full text-white bg-gradient-to-l from-indigo-500 to-indigo-410"
                         >
                           <font-awesome-icon :icon="['fas', 'hard-drive']" size="xs" />
                         </div>

@@ -3,7 +3,7 @@
     <!-- Grid system -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Grid system</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Grid system</h3>
       </template>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 text-center items-center my-3">
         <div class="grid-items">One of three columns</div>
@@ -15,7 +15,7 @@
     <!-- Equal-width -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Equal-width</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Equal-width</h3>
       </template>
       <div class="grid grid-cols-6 gap-7 text-center items-center my-3">
         <div class="grid-items col-span-3">1 of 2</div>
@@ -30,7 +30,7 @@
     <!-- Setting one column width -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Setting one column width</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Setting one column width</h3>
       </template>
       <div class="my-3">
         <div class="flex gap-4 text-center mb-6">
@@ -49,7 +49,7 @@
     <!-- Variable width content -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Variable width content</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Variable width content</h3>
       </template>
       <div class="my-3">
         <div class="flex gap-4 justify-center mb-6">
@@ -68,7 +68,7 @@
     <!-- Equal-width multi-row -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Equal-width multi-row</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Equal-width multi-row</h3>
       </template>
       <div class="my-3">
         <div class="flex gap-4 text-center mb-6">
@@ -85,7 +85,7 @@
     <!-- Grid system -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Grid system</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Grid system</h3>
       </template>
       <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 text-center my-3">
         <div class="grid-items col-span-8">.col-6 .col-md-8</div>

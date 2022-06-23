@@ -2,7 +2,7 @@
   <div class="w-full block mx-auto h-auto lg:max-w-2/3">
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Styles</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Styles</h3>
       </template>
       <div class="flex flex-wrap gap-3">
         <div>
@@ -25,7 +25,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Colors</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Colors</h3>
       </template>
       <div class="flex flex-wrap gap-3.25">
         <div>
@@ -55,7 +55,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Outline</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Outline</h3>
       </template>
       <div class="flex flex-wrap gap-3.25">
         <div>
@@ -84,7 +84,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Sizes</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Sizes</h3>
       </template>
 
       <div>
@@ -119,7 +119,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Group</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Group</h3>
       </template>
 
       <div>
@@ -150,7 +150,7 @@
     </el-card>
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Social</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Social</h3>
       </template>
       <div>
         <div class="flex flex-wrap gap-3 pb-6 border-b border-slate-200/90">

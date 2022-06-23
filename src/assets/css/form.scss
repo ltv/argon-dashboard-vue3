@@ -7,7 +7,7 @@ body {
     @apply mt-6;
   }
   .el-input__inner {
-    @apply h-[46px] rounded-[0.25rem] border border-form-input placeholder:text-muted text-sm;
+    @apply h-[46px] rounded-[0.25rem] border border-light placeholder:text-muted text-sm;
   }
   .el-input-group__append {
     @apply text-base text-muted bg-white font-normal;
@@ -16,7 +16,7 @@ body {
     @apply text-base font-medium placeholder:text-muted;
   }
   .el-input__inner:focus {
-    @apply border-[1px] outline-0 border-primary-blue ring-0 shadow-[0_3px_9px_transparent] drop-shadow-[3px_4px_8px_rgb(94,114,228,0.10)];
+    @apply border-[1px] outline-0 border-indigo-410 ring-0 shadow-[0_3px_9px_transparent] drop-shadow-[3px_4px_8px_rgb(94,114,228,0.10)];
   }
 
   .el-upload.el-upload--text {
@@ -31,14 +31,14 @@ body {
     @apply rounded-md w-[90%] sm:w-[380px] #{!important};
 
     .el-dialog__body {
-      @apply flex flex-col items-center justify-center bg-mess-box-bg pt-0 rounded-md text-mess-box-text p-0 text-center;
+      @apply flex flex-col items-center justify-center bg-secondary pt-0 rounded-md text-muted p-0 text-center;
     }
     .el-dialog__header {
       @apply hidden;
     }
 
     .el-button.el-button--primary.el-button--default.sign-btn {
-      @apply bg-white text-primary-blue border-transparent hover:text-black #{!important};
+      @apply bg-white text-indigo-410 border-transparent hover:text-black #{!important};
     }
 
     .el-button.el-button--default span {
@@ -61,7 +61,7 @@ body {
       @apply w-full border-0 p-0 drop-shadow-sm;
     }
     .el-input.el-input--default .el-input__inner {
-      @apply h-[46px] p-0 text-sm rounded bg-white border-transparent placeholder:text-mess-box-text focus:text-mess-box-text focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
+      @apply h-[46px] p-0 text-sm rounded bg-white border-transparent placeholder:text-muted focus:text-muted focus:font-normal text-slate-400 focus:ring-0 focus:bg-white #{!important};
     }
     .el-form-item__content {
       @apply justify-center;
@@ -74,13 +74,13 @@ body {
       @apply rounded h-4 w-4 border-0 shadow #{!important};
     }
     .el-checkbox__label {
-      @apply text-mess-box-text font-normal focus:border-transparent;
+      @apply text-muted font-normal focus:border-transparent;
     }
     .el-checkbox__inner:hover {
       @apply border-inherit;
     }
     .el-checkbox__input.is-checked .el-checkbox__inner {
-      @apply bg-primary-blue border-0 #{!important};
+      @apply bg-indigo-410 border-0 #{!important};
     }
     .el-checkbox__input.is-checked + .el-checkbox__label {
       @apply text-slate-400;
@@ -103,7 +103,7 @@ body {
 
     .el-input {
       .el-input__inner {
-        @apply transition-all duration-300 rounded-md shadow-form-input border-none h-[46px] pl-12 text-mess-box-text text-sm placeholder:font-normal #{!important};
+        @apply transition-all duration-300 rounded-md shadow-form-input border-none h-[46px] pl-12 text-muted text-sm placeholder:font-normal #{!important};
         &:focus {
           @apply border-none shadow-md ring-0 #{!important};
         }
@@ -123,11 +123,11 @@ body {
     .el-checkbox.is-checked {
       .el-checkbox__input {
         .el-checkbox__inner {
-          @apply bg-primary-blue border-primary-blue;
+          @apply bg-indigo-410 border-indigo-410;
         }
       }
       .el-checkbox__label {
-        @apply text-mess-box-text focus:border-transparent;
+        @apply text-muted focus:border-transparent;
       }
     }
   }

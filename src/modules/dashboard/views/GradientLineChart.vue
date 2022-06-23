@@ -26,10 +26,8 @@
                   size="small"
                   @click="changeDataChart([0, 20, 5, 25, 10, 30, 15, 40])"
                 >
-                  <span class="hidden md:block text-primary-blue font-medium text-sm px-2"
-                    >Week</span
-                  >
-                  <span class="md:hidden text-primary-blue font-medium text-sm">W</span>
+                  <span class="hidden md:block text-indigo-410 font-medium text-sm px-2">Week</span>
+                  <span class="md:hidden text-indigo-410 font-medium text-sm">W</span>
                 </el-button>
               </div>
             </div>

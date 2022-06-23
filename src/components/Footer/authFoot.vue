@@ -5,14 +5,14 @@
         © 2022
         <a
           href="#"
-          class="font-semibold ml-1 text-primary-blue hover:text-primary-blue-active"
+          class="font-semibold ml-1 text-indigo-410 hover:text-indigo-410-active"
           target="_blank"
           >Creative Tim</a
         >
         &amp;
         <a
           href="#"
-          class="font-semibold ml-1 text-primary-blue hover:text-primary-blue-active"
+          class="font-semibold ml-1 text-indigo-410 hover:text-indigo-410-active"
           target="_blank"
           >Updivision</a
         >
@@ -21,27 +21,27 @@
     <div class="xl:flex-6 xl:max-w-1/2 mx-auto md:mx-0">
       <div class="flex flex-wrap mb-0 pl-0 justify-center lg:justify-end gap-x-6 gap-y-2">
         <div class="">
-          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-indigo-410" target="_blank"
             >Creative Tim</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-indigo-410" target="_blank"
             >Updivision</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-indigo-410" target="_blank"
             >About Us</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-indigo-410" target="_blank"
             >Blog</a
           >
         </div>
         <div class="">
-          <a href="#" class="text-sm text-dark-lighter hover:text-primary-blue" target="_blank"
+          <a href="#" class="text-sm text-dark-lighter hover:text-indigo-410" target="_blank"
             >MIT License</a
           >
         </div>

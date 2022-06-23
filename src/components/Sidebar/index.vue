@@ -38,7 +38,7 @@
           <el-sub-menu :class="{ 'hidden-arrow': !isSBOpen && !isSBPin }">
             <template #title>
               <div class="h-5 w-6 block">
-                <ColorSwatchIcon class="w-5 text-primary-blue" aria-hidden="true" />
+                <ColorSwatchIcon class="w-5 text-indigo-410" aria-hidden="true" />
               </div>
               <span
                 class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
@@ -55,7 +55,7 @@
               >
                 <span
                   v-if="route.name === item.name"
-                  class="absolute inset-y-1 -left-2 w-0.5 h-5/6 bg-primary-blue rounded-tr-lg rounded-br-lg"
+                  class="absolute inset-y-1 -left-2 w-0.5 h-5/6 bg-indigo-410 rounded-tr-lg rounded-br-lg"
                   aria-hidden="true"
                 ></span>
                 <router-link

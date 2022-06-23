@@ -738,7 +738,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 body {
   .el-button {
-    @apply bg-icon 
+    @apply bg-blue-60
     py-9 
     px-6
     flex 
@@ -776,7 +776,7 @@ body {
     @apply w-full inline-block text-sm text-left font-normal leading-6 overflow-hidden text-ellipsis whitespace-nowrap;
   }
   .el-button .el-icon {
-    @apply text-2xl text-primary-blue inline-block ml-[-8px] mr-0.5 #{!important};
+    @apply text-2xl text-indigo-410 inline-block ml-[-8px] mr-0.5 #{!important};
   }
   .card-typography {
     @apply bg-white break-words mt-2 mb-7 shadow rounded-lg flex flex-col;

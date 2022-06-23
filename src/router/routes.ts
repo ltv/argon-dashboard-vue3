@@ -36,7 +36,7 @@ const routes = [
     meta: {
       title: 'Dashboard',
       icon: HomeIcon,
-      color: 'text-left-bar-indigo',
+      color: 'text-indigo-410',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -48,7 +48,7 @@ const routes = [
     meta: {
       title: 'Buttons',
       icon: CursorClickIcon,
-      color: 'text-left-bar-rose',
+      color: 'text-red-410',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -60,7 +60,7 @@ const routes = [
     meta: {
       title: 'Notifications',
       icon: BellIcon,
-      color: 'text-left-bar-green',
+      color: 'text-success',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -72,7 +72,7 @@ const routes = [
     meta: {
       title: 'Tables',
       icon: ViewBoardsIcon,
-      color: 'text-left-bar-indigo',
+      color: 'text-indigo-410',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -84,7 +84,7 @@ const routes = [
     meta: {
       title: 'Grid',
       icon: ViewGridIcon,
-      color: 'text-left-bar-cyan',
+      color: 'text-cyan-320',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -96,7 +96,7 @@ const routes = [
     meta: {
       title: 'Typography',
       icon: DocumentTextIcon,
-      color: 'text-left-bar-yellow',
+      color: 'text-yellow-310',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -108,7 +108,7 @@ const routes = [
     meta: {
       title: 'Cards',
       icon: CreditCardIcon,
-      color: 'text-left-bar-orange',
+      color: 'text-warning',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -120,7 +120,7 @@ const routes = [
     meta: {
       title: 'Icons',
       icon: StarIcon,
-      color: 'text-left-bar-red',
+      color: 'text-danger',
       parentPath: 'Components',
       isDarkBackground: false,
     },
@@ -132,7 +132,7 @@ const routes = [
     meta: {
       title: 'Profile',
       icon: UserIcon,
-      color: 'text-left-bar-red',
+      color: 'text-danger',
       parentPath: 'Components',
       isDarkBackground: true,
     },
@@ -144,7 +144,7 @@ const routes = [
     meta: {
       title: 'Map',
       icon: LocationMarkerIcon,
-      color: 'text-left-bar-red',
+      color: 'text-danger',
       parentPath: 'Components',
       isDarkBackground: false,
     },
