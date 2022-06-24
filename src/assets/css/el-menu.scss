@@ -18,7 +18,7 @@
       @apply p-0;
     }
     .el-menu-item {
-      @apply min-w-min #{!important};
+      @apply min-w-0 #{!important};
     }
   }
   

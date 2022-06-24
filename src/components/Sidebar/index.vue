@@ -101,7 +101,7 @@
                     :index="index.toString()"
                   >
                     <router-link
-                      class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-all duration-200 hover:text-gray-500/100 focus:text-gray-800"
+                      class="inline-flex pl-2 items-center w-full text-sm my-0.5 font-normal transition-all duration-200 hover:text-gray-500/100 focus:text-gray-800"
                       :class="{
                         ' text-gray-800 ': route.name === subItem.name,
                         ' pl-4.5 ': isSBOpen || isSBPin,
