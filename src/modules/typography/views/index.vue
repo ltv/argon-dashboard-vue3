@@ -3,7 +3,7 @@
     <!-- Heading section -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Headings</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Headings</h3>
       </template>
       <!-- Heading 1 -->
       <div class="row medium">
@@ -64,7 +64,7 @@
     <!-- Display section -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Display titles</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Display titles</h3>
       </template>
       <!-- Display 1 -->
       <div class="row medium">
@@ -107,7 +107,7 @@
     <!-- Specialized titles -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Specialized titles</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Specialized titles</h3>
       </template>
 
       <!-- Heading -->
@@ -150,7 +150,7 @@
     <!-- Paragraphs -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Paragraphs</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Paragraphs</h3>
       </template>
       <!-- Paragraphs -->
       <div class="row medium">
@@ -215,7 +215,7 @@
           <span class="title block">Primary Text</span>
         </div>
         <div class="md:w-3/4">
-          <p class="text-primary">
+          <p class="text-indigo-410">
             I will be the leader of a company that ends up being worth billions of dollars, because
             I got the answers...
           </p>

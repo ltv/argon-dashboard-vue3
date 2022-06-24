@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-background-page w-full">
+  <div class="h-screen overflow-hidden flex bg-slate-20 w-full">
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full overflow-auto"
@@ -9,7 +9,7 @@
       <div
         class="w-full h-[150px] relative bg-transparent border-none"
         :class="{
-          'bg-primary-blue': !route.meta.isDarkBackground,
+          'bg-indigo-410': !route.meta.isDarkBackground,
         }"
       >
         <div
@@ -59,12 +59,12 @@
             <div class="w-1/2 text-right pt-px pr-px">
               <el-button
                 size="small"
-                class="w-[45px] h-7 rounded font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
+                class="w-[45px] h-7 rounded font-semibold text-indigo-410 bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
                 >New</el-button
               >
               <el-button
                 size="small"
-                class="w-14 h-7 rounded font-semibold text-primary-blue bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
+                class="w-14 h-7 rounded font-semibold text-indigo-410 bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
                 >Filters</el-button
               >
             </div>

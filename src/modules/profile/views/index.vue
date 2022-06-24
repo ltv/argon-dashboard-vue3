@@ -3,7 +3,7 @@
     class="background-url bg-top bg-cover pt-[100px] pb-[330px] md:pb-[250px] lg:pt-[155px] lg:pb-[272px] relative"
   >
     <span
-      class="absolute block w-full inset-0 opacity-90 bg-gradient-to-r from-indigo-850 to-indigo-950"
+      class="absolute block w-full inset-0 opacity-90 bg-gradient-to-r from-dark to-dark-100"
     ></span>
     <div class="w-full px-4 lg:px-[30px] lg:max-w-[42%] absolute top-[15%] lg:top-1/3 break-normal">
       <h1 class="text-white text-[2.75rem] mb-2">Hello Admin</h1>
@@ -23,9 +23,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-7">
         <div class="col-span-3">
           <!-- Left indicator -->
-          <el-card
-            class="border-white indicator bg-gradient-to-r from-indicator-cyan to-indicator-blue border-0"
-          >
+          <el-card class="border-white indicator bg-gradient-to-r from-info to-blue-410 border-0">
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
                 <div class="card-header">
@@ -44,14 +42,14 @@
                 <ArrowUpIcon class="inline pb-1 h-5 w-4" aria-hidden="true" />
                 3.48%
               </span>
-              <span class="whitespace-nowrap text-indicator-slate">Since last month</span>
+              <span class="whitespace-nowrap text-light">Since last month</span>
             </p>
           </el-card>
         </div>
         <div class="col-span-3">
           <!-- Right indicator -->
           <el-card
-            class="border-white indicator bg-gradient-to-r from-left-bar-red to-left-bar-red-light border-0"
+            class="border-white indicator bg-gradient-to-r from-danger to-red-light border-0"
           >
             <div class="flex flex-wrap">
               <div class="basis-0 grow">
@@ -71,7 +69,7 @@
                 <ArrowUpIcon class="inline pb-1 h-5 w-4" aria-hidden="true" />
                 3.48%
               </span>
-              <span class="whitespace-nowrap text-indicator-slate">Since last month</span>
+              <span class="whitespace-nowrap text-light">Since last month</span>
             </p>
           </el-card>
         </div>
@@ -223,13 +221,13 @@
               </div>
             </div>
             <div class="p-8">
-              <div class="text-center text-card-title">
+              <div class="text-center text-primary">
                 <h3 class="text-[17px] mt-6 font-semibold pb-2">
                   Admin<span class="font-thin">, 27</span>
                 </h3>
                 <h5 class="font-light">Bucharest, Romania</h5>
               </div>
-              <div class="text-center text-card-title">
+              <div class="text-center text-primary">
                 <h3 class="text-[13px] mt-6 font-semibold pb-2">
                   Solution Manager - Creative Tim Officer
                 </h3>
@@ -246,7 +244,7 @@
         <div class="col-span-6">
           <el-card class="border-none">
             <template #header>
-              <h3 class="cursor-auto mb-0 text-card-title">Progress track</h3>
+              <h3 class="cursor-auto mb-0 text-primary">Progress track</h3>
             </template>
             <div class="flex flex-col my-[-16px]">
               <div class="flex gap-7 progress items-center">

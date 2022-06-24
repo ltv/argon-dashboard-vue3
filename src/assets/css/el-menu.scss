@@ -13,23 +13,19 @@
     .el-sub-menu__title {
       @apply rounded pl-5 h-[45px] #{!important};
       .el-icon.el-sub-menu__icon-arrow {
-        @apply text-primary-blue;
+        @apply text-indigo-410;
       }
       &:hover {
         @apply bg-white;
       }
     }
-    
+
     .el-menu-item {
       @apply text-[#00000099];
-      @apply  px-1.5 #{!important};
+      @apply px-1.5 #{!important};
       &:hover {
         @apply bg-white;
       }
     }
-    
   }
-  
-  
-
 }

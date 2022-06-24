@@ -1,7 +1,7 @@
 <template>
   <div v-if="!isAuthenticated">
     <div
-      class="relative w-full bg-gradient-to-r from-left-bar-indigo to-[#825ee4] py-24 lg:py-32 lg:pt-40"
+      class="relative w-full bg-gradient-to-r from-indigo-410 to-[#825ee4] py-24 lg:py-32 lg:pt-40"
     >
       <div
         class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75"
@@ -57,11 +57,11 @@
             <div class="pb-6 flex flex-nowrap text-center justify-center">
               <el-button class="bg-white border-white" href="#">
                 <img src="@/assets/images/github.png" alt="" class="h-4 w-4" />
-                <span class="pl-4 text-primary-blue">Github</span>
+                <span class="pl-4 text-indigo-410">Github</span>
               </el-button>
               <el-button class="bg-white border-white" href="#">
                 <img src="@/assets/images/google.png" alt="" class="h-4 w-4" />
-                <span class="pl-4 text-primary-blue">Google</span>
+                <span class="pl-4 text-indigo-410">Google</span>
               </el-button>
             </div>
           </template>
@@ -88,7 +88,7 @@
                 <el-input type="password" placeholder="Password" v-model="formData.password" />
               </el-form-item>
               <el-form-item class="mb-4">
-                <el-checkbox class="text-mess-box-text font-normal">Remember me</el-checkbox>
+                <el-checkbox class="text-muted font-normal">Remember me</el-checkbox>
               </el-form-item>
             </el-form>
             <el-button type="primary" @click="handleLoginClick"> Sign in </el-button>

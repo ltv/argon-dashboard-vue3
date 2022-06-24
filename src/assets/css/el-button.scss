@@ -19,11 +19,10 @@ body {
     @apply rounded max-w-fit h-[25px] #{!important};
   }
 
-
   .el-button.el-button--default.is-plain {
-    @apply bg-transparent text-btn-default border-btn-default shadow-none;
+    @apply bg-transparent text-dark border-dark shadow-none;
     &:hover {
-      @apply bg-btn-default text-white drop-shadow-lg;
+      @apply bg-dark text-white drop-shadow-lg;
     }
     &:active {
       @apply drop-shadow-none;
@@ -31,9 +30,9 @@ body {
   }
 
   .el-button.el-button--primary.is-plain {
-    @apply bg-transparent text-primary-blue border-primary-blue shadow-none #{!important};
+    @apply bg-transparent text-indigo-410 border-indigo-410 shadow-none #{!important};
     &:hover {
-      @apply bg-primary-blue text-white drop-shadow-lg #{!important};
+      @apply bg-indigo-410 text-white drop-shadow-lg #{!important};
     }
     &:active {
       @apply drop-shadow-none #{!important};
@@ -91,12 +90,12 @@ body {
   }
 
   .el-button.el-button--primary {
-    @apply bg-primary-blue border border-primary-blue text-white #{!important};
+    @apply bg-indigo-410 border border-indigo-410 text-white #{!important};
     span {
-      @apply px-1.25 ;
+      @apply px-1.25;
     }
     &:active {
-      @apply bg-primary-blue-active shadow-none #{!important};
+      @apply bg-primary-blue shadow-none #{!important};
     }
   }
 
@@ -129,7 +128,7 @@ body {
   }
 
   .el-button.el-button--secondary {
-    @apply shadow-button ;
+    @apply shadow-button;
     @apply bg-secondary border border-secondary text-black  #{!important};
     &:hover {
       @apply shadow-md #{!important};
@@ -140,12 +139,12 @@ body {
   }
 
   .el-button.el-button--default {
-    @apply transition-all duration-100 bg-btn-default border border-btn-default text-white font-semibold h-10.75 text-sm tracking-wide;
+    @apply transition-all duration-100 bg-dark border border-dark text-white font-semibold h-10.75 text-sm tracking-wide;
     span {
-      @apply px-1.25 ;
+      @apply px-1.25;
     }
     &:active {
-      @apply bg-btn-default-active shadow-none;
+      @apply bg-dark-120 shadow-none;
     }
   }
 }

@@ -1,7 +1,7 @@
 body {
   // Overlay opacity
   .el-overlay {
-    @apply bg-overlay #{!important};
+    @apply bg-dark-10 #{!important};
   }
 
   // Alerts
@@ -9,7 +9,7 @@ body {
     @apply py-4 p-6 text-sm rounded-md;
   }
   .el-alert__closebtn {
-    @apply top-2/4 right-6 text-lg translate-y-[-50%] text-alert-closebtn bg-transparent h-5 w-5 hover:bg-transparent hover:opacity-75 #{!important};
+    @apply top-2/4 right-6 text-lg translate-y-[-50%] text-slate-10 bg-transparent h-5 w-5 hover:bg-transparent hover:opacity-75 #{!important};
   }
   .el-alert__title {
     @apply text-sm font-semibold leading-8;
@@ -19,13 +19,13 @@ body {
     @apply bg-success;
   }
   .el-alert.info {
-    @apply bg-info-noti;
+    @apply bg-cyan-310;
   }
   .el-alert.warning {
-    @apply bg-warning-noti;
+    @apply bg-warning-50;
   }
   .el-alert.danger {
-    @apply bg-danger-noti;
+    @apply bg-danger-50;
   }
   .el-alert.success,
   .el-alert.info,
@@ -39,7 +39,7 @@ body {
     @apply py-4 pl-6 pr-20 min-w-0 w-[90%] max-w-[600px] items-start rounded-md;
   }
   .el-message.default {
-    @apply bg-default-noti border-default-noti text-white #{!important};
+    @apply bg-dark-50 border-dark-50 text-white #{!important};
   }
   .el-message .is-closable {
     @apply mb-4;
@@ -70,7 +70,7 @@ body {
   }
 
   .el-message.info {
-    @apply bg-info-noti border-info-noti text-white #{!important};
+    @apply bg-cyan-310 border-cyan-310 text-white #{!important};
   }
   .el-message.info .el-icon {
     @apply text-white #{!important};
@@ -81,7 +81,7 @@ body {
   }
 
   .el-message.success {
-    @apply bg-success-noti border-success-noti text-white #{!important};
+    @apply bg-success-50 border-success-50 text-white #{!important};
   }
   .el-message.success .el-icon {
     @apply text-white #{!important};
@@ -92,7 +92,7 @@ body {
   }
 
   .el-message.warning {
-    @apply bg-warning-noti border-warning-noti text-white #{!important};
+    @apply bg-warning-50 border-warning-50 text-white #{!important};
   }
   .el-message.warning .el-icon {
     @apply text-white #{!important};
@@ -103,7 +103,7 @@ body {
   }
 
   .el-message.danger {
-    @apply bg-danger-noti border-danger-noti text-white #{!important};
+    @apply bg-danger-50 border-danger-50 text-white #{!important};
   }
   .el-message.danger .el-icon {
     @apply text-white #{!important};
@@ -115,7 +115,7 @@ body {
 
   // el-dialog - danger
   .el-dialog.danger {
-    @apply bg-gradient-to-r from-left-bar-red to-left-bar-red-light;
+    @apply bg-gradient-to-r from-danger to-red-light;
     .el-dialog__title,
     .el-dialog__body {
       @apply text-white break-normal #{!important};
@@ -165,7 +165,7 @@ body {
     }
 
     .el-button.el-button--secondary.is-plain {
-      @apply bg-transparent text-primary-blue hover:translate-y-0 border-transparent shadow-none hover:bg-transparent #{!important};
+      @apply bg-transparent text-indigo-410 hover:translate-y-0 border-transparent shadow-none hover:bg-transparent #{!important};
     }
 
     .el-icon.el-dialog__close {

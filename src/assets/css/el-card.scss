@@ -1,15 +1,15 @@
 body {
   .el-card {
-    @apply relative flex flex-col bg-clip-border break-words min-w-0 rounded-[5px] shadow-card cursor-auto text-card-title #{!important};
-    --el-card-bg-color: white !important
+    @apply relative flex flex-col bg-clip-border break-words min-w-0 rounded-[5px] shadow-card cursor-auto text-primary #{!important};
+    --el-card-bg-color: white !important;
   }
   .el-card .card-header {
     h3 {
-      @apply mb-0 cursor-auto text-card-title;
+      @apply mb-0 cursor-auto text-primary;
     }
   }
   .el-card .el-card__header {
-    @apply w-full py-[20px] px-6 mb-0 border-b-[#0000000d] ;
+    @apply w-full py-[20px] px-6 mb-0 border-b-[#0000000d];
   }
   .el-card .el-card__body {
     @apply w-full py-6 px-6 grow shrink;

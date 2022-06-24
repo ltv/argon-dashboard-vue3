@@ -145,56 +145,35 @@ module.exports = {
         22: '5.5rem',
       },
       colors: {
-        default: '#172b4d',
-        cyan: {
-          30: 'rgb(233 236 239)'
+        default: 'rgb(23 43 77)', //#172b4d
+        blue: {
+          60: 'rgb(246 249 252)',
+          410: 'rgb(17 113 239)',
         },
-        'card-title': '#32325d',
-        'background-page': '#f8f9fe',
-        'left-bar-yellow': '#ffd600',
-        'left-bar-indigo': '#5e72e4',
-        'left-bar-gray': '#939cac',
-        'left-bar-red': '#f5365c',
-        'left-bar-red-light': '#f56036',
-        'left-bar-orange': '#fb6340',
-        'left-bar-cyan': '#22d1f0',
-        'left-bar-rose': '#f4645f',
-        'left-bar-green': '#2dce89',
-        'alert-primary': 'rgb(120 137 232)',
-        'alert-secondary': '#f8fbfc',
-        'alert-closebtn': '#ffffff99',
-        'default-noti': '#000000f2',
-        'info-noti': '#37d5f2',
-        'success-noti': '#4fd69c',
-        'warning-noti': '#fc7c5f',
-        'danger-noti': '#f75676',
-        'mess-box-text': '#8898aa',
-        'mess-box-bg': '#f7fafc',
-        'el-form-input': '#E8F0FE',
-        'indicator-cyan': '#11cdef',
-        'indicator-blue': '#1171ef',
-        'indicator-slate': '#ced4da',
-        'form-input': '#dee2e6',
+        cyan: {
+          30: 'rgb(233 236 239)',
+          310: 'rgb(55 213 242)',
+          320: 'rgb(34 209 240)'
+        },
         normal: 'rgb(82 95 127)',
-        'overlay': '#00000033',
         dark: {
-          DEFAULT: 'rgb(23 43 77)',
+          DEFAULT: 'rgb(23 43 77)', //#172b4d
           light: 'rgb(28 52 93)',
-          lighter: 'rgb(82 95 127)' //#525f7f
+          lighter: 'rgb(82 95 127)', //#525f7f
+          10: 'rgb(0 0 0 / 0.2)', 
+          50: 'rgb(0 0 0 / 0.95)', //#000000f2
+          100: "rgb(26 23 77)", // #1a174d
+          120: 'rgb(11 21 38)', //
         },
         light: {
           DEFAULT: 'rgb(206 212 218)', //#ced4da
         },
         primary: {
           DEFAULT: 'rgb(50 50 93)',
-          100: 'rgb(82 95 127)',
-          200: 'rgb(136 152 170)',
           blue: {
-            DEFAULT: 'rgb(94 114 228)',
-            active: 'rgb(50 76 221)',
+            DEFAULT: 'rgb(50 76 221)',
           },
-          red: 'rgb(245 54 92)',
-          white: 'rgba(0, 0, 0, 0.05)',
+          white: 'rgb(0 0 0 / 0.05)',
         },
         muted: {
           DEFAULT: 'rgb(136 152 170)',
@@ -210,33 +189,39 @@ module.exports = {
         },
         warning: {
           DEFAULT: 'rgb(251 99 64)',
-          active: 'rgb(250 58 14)',
+          active: 'rgb(250 58 14)',          
+          50: 'rgb(252 124 95)', //#fc7c5f
         },
         success: {
           DEFAULT: 'rgb(45 206 137)',
           active: 'rgb(36 164 109)',
+          50: 'rgb(79 214 156)', //#4fd69c
         },
         danger: {
           DEFAULT: 'rgb(245 54 92)',
-          active: 'rgb(236 12 56)',
-        },
-        'btn-default': {
-          DEFAULT: 'rgb(23 43 77)',
-          active: 'rgb(11 21 38)',
-        },
-        icon: {
-          DEFAULT: 'rgb(246 249 252)',
+          active: 'rgb(236 12 56)',          
+          50: 'rgb(247 86 118)', //#f75676
         },
         webkit: {
           DEFAULT: '-webkit-focus-ring-color',
         },
-        indigo: {
-          850: "#172b4d",
-          950: "#1a174d"
-        },
         amber: {
           60: "rgb(252 248 227)"
         },
+        slate: {
+          10: 'rgb(255 255 255 / 0.6)',
+          20: 'rgb(248 249 254)', //#f8f9fe
+        },
+        red: {
+          410: 'rgb(244 100 95)',
+          light: 'rgb(245 96 54)'
+        },
+        indigo: {
+          410: 'rgb(94 114 228)', //#5e72e4
+        },
+        yellow: {
+          310: 'rgb(255 214 0)'
+        }
       },
       fontSize: {
         0.625: ['0.625rem', '1.5'],

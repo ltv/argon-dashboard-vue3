@@ -1,7 +1,7 @@
 <template>
   <div v-if="!isAuthenticated">
     <div
-      class="relative w-full bg-gradient-to-r from-left-bar-indigo to-[#825ee4] py-24 lg:py-32 lg:pt-40"
+      class="relative w-full bg-gradient-to-r from-indigo-410 to-[#825ee4] py-24 lg:py-32 lg:pt-40"
     >
       <div
         class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75"

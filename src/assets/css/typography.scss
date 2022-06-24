@@ -100,17 +100,17 @@ body {
 
   // Paragraphs
   p {
-    @apply text-primary-100 text-base font-light leading-1.7;
+    @apply text-dark-lighter text-base font-light leading-1.7;
   }
   .blockquote {
-    @apply mb-4 text-xl text-primary-100 font-normal leading-normal;
+    @apply mb-4 text-xl text-dark-lighter font-normal leading-normal;
   }
   .blockquote-footer {
-    @apply text-primary-200 text-80 font-normal leading-normal;
+    @apply text-muted text-80 font-normal leading-normal;
   }
-  .text-primary {
-    @apply text-primary-blue #{!important};
-  }
+  // .text-primary {
+  //   @apply text-indigo-410 #{!important};
+  // }
 
   // List
   ul {

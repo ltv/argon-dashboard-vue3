@@ -3,7 +3,7 @@
     <!-- Alerts -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Alerts</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Alerts</h3>
       </template>
       <div class="flex flex-col gap-4">
         <el-alert class="success" title="success alert" type="success" show-icon />
@@ -16,7 +16,7 @@
     <!-- Modals -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Modals</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Modals</h3>
       </template>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-3 lg:gap-6">
         <!-- Modals - Default -->
@@ -138,7 +138,7 @@
     <!-- Notifications -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-card-title">Notifications</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Notifications</h3>
       </template>
       <div class="flex flex-wrap gap-2">
         <div>

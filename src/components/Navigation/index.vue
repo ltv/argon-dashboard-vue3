@@ -2,7 +2,7 @@
   <div
     class="flex items-center bg-default border mx-0 py-2 px-[13px] pl-[11px] md:px-[29px] shadow-sm h-[77px] md:h-19.75"
     :class="{
-      'bg-primary-blue border-primary-blue border-b-slate-50/10': !route.meta.isDarkBackground,
+      'bg-indigo-410 border-indigo-410 border-b-slate-50/10': !route.meta.isDarkBackground,
       'border-default border-b-cyan-30': route.meta.isDarkBackground,
     }"
   >
@@ -54,7 +54,7 @@
                 v-if="!isSBPin && isSearchOpen"
                 class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
                 :class="{
-                  'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                  'text-dark-lighter hover:text-indigo-410': route.meta.isDarkBackground,
                 }"
                 @click="setSearchOpen(false)"
               />
@@ -70,10 +70,10 @@
               <div>
                 <el-icon
                   :size="20"
-                  class="cursor-pointer w-4.5 h-4.5 primary-blue text-slate-50 hover:text-slate-300"
+                  class="cursor-pointer w-4.5 h-4.5 indigo-410 text-slate-50 hover:text-slate-300"
                   :class="{
                     'text-slate-300': clickIconBell,
-                    'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                    'text-dark-lighter hover:text-indigo-410': route.meta.isDarkBackground,
                   }"
                 >
                   <BellFilled />
@@ -135,7 +135,7 @@
                   class="cursor-pointer w-4.5 h-4.5 text-slate-50 hover:text-slate-300"
                   :class="{
                     'text-slate-300': clickIconMenu,
-                    'text-dark-lighter hover:text-primary-blue': route.meta.isDarkBackground,
+                    'text-dark-lighter hover:text-indigo-410': route.meta.isDarkBackground,
                   }"
                 >
                   <Menu />
@@ -269,7 +269,7 @@
               <el-dropdown-menu>
                 <el-dropdown-item class="m-0 hover:bg-white">
                   <div class="flex items-center w-full pt-1 cursor-default">
-                    <h6 class="truncate m-0 text-card-title">WELCOME!</h6>
+                    <h6 class="truncate m-0 text-primary">WELCOME!</h6>
                   </div>
                 </el-dropdown-item>
                 <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">
@@ -408,7 +408,7 @@ export default defineComponent({
     .el-input__inner {
       @apply relative transition-all duration-200 pt-2.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
       &:focus {
-        @apply w-full sm:w-98 bg-white text-black border-indigo-400 #{!important};
+        @apply w-full sm:w-98 bg-white text-black border-indigo-410 #{!important};
       }
     }
   }
