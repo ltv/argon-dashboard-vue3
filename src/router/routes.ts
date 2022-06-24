@@ -7,7 +7,8 @@ import {
   ViewBoardsIcon,
   BellIcon,
   LocationMarkerIcon,
-  UserIcon
+  UserIcon,
+  ColorSwatchIcon
 } from '@heroicons/vue/outline'
 
 import {
@@ -28,6 +29,10 @@ const Card = () => import('modules/cards/views/index.vue')
 const Icons = () => import('modules/icons/views/index.vue')
 const Profile = () => import('modules/profile/views/index.vue')
 const Map = () => import('modules/map/views/index.vue')
+
+const ComponentLayout = () => import('components/ComponentLayout/index.vue')
+
+
 const routes = [
   {
     path: '/',
@@ -37,94 +42,102 @@ const routes = [
       title: 'Dashboard',
       icon: HomeIcon,
       color: 'text-indigo-410',
-      parentPath: 'Components',
-      isDarkBackground: false,
+      requiresAuth: true,
+      parentPath: 'Home'
     },
   },
   {
-    path: '/buttons',
-    component: Button,
-    name: 'Button',
+    path: '/components/:componentItem?',
+    component: ComponentLayout,
+    name: 'Components',
     meta: {
-      title: 'Buttons',
-      icon: CursorClickIcon,
-      color: 'text-red-410',
-      parentPath: 'Components',
-      isDarkBackground: false,
+      title: 'Components',
+      icon: ColorSwatchIcon,
+      color: 'text-info',
+      requiresAuth: true,
+      parentPath: 'Components'
     },
+    children: [
+      {
+        path: '',
+        name: 'Buttons',
+        component: Button,
+        meta: {
+          title: 'Buttons',
+          icon: CursorClickIcon,
+          color: 'text-danger-50',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'notifications',
+        component: Notification,
+        name: 'Notifications',
+        meta: {
+          title: 'Notifications',
+          icon: BellIcon,
+          color: 'text-success-50',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'tables',
+        component: Table,
+        name: 'Tables',
+        meta: {
+          title: 'Tables',
+          icon: ViewBoardsIcon,
+          color: 'text-indigo-410',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'grid',
+        component: Grid,
+        name: 'Grid',
+        meta: {
+          title: 'Grid',
+          icon: ViewGridIcon,
+          color: 'text-info',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'typography',
+        component: Typography,
+        name: 'Typography',
+        meta: {
+          title: 'Typography',
+          icon: DocumentTextIcon,
+          color: 'text-yellow-310',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'cards',
+        component: Card,
+        name: 'Cards',
+        meta: {
+          title: 'Cards',
+          icon: CreditCardIcon,
+          color: 'text-warning-50',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'icons',
+        component: Icons,
+        name: 'Icons',
+        meta: {
+          title: 'Icons',
+          icon: StarIcon,
+          color: 'text-red-410',
+          requiresAuth: true,
+        },
+      },
+    ]
   },
-  {
-    path: '/notifications',
-    component: Notification,
-    name: 'Notifications',
-    meta: {
-      title: 'Notifications',
-      icon: BellIcon,
-      color: 'text-success',
-      parentPath: 'Components',
-      isDarkBackground: false,
-    },
-  },
-  {
-    path: '/tables',
-    component: Table,
-    name: 'Tables',
-    meta: {
-      title: 'Tables',
-      icon: ViewBoardsIcon,
-      color: 'text-indigo-410',
-      parentPath: 'Components',
-      isDarkBackground: false,
-    },
-  },
-  {
-    path: '/grid',
-    component: Grid,
-    name: 'Grid',
-    meta: {
-      title: 'Grid',
-      icon: ViewGridIcon,
-      color: 'text-cyan-320',
-      parentPath: 'Components',
-      isDarkBackground: false,
-    },
-  },
-  {
-    path: '/typography',
-    component: Typography,
-    name: 'Typography',
-    meta: {
-      title: 'Typography',
-      icon: DocumentTextIcon,
-      color: 'text-yellow-310',
-      parentPath: 'Components',
-      isDarkBackground: false,
-    },
-  },
-  {
-    path: '/cards',
-    component: Card,
-    name: 'Cards',
-    meta: {
-      title: 'Cards',
-      icon: CreditCardIcon,
-      color: 'text-warning',
-      parentPath: 'Components',
-      isDarkBackground: false,
-    },
-  },
-  {
-    path: '/icons',
-    component: Icons,
-    name: 'Icons',
-    meta: {
-      title: 'Icons',
-      icon: StarIcon,
-      color: 'text-danger',
-      parentPath: 'Components',
-      isDarkBackground: false,
-    },
-  },
+  
   {
     path: '/profile',
     component: Profile,
@@ -132,9 +145,11 @@ const routes = [
     meta: {
       title: 'Profile',
       icon: UserIcon,
-      color: 'text-danger',
-      parentPath: 'Components',
+      color: 'text-success-50',
       isDarkBackground: true,
+      isFullWidthLayout: true,
+      requiresAuth: true,
+      parentPath: 'Home'
     },
   },
   {
@@ -144,9 +159,9 @@ const routes = [
     meta: {
       title: 'Map',
       icon: LocationMarkerIcon,
-      color: 'text-danger',
-      parentPath: 'Components',
-      isDarkBackground: false,
+      color: 'text-red-410',
+      requiresAuth: true,
+      parentPath: 'Home'
     },
   },
   {

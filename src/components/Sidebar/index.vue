@@ -4,10 +4,11 @@
     @mouseover="hoverLeftBar(true)"
     @mouseleave="hoverLeftBar(false)"
     aria-labelledby="primary-heading"
-    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden overflow-y-auto h-full items-center shadow-card"
-    :class="{ 'hidden-aside w-15.5': !isSBOpen && !isSBPin }"
+    class="transition-all duration-300 fixed z-20 w-62.5 bg-white flex-shrink-0 overflow-hidden h-full items-center shadow-card"
+    :class="{ ' hidden-aside w-17 ': !isSBOpen && !isSBPin }"
   >
-    <div class="container flex flex-col mx-auto items-stretch">
+    <div class="flex flex-col mx-auto items-stretch h-full">
+      <small class="absolute pl-2 left-0 bottom-0 italic text-cyan-800">v{{ version }}</small>
       <div class="h-19.5 flex items-center relative">
         <router-link
           v-if="(isSBOpen && !isSBPin) || isSBPin"
@@ -20,12 +21,11 @@
             class="max-h-8 max-w-full align-middle"
             alt="..."
           />
-          <small class="absolute pl-2 left-32 top-10 italic text-cyan-800">v{{ version }}</small>
         </router-link>
         <div class="ml-auto">
           <div class="lg:col-span-10 xl:col-span-10 flex">
             <div class="hidden lg:block flex-grow">
-              <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-5">
+              <div class="flex items-center space-x-2 2xl:space-x-4 text-black px-6">
                 <MenuIcon v-if="!isSBPin" class="cursor-pointer h-6 w-5" @click="handleMenuClick" />
                 <MenuAlt1Icon v-else class="cursor-pointer h-6 w-5" @click="handleMenuClick" />
               </div>
@@ -33,56 +33,113 @@
           </div>
         </div>
       </div>
-      <div>
-        <el-menu ref="target" class="text-[#00000099] before:block before:md:mt-4 mt-0">
-          <el-sub-menu :class="{ 'hidden-arrow': !isSBOpen && !isSBPin }">
-            <template #title>
-              <div class="h-5 w-6 block">
-                <ColorSwatchIcon class="w-5 text-indigo-410" aria-hidden="true" />
-              </div>
-              <span
-                class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
-                :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
-                >Components</span
+      <div class="flex-1 overflow-y-auto">
+        <el-scrollbar>
+          <el-menu ref="target" class="text-[#00000099] before:block before:md:mt-4 mt-0">
+            <template v-for="(item, index) in menuItems" :key="index">
+              <el-sub-menu
+                class="relative rounded-lg mx-2"
+                :class="{
+                  ' hidden-arrow ': !item.children,
+                  ' bg-slate-100/50 ': route.name === item.name,
+                  ' arrow-left ': !isSBOpen && !isSBPin,
+                }"
+                :index="index.toString()"
+                v-if="item.requiresAuth"
               >
-            </template>
-            <el-menu-item-group class="flex flex-col px-6 -mx-6">
-              <el-menu-item
-                class="relative flex flex-row h-[45px] rounded-lg mb-px mt-0.5"
-                :class="{ ' bg-slate-100/50 ': route.name === item.name }"
-                v-for="(item, index) in menuItems"
-                :key="index"
-              >
-                <span
-                  v-if="route.name === item.name"
-                  class="absolute inset-y-1 -left-2 w-0.5 h-5/6 bg-indigo-410 rounded-tr-lg rounded-br-lg"
-                  aria-hidden="true"
-                ></span>
-                <router-link
-                  class="inline-flex px-3 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
-                  :class="{ ' text-gray-800 ': route.name === item.name }"
-                  :to="{ name: item.name }"
-                  :title="item.title"
-                >
-                  <div>
-                    <em class="h-5 w-6 block">
-                      <component
-                        :is="item.icon"
-                        :class="' w-5 mx-auto ' + item.color"
-                        aria-hidden="true"
-                      />
-                    </em>
-                  </div>
+                <template #title>
                   <span
-                    class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
-                    :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
-                    >{{ item.title }}</span
+                    v-if="route.name === item.name"
+                    class="absolute inset-y-1 -left-2 w-0.5 h-5/6 rounded-tr-lg rounded-br-lg bg-indigo-410"
+                    aria-hidden="true"
+                  />
+                  <span
+                    class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
+                    v-if="item.children"
                   >
-                </router-link>
-              </el-menu-item>
-            </el-menu-item-group>
-          </el-sub-menu>
-        </el-menu>
+                    <div>
+                      <em class="h-5 w-6 block">
+                        <component
+                          :is="item.icon"
+                          :class="' w-5 mx-auto ' + item.color"
+                          aria-hidden="true"
+                        />
+                      </em>
+                    </div>
+                    <span
+                      class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
+                      :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                      >{{ item.title }}</span
+                    >
+                  </span>
+                  <router-link
+                    class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
+                    :class="{ ' text-gray-800 ': route.name === item.name }"
+                    :to="{ name: item.name }"
+                    :title="item.title"
+                    v-else
+                  >
+                    <div>
+                      <em class="h-5 w-6 block">
+                        <component
+                          :is="item.icon"
+                          :class="' w-5 mx-auto ' + item.color"
+                          aria-hidden="true"
+                        />
+                      </em>
+                    </div>
+                    <span
+                      class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
+                      :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                      >{{ item.title }}</span
+                    >
+                  </router-link>
+                </template>
+                <el-menu-item-group class="flex flex-col">
+                  <el-menu-item
+                    class="relative flex flex-row h-[45px] rounded-lg mb-px mt-0.5"
+                    :class="{
+                      ' bg-slate-100/50': route.name === subItem.name,
+                    }"
+                    v-for="(subItem, index) in item.children"
+                    :key="index"
+                    :index="index.toString()"
+                  >
+                    <span
+                      v-if="route.name === subItem.name"
+                      class="absolute inset-y-1 -left-2 w-0.5 h-5/6 rounded-tr-lg rounded-br-lg bg-indigo-410"
+                      aria-hidden="true"
+                    />
+                    <router-link
+                      class="inline-flex pl-2 items-center w-full text-sm my-0.5 font-normal transition-all duration-200 hover:text-gray-500/100 focus:text-gray-800"
+                      :class="{
+                        ' text-gray-800 ': route.name === subItem.name,
+                        ' pl-4.5 ': isSBOpen || isSBPin,
+                      }"
+                      :to="{ name: subItem.name }"
+                      :title="subItem.meta.title"
+                    >
+                      <div>
+                        <em class="h-5 w-6 block">
+                          <component
+                            :is="subItem.meta.icon"
+                            :class="' w-5 mx-auto ' + subItem.meta.color"
+                            aria-hidden="true"
+                          />
+                        </em>
+                      </div>
+                      <span
+                        class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
+                        :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                        >{{ subItem.meta.title }}</span
+                      >
+                    </router-link>
+                  </el-menu-item>
+                </el-menu-item-group>
+              </el-sub-menu>
+            </template>
+          </el-menu>
+        </el-scrollbar>
       </div>
     </div>
   </aside>

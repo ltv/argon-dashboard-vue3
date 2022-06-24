@@ -21,7 +21,7 @@
               <h3 class="text-white mt-12 mb-0">
                 <span class="font-bold">You can log in with 3 user types:</span>
               </h3>
-              <ul class="text-light mt-4 mb-0 lg:pl-7.5">
+              <ul class="text-light mt-4 mb-0 pl-0 lg:pl-7.5">
                 <li v-for="(account, index) in accounts" :key="index" class="flex">
                   <div class="px-2">{{ index }}.</div>
                   <div class="w-full">

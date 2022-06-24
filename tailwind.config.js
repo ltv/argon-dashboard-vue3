@@ -80,6 +80,7 @@ module.exports = {
         5.5: '22px',
         7.5: '30px',
         15.5: '3.875rem',
+        17: '68px',
         62.5: '15.625rem',
         64: '15.5rem',
         68: '17rem',
@@ -93,6 +94,7 @@ module.exports = {
         13.5: '3.275rem',
         15: '3.75rem',
         15.5: '3.875rem',
+        17: '68px',
         62: '15.5rem',
         62.5: '15.625rem',
         63: '15.75rem',
@@ -206,7 +208,7 @@ module.exports = {
           DEFAULT: '-webkit-focus-ring-color',
         },
         amber: {
-          60: "rgb(252 248 227)"
+          60: 'rgb(252 248 227)',
         },
         slate: {
           10: 'rgb(255 255 255 / 0.6)',

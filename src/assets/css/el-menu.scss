@@ -6,12 +6,25 @@
       }
     }
   }
-  .el-menu-item-group__title {
-    @apply p-0;
+  .arrow-left {
+    .el-sub-menu__title {
+      .el-icon.el-sub-menu__icon-arrow {
+        @apply absolute right-0 #{!important};
+      }
+    }
   }
+  .el-menu-item-group {
+    .el-menu-item-group__title {
+      @apply p-0;
+    }
+    .el-menu-item {
+      @apply min-w-0 #{!important};
+    }
+  }
+  
   .el-sub-menu {
     .el-sub-menu__title {
-      @apply rounded pl-5 h-[45px] #{!important};
+      @apply rounded px-2 h-[45px] #{!important};
       .el-icon.el-sub-menu__icon-arrow {
         @apply text-indigo-410;
       }

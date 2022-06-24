@@ -3,7 +3,7 @@
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full overflow-auto"
-      :class="`${!isSBPin ? 'ml-15.5' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
+      :class="`${!isSBPin ? ' ml-17 ' : 'ml-62.5 cursor-pointer lg:cursor-default'}`"
     >
       <navigation />
       <div
@@ -72,8 +72,12 @@
         </div>
 
         <router-view v-slot="{ Component }">
-          <component :is="Component" class="py-1.25 px-4 md:px-7.5 lg:px-[25px]" />
+          <component
+            :is="Component"
+            :class="{ 'py-1.25 px-4 md:px-7.5 lg:px-[25px]': !route.meta.isFullWidthLayout }"
+          />
         </router-view>
+
         <div class="w-full py-8 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
           <AuthFooter />
         </div>
