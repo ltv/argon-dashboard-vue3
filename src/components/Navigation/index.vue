@@ -282,7 +282,9 @@
                     <div class="basis-0 grow w-full ml-4">
                       <div class="">
                         <div>
-                          <span class="mb-0 text-sm font-normal">My profile</span>
+                          <router-link to="/profile" class="mb-0 text-sm font-normal">
+                            My profile
+                          </router-link>
                         </div>
                       </div>
                     </div>

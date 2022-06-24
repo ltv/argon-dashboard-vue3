@@ -43,6 +43,7 @@ const routes = [
       icon: HomeIcon,
       color: 'text-left-bar-indigo',
       requiresAuth: true,
+      parentPath: 'Home'
     },
   },
   {
@@ -54,6 +55,7 @@ const routes = [
       icon: ColorSwatchIcon,
       color: 'text-left-bar-indigo',
       requiresAuth: true,
+      parentPath: 'Components'
     },
     children: [
       {
@@ -147,6 +149,7 @@ const routes = [
       isDarkBackground: true,
       isFullWidthLayout: true,
       requiresAuth: true,
+      parentPath: 'Home'
     },
   },
   {
@@ -158,6 +161,7 @@ const routes = [
       icon: LocationMarkerIcon,
       color: 'text-left-bar-red',
       requiresAuth: true,
+      parentPath: 'Home'
     },
   },
   {

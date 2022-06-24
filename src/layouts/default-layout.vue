@@ -36,13 +36,13 @@
                   <el-breadcrumb-item>
                     <div class="inline-block items-center">
                       <div>
-                        <!-- <el-link
+                        <el-link
                           :underline="false"
                           href="#!"
                           class="text-sm text-slate-50 hover:text-white font-semibold"
                         >
                           {{ route.meta.parentPath }}
-                        </el-link> -->
+                        </el-link>
                       </div>
                     </div>
                   </el-breadcrumb-item>
