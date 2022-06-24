@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="flex-1">
+      <div class="flex-1 overflow-y-auto">
         <el-scrollbar>
           <el-menu ref="target" class="text-[#00000099] before:block before:md:mt-4 mt-0">
             <template v-for="(item, index) in menuItems" :key="index">

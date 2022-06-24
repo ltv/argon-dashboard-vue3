@@ -208,7 +208,7 @@ module.exports = {
           DEFAULT: '-webkit-focus-ring-color',
         },
         amber: {
-          60: "rgb(252 248 227)"
+          60: 'rgb(252 248 227)',
         },
         slate: {
           10: 'rgb(255 255 255 / 0.6)',
