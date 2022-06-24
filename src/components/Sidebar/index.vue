@@ -160,6 +160,8 @@ interface MenuItem {
   path: string
   name: string
   color: string
+  children: any
+  requiresAuth: boolean
 }
 
 export default defineComponent({
