@@ -38,7 +38,7 @@
           <el-menu ref="target" class="text-[#00000099] before:block before:md:mt-4 mt-0">
             <template v-for="(item, index) in menuItems" :key="index">
               <el-sub-menu
-                class="rounded-lg mx-2"
+                class="relative rounded-lg mx-2"
                 :class="{
                   ' hidden-arrow ': !item.children,
                   ' bg-slate-100/50 ': route.name === item.name,
@@ -48,6 +48,11 @@
                 v-if="item.requiresAuth"
               >
                 <template #title>
+                  <span
+                    v-if="route.name === item.name"
+                    class="absolute inset-y-1 -left-2 w-0.5 h-5/6 rounded-tr-lg rounded-br-lg bg-indigo-410"
+                    aria-hidden="true"
+                  />
                   <span
                     class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
                     v-if="item.children"
@@ -92,7 +97,7 @@
                 </template>
                 <el-menu-item-group class="flex flex-col">
                   <el-menu-item
-                    class="flex flex-row h-[45px] rounded-lg mb-px mt-0.5"
+                    class="relative flex flex-row h-[45px] rounded-lg mb-px mt-0.5"
                     :class="{
                       ' bg-slate-100/50': route.name === subItem.name,
                     }"
@@ -100,6 +105,11 @@
                     :key="index"
                     :index="index.toString()"
                   >
+                    <span
+                      v-if="route.name === subItem.name"
+                      class="absolute inset-y-1 -left-2 w-0.5 h-5/6 rounded-tr-lg rounded-br-lg bg-indigo-410"
+                      aria-hidden="true"
+                    />
                     <router-link
                       class="inline-flex pl-2 items-center w-full text-sm my-0.5 font-normal transition-all duration-200 hover:text-gray-500/100 focus:text-gray-800"
                       :class="{
