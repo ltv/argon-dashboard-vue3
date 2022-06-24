@@ -10,7 +10,13 @@
         </div>
       </template>
       <div class="card-body">
-        <BarChart ref="totalChart" :chartData="totalData" :options="chartOptions" :height="350" />
+        <BarChart
+          ref="totalChart"
+          :chartData="totalData"
+          :options="chartOptions"
+          :height="350"
+          class="h-[350px]"
+        />
       </div>
     </el-card>
   </div>

@@ -102,7 +102,7 @@
                   </el-form-item>
 
                   <el-form-item label="Profile photo">
-                    <el-upload class="w-full">
+                    <el-upload class="w-full" action="#">
                       <el-input placeholder="demo.png" class="input-upload">
                         <template #append>Browse</template>
                       </el-input>
