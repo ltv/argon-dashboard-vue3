@@ -327,7 +327,7 @@ export default defineComponent({
     const tableData: Project[] = [
       {
         projectLogoPath: BootStrap_Url,
-        project: 'Fancy Design System',
+        project: 'Argon Design System',
         budget: '2500 ',
         status: 'pending',
         users: usersData,
@@ -335,7 +335,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: BootStrap_Url,
-        project: 'Fancy Design System',
+        project: 'Argon Design System',
         budget: '4000 ',
         status: 'completed',
         users: usersData,
@@ -343,7 +343,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: BootStrap_Url,
-        project: 'Fancy',
+        project: 'Argon',
         budget: '2500 ',
         status: 'delayed',
         users: usersData,
@@ -351,7 +351,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: BootStrap_Url,
-        project: 'Fancy Design',
+        project: 'Argon Design',
         budget: '3300 ',
         status: 'on schedule',
         users: usersData,
@@ -359,7 +359,7 @@ export default defineComponent({
       },
       {
         projectLogoPath: BootStrap_Url,
-        project: 'Fancy System',
+        project: 'Argon System',
         budget: '3000 ',
         status: 'completed',
         users: usersData,

@@ -11,7 +11,7 @@
           <span class="title block">Heading 1</span>
         </div>
         <div class="md:w-3/4">
-          <h1>Fancy Dashboard</h1>
+          <h1>Argon Dashboard</h1>
         </div>
       </div>
       <!-- Heading 2 -->
@@ -20,7 +20,7 @@
           <span class="title block">Heading 2</span>
         </div>
         <div class="md:w-3/4">
-          <h2>Fancy Dashboard</h2>
+          <h2>Argon Dashboard</h2>
         </div>
       </div>
       <!-- Heading 3 -->
@@ -29,7 +29,7 @@
           <span class="title block">Heading 3</span>
         </div>
         <div class="md:w-3/4">
-          <h3>Fancy Dashboard</h3>
+          <h3>Argon Dashboard</h3>
         </div>
       </div>
       <!-- Heading 4 -->
@@ -38,7 +38,7 @@
           <span class="title block">Heading 4</span>
         </div>
         <div class="md:w-3/4">
-          <h4>Fancy Dashboard</h4>
+          <h4>Argon Dashboard</h4>
         </div>
       </div>
       <!-- Heading 5 -->
@@ -47,7 +47,7 @@
           <span class="title block">Heading 5</span>
         </div>
         <div class="md:w-3/4">
-          <h5>Fancy Dashboard</h5>
+          <h5>Argon Dashboard</h5>
         </div>
       </div>
       <!-- Heading 6 -->
@@ -56,7 +56,7 @@
           <span class="title block">Heading 6</span>
         </div>
         <div class="md:w-3/4">
-          <h6>Fancy Dashboard</h6>
+          <h6>Argon Dashboard</h6>
         </div>
       </div>
     </el-card>
@@ -72,7 +72,7 @@
           <span class="title block">Display 1</span>
         </div>
         <div class="md:w-3/4">
-          <h1 class="display-1">Fancy Dashboard</h1>
+          <h1 class="display-1">Argon Dashboard</h1>
         </div>
       </div>
       <!-- Display 2 -->
@@ -81,7 +81,7 @@
           <span class="title block">Display 2</span>
         </div>
         <div class="md:w-3/4">
-          <h2 class="display-2">Fancy Dashboard</h2>
+          <h2 class="display-2">Argon Dashboard</h2>
         </div>
       </div>
       <!-- Heading 3 -->
@@ -90,7 +90,7 @@
           <span class="title block">Display 3</span>
         </div>
         <div class="md:w-3/4">
-          <h3 class="display-3">Fancy Dashboard</h3>
+          <h3 class="display-3">Argon Dashboard</h3>
         </div>
       </div>
       <!-- Heading 4 -->
@@ -99,7 +99,7 @@
           <span class="title block">Display 4</span>
         </div>
         <div class="md:w-3/4">
-          <h4 class="display-4">Fancy Dashboard</h4>
+          <h4 class="display-4">Argon Dashboard</h4>
         </div>
       </div>
     </el-card>
@@ -116,7 +116,7 @@
           <span class="title block">Heading</span>
         </div>
         <div class="md:w-3/4">
-          <h3 class="heading">Fancy Dashboard</h3>
+          <h3 class="heading">Argon Dashboard</h3>
         </div>
       </div>
       <!-- Heading title -->
@@ -125,7 +125,7 @@
           <span class="title block">Heading Title</span>
         </div>
         <div class="md:w-3/4">
-          <h2 class="heading-title text-warning">Fancy Dashboard</h2>
+          <h2 class="heading-title text-warning">Argon Dashboard</h2>
         </div>
       </div>
 

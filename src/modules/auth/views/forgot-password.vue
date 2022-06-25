@@ -10,7 +10,7 @@
           <div class="flex flex-wrap -mx-3.75 justify-center px-3.75">
             <div class="md:flex-9 md:max-w-9/12 lg:flex-8 lg:max-w-2/3">
               <h1 class="text-white font-semibold">
-                Welcome to Fancy Dashboard Pro Laravel Live Preview.
+                Welcome to Argon Dashboard Pro Laravel Live Preview.
               </h1>
               <p class="text-light mt-4 mb-0">
                 Log in and see how you can save more than 150 hours of work with CRUDs for managing:
