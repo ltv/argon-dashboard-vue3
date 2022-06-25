@@ -56,4 +56,4 @@ jobs:
           token: ${{ secrets.TELEGRAM_RELEASE_BOT_TOKEN }}
           format: markdown
           message: |
-            `[Fancy-Dashboard]` Deployed Fancy-Dashboard on Dev stage
+            `[Argon-Dashboard]` Deployed Argon-Dashboard on Dev stage

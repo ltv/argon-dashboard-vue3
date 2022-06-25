@@ -333,13 +333,13 @@
               <img alt="..." src="@/assets/images/man_draw.jpg" />
               <div class="px-6 pt-4 pb-8">
                 <div class="text-xl font-semibold pt-2 pb-1 text-primary">
-                  Get started with Fancy
+                  Get started with Argon
                 </div>
                 <div class="font-normal text-80 text-muted">
                   by John Snow on Oct 29th at 10:23 AM
                 </div>
                 <p class="text-muted py-5">
-                  Fancy is a great free UI package based on Bootstrap 4 that includes the most
+                  Argon is a great free UI package based on Bootstrap 4 that includes the most
                   important components and features.
                 </p>
                 <a href="#!" class="">
