@@ -105,12 +105,18 @@ body {
       @apply bg-info-active shadow-none #{!important};
     }
   }
+  .el-button.el-button--info.active {
+    @apply bg-info-active #{!important};
+  }
 
   .el-button.el-button--warning {
     @apply bg-warning border border-warning text-white #{!important};
     &:active {
       @apply bg-warning-active shadow-none #{!important};
     }
+  }
+  .el-button.el-button--warning.active {
+    @apply bg-warning-active #{!important};
   }
 
   .el-button.el-button--success {
@@ -119,12 +125,18 @@ body {
       @apply bg-success-active shadow-none #{!important};
     }
   }
+  .el-button.el-button--success.active {
+    @apply bg-success-active #{!important};
+  }
 
   .el-button.el-button--danger {
     @apply bg-danger border border-danger text-white #{!important};
     &:active {
       @apply bg-danger-active shadow-none #{!important};
     }
+  }
+  .el-button.el-button--danger.active {
+    @apply bg-danger-active #{!important};
   }
 
   .el-button.el-button--secondary {
@@ -137,6 +149,9 @@ body {
       @apply shadow-none border-secondary bg-secondary-active #{!important};
     }
   }
+  .el-button.el-button--secondary.active {
+    @apply bg-secondary-active border-secondary-active #{!important};
+  }
 
   .el-button.el-button--default {
     @apply transition-all duration-100 bg-dark border border-dark text-white font-semibold h-10.75 text-sm tracking-wide;
@@ -147,4 +162,8 @@ body {
       @apply bg-dark-120 shadow-none;
     }
   }
+  .el-button.el-button--secondary.active {
+    @apply bg-dark-120;
+  }
+
 }
