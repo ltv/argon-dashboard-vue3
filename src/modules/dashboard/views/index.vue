@@ -30,7 +30,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import AnalysisCard from './AnalysisCard.vue'
+import AnalysisCard from 'modules/cards/views/components/AnalysisCard.vue'
 // Chart
 import GradientLineChart from './GradientLineChart.vue'
 import TotalBarChart from './TotalBarChart.vue'
