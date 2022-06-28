@@ -76,10 +76,7 @@ export default defineComponent({
 
     const login = async () => {
       try {
-        store.global.actLoading(true)
-        store.auth.actLogin(formData.value).catch(() => {
-          store.global.actLoading(false)
-        })
+        store.auth.actLogin(formData.value)
       } catch (e) {
         console.log('err::: ', e)
       }
