@@ -1,0 +1,15 @@
+{
+  "hosting": [
+    {
+      "site": "ltv-project-template",
+      "public": "dist",
+      "ignore": ["firebase.json", "**/.*", "**/*.map", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
