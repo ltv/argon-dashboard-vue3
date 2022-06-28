@@ -30,7 +30,7 @@ jobs:
       - name: Build source
         run: yarn build
 
-      - name: S3 and CloudFront Deploy
+      - name: Firebase Deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
