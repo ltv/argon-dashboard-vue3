@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "site": "ltv-project-template",
+      "site": "argon-dashboard-vue3",
       "public": "dist",
       "ignore": ["firebase.json", "**/.*", "**/*.map", "**/node_modules/**"],
       "rewrites": [
