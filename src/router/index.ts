@@ -14,6 +14,7 @@ const router: Router = createRouter({
 router.beforeEach(async (to) => {
   const store = useStore()
   const isLoginPage: boolean = to.name === 'login'
+  store.global.actLoading(true)
   try {
     const isAuthenticated: boolean = store.auth.getAuthenticationState
     const requiresAuth: boolean = to.meta.requiresAuth as boolean ?? true
@@ -25,6 +26,10 @@ router.beforeEach(async (to) => {
     if (!isAuthenticated && requiresAuth) {
       return '/login'
     }
+      
+    setTimeout(() => {
+      store.global.actLoading(false)
+    }, 500)
   } catch (err) {
     return isLoginPage ? '/' : '/login'
   }

@@ -7,6 +7,7 @@ import 'assets/css/notifications.scss'
 import 'assets/css/form.scss'
 
 import 'assets/css/el-progress.scss'
+import 'assets/css/el-loading.scss'
 import 'assets/css/el-menu.scss'
 import 'assets/css/el-card.scss'
 import 'assets/css/el-pagination.scss'

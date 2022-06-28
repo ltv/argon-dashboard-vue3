@@ -285,6 +285,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+
 import { DotsVerticalIcon } from '@heroicons/vue/outline'
 import John_Snow_Url from '@/assets/images/John_Snow.png'
 import BootStrap_Url from '@/assets/images/bootstrap.jpg'
@@ -378,7 +379,11 @@ export default defineComponent({
         return '#2DCE89'
       }
     }
-    return { tableData, customColorMethod }
+
+    return {
+      tableData,
+      customColorMethod,
+    }
   },
 })
 </script>

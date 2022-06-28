@@ -1,0 +1,8 @@
+.el-loading-mask.is-fullscreen {
+  display: flex !important;
+  justify-content: center !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.el-loading-mask .el-loading-spinner {
+  width: 50px !important;
+}

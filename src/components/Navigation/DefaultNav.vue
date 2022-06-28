@@ -321,7 +321,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, reactive, toRefs } from 'vue'
+import { defineComponent, ref, computed } from 'vue'
 import {
   Search,
   BellFilled,
@@ -338,7 +338,7 @@ import useStore from 'store'
 import { useRoute } from 'vue-router'
 import John_Snow_Url from '@/assets/images/John_Snow.png'
 export default defineComponent({
-  name: 'TopNav',
+  name: 'DefaultNav',
   components: {
     Search,
     BellFilled,
