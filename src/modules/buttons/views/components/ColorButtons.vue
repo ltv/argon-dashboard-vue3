@@ -5,23 +5,23 @@
         <el-button class="btn-default">Default</el-button>
       </div>
       <div>
-        <el-button type="primary" class="">Primary</el-button>
+        <el-button type="primary">Primary</el-button>
       </div>
       <div>
         <el-button class="el-button--secondary">Secondary</el-button>
       </div>
       <div>
-        <el-button type="info" class="">Info</el-button>
+        <el-button type="info">Info</el-button>
       </div>
       <div>
-        <el-button type="success" class="">Success</el-button>
+        <el-button type="success">Success</el-button>
       </div>
 
       <div>
-        <el-button type="danger" class="">Danger</el-button>
+        <el-button type="danger">Danger</el-button>
       </div>
       <div>
-        <el-button type="warning" class="">Warning</el-button>
+        <el-button type="warning">Warning</el-button>
       </div>
     </div>
   </div>

@@ -2,25 +2,25 @@
   <div class="w-full">
     <div class="flex flex-wrap gap-3.25">
       <div>
-        <el-button plain class="">Default</el-button>
+        <el-button plain>Default</el-button>
       </div>
       <div>
-        <el-button type="primary" plain class="">Primary</el-button>
+        <el-button type="primary" plain>Primary</el-button>
       </div>
       <div>
         <el-button class="el-button--secondary" plain>Secondary</el-button>
       </div>
       <div>
-        <el-button type="info" plain class="">Info</el-button>
+        <el-button type="info" plain>Info</el-button>
       </div>
       <div>
-        <el-button type="success" plain class="">Success</el-button>
+        <el-button type="success" plain>Success</el-button>
       </div>
       <div>
-        <el-button type="danger" plain class="">Danger</el-button>
+        <el-button type="danger" plain>Danger</el-button>
       </div>
       <div>
-        <el-button type="warning" plain class="">Warning</el-button>
+        <el-button type="warning" plain>Warning</el-button>
       </div>
     </div>
   </div>
