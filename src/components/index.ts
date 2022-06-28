@@ -7,6 +7,7 @@ import Navigation from './Navigation/DefaultNav.vue'
 import AuthNavigation from './Navigation/AuthenticationNav.vue'
 import Footer from './Footer/index.vue'
 import BreadCrumb from './BreadCrumb/index.vue'
+import SearchBar from './SearchBar/index.vue'
 
 export default {
   install: (app: App) => {
@@ -17,6 +18,7 @@ export default {
     app.component('AuthNavigation', AuthNavigation)
     app.component('Footer', Footer)
     app.component('BreadCrumb', BreadCrumb)
+    app.component('SearchBar', SearchBar)
 
     // Element Plus
     useElementPlus(app)
