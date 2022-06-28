@@ -4,14 +4,14 @@
       class="text-center border-slate-100"
       :body-style="{ padding: '0px', position: 'relative' }"
     >
-      <img alt="..." src="@/assets/images/throne.jpg" />
+      <img alt="..." :src="backgroundImg" />
       <div class="justify-center">
         <el-link :underline="false" class="card-avatar-profile">
           <el-avatar
             :size="!isHover ? 140 : 146"
             @mouseover="hoverCheck(true)"
             @mouseleave="hoverCheck(false)"
-            :src="imgSrc"
+            :src="avatarImg"
             class="transition-all border-white border-4"
           />
         </el-link>
@@ -79,7 +79,10 @@ export default defineComponent({
     Location,
   },
   props: {
-    imgSrc: {
+    avatarImg: {
+      type: String,
+    },
+    backgroundImg: {
       type: String,
     },
     friends: {

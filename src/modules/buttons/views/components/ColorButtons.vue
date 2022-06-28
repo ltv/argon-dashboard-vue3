@@ -16,7 +16,6 @@
       <div>
         <el-button type="success">Success</el-button>
       </div>
-
       <div>
         <el-button type="danger">Danger</el-button>
       </div>

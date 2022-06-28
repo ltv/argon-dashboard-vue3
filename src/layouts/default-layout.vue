@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen overflow-hidden flex bg-slate-20 w-full">
+  <div class="h-screen overflow-hidden flex bg-slate-20 w-full" v-loading.fullscreen.lock="loading">
     <sidebar />
     <div
       class="main-content flex flex-col flex-1 w-full overflow-auto"
@@ -22,38 +22,7 @@
                 {{ route.meta.title }}
               </div>
               <div class="md:ml-7 hidden md:inline-block pt-1.5">
-                <el-breadcrumb separator="-" class="flex items-center justify-center">
-                  <el-breadcrumb-item :to="{ path: '/' }">
-                    <div class="inline-block items-center">
-                      <el-icon
-                        :size="16"
-                        class="cursor-pointer w-4 h-4 text-slate-50 hover:text-slate-300"
-                      >
-                        <HomeFilled />
-                      </el-icon>
-                    </div>
-                  </el-breadcrumb-item>
-                  <el-breadcrumb-item>
-                    <div class="inline-block items-center">
-                      <div>
-                        <el-link
-                          :underline="false"
-                          href="#!"
-                          class="text-sm text-slate-50 hover:text-white font-semibold"
-                        >
-                          {{ route.meta.parentPath }}
-                        </el-link>
-                      </div>
-                    </div>
-                  </el-breadcrumb-item>
-                  <el-breadcrumb-item>
-                    <div class="inline-block items-center">
-                      <div class="text-sm text-slate-200/95 font-semibold">
-                        {{ route.meta.title }}
-                      </div>
-                    </div>
-                  </el-breadcrumb-item>
-                </el-breadcrumb>
+                <BreadCrumb :parentPath="route.meta.parentPath" :title="route.meta.title" />
               </div>
             </div>
             <div class="w-1/2 text-right pt-px pr-px">
@@ -79,7 +48,7 @@
         </router-view>
 
         <div class="w-full py-8 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
-          <AuthFooter />
+          <Footer />
         </div>
       </div>
     </div>
@@ -102,10 +71,12 @@ export default defineComponent({
     const route: any = useRoute()
     const store = useStore()
     const isSBPin = computed<boolean>(() => store.dashboard.isSBPin)
+    const loading = computed(() => store.global.loading)
 
     const setIsSBPin = (b: boolean) => store.dashboard.setIsSBPin(b)
     return {
       isSBPin,
+      loading,
       setIsSBPin,
       route,
       store,

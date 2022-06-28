@@ -125,7 +125,7 @@ import { Shop } from '@element-plus/icons-vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 export default defineComponent({
-  name: 'AuthNav',
+  name: 'AuthenticationNav',
   components: {
     Shop,
     XIcon,

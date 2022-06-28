@@ -29,7 +29,8 @@
 
           <div class="mt-7">
             <ProfileCard
-              :imgSrc="Tywin_Lanister_Url"
+              :avatarImg="Tywin_Lanister_Url"
+              :backgroundImg="Profile_Background_Image_Url"
               name="Tywin Lannister"
               :age="67"
               location="The Castle of Trujillo, Spain"
@@ -288,6 +289,7 @@ import John_Snow_Url from '@/assets/images/John_Snow.png'
 import Tyrion_Lanister_Url from '@/assets/images/tyrion_lannister.jpg'
 import Tywin_Lanister_Url from '@/assets/images/tywin_lannister.jpg'
 import Window_Image_Url from '@/assets/images/window-purple-image.jpg'
+import Profile_Background_Image_Url from '@/assets/images/throne.jpg'
 // Components
 import AnalysisCard from './components/AnalysisCard.vue'
 import ListGroupCard from './components/ListGroupCard.vue'
@@ -320,6 +322,7 @@ export default defineComponent({
       Tyrion_Lanister_Url,
       Tywin_Lanister_Url,
       Window_Image_Url,
+      Profile_Background_Image_Url,
     }
   },
 })

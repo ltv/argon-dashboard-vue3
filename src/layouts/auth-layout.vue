@@ -1,5 +1,8 @@
 <template>
-  <el-scrollbar class="relative w-full bg-default overflow-y-auto h-screen">
+  <el-scrollbar
+    class="relative w-full bg-default overflow-y-auto h-screen"
+    v-loading.fullscreen.lock="loading"
+  >
     <div class="relative">
       <div class="absolute w-full z-100 p-4 bg-transparent border-0">
         <AuthNavigation />
@@ -14,17 +17,20 @@
     <div
       class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full py-13 lg:pb-4.5 mx-auto px-4"
     >
-      <AuthFooter />
+      <Footer />
     </div>
   </el-scrollbar>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
+import useStore from 'store'
 
 export default defineComponent({
   setup() {
-    return {}
+    const store = useStore()
+    const loading = computed(() => store.global.loading)
+    return { loading }
   },
 })
 </script>

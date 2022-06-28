@@ -12,31 +12,7 @@
           class="transition-all duration-300 mr-auto sm:mr-4 sm:transform-none sm:block overflow-hidden"
           :class="{ 'w-0 sm:w-full': isSearchOpen, 'w-full': !isSearchOpen }"
         >
-          <div class="search-bar relative flex-grow w-full h-11.5 mb-0.5">
-            <div class="z-10 absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <font-awesome-icon class="text-gray-500" :icon="['fas', 'search']" size="sm" />
-            </div>
-            <div>
-              <el-input
-                v-model="textInput"
-                type="text"
-                placeholder="Search"
-                input-style="color: black; font-weight: 400;font-size: .875rem;"
-              />
-              <div
-                class="flex z-10 absolute inset-y-0 right-0 pr-4 items-center lg:hidden md:hidden sm:hidden"
-                :class="{ hidden: isSBPin }"
-              >
-                <el-icon
-                  :size="20"
-                  class="cursor-pointer w-4 h-4 text-black hover:text-slate-300"
-                  @click="setSearchOpen(true)"
-                >
-                  <Close />
-                </el-icon>
-              </div>
-            </div>
-          </div>
+          <SearchBar :setSearchOpen="setSearchOpen" />
         </div>
         <div
           class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-[29px] md:gap-7.5"
@@ -321,7 +297,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, reactive, toRefs } from 'vue'
+import { defineComponent, ref, computed } from 'vue'
 import {
   Search,
   BellFilled,
@@ -331,14 +307,13 @@ import {
   GoodsFilled,
   UserFilled,
   CircleClose,
-  Close,
 } from '@element-plus/icons-vue'
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
 import useStore from 'store'
 import { useRoute } from 'vue-router'
 import John_Snow_Url from '@/assets/images/John_Snow.png'
 export default defineComponent({
-  name: 'TopNav',
+  name: 'DefaultNav',
   components: {
     Search,
     BellFilled,
@@ -348,7 +323,6 @@ export default defineComponent({
     GoodsFilled,
     UserFilled,
     CircleClose,
-    Close,
     SearchIcon,
     MenuIcon,
     MenuAlt1Icon,
@@ -362,7 +336,6 @@ export default defineComponent({
     const isSearchOpen = ref(true)
     const clickIconBell = ref(false)
     const clickIconMenu = ref(false)
-    const textInput = ref('')
     const togglePagesMenu = () => {
       isSideMenuOpen.value = !isSideMenuOpen.value
     }
@@ -391,7 +364,6 @@ export default defineComponent({
       isSBOpen,
       clickIconBell,
       clickIconMenu,
-      textInput,
       route,
       handleLogoutClick,
       handleMenuClick,
@@ -403,19 +375,7 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss" scoped>
-.search-bar {
-  :deep(.el-input) {
-    @apply w-full;
-    .el-input__inner {
-      @apply relative transition-all duration-200 pt-2.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
-      &:focus {
-        @apply w-full sm:w-98 bg-white text-black border-indigo-410 #{!important};
-      }
-    }
-  }
-}
-</style>
+
 <style lang="scss">
 .menu-popper {
   @apply lg:w-80 md:w-80 sm:w-80 w-97/100 border-none bg-[#182c4e] top-4 sm:top-1 rounded-lg #{!important};
