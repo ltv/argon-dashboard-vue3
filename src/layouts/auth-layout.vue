@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full bg-default overflow-y-auto h-screen">
+  <el-scrollbar class="relative w-full bg-default overflow-y-auto h-screen">
     <div class="relative">
       <div class="absolute w-full z-100 p-4 bg-transparent border-0">
         <AuthNavigation />
@@ -16,7 +16,7 @@
     >
       <AuthFooter />
     </div>
-  </div>
+  </el-scrollbar>
 </template>
 
 <script lang="ts">

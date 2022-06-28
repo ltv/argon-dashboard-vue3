@@ -21,7 +21,7 @@ router.beforeEach(async (to) => {
     if (isAuthenticated && isLoginPage) {
       return '/'
     }
-
+    
     if (!isAuthenticated && requiresAuth) {
       return '/login'
     }
