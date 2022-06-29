@@ -230,7 +230,7 @@ export default defineComponent({
     const target = ref(null)
     const version = ref(env('VITE_APP_VERSION'))
     const isMobile = checkIsMobile()
-    const leftSideBarItems = ref<String[]>(['Dashboard', 'Profile', 'Map'])
+    const leftSideBarItems = ref<any[]>(['Dashboard', 'Profile', 'Map'])
     const isMenuShow = ref<boolean>(false)
 
     onClickOutside(target, (_) => {
