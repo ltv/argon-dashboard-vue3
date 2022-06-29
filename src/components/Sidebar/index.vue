@@ -230,11 +230,11 @@ export default defineComponent({
     const isMenuShow = ref<boolean>(false)
 
     const handleOnResize = () => {
-        if (window.innerWidth < 1024) {
-          store.dashboard.setIsSBOpen(false)
-          store.dashboard.setIsSBPin(false)
-        }
+      if (window.innerWidth < 1024) {
+        store.dashboard.setIsSBOpen(false)
+        store.dashboard.setIsSBPin(false)
       }
+    }
 
     onClickOutside(target, (_) => {
       if (window.innerWidth < 1024) store.dashboard.setIsSBOpen(false)
