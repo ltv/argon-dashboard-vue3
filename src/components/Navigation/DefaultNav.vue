@@ -227,7 +227,7 @@
             <div class="flex flex-row items-center gap-1 md:gap-2 mb-1">
               <div class="pt-1">
                 <el-link :underline="false">
-                  <el-avatar :size="37" class="cursor-pointer" :src="John_Snow_Url" />
+                  <el-avatar :size="37" class="cursor-pointer" :src="Logo_Url" />
                 </el-link>
               </div>
               <div class="hidden lg:block">
@@ -311,6 +311,7 @@ import {
 import { MenuIcon, MenuAlt1Icon, SearchIcon, SearchCircleIcon } from '@heroicons/vue/outline'
 import useStore from 'store'
 import { useRoute } from 'vue-router'
+import Logo_Url from '@/assets/images/ltv_logo.png'
 import John_Snow_Url from '@/assets/images/John_Snow.png'
 export default defineComponent({
   name: 'DefaultNav',
@@ -370,6 +371,7 @@ export default defineComponent({
       setSearchOpen,
       togglePagesMenu,
       closeSideMenu,
+      Logo_Url,
       John_Snow_Url,
     }
   },
@@ -426,7 +428,7 @@ export default defineComponent({
     .el-dropdown-menu__item {
       @apply m-0;
       &:hover {
-        @apply bg-secondary #{!important};
+        @apply bg-secondary text-black #{!important};
       }
     }
   }

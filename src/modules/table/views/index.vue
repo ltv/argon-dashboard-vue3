@@ -288,7 +288,11 @@ import { defineComponent } from 'vue'
 
 import { DotsVerticalIcon } from '@heroicons/vue/outline'
 import John_Snow_Url from '@/assets/images/John_Snow.png'
-import BootStrap_Url from '@/assets/images/bootstrap.jpg'
+import Team_2_Url from '@/assets/images/team-2.jpg'
+import Team_3_Url from '@/assets/images/team-3.jpg'
+import Team_4_Url from '@/assets/images/team-4.jpg'
+import Logo_Url from '@/assets/images/ltv_logo.png'
+
 interface User {
   avatarPath: string
   name: string
@@ -313,54 +317,54 @@ export default defineComponent({
         name: 'Ryan Tompson',
       },
       {
-        avatarPath: John_Snow_Url,
+        avatarPath: Team_2_Url,
         name: 'Romina Hadid',
       },
       {
-        avatarPath: John_Snow_Url,
+        avatarPath: Team_3_Url,
         name: 'Alexander Smith',
       },
       {
-        avatarPath: John_Snow_Url,
+        avatarPath: Team_4_Url,
         name: 'Jessica Doe',
       },
     ]
     const tableData: Project[] = [
       {
-        projectLogoPath: BootStrap_Url,
-        project: 'Argon Design System',
+        projectLogoPath: Logo_Url,
+        project: 'Fancy Design System',
         budget: '2500 ',
         status: 'pending',
         users: usersData,
         completion: 60,
       },
       {
-        projectLogoPath: BootStrap_Url,
-        project: 'Argon Design System',
+        projectLogoPath: Logo_Url,
+        project: 'Fancy Design System',
         budget: '4000 ',
         status: 'completed',
         users: usersData,
         completion: 40,
       },
       {
-        projectLogoPath: BootStrap_Url,
-        project: 'Argon',
+        projectLogoPath: Logo_Url,
+        project: 'Fancy',
         budget: '2500 ',
         status: 'delayed',
         users: usersData,
         completion: 40,
       },
       {
-        projectLogoPath: BootStrap_Url,
-        project: 'Argon Design',
+        projectLogoPath: Logo_Url,
+        project: 'Fancy Design',
         budget: '3300 ',
         status: 'on schedule',
         users: usersData,
         completion: 10,
       },
       {
-        projectLogoPath: BootStrap_Url,
-        project: 'Argon System',
+        projectLogoPath: Logo_Url,
+        project: 'Fancy System',
         budget: '3000 ',
         status: 'completed',
         users: usersData,
@@ -390,7 +394,10 @@ export default defineComponent({
 
 <style lang="scss">
 .ava-column-popper.el-popover.el-popper {
-  @apply p-1 min-w-fit rounded-md #{!important};
+  @apply p-1 min-w-fit rounded-md text-white bg-black border-slate-600 #{!important};
+  .el-popper__arrow::before {
+    @apply bg-black #{!important};
+  }
 }
 .action-column-popper {
   @apply rounded-lg -mt-3 #{!important};
