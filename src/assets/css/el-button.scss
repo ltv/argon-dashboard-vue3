@@ -2,28 +2,35 @@ body {
   .el-button {
     background-color: var(--el-button-bg-color, var(--el-color-white));
     @apply transition-all duration-100 shadow-button;
+
     span {
       @apply px-1.5;
     }
+
     &:hover {
       @apply -translate-y-px;
     }
   }
+
   .el-button.el-button--large {
     @apply h-[51px] rounded-md font-semibold text-sm tracking-wide px-[11px] #{!important};
   }
+
   .el-button.el-button--small {
     @apply rounded text-xs font-semibold tracking-wide p-0.5 py-3.25 #{!important};
   }
+
   .el-button.el-button--default.el-button--small {
     @apply rounded max-w-fit h-[25px] #{!important};
   }
 
   .el-button.el-button--default.is-plain {
     @apply bg-transparent text-dark border-dark shadow-none;
+
     &:hover {
       @apply bg-dark text-white drop-shadow-lg;
     }
+
     &:active {
       @apply drop-shadow-none;
     }
@@ -31,9 +38,11 @@ body {
 
   .el-button.el-button--primary.is-plain {
     @apply bg-transparent text-indigo-410 border-indigo-410 shadow-none #{!important};
+
     &:hover {
       @apply bg-indigo-410 text-white drop-shadow-lg #{!important};
     }
+
     &:active {
       @apply drop-shadow-none #{!important};
     }
@@ -41,9 +50,11 @@ body {
 
   .el-button.el-button--secondary.is-plain {
     @apply bg-transparent text-secondary-text border-slate-50 shadow-none #{!important};
+
     &:hover {
       @apply bg-slate-50 text-black drop-shadow-md border-slate-50 #{!important};
     }
+
     &:active {
       @apply drop-shadow-none bg-secondary #{!important};
     }
@@ -51,9 +62,11 @@ body {
 
   .el-button.el-button--success.is-plain {
     @apply bg-transparent text-success border-success shadow-none #{!important};
+
     &:hover {
       @apply bg-success text-white drop-shadow-lg border-success #{!important};
     }
+
     &:active {
       @apply drop-shadow-none #{!important};
     }
@@ -61,9 +74,11 @@ body {
 
   .el-button.el-button--warning.is-plain {
     @apply bg-transparent text-warning border-warning shadow-none #{!important};
+
     &:hover {
       @apply bg-warning text-white drop-shadow-lg border-warning #{!important};
     }
+
     &:active {
       @apply drop-shadow-none #{!important};
     }
@@ -71,9 +86,11 @@ body {
 
   .el-button.el-button--info.is-plain {
     @apply bg-transparent text-info border-info shadow-none #{!important};
+
     &:hover {
       @apply bg-info text-white drop-shadow-lg border-info #{!important};
     }
+
     &:active {
       @apply drop-shadow-none #{!important};
     }
@@ -81,9 +98,11 @@ body {
 
   .el-button.el-button--danger.is-plain {
     @apply bg-transparent text-danger border-danger shadow-none #{!important};
+
     &:hover {
       @apply bg-danger text-white drop-shadow-lg border-danger #{!important};
     }
+
     &:active {
       @apply drop-shadow-none #{!important};
     }
@@ -91,9 +110,11 @@ body {
 
   .el-button.el-button--primary {
     @apply bg-indigo-410 border border-indigo-410 text-white #{!important};
+
     span {
       @apply px-1.25;
     }
+
     &:active {
       @apply bg-primary-blue shadow-none #{!important};
     }
@@ -101,69 +122,78 @@ body {
 
   .el-button.el-button--info {
     @apply bg-info border border-info text-white #{!important};
+
     &:active {
       @apply bg-info-active shadow-none #{!important};
     }
   }
+
   .el-button.el-button--info.active {
     @apply bg-info-active #{!important};
   }
 
   .el-button.el-button--warning {
     @apply bg-warning border border-warning text-white #{!important};
+
     &:active {
       @apply bg-warning-active shadow-none #{!important};
     }
   }
+
   .el-button.el-button--warning.active {
     @apply bg-warning-active #{!important};
   }
 
   .el-button.el-button--success {
     @apply bg-success border border-success text-white #{!important};
+
     &:active {
       @apply bg-success-active shadow-none #{!important};
     }
   }
+
   .el-button.el-button--success.active {
     @apply bg-success-active #{!important};
   }
 
   .el-button.el-button--danger {
     @apply bg-danger border border-danger text-white #{!important};
+
     &:active {
       @apply bg-danger-active shadow-none #{!important};
     }
   }
+
   .el-button.el-button--danger.active {
     @apply bg-danger-active #{!important};
   }
 
   .el-button.el-button--secondary {
     @apply shadow-button;
-    @apply bg-secondary border border-secondary text-black  #{!important};
+    @apply bg-secondary border border-secondary text-black #{!important};
+
     &:hover {
       @apply shadow-md #{!important};
     }
+
     &:active {
       @apply shadow-none border-secondary bg-secondary-active #{!important};
     }
   }
+
   .el-button.el-button--secondary.active {
     @apply bg-secondary-active border-secondary-active #{!important};
   }
 
   .el-button.el-button--default {
     @apply transition-all duration-100 bg-dark border border-dark text-white font-semibold h-10.75 text-sm tracking-wide;
+
     span {
       @apply px-1.25;
     }
+
     &:active {
       @apply bg-dark-120 shadow-none;
     }
   }
-  .el-button.el-button--secondary.active {
-    @apply bg-dark-120;
-  }
-
 }

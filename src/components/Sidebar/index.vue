@@ -229,6 +229,13 @@ export default defineComponent({
     const leftSideBarItems = ref<any[]>(['Dashboard', 'Profile', 'Map'])
     const isMenuShow = ref<boolean>(false)
 
+    const handleOnResize = () => {
+        if (window.innerWidth < 1024) {
+          store.dashboard.setIsSBOpen(false)
+          store.dashboard.setIsSBPin(false)
+        }
+      }
+
     onClickOutside(target, (_) => {
       if (window.innerWidth < 1024) store.dashboard.setIsSBOpen(false)
     })
@@ -239,16 +246,11 @@ export default defineComponent({
       }
     })
     onMounted(() => {
-      window.addEventListener('resize', () => {
-        if (window.innerWidth < 1024) {
-          store.dashboard.setIsSBOpen(false)
-          store.dashboard.setIsSBPin(false)
-        }
-      })
+      window.addEventListener('resize', handleOnResize)
     })
 
     onUnmounted(() => {
-      window.removeEventListener('resize', () => {})
+      window.removeEventListener('resize', handleOnResize)
     })
 
     const isSBPin = computed<boolean>(() => store.dashboard.isSBPin)
