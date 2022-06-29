@@ -23,6 +23,7 @@ jobs:
         run: |
           echo "VITE_APP_VERSION=${{ secrets.VITE_APP_VERSION }}" >> .env
           echo "VITE_GOOGLE_API_KEY=${{ secrets.VITE_GOOGLE_API_KEY }}" >> .env
+          echo "VITE_DOCUMENT_ENDPOINT=${{ secrets.VITE_DOCUMENT_ENDPOINT }}" >> .env
 
       - name: Install dependencies
         run: yarn --cache-folder ~/.yarn --frozen-lockfile --check-files
