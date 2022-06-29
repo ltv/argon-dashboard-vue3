@@ -39,7 +39,6 @@
             ref="target"
             class="text-dark-20 before:block before:md:mt-4 mt-0"
             default-active="0"
-            v-if="isMenuShow"
             :default-openeds="!leftSideBarItems.includes(route.name) ? ['1'] : ['0']"
           >
             <template v-for="(item, index) in menuItems" :key="index">
@@ -50,7 +49,7 @@
                   ' arrow-left ': !isSBOpen && !isSBPin,
                 }"
                 :index="index.toString()"
-                v-if="item.requiresAuth && item.children"
+                v-if="item.children"
               >
                 <template #title>
                   <span
@@ -227,14 +226,13 @@ export default defineComponent({
     const documentHref = ref(env('VITE_DOCUMENT_ENDPOINT'))
     const isMobile = checkIsMobile()
     const leftSideBarItems = ref<any[]>(['Dashboard', 'Profile', 'Map'])
-    const isMenuShow = ref<boolean>(false)
 
     const handleOnResize = () => {
-        if (window.innerWidth < 1024) {
-          store.dashboard.setIsSBOpen(false)
-          store.dashboard.setIsSBPin(false)
-        }
+      if (window.innerWidth < 1024) {
+        store.dashboard.setIsSBOpen(false)
+        store.dashboard.setIsSBPin(false)
       }
+    }
 
     onClickOutside(target, (_) => {
       if (window.innerWidth < 1024) store.dashboard.setIsSBOpen(false)
@@ -266,11 +264,9 @@ export default defineComponent({
 
     watch(route, () => {
       store.dashboard.setIsSBOpen(false)
-      isMenuShow.value = true
     })
 
     return {
-      isMenuShow,
       leftSideBarItems,
       isPagesMenuOpen,
       isSideMenuOpen,
