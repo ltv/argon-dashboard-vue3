@@ -33,12 +33,14 @@
           </div>
         </div>
       </div>
-      <div class="flex-1 overflow-y-auto">
+      <div class="flex-1 overflow-y-hidden">
         <el-scrollbar>
           <el-menu
             ref="target"
             class="text-[#00000099] before:block before:md:mt-4 mt-0"
             default-active="0"
+            v-if="isMenuShow"
+            :default-openeds="!leftSideBarItems.includes(route.name) ? ['1'] : ['0']"
           >
             <template v-for="(item, index) in menuItems" :key="index">
               <el-sub-menu
@@ -57,7 +59,7 @@
                     aria-hidden="true"
                   />
                   <span
-                    class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
+                    class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
                   >
                     <div>
                       <em class="h-5 w-6 block">
@@ -91,10 +93,10 @@
                       aria-hidden="true"
                     />
                     <router-link
-                      class="inline-flex pl-2 items-center w-full text-sm my-0.5 font-normal transition-all duration-200 hover:text-gray-500/100 focus:text-gray-800"
+                      class="inline-flex ml-2 items-center w-full h-full text-sm my-0.5 font-normal transition-all duration-200 hover:text-gray-500/100 focus:text-gray-800"
                       :class="{
                         ' text-gray-800 ': route.name === subItem.name,
-                        ' pl-4.5 ': isSBOpen || isSBPin,
+                        ' ml-4.5 ': isSBOpen || isSBPin,
                       }"
                       :to="{ name: subItem.name }"
                       :title="subItem.meta.title"
@@ -132,7 +134,7 @@
                     aria-hidden="true"
                   />
                   <router-link
-                    class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
+                    class="inline-flex pl-1.5 items-center w-full h-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
                     :class="{ ' text-gray-800 ': route.name === item.name }"
                     :to="{ name: item.name }"
                     :title="item.title"
@@ -149,13 +151,41 @@
                     <span
                       class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
                       :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
-                      >{{ item.title }}</span
-                    >
+                      >{{ item.title }}
+                    </span>
                   </router-link>
                 </template>
               </el-menu-item>
             </template>
           </el-menu>
+          <el-divider />
+          <div
+            class="pl-6.5 text-muted text-12.8 font-bold"
+            :class="{ hidden: !isSBOpen && !isSBPin }"
+          >
+            DOCUMENTATION
+          </div>
+          <div class="relative mt-0 rounded-lg mx-2">
+            <el-link
+              class="px-2 h-[45px]"
+              :underline="false"
+              href="https://argon-dashboard-vue3-docs.firebaseapp.com/"
+              target="_blank"
+            >
+              <div
+                class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150"
+              >
+                <div class="h-5 w-6 block">
+                  <el-icon class="w-6 mx-auto text-[#00000099]"><Promotion /></el-icon>
+                </div>
+                <span
+                  class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal text-[#00000099]"
+                  :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                  >Getting started</span
+                >
+              </div>
+            </el-link>
+          </div>
         </el-scrollbar>
       </div>
     </div>
@@ -171,6 +201,7 @@ import useStore from 'store'
 import { onClickOutside } from '@vueuse/core'
 import env from 'core/env'
 import { checkIsMobile } from 'utils/index'
+import { Promotion } from '@element-plus/icons-vue'
 interface MenuItem {
   title: string
   icon: any
@@ -188,6 +219,7 @@ export default defineComponent({
     MenuIcon,
     MenuAlt1Icon,
     ColorSwatchIcon,
+    Promotion,
   },
   setup() {
     const route = useRoute()
@@ -198,6 +230,8 @@ export default defineComponent({
     const target = ref(null)
     const version = ref(env('VITE_APP_VERSION'))
     const isMobile = checkIsMobile()
+    const leftSideBarItems = ref<String[]>(['Dashboard', 'Profile', 'Map'])
+    const isMenuShow = ref<boolean>(false)
 
     onClickOutside(target, (_) => {
       if (window.innerWidth < 1024) store.dashboard.setIsSBOpen(false)
@@ -234,9 +268,12 @@ export default defineComponent({
 
     watch(route, () => {
       store.dashboard.setIsSBOpen(false)
+      isMenuShow.value = true
     })
 
     return {
+      isMenuShow,
+      leftSideBarItems,
       isPagesMenuOpen,
       isSideMenuOpen,
       menuItems,
