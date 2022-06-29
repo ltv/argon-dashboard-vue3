@@ -2,6 +2,8 @@
 
 Argon Dashboard Vue 3, ElementUI &amp; TailwindCSS - Inspired by [Creative Tim](https://www.creative-tim.com/product/vue-argon-dashboard)
 
+![Hi](/src/assets/images/dashboard.png)
+
 ## Nice stack (VET)
 
 - [VueJS 3](https://vuejs.org) with well structured
