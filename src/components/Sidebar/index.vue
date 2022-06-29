@@ -37,7 +37,7 @@
         <el-scrollbar>
           <el-menu
             ref="target"
-            class="text-[#00000099] before:block before:md:mt-4 mt-0"
+            class="text-dark-20 before:block before:md:mt-4 mt-0"
             default-active="0"
             v-if="isMenuShow"
             :default-openeds="!leftSideBarItems.includes(route.name) ? ['1'] : ['0']"
@@ -166,20 +166,15 @@
             DOCUMENTATION
           </div>
           <div class="relative mt-0 rounded-lg mx-2">
-            <el-link
-              class="px-2 h-[45px]"
-              :underline="false"
-              href="https://argon-dashboard-vue3-docs.firebaseapp.com/"
-              target="_blank"
-            >
+            <el-link class="px-2 h-[45px]" :underline="false" :href="documentHref" target="_blank">
               <div
                 class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors"
               >
                 <div class="h-5 w-6 block">
-                  <el-icon class="w-6 mx-auto text-[#00000099]"><Promotion /></el-icon>
+                  <el-icon class="w-6 mx-auto text-dark-20"><Promotion /></el-icon>
                 </div>
                 <span
-                  class="transition-opacity opacity-1 ml-3 text-sm font-normal text-[#00000099]"
+                  class="transition-opacity opacity-1 ml-3 text-sm font-normal text-dark-20"
                   :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
                   >Getting started</span
                 >
@@ -229,6 +224,7 @@ export default defineComponent({
     const isSideMenuOpen = ref(false)
     const target = ref(null)
     const version = ref(env('VITE_APP_VERSION'))
+    const documentHref = ref(env('VITE_DOCUMENT_ENDPOINT'))
     const isMobile = checkIsMobile()
     const leftSideBarItems = ref<any[]>(['Dashboard', 'Profile', 'Map'])
     const isMenuShow = ref<boolean>(false)
@@ -282,6 +278,7 @@ export default defineComponent({
       isSBOpen,
       target,
       version,
+      documentHref,
       hoverLeftBar,
       handleMenuClick,
     }
