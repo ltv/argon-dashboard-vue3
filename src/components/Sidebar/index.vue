@@ -173,13 +173,13 @@
               target="_blank"
             >
               <div
-                class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150"
+                class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors"
               >
                 <div class="h-5 w-6 block">
                   <el-icon class="w-6 mx-auto text-[#00000099]"><Promotion /></el-icon>
                 </div>
                 <span
-                  class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal text-[#00000099]"
+                  class="transition-opacity opacity-1 ml-3 text-sm font-normal text-[#00000099]"
                   :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
                   >Getting started</span
                 >
