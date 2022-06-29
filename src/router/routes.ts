@@ -59,7 +59,7 @@ const routes = [
     },
     children: [
       {
-        path: '',
+        path: 'buttons',
         name: 'Buttons',
         component: Button,
         meta: {

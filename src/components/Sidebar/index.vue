@@ -35,17 +35,20 @@
       </div>
       <div class="flex-1 overflow-y-auto">
         <el-scrollbar>
-          <el-menu ref="target" class="text-[#00000099] before:block before:md:mt-4 mt-0">
+          <el-menu
+            ref="target"
+            class="text-[#00000099] before:block before:md:mt-4 mt-0"
+            default-active="0"
+          >
             <template v-for="(item, index) in menuItems" :key="index">
               <el-sub-menu
                 class="relative rounded-lg mx-2"
                 :class="{
-                  ' hidden-arrow ': !item.children,
                   ' bg-slate-100/50 ': route.name === item.name,
                   ' arrow-left ': !isSBOpen && !isSBPin,
                 }"
                 :index="index.toString()"
-                v-if="item.requiresAuth"
+                v-if="item.requiresAuth && item.children"
               >
                 <template #title>
                   <span
@@ -55,7 +58,6 @@
                   />
                   <span
                     class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
-                    v-if="item.children"
                   >
                     <div>
                       <em class="h-5 w-6 block">
@@ -72,28 +74,6 @@
                       >{{ item.title }}</span
                     >
                   </span>
-                  <router-link
-                    class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
-                    :class="{ ' text-gray-800 ': route.name === item.name }"
-                    :to="{ name: item.name }"
-                    :title="item.title"
-                    v-else
-                  >
-                    <div>
-                      <em class="h-5 w-6 block">
-                        <component
-                          :is="item.icon"
-                          :class="' w-5 mx-auto ' + item.color"
-                          aria-hidden="true"
-                        />
-                      </em>
-                    </div>
-                    <span
-                      class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
-                      :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
-                      >{{ item.title }}</span
-                    >
-                  </router-link>
                 </template>
                 <el-menu-item-group class="flex flex-col">
                   <el-menu-item
@@ -101,9 +81,9 @@
                     :class="{
                       ' bg-slate-100/50': route.name === subItem.name,
                     }"
-                    v-for="(subItem, index) in item.children"
-                    :key="index"
-                    :index="index.toString()"
+                    v-for="(subItem, subIndex) in item.children"
+                    :key="subIndex"
+                    :index="index.toString() + '-' + subIndex.toString()"
                   >
                     <span
                       v-if="route.name === subItem.name"
@@ -137,6 +117,43 @@
                   </el-menu-item>
                 </el-menu-item-group>
               </el-sub-menu>
+              <el-menu-item
+                class="relative rounded-lg mx-2"
+                :class="{
+                  ' bg-slate-100/50 ': route.name === item.name,
+                }"
+                :index="index.toString()"
+                v-else
+              >
+                <template #title>
+                  <span
+                    v-if="route.name === item.name"
+                    class="absolute inset-y-1 -left-2 w-0.5 h-5/6 rounded-tr-lg rounded-br-lg bg-indigo-410"
+                    aria-hidden="true"
+                  />
+                  <router-link
+                    class="inline-flex px-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors duration-150 hover:text-gray-500/100 focus:text-gray-800"
+                    :class="{ ' text-gray-800 ': route.name === item.name }"
+                    :to="{ name: item.name }"
+                    :title="item.title"
+                  >
+                    <div>
+                      <em class="h-5 w-6 block">
+                        <component
+                          :is="item.icon"
+                          :class="' w-5 mx-auto ' + item.color"
+                          aria-hidden="true"
+                        />
+                      </em>
+                    </div>
+                    <span
+                      class="transition-opacity duration-300 opacity-1 ml-3 text-sm font-normal"
+                      :class="{ 'opacity-0': !isSBOpen && !isSBPin }"
+                      >{{ item.title }}</span
+                    >
+                  </router-link>
+                </template>
+              </el-menu-item>
             </template>
           </el-menu>
         </el-scrollbar>
