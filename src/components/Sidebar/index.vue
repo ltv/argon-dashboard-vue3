@@ -166,12 +166,7 @@
             DOCUMENTATION
           </div>
           <div class="relative mt-0 rounded-lg mx-2">
-            <el-link
-              class="px-2 h-[45px]"
-              :underline="false"
-              href="https://argon-dashboard-vue3-docs.firebaseapp.com/"
-              target="_blank"
-            >
+            <el-link class="px-2 h-[45px]" :underline="false" :href="documentHref" target="_blank">
               <div
                 class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors"
               >
@@ -229,6 +224,7 @@ export default defineComponent({
     const isSideMenuOpen = ref(false)
     const target = ref(null)
     const version = ref(env('VITE_APP_VERSION'))
+    const documentHref = ref(env('VITE_DOCUMENT_ENDPOINT'))
     const isMobile = checkIsMobile()
     const leftSideBarItems = ref<any[]>(['Dashboard', 'Profile', 'Map'])
     const isMenuShow = ref<boolean>(false)
@@ -282,6 +278,7 @@ export default defineComponent({
       isSBOpen,
       target,
       version,
+      documentHref,
       hoverLeftBar,
       handleMenuClick,
     }
