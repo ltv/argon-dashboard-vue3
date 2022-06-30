@@ -16,11 +16,7 @@
           class="transition-opacity duration-300 opacity-1 p-6 block"
           :to="{ name: 'Dashboard' }"
         >
-          <img
-            src="https://argon-dashboard-pro-laravel.creative-tim.com/argon/img/brand/blue.png"
-            class="max-h-8 max-w-full align-middle"
-            alt="..."
-          />
+          <img src="@/assets/images/blue.png" class="max-h-8 max-w-full align-middle" alt="..." />
         </router-link>
         <div class="ml-auto">
           <div class="lg:col-span-10 xl:col-span-10 flex">
@@ -196,6 +192,7 @@ import { onClickOutside } from '@vueuse/core'
 import env from 'core/env'
 import { checkIsMobile } from 'utils/index'
 import { Promotion } from '@element-plus/icons-vue'
+
 interface MenuItem {
   title: string
   icon: any
