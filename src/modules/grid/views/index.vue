@@ -5,10 +5,8 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-primary">Grid system</h3>
       </template>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 text-center items-center my-3">
-        <div class="grid-items">One of three columns</div>
-        <div class="grid-items">One of three columns</div>
-        <div class="grid-items">One of three columns</div>
+      <div>
+        <GridSystem />
       </div>
     </el-card>
 
@@ -17,13 +15,8 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-primary">Equal-width</h3>
       </template>
-      <div class="grid grid-cols-6 gap-7 text-center items-center my-3">
-        <div class="grid-items col-span-3">1 of 2</div>
-        <div class="grid-items col-span-3">2 of 2</div>
-
-        <div class="grid-items col-span-2">1 of 3</div>
-        <div class="grid-items col-span-2">2 of 3</div>
-        <div class="grid-items col-span-2">3 of 3</div>
+      <div>
+        <EqualWidth />
       </div>
     </el-card>
 
@@ -33,16 +26,7 @@
         <h3 class="cursor-auto mb-0 text-primary">Setting one column width</h3>
       </template>
       <div class="my-3">
-        <div class="flex gap-4 text-center mb-6">
-          <div class="grid-items flex-auto">1 of 3</div>
-          <div class="grid-items flex-auto w-2/4">2 of 3 (wider)</div>
-          <div class="grid-items flex-auto">3 of 3</div>
-        </div>
-        <div class="flex gap-4 text-center">
-          <div class="grid-items flex-auto">1 of 3</div>
-          <div class="grid-items flex-auto w-2/5">2 of 3 (wider)</div>
-          <div class="grid-items flex-auto">3 of 3</div>
-        </div>
+        <OneColumnWidth />
       </div>
     </el-card>
 
@@ -52,16 +36,7 @@
         <h3 class="cursor-auto mb-0 text-primary">Variable width content</h3>
       </template>
       <div class="my-3">
-        <div class="flex gap-4 justify-center mb-6">
-          <div class="grid-items flex-auto md:flex-initial">1 of 3</div>
-          <div class="grid-items">Variable width content</div>
-          <div class="grid-items flex-auto md:flex-initial">3 of 3</div>
-        </div>
-        <div class="flex gap-4 justify-center">
-          <div class="grid-items flex-auto md:w-[60%] md:flex-initial">1 of 3</div>
-          <div class="grid-items">Variable width content</div>
-          <div class="grid-items flex-auto md:w-[15%] md:flex-initial">3 of 3</div>
-        </div>
+        <VariableWidth />
       </div>
     </el-card>
 
@@ -71,40 +46,39 @@
         <h3 class="cursor-auto mb-0 text-primary">Equal-width multi-row</h3>
       </template>
       <div class="my-3">
-        <div class="flex gap-4 text-center mb-6">
-          <div class="grid-items flex-auto">col</div>
-          <div class="grid-items flex-auto">col</div>
-        </div>
-        <div class="flex gap-4 text-center">
-          <div class="grid-items flex-auto">col</div>
-          <div class="grid-items flex-auto">col</div>
-        </div>
+        <MultiRow />
       </div>
     </el-card>
 
-    <!-- Grid system -->
+    <!-- Mix and match -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Grid system</h3>
+        <h3 class="cursor-auto mb-0 text-primary">Mix and match</h3>
       </template>
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 text-center my-3">
-        <div class="grid-items col-span-8">.col-6 .col-md-8</div>
-        <div class="grid-items col-span-4">.col-6 .col-md-4</div>
-
-        <div class="grid-items col-span-4">.col-6 .col-md-4</div>
-        <div class="grid-items col-span-4">.col-6 .col-md-4</div>
-        <div class="grid-items col-span-4">.col-6 .col-md-4</div>
-
-        <div class="grid-items col-span-6">.col-6 .col-md-6</div>
-        <div class="grid-items col-span-6">.col-6 .col-md-6</div>
+      <div>
+        <Mix />
       </div>
     </el-card>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import GridSystem from './components/GridSystem.vue'
+import EqualWidth from './components/EqualWidth.vue'
+import OneColumnWidth from './components/OneColumnWidth.vue'
+import VariableWidth from './components/VariableWidth.vue'
+import MultiRow from './components/MultiRow.vue'
+import Mix from './components/Mix.vue'
 
 export default defineComponent({
+  components: {
+    GridSystem,
+    EqualWidth,
+    OneColumnWidth,
+    VariableWidth,
+    MultiRow,
+    Mix,
+  },
   name: 'Grid',
   setup(_) {
     return {}
