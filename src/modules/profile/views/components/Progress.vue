@@ -108,7 +108,6 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 
-// import imageUrl from '@/assets/images/team-3.jpg'
 import reactLogo from '@/assets/images/react.jpg'
 import sketchLogo from '@/assets/images/sketch.jpg'
 import bootstrapLogo from '@/assets/images/bootstrap.jpg'
