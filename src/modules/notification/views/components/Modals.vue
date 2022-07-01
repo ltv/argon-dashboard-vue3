@@ -63,61 +63,17 @@
       <!-- Modals - Form -->
       <div class="w-full">
         <el-button type="default" class="w-full" @click="dialogFormVisible = true">Form</el-button>
-        <el-dialog v-model="dialogFormVisible" custom-class="sign-in">
-          <div class="w-full pt-5 pb-12 border-b px-6">
-            <div class="mb-4 mt-2 text-center">
-              <small class="text-12.8 mb-6">Sign in with</small>
-            </div>
-            <div class="flex flex-wrap justify-center gap-0">
-              <el-button type="primary" class="sign-btn" href="#">
-                <span><img class="h-5 w-5" src="@/assets/images/github.png" alt="" /></span>
-                <span class="ml-[14px]">Github</span>
-              </el-button>
-              <el-button type="primary" class="sign-btn" href="#">
-                <span><img class="h-5 w-5" src="@/assets/images/google.png" alt="" /></span>
-                <span class="ml-[14px]">Google</span>
-              </el-button>
-            </div>
-          </div>
-          <div class="w-full p-6 xl:p-12">
-            <div class="mb-4 mt-2 text-center">
-              <small class="block w-full text-12.8 mb-6">Or sign in with credentials</small>
-            </div>
-            <el-form :model="form" class="shadow-form">
-              <!-- Email -->
-              <el-form-item class="form-input" prop="MailIcon">
-                <el-icon>
-                  <component :is="form.MailIcon" />
-                </el-icon>
-                <el-input v-model="form.email" placeholder="Email" />
-              </el-form-item>
-              <!-- Password -->
-              <el-form-item class="form-input" prop="LockClosedIcon">
-                <el-icon>
-                  <component :is="form.LockClosedIcon" />
-                </el-icon>
-                <el-input v-model="form.password" placeholder="Password" />
-              </el-form-item>
-
-              <!-- Checkbox -->
-              <el-form-item class="checkbox">
-                <el-checkbox v-model="form.type" label="Remember me" name="type" />
-              </el-form-item>
-
-              <!-- Submit -->
-              <el-form-item class="submit-btn">
-                <el-button type="primary" @click="onSubmit">Sign in</el-button>
-              </el-form-item>
-            </el-form>
-          </div>
-        </el-dialog>
       </div>
+      <el-dialog v-model="dialogFormVisible" custom-class="sign-in">
+        <LoginForm :description="'Or sign in with credentials'" />
+      </el-dialog>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, reactive } from 'vue'
+import LoginForm from 'modules/auth/views/components/LoginForm.vue'
 
 import { MailIcon, LockClosedIcon, BellIcon } from '@heroicons/vue/solid'
 
@@ -125,6 +81,7 @@ export default defineComponent({
   name: 'Modals',
   components: {
     BellIcon,
+    LoginForm,
   },
   setup() {
     // Modals - Default

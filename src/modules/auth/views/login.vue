@@ -34,7 +34,7 @@
       class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75 pb-12"
     >
       <div class="relative lg:max-w-5/12 md:max-w-7/12 w-full mx-auto md:px-2 -mt-32">
-        <LoginForm />
+        <LoginForm :email="'admin@gmail.com'" />
         <div class="flex pt-8">
           <div class="text-sm text-left">
             <router-link
