@@ -10,8 +10,8 @@
             <div
               class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
             >
-              <div class="w-3.5 h-[13.76px]">
-                <MailIcon class="w-4 h-4 text-[#adb5bd]" />
+              <div class="w-5 h-5">
+                <MailIcon class="w-5 h-5 text-[#adb5bd]" />
               </div>
             </div>
             <el-input type="email" placeholder="Email" v-model="formData.email" />

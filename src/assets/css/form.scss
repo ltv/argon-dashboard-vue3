@@ -25,10 +25,15 @@ body {
   .el-form-item__label {
     @apply font-semibold;
   }
-
+  .el-overlay {
+    .el-overlay-dialog {
+      @apply overflow-hidden #{!important};
+    }
+  
+  }
   // Notification - Form popup
   .el-dialog.sign-in {
-    @apply rounded-md w-[90%] sm:w-[380px] #{!important};
+    @apply rounded-md w-[90%] sm:w-[380px] sm:-top-10 #{!important};
 
     .el-dialog__body {
       @apply flex flex-col items-center justify-center bg-secondary pt-0 rounded-md text-muted p-0 text-center;
@@ -37,13 +42,6 @@ body {
       @apply hidden;
     }
 
-    .el-button.el-button--primary.el-button--default.sign-btn {
-      @apply bg-white text-indigo-410 border-transparent hover:text-black #{!important};
-    }
-
-    .el-button.el-button--default span {
-      @apply p-0 #{!important};
-    }
   }
 
   // Shadow form
@@ -93,9 +91,6 @@ body {
     }
   }
   .authentication-form {
-    .el-form-item.warning-input .el-input__inner {
-      @apply placeholder:text-red-500;
-    }
 
     .el-form-item__error {
       @apply font-bold;
@@ -103,7 +98,7 @@ body {
 
     .el-input {
       .el-input__inner {
-        @apply transition-all duration-300 rounded-md shadow-form-input border-none h-[46px] pl-12 text-muted text-sm placeholder:font-normal #{!important};
+        @apply transition-all duration-300 rounded-md shadow-form-input border-none h-[46px] pl-10 text-muted text-sm placeholder:font-normal #{!important};
         &:focus {
           @apply border-none shadow-md ring-0 #{!important};
         }
