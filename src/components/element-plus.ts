@@ -5,6 +5,7 @@ import 'assets/css/el-popper.scss'
 import 'assets/css/el-breadcrumb.scss'
 import 'assets/css/notifications.scss'
 import 'assets/css/form.scss'
+import 'assets/css/grid.scss'
 
 import 'assets/css/el-progress.scss'
 import 'assets/css/el-loading.scss'

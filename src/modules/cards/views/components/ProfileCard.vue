@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <el-card
-      class="text-center border-slate-100"
+      class="text-center border-slate-100 border-0"
       :body-style="{ padding: '0px', position: 'relative' }"
     >
       <img alt="..." :src="backgroundImg" />
@@ -66,6 +66,12 @@
             {{ location }}
           </h5>
         </div>
+        <div class="text-center text-primary">
+          <h3 class="text-[13px] mt-6 font-semibold pb-2">
+            {{ pos }}
+          </h3>
+          <h5 class="text-base text-dark-lighter font-normal">{{ degree }}</h5>
+        </div>
       </div>
     </el-card>
   </div>
@@ -106,6 +112,14 @@ export default defineComponent({
       default: '',
     },
     location: {
+      type: String,
+      default: '',
+    },
+    pos: {
+      type: String,
+      default: '',
+    },
+    degree: {
       type: String,
       default: '',
     },

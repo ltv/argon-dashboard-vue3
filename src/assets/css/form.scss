@@ -29,7 +29,6 @@ body {
     .el-overlay-dialog {
       @apply overflow-hidden #{!important};
     }
-  
   }
   // Notification - Form popup
   .el-dialog.sign-in {
@@ -41,7 +40,6 @@ body {
     .el-dialog__header {
       @apply hidden;
     }
-
   }
 
   // Shadow form
@@ -91,7 +89,6 @@ body {
     }
   }
   .authentication-form {
-
     .el-form-item__error {
       @apply font-bold;
     }
@@ -112,7 +109,7 @@ body {
         @apply rounded h-4 w-4 border-0 shadow #{!important};
       }
       .el-checkbox__inner::after {
-        @apply border-2 w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
+        @apply border-[3px] w-0.5	h-[5px] mt-0.5 ml-0.5  #{!important};
       }
     }
     .el-checkbox.is-checked {
