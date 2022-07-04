@@ -56,7 +56,7 @@
                     v-for="(value, index) in scope.row.users"
                     :key="index"
                     class="relative hover:z-10"
-                    :class="'z-' + index"
+                    :class="`z-${index}`"
                   >
                     <el-popover
                       placement="top"
@@ -197,7 +197,7 @@
                     v-for="(value, index) in scope.row.users"
                     :key="index"
                     class="relative hover:z-10"
-                    :class="'z-' + index"
+                    :class="`z-${index}`"
                   >
                     <el-popover
                       placement="top"

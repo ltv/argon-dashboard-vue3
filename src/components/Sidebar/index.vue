@@ -60,7 +60,7 @@
                       <em class="h-5 w-6 block">
                         <component
                           :is="item.icon"
-                          :class="' w-5 mx-auto ' + item.color"
+                          :class="` w-5 mx-auto ${item.color}`"
                           aria-hidden="true"
                         />
                       </em>
@@ -100,7 +100,7 @@
                         <em class="h-5 w-6 block">
                           <component
                             :is="subItem.meta.icon"
-                            :class="' w-5 mx-auto ' + subItem.meta.color"
+                            :class="` w-5 mx-auto ${subItem.meta.color}`"
                             aria-hidden="true"
                           />
                         </em>
@@ -138,7 +138,7 @@
                       <em class="h-5 w-6 block">
                         <component
                           :is="item.icon"
-                          :class="' w-5 mx-auto ' + item.color"
+                          :class="` w-5 mx-auto ${item.color}`"
                           aria-hidden="true"
                         />
                       </em>
