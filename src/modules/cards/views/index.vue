@@ -200,12 +200,12 @@
           </div>
 
           <div class="mt-7">
-            <ImageFillCard
-              :imgSrc="Window_Image_Url"
-              description="This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer."
-              :updateTime="3"
-            />
+            <ImageFillCard :imgSrc="Window_Image_Url" :updateTime="3">
+              <template #content>
+                This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </template>
+            </ImageFillCard>
           </div>
 
           <div class="mt-7">
