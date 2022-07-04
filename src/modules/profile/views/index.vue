@@ -44,7 +44,7 @@
       <div class="grid grid-flow-row grid-cols-6 gap-7">
         <!-- Admin card -->
         <div class="col-span-6">
-          <UserCard
+          <ProfileCard
             :avatarImg="avatarUrl"
             :backgroundImg="avatarBackgroundUrl"
             name="Admin"
@@ -76,8 +76,8 @@ import { defineComponent } from 'vue'
 import LeftIndicator from './components/LeftIndicator.vue'
 import RightIndicator from './components/RightIndicator.vue'
 import FormCard from './components/FormCard.vue'
-import UserCard from './components/UserCard.vue'
 import Progress from './components/Progress.vue'
+import ProfileCard from '../../cards/views/components/ProfileCard.vue'
 
 import backGround from '@/assets/images/profile-cover.jpg'
 import avatarUrl from '@/assets/images/team-3.jpg'
@@ -89,8 +89,8 @@ export default defineComponent({
     LeftIndicator,
     RightIndicator,
     FormCard,
-    UserCard,
     Progress,
+    ProfileCard,
   },
   setup(_) {
     return {
@@ -105,5 +105,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 .background-url {
   @apply bg-[url('@/assets/images/profile-cover.jpg')] #{!important};
+}
+:deep(.card-avatar-profile.el-link) .el-link--inner {
+  @apply absolute;
 }
 </style>
