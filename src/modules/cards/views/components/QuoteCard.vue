@@ -6,7 +6,7 @@
           <h3 class="text-17 font-semimedium text-white">{{ title }}</h3>
         </div>
         <div class="py-px">
-          <span class="break-normal font-light">{{ content }}</span>
+          <span class="break-normal font-light"><slot name="content"></slot></span>
         </div>
         <div class="pt-3">
           <span class="font-light text-base text-danger"
@@ -32,11 +32,6 @@ export default defineComponent({
     source: {
       type: String,
       default: 'Source Title',
-    },
-    content: {
-      type: String,
-      default:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.',
     },
   },
   components: {

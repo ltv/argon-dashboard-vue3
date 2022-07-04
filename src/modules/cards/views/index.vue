@@ -99,7 +99,12 @@
           </div>
 
           <div class="mt-7">
-            <QuoteCard />
+            <QuoteCard>
+              <template #content>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                ante.
+              </template>
+            </QuoteCard>
           </div>
         </div>
 
