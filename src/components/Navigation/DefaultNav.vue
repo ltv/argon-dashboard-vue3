@@ -12,7 +12,7 @@
           class="transition-all duration-300 mr-auto sm:mr-4 sm:transform-none sm:block overflow-hidden"
           :class="{ 'w-0 sm:w-full': isSearchOpen, 'w-full': !isSearchOpen }"
         >
-          <SearchBar :setSearchOpen="setSearchOpen" />
+          <SearchBar @close-search="setSearchOpen(true)" />
         </div>
         <div
           class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-[29px] md:gap-7.5"

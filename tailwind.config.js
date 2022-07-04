@@ -44,8 +44,10 @@ module.exports = {
         18: '4.5rem',
       },
       translate: {
-        '3/2': '150%',
+        0: '0px',
         0.25: '0.075rem',
+        'px': '1px',
+        '3/2': '150%',
       },
       padding: {
         0.25: '1.5px',
@@ -261,10 +263,7 @@ module.exports = {
         'form-input': '0 1px 3px rgb(50, 50, 93, 0.15), 0 1px 0 rgb(0, 0, 0, 0.08)'
       },
     },
-    translate: {
-      0: '0px',
-      'px': '1px',
-    },
+    
     fontFamily: {
       body: ['"Open Sans"'],
     },

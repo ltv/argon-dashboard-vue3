@@ -17,7 +17,7 @@
         <el-icon
           :size="20"
           class="cursor-pointer w-4 h-4 text-black hover:text-slate-300"
-          @click="setSearchOpen?.(true)"
+          @click="$emit('close-search')"
         >
           <Close />
         </el-icon>
@@ -33,11 +33,6 @@ export default defineComponent({
   name: 'SearchBar',
   components: {
     Close,
-  },
-  props: {
-    setSearchOpen: {
-      type: Function,
-    },
   },
   setup() {
     const store = useStore()
