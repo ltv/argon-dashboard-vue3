@@ -126,7 +126,7 @@ export default defineComponent({
             },
             callback: function (value: number) {
               if (!(value % 10)) {
-                return '$' + value + 'k'
+                return `$${value}k`
               }
             },
           },
@@ -143,7 +143,7 @@ export default defineComponent({
             label: function (context: any) {
               let label = context.dataset.label || ''
               if (label) {
-                label += ': $' + context.parsed.y + 'k'
+                label += `: $${context.parsed.y}k`
               }
               return label
             },
