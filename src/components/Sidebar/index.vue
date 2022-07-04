@@ -44,7 +44,7 @@
                   ' bg-slate-100/50 ': route.name === item.name,
                   ' arrow-left ': !isSBOpen && !isSBPin,
                 }"
-                :index="index.toString()"
+                :index="`${index}`"
                 v-if="item.children"
               >
                 <template #title>
@@ -80,7 +80,7 @@
                     }"
                     v-for="(subItem, subIndex) in item.children"
                     :key="subIndex"
-                    :index="index.toString() + '-' + subIndex.toString()"
+                    :index="`${index}-${subIndex}`"
                   >
                     <span
                       v-if="route.name === subItem.name"
@@ -119,7 +119,7 @@
                 :class="{
                   ' bg-slate-100/50 ': route.name === item.name,
                 }"
-                :index="index.toString()"
+                :index="`${index}`"
                 v-else
               >
                 <template #title>
