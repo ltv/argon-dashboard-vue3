@@ -81,7 +81,7 @@
 import { defineComponent, reactive } from 'vue'
 
 export default defineComponent({
-  name: 'FormCard',
+  name: 'EditProfileForm',
   setup() {
     const userForm = reactive({
       name: '',

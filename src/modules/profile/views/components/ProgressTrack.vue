@@ -115,7 +115,7 @@ import vueLogo from '@/assets/images/vue.jpg'
 import angularLogo from '@/assets/images/angular.jpg'
 
 export default defineComponent({
-  name: 'Progress',
+  name: 'ProgressTrack',
   setup(_) {
     const isHover = ref(false)
     const hoverCheck = (b: boolean) => {

@@ -34,7 +34,7 @@
 
       <!-- Edit profile section -->
       <div class="mt-7">
-        <FormCard />
+        <EditProfileForm />
       </div>
     </div>
     <!-- End edit profile -->
@@ -53,7 +53,7 @@
             :friends="22"
             :photos="10"
             :comments="89"
-            pos="Solution Manager - Creative Tim Officer"
+            job="Solution Manager - Creative Tim Officer"
             degree="University of Computer Science"
           />
         </div>
@@ -61,7 +61,7 @@
 
         <!-- Progress track -->
         <div class="col-span-6">
-          <Progress />
+          <ProgressTrack />
         </div>
         <!-- End progress track -->
       </div>
@@ -75,8 +75,8 @@ import { defineComponent } from 'vue'
 // Components
 import LeftIndicator from './components/LeftIndicator.vue'
 import RightIndicator from './components/RightIndicator.vue'
-import FormCard from './components/FormCard.vue'
-import Progress from './components/Progress.vue'
+import EditProfileForm from './components/EditProfileForm.vue'
+import ProgressTrack from './components/ProgressTrack.vue'
 import ProfileCard from '../../cards/views/components/ProfileCard.vue'
 
 import backGround from '@/assets/images/profile-cover.jpg'
@@ -88,8 +88,8 @@ export default defineComponent({
   components: {
     LeftIndicator,
     RightIndicator,
-    FormCard,
-    Progress,
+    EditProfileForm,
+    ProgressTrack,
     ProfileCard,
   },
   setup(_) {

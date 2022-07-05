@@ -68,7 +68,7 @@
         </div>
         <div class="text-center text-primary">
           <h3 class="text-[13px] mt-6 font-semibold pb-2">
-            {{ pos }}
+            {{ job }}
           </h3>
           <h5 class="text-base text-dark-lighter font-normal">{{ degree }}</h5>
         </div>
@@ -115,7 +115,7 @@ export default defineComponent({
       type: String,
       default: '',
     },
-    pos: {
+    job: {
       type: String,
       default: '',
     },
