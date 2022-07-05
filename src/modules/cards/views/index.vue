@@ -265,7 +265,7 @@
                   >
                 </div>
               </div>
-              <el-divider class="border-[#0000000d] my-5" />
+              <el-divider class="border-dark-4 my-5" />
               <el-link
                 :underline="false"
                 class="text-muted hover:text-muted font-normal text-base pb-5"

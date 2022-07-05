@@ -24,7 +24,7 @@
           <el-form-item class="warning-input mb-4 rounded-md" prop="email">
             <div class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <div class="w-5 h-5">
-                <MailIcon class="w-5 h-5 text-[#adb5bd]" />
+                <MailIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-input placeholder="Email" v-model="formData.email" />
@@ -32,7 +32,7 @@
           <el-form-item class="mb-6 rounded-md" prop="password">
             <div class="z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <div class="w-5 h-5">
-                <LockOpenIcon class="w-5 h-5 text-[#adb5bd]" />
+                <LockOpenIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-input type="password" placeholder="Password" v-model="formData.password" />

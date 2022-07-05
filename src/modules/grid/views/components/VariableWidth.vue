@@ -23,6 +23,6 @@ export default defineComponent({
 
 <style scoped>
 .grid-items {
-  @apply p-3 my-1 bg-[#fff] border border-slate-200 rounded drop-shadow-[0_4px_16px_rgba(0,0,0,0.10)] shadow-[0_0_0_1px_rgb(0,0,0,0.10)] text-left text-sm text-[#393f49] border-0 font-normal;
+  @apply p-3 my-1 bg-white border-slate-200 rounded drop-shadow-[0_4px_16px_rgba(0,0,0,0.10)] shadow-[0_0_0_1px_rgb(0,0,0,0.10)] text-left text-sm text-gray-410 border-0 font-normal;
 }
 </style>

@@ -11,7 +11,7 @@
               <div class="card-header">
                 <h5 class="font-semibold text-0.8125 text-muted mb-0">TOTAL TRAFFIC</h5>
               </div>
-              <h2 class="text-xl text-[#32325d] font-semibold mb-0 leading-7.5">350,897</h2>
+              <h2 class="text-xl textindigo-210 font-semibold mb-0 leading-7.5">350,897</h2>
             </div>
             <div
               class="w-12 h-12 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#f5365c] to-[#f56036]"
@@ -38,7 +38,7 @@
               <div class="card-header">
                 <h5 class="font-semibold text-0.8125 text-muted mb-0">NEW USERS</h5>
               </div>
-              <h2 class="text-xl text-[#32325d] font-semibold mb-0 leading-7.5">2,356</h2>
+              <h2 class="text-xl textindigo-210 font-semibold mb-0 leading-7.5">2,356</h2>
             </div>
             <div
               class="w-12 h-12 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#fb6340] to-[#fbb140]"
@@ -65,7 +65,7 @@
               <div class="card-header">
                 <h5 class="font-semibold text-0.8125 text-muted mb-0">SALES</h5>
               </div>
-              <h2 class="text-xl text-[#32325d] font-semibold mb-0 leading-7.5">924</h2>
+              <h2 class="text-xl textindigo-210 font-semibold mb-0 leading-7.5">924</h2>
             </div>
 
             <div
@@ -93,7 +93,7 @@
               <div class="card-header">
                 <h5 class="font-semibold text-0.8125 text-muted mb-0">PERFORMANCE</h5>
               </div>
-              <h2 class="text-xl text-[#32325d] font-semibold mb-0 leading-7.5">49,65%</h2>
+              <h2 class="text-xl textindigo-210 font-semibold mb-0 leading-7.5">49,65%</h2>
             </div>
             <div
               class="w-12 h-12 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#11cdef] to-[#1171ef]"

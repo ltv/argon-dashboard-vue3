@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <el-card class="bg-gradient-to-r from-[#172B4D] to-[#1A174D]">
+    <el-card class="bg-gradient-to-r from-default to-dark-100">
       <template #header>
         <div class="flex flex-wrap items-center bg-transparent">
           <div class="max-w-full basis-0 grow">
