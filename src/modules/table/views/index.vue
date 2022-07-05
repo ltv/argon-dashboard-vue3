@@ -136,9 +136,7 @@
         </el-table>
       </div>
       <div class="p-4">
-        <div class="flex justify-end mb-0">
-          <el-pagination background layout="prev, pager, next" :total="30" />
-        </div>
+        <Pagination />
       </div>
     </div>
     <div class="flex flex-wrap flex-col shadow mb-7 mx-auto rounded-md bg-dark">
