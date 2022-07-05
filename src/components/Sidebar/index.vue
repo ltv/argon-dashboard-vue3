@@ -44,7 +44,7 @@
                   ' bg-slate-100/50 ': route.name === item.name,
                   ' arrow-left ': !isSBOpen && !isSBPin,
                 }"
-                :index="index.toString()"
+                :index="`${index}`"
                 v-if="item.children"
               >
                 <template #title>
@@ -60,7 +60,7 @@
                       <em class="h-5 w-6 block">
                         <component
                           :is="item.icon"
-                          :class="' w-5 mx-auto ' + item.color"
+                          :class="` w-5 mx-auto ${item.color}`"
                           aria-hidden="true"
                         />
                       </em>
@@ -80,7 +80,7 @@
                     }"
                     v-for="(subItem, subIndex) in item.children"
                     :key="subIndex"
-                    :index="index.toString() + '-' + subIndex.toString()"
+                    :index="`${index}-${subIndex}`"
                   >
                     <span
                       v-if="route.name === subItem.name"
@@ -100,7 +100,7 @@
                         <em class="h-5 w-6 block">
                           <component
                             :is="subItem.meta.icon"
-                            :class="' w-5 mx-auto ' + subItem.meta.color"
+                            :class="` w-5 mx-auto ${subItem.meta.color}`"
                             aria-hidden="true"
                           />
                         </em>
@@ -119,7 +119,7 @@
                 :class="{
                   ' bg-slate-100/50 ': route.name === item.name,
                 }"
-                :index="index.toString()"
+                :index="`${index}`"
                 v-else
               >
                 <template #title>
@@ -138,7 +138,7 @@
                       <em class="h-5 w-6 block">
                         <component
                           :is="item.icon"
-                          :class="' w-5 mx-auto ' + item.color"
+                          :class="` w-5 mx-auto ${item.color}`"
                           aria-hidden="true"
                         />
                       </em>

@@ -33,7 +33,7 @@
               <span class="text-[1.1rem] text-normal font-bold">{{ friends }}</span>
             </div>
             <div>
-              <span class="text-sm text-[#adb5bd] mb-0">Friends</span>
+              <span class="text-sm text-gray-210 mb-0">Friends</span>
             </div>
           </div>
           <div class="block">
@@ -41,7 +41,7 @@
               <span class="text-[1.1rem] text-normal font-bold">{{ photos }}</span>
             </div>
             <div>
-              <span class="text-sm text-[#adb5bd] mb-0">Photos</span>
+              <span class="text-sm text-gray-210 mb-0">Photos</span>
             </div>
           </div>
           <div class="block">
@@ -49,7 +49,7 @@
               <span class="text-[1.1rem] text-normal font-bold">{{ comments }}</span>
             </div>
             <div>
-              <span class="text-sm text-[#adb5bd] mb-0">Comments</span>
+              <span class="text-sm text-gray-210 mb-0">Comments</span>
             </div>
           </div>
         </div>

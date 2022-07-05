@@ -11,7 +11,7 @@
               <div class="flex items-center">
                 <a
                   href="#"
-                  class="inline-flex border border-slate-50 w-12 h-12 rounded-full bg-[#adb5bd] items-center justify-center"
+                  class="inline-flex border border-slate-50 w-12 h-12 rounded-full bg-gray-210 items-center justify-center"
                 >
                   <el-avatar :size="46" :src="scope.row.projectLogoPath" />
                 </a>
@@ -56,7 +56,7 @@
                     v-for="(value, index) in scope.row.users"
                     :key="index"
                     class="relative hover:z-10"
-                    :class="'z-' + index"
+                    :class="`z-${index}`"
                   >
                     <el-popover
                       placement="top"
@@ -136,9 +136,7 @@
         </el-table>
       </div>
       <div class="p-4">
-        <div class="flex justify-end mb-0">
-          <el-pagination background layout="prev, pager, next" :total="30" />
-        </div>
+        <Pagination />
       </div>
     </div>
     <div class="flex flex-wrap flex-col shadow mb-7 mx-auto rounded-md bg-dark">
@@ -152,7 +150,7 @@
               <div class="flex items-center">
                 <a
                   href="#"
-                  class="inline-flex border border-slate-50 w-12 h-12 rounded-full bg-[#adb5bd] items-center justify-center"
+                  class="inline-flex border border-slate-50 w-12 h-12 rounded-full bg-gray-210 items-center justify-center"
                 >
                   <el-avatar :size="46" :src="scope.row.projectLogoPath" />
                 </a>
@@ -197,7 +195,7 @@
                     v-for="(value, index) in scope.row.users"
                     :key="index"
                     class="relative hover:z-10"
-                    :class="'z-' + index"
+                    :class="`z-${index}`"
                   >
                     <el-popover
                       placement="top"

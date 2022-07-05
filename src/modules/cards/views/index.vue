@@ -42,21 +42,13 @@
         </div>
 
         <div class="col-span-4">
-          <el-card class="border-white">
-            <template #header>
-              <h3>Card title</h3>
+          <SimpleCard>
+            <template #content>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis non dolore est fuga
+              nobis ipsum illum eligendi nemo iure repellat, soluta, optio minus ut reiciendis
+              voluptates enim impedit veritatis officiis.
             </template>
-            <p class="break-normal text-slate-500 py-1 pb-2">
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis non dolore est
-                fuga nobis ipsum illum eligendi nemo iure repellat, soluta, optio minus ut
-                reiciendis voluptates enim impedit veritatis officiis.
-              </span>
-            </p>
-            <div class="pt-3">
-              <el-button type="primary" class="py-5">Go somewhere</el-button>
-            </div>
-          </el-card>
+          </SimpleCard>
 
           <div class="mt-7">
             <ContactCard
@@ -99,7 +91,12 @@
           </div>
 
           <div class="mt-7">
-            <QuoteCard />
+            <QuoteCard>
+              <template #content>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                ante.
+              </template>
+            </QuoteCard>
           </div>
         </div>
 
@@ -195,12 +192,12 @@
           </div>
 
           <div class="mt-7">
-            <ImageFillCard
-              :imgSrc="Window_Image_Url"
-              description="This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer."
-              :updateTime="3"
-            />
+            <ImageFillCard :imgSrc="Window_Image_Url" :updateTime="3">
+              <template #content>
+                This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </template>
+            </ImageFillCard>
           </div>
 
           <div class="mt-7">
@@ -268,7 +265,7 @@
                   >
                 </div>
               </div>
-              <el-divider class="border-[#0000000d] my-5" />
+              <el-divider class="border-dark-4 my-5" />
               <el-link
                 :underline="false"
                 class="text-muted hover:text-muted font-normal text-base pb-5"
@@ -298,6 +295,7 @@ import ContactCard from './components/ContactCard.vue'
 import TeamMemberCard from './components/TeamMemberCard.vue'
 import ImageFillCard from './components/ImageFillCard.vue'
 import QuoteCard from './components/QuoteCard.vue'
+import SimpleCard from './components/SimpleCard.vue'
 
 export default defineComponent({
   name: 'Card',
@@ -309,6 +307,7 @@ export default defineComponent({
     TeamMemberCard,
     ImageFillCard,
     QuoteCard,
+    SimpleCard,
   },
   setup() {
     const isHover = ref(false)

@@ -89,7 +89,7 @@ export default defineComponent({
 .main-content {
   @apply transition-all duration-300;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .main-content {
     margin-left: 0 !important;
   }

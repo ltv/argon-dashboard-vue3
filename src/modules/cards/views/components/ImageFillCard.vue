@@ -8,7 +8,7 @@
             <span class="text-xl font-semibold"> {{ title }}</span>
           </div>
           <div class="py-px">
-            <span class="break-normal font-light">{{ description }}</span>
+            <span class="break-normal font-light"><slot name="content"></slot></span>
           </div>
           <div class="py-3">
             <span class="font-semibold">Last updated {{ updateTime }} mins ago</span>
@@ -30,10 +30,6 @@ export default defineComponent({
     title: {
       type: String,
       default: 'Card title',
-    },
-    description: {
-      type: String,
-      default: '',
     },
     updateTime: {
       type: Number,

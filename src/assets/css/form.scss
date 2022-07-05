@@ -1,7 +1,7 @@
 body {
   // Default
   hr {
-    @apply border-0 border-b-[1px] border-b-[#e9ecef] my-6;
+    @apply border-0 border-b-[1px] border-b-light-10 my-6;
   }
   .el-form-item__content:last-child .el-button {
     @apply mt-6;

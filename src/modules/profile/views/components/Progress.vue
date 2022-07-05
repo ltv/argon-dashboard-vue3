@@ -149,9 +149,9 @@ export default defineComponent({
 }
 
 .el-card__body .progress {
-  @apply border-b py-5 border-b-[#e9ecef] #{!important};
+  @apply border-b py-5 border-b-light-10 #{!important};
 }
 .el-card__body .progress:last-child {
-  @apply border-0 border-b-[#e9ecef] #{!important};
+  @apply border-0 border-b-light-10 #{!important};
 }
 </style>

@@ -24,7 +24,7 @@
               class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
             >
               <div class="w-5 h-5">
-                <AcademicCapIcon class="w-5 h-5 text-[#adb5bd]" />
+                <AcademicCapIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-input placeholder="Name" v-model="formData.username" />
@@ -34,7 +34,7 @@
               class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
             >
               <div class="w-5 h-5">
-                <MailIcon class="w-5 h-5 text-[#adb5bd]" />
+                <MailIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-input type="email" placeholder="Email" v-model="formData.email" />
@@ -44,7 +44,7 @@
               class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
             >
               <div class="w-5 h-5">
-                <IdentificationIcon class="w-5 h-5 text-[#adb5bd]" />
+                <IdentificationIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-select
@@ -67,7 +67,7 @@
               class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
             >
               <div class="w-5 h-5">
-                <LockOpenIcon class="w-5 h-5 text-[#adb5bd]" />
+                <LockOpenIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-input type="password" placeholder="Password" v-model="formData.password" />
@@ -77,7 +77,7 @@
               class="authentication-form-icon z-10 absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none"
             >
               <div class="w-5 h-5">
-                <LockOpenIcon class="w-5 h-5 text-[#adb5bd]" />
+                <LockOpenIcon class="w-5 h-5 text-gray-210" />
               </div>
             </div>
             <el-input type="password" placeholder="Confirm Password" v-model="formData.password" />

@@ -24,7 +24,7 @@
   
   .el-sub-menu {
     .el-sub-menu__title {
-      @apply rounded px-2 pr-0 h-[45px] text-dark-20 #{!important};
+      @apply rounded-md px-2 pr-0 h-[45px] text-dark-20 #{!important};
       .el-icon.el-sub-menu__icon-arrow {
         @apply text-indigo-410;
       }
@@ -43,7 +43,7 @@
   }
   
   .el-menu-item {
-    @apply rounded px-2 pr-0 h-[45px] text-dark-20 #{!important};
+    @apply rounded-md px-2 pr-0 h-[45px] text-dark-20 #{!important};
     &:hover {
       @apply bg-white;
     }

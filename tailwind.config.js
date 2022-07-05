@@ -44,8 +44,10 @@ module.exports = {
         18: '4.5rem',
       },
       translate: {
-        '3/2': '150%',
+        0: '0px',
         0.25: '0.075rem',
+        'px': '1px',
+        '3/2': '150%',
       },
       padding: {
         0.25: '1.5px',
@@ -158,19 +160,24 @@ module.exports = {
           320: 'rgb(34 209 240)'
         },
         normal: 'rgb(82 95 127)',
+        gray: {
+          210: 'rgb(173 181 189)', //#adb5bd
+          410: 'rgb(57 63 73)', //#393f49
+        },
         dark: {
           DEFAULT: 'rgb(23 43 77)', //#172b4d
           light: 'rgb(28 52 93)',
           lighter: 'rgb(82 95 127)', //#525f7f
+          4: 'rgb(0 0 0 / 0.05)', // #0000000d
           10: 'rgb(0 0 0 / 0.2)', 
           20: 'rgb(0 0 0 / 0.6)', // #00000099
           50: 'rgb(0 0 0 / 0.95)', //#000000f2
           100: "rgb(26 23 77)", // #1a174d
           120: 'rgb(11 21 38)', //
-          
         },
         light: {
           DEFAULT: 'rgb(206 212 218)', //#ced4da
+          10: 'rgb(233 236 239)', //#e9ecef
         },
         primary: {
           DEFAULT: 'rgb(50 50 93)',
@@ -221,7 +228,9 @@ module.exports = {
           light: 'rgb(245 96 54)'
         },
         indigo: {
+          210: 'rgb(50 50 93)', //#32325d
           410: 'rgb(94 114 228)', //#5e72e4
+          450: 'rgb(130 94 228)', //#825ee4
         },
         yellow: {
           310: 'rgb(255 214 0)'
@@ -261,10 +270,7 @@ module.exports = {
         'form-input': '0 1px 3px rgb(50, 50, 93, 0.15), 0 1px 0 rgb(0, 0, 0, 0.08)'
       },
     },
-    translate: {
-      0: '0px',
-      'px': '1px',
-    },
+    
     fontFamily: {
       body: ['"Open Sans"'],
     },

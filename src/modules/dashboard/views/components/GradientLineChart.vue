@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <el-card class="bg-gradient-to-r from-[#172B4D] to-[#1A174D]">
+    <el-card class="bg-gradient-to-r from-default to-dark-100">
       <template #header>
         <div class="flex flex-wrap items-center bg-transparent">
           <div class="max-w-full basis-0 grow">
@@ -126,7 +126,7 @@ export default defineComponent({
             },
             callback: function (value: number) {
               if (!(value % 10)) {
-                return '$' + value + 'k'
+                return `$${value}k`
               }
             },
           },
@@ -143,7 +143,7 @@ export default defineComponent({
             label: function (context: any) {
               let label = context.dataset.label || ''
               if (label) {
-                label += ': $' + context.parsed.y + 'k'
+                label += `: $${context.parsed.y}k`
               }
               return label
             },
