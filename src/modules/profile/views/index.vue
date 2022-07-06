@@ -23,11 +23,11 @@
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-7">
         <div class="col-span-3">
           <!-- Left indicator -->
-          <LeftIndicator />
+          <PrimaryIndicator />
         </div>
         <div class="col-span-3">
           <!-- Right indicator -->
-          <RightIndicator />
+          <WarningIndicator />
         </div>
       </div>
       <!-- End Indicator -->
@@ -73,8 +73,8 @@
 import { defineComponent } from 'vue'
 
 // Components
-import LeftIndicator from './components/LeftIndicator.vue'
-import RightIndicator from './components/RightIndicator.vue'
+import PrimaryIndicator from './components/PrimaryIndicator.vue'
+import WarningIndicator from './components/WarningIndicator.vue'
 import EditProfileForm from './components/EditProfileForm.vue'
 import ProgressTrack from './components/ProgressTrack.vue'
 import ProfileCard from '../../cards/views/components/ProfileCard.vue'
@@ -86,8 +86,8 @@ import avatarBackgroundUrl from '@/assets/images/window-purple-image.jpg'
 export default defineComponent({
   name: 'Profile',
   components: {
-    LeftIndicator,
-    RightIndicator,
+    PrimaryIndicator,
+    WarningIndicator,
     EditProfileForm,
     ProgressTrack,
     ProfileCard,

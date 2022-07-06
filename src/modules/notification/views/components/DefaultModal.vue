@@ -31,6 +31,11 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'DefaultModal',
-  props: ['triggerModal'],
+  props: {
+    triggerModal: {
+      type: Boolean,
+      default: false,
+    },
+  },
 })
 </script>
