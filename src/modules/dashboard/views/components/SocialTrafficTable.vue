@@ -103,7 +103,7 @@ export default defineComponent({
     ])
 
     const customColorMethod = (completion: number) => {
-      return theme.value.find((el) => el.completion == completion)?.color ?? '#FB6340'
+      return theme.value.find((el: any) => el.completion == completion)?.color ?? '#FB6340'
     }
 
     return {

@@ -152,7 +152,7 @@ export default defineComponent({
       { status: 'pending', color: '#FB6340' },
     ])
     const customColorMethod = (status: string) => {
-      return theme.value.find((el) => el.status == status)?.color ?? '#2DCE89'
+      return theme.value.find((el: any) => el.status == status)?.color ?? '#2DCE89'
     }
     return {
       customColorMethod,
