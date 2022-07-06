@@ -2,7 +2,7 @@
   <div class="w-full">
     <el-card class="border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Progress track</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Progress track</h3>
       </template>
       <div class="flex flex-col my-[-16px]">
         <div class="flex gap-7 progress items-center">
@@ -115,7 +115,7 @@ import vueLogo from '@/assets/images/vue.jpg'
 import angularLogo from '@/assets/images/angular.jpg'
 
 export default defineComponent({
-  name: 'Progress',
+  name: 'ProgressTrack',
   setup(_) {
     const isHover = ref(false)
     const hoverCheck = (b: boolean) => {

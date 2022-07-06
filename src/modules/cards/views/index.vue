@@ -71,7 +71,7 @@
             <el-card class="border-slate-100" :body-style="{ padding: '0px' }">
               <img alt="..." src="@/assets/images/man_draw.jpg" />
               <div class="px-6 pt-4 pb-8">
-                <div class="text-xl font-semibold pt-2 pb-1 text-primary">
+                <div class="text-xl font-semibold pt-2 pb-1 text-primary-dark">
                   Get started with Argon
                 </div>
                 <div class="font-normal text-80 text-muted">

@@ -180,10 +180,8 @@ module.exports = {
           10: 'rgb(233 236 239)', //#e9ecef
         },
         primary: {
-          DEFAULT: 'rgb(50 50 93)',
-          blue: {
-            DEFAULT: 'rgb(50 76 221)',
-          },
+          DEFAULT: 'rgb(50 76 221)', 
+          dark: 'rgb(50 50 93)',
           white: 'rgb(0 0 0 / 0.05)',
         },
         muted: {

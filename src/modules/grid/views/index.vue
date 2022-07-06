@@ -3,7 +3,7 @@
     <!-- Grid system -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Grid system</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Grid system</h3>
       </template>
       <div>
         <GridSystem />
@@ -13,7 +13,7 @@
     <!-- Equal-width -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Equal-width</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Equal-width</h3>
       </template>
       <div>
         <EqualWidth />
@@ -23,7 +23,7 @@
     <!-- Setting one column width -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Setting one column width</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Setting one column width</h3>
       </template>
       <div class="my-3">
         <OneColumnWidth />
@@ -33,7 +33,7 @@
     <!-- Variable width content -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Variable width content</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Variable width content</h3>
       </template>
       <div class="my-3">
         <VariableWidth />
@@ -43,7 +43,7 @@
     <!-- Equal-width multi-row -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Equal-width multi-row</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Equal-width multi-row</h3>
       </template>
       <div class="my-3">
         <MultiRow />
@@ -53,7 +53,7 @@
     <!-- Mix and match -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Mix and match</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Mix and match</h3>
       </template>
       <div>
         <Mix />

@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="p-8">
-        <div class="text-center text-primary">
+        <div class="text-center text-primary-dark">
           <h3 class="font-semibold pb-2">
             {{ name }}<span class="font-thin">, {{ age }}</span>
           </h3>
@@ -66,9 +66,9 @@
             {{ location }}
           </h5>
         </div>
-        <div class="text-center text-primary">
+        <div class="text-center text-primary-dark">
           <h3 class="text-[13px] mt-6 font-semibold pb-2">
-            {{ pos }}
+            {{ job }}
           </h3>
           <h5 class="text-base text-dark-lighter font-normal">{{ degree }}</h5>
         </div>
@@ -115,7 +115,7 @@ export default defineComponent({
       type: String,
       default: '',
     },
-    pos: {
+    job: {
       type: String,
       default: '',
     },

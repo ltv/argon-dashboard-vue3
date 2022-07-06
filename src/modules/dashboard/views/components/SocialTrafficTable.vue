@@ -3,7 +3,7 @@
     <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-md">
       <div class="flex flex-wrap items-center py-2 px-6 mb-0 border-b-dark-4">
         <div class="max-w-full basis-0 grow">
-          <h3 class="mb-0 cursor-auto text-primary">{{ title }}</h3>
+          <h3 class="mb-0 cursor-auto text-primary-dark">{{ title }}</h3>
         </div>
         <div class="max-w-full basis-0 grow">
           <div class="flex flex-wrap mb-0 pl-0 justify-end gap-x-3">
@@ -57,7 +57,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'SocialTrafficTable',
@@ -95,19 +95,17 @@ export default defineComponent({
         completion: 30,
       },
     ]
+    const theme = ref([
+      { completion: 60, color: '#F5365C' },
+      { completion: 70, color: '#2DCE89' },
+      { completion: 75, color: '#11CDEF' },
+      { completion: 80, color: '#6c6be4' },
+    ])
+
     const customColorMethod = (completion: number) => {
-      if (completion == 60) {
-        return '#F5365C'
-      } else if (completion == 70) {
-        return '#2DCE89'
-      } else if (completion == 80) {
-        return '#6c6be4'
-      } else if (completion == 75) {
-        return '#11CDEF'
-      } else {
-        return '#FB6340'
-      }
+      return theme.value.find((el: any) => el.completion == completion)?.color ?? '#FB6340'
     }
+
     return {
       tableData,
       customColorMethod,

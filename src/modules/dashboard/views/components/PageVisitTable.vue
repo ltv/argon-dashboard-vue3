@@ -3,7 +3,7 @@
     <div class="flex flex-wrap flex-col bg-white shadow mb-7 mx-auto rounded-md">
       <div class="flex flex-wrap items-center py-2 px-6 mb-0 border-b-dark-4">
         <div class="max-w-full basis-0 grow">
-          <h3 class="mb-0 cursor-auto text-primary">{{ title }}</h3>
+          <h3 class="mb-0 cursor-auto text-primary-dark">{{ title }}</h3>
         </div>
         <div class="max-w-full basis-0 grow">
           <div class="flex flex-wrap mb-0 pl-0 justify-end gap-x-3">
