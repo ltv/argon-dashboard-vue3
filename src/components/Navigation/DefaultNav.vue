@@ -60,7 +60,7 @@
                   <el-dropdown-item class="m-0 hover:bg-white">
                     <div class="flex items-center w-full py-2.5 cursor-default">
                       <span class="text-sm text-slate-400 font-semibold m-0">
-                        You have <strong class="text-primary-blue">13</strong> notifications.
+                        You have <strong class="text-primary">13</strong> notifications.
                       </span>
                     </div>
                   </el-dropdown-item>
@@ -88,7 +88,7 @@
                     <div class="flex items-center w-full py-2">
                       <a
                         href="#!"
-                        class="mx-auto text-center text-primary-blue font-semibold text-medium"
+                        class="mx-auto text-center text-primary font-semibold text-medium"
                         >View all</a
                       >
                     </div>
@@ -245,7 +245,7 @@
               <el-dropdown-menu>
                 <el-dropdown-item class="m-0 hover:bg-white">
                   <div class="flex items-center w-full pt-1 cursor-default">
-                    <h6 class="truncate m-0 text-primary">WELCOME!</h6>
+                    <h6 class="truncate m-0 text-primary-dark">WELCOME!</h6>
                   </div>
                 </el-dropdown-item>
                 <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">

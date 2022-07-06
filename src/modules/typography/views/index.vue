@@ -3,7 +3,7 @@
     <!-- Heading section -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Headings</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Headings</h3>
       </template>
       <div>
         <Heading />
@@ -13,7 +13,7 @@
     <!-- Display section -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Display titles</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Display titles</h3>
       </template>
       <div>
         <DisplayTitle />
@@ -23,7 +23,7 @@
     <!-- Specialized titles -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Specialized titles</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Specialized titles</h3>
       </template>
       <div>
         <SpecializedTitle />
@@ -33,7 +33,7 @@
     <!-- Paragraphs -->
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Paragraphs</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Paragraphs</h3>
       </template>
       <div>
         <Paragraphs />

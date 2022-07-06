@@ -2,7 +2,7 @@
   <div class="w-full block mx-auto h-auto lg:max-w-2/3">
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Styles</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Styles</h3>
       </template>
       <div>
         <StyleButtons />
@@ -11,7 +11,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Colors</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Colors</h3>
       </template>
       <div>
         <ColorButtons />
@@ -20,7 +20,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Outline</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Outline</h3>
       </template>
       <div>
         <OutlineButtons />
@@ -29,7 +29,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Sizes</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Sizes</h3>
       </template>
 
       <div>
@@ -39,7 +39,7 @@
 
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Group</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Group</h3>
       </template>
 
       <div>
@@ -48,7 +48,7 @@
     </el-card>
     <el-card class="mb-7.5 border-none">
       <template #header>
-        <h3 class="cursor-auto mb-0 text-primary">Social</h3>
+        <h3 class="cursor-auto mb-0 text-primary-dark">Social</h3>
       </template>
       <div>
         <SocialButtons />

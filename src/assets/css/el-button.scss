@@ -116,7 +116,7 @@ body {
     }
 
     &:active {
-      @apply bg-primary-blue shadow-none #{!important};
+      @apply bg-primary shadow-none #{!important};
     }
   }
 

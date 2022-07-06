@@ -6,7 +6,7 @@
       </el-link>
       <div class="pt-4">
         <h4 class="mb-0 py-2">
-          <span class="text-17 font-semibold text-primary">{{ name }}</span>
+          <span class="text-17 font-semibold text-primary-dark">{{ name }}</span>
         </h4>
         <h4 class="text-15 text-muted font-light mb-0">{{ description }}</h4>
       </div>

@@ -50,7 +50,7 @@ body {
     px-6
     flex 
     w-full 
-    text-primary 
+    text-primary-dark 
     text-base 
     font-normal 
     leading-5 
@@ -71,7 +71,7 @@ body {
     translate-y-0
     hover:border-opacity-95
     hover:bg-white 
-    hover:text-primary
+    hover:text-primary-dark
     hover:shadow-medium
     hover:drop-shadow
     #{!important};

@@ -63,7 +63,7 @@
         <span class="title block">Primary Text</span>
       </div>
       <div class="md:w-3/4">
-        <p class="text-indigo-410">
+        <p class="text-primary">
           I will be the leader of a company that ends up being worth billions of dollars, because I
           got the answers...
         </p>

@@ -6,7 +6,7 @@ body {
   h4,
   h5,
   h6 {
-    @apply text-primary font-semibold leading-normal #{!important};
+    @apply text-primary-dark font-semibold leading-normal #{!important};
   }
   h1 {
     @apply text-1.625;
@@ -37,7 +37,7 @@ body {
   .h4,
   .h5,
   .h6 {
-    @apply text-primary font-semibold leading-normal #{!important};
+    @apply text-primary-dark font-semibold leading-normal #{!important};
   }
   .h1 {
     @apply text-1.625;
@@ -63,7 +63,7 @@ body {
   .display-2,
   .display-3,
   .display-4 {
-    @apply text-primary font-semibold break-all sm:break-normal;
+    @apply text-primary-dark font-semibold break-all sm:break-normal;
   }
   .display-1 {
     @apply text-3.3;
@@ -80,10 +80,10 @@ body {
 
   // Specialized title
   .heading {
-    @apply uppercase text-0.95 text-primary font-semibold tracking-wide #{!important};
+    @apply uppercase text-0.95 text-primary-dark font-semibold tracking-wide #{!important};
   }
   .heading-title {
-    @apply uppercase text-1.375 text-primary font-semibold tracking-wide;
+    @apply uppercase text-1.375 text-primary-dark font-semibold tracking-wide;
   }
   .lead {
     @apply text-xl font-light leading-1.7;
