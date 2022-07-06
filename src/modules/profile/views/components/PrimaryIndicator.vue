@@ -30,7 +30,7 @@ import { defineComponent } from 'vue'
 import { ArrowUpIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
-  name: 'LeftIndicator',
+  name: 'WarningIndicator',
   components: {
     ArrowUpIcon,
   },

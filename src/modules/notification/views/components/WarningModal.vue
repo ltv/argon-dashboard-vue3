@@ -35,6 +35,11 @@ export default defineComponent({
   components: {
     BellIcon,
   },
-  props: ['triggerWarningModal'],
+  props: {
+    triggerWarningModal: {
+      type: Boolean,
+      default: false,
+    },
+  },
 })
 </script>
