@@ -57,7 +57,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'SocialTrafficTable',
@@ -95,19 +95,17 @@ export default defineComponent({
         completion: 30,
       },
     ]
+    const theme = ref([
+      { completion: 60, color: '#F5365C' },
+      { completion: 70, color: '#2DCE89' },
+      { completion: 75, color: '#11CDEF' },
+      { completion: 80, color: '#6c6be4' },
+    ])
+
     const customColorMethod = (completion: number) => {
-      if (completion == 60) {
-        return '#F5365C'
-      } else if (completion == 70) {
-        return '#2DCE89'
-      } else if (completion == 80) {
-        return '#6c6be4'
-      } else if (completion == 75) {
-        return '#11CDEF'
-      } else {
-        return '#FB6340'
-      }
+      return theme.value.find((el) => el.completion == completion)?.color ?? '#FB6340'
     }
+
     return {
       tableData,
       customColorMethod,

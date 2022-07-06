@@ -126,7 +126,7 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 import { DotsVerticalIcon } from '@heroicons/vue/outline'
 
 export default defineComponent({
@@ -146,16 +146,13 @@ export default defineComponent({
     },
   },
   setup() {
+    const theme = ref([
+      { status: 'on schedule', color: '#11CDEF' },
+      { status: 'delayed', color: '#F5365C' },
+      { status: 'pending', color: '#FB6340' },
+    ])
     const customColorMethod = (status: string) => {
-      if (status == 'on schedule') {
-        return '#11CDEF'
-      } else if (status == 'delayed') {
-        return '#F5365C'
-      } else if (status == 'pending') {
-        return '#FB6340'
-      } else {
-        return '#2DCE89'
-      }
+      return theme.value.find((el) => el.status == status)?.color ?? '#2DCE89'
     }
     return {
       customColorMethod,
