@@ -106,7 +106,7 @@ export default defineComponent({
 .background-url {
   @apply bg-[url('@/assets/images/profile-cover.jpg')] #{!important};
 }
-:deep(.card-avatar-profile.el-link) .el-link--inner {
+::v-deep(.card-avatar-profile.el-link) .el-link--inner {
   @apply absolute;
 }
 </style>

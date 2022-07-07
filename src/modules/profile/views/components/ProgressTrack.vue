@@ -144,7 +144,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-:deep(.progress) .el-link--inner {
+::v-deep(.progress) .el-link--inner {
   @apply border-0 #{!important};
 }
 

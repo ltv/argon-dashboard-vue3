@@ -103,7 +103,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-:deep(.el-input.el-input--default.el-input-group.el-input-group--append):focus-within {
+::v-deep(.el-input.el-input--default.el-input-group.el-input-group--append):focus-within {
   @apply border border-blue-500 rounded #{!important};
   &.input-upload .el-input__inner {
     @apply focus:border-t-0 focus:border-l-0 focus:border-b-0;

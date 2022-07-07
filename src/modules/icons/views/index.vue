@@ -76,7 +76,7 @@ body {
     hover:drop-shadow
     #{!important};
   }
-  .el-button > :deep(span) {
+  .el-button > ::v-deep(span) {
     @apply w-full;
   }
   .el-button [class*='el-icon'] + span {
