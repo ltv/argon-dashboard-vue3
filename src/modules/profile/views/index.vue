@@ -5,8 +5,8 @@
     <span
       class="absolute block w-full inset-0 opacity-90 bg-gradient-to-r from-dark to-dark-100"
     ></span>
-    <div class="w-full px-4 lg:px-[30px] lg:max-w-[42%] absolute top-[15%] lg:top-1/3 break-normal">
-      <h1 class="text-white text-[2.75rem] mb-2">Hello Admin</h1>
+    <div class="w-full px-4 lg:px-7.5 lg:max-w-[42%] absolute top-[15%] lg:top-1/3 break-normal">
+      <h1 class="text-white text-2.75 mb-2">Hello Admin</h1>
       <p class="text-white text-base mb-12 leading-[1.7]">
         This is your profile page. You can see the progress you've made with your work and manage
         your projects or assigned tasks

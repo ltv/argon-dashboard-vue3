@@ -64,7 +64,7 @@
                   <template #reference>
                     <el-avatar
                       :size="38"
-                      class="cursor-pointer border-[2px] rounded-full border-white"
+                      class="cursor-pointer border-2 rounded-full border-white"
                       :src="value.avatarPath"
                     />
                   </template>

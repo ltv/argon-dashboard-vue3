@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full lg:h-14 h-10 flex flex-nowrap basis-auto justify-between items-center mx-auto lg:px-3.75"
+    class="container xl:max-w-5.75xl lg:max-w-4.5xl md:max-w-2.625xl sm:max-w-0.25xl w-full lg:h-14 h-10 flex flex-nowrap basis-auto justify-between items-center mx-auto lg:px-3.75"
   >
     <div class="mr-9 pt-1.5">
       <a class="inline-block py-2.5 whitespace-nowrap w-[101.45px]" href="#">
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="hidden basis-auto lg:flex items-center w-full">
-      <div class="flex flex-row mr-auto items-center gap-11 md:h-[40px] lg:h-[56px]">
+      <div class="flex flex-row mr-auto items-center gap-11 md:h-10 lg:h-14">
         <div>
           <router-link
             to="/"
@@ -89,7 +89,7 @@
           </router-link>
         </div>
       </div>
-      <div class="flex flex-row items-center ml-auto gap-x-[21px] md:h-[40px] lg:h-[56px]">
+      <div class="flex flex-row items-center ml-auto gap-x-5.25 md:h-10 lg:h-14">
         <div>
           <el-popover
             placement="bottom"
@@ -100,8 +100,12 @@
             popper-class="icon-popper"
           >
             <template #reference>
-              <el-link :underline="false" class="text-secondary hover:text-secondary-active">
-                <font-awesome-icon class="w-[17px] h-[17px]" :icon="['fab', 'github']" />
+              <el-link
+                href="https://github.com/ltv/fancy-dashboard-vue3"
+                :underline="false"
+                class="text-secondary hover:text-secondary-active"
+              >
+                <font-awesome-icon class="w-4.25 h-4.25" :icon="['fab', 'github']" />
               </el-link>
             </template>
           </el-popover>
@@ -128,28 +132,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="scss">
-.icon-popper.el-popover.el-popper {
-  @apply transition-all duration-300 p-1 min-w-fit min-h-fit rounded-md #{!important};
-}
-.auth-menu-popper.el-popper {
-  @apply border shadow-card w-[94%] md:w-[95.5%] lg:hidden rounded-md p-6;
-  @apply top-2.5 mx-2 inset-x-1 #{!important};
-  .el-dropdown-menu.el-dropdown-menu--default {
-    @apply p-0;
-  }
-  .el-dropdown-menu__item--divided {
-    @apply border-[#e4e4e5];
-  }
-  .el-dropdown-menu__item {
-    @apply p-0 m-0;
-    &:hover {
-      @apply bg-white;
-    }
-  }
-  .el-popper__arrow {
-    @apply hidden;
-  }
-}
-</style>

@@ -74,7 +74,7 @@
                 </template>
                 <el-menu-item-group class="flex flex-col">
                   <el-menu-item
-                    class="relative flex flex-row h-[45px] rounded-lg mb-px mt-0.5"
+                    class="relative flex flex-row h-11.25 rounded-lg mb-px mt-0.5"
                     :class="{
                       ' bg-slate-100/50': route.name === subItem.name,
                     }"
@@ -161,7 +161,7 @@
             DOCUMENTATION
           </div>
           <div class="relative mt-0 rounded-lg mx-2">
-            <el-link class="px-2 h-[45px]" :underline="false" :href="documentHref" target="_blank">
+            <el-link class="px-2 h-11.25" :underline="false" :href="documentHref" target="_blank">
               <div
                 class="inline-flex pl-1.5 items-center w-full text-sm my-0.5 font-normal transition-colors"
               >

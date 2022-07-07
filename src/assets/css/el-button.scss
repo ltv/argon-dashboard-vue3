@@ -13,7 +13,7 @@ body {
   }
 
   .el-button.el-button--large {
-    @apply h-[51px] rounded-md font-semibold text-sm tracking-wide px-[11px] #{!important};
+    @apply h-12.6 rounded-md font-semibold text-sm tracking-wide px-2.75 #{!important};
   }
 
   .el-button.el-button--small {
@@ -21,18 +21,26 @@ body {
   }
 
   .el-button.el-button--default.el-button--small {
-    @apply rounded max-w-fit h-[25px] #{!important};
+    @apply rounded max-w-fit h-6.2 #{!important};
   }
 
   .el-button.el-button--default.is-plain {
+    @apply transition-all duration-150 ;
+    &::before {
+      @apply opacity-0;
+    }
+    &:hover::before {
+      @apply opacity-100;
+    }
+
     @apply bg-transparent text-dark border-dark shadow-none;
 
     &:hover {
-      @apply bg-dark text-white drop-shadow-lg;
+      @apply bg-dark text-white drop-shadow-lg border-dark;
     }
 
     &:active {
-      @apply drop-shadow-none;
+      @apply drop-shadow-none text-white;
     }
   }
 
@@ -40,11 +48,11 @@ body {
     @apply bg-transparent text-indigo-410 border-indigo-410 shadow-none #{!important};
 
     &:hover {
-      @apply bg-indigo-410 text-white drop-shadow-lg #{!important};
+      @apply bg-indigo-410 text-white drop-shadow-lg border-indigo-410 #{!important};
     }
 
     &:active {
-      @apply drop-shadow-none #{!important};
+      @apply drop-shadow-none text-white #{!important};
     }
   }
 
@@ -56,7 +64,7 @@ body {
     }
 
     &:active {
-      @apply drop-shadow-none bg-secondary #{!important};
+      @apply drop-shadow-none text-black bg-secondary #{!important};
     }
   }
 
@@ -68,7 +76,7 @@ body {
     }
 
     &:active {
-      @apply drop-shadow-none #{!important};
+      @apply drop-shadow-none text-white #{!important};
     }
   }
 
@@ -80,7 +88,7 @@ body {
     }
 
     &:active {
-      @apply drop-shadow-none #{!important};
+      @apply drop-shadow-none text-white #{!important};
     }
   }
 
@@ -92,7 +100,7 @@ body {
     }
 
     &:active {
-      @apply drop-shadow-none #{!important};
+      @apply drop-shadow-none text-white #{!important};
     }
   }
 
@@ -104,7 +112,7 @@ body {
     }
 
     &:active {
-      @apply drop-shadow-none #{!important};
+      @apply drop-shadow-none text-white #{!important};
     }
   }
 

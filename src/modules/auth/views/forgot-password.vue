@@ -4,7 +4,7 @@
       class="relative w-full bg-gradient-to-r from-indigo-410 to-indigo-450 py-24 lg:py-32 lg:pt-40"
     >
       <div
-        class="container xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-3.75"
+        class="container xl:max-w-5.75xl lg:max-w-4.5xl md:max-w-2.625xl sm:max-w-0.25xl w-full mx-auto px-3.75"
       >
         <div class="text-center mb-12">
           <div class="flex flex-wrap -mx-3.75 justify-center px-3.75">
@@ -18,7 +18,7 @@
       <SplitBackground />
     </div>
     <div
-      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-4"
+      class="container relative xl:max-w-5.75xl lg:max-w-4.5xl md:max-w-2.625xl sm:max-w-0.25xl w-full mx-auto px-4"
     >
       <div class="relative lg:max-w-5/12 md:max-w-7/12 mx-auto px-4 -mt-32 mb-20">
         <FortgotPasswordForm />

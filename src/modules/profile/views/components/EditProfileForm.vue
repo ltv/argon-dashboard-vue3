@@ -31,7 +31,7 @@
                 </el-upload>
               </el-form-item>
             </el-form>
-            <div class="flex justify-center mt-[50px]">
+            <div class="flex justify-center mt-13.25">
               <el-button type="success">Save</el-button>
             </div>
           </div>
@@ -67,7 +67,7 @@
                 />
               </el-form-item>
             </el-form>
-            <div class="flex justify-center mt-[50px]">
+            <div class="flex justify-center mt-13.25">
               <el-button type="success">Change password</el-button>
             </div>
           </div>
