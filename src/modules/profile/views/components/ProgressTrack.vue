@@ -4,7 +4,7 @@
       <template #header>
         <h3 class="cursor-auto mb-0 text-primary-dark">Progress track</h3>
       </template>
-      <div class="flex flex-col my-[-16px]">
+      <div class="flex flex-col -my-4">
         <div class="flex gap-7 progress items-center">
           <el-link
             :underline="false"
@@ -144,7 +144,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-:deep(.progress) .el-link--inner {
+::v-deep(.progress) .el-link--inner {
   @apply border-0 #{!important};
 }
 

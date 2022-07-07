@@ -15,7 +15,7 @@
           :chartData="totalData"
           :options="chartOptions"
           :height="350"
-          class="h-[350px]"
+          class="h-83"
         />
       </div>
     </el-card>

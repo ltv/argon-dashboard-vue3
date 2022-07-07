@@ -109,7 +109,7 @@
               <h3 class="font-semibold text-white py-4">BRAVO PACK</h3>
             </template>
             <div class="flex flex-col items-center p-6">
-              <div class="text-white text-[44px] font-semibold">$49</div>
+              <div class="text-white text-2.75 font-semibold">$49</div>
               <span class="text-white">per application</span>
 
               <div class="table w-1/3 my-4">
@@ -206,7 +206,7 @@
                 <h4 class="font-semibold text-indigo-410 py-4">BRAVO PACK</h4>
               </template>
               <div class="flex flex-col items-center p-6">
-                <div class="text-normal text-[44px] font-semibold">$49</div>
+                <div class="text-normal text-2.75 font-semibold">$49</div>
                 <span class="text-muted font-normal">per application</span>
 
                 <div class="table w-1/3 my-4">
@@ -328,7 +328,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-:deep(.card-avatar-profile.el-link) .el-link--inner {
+::v-deep(.card-avatar-profile.el-link) .el-link--inner {
   @apply absolute;
 }
 .el-button {

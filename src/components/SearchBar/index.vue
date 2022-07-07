@@ -50,8 +50,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 .el-input {
   @apply w-full;
-  :deep(.el-input__inner) {
-    @apply relative transition-all duration-200 pt-2.5 pl-[41px] placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
+  ::v-deep(.el-input__inner) {
+    @apply relative transition-all duration-200 pt-2.5 pl-10.25 placeholder:text-sm placeholder:text-gray-500/90 text-sm w-full sm:w-[291px] h-11.5 resize-y leading-6 rounded-full bg-[#eff1fc] font-normal shadow-none border-none #{!important};
     &:focus {
       @apply w-full sm:w-98 bg-white text-black border-indigo-410 #{!important};
     }

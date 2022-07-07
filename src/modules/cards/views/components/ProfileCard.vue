@@ -30,7 +30,7 @@
         <div class="flex justify-center gap-x-11">
           <div class="block">
             <div>
-              <span class="text-[1.1rem] text-normal font-bold">{{ friends }}</span>
+              <span class="text-1.1 text-normal font-bold">{{ friends }}</span>
             </div>
             <div>
               <span class="text-sm text-gray-210 mb-0">Friends</span>
@@ -38,7 +38,7 @@
           </div>
           <div class="block">
             <div>
-              <span class="text-[1.1rem] text-normal font-bold">{{ photos }}</span>
+              <span class="text-1.1 text-normal font-bold">{{ photos }}</span>
             </div>
             <div>
               <span class="text-sm text-gray-210 mb-0">Photos</span>
@@ -46,7 +46,7 @@
           </div>
           <div class="block">
             <div>
-              <span class="text-[1.1rem] text-normal font-bold">{{ comments }}</span>
+              <span class="text-1.1 text-normal font-bold">{{ comments }}</span>
             </div>
             <div>
               <span class="text-sm text-gray-210 mb-0">Comments</span>
@@ -67,7 +67,7 @@
           </h5>
         </div>
         <div class="text-center text-primary-dark">
-          <h3 class="text-[13px] mt-6 font-semibold pb-2">
+          <h3 class="text-0.813 mt-6 font-semibold pb-2">
             {{ job }}
           </h3>
           <h5 class="text-base text-dark-lighter font-normal">{{ degree }}</h5>

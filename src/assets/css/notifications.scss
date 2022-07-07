@@ -36,7 +36,7 @@ body {
 
   // Notifications
   .el-message {
-    @apply py-4 pl-6 pr-20 min-w-0 w-[90%] max-w-[600px] items-start rounded-md;
+    @apply py-4 pl-6 pr-20 min-w-0 w-[90%] max-w-1.5xl items-start rounded-md;
   }
   .el-message.default {
     @apply bg-dark-50 border-dark-50 text-white #{!important};
@@ -138,7 +138,7 @@ body {
     }
 
     .el-dialog__header {
-      @apply p-5 h-[60px];
+      @apply p-5 h-15;
     }
     .el-dialog__title {
       @apply inline-block text-1.0625 font-semibold h-[18.7px];
@@ -154,7 +154,7 @@ body {
       @apply text-base #{!important};
     }
     .el-dialog__body p {
-      @apply text-base leading-[1.7rem];
+      @apply text-base leading-1.7;
     }
 
     .el-dialog__footer {

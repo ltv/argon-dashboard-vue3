@@ -117,24 +117,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="scss">
-.ava-column-popper.el-popover.el-popper {
-  @apply p-1 min-w-fit rounded-md text-white bg-black border-slate-600 #{!important};
-  .el-popper__arrow::before {
-    @apply bg-black #{!important};
-  }
-}
-.action-column-popper {
-  @apply rounded-lg -mt-3 #{!important};
-  .el-popper__arrow {
-    @apply hidden;
-  }
-  .el-dropdown-menu__item {
-    @apply mx-0 text-zinc-800 #{!important};
-    &:hover {
-      @apply bg-secondary;
-    }
-  }
-}
-</style>

@@ -5,13 +5,13 @@
         <el-button type="primary">Button</el-button>
       </div>
       <div>
-        <el-button type="primary" class="pr-[15px]">
+        <el-button type="primary" class="pr-3.75">
           <el-icon :size="17" class="mr-3"> <Shop /> </el-icon>With icon</el-button
         >
       </div>
       <div>
-        <el-button type="primary" class="px-[13.5px]">
-          <el-icon :size="17">
+        <el-button type="primary" class="px-3.375 group">
+          <el-icon :size="17" class="group-focus:motion-reduce:animate-spin">
             <Tools />
           </el-icon>
         </el-button>

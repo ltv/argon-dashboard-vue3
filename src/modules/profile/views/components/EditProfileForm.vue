@@ -31,7 +31,7 @@
                 </el-upload>
               </el-form-item>
             </el-form>
-            <div class="flex justify-center mt-[50px]">
+            <div class="flex justify-center mt-13.25">
               <el-button type="success">Save</el-button>
             </div>
           </div>
@@ -67,7 +67,7 @@
                 />
               </el-form-item>
             </el-form>
-            <div class="flex justify-center mt-[50px]">
+            <div class="flex justify-center mt-13.25">
               <el-button type="success">Change password</el-button>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-:deep(.el-input.el-input--default.el-input-group.el-input-group--append):focus-within {
+::v-deep(.el-input.el-input--default.el-input-group.el-input-group--append):focus-within {
   @apply border border-blue-500 rounded #{!important};
   &.input-upload .el-input__inner {
     @apply focus:border-t-0 focus:border-l-0 focus:border-b-0;

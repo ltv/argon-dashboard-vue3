@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center bg-default border mx-0 py-2 px-[13px] pl-[11px] md:px-[29px] shadow-sm h-[77px] md:h-19.75"
+    class="flex items-center bg-default border mx-0 py-2 px-3.25 pl-2.75 md:px-7.25 shadow-sm h-18.5 md:h-19.75"
     :class="{
       'bg-indigo-410 border-indigo-410 border-b-slate-50/10': !route.meta.isDarkBackground,
       'border-default border-b-cyan-30': route.meta.isDarkBackground,
@@ -15,7 +15,7 @@
           <SearchBar @close-search="setSearchOpen(true)" />
         </div>
         <div
-          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-[29px] md:gap-7.5"
+          class="transition-all duration-300 flex flex-1 flex-row ml-0 md:ml-auto items-center mt-0 text-slate-50 gap-7.25 md:gap-7.5"
           :class="[!isSearchOpen ? 'w-0 overflow-hidden sm:flex' : 'w-full']"
         >
           <div class="relative inline-block lg:hidden text-white">
@@ -102,6 +102,7 @@
               placement="bottom-end"
               trigger="click"
               popper-class="menu-popper"
+              :show-arrow="false"
               @show="clickIconMenu = !clickIconMenu"
               @hide="clickIconMenu = !clickIconMenu"
             >
@@ -126,7 +127,7 @@
                     <div class="flex h-13 w-14 content-center items-center text-center">
                       <div class="mx-auto">
                         <font-awesome-icon
-                          class="transition-all p-[16.5px] hover:px-[18.5px] hover:py-[18px] duration-150 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#f5365c] to-[#f56036]"
+                          class="transition-all p-3.4 hover:px-4.5 hover:py-4.4 duration-150 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#f5365c] to-[#f56036]"
                           :icon="['fas', 'calendar-days']"
                           size="lg"
                         />
@@ -142,7 +143,7 @@
                     <div class="flex h-13 w-14 content-center items-center text-center">
                       <div class="mx-auto">
                         <font-awesome-icon
-                          class="transition-all p-[16.5px] hover:p-[18px] duration-150 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#fb6340] to-[#fbb140]"
+                          class="transition-all p-3.4 hover:p-4.4 duration-150 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#fb6340] to-[#fbb140]"
                           :icon="['fas', 'envelope']"
                           size="lg"
                         />
@@ -158,7 +159,7 @@
                     <div class="flex h-13 w-14 content-center items-center text-center">
                       <div class="mx-auto">
                         <font-awesome-icon
-                          class="transition-all duration-150 px-[16px] py-[16.5px] hover:p-[18px] text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#11cdef] to-[#1171ef]"
+                          class="transition-all duration-150 px-4 py-3.4 hover:p-4.4 text-center inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#11cdef] to-[#1171ef]"
                           :icon="['fas', 'credit-card']"
                           size="lg"
                         />
@@ -377,60 +378,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="scss">
-.menu-popper {
-  @apply lg:w-80 md:w-80 sm:w-80 w-97/100 border-none bg-[#182c4e] top-4 sm:top-1 rounded-lg #{!important};
-  .el-popper__arrow {
-    @apply hidden;
-  }
-  .el-dropdown-menu__item--divided {
-    @apply m-0;
-  }
-}
-.notification-popper {
-  @apply lg:w-98 md:w-98 sm:w-98 w-97/100 top-9/100 sm:top-16 rounded-lg #{!important};
-  .el-popper__arrow {
-    @apply hidden;
-  }
-  .el-dropdown-menu {
-    @apply p-0 #{!important};
-  }
-  .el-dropdown-menu__item--divided {
-    @apply m-0;
-  }
-  .el-dropdown-menu__item:first-child {
-    @apply m-0 bg-white rounded-lg;
-    &:hover {
-      @apply bg-white #{!important};
-    }
-  }
-  .el-dropdown-menu__item {
-    @apply m-0;
-    &:hover {
-      @apply bg-secondary #{!important};
-    }
-  }
-}
-.profile-popper {
-  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 top-9/100 sm:top-18 rounded-lg #{!important};
-  .el-popper__arrow {
-    @apply hidden;
-  }
-  .el-dropdown-menu {
-    @apply py-2 #{!important};
-    .el-dropdown-menu__item:first-child {
-      @apply m-0 rounded-lg;
-      &:hover {
-        @apply bg-white #{!important};
-      }
-    }
-    .el-dropdown-menu__item {
-      @apply m-0;
-      &:hover {
-        @apply bg-secondary text-black #{!important};
-      }
-    }
-  }
-}
-</style>

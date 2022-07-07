@@ -15,7 +15,7 @@
       </div>
     </div>
     <div
-      class="container relative xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full py-13 lg:pb-4.5 mx-auto px-4"
+      class="container relative xl:max-w-5.75xl lg:max-w-4.5xl md:max-w-2.625xl sm:max-w-0.25xl w-full py-13 lg:pb-4.5 mx-auto px-4"
     >
       <Footer />
     </div>

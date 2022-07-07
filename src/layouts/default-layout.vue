@@ -7,13 +7,13 @@
     >
       <navigation />
       <div
-        class="w-full h-[150px] relative bg-transparent border-none"
+        class="w-full h-38 relative bg-transparent border-none"
         :class="{
           'bg-indigo-410': !route.meta.isDarkBackground,
         }"
       >
         <div
-          class="flex items-center py-5 mb-0 px-[15px] pr-[14px] md:px-[29px] md:pl-[30px] pt-6"
+          class="flex items-center py-5 mb-0 px-3.75 pr-3.5 md:px-7.25 md:pl-7.5 pt-6"
           v-if="!route.meta.isDarkBackground"
         >
           <div class="w-full flex flex-wrap flex-row">
@@ -28,7 +28,7 @@
             <div class="w-1/2 text-right pt-px pr-px">
               <el-button
                 size="small"
-                class="w-[45px] h-7 rounded font-semibold text-indigo-410 bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
+                class="w-11.25 h-7 rounded font-semibold text-indigo-410 bg-white border-white hover:text-black hover:bg-white active:bg-slate-100 tracking-wide"
                 >New</el-button
               >
               <el-button
@@ -43,11 +43,11 @@
         <router-view v-slot="{ Component }">
           <component
             :is="Component"
-            :class="{ 'py-1.25 px-4 md:px-7.5 lg:px-[25px]': !route.meta.isFullWidthLayout }"
+            :class="{ 'py-1.25 px-4 md:px-7.5 lg:px-6.2': !route.meta.isFullWidthLayout }"
           />
         </router-view>
 
-        <div class="w-full py-8 mx-auto px-4 md:px-7.5 lg:px-[28.5px]">
+        <div class="w-full py-8 mx-auto px-4 md:px-7.5 lg:px-7.15">
           <Footer />
         </div>
       </div>

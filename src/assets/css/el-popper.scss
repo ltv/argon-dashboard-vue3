@@ -4,3 +4,100 @@
 .el-dropdown-menu {
   @apply p-0;
 }
+
+.ava-column-popper.el-popover.el-popper {
+  @apply p-1 min-w-fit rounded-md text-white bg-black border-slate-600 #{!important};
+  .el-popper__arrow::before {
+    @apply bg-black #{!important};
+  }
+}
+.action-column-popper {
+  @apply rounded-lg -mt-3 #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
+  .el-dropdown-menu__item {
+    @apply mx-0 text-zinc-800 #{!important};
+    &:hover {
+      @apply bg-secondary;
+    }
+  }
+}
+
+.icon-popper.el-popover.el-popper {
+  @apply transition-all duration-300 p-1 min-w-fit min-h-fit rounded-md #{!important};
+  .el-popper__arrow::before {
+    @apply bg-white #{!important};
+  }
+}
+.auth-menu-popper.el-popper {
+  @apply border shadow-card w-[94%] md:w-[95.5%] lg:hidden rounded-md p-6;
+  @apply top-2.5 mx-2 inset-x-1 #{!important};
+  .el-dropdown-menu.el-dropdown-menu--default {
+    @apply p-0;
+  }
+  .el-dropdown-menu__item--divided {
+    @apply border-[#e4e4e5];
+  }
+  .el-dropdown-menu__item {
+    @apply p-0 m-0;
+    &:hover {
+      @apply bg-white;
+    }
+  }
+  .el-popper__arrow {
+    @apply hidden;
+  }
+}
+
+.menu-popper {
+  @apply lg:w-80 md:w-80 sm:w-80 w-97/100 border-none bg-[#182c4e] top-4 sm:top-1 rounded-lg #{!important};
+  .el-dropdown-menu__item--divided {
+    @apply m-0;
+  }
+}
+.notification-popper {
+  @apply lg:w-98 md:w-98 sm:w-98 w-97/100 top-9/100 sm:top-16 rounded-lg #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
+  .el-dropdown-menu {
+    @apply p-0 #{!important};
+  }
+  .el-dropdown-menu__item--divided {
+    @apply m-0;
+  }
+  .el-dropdown-menu__item:first-child {
+    @apply m-0 bg-white rounded-lg;
+    &:hover {
+      @apply bg-white #{!important};
+    }
+  }
+  .el-dropdown-menu__item {
+    @apply m-0;
+    &:hover {
+      @apply bg-secondary #{!important};
+    }
+  }
+}
+.profile-popper {
+  @apply lg:w-48 md:w-48 sm:w-48 w-97/100 top-9/100 sm:top-18 rounded-lg #{!important};
+  .el-popper__arrow {
+    @apply hidden;
+  }
+  .el-dropdown-menu {
+    @apply py-2 #{!important};
+    .el-dropdown-menu__item:first-child {
+      @apply m-0 rounded-lg;
+      &:hover {
+        @apply bg-white #{!important};
+      }
+    }
+    .el-dropdown-menu__item {
+      @apply m-0;
+      &:hover {
+        @apply bg-secondary text-black #{!important};
+      }
+    }
+  }
+}

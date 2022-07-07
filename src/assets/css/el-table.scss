@@ -47,7 +47,7 @@
 }
 
 .is-dark.el-table th.is-leaf {
-  @apply border-y-[0.5px] border-[#1f3a68] #{!important};
+  @apply border-y-0.5 border-[#1f3a68] #{!important};
 }
 
 .is-dark.el-table td,
