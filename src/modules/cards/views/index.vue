@@ -328,7 +328,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-:deep(.card-avatar-profile.el-link) .el-link--inner {
+::v-deep(.card-avatar-profile.el-link) .el-link--inner {
   @apply absolute;
 }
 .el-button {
