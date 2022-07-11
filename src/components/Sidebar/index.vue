@@ -183,7 +183,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted, watch, onUnmounted, onBeforeMount } from 'vue'
+import { defineComponent, ref, computed, onMounted, onUnmounted, onBeforeMount } from 'vue'
 import { useRoute } from 'vue-router'
 import navigation from './SidebarNav'
 import { BellIcon, MenuIcon, MenuAlt1Icon, ColorSwatchIcon } from '@heroicons/vue/outline'
@@ -258,10 +258,6 @@ export default defineComponent({
     const handleMenuClick = () => {
       store.dashboard.toggleMenu()
     }
-
-    watch(route, () => {
-      store.dashboard.setIsSBOpen(false)
-    })
 
     return {
       leftSideBarItems,
