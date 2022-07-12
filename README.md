@@ -9,6 +9,7 @@ Argon Dashboard Vue 3, ElementUI &amp; TailwindCSS - Inspired by [Creative Tim](
 - [VueJS 3](https://vuejs.org) with well structured
 - [ElementUI](https://element-plus.org/en-US/) for VueJS 3
 - [TailwindCSS 3](https://tailwindcss.com)
+- [Vite](https://vitejs.dev)
 
 ## Sponsor
 
