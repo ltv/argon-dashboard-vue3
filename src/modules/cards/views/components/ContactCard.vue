@@ -12,7 +12,7 @@
             <el-link
               :underline="false"
               href="#index"
-              class="text-15 text-primary-dark font-semibold hover:text-[#233dd2]"
+              class="text-15 text-primary-dark font-semibold hover:text-primary"
               >{{ name }}</el-link
             >
           </h4>
