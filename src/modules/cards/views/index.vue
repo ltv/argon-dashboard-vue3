@@ -82,7 +82,7 @@
                   important components and features.
                 </p>
                 <a href="#!" class="">
-                  <span class="text-indigo-410 hover:text-[#233dd2] text-sm font-semibold"
+                  <span class="text-indigo-410 hover:text-primary text-sm font-semibold"
                     >View article</span
                   >
                 </a>

@@ -250,22 +250,16 @@
                   </div>
                 </el-dropdown-item>
                 <el-dropdown-item class="mx-0 my-2 hover:bg-slate-100 text-zinc-800">
-                  <div class="flex flex-row items-center w-full h-6">
+                  <router-link to="/profile" class="flex flex-row items-center w-full h-6 mr-auto">
                     <div class="flex w-auto">
                       <el-icon :size="22" class="cursor-pointer w-5 h-6">
                         <UserFilled />
                       </el-icon>
                     </div>
                     <div class="basis-0 grow w-full ml-4">
-                      <div class="">
-                        <div>
-                          <router-link to="/profile" class="mb-0 text-sm font-normal">
-                            My profile
-                          </router-link>
-                        </div>
-                      </div>
+                      <span class="mb-0 text-sm font-normal">My profile</span>
                     </div>
-                  </div>
+                  </router-link>
                 </el-dropdown-item>
 
                 <el-dropdown-item
@@ -280,11 +274,7 @@
                       </el-icon>
                     </div>
                     <div class="basis-0 grow w-full ml-4">
-                      <div class="">
-                        <div>
-                          <span class="mb-0 text-sm font-normal">Logout</span>
-                        </div>
-                      </div>
+                      <span class="mb-0 text-sm font-normal">Logout</span>
                     </div>
                   </div>
                 </el-dropdown-item>
