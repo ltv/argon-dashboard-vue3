@@ -1,0 +1,64 @@
+body {
+  // effect dark
+  .el-tag.el-tag--dark {
+    @apply bg-primary border-primary text-white;
+  }
+
+  .el-tag.el-tag--dark.el-tag--warning {
+    @apply bg-warning border-warning text-white;
+  }
+
+  .el-tag.el-tag--dark.el-tag--success {
+    @apply bg-success border-success text-white;
+  }
+
+  .el-tag.el-tag--dark.el-tag--info {
+    @apply bg-info border-info text-white;
+  }
+
+  .el-tag.el-tag--dark.el-tag--danger {
+    @apply bg-danger border-danger text-white;
+  }
+
+  // effect light
+  .el-tag.el-tag--light {
+    @apply bg-primary bg-opacity-20 text-primary;
+  }
+
+  .el-tag.el-tag--light.el-tag--warning {
+    @apply bg-warning-50 bg-opacity-20 text-warning border-warning border-opacity-20;
+  }
+
+  .el-tag.el-tag--light.el-tag--success {
+    @apply bg-success-50 bg-opacity-20 text-success border-success border-opacity-20;
+  }
+
+  .el-tag.el-tag--light.el-tag--info {
+    @apply bg-info bg-opacity-20 text-info border-info border-opacity-20;
+  }
+
+  .el-tag.el-tag--light.el-tag--danger {
+    @apply bg-danger-50 bg-opacity-20  text-danger border-danger border-opacity-20;
+  }
+
+  // effect plain
+  .el-tag.el-tag--plain {
+    @apply text-primary;
+  }
+
+  .el-tag.el-tag--plain.el-tag--warning {
+    @apply text-warning border-warning ;
+  }
+
+  .el-tag.el-tag--plain.el-tag--success {
+    @apply text-success border-success ;
+  }
+
+  .el-tag.el-tag--plain.el-tag--info {
+    @apply text-info border-info ;
+  }
+
+  .el-tag.el-tag--plain.el-tag--danger {
+    @apply text-danger border-danger ;
+  }
+}
