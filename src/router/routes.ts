@@ -24,6 +24,7 @@ const Table = () => import('modules/table/views/index.vue')
 const Grid = () => import('modules/grid/views/index.vue')
 const Notification = () => import('modules/notification/views/index.vue')
 const Button = () => import('modules/buttons/views/index.vue')
+const Tags = () => import('modules/tags/views/index.vue')
 const Typography = () => import('modules/typography/views/index.vue')
 const Card = () => import('modules/cards/views/index.vue')
 const Icons = () => import('modules/icons/views/index.vue')
@@ -66,6 +67,17 @@ const routes = [
           title: 'Buttons',
           icon: CursorClickIcon,
           color: 'text-danger-50',
+          requiresAuth: true,
+        },
+      },
+      {
+        path: 'tags',
+        name: 'Tags',
+        component: Tags,
+        meta: {
+          title: 'Tags',
+          icon: CursorClickIcon,
+          color: 'text-primary',
           requiresAuth: true,
         },
       },
@@ -137,7 +149,7 @@ const routes = [
       },
     ]
   },
-  
+
   {
     path: '/profile',
     component: Profile,
@@ -181,7 +193,7 @@ const routes = [
     },
   },
   {
-    
+
     path: '/login',
     component: Login,
     name: 'login',
