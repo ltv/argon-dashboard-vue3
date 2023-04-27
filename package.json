@@ -22,7 +22,7 @@
     "buffer": "^6.0.3",
     "chart.js": "^3.8.0",
     "click-outside-vue3": "^4.0.1",
-    "element-plus": "2.0.1",
+    "element-plus": "2.1.0",
     "emitter-io": "^1.39.0",
     "emoji-mart-vue-fast": "^10.2.1",
     "lodash": "^4.17.21",
