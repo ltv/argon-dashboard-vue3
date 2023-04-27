@@ -1,0 +1,149 @@
+body {
+  // effect dark
+  .el-tag.el-tag--dark {
+    @apply bg-primary border-primary text-white;
+    .el-icon:hover {
+      @apply text-primary bg-secondary;
+    }
+  }
+
+  .el-tag.el-tag--dark.el-tag--warning {
+    @apply bg-warning border-warning text-white;
+    .el-icon:hover {
+      @apply text-warning;
+    }
+  }
+
+  .el-tag.el-tag--dark.el-tag--success {
+    @apply bg-success border-success text-white;
+    .el-icon:hover {
+      @apply text-success ;
+    }
+  }
+
+  .el-tag.el-tag--dark.el-tag--info {
+    @apply bg-info border-info text-white;
+    .el-icon:hover {
+      @apply text-info ;
+    }
+  }
+
+  .el-tag.el-tag--dark.el-tag--danger {
+    @apply bg-danger border-danger text-white;
+    .el-icon:hover {
+      @apply text-danger ;
+    }
+  }
+
+  // effect light
+  .el-tag.el-tag--light {
+    @apply bg-primary bg-opacity-20 text-primary;
+    .el-icon {
+      @apply text-primary;
+    }
+
+    .el-icon:hover {
+      @apply bg-primary text-secondary text-opacity-50;
+    }
+  }
+
+  .el-tag.el-tag--light.el-tag--warning {
+    @apply bg-warning-50 bg-opacity-20 text-warning border-warning border-opacity-20;
+    .el-icon {
+      @apply text-warning;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary text-opacity-50 bg-warning;
+    }
+  }
+
+  .el-tag.el-tag--light.el-tag--success {
+    @apply bg-success-50 bg-opacity-20 text-success border-success border-opacity-20;
+    .el-icon {
+      @apply text-success;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary text-opacity-50 bg-success;
+    }
+  }
+
+  .el-tag.el-tag--light.el-tag--info {
+    @apply bg-info bg-opacity-20 text-info border-info border-opacity-20;
+    .el-icon {
+      @apply text-info;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary text-opacity-50 bg-info;
+    }
+  }
+
+  .el-tag.el-tag--light.el-tag--danger {
+    @apply bg-danger-50 bg-opacity-20  text-danger border-danger border-opacity-20;
+    .el-icon {
+      @apply text-danger;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary text-opacity-50 bg-danger;
+    }
+  }
+
+  // effect plain
+  .el-tag.el-tag--plain {
+    @apply text-primary;
+    .el-icon {
+      @apply text-primary;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary bg-primary;
+    }
+  }
+
+  .el-tag.el-tag--plain.el-tag--warning {
+    @apply text-warning border-warning ;
+    .el-icon {
+      @apply text-warning;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary bg-warning;
+    }
+  }
+
+  .el-tag.el-tag--plain.el-tag--success {
+    @apply text-success border-success ;
+    .el-icon {
+      @apply text-success;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary bg-success;
+    }
+  }
+
+  .el-tag.el-tag--plain.el-tag--info {
+    @apply text-info border-info ;
+    .el-icon {
+      @apply text-info;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary bg-info;
+    }
+  }
+
+  .el-tag.el-tag--plain.el-tag--danger {
+    @apply text-danger border-danger ;
+    .el-icon {
+      @apply text-danger;
+    }
+
+    .el-icon:hover {
+      @apply text-secondary bg-danger;
+    }
+  }
+}
