@@ -1,16 +1,15 @@
 <template>
   <el-config-provider :zIndex="9999">
-    <AuthLayout v-if="isAuthLayout" />
-    <DefaultLayout v-else />
+    <component :is="isAuthLayout ? 'AuthLayout' : 'DefaultLayout'" v-if="isAppReady" />
   </el-config-provider>
 </template>
 
 <script lang="ts">
-import { defineComponent, inject, computed } from 'vue'
 import { ElConfigProvider } from 'element-plus'
-import DefaultLayout from './layouts/default-layout.vue'
 import AuthLayout from 'layouts/auth-layout.vue'
-import { useRoute } from 'vue-router'
+import { computed, defineComponent, inject, nextTick, onMounted, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import DefaultLayout from './layouts/default-layout.vue'
 
 export default defineComponent({
   components: {
@@ -22,21 +21,33 @@ export default defineComponent({
 
   setup() {
     const $message = inject<IMessage>('$message')
-    const router = useRoute()
-    const isAuthLayout = computed(() => !router.meta?.requiresAuth)
-    const initialize = () => {
-      return Promise.resolve()
-    }
-    initialize().catch((error: Error) => {
-      $message?.error(`Couldn't initialize the system with error: ${error.message}`)
+    const route = useRoute()
+    const router = useRouter()
+
+    const isAppReady = ref(false)
+
+    const isAuthLayout = computed(() => !route.meta?.requiresAuth)
+
+    onMounted(async () => {
+      try {
+        await router.isReady()
+
+        await nextTick()
+        setTimeout(() => {
+          isAppReady.value = true
+        }, 200)
+      } catch (error: unknown) {
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred'
+        $message?.error(`Couldn't initialize the system with error: ${errorMessage}`)
+      }
     })
 
-    return { zIndex: 3000, size: 'small', isAuthLayout }
+    return {
+      zIndex: 3000,
+      size: 'small',
+      isAuthLayout,
+      isAppReady,
+    }
   },
 })
 </script>
-<style>
-#global-loading {
-  z-index: 120000;
-}
-</style>

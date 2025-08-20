@@ -1,9 +1,11 @@
 <template>
-  <div class="map">
-    <GoogleMap :api-key="googleApi" class="w-full h-[600px]" :center="center" :zoom="15">
-      <Marker :options="markerOptions" />
-    </GoogleMap>
-  </div>
+  <transition name="slide-up" appear>
+    <div class="map">
+      <GoogleMap :api-key="googleApi" class="w-full h-[600px]" :center="center" :zoom="15">
+        <Marker :options="markerOptions" />
+      </GoogleMap>
+    </div>
+  </transition>
 </template>
 
 <script>

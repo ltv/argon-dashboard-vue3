@@ -1,14 +1,14 @@
 import vueEmitter from 'core/emitter'
-import { createApp, h } from 'vue'
-import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
+import { createPinia } from 'pinia'
+import { createApp, h } from 'vue'
+import VueSweetAlert2 from 'vue-sweetalert2'
 import App from './App.vue'
 import AppComponents from './components'
-import VueSweetAlert2 from 'vue-sweetalert2'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import 'sweetalert2/dist/sweetalert2.min.css'

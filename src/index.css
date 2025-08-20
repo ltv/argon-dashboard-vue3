@@ -1,3 +1,6 @@
+/* Import global transitions */
+@import './assets/css/transitions.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +8,27 @@
 @layer base {
   * {
     font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@layer components {
+  /* Reset margins on popper elements to prevent warnings */
+  .el-popper,
+  .el-tooltip__popper,
+  .el-dropdown__popper,
+  .el-select-dropdown,
+  .el-picker-panel,
+  .el-autocomplete-suggestion {
+    margin: 0 !important;
+  }
+
+  /* Use padding instead of margin for proper spacing */
+  .el-popper.is-pure {
+    padding: 0;
+  }
+
+  /* Ensure proper spacing using transforms/positioning instead of margins */
+  .el-popper[data-popper-placement] {
+    margin: 0 !important;
   }
 }

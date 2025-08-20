@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap items-center md:justify-between w-full">
+  <div class="flex flex-wrap items-center md:justify-between w-full p-5">
     <div class="xl:flex-6 xl:max-w-1/2 mx-auto md:mx-0">
       <div class="text-center lg:text-left text-muted">
         © 2022
@@ -51,9 +51,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
 import { Shop } from '@element-plus/icons-vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Footer',

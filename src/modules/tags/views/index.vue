@@ -1,6 +1,6 @@
 <template>
   <div class="w-full block mx-auto h-auto lg:max-w-1/2">
-    <div class="flex flex-wrap gap-3.25">
+    <div class="w-full">
       <el-card class="mb-7.5 border-none">
         <template #header>
           <h3 class="cursor-auto mb-0 text-primary-dark">Tags</h3>
@@ -34,7 +34,7 @@
   </div>
 </template>
 <script lang="ts">
-import {defineComponent} from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'ColorTags',

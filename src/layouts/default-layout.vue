@@ -39,26 +39,21 @@
             </div>
           </div>
         </div>
-
-        <router-view v-slot="{ Component }">
-          <component
-            :is="Component"
-            :class="{ 'py-1.25 px-4 md:px-7.5 lg:px-6.2': !route.meta.isFullWidthLayout }"
-          />
-        </router-view>
-
-        <div class="w-full py-8 mx-auto px-4 md:px-7.5 lg:px-7.15">
-          <Footer />
+        <div class="p-3.75 md:p-7.25 min-h-[calc(100vh_-_216px)]">
+          <router-view v-slot="{ Component }">
+            <component :is="Component"></component>
+          </router-view>
         </div>
+        <Footer />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue'
-import useStore from 'store'
 import { HomeFilled } from '@element-plus/icons-vue'
+import useStore from 'store'
+import { computed, defineComponent } from 'vue'
 import { useRoute } from 'vue-router'
 
 export default defineComponent({
@@ -86,9 +81,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.main-content {
-  @apply transition-all duration-300;
-}
 @media screen and (max-width: 1023px) {
   .main-content {
     margin-left: 0 !important;

@@ -9,8 +9,10 @@
       </div>
 
       <div class="relative w-full">
-        <router-view v-slot="{ Component }">
-          <component :is="Component" />
+        <router-view v-slot="{ Component, route }">
+          <transition name="fade" mode="out-in">
+            <component :is="Component" :key="route.fullPath" />
+          </transition>
         </router-view>
       </div>
     </div>
@@ -23,8 +25,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue'
 import useStore from 'store'
+import { computed, defineComponent } from 'vue'
 
 export default defineComponent({
   setup() {
